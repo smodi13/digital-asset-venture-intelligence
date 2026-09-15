@@ -57,3 +57,4 @@ local-artifacts/
 .env.local
 .env.production
 .env.development.local
+.vercel
