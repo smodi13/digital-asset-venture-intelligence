@@ -144,6 +144,16 @@ const POSITIVE_UTILITY: ReadonlyArray<RegExp> = [
   /\bdeveloper preview\b/i,
   /\bfunding announcement\b/i,
   /\bnew stablecoin\b|\bnew payment rail\b|\bnew tokenization platform\b|\bnew security infrastructure\b/i,
+  // Investor-first financing constructions (correction section 4): strategic
+  // investment or institutional backing into an emerging company/protocol.
+  // "backs" alone is ambiguous with political/institutional endorsement
+  // ("SEC's Atkins backs Clarity Act"), so it only counts here alongside an
+  // explicit financing marker; the other two phrases are unambiguous.
+  /\binvests in\b/i,
+  /\bleads(?: an?| the)?(?: \$[\d.]+\s*[mbk]?)?\s*(?:investment|round|financing)\s+in\b/i,
+  /\bbacks\b.*\b(?:series [a-e]|seed (?:round|funding)|\$[\d.]+\s*(?:m|million|b|billion))\b/i,
+  /\bstrategic investment\b/i,
+  /\bventure (?:financing|round|capital investment)\b/i,
 ];
 
 /** A launch of a mainnet or testnet is early-stage regardless of word order ("launches mainnet" or "mainnet launch"). */

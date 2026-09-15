@@ -26,7 +26,7 @@ export interface Extraction {
 
 /** Verb phrases that reliably put a company name at the start of a headline. */
 const REASON_PHRASES: ReadonlyArray<{ re: RegExp; reason: string }> = [
-  { re: /\b(raises?|raised|closes?|closed|lands?|landed|secures?|secured|nabs?|snags?|bags?|picks up|scores?|hauls in|pulls in|grabs?|extends?|tops up|adds to|gets? (?:backing|funding))\b/i, reason: "funding announcement" },
+  { re: /\b(raises?|raised|closes?|closed|lands?|landed|secures?|secured|nabs?|snags?|bags?|picks up|scores?|hauls in|pulls in|grabs?|extends?|tops up|adds to|gets? (?:backing|funding)|receives? (?:a |an )?(?:strategic investment|backing|funding))\b/i, reason: "funding announcement" },
   { re: /\bseries [a-e]\b/i, reason: "private-market financing round" },
   { re: /\bseed (round|funding)\b/i, reason: "seed financing" },
   { re: /\b(launches?|launched|unveils?|unveiled|debuts?|emerges? from stealth|comes out of stealth|introduces?|goes live|go live|rolls? out|rolled out|brings?|builds?|expands?)\b/i, reason: "product or company launch" },
@@ -111,6 +111,55 @@ function extractSubject(title: string): { name: string; verbMatched: boolean } |
   return { name, verbMatched };
 }
 
+/**
+ * Investor-first financing constructions: the useful entity (the investee)
+ * is the grammatical OBJECT, not the subject ("S&P Global backs Kaiko as
+ * Series B reaches $110M"). "backs" alone is ambiguous with a political or
+ * institutional-endorsement sense ("SEC's Atkins backs Clarity Act"), so it
+ * only counts here alongside an explicit financing marker in the same
+ * headline; "invests in" and "leads ... investment/round/financing in" are
+ * unambiguous financing verbs on their own.
+ */
+const INVESTOR_FIRST_PHRASES: ReadonlyArray<{ re: RegExp; requiresFinancingMarker: boolean; reason: string }> = [
+  { re: /\bbacks\b/i, requiresFinancingMarker: true, reason: "institutional backing" },
+  { re: /\binvests in\b/i, requiresFinancingMarker: false, reason: "strategic investment" },
+  {
+    re: /\bleads(?: an?| the)?(?: \$[\d.]+\s*[mbk]?)?\s*(?:investment|round|financing)\s+in\b/i,
+    requiresFinancingMarker: false,
+    reason: "led investment round",
+  },
+];
+const FINANCING_MARKER_RE = /\bseries [a-e]\b|\bseed (?:round|funding)\b|\$[\d.]+\s*(?:m|million|b|billion)\b/i;
+
+function extractInvestorFirstSubject(title: string): { name: string; reason: string } | null {
+  for (const { re, requiresFinancingMarker, reason } of INVESTOR_FIRST_PHRASES) {
+    const m = title.match(re);
+    if (!m || m.index === undefined) continue;
+    if (requiresFinancingMarker && !FINANCING_MARKER_RE.test(title)) continue;
+
+    let tail = title.slice(m.index + m[0].length).trim();
+    let cut = tail.length;
+    for (const stop of [/\bas\b/i, /\bafter\b/i, /,/, /:/, /\(/, /\s[-\u2013\u2014]\s/]) {
+      const sm = tail.match(stop);
+      if (sm && sm.index !== undefined && sm.index < cut) cut = sm.index;
+    }
+    tail = tail.slice(0, cut).trim();
+    if (!tail) continue;
+
+    const tokens = tail.split(/\s+/);
+    if (tokens.length === 0 || tokens.length > 4) continue;
+    if (!tokens.every(looksLikeNameToken)) continue;
+    if (!/[A-Za-z]/.test(tokens[0]!) || tokens[0]![0] !== tokens[0]![0]!.toUpperCase()) continue;
+    if (SENTENCE_LEADERS.has(tokens[0]!.toLowerCase())) continue;
+
+    const name = tokens.join(" ");
+    if (name.length < 3 || name.length > 60) continue;
+    if (GENERIC_NAMES.has(name.toLowerCase())) continue;
+    return { name, reason };
+  }
+  return null;
+}
+
 export function extractCandidate(item: FeedItem): Extraction | null {
   // Event promo, roundups, listicles, and interviews never name a credible
   // candidate, even when a token in the headline happens to look like a name.
@@ -132,6 +181,18 @@ export function extractCandidate(item: FeedItem): Extraction | null {
   const domain = findDomain([item.summary ?? "", ...item.categories]);
 
   if (!subject) {
+    // The regular subject-first parse found no company; try the
+    // investor-first (object-target) construction before giving up.
+    const objectTarget = extractInvestorFirstSubject(item.title);
+    if (objectTarget) {
+      return {
+        name: objectTarget.name,
+        domain,
+        description: item.summary,
+        identityConfidence: "confirmed",
+        discoveryReason: objectTarget.reason,
+      };
+    }
     return {
       name: item.title.slice(0, 120),
       domain,

@@ -3,7 +3,7 @@
 import { useCallback, useEffect, useMemo, useRef, useState } from "react";
 import Link from "next/link";
 import { Icon, SectionHeading } from "@/components/ui";
-import { dateOnly } from "@/lib/ui/format";
+import { dateOnly, plural } from "@/lib/ui/format";
 import type { Candidate, DiscoveryTransport, EngineRunResult, QueueState } from "@/lib/sourcing/types";
 import { buildResearchIntake } from "@/lib/sourcing/handoff";
 import { displayEngineName } from "@/lib/sourcing/engine-names";
@@ -270,7 +270,7 @@ export function SourcingView() {
     if (liveRef.current) {
       if (anyRunning) liveRef.current.textContent = "Discovery run in progress.";
       else if (result) {
-        liveRef.current.textContent = `${result.candidates.length} candidates from the discovery channels that have run.`;
+        liveRef.current.textContent = `${plural(result.candidates.length, "candidate")} from the discovery channels that have run.`;
       }
     }
   }, [anyRunning, result]);
@@ -319,10 +319,11 @@ export function SourcingView() {
               <p className="mt-1 chip chip--muted text-[10px]">No credential, no cost</p>
             </div>
             <p className="measure t-meta text-[var(--fg-muted)]">
-              Scans a fixed server-side allowlist of public feeds (CoinDesk, TechCrunch Funding,
-              Crunchbase News), filters every item for digital-asset relevance, freshness, and
-              early-stage discovery utility, and surfaces only the candidates that clear those
-              gates. Deterministic extraction, never a quality judgement.
+              Scans a fixed server-side allowlist of crypto-native and private-market public
+              feeds, then filters each item for recency, digital-asset relevance, and early-stage
+              discovery utility, and surfaces only the candidates that clear those gates.
+              Deterministic extraction, never a quality judgement. See Source Health below for the
+              exact source list.
             </p>
             <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
               Lookback window
@@ -441,13 +442,14 @@ export function SourcingView() {
               Completed {result.runAt.slice(0, 16).replace("T", " ")} UTC
             </p>
             <p className="measure mt-2 t-meta text-[var(--fg-muted)]">
-              {result.summary.sourcesFetched} sources fetched · {result.summary.itemsInspected} items
-              inspected · {result.summary.withinRecency} within recency ·{" "}
+              {plural(result.summary.sourcesFetched, "source")} fetched ·{" "}
+              {plural(result.summary.itemsInspected, "item")} inspected ·{" "}
+              {result.summary.withinRecency} within recency ·{" "}
               {result.summary.digitalAssetRelevant} digital-asset relevant ·{" "}
               {result.summary.candidateWorthinessPassed} discovery-worthy ·{" "}
-              {result.summary.entitiesResolved} entities resolved ·{" "}
-              {result.summary.newCandidates} new candidates · {result.summary.alreadyTracked} already
-              tracked · {result.summary.needsIdentityReview} needing identity review ·{" "}
+              {plural(result.summary.entitiesResolved, "entity", "entities")} resolved ·{" "}
+              {plural(result.summary.newCandidates, "new candidate")} · {result.summary.alreadyTracked}{" "}
+              already tracked · {result.summary.needsIdentityReview} needing identity review ·{" "}
               {result.summary.filteredCount} filtered · lookback {result.summary.lookbackDays} days.
             </p>
             <p className="mt-2 t-label text-[var(--fg-faint)]">
@@ -457,7 +459,7 @@ export function SourcingView() {
               {result.summary.filteredBuckets.lowDiscoveryUtility} low discovery utility,{" "}
               {result.summary.filteredBuckets.mediumDiscoveryUtility} medium discovery utility (real
               digital-asset news, but a routine update rather than an early-stage sourcing lead),{" "}
-              {result.summary.filteredBuckets.unresolvedEntity} unresolved entity.
+              {plural(result.summary.filteredBuckets.unresolvedEntity, "unresolved entity", "unresolved entities")}.
             </p>
           </div>
         </section>
@@ -511,7 +513,7 @@ export function SourcingView() {
       <section aria-labelledby="cand-h" aria-busy={anyRunning}>
         <SectionHeading
           id="cand-h"
-          aside={result ? <span>{filtered.length} of {candidates.length} candidates</span> : null}
+          aside={result ? <span>{filtered.length} of {plural(candidates.length, "candidate")}</span> : null}
         >
           New candidates
         </SectionHeading>
@@ -735,7 +737,7 @@ function ChannelStatus({ phase, result }: { phase: RunPhase; result: EngineRunRe
       <span className={`chip ${s.cls}`}>{s.text}</span>
       {result ? (
         <span className="tnum t-meta text-[var(--fg-faint)]">
-          Last run {result.runAt.slice(0, 16).replace("T", " ")} · {result.candidates.length} candidates
+          Last run {result.runAt.slice(0, 16).replace("T", " ")} · {plural(result.candidates.length, "candidate")}
         </span>
       ) : null}
     </span>

@@ -351,4 +351,69 @@ describe("New Candidate admission requires HIGH discovery utility", () => {
     expect(result.candidates.some((c) => c.name === "Emberlight Exchange")).toBe(false);
     expect(result.summary.filteredBuckets.mediumDiscoveryUtility).toBeGreaterThan(0);
   });
+
+  it("admits a token price article as filtered, never a candidate", () => {
+    const result = runOne(
+      "Bitcoin climbs to $78,000 as crypto sits out the AI selloff",
+      "Price action commentary with no company named.",
+    );
+    expect(result.candidates).toHaveLength(0);
+  });
+
+  it("rejects a regulatory story with no named company", () => {
+    const result = runOne(
+      "SEC proposes new crypto custody rule ahead of Senate hearing",
+      "The rule would affect the broader industry, no company is named.",
+    );
+    expect(result.candidates).toHaveLength(0);
+  });
+
+  it("rejects generic AI funding with no digital-asset relevance", () => {
+    const result = runOne(
+      "Mistral AI raises $500M at a $6B valuation",
+      "A large general AI lab raised new funding.",
+    );
+    expect(result.candidates).toHaveLength(0);
+  });
+});
+
+/**
+ * v1.0.2 recall correction: investor-first (object-target) financing
+ * constructions and the two additional evidenced HIGH-utility categories
+ * (strategic investment, unspecified venture financing). Synthetic entities
+ * only, per section 13, so the mechanism is proven generic.
+ */
+describe("v1.0.2 recall correction: investor-first and additional HIGH-utility events", () => {
+  it("admits the investee when an investor backs an emerging startup", () => {
+    const result = runOne(
+      "Acme Capital backs Ledgerforge as seed round reaches $6M",
+      "The seed round funds Ledgerforge's onchain settlement network.",
+    );
+    expect(result.candidates.some((c) => c.name === "Ledgerforge")).toBe(true);
+    expect(result.candidates.some((c) => c.name === "Acme Capital")).toBe(false);
+  });
+
+  it("admits the investee when an investor leads a round in a protocol", () => {
+    const result = runOne(
+      "Acme Capital leads investment in Protoflow, a new onchain analytics protocol",
+      "The round backs Protoflow's launch.",
+    );
+    expect(result.candidates.some((c) => c.name === "Protoflow")).toBe(true);
+  });
+
+  it("admits a startup receiving a strategic investment", () => {
+    const result = runOne(
+      "Chainforge receives a strategic investment for its DeFi settlement layer",
+      "The strategic investment backs Chainforge's growth.",
+    );
+    expect(result.candidates.some((c) => c.name === "Chainforge")).toBe(true);
+  });
+
+  it("admits a startup raising unspecified venture financing for a digital-asset business", () => {
+    const result = runOne(
+      "Ledgerforge raises a new venture financing round for its stablecoin infrastructure",
+      "The venture round backs Ledgerforge's stablecoin rail.",
+    );
+    expect(result.candidates.some((c) => c.name === "Ledgerforge")).toBe(true);
+  });
 });

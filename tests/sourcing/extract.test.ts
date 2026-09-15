@@ -131,4 +131,36 @@ describe("extractCandidate", () => {
       });
     }
   });
+
+  describe("investor-first (object-target) financing constructions", () => {
+    it("identifies the investee, not the investor, in the real Kaiko/S&P Global headline", () => {
+      const e = extractCandidate(item({ title: "S&P Global backs Kaiko as Series B reaches $110M" }))!;
+      expect(e.name).toBe("Kaiko");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+
+    it("identifies a synthetic investee for a generic backing construction", () => {
+      const e = extractCandidate(
+        item({ title: "Acme Capital backs Ledgerforge as seed round reaches $6M" }),
+      )!;
+      expect(e.name).toBe("Ledgerforge");
+    });
+
+    it("identifies the investee for a 'leads investment in' construction", () => {
+      const e = extractCandidate(item({ title: "Acme Capital leads investment in Protoflow" }))!;
+      expect(e.name).toBe("Protoflow");
+    });
+
+    it("identifies the investee for an 'invests in' construction", () => {
+      const e = extractCandidate(item({ title: "Beta Fund invests in Chainforge" }))!;
+      expect(e.name).toBe("Chainforge");
+    });
+
+    it("does not treat a political/institutional endorsement as a financing event", () => {
+      const e = extractCandidate(
+        item({ title: "SEC's Atkins backs Clarity Act but says agency will keep pushing crypto rules" }),
+      )!;
+      expect(e.identityConfidence).toBe("needs_review");
+    });
+  });
 });

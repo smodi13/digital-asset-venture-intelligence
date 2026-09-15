@@ -35,3 +35,8 @@ export function dimensionLabel(id: string): string {
 export function titleCase(v: string): string {
   return v.replace(/[_-]/g, " ").replace(/^\w/, (c) => c.toUpperCase());
 }
+
+/** "1 candidate" / "2 candidates". Pass pluralForm for the rare irregular noun ("entity" -> "entities"). */
+export function plural(count: number, noun: string, pluralForm?: string): string {
+  return `${count} ${count === 1 ? noun : pluralForm ?? `${noun}s`}`;
+}
