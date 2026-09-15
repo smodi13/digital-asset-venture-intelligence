@@ -1,5 +1,6 @@
 import { describe, expect, it } from "vitest";
 import {
+  categorize,
   classifyDiscoveryUtility,
   classifyRelevance,
   isNoiseHeadline,
@@ -188,5 +189,68 @@ describe("withinLookback", () => {
   });
   it("keeps an item with no known date", () => {
     expect(withinLookback(null, now, 30)).toBe(true);
+  });
+});
+
+describe("categorize", () => {
+  // Regressions from live structured-funding review: generic descriptions
+  // that share the semantic shape of real candidates, never their names.
+  it("A: market data infrastructure for banks/exchanges maps to data, oracles, and indexing", () => {
+    expect(categorize(of("", "Market data infrastructure providing pricing and analytics to banks and exchanges."))).toBe(
+      "Data, oracles, and indexing",
+    );
+  });
+
+  it("B: onchain smart-contract exploit protection maps to security, privacy, and cryptography, not stablecoins/payments", () => {
+    expect(categorize(of("", "Onchain protection layer designed to mitigate losses from smart-contract exploits."))).toBe(
+      "Security, privacy, and cryptography",
+    );
+  });
+
+  it("C: institutional prediction market infrastructure maps to DeFi and capital markets, not custody", () => {
+    expect(categorize(of("", "Infrastructure platform for institutional prediction markets."))).toBe("DeFi and capital markets");
+  });
+
+  it("D: tokenizing real estate and private credit maps to tokenization and real-world assets (handles the -ing form)", () => {
+    expect(categorize(of("", "Platform tokenizing real estate and private credit onchain."))).toBe(
+      "Tokenization and real-world assets",
+    );
+  });
+
+  it("E: stablecoin payment infrastructure maps to stablecoins and payments", () => {
+    expect(categorize(of("", "Stablecoin payment infrastructure for cross-border settlement."))).toBe("Stablecoins and payments");
+  });
+
+  it("F: institutional custody and compliance maps to custody, compliance, and institutional infrastructure", () => {
+    expect(categorize(of("", "Institutional digital-asset custody and compliance platform."))).toBe(
+      "Custody, compliance, and institutional infrastructure",
+    );
+  });
+
+  it("data infrastructure wins over a co-occurring generic prediction-market mention (Oddpool shape)", () => {
+    expect(
+      categorize(
+        of(
+          "",
+          "A prediction market data infrastructure startup that aggregates trading signals and pricing information, providing structured data and data tooling to institutions.",
+        ),
+      ),
+    ).toBe("Data, oracles, and indexing");
+  });
+
+  it("a bare 'payment providers' customer-segment mention does not trigger stablecoins/payments (Firelight shape)", () => {
+    expect(
+      categorize(of("", "An onchain protection layer for DeFi, targeting fintech companies and payment providers.")),
+    ).toBe("Security, privacy, and cryptography");
+  });
+
+  for (const word of ["institutional", "banks", "financial", "market"]) {
+    it(`a bare generic term ("${word}") alone does not force any category`, () => {
+      expect(categorize(of("", `This is an ${word} company.`))).toBeNull();
+    });
+  }
+
+  it("returns null (Uncategorized) rather than forcing a category when no rule has adequate support", () => {
+    expect(categorize(of("", "A team building something new for the future."))).toBeNull();
   });
 });

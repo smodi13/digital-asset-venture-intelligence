@@ -228,14 +228,48 @@ export function isNoiseHeadline(title: string): boolean {
   return NOISE_PATTERNS.some((re) => re.test(title));
 }
 
-/** Best-effort tag into one of the project's 11 canonical categories. Never authoritative. */
+/**
+ * Best-effort tag into one of the project's 11 canonical categories. Never
+ * authoritative.
+ *
+ * Ordered most-specific-product-function first, most-generic-context last, so
+ * a narrow signal (e.g. "smart-contract exploit protection") outranks a
+ * broad one that happens to co-occur (e.g. a bare "DeFi" mention, or the
+ * word "Protocol" in a company's own name). Terms that are generic enough to
+ * fire on unrelated context - a bare "payment" (any company that lists
+ * "payment providers" as a customer segment), a bare "institutional" (almost
+ * every funding writeup), a bare "protocol"/"network" - are deliberately
+ * excluded or required to co-occur with a more specific qualifier, so this
+ * never over-fires into Tokenization/RWA, Stablecoins/payments, or
+ * Custody/compliance merely from market-context language. A best-effort
+ * mapper without adequate signal returns null (Uncategorized) rather than
+ * forcing a category.
+ */
 const CATEGORY_RULES: ReadonlyArray<{ re: RegExp; category: string }> = [
-  { re: /\bstablecoins?\b|\bpayments?\b|\bpayment rail\b/i, category: "Stablecoins and payments" },
-  { re: /\btokeniz(?:ation|ed|e)\b|\brwas?\b|\breal[\s-]world assets?\b/i, category: "Tokenization and real-world assets" },
-  { re: /\bcustody\b|\bcompliance\b|\binstitutional\b/i, category: "Custody, compliance, and institutional infrastructure" },
-  { re: /\bdefi\b|\bdexe?s?\b|\bcapital markets?\b/i, category: "DeFi and capital markets" },
-  { re: /\boracles?\b|\bindexing\b|\bdata infrastructure\b/i, category: "Data, oracles, and indexing" },
-  { re: /\bzero[\s-]knowledge\b|\bzk\b|\bprivacy\b|\bcryptography\b/i, category: "Security, privacy, and cryptography" },
+  {
+    re: /\btokeniz(?:ation|ed|es|e|ing)\b|\brwas?\b|\breal[\s-]world assets?\b|\btokenized (?:real estate|treasur(?:y|ies)|securit(?:y|ies)|funds?|credit)\b/i,
+    category: "Tokenization and real-world assets",
+  },
+  {
+    re: /\bstablecoins?\b|\bpayment rails?\b|\bpayments? infrastructure\b|\bcross-border payments?\b|\bpayment processing\b|\bpayment network\b|\bdigital payments\b|\bpayment settlement\b/i,
+    category: "Stablecoins and payments",
+  },
+  {
+    re: /\bzero[\s-]knowledge\b|\bzk\b|\bprivacy\b|\bcryptograph(?:y|ic)\b|\bsmart[\s-]contract exploits?\b|\bexploit protection\b|\bprotocol security\b|\bthreat detection\b|\brisk protection\b|\baudit infrastructure\b|\b(?:onchain |smart[\s-]contract )?protection layer\b|\bsecurity layer\b/i,
+    category: "Security, privacy, and cryptography",
+  },
+  {
+    re: /\boracles?\b|\bindexing\b|\bdata infrastructure\b|\bmarket data\b|\bmarket intelligence\b|\bpricing data\b|\banalytics infrastructure\b|\bdata feeds?\b|\btrading signals?\b|\bdata provider\b|\bhistorical datasets?\b/i,
+    category: "Data, oracles, and indexing",
+  },
+  {
+    re: /\bcustody\b|\bcompliance\b|\bkyc\b|\baml\b|\bwallet infrastructure\b|\bregulatory infrastructure\b|\binstitutional custody\b|\bsettlement infrastructure\b|\binstitutional[\s-]grade (?:custody|infrastructure)\b/i,
+    category: "Custody, compliance, and institutional infrastructure",
+  },
+  {
+    re: /\bdefi\b|\bdexe?s?\b|\bcapital markets?\b|\bprediction markets?\b|\btrading infrastructure\b|\bliquidity\b|\bderivatives?\b|\blending\b|\bmarket[\s-]making\b/i,
+    category: "DeFi and capital markets",
+  },
   { re: /\bdepin\b|\bdecentraliz(?:ed|e) compute\b/i, category: "DePIN and decentralized compute" },
   { re: /\bcrypto ai\b|\bagentic\b/i, category: "Crypto AI and agentic infrastructure" },
   { re: /\bconsumer\b|\bsocial\b|\bgaming\b/i, category: "Consumer, social, and gaming" },
