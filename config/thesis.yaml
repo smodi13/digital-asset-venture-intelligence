@@ -1,0 +1,202 @@
+# Digital Asset Venture Intelligence default investment thesis.
+#
+# This file is the investment methodology. No scoring code hardcodes any
+# criterion below: swapping this file changes what the product looks for
+# without touching application logic. That is what makes this product reusable
+# across venture capital, growth equity, private equity, and corporate venture.
+#
+# The default shipped here is oriented toward capital-efficient growth-stage
+# software and technology-enabled businesses. It is a starting independent
+# analyst framework and a worked example of the configuration format. It is not
+# a claim about any investment firm's internal process.
+
+id: growth-equity-default
+schemaVersion: 1
+version: "1.0.0"
+name: "Capital-efficient growth-stage software and technology-enabled businesses"
+
+description: >
+  A growth-equity oriented thesis for companies that have found a repeatable
+  way to sell, have grown without consuming capital out of proportion to the
+  revenue produced, and still have founders materially involved in the outcome.
+  It favours evidence of durable demand over evidence of activity.
+
+attribution: "Independent analyst framework. Not the methodology of any investment firm."
+
+coreBelief: >
+  At growth stage the question is no longer whether a product works, it is
+  whether the way the company acquires and keeps customers is repeatable and
+  worth funding. Capital efficiency is the clearest outside-in evidence that it
+  is: a company that reached meaningful revenue on modest capital has already
+  demonstrated that its motion works without being subsidised. Growth alone
+  does not show this, because growth can be purchased. The combination of
+  durable growth and efficient capital consumption is much harder to fake from
+  outside, and it is observable in public information.
+
+criteria:
+  stage:
+    question: "Is the company at a point where a growth investment is the right instrument?"
+    primary: [series_b, series_c, growth]
+    acceptable: [series_a, series_d_plus, bootstrapped]
+    excluded: [pre_seed, seed]
+
+  sector:
+    question: "Does the company operate where this thesis can judge quality from outside?"
+    primary:
+      - "Application software"
+      - "Infrastructure software"
+      - "Vertical software"
+      - "Data and analytics"
+      - "Security software"
+      - "Technology-enabled services"
+    secondary:
+      - "Fintech infrastructure"
+      - "Healthcare software"
+      - "Industrial software"
+    excluded:
+      - "Pre-revenue research"
+      - "Consumer social"
+
+  geography:
+    question: "Is the company somewhere this process can source and diligence credibly?"
+    primary: ["United States", "Canada"]
+    secondary: ["United Kingdom", "Western Europe", "Israel", "Australia"]
+    excluded: []
+
+  founderInvolvement:
+    question: "Are the people who built this still responsible for the outcome?"
+    preferred:
+      - "Founder is chief executive"
+      - "Founder holds an operating role"
+      - "Founding team substantially intact"
+      - "Founder retains meaningful ownership"
+    discouraged:
+      - "All founders departed"
+      - "Founder holds a title with no operating responsibility"
+
+  ownership:
+    question: "Is the capitalisation table one a growth investor can enter cleanly?"
+    preferred:
+      - "Lightly funded relative to revenue"
+      - "Bootstrapped to material revenue"
+      - "Clean preference stack"
+      - "Room for a meaningful minority position"
+    discouraged:
+      - "Structured preference from a prior round"
+      - "Capitalisation table with no room for a new position"
+      - "Control already held by a financial sponsor"
+
+  capitalEfficiency:
+    question: "How much revenue has the company produced per dollar it consumed?"
+    arrPerDollarRaised:
+      min: 0.5
+      max: null
+    impliedRunwayMonths:
+      min: 12
+      max: null
+
+  growth:
+    question: "Is growth durable and is it being achieved at a sane cost?"
+    annualGrowthPct:
+      min: 30
+      max: null
+    ruleOfForty:
+      min: 30
+      max: null
+
+  businessModel:
+    question: "Is revenue recurring, expanding, and hard to leave?"
+    preferred:
+      - "Recurring or contracted revenue"
+      - "Net revenue retention above one hundred percent"
+      - "Multi-year contracts"
+      - "Usage that grows with the customer"
+    discouraged:
+      - "Project revenue with no renewal"
+      - "Single-product single-seat pricing with no expansion path"
+      - "Revenue concentrated in one customer"
+
+  marketQuality:
+    question: "Is the buyer a real buyer with a real budget?"
+    preferred:
+      - "Identified budget holder"
+      - "Replaces an existing line of spend"
+      - "Regulatory or compliance driver"
+      - "Fragmented incumbent field"
+    discouraged:
+      - "Budget has to be created before anything can be sold"
+      - "Buying decision requires a committee with no owner"
+
+  gtm:
+    question: "Is the way this company sells repeatable by someone other than the founder?"
+    preferred:
+      - "Repeatable sales motion documented"
+      - "Sales hires reaching quota"
+      - "Land and expand within named accounts"
+      - "Partner or channel contribution"
+    discouraged:
+      - "Every deal closed personally by a founder"
+      - "No consistent motion across customers"
+
+  transaction:
+    question: "Can a position be taken here on terms that make sense?"
+    checkSizeUsdMillions:
+      min: 10
+      max: 75
+    targetOwnershipPct:
+      min: 10
+      max: 30
+    preferredStructures:
+      - "Primary minority growth investment"
+      - "Primary with limited secondary"
+      - "Structured minority with governance rights"
+
+positiveSignals:
+  - signalType: customer_momentum
+    rationale: "Named customers and disclosed adoption are the clearest outside-in evidence of demand."
+  - signalType: enterprise_expansion
+    rationale: "Expansion inside an existing account is harder to buy than a new logo and shows the product holds."
+  - signalType: executive_hire
+    rationale: "A functional leader hired from a credible operator suggests the company is building a motion, not a team of generalists."
+  - signalType: pricing_change
+    rationale: "A move to enterprise pricing or to usage-based pricing usually follows evidence of willingness to pay."
+  - signalType: geographic_expansion
+    rationale: "Opening a second market is expensive and is rarely done before the first one repeats."
+  - signalType: partnership
+    rationale: "A distribution partnership with a larger platform is third-party validation of the buyer thesis."
+  - signalType: technical_adoption
+    rationale: "Independent developers adopting the product is demand that the company did not manufacture."
+  - signalType: hiring_acceleration
+    rationale: "Sustained hiring into revenue roles is a costly commitment that tracks real pipeline."
+
+negativeSignals:
+  - signalType: leadership_departure
+    rationale: "A founder or functional leader leaving during a growth phase usually precedes information the outside does not yet have."
+  - signalType: funding
+    rationale: "A large round on structured terms can indicate the company could not raise cleanly, so a funding event is examined rather than assumed positive."
+  - signalType: security_incident
+    rationale: "A confirmed breach or disclosed vulnerability with customer exposure is a direct enterprise-trust risk, and a positive growth or funding event does not offset it."
+
+exclusions:
+  - id: not-private
+    rule: "The company is publicly listed."
+    rationale: "A listed company is not a private-markets sourcing candidate. It may appear as market context only."
+  - id: pre-revenue
+    rule: "The company has no evidence of revenue from a third party customer."
+    rationale: "This thesis judges the repeatability of a selling motion. A company with no customers has no motion to judge."
+  - id: founders-fully-departed
+    rule: "No founder holds an operating role and none retains meaningful ownership."
+    rationale: "Founder alignment is a weighted dimension of this thesis. Its complete absence is a threshold question, not a scoring penalty."
+  - id: insufficient-public-evidence
+    rule: "Fewer than three independent sources support the core commercial claims."
+    rationale: "A conclusion this process cannot evidence from outside is not a conclusion it should publish."
+
+# Thesis Fit dimension weights. Validated on load to sum to exactly 1.
+dimensionWeights:
+  capital_efficiency: 0.20
+  growth_momentum: 0.20
+  founder_alignment: 0.15
+  market_quality: 0.15
+  business_model_quality: 0.10
+  gtm_quality: 0.10
+  competitive_position: 0.10

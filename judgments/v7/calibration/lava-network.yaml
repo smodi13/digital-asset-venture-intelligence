@@ -1,0 +1,224 @@
+schemaVersion: 7
+candidateId: DIM-03
+entityId: co-lava-network
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:5687f303ee807c0a232614eafdc1e175fda01004334f5cdfb0470fddcf10ee01"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-lava-seed-15m, clm-lava-foundation-token-round]
+    rationale: >-
+      Primary capital consumed is well-corroborated ($15M company-level
+      seed plus $11M Foundation token round, both independently reported).
+      The only candidate scale evidence, a self-reported "50+ billion RPC
+      requests" figure, is recorded by the researcher as evidenceStatus
+      insufficient (unspecified period, low confidence, unclear whether it
+      spans testnet or mainnet), so no responsibly-sourced scale figure
+      exists to set against the known capital.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independently corroborated scale metric exists (gap-lava-network-metrics);
+      the sole candidate figure is explicitly flagged insufficient by the
+      research packet itself.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lava-mainnet-launch]
+    rationale: >-
+      Mainnet launch (July 2024) paired a 55M LAVA community airdrop with
+      $2M in initial network incentives, indicating the network required a
+      resourced incentive subsidy to bootstrap initial provider/user
+      participation rather than launching on organic pull alone. No data
+      exists on whether this subsidy reliance persists or tapers over
+      time.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No post-launch recurring cost, labor, or ongoing-subsidy evidence
+      exists in the frozen packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-lava-rpc-volume-selfreported]
+    rationale: >-
+      The only usage-adoption evidence is Lava's own July 2024 claim of
+      "50+ billion RPC requests across 30+ networks," which the packet
+      records as evidenceStatus insufficient: it is company-sourced, does
+      not specify the measurement period, and cannot be attributed to
+      testnet versus mainnet activity. It is cited here for completeness
+      but does not support a directional momentum judgment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independently corroborated, dated usage/transaction figure exists
+      (gap-lava-network-metrics); secondary aggregator figures (e.g., "40
+      million monthly active users") were deliberately excluded by the
+      research packet as insufficiently sourced.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party
+      integration growth for Lava Network.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lava-mainnet-launch]
+    rationale: >-
+      CEO Yair Cleper is named and sourced, but the packet records no
+      prior-company or education history for him. The clearest direct
+      execution evidence is that the team shipped a live, independently
+      reported public mainnet (July 2024) following the February 2024
+      seed round, which is delivered work rather than a roadmap claim.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No prior-company track record or education background is
+      established for the CEO.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 35
+    coverage: 1
+    citedEvidenceClaimIds: [clm-lava-foundation-control, clm-lava-lockup-extension]
+    rationale: >-
+      As of the May 2024 Foundation token round, independent journalism
+      reported the Lava Foundation as "the sole entity that sells tokens
+      and decides the roadmap for the network until the DAO is live at
+      mainnet"; no later source confirms that transition occurred
+      (gap-lava-dao-transition-status). A subsequent on-chain governance
+      vote extended the token lockup for stakeholders by one year in a
+      close vote reportedly supported by the same major holders whose
+      tokens it locks, a change whose investor-protective versus
+      protocol-protective motivation is not established. Together this is
+      evidence of concentrated, unconfirmed-transition control, tempered
+      by the fact that governance is at least conducted through visible
+      on-chain proposals rather than opaquely.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying demand, workflow criticality, or
+      costly third-party integration that would evidence funded urgency
+      or addressable market depth for decentralized RPC/data access.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-lava-legal-entity]
+    rationale: >-
+      The frozen packet's only identity-adjacent claim establishes that the
+      core development company is named MagmaDevs (formerly Lava Protocol
+      Inc.), but explicitly leaves incorporation jurisdiction and the
+      entity's legal relationship to the Lava Foundation unestablished. It
+      documents a naming clarification, not a jurisdiction or regulatory
+      finding, so no regulatory-trajectory judgment can be responsibly
+      made from it.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Jurisdiction and legal relationship between MagmaDevs and the Lava
+      Foundation are unestablished (gap-lava-legal-entity).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      LAVA-token incentivization of RPC providers is a distribution/
+      incentive mechanism, not itself evidence of a recurring company- or
+      protocol-side value-capture path (fee, take-rate, or otherwise); no
+      claim in the frozen packet documents such a mechanism.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee-capture or take-rate evidence exists in the frozen packet
+      distinct from token issuance/incentive distribution.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lava-mainnet-launch]
+    rationale: >-
+      The $2M in initial network incentives paid alongside the mainnet
+      airdrop is evidence the network relied on a funded subsidy to
+      bootstrap at launch. No data exists on whether this reliance has
+      tapered or whether contribution economics hold without continued
+      incentive spend.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No post-launch burn, contribution-margin, or token-sale-reliance
+      data exists in the frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable
+      enterprise/protocol sales channel, or composability-driven
+      integration pull, distinct from the network's own unverified
+      request-volume claim.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution or integration-pull evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding friction, audit/compliance
+      requirements, or ecosystem reachability for Lava's RPC/data-access
+      infrastructure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction or ecosystem-access evidence exists in the
+      frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim in the frozen packet independently assesses Lava's
+      architecture, mechanism, or performance against alternative
+      RPC/data-access providers; the mainnet-launch claim documents that a
+      network exists but not that it is differentiated.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment or benchmark exists in the
+      frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lava-foundation-control]
+    rationale: >-
+      The same centralized-control fact relevant to governance (Foundation
+      as sole controller of token sales and roadmap, transition to DAO
+      unconfirmed) also bears on durability: concentrated control is a
+      structural weakness for a network effect thesis premised on
+      decentralization. No claim documents validator/provider-base size,
+      audit history, or liquidity/retention data that would offset this.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No validator/provider-base size, audit history, or liquidity-retention
+      evidence exists in the frozen packet (gap-lava-decentralization).

@@ -1,0 +1,339 @@
+schemaVersion: 7
+candidateId: SPC-04
+canonicalId: co-cyfrin
+canonicalName: Cyfrin
+slug: cyfrin
+description: >-
+  Cyfrin is a blockchain security company offering smart contract audits,
+  formal verification, and security tooling, including the CodeHawks
+  competitive-audit marketplace, the Solodit vulnerability/finding database,
+  and the Aderyn open-source Solidity static analyzer. It also runs Cyfrin
+  Updraft, a free smart-contract security education platform.
+domain: cyfrin.io
+firstObservedAt: "2023-01-01"
+category: security_privacy_and_cryptography
+entityType: company
+assetType: equity
+institutionalOrientation: null
+digitalAssetLifecycle: null
+financingStage: unknown
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Cyfrin operates CodeHawks (competitive audit marketplace), Solodit
+        (vulnerability/finding database), Aderyn (open-source static
+        analyzer), and Cyfrin Updraft (education platform) as products under
+        the Cyfrin Inc. corporate umbrella.
+      relatedEntityId: null
+      relationType: product_of_company
+  protocolNetworkRelationship: null
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not independently confirm Cyfrin Inc.'s exact
+      incorporation jurisdiction, headquarters address, or current
+      CEO/leadership roster with full confidence; the company's own "About
+      Us" page and independent professional-network sources present
+      overlapping but not fully reconciled leadership details (see
+      researchNotes).
+people:
+  - id: per-patrick-collins
+    schemaVersion: 7
+    name: Patrick Collins
+    aliases: ["PatrickAlphaC"]
+    currentRole: Co-Founder
+    companyTenures:
+      - companyId: co-cyfrin
+        companyName: Cyfrin Inc.
+        role: Co-Founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-cyfrin-weekday-profile]
+    priorCompanies: ["Chainlink Labs"]
+    education: []
+    publicHandles:
+      github: "https://github.com/PatrickAlphaC"
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-cyfrin-weekday-profile]
+sources:
+  - id: src-cyfrin-about-us
+    schemaVersion: 7
+    publisher: Cyfrin
+    title: "Cyfrin - Built to Create a Safer Blockchain Ecosystem"
+    url: "https://www.cyfrin.io/about-us"
+    sourceType: official_company
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-cyfrin-weekday-profile
+    schemaVersion: 7
+    publisher: Weekday
+    title: "Patrick | Working at Cyfrin"
+    url: "https://www.weekday.works/people/patrick-collins-patrickalphac"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.45
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-01-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-cyfrin-github-org
+    schemaVersion: 7
+    publisher: GitHub (Cyfrin organization)
+    title: "Cyfrin GitHub organization"
+    url: "https://github.com/cyfrin"
+    sourceType: code_repository
+    tier: a
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-cyfrin-tracxn
+    schemaVersion: 7
+    publisher: Tracxn
+    title: "Cyfrin - Company Profile, Team & Competitors"
+    url: "https://tracxn.com/d/companies/cyfrin/__Pe6y4Ct_-D0BWuwznxSvFhdNDTbh5yHeNrC7v2nuDRQ"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.4
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-01-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+evidenceClaims:
+  - id: clm-cyfrin-identity-products
+    schemaVersion: 7
+    companyId: co-cyfrin
+    claim: >-
+      Cyfrin Inc. is a blockchain security company, founded 2023 and based in
+      Boston, Massachusetts per its own materials, offering smart contract
+      security audits, formal verification, and tooling including CodeHawks
+      (competitive audit marketplace), Solodit (vulnerability database), and
+      Aderyn (open-source Rust-based Solidity static analyzer).
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-cyfrin-about-us
+    supportingSourceIds: [src-cyfrin-github-org]
+    sourceUrl: "https://www.cyfrin.io/about-us"
+    publicationDate: null
+    metricAsOfDate: "2026-09-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      Boston HQ and 2023 founding are stated on Cyfrin's own site; not
+      independently corroborated by a company registry or non-company
+      source within the research budget for this batch.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Can Cyfrin Inc.'s incorporation jurisdiction, HQ address, and founding date be independently confirmed via a registry?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-cyfrin-founder-patrick-collins
+    schemaVersion: 7
+    companyId: co-cyfrin
+    claim: >-
+      Patrick Collins, previously a developer-relations engineer at Chainlink
+      Labs, is a co-founder of Cyfrin and its associated products (Cyfrin
+      Audits, Solodit, CodeHawks, Cyfrin Updraft); he is independently
+      identifiable as such via his GitHub profile and a third-party
+      professional-network listing.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-cyfrin-weekday-profile
+    supportingSourceIds: []
+    sourceUrl: "https://www.weekday.works/people/patrick-collins-patrickalphac"
+    publicationDate: null
+    metricAsOfDate: "2026-01-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: team
+    notes: >-
+      Cyfrin's own "About Us" page, as fetched for this packet, named a
+      different individual ("Mark Scrine") as CEO alongside other
+      leadership names not corroborated elsewhere; that page's leadership
+      roster could not be reconciled with the Patrick Collins co-founder
+      attribution, which is independently corroborated by his GitHub
+      profile, a Weekday professional profile, and his own prior public
+      writing under the Cyfrin/PatrickAlphaC identity. This packet records
+      only the independently corroborated founder claim and flags the
+      unreconciled discrepancy as a research gap rather than asserting a
+      full current leadership roster.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "What is Cyfrin's current, complete leadership roster and title assignment?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-cyfrin-no-confirmed-funding
+    schemaVersion: 7
+    companyId: co-cyfrin
+    claim: >-
+      No dated, confirmed external funding round for Cyfrin Inc. was found;
+      one third-party aggregator (Tracxn) characterizes the company as
+      unfunded / without a recorded funding round as of its most recent
+      profile update.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-cyfrin-tracxn
+    supportingSourceIds: []
+    sourceUrl: "https://tracxn.com/d/companies/cyfrin/__Pe6y4Ct_-D0BWuwznxSvFhdNDTbh5yHeNrC7v2nuDRQ"
+    publicationDate: null
+    metricAsOfDate: "2026-01-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: low
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Absence-of-funding claims from a single aggregator are weak evidence;
+      recorded as the best available signal that no material funding
+      announcement was found, not as proof none exists.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: "Has Cyfrin raised any priced or SAFE funding round, and if so on what terms?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-cyfrin-clients-scale
+    schemaVersion: 7
+    companyId: co-cyfrin
+    claim: >-
+      Cyfrin's own materials state it has secured "over $100B" in value,
+      served "120+" global customers, and advised on "$110M" under security
+      advisory, naming ZKsync, PwC, Chainlink, Wormhole, Ondo, Wintermute,
+      Farcaster, and Curve as clients.
+    statedValue: "$100B+ value secured; 120+ customers"
+    numericValue: null
+    unit: null
+    sourceId: src-cyfrin-about-us
+    supportingSourceIds: []
+    sourceUrl: "https://www.cyfrin.io/about-us"
+    publicationDate: null
+    metricAsOfDate: "2026-09-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Company-reported aggregate figures with no methodology disclosed
+      (e.g., how "value secured" is computed); no independent source
+      corroborates the specific dollar figures. Named clients (ZKsync,
+      Chainlink, Wormhole, Curve) are independently corroborated only in
+      the narrow sense that Cyfrin-authored audit reports for some of these
+      protocols are publicly listed in its GitHub audit-reports repository,
+      not that the aggregate dollar/customer-count figures are accurate.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Can the '$100B+ value secured' and customer-count figures be independently verified against Cyfrin's public audit-report repository?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents: []
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-cyfrin-funding
+    whatWasSearched: "Cyfrin Inc. funding rounds, investors, valuation (Crunchbase, PitchBook, CB Insights, direct search)"
+    whatCouldNotBeEstablished: >-
+      No dated, confirmed funding round was found; sources conflict between
+      "not funded" and vague references to an unspecified round with a
+      redacted amount. Recorded as no confirmed funding rather than
+      estimated.
+    expectedToMatter: true
+  - id: gap-cyfrin-leadership-roster
+    whatWasSearched: "Cyfrin's current executive/leadership roster and titles"
+    whatCouldNotBeEstablished: >-
+      Cyfrin's own About Us page (as fetched) and independent profiles of
+      Patrick Collins present different pictures of current leadership;
+      this packet could not reconcile a single authoritative current
+      roster within the research budget for this batch.
+    expectedToMatter: true
+  - id: gap-cyfrin-hq-legal-entity
+    whatWasSearched: "Cyfrin Inc. incorporation jurisdiction, registered HQ address"
+    whatCouldNotBeEstablished: >-
+      Boston, Massachusetts is stated on Cyfrin's own site but not
+      independently confirmed via a registry or filing.
+    expectedToMatter: false
+  - id: gap-cyfrin-audit-track-record
+    whatWasSearched: "Any material security incident tied to a Cyfrin-audited protocol that was subsequently exploited within the audited scope"
+    whatCouldNotBeEstablished: >-
+      Search results surfaced only general industry commentary about audit
+      scope limitations (deploy scripts, upgrade-introduced vulnerabilities
+      as an industry-wide pattern) rather than a specific, dated incident
+      tied to a Cyfrin audit; no material negative event specific to
+      Cyfrin's own audit track record was established.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: null
+  sourceOriginUncertainty: >-
+    All identity, product, and client claims trace to Cyfrin's own website;
+    the only genuinely independent corroboration found (GitHub org, Weekday
+    profile, Tracxn) covers narrow facts (repository existence, one
+    founder's identity, absence of a confirmed funding round), consistent
+    with the frozen THIN evidence-density label.
+  likelyContradictions: >-
+    Cyfrin's own "About Us" page (as fetched for this packet) names
+    different individuals in leadership roles than the independently
+    corroborated Patrick Collins co-founder/CEO attribution found via
+    GitHub and other public search results; this packet records only the
+    corroborated founder fact and flags the unreconciled leadership
+    roster as a gap rather than asserting a full team list.
+  completenessNotes: >-
+    Consistent with the frozen THIN evidence-density label: identity and
+    product/tooling claims are reasonably well established from the
+    company's own materials and GitHub organization, but financing, exact
+    team composition, HQ verification, and audit track record are not
+    independently corroborated and are recorded as gaps.
+researchCutoff: "2026-09-10"

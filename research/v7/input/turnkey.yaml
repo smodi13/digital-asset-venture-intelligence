@@ -1,0 +1,449 @@
+schemaVersion: 7
+candidateId: DIM-01
+canonicalId: co-turnkey
+canonicalName: Turnkey
+slug: turnkey
+description: >-
+  Turnkey provides non-custodial wallet infrastructure and open-source SDKs
+  for developers to embed crypto wallets and automate on-chain transaction
+  signing. Its core architecture uses AWS Nitro Enclave-based Trusted
+  Execution Environments (TEEs) and an open-source "QuorumOS" secure-computing
+  layer to keep private keys inaccessible outside the enclave, with
+  cryptographic attestations intended to make the system's behavior
+  independently verifiable rather than trusted blindly.
+domain: turnkey.com
+firstObservedAt: "2022-01-01"
+category: developer_infrastructure_and_middleware
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: null
+financingStage: "Series B"
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    Turnkey is a venture-backed operating company; it does not run its own
+    blockchain protocol or network and issues no token. Its infrastructure is
+    consumed by other companies/protocols that embed wallets in their own
+    products.
+  unresolvedBoundaryNotes:
+    - >-
+      The frozen universe contract records Turnkey's HQ/primary geography as
+      "San Francisco, USA"; The Block's June 2025 Series B report instead
+      describes Turnkey as "New York"-based. No source found in this batch
+      resolves the discrepancy; recorded as a validation-universe discrepancy
+      rather than silently altered.
+people:
+  - id: per-turnkey-bryce-ferguson
+    schemaVersion: 7
+    name: Bryce Ferguson
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-turnkey
+        companyName: Turnkey
+        role: Co-founder and CEO
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-turnkey-coindesk-seriesa, src-turnkey-theblock-seriesb]
+    priorCompanies: ["Coinbase"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-turnkey-coindesk-seriesa, src-turnkey-theblock-seriesb]
+  - id: per-turnkey-jack-kearney
+    schemaVersion: 7
+    name: Jack Kearney
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-turnkey
+        companyName: Turnkey
+        role: Co-founder
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-turnkey-coindesk-seriesa]
+    priorCompanies: ["Coinbase"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-turnkey-coindesk-seriesa]
+sources:
+  - id: src-turnkey-coindesk-seriesa
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Galaxy, Lightspeed Lead $15M Raise for Turnkey, Crypto Wallet Startup From Former Coinbase Employees"
+    url: "https://www.coindesk.com/tech/2024/04/23/galaxy-lightspeed-lead-15m-raise-for-turnkey-crypto-wallet-startup-from-former-coinbase-employees"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-04-23"
+    availabilityDate: "2024-04-23"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-turnkey-theblock-seriesb
+    schemaVersion: 7
+    publisher: The Block
+    title: "Former Coinbase employees raise $30 million Series B for crypto infrastructure startup Turnkey"
+    url: "https://www.theblock.co/post/357445/former-coinbase-employees-raise-30-million-series-b-crypto-infrastructure-startup-turnkey"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-06-09"
+    availabilityDate: "2025-06-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-turnkey-blog-seriesb
+    schemaVersion: 7
+    publisher: Turnkey (official)
+    title: "$30M Series B to secure the next era of crypto"
+    url: "https://www.turnkey.com/blog/30m-series-b-to-secure-the-next-era-of-crypto"
+    sourceType: official_company
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-06-09"
+    availabilityDate: "2025-06-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-turnkey-blog-2025wrap
+    schemaVersion: 7
+    publisher: Turnkey (official)
+    title: "2025 wrapped: Turnkey's crypto wallet infrastructure sees global adoption and recognition"
+    url: "https://www.turnkey.com/blog/2025-turnkey-crypto-wallet-infrastructure"
+    sourceType: official_company
+    tier: b
+    reliability: 0.5
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-01-07"
+    availabilityDate: "2026-01-07"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-turnkey-seed-2022
+    schemaVersion: 7
+    companyId: co-turnkey
+    claim: >-
+      Turnkey, co-founded by former Coinbase employees Bryce Ferguson and Jack
+      Kearney who had worked on Coinbase's custody service, raised a $7.5
+      million seed round in 2022.
+    statedValue: "$7.5 million"
+    numericValue: 7500000
+    unit: usd
+    sourceId: src-turnkey-coindesk-seriesa
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/tech/2024/04/23/galaxy-lightspeed-lead-15m-raise-for-turnkey-crypto-wallet-startup-from-former-coinbase-employees"
+    publicationDate: "2024-04-23"
+    metricAsOfDate: "2022-01-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Reported as background context within CoinDesk's April 2024 Series A
+      article rather than a contemporaneous 2022 report; no 2022-dated primary
+      announcement of the seed round was located in this research batch.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-turnkey-seriesa-2024
+    schemaVersion: 7
+    companyId: co-turnkey
+    claim: >-
+      Turnkey closed a $15 million Series A round (closed around October
+      2023, announced April 23, 2024) led by Lightspeed Faction and Galaxy
+      Ventures, with participation from Sequoia, Coinbase Ventures, Alchemy,
+      Figment Capital, and Mirana Ventures, bringing total funding to that
+      point to approximately $22.5 million.
+    statedValue: "$15 million"
+    numericValue: 15000000
+    unit: usd
+    sourceId: src-turnkey-coindesk-seriesa
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/tech/2024/04/23/galaxy-lightspeed-lead-15m-raise-for-turnkey-crypto-wallet-startup-from-former-coinbase-employees"
+    publicationDate: "2024-04-23"
+    metricAsOfDate: "2023-10-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by CoinDesk; the article states the round
+      "closed last October" relative to the April 2024 publication date, i.e.
+      approximately October 2023, distinct from the announcement date.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-turnkey-seriesb-2025
+    schemaVersion: 7
+    companyId: co-turnkey
+    claim: >-
+      Turnkey raised a $30 million Series B round, announced June 9, 2025,
+      led by Bain Capital Crypto with participation from Sequoia Capital,
+      Lightspeed Faction, Galaxy Ventures, Wintermute Ventures, and Variant,
+      bringing total disclosed funding to over $50 million.
+    statedValue: "$30 million"
+    numericValue: 30000000
+    unit: usd
+    sourceId: src-turnkey-theblock-seriesb
+    supportingSourceIds: [src-turnkey-blog-seriesb]
+    sourceUrl: "https://www.theblock.co/post/357445/former-coinbase-employees-raise-30-million-series-b-crypto-infrastructure-startup-turnkey"
+    publicationDate: "2025-06-09"
+    metricAsOfDate: "2025-06-09"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by The Block and corroborated by Turnkey's own
+      announcement (company disclosure, not independent, but consistent on
+      amount, investors, and date). Exact post-money valuation was not
+      disclosed in either source.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What is Turnkey's post-Series-B valuation?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-turnkey-scale-metrics-2025
+    schemaVersion: 7
+    companyId: co-turnkey
+    claim: >-
+      As of its June 2025 Series B announcement, Turnkey stated its
+      infrastructure powers over 50 million embedded wallets, secures
+      billions of dollars in crypto assets, and processes millions of
+      transactions weekly, with named customers including Bridge, Magic Eden,
+      Alchemy, and Moonshot.
+    statedValue: "50M+ wallets; billions in assets; millions of weekly transactions"
+    numericValue: null
+    unit: null
+    sourceId: src-turnkey-blog-seriesb
+    supportingSourceIds: [src-turnkey-theblock-seriesb]
+    sourceUrl: "https://www.turnkey.com/blog/30m-series-b-to-secure-the-next-era-of-crypto"
+    publicationDate: "2025-06-09"
+    metricAsOfDate: "2025-06-09"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Company-stated scale metrics, corroborated in headline framing by The
+      Block's independent report of the same figures but not independently
+      audited or broken out by customer; "billions in assets" and "millions
+      of transactions" are unquantified ranges, not precise figures.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Can wallet count, assets secured, and transaction volume be independently verified or broken out by customer?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-turnkey-product-architecture
+    schemaVersion: 7
+    companyId: co-turnkey
+    claim: >-
+      Turnkey's wallet infrastructure is built on AWS Nitro Enclave-based
+      Trusted Execution Environments and an open-source computation layer
+      called QuorumOS, with the stated design goal of keeping private key
+      material inaccessible outside the enclave and making system behavior
+      independently verifiable via cryptographic attestation rather than
+      requiring blind trust in Turnkey.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-turnkey-blog-seriesb
+    supportingSourceIds: []
+    sourceUrl: "https://www.turnkey.com/blog/30m-series-b-to-secure-the-next-era-of-crypto"
+    publicationDate: "2025-06-09"
+    metricAsOfDate: "2025-06-09"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Company-stated architecture description; QuorumOS's public repository
+      separately claims "multiple rigorous audits, internal and external,"
+      but no specific audit firm name, scope document, or audit date was
+      located in this research batch and is recorded as a gap rather than an
+      established audit fact.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Which third-party firm(s) audited QuorumOS/Turnkey's enclave architecture, on what scope, and when?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-turnkey-no-known-incidents
+    schemaVersion: 7
+    companyId: co-turnkey
+    claim: >-
+      No independently reported security exploit, breach, or material outage
+      affecting Turnkey's own infrastructure was found in this research
+      batch, as of the research cutoff.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: null
+    supportingSourceIds: []
+    sourceUrl: null
+    publicationDate: null
+    metricAsOfDate: "2026-09-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: unknown
+    sourceSubtype: null
+    confidence: unknown
+    modelEligibility: caveat
+    topic: risk
+    notes: >-
+      Absence-of-evidence finding, not proof of security quality: this
+      reflects the limits of the research budget for this batch, not a
+      confirmed clean incident history.
+    evidenceStatus: insufficient
+    analystInterpretation: >-
+      Treat as an open question rather than a positive signal; absence of
+      reported incidents is not equivalent to a verified clean record.
+    diligenceQuestion: "Has Turnkey disclosed any security incidents, bug bounty payouts, or enclave-related vulnerabilities to customers or regulators?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-turnkey-seriesa-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-turnkey
+    subjectNameRaw: Turnkey
+    signalType: funding
+    signalCategory: capital
+    signalDirection: positive
+    sourceId: src-turnkey-coindesk-seriesa
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Turnkey announced a $15M Series A (closed ~October 2023, announced
+      April 23, 2024) led by Lightspeed Faction and Galaxy Ventures.
+    evidenceIds: [clm-turnkey-seriesa-2024]
+    publicationDate: "2024-04-23"
+    availabilityDate: "2024-04-23"
+    eventDate: "2023-10-01"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-turnkey-seriesb-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-turnkey
+    subjectNameRaw: Turnkey
+    signalType: funding
+    signalCategory: capital
+    signalDirection: positive
+    sourceId: src-turnkey-theblock-seriesb
+    rawStrength: 0.55
+    evidenceSummary: >-
+      Turnkey announced a $30M Series B on June 9, 2025, led by Bain Capital
+      Crypto, bringing total disclosed funding to over $50M.
+    evidenceIds: [clm-turnkey-seriesb-2025]
+    publicationDate: "2025-06-09"
+    availabilityDate: "2025-06-09"
+    eventDate: "2025-06-09"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-turnkey-hq-discrepancy
+    whatWasSearched: "Turnkey's headquarters city/jurisdiction"
+    whatCouldNotBeEstablished: >-
+      The frozen universe contract states San Francisco, USA; The Block's
+      June 2025 report instead describes Turnkey as New York-based. No source
+      in this batch resolves the discrepancy.
+    expectedToMatter: false
+  - id: gap-turnkey-valuation
+    whatWasSearched: "Turnkey's post-Series-B valuation"
+    whatCouldNotBeEstablished: "Neither The Block nor Turnkey's own announcement disclosed a valuation figure."
+    expectedToMatter: true
+  - id: gap-turnkey-audit-specifics
+    whatWasSearched: "Named third-party security audit firm(s), scope, and date(s) for Turnkey/QuorumOS"
+    whatCouldNotBeEstablished: >-
+      Only a general company claim of "multiple rigorous audits, internal and
+      external" was found; no specific firm, report, or date was located.
+    expectedToMatter: true
+  - id: gap-turnkey-headcount
+    whatWasSearched: "Turnkey's total employee headcount"
+    whatCouldNotBeEstablished: "No source in this batch disclosed a headcount figure."
+    expectedToMatter: false
+  - id: gap-turnkey-revenue
+    whatWasSearched: "Turnkey's revenue, pricing model economics, or unit economics"
+    whatCouldNotBeEstablished: "No public source discloses revenue or take-rate/pricing economics."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: null
+  sourceOriginUncertainty: >-
+    The Series B amount, investors, and date are corroborated by both an
+    independent outlet (The Block) and Turnkey's own announcement, which
+    agree on the material facts; the scale metrics (wallets, assets secured)
+    originate solely from Turnkey's own announcement and are only echoed,
+    not independently verified, by The Block.
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen RICH evidence-density label: founder identity,
+    all three funding rounds (seed/Series A/Series B), and core product
+    architecture are well established via independent journalism plus
+    company disclosure. Valuation, precise headcount, revenue/unit
+    economics, and specific third-party audit documentation could not be
+    established within the research budget for this batch and are recorded
+    as gaps. Live TVL/on-chain metrics are not applicable: Turnkey is an
+    equity-only infrastructure company with no token or network of its own.
+researchCutoff: "2026-09-10"

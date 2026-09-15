@@ -1,0 +1,599 @@
+schemaVersion: 7
+candidateId: CAI-02
+canonicalId: co-skyfire
+canonicalName: Skyfire
+slug: skyfire
+description: >-
+  Skyfire (skyfire.xyz) builds the "Agent Trust Stack," payment
+  infrastructure that gives AI agents verifiable identity (the KYA / Know
+  Your Agent protocol) and their own USDC-stablecoin or card-rail-backed
+  wallets so they can autonomously identify themselves and transact without
+  human intervention at time of payment.
+domain: skyfire.xyz
+firstObservedAt: "2024-08-21"
+category: crypto_ai_and_agentic_infrastructure
+entityType: company
+assetType: unknown
+institutionalOrientation: null
+digitalAssetLifecycle: null
+financingStage: seed
+cohort: CALIBRATION
+nameAliasNote: >-
+  IMPORTANT: an unrelated, unaffiliated earlier company also named "Skyfire"
+  (Skyfire Labs, founded 2007 in Mountain View CA, maker of the Skyfire
+  mobile web browser and Rocket Optimizer, acquired by Opera Software in
+  2013 for $155M, browser discontinued 2014) shares the name with this
+  entity. That company is unrelated to skyfire.xyz / the Agent Trust Stack
+  / Amir Sarhangi and is explicitly excluded from this packet; no fact
+  about the 2007 Skyfire Labs is used here.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: >-
+  No evidence of any Skyfire-issued token was found. Skyfire's payment
+  rails move value via USDC stablecoin and traditional card/banking rails;
+  USDC is a third-party stablecoin, not a Skyfire-issued instrument. The
+  investable instrument, per available evidence, is equity in the
+  operating company. assetType is kept as unknown (matching the frozen
+  universe row) rather than corrected to equity, because no source in this
+  research budget established capitalization/cap-table detail sufficient
+  to confirm equity is the sole accessible instrument.
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    Skyfire is a single operating company (no separate foundation, DAO, or
+    on-chain protocol/network entity was found). It operates the KYA (Know
+    Your Agent) identity protocol and the KYAPay payment/checkout protocol
+    as company-controlled infrastructure; USDC settlement rides on
+    existing public stablecoin rails Skyfire does not control or issue.
+  unresolvedBoundaryNotes:
+    - >-
+      No source established Skyfire's state/country of incorporation, nor
+      whether "KYA" / "KYAPay" are operated by any legally distinct
+      subsidiary versus the parent operating company.
+people:
+  - id: per-amir-sarhangi
+    schemaVersion: 7
+    name: Amir Sarhangi
+    aliases: []
+    currentRole: Co-Founder and CEO
+    companyTenures:
+      - companyId: co-skyfire
+        companyName: Skyfire
+        role: Co-Founder and CEO
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-skyfire-techcrunch-launch-2024]
+    priorCompanies:
+      - "Ripple (VP of Products)"
+      - "Jibe Mobile (Founder and CEO)"
+      - "Google (leadership role, following Jibe Mobile acquisition, 2015)"
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-skyfire-techcrunch-launch-2024, src-skyfire-theaiinsider-launch-2025]
+  - id: per-craig-dewitt
+    schemaVersion: 7
+    name: Craig DeWitt
+    aliases: []
+    currentRole: Co-Founder and Chief Product Officer
+    companyTenures:
+      - companyId: co-skyfire
+        companyName: Skyfire
+        role: Co-Founder and Chief Product Officer
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-skyfire-techcrunch-launch-2024]
+    priorCompanies:
+      - "Ripple (executive role, prior to Skyfire)"
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-skyfire-techcrunch-launch-2024, src-skyfire-theaiinsider-launch-2025]
+sources:
+  - id: src-skyfire-techcrunch-launch-2024
+    schemaVersion: 7
+    publisher: TechCrunch
+    title: "Skyfire lets AI agents spend your money"
+    url: "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-08-21"
+    availabilityDate: "2024-08-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-skyfire-theblock-follow-on-2024
+    schemaVersion: 7
+    publisher: The Block
+    title: "Coinbase Ventures and a16z's CSX bring Skyfire's total funding raised to $9.5 million"
+    url: "https://www.theblock.co/post/322742/coinbase-ventures-and-a16zs-csx-bring-skyfires-total-funding-raised-to-9-5-million"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-10-24"
+    availabilityDate: "2024-10-24"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-skyfire-theaiinsider-launch-2025
+    schemaVersion: 7
+    publisher: The AI Insider
+    title: "Skyfire Launches AI-Native Payments Infrastructure to Power Autonomous Transactions"
+    url: "https://theaiinsider.tech/2025/03/12/skyfire-launches-ai-native-payments-infrastructure-to-power-autonomous-transactions/"
+    sourceType: independent_journalism
+    tier: c
+    reliability: 0.5
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-12"
+    availabilityDate: "2025-03-12"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-skyfire-pymnts-kyapay-2025
+    schemaVersion: 7
+    publisher: PYMNTS
+    title: "Skyfire Agents Mimic Humans to Shop, Sign Up and Pay Alone"
+    url: "https://www.pymnts.com/artificial-intelligence-2/2025/skyfire-launches-ai-agent-checkout-to-enable-fully-autonomous-transactions/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-14"
+    availabilityDate: "2025-07-14"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-skyfire-f5-partnership-2026
+    schemaVersion: 7
+    publisher: F5, Inc.
+    title: "F5 and Skyfire Partner to Advance Secure Agentic Commerce for the Enterprise"
+    url: "https://www.f5.com/company/news/press-releases/f5-skyfire-secure-agentic-commerce"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-skyfire-official-kya
+    schemaVersion: 7
+    publisher: Skyfire (official site)
+    title: "Know Your Agent (KYA)"
+    url: "https://skyfire.xyz/know-your-agent-kya/"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.5
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2025-03-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-skyfire-seed-85m
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      Skyfire launched publicly and announced an $8.5 million seed round on
+      August 21, 2024, with participation from Neuberger Berman, Brevan
+      Howard Digital, Intersection Growth Partners, DRW VC, Inception
+      Capital, Arrington Capital, Sfermion, Circle, FBG, Gemini, Crossbeam
+      Venture Partners, EveryRealm, Draper Associates, ARCA, and Ripple.
+    statedValue: "$8.5 million seed round"
+    numericValue: 8500000
+    unit: usd
+    sourceId: src-skyfire-techcrunch-launch-2024
+    supportingSourceIds: [src-skyfire-theblock-follow-on-2024]
+    sourceUrl: "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money"
+    publicationDate: "2024-08-21"
+    metricAsOfDate: "2024-08-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-skyfire-followon-total-95m
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      Skyfire's total seed funding reached $9.5 million after an additional
+      tranche from Coinbase Ventures and a16z's CSX (Crypto Startup
+      Accelerator), reported October 24, 2024.
+    statedValue: "$9.5 million total seed funding"
+    numericValue: 9500000
+    unit: usd
+    sourceId: src-skyfire-theblock-follow-on-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/322742/coinbase-ventures-and-a16zs-csx-bring-skyfires-total-funding-raised-to-9-5-million"
+    publicationDate: "2024-10-24"
+    metricAsOfDate: "2024-10-24"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-skyfire-founders
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      Skyfire was co-founded by Amir Sarhangi (CEO) and Craig DeWitt (Chief
+      Product Officer), both of whom previously worked together at Ripple;
+      Sarhangi previously founded Jibe Mobile, acquired by Google in 2015.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-skyfire-techcrunch-launch-2024
+    supportingSourceIds: [src-skyfire-theaiinsider-launch-2025]
+    sourceUrl: "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money"
+    publicationDate: "2024-08-21"
+    metricAsOfDate: "2024-08-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: team
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-skyfire-product-mechanics
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      Skyfire's product issues AI agents their own wallets funded with USDC
+      stablecoin (or traditional banking rails), with per-transaction and
+      time-based spending limits and human-approval triggers for
+      overspending, and monetizes via a 2-3% transaction fee with
+      potential future verification-service revenue.
+    statedValue: "2-3% transaction fee"
+    numericValue: null
+    unit: null
+    sourceId: src-skyfire-techcrunch-launch-2024
+    supportingSourceIds: []
+    sourceUrl: "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money"
+    publicationDate: "2024-08-21"
+    metricAsOfDate: "2024-08-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: business_model
+    notes: >-
+      As of this Aug 2024 launch report; no later source in this research
+      budget confirmed the fee structure was unchanged as of the cutoff.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Has the 2-3% transaction fee structure changed since the August 2024 launch, and what share of revenue comes from verification services versus transaction fees?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-skyfire-early-customers
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      At August 2024 launch, TechCrunch reported Denso using Skyfire to let
+      AI agents autonomously source materials, and Payman using Skyfire's
+      platform so AI agents could hire and pay contract workers
+      independently.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-skyfire-techcrunch-launch-2024
+    supportingSourceIds: []
+    sourceUrl: "https://techcrunch.com/2024/08/21/skyfire-lets-ai-agents-spend-your-money"
+    publicationDate: "2024-08-21"
+    metricAsOfDate: "2024-08-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Named as early users/design partners at launch, not as measured
+      production-transaction-volume customers; no usage depth (transaction
+      count, spend volume, contract terms) was established for either.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: "What is the depth/scale of the Denso and Payman integrations, and are they still active as of the cutoff?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-skyfire-kyapay-launch
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      Skyfire launched the open KYAPay protocol and an "Agent Checkout"
+      capability on or before July 14, 2025, enabling AI agents to
+      independently sign up for accounts, log in, and pay online; PYMNTS
+      reported roughly 30 launch partners including Apify, CarbonArc,
+      BuildShip, and Forter, with SDK integration reported as achievable
+      in "as little as 15 minutes."
+    statedValue: "~30 launch partners"
+    numericValue: 30
+    unit: partners
+    sourceId: src-skyfire-pymnts-kyapay-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.pymnts.com/artificial-intelligence-2/2025/skyfire-launches-ai-agent-checkout-to-enable-fully-autonomous-transactions/"
+    publicationDate: "2025-07-14"
+    metricAsOfDate: "2025-07-14"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      "~30 partners" as stated at launch is a company-supplied figure
+      reported by PYMNTS, not independently verified partner-by-partner;
+      no source established which of these partners had gone live in
+      production versus signed on as launch-day names.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: "How many of the ~30 launch partners were in live production use of KYAPay as of the research cutoff, versus announced-only?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-skyfire-f5-partnership
+    schemaVersion: 7
+    companyId: co-skyfire
+    claim: >-
+      F5, Inc. (NASDAQ: FFIV) announced a partnership with Skyfire on
+      March 18, 2026, to integrate Skyfire's KYA protocol into F5's
+      Distributed Cloud Bot Defense / Application Delivery and Security
+      Platform, so enterprises can distinguish verified AI-agent traffic
+      from malicious bots; the integration availability date was stated
+      as April 30, 2026.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-skyfire-f5-partnership-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.f5.com/company/news/press-releases/f5-skyfire-secure-agentic-commerce"
+    publicationDate: "2026-03-18"
+    metricAsOfDate: "2026-03-18"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: partnership
+    notes: >-
+      A named, publicly traded enterprise-technology counterparty
+      independently announcing the partnership on its own investor
+      newsroom is treated as materially stronger provenance than a
+      Skyfire-only announcement of the same fact.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-skyfire-seed-launch
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-skyfire
+    subjectNameRaw: Skyfire
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-skyfire-techcrunch-launch-2024
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Skyfire publicly launched with an $8.5 million seed round on August
+      21, 2024, reported by TechCrunch.
+    evidenceIds: [clm-skyfire-seed-85m]
+    publicationDate: "2024-08-21"
+    availabilityDate: "2024-08-21"
+    eventDate: "2024-08-21"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-skyfire-followon-funding
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-skyfire
+    subjectNameRaw: Skyfire
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-skyfire-theblock-follow-on-2024
+    rawStrength: 0.3
+    evidenceSummary: >-
+      Coinbase Ventures and a16z's CSX added to Skyfire's seed round,
+      bringing total seed funding to $9.5 million as of October 24, 2024.
+    evidenceIds: [clm-skyfire-followon-total-95m]
+    publicationDate: "2024-10-24"
+    availabilityDate: "2024-10-24"
+    eventDate: "2024-10-24"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-skyfire-kyapay-launch
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-skyfire
+    subjectNameRaw: Skyfire
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: positive
+    sourceId: src-skyfire-pymnts-kyapay-2025
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Skyfire launched the open KYAPay protocol and Agent Checkout with
+      approximately 30 launch partners, reported July 14, 2025.
+    evidenceIds: [clm-skyfire-kyapay-launch]
+    publicationDate: "2025-07-14"
+    availabilityDate: "2025-07-14"
+    eventDate: "2025-07-14"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: >-
+      Launch-day partner count and integration-ease claims are
+      company-supplied figures relayed by PYMNTS; the number of partners
+      in live production use versus announced-only was not independently
+      confirmed within this research budget.
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-skyfire-f5-partnership
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-skyfire
+    subjectNameRaw: Skyfire
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: positive
+    sourceId: src-skyfire-f5-partnership-2026
+    rawStrength: 0.6
+    evidenceSummary: >-
+      F5, Inc. partnered with Skyfire to integrate the KYA protocol into
+      F5's Distributed Cloud Bot Defense platform, announced March 18,
+      2026, with stated integration availability of April 30, 2026.
+    evidenceIds: [clm-skyfire-f5-partnership]
+    publicationDate: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    eventDate: "2026-03-18"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-skyfire-hq-incorporation
+    whatWasSearched: "Skyfire's headquarters address, state/country of incorporation, and legal entity name"
+    whatCouldNotBeEstablished: >-
+      Secondary aggregator sources (search-engine company-profile
+      snippets) describe Skyfire as San Francisco-based, but no primary or
+      independent-journalism source directly established or confirmed a
+      headquarters address or incorporation jurisdiction within this
+      research budget, so this fact was not encoded as an EvidenceClaim.
+    expectedToMatter: true
+  - id: gap-skyfire-full-founder-roster
+    whatWasSearched: "Whether Sarhangi and DeWitt are the only two founders or if additional co-founders exist"
+    whatCouldNotBeEstablished: >-
+      All sources consistently name only Amir Sarhangi and Craig DeWitt as
+      co-founders; no source suggested additional founders, but no source
+      explicitly confirmed a closed/complete founder list either.
+    expectedToMatter: false
+  - id: gap-skyfire-quantified-traction
+    whatWasSearched: >-
+      Quantified usage metrics: transaction volume, number of active
+      agents/wallets, revenue, or customer count as of any date close to
+      the 2026-09-10 cutoff
+    whatCouldNotBeEstablished: >-
+      No source with a clear value/period/asOf basis was found for
+      transaction volume, revenue, or active-agent counts at any point in
+      Skyfire's history. The March 2025 "beta exit" coverage referenced
+      "strong traction during beta" without quantification. No
+      digitalAssetMetrics record was created as a result.
+    expectedToMatter: true
+  - id: gap-skyfire-funding-since-2024
+    whatWasSearched: "Any funding round after the October 2024 $9.5M seed total (e.g., a Series A)"
+    whatCouldNotBeEstablished: >-
+      No source within this research budget reported a priced or announced
+      funding round after October 2024, through the 2026-09-10 cutoff.
+      Given continued product launches (KYAPay mid-2025, F5 partnership
+      March 2026) without a disclosed new round, it is unclear whether the
+      company remains funded solely by the original $9.5M seed, has raised
+      undisclosed capital, or is generating enough transaction-fee revenue
+      to avoid raising.
+    expectedToMatter: true
+  - id: gap-skyfire-security-audit
+    whatWasSearched: "Independent third-party security audit of the KYA/KYAPay protocol or wallet infrastructure"
+    whatCouldNotBeEstablished: >-
+      No independent security-audit report was found. Skyfire's own
+      documentation describes token/claim-based security design (RFC-7515
+      / RFC-7519 signed JWTs, published JWKS file, e2e HTTPS) but this is
+      self-reported design description, not an independent audit.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Treated as a single operating company per the frozen universe
+    assignment. No separate foundation, protocol-governance entity, or
+    token-issuing entity was found distinct from the Skyfire operating
+    company.
+  sourceOriginUncertainty: >-
+    IMPORTANT: an unrelated company also named "Skyfire" (Skyfire Labs,
+    2007-2013, mobile browser / Opera acquisition) surfaced during
+    research via a Wikipedia article and is explicitly excluded, see
+    nameAliasNote. No fact from that unrelated company appears in this
+    packet. Separately, the March 2025 "beta exit" coverage
+    (theaiinsider.tech) reads as substantially press-release-derived
+    (flagged isPressReleaseReproduction: true) and is treated as a weaker,
+    lower-tier corroborating source rather than primary-fact-bearing on
+    its own for any claim also covered by a stronger outlet.
+  likelyContradictions: null
+  completenessNotes: >-
+    Evidence density MODERATE per the frozen cohort assignment, consistent
+    with what was found: two independent, well-corroborated funding
+    announcements (Aug/Oct 2024), consistent founder identity across
+    sources, two later product/partnership milestones (KYAPay mid-2025,
+    F5 partnership March 2026) with genuinely independent corroboration
+    (a public company's own investor newsroom for the F5 deal). Capital
+    efficiency and growth-momentum evidence remain thin: no quantified
+    traction metric, no confirmed post-seed financing, and no independent
+    security audit were found despite deliberate searching, consistent
+    with an early-stage company two years past its only disclosed raise.
+researchCutoff: "2026-09-10"

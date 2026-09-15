@@ -1,0 +1,443 @@
+schemaVersion: 7
+candidateId: SPC-02
+canonicalId: co-taceo
+canonicalName: TACEO
+slug: taceo
+description: >-
+  TACEO is an Austrian cryptography company building "Private Shared State"
+  infrastructure using coSNARKs, a technique combining multiparty computation
+  (MPC) and zero-knowledge proofs (ZK), so multiple parties can jointly
+  compute on and prove facts about encrypted data without any party seeing
+  the underlying inputs.
+domain: taceo.io
+firstObservedAt: "2025-07-31"
+category: security_privacy_and_cryptography
+entityType: company
+assetType: equity
+institutionalOrientation: null
+digitalAssetLifecycle: null
+financingStage: seed
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    TACEO is an operating company (per the frozen universe assignment,
+    entityType: company, assetType: equity, no token). It operates the
+    "TACEO Network," a private-execution layer whose distributed nodes are
+    run by named third-party operators (Nethermind, Czech Technical
+    University); this is a company product/network offering, not a
+    tokenized protocol or blockchain network, and no token or separate
+    protocol-level entity was found.
+  unresolvedBoundaryNotes:
+    - >-
+      Austria is named as the headquarters country by independent coverage,
+      but no specific city, registered legal-entity name, or incorporation
+      jurisdiction detail was independently established within this research
+      pass.
+people:
+  - id: per-taceo-lukas-helminger
+    schemaVersion: 7
+    name: Lukas Helminger
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-taceo
+        companyName: TACEO
+        role: Co-founder and CEO
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-taceo-core-seed-announcement, src-taceo-techeu-seed]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-taceo-core-seed-announcement, src-taceo-techeu-seed]
+  - id: per-taceo-christian-rechberger
+    schemaVersion: 7
+    name: Christian Rechberger
+    aliases: []
+    currentRole: Co-founder and Chief Scientist
+    companyTenures:
+      - companyId: co-taceo
+        companyName: TACEO
+        role: Co-founder and Chief Scientist
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-taceo-core-seed-announcement]
+    priorCompanies: ["Graz University of Technology"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-taceo-core-seed-announcement]
+  - id: per-taceo-daniel-kales
+    schemaVersion: 7
+    name: Daniel Kales
+    aliases: []
+    currentRole: Co-founder and CTO
+    companyTenures:
+      - companyId: co-taceo
+        companyName: TACEO
+        role: Co-founder and CTO
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-taceo-core-seed-announcement]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-taceo-core-seed-announcement]
+sources:
+  - id: src-taceo-techeu-seed
+    schemaVersion: 7
+    publisher: Tech.eu
+    title: "TACEO raises $5.5M seed to scale encrypted data collaboration platform"
+    url: "https://tech.eu/2025/07/31/taceo-raises-55m-seed-to-scale-encrypted-data-collaboration-platform/"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-31"
+    availabilityDate: "2025-07-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-taceo-core-seed-announcement
+    schemaVersion: 7
+    publisher: TACEO (official)
+    title: "TACEO Raises Seed to Build Network for Private Shared State"
+    url: "https://core.taceo.io/articles/seed/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-31"
+    availabilityDate: "2025-07-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-taceo-thenextweb-network-launch
+    schemaVersion: 7
+    publisher: TheNextWeb
+    title: "TACEO launches its private execution network"
+    url: "https://thenextweb.com/news/taceo-network-launch-private-computation-world-id"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.75
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-03-19"
+    availabilityDate: "2026-03-19"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+evidenceClaims:
+  - id: clm-taceo-seed-round
+    schemaVersion: 7
+    companyId: co-taceo
+    claim: >-
+      TACEO raised a $5.5 million seed round, announced July 31, 2025, led by
+      Archetype, with participation from a16z CSX, Cyber.Fund, A.Capital
+      Ventures, Polymorphic Capital, and angel investors.
+    statedValue: "$5.5 million"
+    numericValue: 5500000
+    unit: usd
+    sourceId: src-taceo-techeu-seed
+    supportingSourceIds: [src-taceo-core-seed-announcement]
+    sourceUrl: "https://tech.eu/2025/07/31/taceo-raises-55m-seed-to-scale-encrypted-data-collaboration-platform/"
+    publicationDate: "2025-07-31"
+    metricAsOfDate: "2025-07-31"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by Tech.eu, corroborated by TACEO's own
+      contemporaneous announcement with the same lead/participant list.
+      Some aggregator coverage of the same round states an approximately
+      equivalent EUR figure (~EUR 4.8M); treated as an FX-converted
+      description of the same single round, not an additional or conflicting
+      financing event.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-taceo-founding-origin
+    schemaVersion: 7
+    companyId: co-taceo
+    claim: >-
+      TACEO was founded in 2022 by a six-person team (Lukas Helminger CEO,
+      Stefan Plank COO, Daniel Kales CTO, Lukas Gotz CPO, Aisling Connolly
+      CSO, and Christian Rechberger as Chief Scientist) originating from
+      Christian Rechberger's cryptography research group at Graz University
+      of Technology.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-taceo-core-seed-announcement
+    supportingSourceIds: []
+    sourceUrl: "https://core.taceo.io/articles/seed/"
+    publicationDate: "2025-07-31"
+    metricAsOfDate: "2025-07-31"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: team
+    notes: >-
+      Company-controlled disclosure; no independent source enumerating the
+      full founding team was located within this research pass, though the
+      CEO identity and 2022 founding year are corroborated by Tech.eu.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-taceo-world-partnership-2025-scale
+    schemaVersion: 7
+    companyId: co-taceo
+    claim: >-
+      As of Tech.eu's July 2025 reporting, TACEO's coSNARK-based MPC
+      infrastructure has secured iris-verification biometric data for World
+      (formerly Worldcoin) since a 2023 partnership, covering over 14
+      million users and described as the largest known deployment of
+      MPC-secured data at that time.
+    statedValue: "14 million+ users"
+    numericValue: 14000000
+    unit: users
+    sourceId: src-taceo-techeu-seed
+    supportingSourceIds: []
+    sourceUrl: "https://tech.eu/2025/07/31/taceo-raises-55m-seed-to-scale-encrypted-data-collaboration-platform/"
+    publicationDate: "2025-07-31"
+    metricAsOfDate: "2025-07-31"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: demand
+    notes: >-
+      Independent-journalism report of a named, verifiable customer
+      deployment; the specific user count originates from company
+      disclosure repeated by the outlet, not independently audited by
+      Tech.eu itself.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-taceo-world-partnership-2026-scale
+    schemaVersion: 7
+    companyId: co-taceo
+    claim: >-
+      As of TheNextWeb's March 19, 2026 reporting, TACEO's infrastructure
+      operates within World ID's proof-of-humanity verification covering
+      approximately 18 million users across 160 countries, up from the
+      approximately 14 million users reported in mid-2025 (a later, larger
+      snapshot of the same ongoing deployment, not a separate or conflicting
+      claim).
+    statedValue: "~18 million users, 160 countries"
+    numericValue: 18000000
+    unit: users
+    sourceId: src-taceo-thenextweb-network-launch
+    supportingSourceIds: []
+    sourceUrl: "https://thenextweb.com/news/taceo-network-launch-private-computation-world-id"
+    publicationDate: "2026-03-19"
+    metricAsOfDate: "2026-03-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: demand
+    notes: >-
+      Independent-journalism report; the user count again originates from
+      company disclosure repeated by the outlet.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-taceo-network-launch-2026
+    schemaVersion: 7
+    companyId: co-taceo
+    claim: >-
+      TACEO launched the "TACEO Network," described as a private execution
+      layer enabling computation on encrypted data without exposing
+      underlying inputs to participants or node operators, reported by
+      TheNextWeb on March 19, 2026.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-taceo-thenextweb-network-launch
+    supportingSourceIds: []
+    sourceUrl: "https://thenextweb.com/news/taceo-network-launch-private-computation-world-id"
+    publicationDate: "2026-03-19"
+    metricAsOfDate: "2026-03-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: "Independent-journalism report of a named product launch."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-taceo-node-operators
+    schemaVersion: 7
+    companyId: co-taceo
+    claim: >-
+      TACEO Network's distributed nodes are operated by named third parties,
+      including Nethermind and Czech Technical University's Faculty of
+      Electrical Engineering, spanning locations in the US, Europe, and Asia
+      as of the March 2026 launch report.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-taceo-thenextweb-network-launch
+    supportingSourceIds: []
+    sourceUrl: "https://thenextweb.com/news/taceo-network-launch-private-computation-world-id"
+    publicationDate: "2026-03-19"
+    metricAsOfDate: "2026-03-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Relevant to decentralization/operator-concentration questions: only
+      two named operators are identified in this source; whether more
+      operators exist was not established.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "How many total node operators run the TACEO Network, and how concentrated is operation among them?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-taceo-seed-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-taceo
+    subjectNameRaw: TACEO
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-taceo-techeu-seed
+    rawStrength: 0.4
+    evidenceSummary: >-
+      TACEO raised a $5.5M seed round (announced July 31, 2025) led by
+      Archetype, corroborated by both independent journalism and TACEO's own
+      announcement.
+    evidenceIds: [clm-taceo-seed-round]
+    publicationDate: "2025-07-31"
+    availabilityDate: "2025-07-31"
+    eventDate: "2025-07-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-taceo-network-launch-2026
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-taceo
+    subjectNameRaw: TACEO
+    signalType: product_launch
+    signalCategory: product
+    signalDirection: positive
+    sourceId: src-taceo-thenextweb-network-launch
+    rawStrength: 0.45
+    evidenceSummary: >-
+      TACEO launched its production TACEO Network (private execution layer)
+      on March 19, 2026, with independently identified third-party node
+      operators (Nethermind, Czech Technical University).
+    evidenceIds: [clm-taceo-network-launch-2026, clm-taceo-node-operators]
+    publicationDate: "2026-03-19"
+    availabilityDate: "2026-03-19"
+    eventDate: "2026-03-19"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-taceo-legal-entity
+    whatWasSearched: "TACEO's registered legal-entity name, city, and incorporation jurisdiction within Austria"
+    whatCouldNotBeEstablished: "Only the country (Austria) was established by independent coverage; no city, registered entity name, or incorporation date/jurisdiction was found."
+    expectedToMatter: true
+  - id: gap-taceo-security-audit
+    whatWasSearched: "Independent third-party security audit of TACEO's coSNARK protocol or TACEO Network implementation"
+    whatCouldNotBeEstablished: "No audit firm, report, or audit date was located within the research budget for this batch, despite the security-critical nature of the World ID biometric deployment."
+    expectedToMatter: true
+  - id: gap-taceo-revenue-business-model
+    whatWasSearched: "TACEO's revenue model, pricing, and customer base beyond the named World/World ID relationship"
+    whatCouldNotBeEstablished: "No source established revenue, pricing, contract terms with World, or other named customers beyond World ID."
+    expectedToMatter: true
+  - id: gap-taceo-node-operator-count
+    whatWasSearched: "Total number and identity of TACEO Network node operators"
+    whatCouldNotBeEstablished: "Only two named operators (Nethermind, Czech Technical University) were established; total operator count and concentration are unknown."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    TACEO is a single operating company per the frozen universe assignment
+    (entityType: company, assetType: equity); the "TACEO Network" is treated
+    as a company product/service, not a separate protocol or token-bearing
+    entity, consistent with no token or network-token evidence being found.
+  sourceOriginUncertainty: >-
+    The seed round is independently corroborated by Tech.eu and TACEO's own
+    announcement (same figures, no conflict). The network launch and World
+    ID user-scale figures rely primarily on TheNextWeb and Tech.eu, both
+    independent journalism, though the underlying user-count figures
+    originate from company disclosure repeated by each outlet rather than
+    being independently audited.
+  likelyContradictions: null
+  completenessNotes: >-
+    Evidence density is MODERATE per the frozen cohort assignment. Research
+    established the founding team, the July 2025 seed round, the World ID
+    partnership and its reported user-scale at two points in time, and the
+    March 2026 TACEO Network launch with named node operators. Legal-entity
+    detail, independent security audit status, revenue/business model, and
+    full node-operator count could not responsibly be established within the
+    research budget for this batch and are recorded as gaps.
+researchCutoff: "2026-09-10"

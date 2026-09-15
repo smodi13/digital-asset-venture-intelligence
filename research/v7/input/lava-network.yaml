@@ -1,0 +1,569 @@
+schemaVersion: 7
+candidateId: DIM-03
+canonicalId: co-lava-network
+canonicalName: Lava Network
+slug: lava-network
+description: >-
+  Lava Network is a decentralized RPC/data-access protocol that routes
+  application, exchange, and AI-agent traffic to independent data providers
+  across many blockchains, incentivized and secured by the LAVA token.
+domain: lavanet.xyz
+firstObservedAt: "2022-01-01"
+category: developer_infrastructure_and_middleware
+entityType: network
+assetType: token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_early
+financingStage: not_applicable
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        MagmaDevs (formerly named Lava Protocol Inc.) is the core
+        development company behind Lava Network; the Lava Foundation is a
+        separately described nonprofit-style entity, introduced publicly
+        in May 2024, that sells LAVA tokens and, per contemporaneous
+        reporting, was "the sole entity that sells tokens and decides the
+        roadmap for the network until the DAO is live at mainnet."
+      relatedEntityId: null
+      relationType: foundation_of_network
+  protocolNetworkRelationship: >-
+    MagmaDevs / Lava Protocol Inc. (core development company, led by CEO
+    Yair Cleper) built the Lava protocol; the Lava Foundation issues the
+    LAVA token and directed the roadmap pre-DAO; the live network is a
+    Cosmos-SDK-based chain whose LAVA token both incentivizes RPC providers
+    and governs the network through on-chain proposals.
+  unresolvedBoundaryNotes:
+    - >-
+      "MagmaDevs (formerly Lava Protocol Inc.)" is named as the core
+      development company by The Block, but no source established its
+      incorporation jurisdiction, nor the exact legal relationship between
+      MagmaDevs and the Lava Foundation (e.g., common ownership, contractual
+      services agreement, or something else).
+    - >-
+      Public sources did not establish the degree to which network control
+      has actually decentralized away from the core team/Foundation since
+      mainnet, versus remaining a stated future intent (a DAO "at mainnet"
+      per the May 2024 report).
+people:
+  - id: per-yair-cleper
+    schemaVersion: 7
+    name: Yair Cleper
+    aliases: []
+    currentRole: CEO
+    companyTenures:
+      - companyId: co-lava-network
+        companyName: Lava Network
+        role: CEO
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-lava-theblock-seed-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-lava-theblock-seed-2024]
+sources:
+  - id: src-lava-theblock-seed-2024
+    schemaVersion: 7
+    publisher: The Block
+    title: "Modular blockchain developer Lava raises $15 million, offering reward points called Magma"
+    url: "https://www.theblock.co/post/277605/crypto-lava-network-funding-reward-points-magma"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-02-15"
+    availabilityDate: "2024-02-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-lava-theblock-mainnet-2024
+    schemaVersion: 7
+    publisher: The Block
+    title: "Lava Network launches public mainnet and airdrops 55 million tokens"
+    url: "https://www.theblock.co/post/308380/lava-network-launches-public-mainnet-and-airdrops-55-million-tokens"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-07-30"
+    availabilityDate: "2024-07-30"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-lava-official-eruption-blog
+    schemaVersion: 7
+    publisher: Lava Network (official blog)
+    title: "Introducing Lava Mainnet (Eruption)"
+    url: "https://www.lavanet.xyz/blog/eruption"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-07-30"
+    availabilityDate: "2024-07-30"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-lava-panews-proposal28
+    schemaVersion: 7
+    publisher: PANews
+    title: "Lava Network passes proposal to extend LAVA token lock-up to January 2026"
+    url: "https://www.panewslab.com/en/sqarticledetails/q36shmsl.html"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-12-13"
+    availabilityDate: "2024-12-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-lava-explorer-proposal28
+    schemaVersion: 7
+    publisher: Lava blockchain explorer
+    title: "Proposal #28 Details"
+    url: "https://lava.explorers.guru/proposal/28"
+    sourceType: block_explorer
+    tier: a
+    reliability: 0.9
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: onchain_fact
+  - id: src-lava-theblock-foundation-round-2024
+    schemaVersion: 7
+    publisher: The Block
+    title: "Lava Foundation raises $11 million in token round ahead of airdrop"
+    url: "https://www.theblock.co/post/292935/lava-foundation-token-funding-round-airdrop"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-05-07"
+    availabilityDate: "2024-05-07"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-lava-official-mainnet-reflections
+    schemaVersion: 7
+    publisher: Lava Network (official blog)
+    title: "Lava's launch - Reflections and the road ahead"
+    url: "https://www.lavanet.xyz/blog/mainnet-reflections"
+    sourceType: official_network_source
+    tier: c
+    reliability: 0.45
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-07-31"
+    availabilityDate: "2024-07-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-lava-seed-15m
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      Lava Network raised $15 million in a seed round announced February
+      15, 2024, led by Jump Capital, HashKey Capital, and Tribe Capital,
+      with participation from North Island Ventures, Dispersion Capital,
+      Alliance DAO, Node Capital, and Finality Capital Partners.
+    statedValue: "$15 million"
+    numericValue: 15000000
+    unit: usd
+    sourceId: src-lava-theblock-seed-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/277605/crypto-lava-network-funding-reward-points-magma"
+    publicationDate: "2024-02-15"
+    metricAsOfDate: "2024-02-15"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-lava-mainnet-launch
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      Lava Network launched its public mainnet ("Eruption") on July 30,
+      2024, with a community-first airdrop of 55 million LAVA tokens to
+      roughly 70,000 users and $2 million in initial network incentives.
+    statedValue: "55 million LAVA airdropped"
+    numericValue: 55000000
+    unit: LAVA_tokens
+    sourceId: src-lava-theblock-mainnet-2024
+    supportingSourceIds: [src-lava-official-eruption-blog]
+    sourceUrl: "https://www.theblock.co/post/308380/lava-network-launches-public-mainnet-and-airdrops-55-million-tokens"
+    publicationDate: "2024-07-30"
+    metricAsOfDate: "2024-07-30"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Independent-journalism report (The Block) and the official Lava blog
+      post are treated as corroborating rather than duplicate: the official
+      post is first-party and cannot corroborate itself, but the fact is
+      independently confirmed by The Block.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-lava-lockup-extension
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      Lava Network's on-chain governance passed Proposal #28, extending the
+      LAVA token lockup for stakeholders by one additional year to January
+      2026; the proposal was reported as supported by major token holders
+      including Tribe Capital, HashKey, and Jump, and described as a close
+      vote.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-lava-panews-proposal28
+    supportingSourceIds: [src-lava-explorer-proposal28]
+    sourceUrl: "https://www.panewslab.com/en/sqarticledetails/q36shmsl.html"
+    publicationDate: "2024-12-13"
+    metricAsOfDate: "2024-12-13"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: governance
+    notes: >-
+      This is a token-holder-favorable governance change (a lockup
+      extension delays token holder liquidity but was reportedly supported
+      by the same major holders whose tokens it locks); recorded as
+      ambiguous direction rather than assumed positive or negative.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Was the lockup extension primarily investor-protective (avoiding a
+      supply overhang) or protocol-protective, and how did smaller
+      token holders vote relative to large holders?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-lava-legal-entity
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      The core development company behind Lava Network is named "MagmaDevs"
+      (formerly "Lava Protocol Inc."); the earlier February 2024 $15
+      million seed round was raised under the Lava Protocol Inc. name
+      before the company's rename.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-lava-theblock-foundation-round-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/292935/lava-foundation-token-funding-round-airdrop"
+    publicationDate: "2024-05-07"
+    metricAsOfDate: "2024-05-07"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      This partially resolves the prior legal-entity gap (a name is now
+      established), but incorporation jurisdiction is still not
+      established; the gap is narrowed, not closed.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "What is MagmaDevs' incorporation jurisdiction and its exact contractual relationship to the Lava Foundation?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-lava-foundation-token-round
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      The Lava Foundation, described as a nonprofit entity for the
+      development of the Lava network, raised $11 million in a token round
+      (SAFT) announced May 7, 2024, with participation from Animoca
+      Brands, Gate.io Ventures, CoinGecko Ventures, and Polygon co-founder
+      Sandeep Nailwal, ahead of the network's token airdrop.
+    statedValue: "$11 million"
+    numericValue: 11000000
+    unit: usd
+    sourceId: src-lava-theblock-foundation-round-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/292935/lava-foundation-token-funding-round-airdrop"
+    publicationDate: "2024-05-07"
+    metricAsOfDate: "2024-05-07"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      A distinct round from the Feb 2024 $15M company-level seed round;
+      this packet now records both rather than only the earlier one.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-lava-foundation-control
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      As of the May 2024 Foundation token round, The Block reported the
+      Lava Foundation as "the sole entity that sells tokens and decides
+      the roadmap for the network until the DAO is live at mainnet,"
+      indicating centralized control of token sales and roadmap decisions
+      pending a stated future transition to DAO governance.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-lava-theblock-foundation-round-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/292935/lava-foundation-token-funding-round-airdrop"
+    publicationDate: "2024-05-07"
+    metricAsOfDate: "2024-05-07"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: governance
+    notes: >-
+      This is a governance-concentration fact as of May 2024, reported
+      contemporaneously with mainnet launch; no later source was found
+      within the research budget for this batch confirming whether the
+      stated "DAO at mainnet" transition has actually occurred.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Has the described DAO transition actually occurred, and what is the current on-chain governance/control structure?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-lava-rpc-volume-selfreported
+    schemaVersion: 7
+    companyId: co-lava-network
+    claim: >-
+      Lava's own July 31, 2024 launch-retrospective blog post states the
+      network "handled 50+ billion RPC requests across 30+ networks"
+      without specifying the exact measurement period or whether this
+      spans the testnet phase, the mainnet period, or both.
+    statedValue: "50+ billion RPC requests across 30+ networks (period unspecified)"
+    numericValue: null
+    unit: null
+    sourceId: src-lava-official-mainnet-reflections
+    supportingSourceIds: []
+    sourceUrl: "https://www.lavanet.xyz/blog/mainnet-reflections"
+    publicationDate: "2024-07-31"
+    metricAsOfDate: "2024-07-31"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Recorded as an attributed factual claim only, per this batch's QA
+      guidance, not as a digitalAssetMetrics record: the source does not
+      state a clear value/period/asOf basis (it is unclear whether this
+      figure covers testnet, mainnet, or both, and no independent
+      corroboration with clear methodology was found). Deliberately not
+      converted into a precise period metric.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: "What time period does the 50+ billion RPC request figure actually cover, and can it be independently corroborated?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-lava-mainnet-launch
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-lava-network
+    subjectNameRaw: Lava Network
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-lava-theblock-mainnet-2024
+    rawStrength: 0.6
+    evidenceSummary: >-
+      Lava Network launched its public mainnet on July 30, 2024, with a
+      community-first airdrop of 55 million LAVA tokens and $2 million in
+      initial network incentives, independently reported by The Block.
+    evidenceIds: [clm-lava-mainnet-launch]
+    publicationDate: "2024-07-30"
+    availabilityDate: "2024-07-30"
+    eventDate: "2024-07-30"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-lava-governance-lockup
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-lava-network
+    subjectNameRaw: Lava Network
+    signalType: governance_change
+    signalCategory: market
+    signalDirection: ambiguous
+    sourceId: src-lava-panews-proposal28
+    rawStrength: 0.4
+    evidenceSummary: >-
+      On-chain Proposal #28 extended the LAVA token lockup for
+      stakeholders by one year to January 2026, in a close vote reportedly
+      supported by major token holders.
+    evidenceIds: [clm-lava-lockup-extension]
+    publicationDate: "2024-12-13"
+    availabilityDate: "2024-12-13"
+    eventDate: "2024-12-13"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-lava-foundation-round
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-lava-network
+    subjectNameRaw: Lava Network
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-lava-theblock-foundation-round-2024
+    rawStrength: 0.4
+    evidenceSummary: >-
+      The Lava Foundation raised $11 million in a token round (SAFT)
+      announced May 7, 2024, ahead of the network's mainnet and airdrop,
+      independently reported by The Block; the same report also named the
+      Foundation as the sole controller of token sales and roadmap
+      decisions pending a stated future DAO transition.
+    evidenceIds: [clm-lava-foundation-token-round, clm-lava-foundation-control]
+    publicationDate: "2024-05-07"
+    availabilityDate: "2024-05-07"
+    eventDate: "2024-05-07"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-lava-legal-entity
+    whatWasSearched: "Legal entity name, jurisdiction, and headquarters for the Lava core development team/foundation"
+    whatCouldNotBeEstablished: >-
+      A name is now established ("MagmaDevs," formerly "Lava Protocol
+      Inc.," for the core development company; "Lava Foundation" for the
+      token-issuing nonprofit entity), narrowing but not closing this gap:
+      no source established either entity's incorporation jurisdiction or
+      headquarters, nor the exact legal relationship between the two
+      entities.
+    expectedToMatter: true
+  - id: gap-lava-dao-transition-status
+    whatWasSearched: >-
+      Whether the DAO governance transition described in the May 2024
+      Foundation funding report ("until the DAO is live at mainnet") has
+      actually occurred
+    whatCouldNotBeEstablished: >-
+      No source dated after mainnet launch (July 2024) was found within
+      the research budget for this batch confirming whether governance
+      has actually transitioned to a DAO, or whether the Foundation
+      retains the described control.
+    expectedToMatter: true
+  - id: gap-lava-network-metrics
+    whatWasSearched: "Sourced, dated figures for RPC request volume, active users, and provider/operator counts"
+    whatCouldNotBeEstablished: >-
+      Secondary aggregator coverage cites figures such as "100 billion
+      requests" and "40 million monthly active users," but no primary or
+      independent-journalism source with clear methodology was found within
+      the research budget for this batch, so no digitalAssetMetrics record
+      was created.
+    expectedToMatter: true
+  - id: gap-lava-decentralization
+    whatWasSearched: "Validator/provider decentralization, admin key structure, upgrade governance"
+    whatCouldNotBeEstablished: "No source addressed the concrete decentralization or admin-control structure of the live network."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Treated as one network entity per the frozen universe assignment. A
+    distinct company-level seed round (Feb 2024) and a Lava Foundation
+    token round (May 2024, not separately sourced in this packet) both
+    exist in public reporting; this packet cites only the well-corroborated
+    Feb 2024 seed round and the mainnet/governance events.
+  sourceOriginUncertainty: >-
+    IMPORTANT: two unrelated "Lava"-named projects surfaced during
+    research and are explicitly NOT this entity. (1) "Lava Lending," a
+    different protocol that suffered a flash-loan exploit in March 2024.
+    (2) A "Lava Financial" / "Lava Ltd." smart-contract audit referenced by
+    a third-party audit-listing site (Cyberscope) and a "docs.lavadefi.io"
+    URL that does not resolve (DNS failure) as of 2026-09-11 -- this audit
+    could not be verified as belonging to Lava Network at all and is
+    excluded from this packet. No exploit or audit evidence from either
+    unrelated project is attributed to Lava Network (lavanet.xyz / Lava
+    Foundation / MagmaDevs) here.
+  likelyContradictions: null
+  completenessNotes: >-
+    Evidence density MODERATE per the frozen cohort assignment. This QA
+    pass added the Lava Foundation's May 2024 $11M token round, the
+    MagmaDevs/Lava Protocol Inc. legal-entity name, a governance-control
+    fact (Foundation as sole controller of token sales/roadmap pending a
+    DAO transition), and an explicitly-caveated self-reported RPC-volume
+    claim. Adoption metrics remain a gap: no source with clear
+    value/period/asOf basis was found, and secondary aggregator figures
+    (e.g., "40 million monthly active users") were excluded as evidence
+    rather than included with weak provenance.
+researchCutoff: "2026-09-10"

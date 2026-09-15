@@ -1,0 +1,425 @@
+schemaVersion: 7
+candidateId: TRA-04
+canonicalId: co-anemoy
+canonicalName: Anemoy
+slug: anemoy
+description: >-
+  Anemoy is a web3-native asset manager, founded 2023, operating as an
+  affiliated asset-management vehicle built on the Centrifuge protocol,
+  tokenizing and distributing real-world-asset funds (short-term Treasuries
+  via the Janus Henderson Anemoy Treasury Fund / JTRSY, and private/direct
+  credit via the Anemoy Tokenized Apollo Diversified Credit Fund / ACRDX)
+  for institutional on-chain access.
+domain: anemoy.io
+firstObservedAt: "2023-01-01"
+category: tokenization_and_real_world_assets
+entityType: protocol
+assetType: unknown
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: unknown
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Anemoy was co-founded by Martin Quensel, who also co-founded
+        Centrifuge; Anemoy is described in Centrifuge and Janus Henderson
+        materials as advancing Centrifuge's efforts to build RWA products
+        bridging traditional finance and DeFi, and operates on the
+        Centrifuge tokenization protocol.
+      relatedEntityId: null
+      relationType: shared_founder_and_protocol_dependency
+  protocolNetworkRelationship: >-
+    Anemoy is a company/asset-manager entity (a third-party aggregator
+    profile names it "Anemoy Capital SPC Limited") that issues tokenized
+    funds using the Centrifuge protocol as its tokenization/blockchain
+    infrastructure layer; it is not itself the Centrifuge protocol or
+    network. A Centrifuge governance-forum thread active shortly before the
+    research cutoff shows this company/protocol boundary, and specifically
+    whether CFG (Centrifuge's token) holders have any economic claim on
+    Anemoy, as an open and explicitly unresolved question among Centrifuge
+    community members.
+  unresolvedBoundaryNotes:
+    - >-
+      The "Anemoy Capital SPC Limited" legal-entity name and Dublin,
+      Ireland headquarters were found only via a single structured-secondary
+      aggregator profile (CB Insights), not independently confirmed via a
+      registry or Anemoy's own materials.
+    - >-
+      Whether the Centrifuge Network Foundation holds equity in Anemoy, or
+      whether CFG token holders have any indirect economic claim on
+      Anemoy's revenue, is explicitly posed as an open, unanswered question
+      in a Centrifuge governance-forum thread from August 2026 (see
+      signalEvents and evidenceClaims).
+people:
+  - id: per-martin-quensel
+    schemaVersion: 7
+    name: Martin Quensel
+    aliases: []
+    currentRole: Co-Founder
+    companyTenures:
+      - companyId: co-anemoy
+        companyName: Anemoy
+        role: Co-Founder
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-anemoy-janushenderson-ir]
+      - companyId: null
+        companyName: Centrifuge
+        role: Co-Founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-anemoy-janushenderson-ir]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-anemoy-janushenderson-ir]
+  - id: per-anil-sood
+    schemaVersion: 7
+    name: Anil Sood
+    aliases: []
+    currentRole: Co-Founder
+    companyTenures:
+      - companyId: co-anemoy
+        companyName: Anemoy
+        role: Co-Founder
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-anemoy-janushenderson-ir]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-anemoy-janushenderson-ir]
+sources:
+  - id: src-anemoy-janushenderson-ir
+    schemaVersion: 7
+    publisher: Janus Henderson Group plc (investor relations)
+    title: "Janus Henderson to Partner with Anemoy and Centrifuge on Its First Tokenized Fund"
+    url: "https://ir.janushenderson.com/News--Events/news/news-details/2024/Janus-Henderson-to-Partner-with-Anemoy-and-Centrifuge-on-Its-First-Tokenized-Fund/default.aspx"
+    sourceType: regulatory
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-09-13"
+    availabilityDate: "2024-09-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-anemoy-crypto-news-acrdx
+    schemaVersion: 7
+    publisher: crypto.news
+    title: "Grove anchors $50m in Apollo tokenized credit fund on Plume"
+    url: "https://crypto.news/grove-anchors-50m-in-apollo-tokenized-credit-fund-on-plume/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-09-16"
+    availabilityDate: "2025-09-16"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-anemoy-cbinsights
+    schemaVersion: 7
+    publisher: CB Insights
+    title: "Anemoy - Products, Competitors, Financials, Employees, Headquarters Locations"
+    url: "https://www.cbinsights.com/company/anemoy"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.4
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-01-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+  - id: src-anemoy-centrifuge-gov-forum
+    schemaVersion: 7
+    publisher: Centrifuge Governance Forum
+    title: "Clarification on current capital structure and relationship with Anemoy"
+    url: "https://gov.centrifuge.io/t/clarification-on-current-capital-structure-and-relationship-with-anemoy/7582"
+    sourceType: governance_forum
+    tier: c
+    reliability: 0.5
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-08-23"
+    availabilityDate: "2026-08-23"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+evidenceClaims:
+  - id: clm-anemoy-ltf-launch
+    schemaVersion: 7
+    companyId: co-anemoy
+    claim: >-
+      Janus Henderson announced (September 13, 2024) a partnership with
+      Anemoy and Centrifuge to launch the Janus Henderson Anemoy Liquid
+      Treasury Fund (later branded JTRSY), a fully on-chain tokenized fund
+      providing investors direct access to short-term U.S. Treasury bills;
+      Anemoy, founded 2023 by Martin Quensel (also a Centrifuge co-founder)
+      and Anil Sood, is described as functioning as an asset-management
+      vehicle advancing Centrifuge's RWA product efforts and manages the
+      fund's on-chain origination, tokenization, and distribution lifecycle,
+      while Janus Henderson manages day-to-day fund operations through its
+      Tabula subsidiary.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-anemoy-janushenderson-ir
+    supportingSourceIds: []
+    sourceUrl: "https://ir.janushenderson.com/News--Events/news/news-details/2024/Janus-Henderson-to-Partner-with-Anemoy-and-Centrifuge-on-Its-First-Tokenized-Fund/default.aspx"
+    publicationDate: "2024-09-13"
+    metricAsOfDate: "2024-09-13"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Sourced from Janus Henderson's own investor-relations announcement
+      (a regulated public company's IR channel), which is independent of
+      Anemoy/Centrifuge as the counterparty naming the partnership.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-anemoy-acrdx-grove
+    schemaVersion: 7
+    companyId: co-anemoy
+    claim: >-
+      Grove (an institutional-grade credit-infrastructure protocol in the
+      Sky Ecosystem) deployed $50 million as an anchor investment (announced
+      September 16, 2025) into the Anemoy Tokenized Apollo Diversified
+      Credit Fund (ACRDX), a feeder fund providing tokenized access to
+      Apollo's diversified global credit strategy; the fund launched with
+      Centrifuge (tokenization infrastructure) and Plume (RWA-focused
+      settlement blockchain, distributing the strategy as nACRDX via its
+      Nest Credit vaults), with Chronicle as oracle provider and Wormhole
+      for cross-chain connectivity. Anemoy is named as the fund's asset
+      manager, subject to regulatory approval.
+    statedValue: "$50 million"
+    numericValue: 50000000
+    unit: usd
+    sourceId: src-anemoy-crypto-news-acrdx
+    supportingSourceIds: []
+    sourceUrl: "https://crypto.news/grove-anchors-50m-in-apollo-tokenized-credit-fund-on-plume/"
+    publicationDate: "2025-09-16"
+    metricAsOfDate: "2025-09-16"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by crypto.news; the article does not fully
+      specify what "subject to regulatory approval" entails or whether that
+      approval had been obtained as of the research cutoff.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Has the stated regulatory approval for Anemoy to act as ACRDX's asset manager been obtained, and on what timeline?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-anemoy-legal-entity-unconfirmed
+    schemaVersion: 7
+    companyId: co-anemoy
+    claim: >-
+      A single structured-secondary aggregator (CB Insights) profile names
+      "Anemoy Capital SPC Limited" with a Dublin, Ireland headquarters as
+      Anemoy's legal entity; this was not independently corroborated by
+      Anemoy's own materials, a company registry, or any other source found.
+    statedValue: "Anemoy Capital SPC Limited; Dublin, Ireland"
+    numericValue: null
+    unit: null
+    sourceId: src-anemoy-cbinsights
+    supportingSourceIds: []
+    sourceUrl: "https://www.cbinsights.com/company/anemoy"
+    publicationDate: null
+    metricAsOfDate: "2026-01-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: low
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      Single-source, aggregator-derived legal-entity claim; recorded at low
+      confidence and flagged as a gap rather than treated as established
+      identity fact.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: "What is Anemoy's confirmed legal entity name and jurisdiction of incorporation?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-anemoy-governance-value-capture-question
+    schemaVersion: 7
+    companyId: co-anemoy
+    claim: >-
+      In a Centrifuge governance-forum thread dated August 23, 2026, a
+      community member (Inflecta) publicly asked whether Centrifuge Network
+      Foundation holds equity in Anemoy and whether CFG token holders have
+      any direct or indirect economic claim on Anemoy's economics, framing
+      this against a governance proposal (CP-171) that asserted CFG as
+      Centrifuge's "single value accrual mechanism." As of the thread's most
+      recent visible reply (same day), neither question had been answered by
+      Centrifuge team members or moderators.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-anemoy-centrifuge-gov-forum
+    supportingSourceIds: []
+    sourceUrl: "https://gov.centrifuge.io/t/clarification-on-current-capital-structure-and-relationship-with-anemoy/7582"
+    publicationDate: "2026-08-23"
+    metricAsOfDate: "2026-08-23"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: market_regulation
+    notes: >-
+      Material governance/value-capture-mismatch evidence: a public,
+      unresolved question about whether CFG token holders have any economic
+      claim on Anemoy, the entity that captures revenue from Anemoy's
+      tokenized funds (JTRSY, ACRDX). This is a single forum thread (one
+      community member's question, unanswered as of the last checked
+      reply); it is not a confirmed governance finding, but it documents a
+      genuine, dated, public transparency gap around token/entity
+      value-capture alignment, which this packet records rather than
+      omits per the instruction to search deliberately for
+      token/company value-capture mismatch evidence.
+    evidenceStatus: insufficient
+    analystInterpretation: >-
+      If CFG token holders in fact have no economic claim on Anemoy's
+      revenue from its tokenized RWA funds, this would represent a
+      structural mismatch between the value Centrifuge's protocol/brand
+      enables Anemoy to capture and what accrues to CFG; as of the research
+      cutoff this remains an open community question rather than a
+      confirmed fact in either direction.
+    diligenceQuestion: "Does the Centrifuge Network Foundation hold equity in Anemoy, and do CFG token holders have any direct or indirect economic claim on Anemoy's revenue?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-anemoy-governance-question-2026
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-anemoy
+    subjectNameRaw: Anemoy
+    signalType: governance_change
+    signalCategory: market
+    signalDirection: ambiguous
+    sourceId: src-anemoy-centrifuge-gov-forum
+    rawStrength: 0.25
+    evidenceSummary: >-
+      A Centrifuge governance-forum thread (August 23, 2026) publicly and,
+      as of the last visible reply, unsuccessfully sought clarification on
+      whether CFG token holders have any economic claim on Anemoy, the
+      entity that manages and captures revenue from Centrifuge-enabled
+      tokenized funds (JTRSY, ACRDX).
+    evidenceIds: [clm-anemoy-governance-value-capture-question]
+    publicationDate: "2026-08-23"
+    availabilityDate: "2026-08-23"
+    eventDate: "2026-08-23"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: >-
+      Whether Centrifuge Network Foundation holds equity in Anemoy, and
+      whether CFG holders have any economic claim on Anemoy, is an
+      explicitly open question in the source thread; no Centrifuge team
+      response resolving it was found as of the research cutoff.
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-anemoy-legal-entity-confirmation
+    whatWasSearched: "Anemoy's confirmed legal entity name, jurisdiction, and headquarters (beyond a single aggregator profile)"
+    whatCouldNotBeEstablished: >-
+      Only a single structured-secondary aggregator (CB Insights) source
+      was found naming a specific entity ("Anemoy Capital SPC Limited")
+      and HQ (Dublin, Ireland); not independently corroborated.
+    expectedToMatter: true
+  - id: gap-anemoy-cfg-value-capture
+    whatWasSearched: "Whether CFG (Centrifuge) token holders have any economic claim on Anemoy's revenue"
+    whatCouldNotBeEstablished: >-
+      An unanswered community question on the Centrifuge governance forum
+      (August 2026) is the only public material found addressing this
+      directly; no resolution was found as of the research cutoff.
+    expectedToMatter: true
+  - id: gap-anemoy-financing-history
+    whatWasSearched: "Anemoy's own company-level financing history (equity raises, investors)"
+    whatCouldNotBeEstablished: >-
+      No source established a company-level financing round for Anemoy
+      itself, distinct from the fund-level capital (e.g., Grove's $50M
+      anchor investment into ACRDX, which is fund AUM, not company equity
+      financing); financingStage recorded as unknown.
+    expectedToMatter: true
+  - id: gap-anemoy-acrdx-regulatory-approval-status
+    whatWasSearched: "Confirmation of the regulatory approval referenced as a condition for Anemoy acting as ACRDX's asset manager"
+    whatCouldNotBeEstablished: "No later source confirming or denying that the referenced regulatory approval was obtained was found within the research budget for this batch."
+    expectedToMatter: false
+  - id: gap-anemoy-jtrsy-aum
+    whatWasSearched: "Current AUM for the Janus Henderson Anemoy Treasury Fund (JTRSY) as of the research cutoff"
+    whatCouldNotBeEstablished: "No dated, citable AUM figure for JTRSY specifically (as opposed to Janus Henderson's firm-wide AUM) was established within the research budget for this batch."
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Anemoy operates as a company/asset-manager entity distinct from the
+    Centrifuge protocol/network, but shares a co-founder (Martin Quensel)
+    with Centrifuge and is described by both Centrifuge and Janus Henderson
+    as advancing Centrifuge's own RWA product roadmap; the frozen universe
+    assignment records entityType as protocol, which this packet follows,
+    while flagging the company/protocol boundary and the unresolved
+    CFG-value-capture question as open uncertainty.
+  sourceOriginUncertainty: >-
+    Identity/product facts are corroborated via Janus Henderson's own
+    investor-relations channel (independent of Anemoy/Centrifuge) and
+    independent journalism (crypto.news); the legal-entity name/HQ rests on
+    a single aggregator source; the governance/value-capture question rests
+    on a single, non-independent (community/participant) governance-forum
+    source, recorded at reduced confidence accordingly.
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen THIN evidence-density label: the two
+    flagship tokenized-fund products (JTRSY, ACRDX) and founder identity
+    are reasonably well established via independent/IR sources; company-
+    level legal entity, financing history, and the CFG/Anemoy
+    value-capture relationship could not responsibly be established within
+    the research budget for this batch and are recorded as gaps, including
+    one genuine, dated negative/conflicting-evidence item (the unresolved
+    governance-forum question about CFG holders' economic claim on
+    Anemoy) found via deliberate search per the negative-evidence research
+    standard.
+researchCutoff: "2026-09-10"

@@ -1,0 +1,151 @@
+# Source classes and their reliability priors.
+#
+# A reliability prior is a starting weight for a class of source, not a verdict
+# on a specific publication. It answers one question: absent other information,
+# how much should a claim from this kind of place move a conclusion.
+#
+# The ordering reflects distance from the subject. A regulatory filing carries
+# consequences for being wrong. A company blog does not. Both are useful, and
+# they are not the same kind of evidence.
+#
+# ANALYST INFERENCE IS NOT EVIDENCE
+#
+# analyst_inference exists so a conclusion drawn inside this project can be
+# cited like anything else and traced back. Its reliability prior is the floor,
+# and a later scoring engine must never count it as corroboration for a claim
+# it was itself derived from. Marking it as a source class is what makes that
+# circularity detectable instead of invisible.
+#
+# Live source adapters are a later phase. This file defines the classes only.
+
+schemaVersion: 1
+version: "1.0.0"
+
+sourceClasses:
+  - id: regulatory
+    name: "Regulatory or government record"
+    tier: a
+    reliability: 0.95
+    isIndependent: true
+    canCorroborate: true
+    description: "Filings, registries, patent records, court records, procurement awards."
+    constraints: "Public record. Cite the filing identifier, not a summary of it."
+
+  - id: official_company
+    name: "Official company source"
+    tier: b
+    reliability: 0.70
+    isIndependent: false
+    canCorroborate: false
+    description: "Company site, documentation, pricing page, changelog, press release."
+    constraints: >
+      First party. Establishes that the company says something, which is often exactly
+      what is wanted. Never counts as independent confirmation of its own claim.
+
+  - id: founder_or_executive
+    name: "Founder or executive statement"
+    tier: b
+    reliability: 0.65
+    isIndependent: false
+    canCorroborate: false
+    description: "A named founder or executive stating something publicly and attributably."
+    constraints: "First party and interested. Attributable statements only, never anonymous accounts."
+
+  - id: independent_journalism
+    name: "Independent journalism"
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    description: "Named-byline reporting from a publication with an editorial standard."
+    constraints: >
+      Independent only when it is original reporting. A piece that reproduces a press
+      release is set to isPressReleaseReproduction and does not corroborate.
+
+  - id: specialist_industry
+    name: "Specialist industry publication"
+    tier: b
+    reliability: 0.70
+    isIndependent: true
+    canCorroborate: true
+    description: "Trade press and analysts covering one sector closely."
+    constraints: "Often closer to the facts than general press, and sometimes commercially tied to the sector."
+
+  - id: structured_secondary
+    name: "Structured secondary database"
+    tier: c
+    reliability: 0.55
+    isIndependent: true
+    canCorroborate: true
+    description: "Aggregators and data vendors compiling company records."
+    constraints: >
+      Frequently derived from a primary source this project may already hold. Set
+      originatesFrom where the underlying source is identifiable, or corroboration
+      will be double counted.
+
+  # Added in Phase 3D. External customer and vendor case studies (a payments
+  # processor or a compliance platform describing a company as its customer)
+  # attest to operating reality: that a product is deployed, at what rough
+  # scale, processing what volume. They are not independent journalism and they
+  # do not verify a financial metric the company reports, so they are not
+  # independent and cannot corroborate. The operating-vs-financial nuance is
+  # carried on the source's supportRole, not here.
+  - id: customer_vendor
+    name: "Customer or vendor case study"
+    tier: c
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    description: "A customer or vendor publicly attesting that a company uses its product, and at what operating scale."
+    constraints: >
+      External operating evidence only. Corroborates deployment and usage scale, never
+      a company-reported financial metric such as ARR, margin, or profitability.
+
+  - id: identified_social
+    name: "Identified social account"
+    tier: c
+    reliability: 0.45
+    isIndependent: false
+    canCorroborate: false
+    description: "A public post from an account whose real-world identity is established."
+    constraints: >
+      Store the permalink, the date, and a paraphrased factual summary. Never store a
+      raw archive of personal information. See docs/source-policy.md.
+
+  - id: community
+    name: "Community or forum"
+    tier: c
+    reliability: 0.40
+    isIndependent: true
+    canCorroborate: true
+    description: "Developer forums, package registries, issue trackers, discussion boards."
+    constraints: "Useful for adoption evidence. Requires more than one independent voice to count."
+
+  - id: analyst_inference
+    name: "Analyst inference"
+    tier: d
+    reliability: 0.20
+    isIndependent: false
+    canCorroborate: false
+    description: "A conclusion drawn inside this project from other sources."
+    constraints: >
+      NOT EVIDENCE. Recorded so a derived conclusion is traceable and visibly labelled.
+      Must never corroborate a claim it was derived from.
+
+  # Added when the first real corpus contained three investor posts about their
+  # own portfolio companies. The handoff classified them as independent, which
+  # they are not: an investor writing about a company it has funded is an
+  # interested party, closer to the company than to the press. There was no
+  # existing class that held that position honestly, and mapping them to
+  # specialist_industry would have granted them corroboration power they should
+  # not have. Failing toward not independent is the safe direction.
+  - id: investor_industry
+    name: "Investor or fund publication"
+    tier: c
+    reliability: 0.60
+    isIndependent: false
+    canCorroborate: false
+    description: "An investor, fund, or portfolio publication writing about a company it has backed."
+    constraints: >
+      Interested party. Often closer to the numbers than the press is, and never an
+      independent confirmation of a company it has invested in.

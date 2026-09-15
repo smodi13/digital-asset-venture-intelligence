@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 7,
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "batch": "CALIBRATION",
+  "entries": [
+    {
+      "path": "data/v7-score-results/screening-scores.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/judgments-v7/score.ts",
+      "recordCount": 15,
+      "sha256": "74b9fb1882abc6b9e222dec41dd6ed05a2d9ef5684599bacd5db7db86b60b50e"
+    }
+  ]
+}

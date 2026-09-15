@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: SPC-03
+entityId: co-renegade
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:b2b53aa9eddc7c212946d7d2306f8daee6b1aae592c30686552c679b8c235860
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-seed, clm-renegade-mainnet]
+    rationale: Independent reporting establishes $3.4 million of financing, and independent directory evidence places the protocol on mainnet across Arbitrum and Base. Deployment on two chains is not meaningful operating scale, and capital consumed is unknown, so the comparison is relevant but directionally inconclusive.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Capital spent, live trading volume, users, liquidity, fee revenue, burn, and runway were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-architecture, clm-renegade-capacity-limit, clm-renegade-open-source]
+    rationale: First-party materials describe MPC matching, zero-knowledge settlement, relayers and clusters, and circuit-size capacity limits. These establish relevant compute and operator dependencies, but dependencies and limits alone do not establish the recurring resource burden or its direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Compute cost, relayer count and economics, labor, liquidity needs, subsidies, and recurring operating burden were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but a mainnet launch and chain deployments alone do not establish temporal or comparative usage momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current and multi-period trading volume, active users, liquidity, customer count, retention, and fee revenue were not established; only deployment status was documented.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but publication of an open-source repository alone does not establish external developer, contributor, integration, or ecosystem growth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: External developer growth, contributor retention, third-party integrations, and ecosystem expansion were not established; only repository availability was documented.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-mainnet, clm-renegade-audit, clm-renegade-authors]
+    rationale: Independent directory evidence reports a two-chain mainnet deployment, a named independent reviewer published a scoped circuit and contract review, and the technical whitepaper has identified authors. The directory's linked statement that no audit was available conflicts with the published review and may be stale or use a narrower definition; the packet does not resolve that discrepancy. Shipping reviewed protocol software is favorable execution evidence, while team roles and broader operating history remain incomplete.
+    acknowledgedContradictionIds: [clm-renegade-directory-no-audit]
+    evidenceGapNote: Founder and team responsibilities, broader execution history, and cutoff-date correspondence between reviewed and deployed code were not established.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 35
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-admin-control]
+    rationale: Code4rena's independent bounty scope states that the contract owner can pause the system, change fees and encryption keys, and authorize upgrades. This concentrated unilateral control is actual adverse alignment evidence, although the owner identity and governance process are unresolved.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Owner identity, beneficial ownership, multisignature or process controls, formal governance, and stakeholder incentives were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish real utilization, paying demand, customer budgets, workflow criticality, or market depth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Trading volume, active users, liquidity, paying demand, fee revenue, customer budgets, and reachable market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-relayer-visibility]
+    rationale: Renegade's company-controlled documentation states that a directly connected relayer sees a user's orders and balances in plaintext before inter-relayer MPC matching. This is limited adverse evidence about the product's privacy market structure, while regulatory treatment and observed exploitation are not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Regulatory treatment, jurisdictional exposure, current relayer structure, and observed privacy failures were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-fees]
+    rationale: Company-controlled documentation states that public-relayer trades incur a two-basis-point protocol fee plus a two-basis-point relayer fee. This establishes a protocol monetization mechanism but not company ownership of fees or realized revenue, so direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Company ownership of protocol fees, realized fee revenue, take rate retention, and an investable value-accrual path were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish revenue, costs, margins, burn, unit economics, subsidies, treasury dependence, or profitability.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, costs, relayer economics, gross margin, burn, runway, subsidies, liquidity support, and unit economics were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-mainnet]
+    rationale: Independent directory evidence reports functioning deployments on Arbitrum and Base, which is relevant ecosystem-access evidence. Chain deployment alone does not establish repeatable acquisition, customer pull, repeat usage, or expansion, so direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Customer acquisition, repeat users, integration partners, organic pull, and expansion were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 35
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-capacity-limit]
+    rationale: Company-controlled help documentation limits a wallet to four open orders and ten token balances because of circuit size. This explicit product capacity constraint is adverse adoption-friction evidence, though observed user impact and the current limit's prevalence are unknown.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Measured onboarding time, abandonment, user impact, integration burden, and current configuration were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-architecture, clm-renegade-mpc-launch-limit, clm-renegade-relayer-visibility]
+    rationale: The whitepaper, with independent specialist corroboration, describes private orders, MPC matching, and zero-knowledge settlement, providing limited favorable differentiated-architecture evidence. Code4rena says MPC matching was disabled at launch, and first-party documentation says a directly connected relayer sees plaintext data, so cutoff-date functionality and privacy scope remain constrained.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current MPC enablement, independent comparative validation, production privacy outcomes, and non-replicability were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-renegade-audit, clm-renegade-directory-no-audit, clm-renegade-admin-control, clm-renegade-mpc-launch-limit, clm-renegade-relayer-visibility]
+    rationale: A published zkSecurity scoped review conflicts with an independent directory's statement that no audit was available, likely reflecting staleness or definition but unresolved in the packet. Independently documented owner powers, launch-state centralized cluster control, and first-party plaintext visibility at a directly connected relayer provide adverse security and durability evidence despite the scoped review.
+    acknowledgedContradictionIds: [clm-renegade-audit, clm-renegade-directory-no-audit]
+    evidenceGapNote: Cutoff-date audit coverage, current MPC and relayer decentralization, key-control process, switching costs, incident history, and network effects were not established.
+analystNote: null

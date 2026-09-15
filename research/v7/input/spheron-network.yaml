@@ -1,0 +1,436 @@
+schemaVersion: 7
+candidateId: DPC-03
+canonicalId: co-spheron-network
+canonicalName: Spheron Network
+slug: spheron-network
+description: >-
+  Spheron Network is a decentralized compute network/marketplace that
+  aggregates GPU, CPU, and Mac-chip capacity from independent providers into
+  a shared pool for AI/ML and other compute workloads, incentivized and
+  governed by the SPON token.
+domain: spheron.network
+firstObservedAt: "2021-04-18"
+category: depin_and_decentralized_compute
+entityType: network
+assetType: equity_and_token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_early
+financingStage: Series A
+cohort: CALIBRATION
+nameAliasNote: >-
+  The project began as "ArGo" (decentralized hosting) before being
+  relaunched as "Spheron" in 2021; some funding aggregators additionally
+  label the underlying token entity "Spheron Protocol." No source resolves
+  the exact relationship among "ArGo," "Spheron Network," "Spheron
+  Protocol," and the entity operating spheron.network's Terms of Use
+  ("Beta360 Pte Ltd") beyond a d/b/a-style continuity narrative; treated as
+  one entity per the frozen universe assignment.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        The operative legal entity named in Spheron Network's own website
+        Terms of Use is "Beta360 Pte Ltd," a Singapore-incorporated company
+        (UEN 202107371K), registered at 3 Phillip Street, #10-04, Royal
+        Group Building, Singapore 048693. No source independently confirms
+        whether this is the same entity that raised the 2021-2025 funding
+        rounds attributed to "Spheron"/"Spheron Protocol," or a separate
+        operating/holding entity.
+      relatedEntityId: null
+      relationType: operating_entity_of_network
+  protocolNetworkRelationship: >-
+    Spheron Network is described across sources as a single decentralized
+    compute network/company; no separate foundation-vs-core-developer split
+    (of the kind seen in some other DePIN projects) was established in this
+    research pass. The SPON token (launched July 2025) is stated to be used
+    for compute payment, staking, node-operator rewards, and future
+    governance.
+  unresolvedBoundaryNotes:
+    - >-
+      Funding aggregators disagree on the dating and labeling of a $7
+      million round: Gate.io's fundraising page dates a "Series A" to
+      2022-07-31 with one investor list, while crypto-fundraising.info dates
+      a $7 million round to 2023-10 with an overlapping but not identical
+      investor list (see gap-spheron-funding-rounds-unadmissible). Neither
+      aggregator page carries a disclosed date, so neither could be treated
+      as cutoff-admissible evidence in this packet; no EvidenceClaim was
+      created for either dating, and whether these are the same event or
+      two distinct $7M raises remains unresolved.
+    - >-
+      No source in this research pass named Spheron's founders through a
+      primary or independent-journalism source (only secondary
+      aggregator/social-profile leads were found); founder identity is
+      recorded as an open gap rather than asserted from unopened or
+      AI-synthesized search results.
+people: []
+sources:
+  - id: src-spheron-official-tou
+    schemaVersion: 7
+    publisher: Spheron Network (official website)
+    title: "Spheron Network Website Terms of Use"
+    url: "https://www.spheron.network/Spheron_Website_Terms_of_Use.pdf"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-01-25"
+    availabilityDate: "2023-01-25"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+  - id: src-spheron-defiant-tge-pr
+    schemaVersion: 7
+    publisher: The Defiant (press release wire)
+    title: "Spheron to Launch TGE with $SPON Token, Tier-1 Listings"
+    url: "https://thedefiant.io/news/press-releases/spheron-to-launch-tge-with-spon-token-tier-1-listings"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.45
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-25"
+    availabilityDate: "2025-07-25"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-spheron-gate-fundraising
+    schemaVersion: 7
+    publisher: Gate.com (fundraising data page)
+    title: "Spheron Protocol Project - Crypto Fundraising"
+    url: "https://www.gate.com/price/fundraising/Spheron%20Protocol-2142"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.5
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: null
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+  - id: src-spheron-cryptofundraising
+    schemaVersion: 7
+    publisher: crypto-fundraising.info
+    title: "Spheron Network - DePIN Project fundraising record"
+    url: "https://crypto-fundraising.info/projects/spheron-network/"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.45
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: null
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+evidenceClaims:
+  - id: clm-spheron-legal-entity
+    schemaVersion: 7
+    companyId: co-spheron-network
+    claim: >-
+      Spheron Network's website Terms of Use names "Beta360 Pte Ltd," a
+      Singapore-incorporated entity (UEN 202107371K, registered at 3
+      Phillip Street, #10-04, Royal Group Building, Singapore 048693), as
+      the operative legal entity behind spheron.network.
+    statedValue: "Beta360 Pte Ltd (Singapore, UEN 202107371K)"
+    numericValue: null
+    unit: null
+    sourceId: src-spheron-official-tou
+    supportingSourceIds: []
+    sourceUrl: "https://www.spheron.network/Spheron_Website_Terms_of_Use.pdf"
+    publicationDate: "2023-01-25"
+    metricAsOfDate: "2023-01-25"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      First-party disclosure only (Terms of Use), last revised 2023-01-25
+      per the document itself; no independent source corroborates or
+      contradicts this specific entity name. Resolves the frozen universe
+      note "HQ/legal domicile ... not disclosed" only partially: an
+      operating-entity name and jurisdiction are now established, but
+      whether this is the fundraising entity is not.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Is "Beta360 Pte Ltd" the same legal entity that raised the 2021-2025
+      funding rounds attributed to Spheron, or a separate
+      operating/front-end entity?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-spheron-token-launch
+    schemaVersion: 7
+    companyId: co-spheron-network
+    claim: >-
+      Spheron Network's SPON token underwent its Token Generation Event and
+      was listed on Bitget, Gate.io, and MEXC on July 29, 2025 at 5 PM SGT,
+      per a company press release distributed July 25, 2025.
+    statedValue: "TGE and exchange listings 2025-07-29"
+    numericValue: null
+    unit: null
+    sourceId: src-spheron-defiant-tge-pr
+    supportingSourceIds: []
+    sourceUrl: "https://thedefiant.io/news/press-releases/spheron-to-launch-tge-with-spon-token-tier-1-listings"
+    publicationDate: "2025-07-25"
+    metricAsOfDate: "2025-07-29"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Sourced to a company-issued press release republished via The
+      Defiant's press-release wire (not independent journalism); treated as
+      a first-party disclosure, not an independently corroborated fact. No
+      independent-journalism coverage of the exact listing date was found
+      within this batch's research budget.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-spheron-arr-selfreported
+    schemaVersion: 7
+    companyId: co-spheron-network
+    claim: >-
+      Spheron Network's own July 25, 2025 press release states the network
+      had reached "$10M Annual Recurring Revenue (ARR)" ahead of the SPON
+      token launch, without disclosing methodology (e.g., whether this is
+      gross marketplace payment volume, network fee revenue, or another
+      basis).
+    statedValue: "$10M ARR (self-reported, methodology undisclosed)"
+    numericValue: 10000000
+    unit: usd
+    sourceId: src-spheron-defiant-tge-pr
+    supportingSourceIds: []
+    sourceUrl: "https://thedefiant.io/news/press-releases/spheron-to-launch-tge-with-spon-token-tier-1-listings"
+    publicationDate: "2025-07-25"
+    metricAsOfDate: "2025-07-25"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: business_model
+    notes: >-
+      Recorded as an attributed self-reported claim only, deliberately not
+      encoded as a digitalAssetMetrics record: no independent source, and
+      no stated revenue-recognition methodology (marketplace GMV vs. net
+      protocol take-rate are commonly conflated in DePIN self-reporting).
+      The frozen universe lead cited a distinct, higher "$12M ARR by August
+      2025" figure (attributed to a Messari/Blockworks report); that report
+      could not be accessed within this batch's research budget (repeated
+      HTTP 429/403 responses), so the $12M figure is NOT independently
+      confirmed in this packet and is recorded only as an unresolved gap
+      (see gap-spheron-arr-figure), not as an EvidenceClaim.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: >-
+      What is the exact revenue-recognition methodology behind the
+      self-reported ARR figure(s), and can it be corroborated by an
+      independent source?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-spheron-network-scale-selfreported
+    schemaVersion: 7
+    companyId: co-spheron-network
+    claim: >-
+      Spheron Network's July 25, 2025 press release states the network had
+      "44,000+ nodes across 170+ countries," "$100M+ in distributed
+      compute," and "400,000+ community members globally," without
+      specifying an as-of date distinct from the announcement date or a
+      methodology for any of the three figures.
+    statedValue: "44,000+ nodes; 170+ countries; $100M+ distributed compute; 400,000+ community members"
+    numericValue: null
+    unit: null
+    sourceId: src-spheron-defiant-tge-pr
+    supportingSourceIds: []
+    sourceUrl: "https://thedefiant.io/news/press-releases/spheron-to-launch-tge-with-spon-token-tier-1-listings"
+    publicationDate: "2025-07-25"
+    metricAsOfDate: "2025-07-25"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Deliberately not encoded as digitalAssetMetrics: "nodes" is not
+      equated with active users or paying customers, and no independent
+      source corroborates the node count, country count, or dollar figure.
+      A separate secondary aggregator page (Gate.com fundraising listing)
+      cites a different, non-matching set of figures ("766,000 CPUs, 10,300
+      GPUs, 35,000 Mac chips, $24M+ in computing contributions, 30,000+
+      provider nodes") attributed to an unspecified/undated snapshot,
+      illustrating that Spheron's self-reported scale metrics are not
+      stable or consistently defined across disclosures; preserved as a
+      conflict rather than reconciled.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Which, if any, of the differing self-reported node/compute figures
+      reflects a consistent, auditable methodology?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-spheron-token-launch
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-spheron-network
+    subjectNameRaw: Spheron Network
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-spheron-defiant-tge-pr
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Spheron's SPON token underwent TGE and was listed on Bitget, Gate.io,
+      and MEXC on July 29, 2025, per a company press release.
+    evidenceIds: [clm-spheron-token-launch]
+    publicationDate: "2025-07-25"
+    availabilityDate: "2025-07-25"
+    eventDate: "2025-07-29"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-spheron-funding-rounds-unadmissible
+    whatWasSearched: >-
+      Spheron's funding history (seed, Series A/$7M round, February 2025
+      strategic round) via two independent fundraising-tracker aggregators
+      (Gate.com, crypto-fundraising.info)
+    whatCouldNotBeEstablished: >-
+      Both aggregator pages describe historical rounds (2021, 2022/2023,
+      2025) but neither page carries a disclosed publication/last-updated
+      date, so no admissible availabilityDate on or before the 2026-09-10
+      cutoff could be responsibly established for either page per this
+      batch's cutoff-discipline rules (a live page's current content cannot
+      be assumed to have been available at cutoff without a captured
+      date). The two pages also conflict with each other on the dating of a
+      $7 million round (2022-07-31 per Gate.com vs. October 2023 per
+      crypto-fundraising.info), which would have been recorded as an
+      explicit conflict had the sources been cutoff-admissible. No
+      EvidenceClaim or SignalEvent was created for any of these rounds as a
+      result; both source records are retained in the packet as
+      non-evidence-bearing research leads only.
+    expectedToMatter: true
+  - id: gap-spheron-founders
+    whatWasSearched: "Founder/leadership team names via company site, LinkedIn, org-chart aggregators (TheOrg, Wellfound, CB Insights)"
+    whatCouldNotBeEstablished: >-
+      Search results repeatedly attribute Spheron's founding to "Prashant
+      Maurya" and "Mitrasish Mukherjee," but every candidate primary source
+      (TheOrg profile, Wellfound team page) returned an access error (404 /
+      403) when opened directly in this research pass, and the only
+      remaining leads were AI-synthesized search summaries, which this
+      batch's sourcing rules exclude as final evidence. No people records
+      were created for this packet as a result.
+    expectedToMatter: true
+  - id: gap-spheron-arr-figure
+    whatWasSearched: >-
+      The frozen universe lead's "$12M ARR by August 2025" figure,
+      attributed to a Messari/Blockworks report
+    whatCouldNotBeEstablished: >-
+      messari.io/report/understanding-spheron-a-comprehensive-overview
+      returned HTTP 429 on repeated attempts, and a mirror
+      (coinstrooper.com) returned HTTP 403; the figure could not be
+      independently opened and verified within this batch's research
+      budget. Only a lower, self-reported $10M ARR figure (dated 2025-07-25,
+      see clm-spheron-arr-selfreported) was independently sourced.
+    expectedToMatter: true
+  - id: gap-spheron-legal-entity-vs-fundraising-entity
+    whatWasSearched: >-
+      Whether "Beta360 Pte Ltd" (named in the website Terms of Use) is the
+      same legal entity that raised the 2021-2025 funding rounds
+    whatCouldNotBeEstablished: >-
+      No source connects the Terms-of-Use entity name to any funding
+      announcement or aggregator record; a separate, unopened secondary
+      search lead suggested a British Virgin Islands entity name
+      ("Permanent Hosting Solutions..."), but this was not verified against
+      an actual source page and is excluded from this packet's evidence for
+      that reason.
+    expectedToMatter: true
+  - id: gap-spheron-security-audit
+    whatWasSearched: "Smart contract / protocol security audit scope, date, and findings (QuillAudits, CertiK Skynet)"
+    whatCouldNotBeEstablished: >-
+      QuillAudits and CertiK Skynet pages referencing "Spheron-V1" /
+      "Spheron Protocol" were located, but the actual audit date, scope,
+      and findings (critical/high/medium/low counts) could not be extracted
+      from the fetched page content within this batch's research budget; no
+      security_audit source or EvidenceClaim was created as a result.
+    expectedToMatter: true
+  - id: gap-spheron-revenue-methodology
+    whatWasSearched: "Revenue-recognition methodology behind self-reported ARR figures"
+    whatCouldNotBeEstablished: >-
+      No source (company or independent) states whether "ARR" refers to
+      gross marketplace payment volume, net protocol take-rate, or another
+      basis; two internally-inconsistent self-reported scale-metric sets
+      were found instead (see clm-spheron-network-scale-selfreported).
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Treated as one network entity ("Spheron Network," formerly "ArGo") per
+    the frozen universe assignment, spanning a company/network duality
+    (assetType equity_and_token): "Beta360 Pte Ltd" is named as the
+    operating legal entity in the site's Terms of Use, but its relationship
+    to the SPON token / on-chain network and to the entity that raised prior
+    funding rounds is not independently established.
+  sourceOriginUncertainty: >-
+    The Defiant press-release-wire article and Gate.com/crypto-fundraising.info
+    aggregator pages are all treated as non-independent of Spheron's own
+    disclosures for network-scale and ARR figures (self-reported, no
+    independent verification found); the two funding aggregators are
+    independent of Spheron but plausibly share some upstream data sourcing
+    with each other (their $7M-round dating conflict suggests they are NOT
+    simply copying one shared source, but neither is confirmed as
+    editorially independent research either).
+  likelyContradictions: >-
+    See gap-spheron-funding-rounds-unadmissible (conflicting, non-admissible
+    $7M round dating between two aggregators) and
+    clm-spheron-network-scale-selfreported (two non-matching self-reported
+    node/compute scale figures from different disclosures).
+  completenessNotes: >-
+    Evidence density MODERATE per the frozen cohort assignment; actual
+    research depth in this pass fell short of that label on CAPITAL
+    specifically (see gap-spheron-funding-rounds-unadmissible: the only
+    funding-history sources found were undated aggregator pages that could
+    not be admitted as cutoff-compliant evidence), while IDENTITY (legal
+    entity), business-model self-disclosures, and the token-launch signal
+    are ESTABLISHED/PARTIAL as documented below. IDENTITY is PARTIAL
+    (legal entity sourced, but its link to the fundraising history is
+    unresolved). CAPITAL is an OPEN_RESEARCH_GAP for this pass, a
+    discrepancy from the frozen MODERATE label recorded here rather than
+    used to change the label. TEAM/GOVERNANCE is an OPEN_RESEARCH_GAP: no
+    people record was created because the only available leads failed
+    direct verification or were AI-synthesized search summaries excluded by
+    this batch's sourcing rules. ADOPTION and BUSINESS MODEL rely entirely
+    on self-reported, internally-inconsistent figures and are recorded as
+    insufficient evidence rather than encoded as digitalAssetMetrics.
+    TECHNICAL/SECURITY (audit scope/findings) is an OPEN_RESEARCH_GAP.
+researchCutoff: "2026-09-10"

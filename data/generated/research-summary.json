@@ -1,0 +1,121 @@
+{
+  "researchRunId": "run-f7ae9ddd00b3",
+  "generatedAt": "2026-09-07T00:00:00.000Z",
+  "schemaVersion": 6,
+  "thesisConfigHash": "sha256:2d260e69a41cc9b5c43f62f75f261279eed119a340604dbd61a82f381e9bb20f",
+  "signalConfigHash": "sha256:a0da529722637f39a3da943103aad4a072a56089f847cf7119d260d02170172c",
+  "scoringConfigHash": "sha256:218fc38b03a754c4b11543468637092a1eb02dcfc75c4dcef66232f06becca0a",
+  "sourceConfigHash": "sha256:9d982ef6d2c5075f717ff89637fd35a4c281f3545e7d41953dd9de94f4cbb632",
+  "researchInputHash": "sha256:fb2569905f8fc3ce4594da3ca567c4df31546e804c0400522dfcec8e2889eaf1",
+  "generator": "scripts/research/build-corpus.ts",
+  "note": "Research quality metrics. These describe how well evidenced the corpus is. None of them is an investment performance measure.",
+  "excludedCompaniesNotApproved": 0,
+  "metrics": {
+    "counts": {
+      "companies": 39,
+      "people": 84,
+      "sources": 222,
+      "evidenceClaims": 510,
+      "signalEvents": 113,
+      "snapshots": 0,
+      "reviewQueue": 2
+    },
+    "evidenceCoverage": {
+      "companiesWithPrimarySource": 38,
+      "companiesWithTwoIndependentSources": 18,
+      "companiesWithNoEvidence": 0,
+      "medianClaimsPerCompany": 14,
+      "medianIndependentSourcesPerCompany": 1
+    },
+    "claimSupport": {
+      "companiesWithIndependentJournalismSource": 34,
+      "companiesWithTwoIndependentJournalismSources": 15,
+      "claimsWithIndependentOriginSupport": 20,
+      "claimsWithTwoIndependentOriginSources": 3,
+      "claimsWithThirdPartyEstimateSupport": 21,
+      "companyReportedClaimsWithExternalPublicationSupport": 57
+    },
+    "claims": {
+      "byProvenance": {
+        "assumption": 147,
+        "derived": 9,
+        "sourced": 350,
+        "unknown": 4
+      },
+      "byModelEligibility": {
+        "caveat": 79,
+        "context_only": 431
+      },
+      "byConfidence": {
+        "high": 137,
+        "low": 34,
+        "medium": 307,
+        "medium_high": 23,
+        "unknown": 9
+      },
+      "withUrl": 370,
+      "withMetricAsOfDate": 245,
+      "stale": 0,
+      "staleThresholdDays": 365
+    },
+    "events": {
+      "bySignalType": {
+        "customer_momentum": 29,
+        "enterprise_expansion": 3,
+        "executive_hire": 1,
+        "funding": 52,
+        "partnership": 3,
+        "pricing_change": 1,
+        "product_launch": 15,
+        "regulatory_milestone": 1,
+        "security_incident": 3,
+        "technical_adoption": 5
+      },
+      "bySourceType": {
+        "independent_journalism": 15,
+        "official_company": 97,
+        "regulatory": 1
+      },
+      "byDirection": {
+        "ambiguous": 53,
+        "negative": 3,
+        "positive": 57
+      },
+      "withEstablishedAvailability": 113,
+      "byAvailabilityMethod": {
+        "intrinsic_timestamp": 111,
+        "manual_verified": 1,
+        "regulatory_filing_timestamp": 1
+      }
+    },
+    "backtestAdmissibility": {
+      "historicallyAdmissibleEvents": 113,
+      "totalEvents": 113,
+      "historicalAdmissibilityRate": 1,
+      "bySourceType": {
+        "independent_journalism": {
+          "admissible": 15,
+          "total": 15,
+          "rate": 1
+        },
+        "official_company": {
+          "admissible": 97,
+          "total": 97,
+          "rate": 1
+        },
+        "regulatory": {
+          "admissible": 1,
+          "total": 1,
+          "rate": 1
+        }
+      }
+    },
+    "resolution": {
+      "resolvedEvents": 113,
+      "unresolvedEvents": 0,
+      "byMatchMethod": {
+        "domain": 113
+      }
+    }
+  }
+}

@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: DIM-02
+entityId: co-pimlico
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:7c22ac19ff05fbef477e6bfe211b0aa203612fb979808e669c69046d82aa5412
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-preseed, clm-pimlico-seed, clm-pimlico-audit-usage]
+    rationale: The packet establishes $5.8 million of announced primary-company financing and third-party-reported service activity above one million monthly transactions across six chains. Capital actually consumed and company revenue are unknown, so the scale-to-capital comparison is relevant but directionally inconclusive.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Capital spent, burn, runway, customer count, and company revenue were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-product, clm-pimlico-audit-usage]
+    rationale: Hosted bundlers and paymasters processing more than one million monthly transactions across six chains imply recurring infrastructure operations. The frozen evidence does not quantify labor, compute, capital, liquidity, or subsidy burden, so it establishes relevance without direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Recurring labor, compute, infrastructure cost, margin, and subsidy requirements were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-userops-2023, clm-pimlico-audit-usage]
+    rationale: Pimlico company-reported nearly three million cumulative user operations in November 2023, while Nethermind reported more than one million monthly transactions across six chains in June 2025. The measures differ in scope and do not establish a comparable growth rate, retention, or favorable momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Comparable multi-period usage, paying-customer growth, retention, and current activity were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-safe-integration, clm-pimlico-open-source]
+    rationale: Safe Foundation confirms one ERC-4337 module integration, and Pimlico publishes the Alto bundler implementation. These are relevant ecosystem-access facts, but a single integration and an open-source release do not establish external developer or ecosystem growth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: External developer growth, contributor retention, and expanding third-party integration counts were not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-founder, clm-pimlico-safe-integration, clm-pimlico-audit, clm-pimlico-audit-usage]
+    rationale: Independent reporting identifies the founder as an ERC-4337 co-author, Safe Foundation confirms a live module integration, and Nethermind completed a scoped assessment while reporting substantial multi-chain processing. Together these provide favorable role-specific and delivered-product execution evidence, bounded by the audit scope and absent broader operating history.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Broader team depth, organizational resilience, and execution beyond the disclosed products were not established.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies to company control and stakeholder alignment, but the frozen packet does not establish ownership, control rights, governance, or incentive allocation.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Company ownership, decision rights, stakeholder incentives, and the legal boundary with Austerlitz Labs were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-audit-usage, clm-pimlico-pricing-semantics, clm-pimlico-safe-integration]
+    rationale: Nethermind reported more than one million monthly transactions across six chains, Pimlico's terms state an order-based monetization path for hosted services, and Safe confirms a functioning integration. This provides limited favorable evidence of utilized infrastructure with a fee model, while paid-customer counts, budgets, retention, and market depth remain unknown.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Paying-customer count, realized revenue, retention, customer budgets, and venture-scale market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-bundler-risk, clm-pimlico-inclusion-limit]
+    rationale: In a founder interview, Gazso described theoretical bundler order-flow abuse and private-mempool limitations associated with inclusion delays for about 40% of user operations at that time. These company-origin statements provide limited adverse market-structure evidence, but actual misconduct and current conditions were not independently established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current chain-level constraints, regulatory treatment, jurisdictional exposure, and observed abuse were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-pricing-semantics, clm-pimlico-product]
+    rationale: Pimlico's terms establish order-based customer fees for hosted bundler, paymaster, and pro services, providing favorable evidence of recurring usage-aligned company monetization. Realized revenue, pricing levels, and margins remain undisclosed.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Realized revenue, fee levels, customer concentration, and gross margin were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish revenue, costs, margins, burn, unit economics, subsidies, or profitability.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, gross margin, profitability, burn, runway, subsidies, and unit economics were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-safe-integration, clm-pimlico-audit-usage]
+    rationale: Safe Foundation confirms a functioning canonical-module integration, and Nethermind reports service activity across six chains. This is favorable evidence of integration-based distribution, though repeat sales, organic pull, customer expansion, and acquisition economics are not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Repeat customers, customer expansion, organic versus incentivized pull, and acquisition repeatability were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-inclusion-limit, clm-pimlico-safe-integration]
+    rationale: Safe integration demonstrates ecosystem access, but the founder reported private-mempool constraints and inclusion delays affecting about 40% of user operations at the time. The explicit delay evidence supports an adverse anchor, with current prevalence and onboarding burden unresolved.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current inclusion reliability, onboarding time, implementation burden, and chain-by-chain production outcomes were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-product, clm-pimlico-open-source, clm-pimlico-audit]
+    rationale: Pimlico offers hosted bundlers and paymasters with ERC-20 support, publishes its Alto implementation, and underwent a scoped independent security assessment. These are limited favorable capability and validation signals, but the packet contains no comparative benchmark or evidence that alternatives cannot replicate them.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative product assessment and durable technical advantage were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pimlico-audit, clm-pimlico-safe-integration, clm-pimlico-open-source]
+    rationale: Nethermind completed a scoped security assessment and Safe confirms ecosystem embedment, providing limited favorable security and workflow evidence. The open-source bundler and absence of switching-cost, concentration, or network-effect data limit any durability conclusion.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Cutoff-date audit coverage, switching costs, customer retention, participant concentration, and network effects were not established.
+analystNote: null

@@ -1,0 +1,723 @@
+schemaVersion: 7
+candidateId: CSG-01
+canonicalId: co-echelon-prime-parallel
+canonicalName: Echelon Prime (Parallel)
+slug: echelon-prime-parallel
+description: >-
+  Echelon Prime is the Toronto-based studio/foundation ecosystem behind
+  Parallel, a sci-fi NFT trading card game (built on Ethereum, in open beta
+  on Epic Games Store) with an associated PRIME governance token, a
+  foundation-run governance body (Emissaries Prime), and a competitive
+  esports league (Parallel Prime League).
+domain: echelon.io
+firstObservedAt: "2021-01-01"
+category: consumer_social_and_gaming
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: later
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Parallel Studios is the for-profit development studio that built the
+        Parallel TCG game. Echelon Prime Foundation is a separately
+        described non-profit entity that issues the PRIME token and
+        oversees the broader Echelon ecosystem (Parallel TCG, plus
+        announced companion titles Colony and Sanctuary). Emissaries Prime
+        (EP) is described as the governing body that stewards the
+        Foundation, functioning similarly to a corporate board; its first
+        11 members were elected in February 2022.
+      relatedEntityId: null
+      relationType: foundation_of_network
+  protocolNetworkRelationship: >-
+    Parallel Studios (equity-funded, raised a $50M Series A from Paradigm in
+    Oct 2021 and a $35M Series B in Mar 2024) builds the Parallel TCG game
+    client; the Echelon Prime Foundation issues the PRIME token, runs
+    community/ecosystem programs (esports league, Prime Pass, NFT
+    "cachers"/staking), and is governed by the elected Emissaries Prime
+    body. The universe/cohort assignment treats studio and foundation as
+    one combined entity ("Echelon Prime (Parallel)").
+  unresolvedBoundaryNotes:
+    - >-
+      No source found within the research budget establishes the precise
+      legal/contractual relationship between Parallel Studios (the equity
+      entity) and the Echelon Prime Foundation (the token-issuing entity):
+      e.g., common ownership, services agreement, or fully independent
+      non-profit status.
+    - >-
+      Incorporation jurisdiction for both Parallel Studios and Echelon Prime
+      Foundation is not established; sources place the team/operations in
+      Toronto, Canada, but do not state formal incorporation domicile.
+people:
+  - id: per-sascha-mojtahedi
+    schemaVersion: 7
+    name: Sascha Darius Mojtahedi
+    aliases: []
+    currentRole: CEO
+    companyTenures:
+      - companyId: co-echelon-prime-parallel
+        companyName: Echelon Prime (Parallel)
+        role: CEO
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-echelon-vikara-deepdive-2025]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-echelon-vikara-deepdive-2025]
+  - id: per-perry-haldenby
+    schemaVersion: 7
+    name: Perry Haldenby
+    aliases: []
+    currentRole: CTO
+    companyTenures:
+      - companyId: co-echelon-prime-parallel
+        companyName: Echelon Prime (Parallel)
+        role: CTO
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-echelon-vikara-deepdive-2025]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-echelon-vikara-deepdive-2025]
+  - id: per-paul-chan
+    schemaVersion: 7
+    name: Paul Chan
+    aliases: []
+    currentRole: COO
+    companyTenures:
+      - companyId: co-echelon-prime-parallel
+        companyName: Echelon Prime (Parallel)
+        role: COO
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-echelon-gamesgg-seriesb-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-echelon-gamesgg-seriesb-2024]
+sources:
+  - id: src-echelon-techcrunch-seriesa-2021
+    schemaVersion: 7
+    publisher: TechCrunch
+    title: "NFT sci-fi card game Parallel raises at $500M valuation from Paradigm"
+    url: "https://techcrunch.com/2021/10/21/nft-sci-fi-card-game-parallel-raises-at-500m-valuation-from-paradigm/"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2021-10-21"
+    availabilityDate: "2021-10-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-echelon-gamesgg-seriesb-2024
+    schemaVersion: 7
+    publisher: GAMES.GG
+    title: "Parallel Studios Reveals $35 Million Funding Round"
+    url: "https://games.gg/news/parallel-studios-reveals-35-million-funding-round/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-03-28"
+    availabilityDate: "2024-03-28"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-echelon-playtoearn-esports-2025
+    schemaVersion: 7
+    publisher: PlayToEarn
+    title: "Echelon Commits $3M in Prizes for Parallel Prime League Seasons 2 and 3"
+    url: "https://playtoearn.com/news/echelon-commits-3m-in-prizes-for-parallel-prime-league-seasons-2-and-3"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.6
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-01-19"
+    availabilityDate: "2025-01-19"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-echelon-vikara-deepdive-2025
+    schemaVersion: 7
+    publisher: "Vikara Capital (Luke McFarlane and Mark Riccio)"
+    title: "Echelon Prime - A Deep Dive"
+    url: "https://vikara.com/echelon-prime-a-deep-dive/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.6
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-26"
+    availabilityDate: "2025-03-26"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-echelon-gamesgg-roadmap-2025
+    schemaVersion: 7
+    publisher: GAMES.GG
+    title: "Parallel TCG 2025 Updates and Roadmap"
+    url: "https://games.gg/news/parallel-tcg-2025-updates-and-roadmap/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.6
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-06-03"
+    availabilityDate: "2025-06-03"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-echelon-icodrops-tge
+    schemaVersion: 7
+    publisher: ICO Drops
+    title: "Echelon Prime (PRIME) - All information about Echelon Prime ICO (Token Sale)"
+    url: "https://icodrops.com/echelon-prime/"
+    sourceType: onchain_analytics
+    tier: c
+    reliability: 0.55
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2023-01-03"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: onchain_fact
+  - id: src-echelon-x-beezie-2026
+    schemaVersion: 7
+    publisher: "Echelon (official X/Twitter account, @EchelonFND)"
+    title: "Echelon x Beezie partnership announcement"
+    url: "https://x.com/EchelonFND/status/2034310155353874631"
+    sourceType: official_network_source
+    tier: c
+    reliability: 0.5
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-echelon-docs-official
+    schemaVersion: 7
+    publisher: "Echelon (official documentation)"
+    title: "1.1 Parallel TCG (Echelon Prime Foundation docs)"
+    url: "https://docs.echelon.io/echelon-prime-foundation/1.0-echelon-ecosystem/1.1-parallel-tcg"
+    sourceType: official_network_source
+    tier: c
+    reliability: 0.5
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: null
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-echelon-seriesa-50m
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      Parallel (the NFT sci-fi trading-card game studio, later branded
+      Echelon Prime) raised a $50 million Series A round led entirely by
+      Paradigm, announced October 21, 2021, at a $500 million valuation.
+    statedValue: "$50 million"
+    numericValue: 50000000
+    unit: usd
+    sourceId: src-echelon-techcrunch-seriesa-2021
+    supportingSourceIds: []
+    sourceUrl: "https://techcrunch.com/2021/10/21/nft-sci-fi-card-game-parallel-raises-at-500m-valuation-from-paradigm/"
+    publicationDate: "2021-10-21"
+    metricAsOfDate: "2021-10-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-seriesb-35m
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      Parallel Studios raised a $35 million Series B round, announced March
+      28, 2024, bringing total company-level funding to $85 million;
+      investors included Distributed Global, VanEck, Solana Ventures, and
+      the Base ecosystem fund, alongside angel investors including Solana
+      co-founders Anatoly Yakovenko and Raj Gokal and Pudgy Penguins CEO
+      Luca Netz.
+    statedValue: "$35 million"
+    numericValue: 35000000
+    unit: usd
+    sourceId: src-echelon-gamesgg-seriesb-2024
+    supportingSourceIds: []
+    sourceUrl: "https://games.gg/news/parallel-studios-reveals-35-million-funding-round/"
+    publicationDate: "2024-03-28"
+    metricAsOfDate: "2024-03-28"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Only one independent-journalism source was found for this specific
+      round's exact amount/investor list within the research budget; the
+      $85M cumulative total is this outlet's own arithmetic, not
+      independently cross-verified against a second source.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-esports-3m
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      The Echelon Foundation committed $3 million in prizes for Parallel
+      Prime League Seasons 2 and 3 (announced January 19, 2025; $1 million
+      for Season 2, $2 million for Season 3), up from a $500,000 prize pool
+      in Season 1.
+    statedValue: "$3 million"
+    numericValue: 3000000
+    unit: usd
+    sourceId: src-echelon-playtoearn-esports-2025
+    supportingSourceIds: []
+    sourceUrl: "https://playtoearn.com/news/echelon-commits-3m-in-prizes-for-parallel-prime-league-seasons-2-and-3"
+    publicationDate: "2025-01-19"
+    metricAsOfDate: "2025-01-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Foundation-funded esports prize spend, not third-party revenue or
+      external capital raised; recorded as an ecosystem-investment fact, not
+      as financing.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-founders-roles
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      Echelon Prime / Parallel Studios was co-founded in 2021 by Sascha
+      Darius Mojtahedi (CEO) and Perry Haldenby (CTO), per an independent
+      research deep-dive published March 26, 2025 by Vikara Capital.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-echelon-vikara-deepdive-2025
+    supportingSourceIds: []
+    sourceUrl: "https://vikara.com/echelon-prime-a-deep-dive/"
+    publicationDate: "2025-03-26"
+    metricAsOfDate: "2025-03-26"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      Founder identification rests on a single third-party analytical
+      source; no second independent source corroborating the specific
+      founder names/titles was found within the research budget. TechCrunch
+      (2021) and GAMES.GG (2024) reported the raises without naming
+      founders.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Can founder identity/roles be corroborated by a second independent source (e.g., LinkedIn, an official bio page, or another outlet)?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-governance-structure
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      The Echelon Prime Foundation is governed by an elected body called
+      Emissaries Prime (EP), described as functioning similarly to a
+      corporate board; its first 11 members were elected in February 2022,
+      per the March 26, 2025 Vikara Capital deep dive.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-echelon-vikara-deepdive-2025
+    supportingSourceIds: []
+    sourceUrl: "https://vikara.com/echelon-prime-a-deep-dive/"
+    publicationDate: "2025-03-26"
+    metricAsOfDate: "2022-02-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: governance
+    notes: >-
+      Single-source governance-structure fact; no independent verification
+      of Emissaries Prime's actual current membership, powers, or activity
+      level as of the 2026-09-10 cutoff was found within the research
+      budget.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What is the current membership and demonstrated activity of Emissaries Prime as of the cutoff, versus its stated founding structure?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-prime-tge
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      The PRIME token's token generation event (TGE) concluded January 3,
+      2023, with an initial listing price of $5.17; initial allocation
+      included roughly 18.04M PRIME (16.24%) to investors and roughly
+      16.74M PRIME to the founding team, per ICO Drops' token-sale record.
+    statedValue: "TGE concluded Jan 3, 2023; listing price $5.17"
+    numericValue: 5.17
+    unit: usd_per_token
+    sourceId: src-echelon-icodrops-tge
+    supportingSourceIds: []
+    sourceUrl: "https://icodrops.com/echelon-prime/"
+    publicationDate: null
+    metricAsOfDate: "2023-01-03"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Single third-party token-data aggregator source; not cross-verified
+      against a second independent tokenomics/vesting tracker within the
+      research budget.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-beezie-partnership
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      Echelon announced a partnership with Beezie, described as bringing
+      on-chain trading cards and sealed product (including graded One
+      Piece and Pokémon cards via raffles) to the Echelon ecosystem, via an
+      official post on the @EchelonFND account dated March 18, 2026.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-echelon-x-beezie-2026
+    supportingSourceIds: []
+    sourceUrl: "https://x.com/EchelonFND/status/2034310155353874631"
+    publicationDate: "2026-03-18"
+    metricAsOfDate: "2026-03-18"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      First-party-only disclosure via official social channel; no
+      independent journalism or analytics source corroborating scope,
+      economics, or actual usage of the Beezie partnership was found within
+      the research budget.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What is the actual usage/volume through the Beezie on-chain raffle integration, independent of the announcement itself?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-echelon-2025-product-progress
+    schemaVersion: 7
+    companyId: co-echelon-prime-parallel
+    claim: >-
+      As of a June 3, 2025 report (updated December 2, 2025), Parallel TCG
+      had completed a matchmaking-system overhaul reducing service outages,
+      was running "consistently well on most tested devices" in mobile
+      testing, and had a Deception card-set expansion scheduled for full
+      release in August 2025.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-echelon-gamesgg-roadmap-2025
+    supportingSourceIds: []
+    sourceUrl: "https://games.gg/news/parallel-tcg-2025-updates-and-roadmap/"
+    publicationDate: "2025-06-03"
+    metricAsOfDate: "2025-06-03"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Single-source product-status claim; no independent player-count or
+      retention data accompanies it, so it is recorded as development
+      progress only, not adoption.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-echelon-seriesa-2021
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-echelon-prime-parallel
+    subjectNameRaw: "Parallel (Echelon Prime)"
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-echelon-techcrunch-seriesa-2021
+    rawStrength: 0.6
+    evidenceSummary: >-
+      Parallel raised a $50 million Series A led by Paradigm at a $500
+      million valuation, announced October 21, 2021, independently
+      reported by TechCrunch.
+    evidenceIds: [clm-echelon-seriesa-50m]
+    publicationDate: "2021-10-21"
+    availabilityDate: "2021-10-21"
+    eventDate: "2021-10-21"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-echelon-seriesb-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-echelon-prime-parallel
+    subjectNameRaw: "Parallel Studios"
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-echelon-gamesgg-seriesb-2024
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Parallel Studios raised a $35 million Series B, announced March 28,
+      2024, independently reported by GAMES.GG.
+    evidenceIds: [clm-echelon-seriesb-35m]
+    publicationDate: "2024-03-28"
+    availabilityDate: "2024-03-28"
+    eventDate: "2024-03-28"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-echelon-prime-tge
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-echelon-prime-parallel
+    subjectNameRaw: "PRIME token / Echelon Prime Foundation"
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-echelon-icodrops-tge
+    rawStrength: 0.5
+    evidenceSummary: >-
+      The PRIME token's TGE concluded January 3, 2023, with an initial
+      listing price of $5.17, per ICO Drops' token-sale record.
+    evidenceIds: [clm-echelon-prime-tge]
+    publicationDate: "2023-01-03"
+    availabilityDate: "2023-01-03"
+    eventDate: "2023-01-03"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-echelon-esports-commitment
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-echelon-prime-parallel
+    subjectNameRaw: "Echelon Foundation / Parallel Prime League"
+    signalType: integration_growth
+    signalCategory: ecosystem
+    signalDirection: positive
+    sourceId: src-echelon-playtoearn-esports-2025
+    rawStrength: 0.5
+    evidenceSummary: >-
+      The Echelon Foundation committed $3 million in prizes to Parallel
+      Prime League Seasons 2-3, a 6x increase over the Season 1 prize pool,
+      announced January 19, 2025.
+    evidenceIds: [clm-echelon-esports-3m]
+    publicationDate: "2025-01-19"
+    availabilityDate: "2025-01-19"
+    eventDate: "2025-01-19"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-echelon-beezie-partnership
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-echelon-prime-parallel
+    subjectNameRaw: "Echelon"
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-echelon-x-beezie-2026
+    rawStrength: 0.3
+    evidenceSummary: >-
+      Echelon announced a partnership with Beezie to bring on-chain graded
+      trading cards (including One Piece and Pokémon) to the Echelon
+      ecosystem via raffles, via an official social post dated March 18,
+      2026; no independent corroboration found within the research budget.
+    evidenceIds: [clm-echelon-beezie-partnership]
+    publicationDate: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    eventDate: "2026-03-18"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: >-
+      Sourced only from the company's own official social-media account;
+      no independent journalism, analytics, or on-chain corroboration of
+      partnership scope, terms, or actual usage was found within the
+      research budget.
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-echelon-legal-entity
+    whatWasSearched: "Incorporation jurisdiction and precise legal relationship between Parallel Studios and the Echelon Prime Foundation"
+    whatCouldNotBeEstablished: >-
+      Sources consistently place the team/operations in Toronto, Canada,
+      but no source establishes formal incorporation domicile for either
+      Parallel Studios or the Echelon Prime Foundation, nor the exact
+      contractual/ownership relationship between the two.
+    expectedToMatter: true
+  - id: gap-echelon-emissions-pause-rumor
+    whatWasSearched: >-
+      A reported Echelon Foundation pause of emissions for "The Core" NFT
+      cachers due to a smart-contract vulnerability in a Quantstamp-audited
+      caching contract
+    whatCouldNotBeEstablished: >-
+      Search-engine AI-generated summaries referenced this event but gave
+      internally conflicting dates (one summary cited July 16, 2024; another
+      cited May 11, 2026) and no directly fetchable primary source (official
+      blog post, dated tweet, or independent security-incident report) could
+      be opened and verified within the research budget. Per this batch's
+      source-quality rules (no AI-generated summaries as final evidence),
+      this was deliberately NOT converted into an EvidenceClaim or
+      SignalEvent. Flagged here as an unresolved, potentially material
+      security-incident lead requiring direct primary-source verification.
+    expectedToMatter: true
+  - id: gap-echelon-adoption-metrics
+    whatWasSearched: >-
+      Player counts, daily/monthly active users, retention, and card
+      sales/marketplace volume with clear methodology and asOf date
+    whatCouldNotBeEstablished: >-
+      No source with a clear, independently verifiable value/period/asOf
+      basis was found within the research budget; 2021 NFT primary-sale
+      volume ($125M+, per period-of-launch press coverage) is stale and
+      pre-dates the game's actual playable release, so it was not converted
+      into a digitalAssetMetrics record representing current adoption.
+    expectedToMatter: true
+  - id: gap-echelon-token-market-data
+    whatWasSearched: >-
+      Current PRIME circulating market cap / FDV / price as of a date near
+      the 2026-09-10 cutoff, with clear methodology
+    whatCouldNotBeEstablished: >-
+      Token-price/market-cap commentary is explicitly excluded as final
+      evidence per this batch's sourcing rules; no digitalAssetMetrics
+      tokenMarket record was created.
+    expectedToMatter: false
+  - id: gap-echelon-audit-scope
+    whatWasSearched: "Full list and scope of smart-contract security audits covering PRIME token contracts, staking/'cacher' contracts, and game contracts"
+    whatCouldNotBeEstablished: >-
+      Only a passing, unverified reference to a Quantstamp audit of one
+      caching contract was found (see gap-echelon-emissions-pause-rumor); no
+      primary audit report was located or opened within the research
+      budget.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Treated as one combined hybrid entity ("Echelon Prime (Parallel)") per
+    the frozen universe assignment, spanning the equity-funded development
+    studio (Parallel Studios) and the token-issuing non-profit (Echelon
+    Prime Foundation, governed by the elected Emissaries Prime body). See
+    unresolvedBoundaryNotes for what remains unclear about their exact
+    legal relationship.
+  sourceOriginUncertainty: >-
+    The Vikara Capital deep dive (2025-03-26) is the sole source for
+    founder names/roles and the Emissaries Prime governance structure;
+    treated as one origin/voice for those specific facts, not independently
+    corroborated. The GAMES.GG outlet published two distinct articles used
+    here (Mar 2024 funding, Jun 2025 roadmap), treated as two separate
+    facts from the same publisher, not duplicated evidence.
+  likelyContradictions: >-
+    The reported "Core NFT cacher emissions pause / smart-contract
+    vulnerability" event carries internally conflicting dates across
+    secondary/AI-summarized sources (July 2024 vs. May 2026) and could not
+    be resolved to a primary source within the research budget; it is
+    recorded only as an unresolved gap (gap-echelon-emissions-pause-rumor),
+    not as a claim or signal.
+  completenessNotes: >-
+    Evidence density RICH per the frozen cohort assignment; this batch
+    confirmed multiple independent-journalism sources across identity,
+    capital (three distinct fundraising/token events: 2021 Series A, 2024
+    Series B, 2023 PRIME TGE), governance, and product/roadmap dimensions,
+    plus one first-party-only 2026 product-partnership lead closer to the
+    research cutoff (resolving the universe-stage gap "no confirmed public
+    update closer to the 2026 cutoff"). Adoption/usage metrics, current
+    token market data, and the emissions-pause security lead remain open
+    gaps despite the RICH label; audit scope is effectively unverified.
+researchCutoff: "2026-09-10"

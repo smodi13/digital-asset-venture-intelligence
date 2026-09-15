@@ -1,0 +1,1427 @@
+[
+  {
+    "entityId": "co-anemoy",
+    "candidateId": "TRA-04",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:27ea889e353c8d63ff8639eb462d99bff4be750f4ef2bdba34d2e80a9f306a0a",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 42,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 40,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 32,
+        "coverage": 1
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 60,
+        "coverage": 1
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 40,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 65,
+        "coverage": 1
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-chronicle-protocol",
+    "candidateId": "DOI-02",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:27baf6c077b8364cceb485a748d22bed3e199860bc88d92c93ebc6138922192e",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 65,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 58,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-cyfrin",
+    "candidateId": "SPC-04",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:23f33566fa815c9f8e582a862031d724c82778c42b3580adcce5e66e3bfbe16d",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-echelon-prime-parallel",
+    "candidateId": "CSG-01",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:861b0efad2d633434e46ed3b6bae29e43a1117cd76d023f40da3b6c757d45fcb",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 40,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-fuel-network",
+    "candidateId": "CPS-01",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:215c608aae32d1cf19a2a4c1311ed8562ac95e7921f27e6aba0f8036315220c9",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 30,
+        "coverage": 1
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 20,
+        "coverage": 1
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-lava-network",
+    "candidateId": "DIM-03",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:5687f303ee807c0a232614eafdc1e175fda01004334f5cdfb0470fddcf10ee01",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 40,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 45,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 35,
+        "coverage": 1
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 45,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-nillion",
+    "candidateId": "SPC-01",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:d4b608e9cfad3ff9b8efca8e45c1c72b4848048ab3cb6998943350598f64ead8",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 45,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 30,
+        "coverage": 1
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 35,
+        "coverage": 1
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 65,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-nubit",
+    "candidateId": "CPS-04",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:2f74f8188ea32b15b79caa6870a26710d9cbd46ffaffa02ad71f06b582c44246",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 35,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-perena",
+    "candidateId": "SAP-03",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:399eb160035ef89db7ba9aa7679c30c15bbe6ae57ce978028c6b4ff7eb193128",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 58,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-pixels",
+    "candidateId": "CSG-04",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:150d7c1d1035535351bb40f5e94ef23451fd9baf0806e9879a1d07e4894ff246",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 30,
+        "coverage": 1
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 40,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 45,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 40,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      }
+    ]
+  },
+  {
+    "entityId": "co-skyfire",
+    "candidateId": "CAI-02",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:73a340d6356d57c119417cae5230ff5bb1d73c24dbcfda85f84d767494846260",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 60,
+        "coverage": 1
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      }
+    ]
+  },
+  {
+    "entityId": "co-spheron-network",
+    "candidateId": "DPC-03",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:b8a67443786e8db4dc14640b2ff4c798a5aa20978ed0beba145bdfbaa72b8f40",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 45,
+        "coverage": 0.5
+      }
+    ]
+  },
+  {
+    "entityId": "co-superstate",
+    "candidateId": "TRA-01",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:489f38c2da616fd6f906d8d9ee4c6b45175c849eb2d4db7dda3bb69f35d28cf1",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 68,
+        "coverage": 1
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 72,
+        "coverage": 1
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 62,
+        "coverage": 1
+      }
+    ]
+  },
+  {
+    "entityId": "co-wildcat-protocol",
+    "candidateId": "DCM-02",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:52207127f0968fa8fef2a7bf0b5a02080285002e2ab90891b176f7f30e3fce27",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 48,
+        "coverage": 1
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 42,
+        "coverage": 1
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 62,
+        "coverage": 1
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 58,
+        "coverage": 1
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 68,
+        "coverage": 1
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 52,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  },
+  {
+    "entityId": "co-zodia-custody",
+    "candidateId": "CCI-03",
+    "cohort": "CALIBRATION",
+    "mandateStatus": "NOT_ASSESSED",
+    "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+    "researchPacketSha256": "sha256:2ba2a38db6177af456be1da4172f09e5bbd55c4fc91a085ac562161e35fe687a",
+    "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+    "criteria": [
+      {
+        "criterionId": "adoption_and_usage_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "adoption_friction_and_ecosystem_access",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "defensibility_security_and_network_effects",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "developer_and_ecosystem_momentum",
+        "applicability": "applicable",
+        "rawAnchor": 52,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "distribution_and_integration_pull",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "economic_sustainability",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "governance_and_incentive_alignment",
+        "applicability": "applicable",
+        "rawAnchor": 60,
+        "coverage": 1
+      },
+      {
+        "criterionId": "observable_scale_vs_capital",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "operating_resource_intensity",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "problem_urgency_and_market_depth",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      },
+      {
+        "criterionId": "structural_and_regulatory_fit",
+        "applicability": "applicable",
+        "rawAnchor": 70,
+        "coverage": 1
+      },
+      {
+        "criterionId": "team_execution_credibility",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "technical_and_product_differentiation",
+        "applicability": "applicable",
+        "rawAnchor": 55,
+        "coverage": 0.5
+      },
+      {
+        "criterionId": "value_capture_model",
+        "applicability": "applicable",
+        "rawAnchor": 50,
+        "coverage": 0
+      }
+    ]
+  }
+]

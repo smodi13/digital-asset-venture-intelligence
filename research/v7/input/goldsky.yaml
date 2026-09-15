@@ -1,0 +1,401 @@
+schemaVersion: 7
+candidateId: DOI-01
+canonicalId: co-goldsky
+canonicalName: Goldsky
+slug: goldsky
+description: Blockchain data infrastructure company providing indexed data, real-time streaming pipelines, and managed data products.
+domain: https://goldsky.com
+firstObservedAt: "2026-09-10"
+category: data_oracles_and_indexing
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: null
+financingStage: seed
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Goldsky supplies data infrastructure to blockchain applications; it is not the customer protocols or networks whose data it processes.
+  unresolvedBoundaryNotes:
+    - Public terms identify Endless Sky Inc., but the reviewed record did not fully map all Goldsky-branded assets and contracts to that legal entity.
+people:
+  - &person_base
+    id: per-kevin-li-goldsky
+    schemaVersion: 7
+    name: Kevin Li
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-goldsky
+        companyName: Goldsky
+        role: Co-founder and CEO
+        startDate: "2021-10-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-goldsky-techcrunch]
+    priorCompanies: [Google, Meta, 0x, Heap]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-goldsky-seed]
+    sourceIds: [src-goldsky-techcrunch, src-goldsky-theblock]
+  - <<: *person_base
+    id: per-jeff-ling-goldsky
+    name: Jeff Ling
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-goldsky
+        companyName: Goldsky
+        role: Co-founder
+        startDate: "2021-10-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-goldsky-theblock]
+    priorCompanies: [Heap]
+    signalEventIds: []
+sources:
+  - &source_base
+    id: src-goldsky-techcrunch
+    schemaVersion: 7
+    publisher: TechCrunch
+    title: Goldsky raises $20M to automate crypto data pipelines
+    url: https://techcrunch.com/2022/09/13/goldsky-crypto-data-infrastructure-blockchain-startup-funding/
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.82
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2022-09-13"
+    availabilityDate: "2022-09-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - <<: *source_base
+    id: src-goldsky-theblock
+    publisher: The Block
+    title: Crypto data infrastructure platform Goldsky raises $20 million seed round
+    url: https://www.theblock.co/post/169190/crypto-data-infrastructure-platform-goldsky-raises-20-million-seed-round
+    reliability: 0.8
+    publishedAt: "2022-09-12"
+    availabilityDate: "2022-09-12"
+  - <<: *source_base
+    id: src-goldsky-launch
+    publisher: Goldsky
+    title: Real-time blockchain data access with Goldsky
+    url: https://goldsky.com/blog/real-time-blockchain-data-access-with-goldsky
+    sourceType: official_company
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: "2026-05-27"
+    availabilityDate: "2026-05-27"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-goldsky-polymarket
+    publisher: Goldsky
+    title: Polymarket case study
+    url: https://goldsky.com/case-studies/polymarket-goldsky
+    sourceType: official_company
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: "2024-01-16"
+    availabilityDate: "2024-01-16"
+    supportRole: customer_vendor
+  - <<: *source_base
+    id: src-goldsky-koi
+    publisher: Goldsky
+    title: Koi Finance case study
+    url: https://goldsky.com/case-studies/koi-finance-goldsky
+    sourceType: official_company
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: "2023-12-06"
+    availabilityDate: "2023-12-06"
+    supportRole: customer_vendor
+  - <<: *source_base
+    id: src-goldsky-pricing
+    publisher: Goldsky
+    title: Pricing
+    url: https://goldsky.com/pricing
+    sourceType: official_company
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-goldsky-soc2
+    publisher: Goldsky
+    title: Goldsky is now SOC 2 Type II attested
+    url: https://goldsky.com/blog/goldsky-is-now-soc-2-type-ii-attested
+    sourceType: official_company
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: "2026-08-16"
+    availabilityDate: "2026-08-16"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-goldsky-streamling
+    publisher: Goldsky
+    title: Open sourcing Streamling
+    url: https://goldsky.com/blog/open-sourcing-streamling
+    sourceType: code_repository
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: "2026-06-08"
+    availabilityDate: "2026-06-08"
+    supportRole: primary_fact
+  - <<: *source_base
+    id: src-goldsky-aws
+    publisher: Amazon Web Services
+    title: Goldsky blockchain data streaming on AWS Marketplace
+    url: https://aws.amazon.com/marketplace/pp/prodview-hkxwqutlje2cq
+    sourceType: customer_vendor
+    reliability: 0.74
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: null
+    availabilityDate: "2026-06-30"
+    supportRole: customer_vendor
+evidenceClaims:
+  - &claim_base
+    id: clm-goldsky-seed
+    schemaVersion: 7
+    companyId: co-goldsky
+    claim: Goldsky raised a $20 million seed round led by Felicis and Dragonfly in September 2022.
+    statedValue: $20 million seed
+    numericValue: 20
+    unit: usd_millions
+    sourceId: src-goldsky-techcrunch
+    supportingSourceIds: [src-goldsky-theblock]
+    sourceUrl: https://techcrunch.com/2022/09/13/goldsky-crypto-data-infrastructure-blockchain-startup-funding/
+    publicationDate: "2022-09-13"
+    metricAsOfDate: "2022-09-13"
+    lastVerified: "2026-09-13T12:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: financing
+    notes: Equity financing is distinct from customer assets, protocol liquidity, revenue, and capital spent.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - <<: *claim_base
+    id: clm-goldsky-total-funding
+    claim: TechCrunch reported that the seed brought Goldsky's total disclosed financing to $22 million.
+    statedValue: $22 million total
+    numericValue: 22
+    sourceId: src-goldsky-techcrunch
+    supportingSourceIds: []
+    metricAsOfDate: "2022-09-13"
+  - <<: *claim_base
+    id: clm-goldsky-founded
+    claim: Goldsky was founded in October 2021 by Kevin Li and Jeff Ling.
+    statedValue: Founded October 2021 by Kevin Li and Jeff Ling
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-theblock
+    supportingSourceIds: [src-goldsky-techcrunch]
+    sourceUrl: https://www.theblock.co/post/169190/crypto-data-infrastructure-platform-goldsky-raises-20-million-seed-round
+    publicationDate: "2022-09-12"
+    metricAsOfDate: "2021-10-01"
+    topic: people
+  - <<: *claim_base
+    id: clm-goldsky-product
+    claim: Goldsky provides managed subgraph indexing and real-time blockchain data streaming into customer-controlled data sinks.
+    statedValue: Managed indexing and data streaming
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-launch
+    supportingSourceIds: [src-goldsky-aws]
+    sourceUrl: https://goldsky.com/blog/real-time-blockchain-data-access-with-goldsky
+    publicationDate: "2026-05-27"
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium_high
+    topic: product_architecture
+  - <<: *claim_base
+    id: clm-goldsky-customers-2022
+    claim: Independent 2022 reporting identified Arweave, POAP, and Polymarket as Goldsky customers or users.
+    statedValue: Arweave, POAP, and Polymarket
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-theblock
+    supportingSourceIds: [src-goldsky-techcrunch]
+    sourceUrl: https://www.theblock.co/post/169190/crypto-data-infrastructure-platform-goldsky-raises-20-million-seed-round
+    publicationDate: "2022-09-12"
+    metricAsOfDate: "2022-09-12"
+    topic: customers
+  - <<: *claim_base
+    id: clm-goldsky-undisclosed-revenue
+    claim: Goldsky declined to disclose customer-count, revenue, and profitability figures to TechCrunch in September 2022.
+    statedValue: Not disclosed
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-techcrunch
+    supportingSourceIds: []
+    publicationDate: "2022-09-13"
+    metricAsOfDate: "2022-09-13"
+    modelEligibility: caveat
+    topic: financial_disclosure
+    notes: This is a documented non-disclosure, not evidence that revenue or profitability was absent.
+  - <<: *claim_base
+    id: clm-goldsky-polymarket-service
+    claim: Goldsky's Polymarket case study reported 99.9% indexing uptime and processing up to 400 events per second for that customer.
+    statedValue: 99.9% uptime; up to 400 events per second
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-polymarket
+    supportingSourceIds: []
+    sourceUrl: https://goldsky.com/case-studies/polymarket-goldsky
+    publicationDate: "2024-01-16"
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: customer_delivery
+    notes: Company-controlled case study; Polymarket volume and trades are customer-protocol metrics, not Goldsky revenue or users.
+  - <<: *claim_base
+    id: clm-goldsky-koi-service
+    claim: Goldsky's Koi Finance case study reported a migration completed in under 48 hours and 50,000 daily requests without failures.
+    statedValue: under 48 hours; 50,000 requests per day
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-koi
+    supportingSourceIds: []
+    sourceUrl: https://goldsky.com/case-studies/koi-finance-goldsky
+    publicationDate: "2023-12-06"
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: customer_delivery
+  - <<: *claim_base
+    id: clm-goldsky-pricing
+    claim: Goldsky publishes usage-based prices for subgraphs, Turbo pipelines, indexed entities, and Edge RPC requests, alongside enterprise plans.
+    statedValue: Usage-based and enterprise pricing
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-pricing
+    supportingSourceIds: []
+    sourceUrl: https://goldsky.com/pricing
+    publicationDate: null
+    metricAsOfDate: "2026-09-10"
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: business_model
+  - <<: *claim_base
+    id: clm-goldsky-soc2
+    claim: Goldsky stated that it completed a SOC 2 Type II attestation covering security, availability, and confidentiality criteria.
+    statedValue: SOC 2 Type II attestation
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-soc2
+    supportingSourceIds: []
+    sourceUrl: https://goldsky.com/blog/goldsky-is-now-soc-2-type-ii-attested
+    publicationDate: "2026-08-16"
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: compliance_and_security
+    notes: The attestation report was not public in the reviewed materials, so scope and exceptions were not independently checked.
+  - <<: *claim_base
+    id: clm-goldsky-streamling
+    claim: Goldsky open-sourced Streamling, the Rust runtime it says powers its Turbo data-streaming product.
+    statedValue: Streamling open-sourced
+    numericValue: null
+    unit: null
+    sourceId: src-goldsky-streamling
+    supportingSourceIds: []
+    sourceUrl: https://goldsky.com/blog/open-sourcing-streamling
+    publicationDate: "2026-06-08"
+    metricAsOfDate: "2026-06-08"
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: developer_ecosystem
+signalEvents:
+  - &event_base
+    id: sig-goldsky-seed
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-goldsky
+    subjectNameRaw: Goldsky
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-goldsky-techcrunch
+    rawStrength: 0.7
+    evidenceSummary: Goldsky raised a $20 million seed round.
+    evidenceIds: [clm-goldsky-seed, clm-goldsky-total-funding]
+    publicationDate: "2022-09-13"
+    availabilityDate: "2022-09-13"
+    eventDate: "2022-09-13"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - <<: *event_base
+    id: sig-goldsky-streamling
+    signalType: developer_activity
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-goldsky-streamling
+    rawStrength: 0.5
+    evidenceSummary: Goldsky open-sourced its Streamling runtime.
+    evidenceIds: [clm-goldsky-streamling]
+    publicationDate: "2026-06-08"
+    availabilityDate: "2026-06-08"
+    eventDate: "2026-06-08"
+  - <<: *event_base
+    id: sig-goldsky-soc2
+    signalType: regulatory_milestone
+    signalCategory: risk
+    signalDirection: neutral
+    sourceId: src-goldsky-soc2
+    rawStrength: 0.5
+    evidenceSummary: Goldsky announced completion of SOC 2 Type II attestation.
+    evidenceIds: [clm-goldsky-soc2]
+    publicationDate: "2026-08-16"
+    availabilityDate: "2026-08-16"
+    eventDate: "2026-08-16"
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-goldsky-financials
+    whatWasSearched: Financing coverage, pricing, company materials, and customer case studies.
+    whatCouldNotBeEstablished: Audited revenue, gross margin, profitability, cash balance, burn rate, or runway.
+    expectedToMatter: true
+  - id: gap-goldsky-current-customers
+    whatWasSearched: Independent reporting, public launch material, and customer case studies.
+    whatCouldNotBeEstablished: Independently verified current paying-customer count, retention, expansion, or concentration.
+    expectedToMatter: true
+  - id: gap-goldsky-later-financing
+    whatWasSearched: Public financing reporting and company announcements through the cutoff.
+    whatCouldNotBeEstablished: Any completed financing after the September 2022 seed.
+    expectedToMatter: true
+  - id: gap-goldsky-soc2-report
+    whatWasSearched: Goldsky's attestation announcement and public compliance materials.
+    whatCouldNotBeEstablished: The auditor's underlying SOC 2 report, exceptions, period covered, or current bridge letter.
+    expectedToMatter: true
+  - id: gap-goldsky-entity-boundary
+    whatWasSearched: Public company, marketplace, and legal materials.
+    whatCouldNotBeEstablished: Complete allocation of Goldsky-branded contracts and intellectual property to Endless Sky Inc.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: Goldsky is treated as the equity company and not as the customer protocols or networks represented in its data.
+  sourceOriginUncertainty: Customer-performance evidence comes mainly from Goldsky-controlled case studies and is not counted as independent corroboration.
+  likelyContradictions: null
+  completenessNotes: Customer protocol volume, trades, events, and API requests are not Goldsky revenue or Goldsky user counts. No token or network status was inferred.
+researchCutoff: "2026-09-10"

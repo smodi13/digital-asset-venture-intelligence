@@ -1,0 +1,627 @@
+schemaVersion: 7
+candidateId: CSG-03
+canonicalId: co-fren-pet
+canonicalName: Fren Pet
+slug: fren-pet
+description: >-
+  Fren Pet is an on-chain virtual-pet game deployed on Base. Its contracts and
+  progressive web application combine pet NFTs, the FP ERC-20 token, in-game
+  staking and burning, and ETH rewards funded from token trading fees.
+domain: frenpet.xyz
+firstObservedAt: "2023-08-31"
+category: consumer_social_and_gaming
+entityType: protocol
+assetType: token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_established
+financingStage: null
+cohort: FINAL_TEST
+nameAliasNote: >-
+  Independent sources also render the name as Frenpet. This packet uses the
+  frozen canonical spelling Fren Pet and excludes similarly named tokens,
+  staking products and unofficial Fren Pet AI agents.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Fren Pet's game state is implemented through Base smart contracts,
+        including an EIP-2535 diamond game contract, the FP ERC-20 token and
+        pet NFT contracts.
+      relatedEntityId: null
+      relationType: protocol_contract_suite
+  protocolNetworkRelationship: >-
+    Fren Pet is an application protocol on the Base network; Base is an
+    external network. FP is the application's token, while pet NFTs and pGOLD
+    are separate in-game assets or records and must not be treated as company
+    equity.
+  unresolvedBoundaryNotes:
+    - >-
+      No public source established a legal operating company, foundation, DAO,
+      cap table or contractual ownership structure behind the protocol.
+people:
+  - id: per-adam-surfcoderepeat
+    schemaVersion: 7
+    name: Adam
+    aliases: ["@surfcoderepeat"]
+    currentRole: Co-Creator
+    companyTenures:
+      - companyId: co-fren-pet
+        companyName: Fren Pet
+        role: Co-Creator and Developer
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-frenpet-fourpillars-2023, src-frenpet-bitget-2023]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: "https://github.com/surfer77", x: "https://x.com/surfcoderepeat", linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-frenpet-fourpillars-2023, src-frenpet-bitget-2023]
+  - id: per-carlos-cadu-veloso
+    schemaVersion: 7
+    name: Carlos Veloso
+    aliases: [Cadu Veloso, "@cadu_veloso", "@caduveloso"]
+    currentRole: Co-Creator
+    companyTenures:
+      - companyId: co-fren-pet
+        companyName: Fren Pet
+        role: Co-Creator and Developer
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-frenpet-fourpillars-2023, src-frenpet-bitget-2023]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: "https://x.com/cadu_veloso", linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-frenpet-fourpillars-2023, src-frenpet-bitget-2023]
+sources:
+  - id: src-frenpet-coindesk-token
+    schemaVersion: 7
+    publisher: CoinDesk Data
+    title: "Fren Pet price and asset profile"
+    url: "https://www.coindesk.com/price/frenpet"
+    sourceType: structured_secondary
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2023-08-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: historical_context
+  - id: src-frenpet-basescan-token
+    schemaVersion: 7
+    publisher: BaseScan
+    title: "FrenPetToken verified contract 0xff0c...e105"
+    url: "https://basescan.org/token/0xff0c532fdb8cd566ae169c1cb157ff2bdc83e105"
+    sourceType: block_explorer
+    tier: a
+    reliability: 0.9
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2023-08-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: onchain_fact
+  - id: src-frenpet-fourpillars-2023
+    schemaVersion: 7
+    publisher: Four Pillars Research
+    title: "Onchain Games I Played This Month: October"
+    url: "https://research.4pillars.io/en/research/onchain-games-i-played-this-month-october"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.68
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-11-01"
+    availabilityDate: "2023-11-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-frenpet-bitget-2023
+    schemaVersion: 7
+    publisher: Bitget Research Institute
+    title: "Research brief including Base and Fren Pet activity"
+    url: "https://www.bitgetapps.com/zh-CN/news/detail/12560603842206"
+    sourceType: specialist_industry
+    tier: c
+    reliability: 0.58
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-11-22"
+    availabilityDate: "2023-11-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+  - id: src-frenpet-bankless-2023
+    schemaVersion: 7
+    publisher: Bankless
+    title: "How to Adopt a Fren Pet"
+    url: "https://www.bankless.com/read/how-to-adopt-a-fren-pet"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-12-12"
+    availabilityDate: "2023-12-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-frenpet-docs-overview
+    schemaVersion: 7
+    publisher: Fren Pet
+    title: "Fren Pet Overview"
+    url: "https://docs.frenpet.xyz/"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-frenpet-docs-freemium
+    schemaVersion: 7
+    publisher: Fren Pet
+    title: "Free, Stake, Pass"
+    url: "https://docs.frenpet.xyz/freemium"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: src-frenpet-docs-overview
+    supportRole: direct_company_disclosure
+  - id: src-frenpet-docs-stake
+    schemaVersion: 7
+    publisher: Fren Pet
+    title: "Stake to Play"
+    url: "https://docs.frenpet.xyz/stake"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: src-frenpet-docs-overview
+    supportRole: direct_company_disclosure
+  - id: src-frenpet-docs-rewards
+    schemaVersion: 7
+    publisher: Fren Pet
+    title: "Rewards"
+    url: "https://docs.frenpet.xyz/rewards"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: src-frenpet-docs-overview
+    supportRole: direct_company_disclosure
+  - id: src-frenpet-docs-token
+    schemaVersion: 7
+    publisher: Fren Pet
+    title: "$FP"
+    url: "https://docs.frenpet.xyz/fp"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: src-frenpet-docs-overview
+    supportRole: direct_company_disclosure
+  - id: src-frenpet-docs-contracts
+    schemaVersion: 7
+    publisher: Fren Pet
+    title: "Contracts"
+    url: "https://docs.frenpet.xyz/contracts"
+    sourceType: official_protocol_source
+    tier: c
+    reliability: 0.65
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: src-frenpet-docs-overview
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-frenpet-launch-token
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Fren Pet and its FP ERC-20 token were deployed on Base by August 31,
+      2023; the token contract address is
+      0xff0c532fdb8cd566ae169c1cb157ff2bdc83e105.
+    sourceId: src-frenpet-basescan-token
+    supportingSourceIds: [src-frenpet-coindesk-token]
+    sourceUrl: "https://basescan.org/token/0xff0c532fdb8cd566ae169c1cb157ff2bdc83e105"
+    publicationDate: null
+    metricAsOfDate: "2023-08-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: token_and_protocol_launch
+    evidenceStatus: supported
+  - id: clm-frenpet-creators
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Independent 2023 sources identified Fren Pet's creators as Adam
+      (@surfcoderepeat) and Cadu/Carlos Veloso (@cadu_veloso).
+    sourceId: src-frenpet-fourpillars-2023
+    supportingSourceIds: [src-frenpet-bitget-2023]
+    sourceUrl: "https://research.4pillars.io/en/research/onchain-games-i-played-this-month-october"
+    publicationDate: "2023-11-01"
+    metricAsOfDate: "2023-11-01"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: team
+    notes: "Adam's surname and broader professional histories were not established."
+    evidenceStatus: supported
+  - id: clm-frenpet-game-architecture
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Fren Pet is a Base-based virtual-pet game whose actions include minting,
+      feeding, training, battles and rewards; the user interface is delivered
+      as a progressive web app with embedded-wallet onboarding.
+    sourceId: src-frenpet-docs-overview
+    supportingSourceIds: [src-frenpet-bankless-2023, src-frenpet-fourpillars-2023]
+    sourceUrl: "https://docs.frenpet.xyz/"
+    publicationDate: null
+    metricAsOfDate: "2024-12-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: product_architecture
+    evidenceStatus: supported
+  - id: clm-frenpet-free-and-pass
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Fren Pet documents a free-play mode, subsidizes up to ten player
+      transactions per day, and offers a $15 monthly pass with enhanced point
+      earning, shorter battle cooldowns and three loot items.
+    statedValue: "$15 monthly pass; up to 10 subsidized transactions daily"
+    numericValue: 15
+    unit: usd_per_month
+    sourceId: src-frenpet-docs-freemium
+    supportingSourceIds: [src-frenpet-docs-overview]
+    sourceUrl: "https://docs.frenpet.xyz/freemium"
+    publicationDate: null
+    metricAsOfDate: "2024-12-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: pricing_and_incentives
+    notes: "The subsidy is protocol resource spend, not evidence of customer acquisition cost or company revenue."
+    evidenceStatus: supported
+  - id: clm-frenpet-stake-to-play
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Under the documented Stake to Play mechanism, FP committed to upgrades is
+      returned to the player linearly over 30 days and accumulated FP can be
+      withdrawn before the full period ends.
+    statedValue: "30-day linear return"
+    numericValue: 30
+    unit: days
+    sourceId: src-frenpet-docs-stake
+    supportingSourceIds: []
+    sourceUrl: "https://docs.frenpet.xyz/stake"
+    publicationDate: null
+    metricAsOfDate: "2024-12-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: token_incentive_design
+    evidenceStatus: supported
+  - id: clm-frenpet-trading-fee-2023
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Four Pillars reported in November 2023 that FP buys and sells incurred a
+      5% fee, allocated 2% to players, 2% to developers and 1% to FP-ETH
+      liquidity.
+    statedValue: "5% trading fee: 2% players, 2% developers, 1% liquidity"
+    numericValue: 5
+    unit: percent
+    sourceId: src-frenpet-fourpillars-2023
+    supportingSourceIds: []
+    sourceUrl: "https://research.4pillars.io/en/research/onchain-games-i-played-this-month-october"
+    publicationDate: "2023-11-01"
+    metricAsOfDate: "2023-11-01"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: protocol_fee_design
+    evidenceStatus: supported
+  - id: clm-frenpet-trading-fee-later
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Later Fren Pet documentation describes a 4% FP buy/sell tax, allocated
+      2% to player rewards, 1% to developers and 1% to liquidity.
+    statedValue: "4% trading tax: 2% players, 1% developers, 1% liquidity"
+    numericValue: 4
+    unit: percent
+    sourceId: src-frenpet-docs-rewards
+    supportingSourceIds: []
+    sourceUrl: "https://docs.frenpet.xyz/rewards"
+    publicationDate: null
+    metricAsOfDate: "2024-12-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: protocol_fee_design
+    notes: >-
+      This later parameter description differs from the 2023 design and is
+      treated as a time-varying fee change, not silently substituted for the
+      historical value. Protocol fees and developer allocation are not proven
+      company revenue.
+    evidenceStatus: supported
+  - id: clm-frenpet-distribution-burn
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Fren Pet states that 100% of initial FP tokens were distributed through a
+      BaseSwap pool with no team pre-allocation, and that FP spent on mushrooms
+      is burned.
+    sourceId: src-frenpet-docs-token
+    supportingSourceIds: []
+    sourceUrl: "https://docs.frenpet.xyz/fp"
+    publicationDate: null
+    metricAsOfDate: "2024-12-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: token_distribution
+    notes: "The distribution statement is first-party and was not independently wallet-attributed in this research."
+    evidenceStatus: insufficient
+  - id: clm-frenpet-v2-contracts
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Fren Pet documents its V2 game as an EIP-2535 Diamond deployment at
+      0x0e22b5f3e11944578b37ed04f5312dfc246f443c and marks its prior V1 game
+      contracts deprecated.
+    sourceId: src-frenpet-docs-contracts
+    supportingSourceIds: []
+    sourceUrl: "https://docs.frenpet.xyz/contracts"
+    publicationDate: null
+    metricAsOfDate: "2024-12-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: deployment_status
+    evidenceStatus: supported
+  - id: clm-frenpet-token-admin-controls
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      The verified FP token contract exposes owner-controlled functions for
+      updating buy and sell fee components, maximum transaction and wallet
+      limits, fee exclusions, wallet addresses and address blacklisting, along
+      with functions to renounce ownership and blacklist authority.
+    sourceId: src-frenpet-basescan-token
+    supportingSourceIds: []
+    sourceUrl: "https://basescan.org/token/0xff0c532fdb8cd566ae169c1cb157ff2bdc83e105"
+    publicationDate: null
+    metricAsOfDate: "2023-08-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: governance_and_admin_controls
+    notes: >-
+      Function availability establishes the contract's control surface; it does
+      not establish that any power was abused or who controlled the owner at
+      every later date.
+    evidenceStatus: supported
+  - id: clm-frenpet-early-activity-2023
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Bitget Research reported on November 22, 2023 that Fren Pet was among the
+      most-interacted-with Base dapps and that its contracts held 127.6 ETH.
+    statedValue: "127.6 ETH held in contracts"
+    numericValue: 127.6
+    unit: eth
+    sourceId: src-frenpet-bitget-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.bitgetapps.com/zh-CN/news/detail/12560603842206"
+    publicationDate: "2023-11-22"
+    metricAsOfDate: "2023-11-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    modelEligibility: context_only
+    topic: early_onchain_activity
+    notes: "Contract-held ETH is not TVL, company treasury, developer revenue or customer count."
+    evidenceStatus: supported
+  - id: clm-frenpet-downtime-2023
+    schemaVersion: 7
+    companyId: co-fren-pet
+    claim: >-
+      Bitget Research reported intermittent Fren Pet dapp downtime in November
+      2023 and said service was restored quickly.
+    sourceId: src-frenpet-bitget-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.bitgetapps.com/zh-CN/news/detail/12560603842206"
+    publicationDate: "2023-11-22"
+    metricAsOfDate: "2023-11-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: caveat
+    topic: operational_limitation
+    evidenceStatus: supported
+signalEvents:
+  - id: sig-frenpet-protocol-launch-2023
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-fren-pet
+    subjectNameRaw: Fren Pet
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-frenpet-basescan-token
+    rawStrength: 0.8
+    evidenceSummary: "Fren Pet launched as a live Base application by August 31, 2023."
+    evidenceIds: [clm-frenpet-launch-token]
+    publicationDate: null
+    availabilityDate: "2023-08-31"
+    eventDate: "2023-08-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-frenpet-token-launch-2023
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-fren-pet
+    subjectNameRaw: Fren Pet
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-frenpet-basescan-token
+    rawStrength: 0.8
+    evidenceSummary: "The FP ERC-20 token launched on Base."
+    evidenceIds: [clm-frenpet-launch-token]
+    publicationDate: null
+    availabilityDate: "2023-08-31"
+    eventDate: "2023-08-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-frenpet-early-activity-2023
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-fren-pet
+    subjectNameRaw: Fren Pet
+    signalType: onchain_activity_trend
+    signalCategory: network
+    signalDirection: ambiguous
+    sourceId: src-frenpet-bitget-2023
+    rawStrength: 0.6
+    evidenceSummary: "A November 2023 industry snapshot reported high Base interaction and 127.6 ETH held by the contracts."
+    evidenceIds: [clm-frenpet-early-activity-2023]
+    publicationDate: "2023-11-22"
+    availabilityDate: "2023-11-22"
+    eventDate: "2023-11-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-frenpet-downtime-2023
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-fren-pet
+    subjectNameRaw: Fren Pet
+    signalType: site_change
+    signalCategory: risk
+    signalDirection: negative
+    sourceId: src-frenpet-bitget-2023
+    rawStrength: 0.4
+    evidenceSummary: "Bitget Research documented intermittent dapp downtime followed by recovery."
+    evidenceIds: [clm-frenpet-downtime-2023]
+    publicationDate: "2023-11-22"
+    availabilityDate: "2023-11-22"
+    eventDate: "2023-11-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-frenpet-legal-entity
+    whatWasSearched: "Official site, documentation, contract records, creator profiles and independent coverage for an operating legal entity."
+    whatCouldNotBeEstablished: "A legal company, foundation or DAO responsible for Fren Pet and its liabilities."
+    expectedToMatter: true
+  - id: gap-frenpet-financing
+    whatWasSearched: "Independent reporting, official materials and creator histories for equity financing, grants or disclosed treasury funding."
+    whatCouldNotBeEstablished: "Any equity round, grant, outside financing amount or protocol treasury resource total."
+    expectedToMatter: true
+  - id: gap-frenpet-users-retention
+    whatWasSearched: "Industry coverage, official documentation and on-chain sources for users, cohorts and retained activity."
+    whatCouldNotBeEstablished: "A cutoff-date active-user count, retention cohort, paying-user count or independently reproducible adoption series."
+    expectedToMatter: true
+  - id: gap-frenpet-revenue
+    whatWasSearched: "Fee documentation and reporting for developer receipts and operating economics."
+    whatCouldNotBeEstablished: "Cumulative developer-fee receipts, monthly protocol fees, operating costs or company revenue."
+    expectedToMatter: true
+  - id: gap-frenpet-security-audit
+    whatWasSearched: "Official docs, explorer records and public web sources for scoped independent audits and exploit reports."
+    whatCouldNotBeEstablished: "A public independent audit of the current V2 diamond and token system, or evidence sufficient to assert no exploit occurred."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Fren Pet's public footprint centers on creators and contracts rather than a
+    disclosed legal entity. Protocol, Base network, FP token, pet NFTs and
+    pGOLD are preserved as distinct concepts.
+  sourceOriginUncertainty: >-
+    The current mechanics are primarily first-party documentation. Independent
+    2023 reviews establish early product and activity context but not the full
+    later V2 state.
+  likelyContradictions: >-
+    A 5% 2023 trading-fee schedule and a later 4% documented schedule differ.
+    Because the observations are at different times and the contract permits
+    fee updates, the packet treats this as a parameter change, not a silently
+    resolved same-date conflict.
+  completenessNotes: >-
+    The packet documents launch, architecture, token mechanics, fees, creators,
+    early activity and an operational limitation. Legal identity, financing,
+    current adoption, realized economics and V2 audit evidence remain gaps.
+researchCutoff: "2026-09-10"

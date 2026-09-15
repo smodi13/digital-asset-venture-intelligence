@@ -1,0 +1,712 @@
+schemaVersion: 7
+candidateId: DCM-01
+canonicalId: co-morpho-labs
+canonicalName: Morpho Labs
+slug: morpho-labs
+description: >-
+  Morpho is a decentralized, noncustodial lending infrastructure stack for
+  permissionless isolated markets and curated vaults. Morpho Labs is a
+  development company associated with the protocol; a French nonprofit,
+  Morpho Association, supports protocol development and hosts an interface;
+  MORPHO token holders govern a limited set of protocol parameters.
+domain: morpho.org
+firstObservedAt: "2021-08-01"
+category: defi_and_capital_markets
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_established
+financingStage: strategic token financing
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: "Morpho Labs is the research and software-development company founded by the protocol's founding team."
+      relatedEntityId: null
+      relationType: protocol_developer
+    - description: "Morpho Association is a French nonprofit that supports development, growth, security, and adoption and hosts the morpho.org interface and documentation."
+      relatedEntityId: null
+      relationType: nonprofit_protocol_support
+    - description: "MORPHO holders govern treasury assets and a limited set of protocol parameters; approved actions are executed by governance multisigs."
+      relatedEntityId: null
+      relationType: token_governance
+  protocolNetworkRelationship: >-
+    The frozen hybrid assignment encompasses Morpho Labs, Morpho Protocol,
+    Morpho Association, and MORPHO governance. Claims distinguish the company,
+    immutable lending contracts, interface operator, and token governance.
+  unresolvedBoundaryNotes:
+    - "Public sources do not fully map intellectual-property, employment, funding, and service relationships between Morpho Labs SAS and Morpho Association."
+people:
+  - id: per-paul-frambot
+    schemaVersion: 7
+    name: Paul Frambot
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-morpho-labs
+        companyName: Morpho Labs
+        role: Co-founder and CEO
+        startDate: "2021-08-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-morpho-forbes-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-morpho-forbes-2024, src-morpho-coindesk-funding-2024]
+  - id: per-merlin-egalite
+    schemaVersion: 7
+    name: Merlin Egalite
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-morpho-labs
+        companyName: Morpho Labs
+        role: Co-founder
+        startDate: "2021-08-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-morpho-forbes-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-morpho-forbes-2024]
+  - id: per-mathis-gontier-delaunay
+    schemaVersion: 7
+    name: Mathis Gontier Delaunay
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-morpho-labs
+        companyName: Morpho Labs
+        role: Co-founder
+        startDate: "2021-08-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-morpho-forbes-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-morpho-forbes-2024]
+  - id: per-julien-thomas-morpho
+    schemaVersion: 7
+    name: Julien Thomas
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-morpho-labs
+        companyName: Morpho Labs
+        role: Co-founder
+        startDate: "2021-08-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-morpho-forbes-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-morpho-forbes-2024]
+sources:
+  - id: src-morpho-forbes-2024
+    schemaVersion: 7
+    publisher: Forbes
+    title: "Morpho profile"
+    url: "https://www.forbes.com/profile/morpho/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.78
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-04-09"
+    availabilityDate: "2024-04-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: historical_context
+  - id: src-morpho-coindesk-funding-2024
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Crypto Lending Firm Morpho Bags $50M in Funding Round Led by Ribbit Capital"
+    url: "https://www.coindesk.com/business/2024/08/01/crypto-lending-firm-morpho-bags-50m-in-funding-round-led-by-ribbit-capital"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-08-01"
+    availabilityDate: "2024-08-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-morpho-docs-overview
+    schemaVersion: 7
+    publisher: Morpho Association
+    title: "Morpho Overview"
+    url: "https://docs.morpho.org/learn/"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-morpho-docs-governance
+    schemaVersion: 7
+    publisher: Morpho Association
+    title: "Morpho Governance Organization"
+    url: "https://docs.morpho.org/learn/governance/organization/"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+  - id: src-morpho-docs-token
+    schemaVersion: 7
+    publisher: Morpho Association
+    title: "The MORPHO token"
+    url: "https://docs.morpho.org/learn/governance/morpho-token/"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+  - id: src-morpho-docs-risk
+    schemaVersion: 7
+    publisher: Morpho Association
+    title: "Risk and Security Documentation"
+    url: "https://docs.morpho.org/learn/resources/risks/"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-morpho-vulnerability-2023
+    schemaVersion: 7
+    publisher: Morpho
+    title: "Vulnerability Report - June 2023"
+    url: "https://morpho.org/blog/vulnerability-report-june-2023"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2023-06-06"
+    availabilityDate: "2023-06-06"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-morpho-theblock-coinbase-2025
+    schemaVersion: 7
+    publisher: The Block
+    title: "Coinbase launches Bitcoin-backed onchain loans via DeFi protocol Morpho"
+    url: "https://www.theblock.co/news/markets/2025-01-16-coinbase-bitcoin-backed-onchain-loans-morpho-335007"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-01-16"
+    availabilityDate: "2025-01-16"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: customer_vendor
+  - id: src-morpho-2026
+    schemaVersion: 7
+    publisher: Morpho
+    title: "Morpho 2026"
+    url: "https://morpho.org/blog/morpho-2026"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2026-01-16"
+    availabilityDate: "2026-01-16"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-morpho-chainsecurity-audit-2022
+    schemaVersion: 7
+    publisher: ChainSecurity
+    title: "Morpho Aave V3 Audit"
+    url: "https://cdn.morpho.org/documents/MorphoAaveV3_Audit_ChainSecurity.pdf"
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2022-08-01"
+    availabilityDate: "2022-08-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: audit_finding
+evidenceClaims:
+  - id: clm-morpho-founders
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Paul Frambot, Merlin Egalite, Mathis Gontier Delaunay, and Julien Thomas co-founded Morpho Labs."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-morpho-forbes-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.forbes.com/profile/morpho/"
+    publicationDate: "2024-04-09"
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: founders
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-token-financing-50m
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho raised $50 million in an August 2024 private token sale led by Ribbit Capital."
+    statedValue: "$50 million private token sale"
+    numericValue: 50000000
+    unit: usd
+    sourceId: src-morpho-coindesk-funding-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2024/08/01/crypto-lending-firm-morpho-bags-50m-in-funding-round-led-by-ribbit-capital"
+    publicationDate: "2024-08-01"
+    metricAsOfDate: "2024-08-01"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: token_financing
+    notes: "This was reported as a private token sale, not equity financing or protocol revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What token price, lockup, side-letter rights, and governance concentration resulted from the private sale?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-prior-financing-18m
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho previously raised $18 million in 2022."
+    statedValue: "$18 million"
+    numericValue: 18000000
+    unit: usd
+    sourceId: src-morpho-coindesk-funding-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2024/08/01/crypto-lending-firm-morpho-bags-50m-in-funding-round-led-by-ribbit-capital"
+    publicationDate: "2024-08-01"
+    metricAsOfDate: "2022-06-01"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: financing
+    notes: "The cited article does not characterize this prior financing as equity or token financing."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-protocol-architecture
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho Protocol permits creation of immutable, isolated lending markets with market-specific collateral, loan asset, oracle, interest-rate model, and liquidation LTV parameters."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-morpho-docs-overview
+    supportingSourceIds: []
+    sourceUrl: "https://docs.morpho.org/learn/"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: architecture
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-association
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho Association is a French nonprofit that supports protocol development and adoption and hosts the morpho.org interface and documentation."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-morpho-docs-governance
+    supportingSourceIds: []
+    sourceUrl: "https://docs.morpho.org/learn/governance/organization/"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: legal_entity
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What agreements govern personnel, IP, funding, and services between Morpho Association and Morpho Labs?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-governance-scope
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho governance can activate a protocol fee capped at 25% of borrower interest, whitelist LLTVs and interest-rate models, and control governance treasury assets."
+    statedValue: "fee capped at 25% of borrower interest"
+    numericValue: 25
+    unit: percent_of_borrower_interest_maximum
+    sourceId: src-morpho-docs-governance
+    supportingSourceIds: []
+    sourceUrl: "https://docs.morpho.org/learn/governance/organization/"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: governance
+    notes: "Ability to activate a fee does not establish that the fee was active or that revenue accrued to Morpho Labs."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Which markets had an active fee at cutoff, and which legal entity or treasury received it?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-token-supply
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "The MORPHO governance token has a maximum supply of 1 billion tokens."
+    statedValue: "1,000,000,000 MORPHO"
+    numericValue: 1000000000
+    unit: morpho_tokens_max_supply
+    sourceId: src-morpho-docs-token
+    supportingSourceIds: []
+    sourceUrl: "https://docs.morpho.org/learn/governance/morpho-token/"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: token_supply
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-coinbase-integration
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Coinbase launched Bitcoin-backed USDC loans on January 16, 2025 using Morpho markets on Base."
+    statedValue: "loans up to $100,000 USDC at launch"
+    numericValue: 100000
+    unit: usd_launch_loan_limit
+    sourceId: src-morpho-theblock-coinbase-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/news/markets/2025-01-16-coinbase-bitcoin-backed-onchain-loans-morpho-335007"
+    publicationDate: "2025-01-16"
+    metricAsOfDate: "2025-01-16"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: integration
+    notes: "Integration launch is not itself evidence of retained borrowers or company revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-2025-users
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho reported that its user count rose from 67,000 to more than 1.4 million during 2025."
+    statedValue: "67,000 to 1.4M+ users"
+    numericValue: 1400000
+    unit: users_end_2025_lower_bound
+    sourceId: src-morpho-2026
+    supportingSourceIds: []
+    sourceUrl: "https://morpho.org/blog/morpho-2026"
+    publicationDate: "2026-01-16"
+    metricAsOfDate: "2025-12-31"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "The disclosure does not define unique-user methodology or retention."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Provide methodology, deduplication, active-use threshold, and cohort retention for the reported user count."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-2025-deposits
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "Morpho reported that deposits increased from $5 billion to $13 billion during 2025."
+    statedValue: "$5B to $13B deposits"
+    numericValue: 13000000000
+    unit: usd_deposits_end_2025
+    sourceId: src-morpho-2026
+    supportingSourceIds: []
+    sourceUrl: "https://morpho.org/blog/morpho-2026"
+    publicationDate: "2026-01-16"
+    metricAsOfDate: "2025-12-31"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: protocol_liquidity
+    notes: "Deposits are protocol liquidity, not company revenue or capital raised."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile gross deposits, TVL methodology, rehypothecated positions, and chain-level duplication."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-vulnerability-2023
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "A June 2023 disclosed Aave V3 Optimizer vulnerability could have enabled theft through manipulated pool indexes; Morpho paused supply, patched the issue, and paid a $285,000 bounty after responsible disclosure."
+    statedValue: "$285,000 bounty"
+    numericValue: 285000
+    unit: usd_bug_bounty
+    sourceId: src-morpho-vulnerability-2023
+    supportingSourceIds: []
+    sourceUrl: "https://morpho.org/blog/vulnerability-report-june-2023"
+    publicationDate: "2023-06-06"
+    metricAsOfDate: "2023-06-04"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: caveat
+    topic: security_incident
+    notes: "This is a first-party postmortem; it describes a vulnerability and response, not a completed theft."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Was any loss or attempted exploitation observed onchain before the pause?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-morpho-chainsecurity-scope
+    schemaVersion: 7
+    companyId: co-morpho-labs
+    claim: "ChainSecurity's 2022 Morpho Aave V3 audit identified insufficiency in the HeapOrdering data structure and stated that audits cannot uncover all vulnerabilities."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-morpho-chainsecurity-audit-2022
+    supportingSourceIds: []
+    sourceUrl: "https://cdn.morpho.org/documents/MorphoAaveV3_Audit_ChainSecurity.pdf"
+    publicationDate: "2022-08-01"
+    metricAsOfDate: "2022-08-01"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: security_audit
+    notes: "The finding and assessment apply only to the stated audit scope and reviewed version."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-morpho-token-financing-2024
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-morpho-labs
+    subjectNameRaw: Morpho
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-morpho-coindesk-funding-2024
+    rawStrength: 0.9
+    evidenceSummary: "Morpho completed a $50 million private token sale led by Ribbit Capital."
+    evidenceIds: [clm-morpho-token-financing-50m]
+    publicationDate: "2024-08-01"
+    availabilityDate: "2024-08-01"
+    eventDate: "2024-08-01"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-morpho-coinbase-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-morpho-labs
+    subjectNameRaw: Morpho Protocol
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-morpho-theblock-coinbase-2025
+    rawStrength: 0.9
+    evidenceSummary: "Coinbase launched Bitcoin-backed USDC loans powered by Morpho on Base."
+    evidenceIds: [clm-morpho-coinbase-integration]
+    publicationDate: "2025-01-16"
+    availabilityDate: "2025-01-16"
+    eventDate: "2025-01-16"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-morpho-vulnerability-2023
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-morpho-labs
+    subjectNameRaw: Morpho Aave V3 Optimizer
+    signalType: security_incident
+    signalCategory: risk
+    signalDirection: negative
+    sourceId: src-morpho-vulnerability-2023
+    rawStrength: 0.7
+    evidenceSummary: "A disclosed index-caching vulnerability led to a protocol pause, remediation, review, and bounty payment."
+    evidenceIds: [clm-morpho-vulnerability-2023]
+    publicationDate: "2023-06-06"
+    availabilityDate: "2023-06-06"
+    eventDate: "2023-06-01"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-morpho-adoption-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-morpho-labs
+    subjectNameRaw: Morpho Protocol
+    signalType: onchain_activity_trend
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-morpho-2026
+    rawStrength: 0.7
+    evidenceSummary: "Morpho reported 2025 growth in users and deposits, without publishing retention methodology in the cited disclosure."
+    evidenceIds: [clm-morpho-2025-users, clm-morpho-2025-deposits]
+    publicationDate: "2026-01-16"
+    availabilityDate: "2026-01-16"
+    eventDate: "2025-12-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-morpho-company-economics
+    whatWasSearched: "Financing coverage, protocol documentation, and public analytics for Morpho Labs revenue, costs, burn, and runway."
+    whatCouldNotBeEstablished: "Morpho Labs operating-company revenue, margin, burn, runway, or contractual share of protocol economics."
+    expectedToMatter: true
+  - id: gap-morpho-fee-status
+    whatWasSearched: "Governance and documentation for the fee switch and fee-recipient arrangements."
+    whatCouldNotBeEstablished: "A complete cutoff-date schedule of active protocol fees by market and the economic beneficiary of each fee."
+    expectedToMatter: true
+  - id: gap-morpho-retention
+    whatWasSearched: "Official adoption disclosures and independent integration reporting for retained users and repeat borrowers."
+    whatCouldNotBeEstablished: "Comparable multi-period user retention and repeat-borrowing cohorts."
+    expectedToMatter: true
+  - id: gap-morpho-entity-contracts
+    whatWasSearched: "Morpho governance and entity documentation for the company-association relationship."
+    whatCouldNotBeEstablished: "Complete contracts, ownership, personnel allocation, and cash flows between Morpho Labs and Morpho Association."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: "Morpho Labs, Morpho Association, immutable protocol deployments, interfaces, and token governance are distinct but incompletely mapped legal and economic actors."
+  sourceOriginUncertainty: "The 2025 year-end operating figures are first-party claims and are not treated as independently verified onchain measurements."
+  likelyContradictions: null
+  completenessNotes: "The packet distinguishes private token financing from prior unspecified financing and keeps protocol deposits separate from company revenue."
+researchCutoff: "2026-09-10"

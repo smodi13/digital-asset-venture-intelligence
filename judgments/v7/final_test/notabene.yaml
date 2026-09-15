@@ -1,0 +1,192 @@
+schemaVersion: 7
+candidateId: CCI-02
+entityId: co-notabene
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:cb2e8729cfb718a9ee529d2d87f31073126bd9ee92cdfad783858a746e8a574b
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-disclosed-financing-total, clm-notabene-year-end-2024]
+    rationale: >-
+      Disclosed primary-company financings total at least $27.0 million, while
+      Notabene reported more than 190 customers, 32 million compliant transfers,
+      and more than 85 jurisdictions through 2024. Both capital and operating
+      scale context are present, but financing raised is not capital consumed;
+      without capital deployed, the evidence cannot support a favorable or
+      adverse efficiency comparison. Customer transaction volume is also not
+      Notabene revenue or assets.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Capital consumed and independent verification of aggregate operating metrics were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      A large transaction and jurisdiction footprint does not by itself show
+      whether recurring labor, compliance, infrastructure, or operating burden
+      is light or intensive. The packet contains no resource or cost measures.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Headcount, infrastructure spend, compliance cost, operating expense, and recurring resource requirements were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 70
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-adoption-2021, clm-notabene-adoption-series-b, clm-notabene-year-end-2024]
+    rationale: >-
+      Company-reported platform scale rose from more than 20 customers in 2021
+      to more than 165 by November 2024 and more than 190 through year end,
+      alongside more than 32 million compliant transfers. The multi-period
+      comparative evidence supports favorable adoption momentum, while its
+      first-party provenance and missing retention and active-customer measures
+      constrain certainty rather than erase direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent metric verification, retention cohorts, churn, and the active-customer share were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      TAP specifications and code exist, but their existence does not establish
+      external contributor growth, third-party developer expansion, or adoption
+      of TAP independent of Notabene products.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related protocol and code evidence exists, but external contributors, integrations, and ecosystem growth were not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-adoption-2021, clm-notabene-year-end-2024, clm-notabene-copper-partnership]
+    rationale: >-
+      Company-reported growth from more than 20 to more than 190 customers and
+      32 million compliant transfers, together with Copper's independent
+      announcement of its Notabene integration partnership, provides relevant
+      evidence of delivered operating execution. The aggregate metrics remain
+      first-party and retention, revenue, and integration depth are unresolved.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent verification of aggregate delivery outcomes, retention, and integration depth remains limited.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Notabene is an equity company with an affiliated open protocol, but the
+      packet contains no governance rights, ownership allocation, control
+      structure, maintainer authority, or stakeholder-incentive evidence. The
+      absence of a token does not make the criterion inapplicable or directional.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Corporate control, ownership alignment, and TAP maintainer governance were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-adoption-series-b, clm-notabene-copper-partnership, clm-notabene-eu-regulatory-context]
+    rationale: >-
+      Company-reported adoption across more than 165 companies and 80
+      jurisdictions, Copper's independently announced institutional-client
+      partnership, and EU transfer-information requirements applying to covered
+      crypto transfers jointly show real workflow demand and regulatory
+      criticality. Favorable direction is moderated because paid usage, contract
+      value, and independently verified aggregate utilization are absent.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Pricing, paid usage, contract budgets, and independent verification of aggregate platform metrics were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 1
+    citedEvidenceClaimIds: [clm-notabene-product-2021, clm-notabene-eu-regulatory-context]
+    rationale: >-
+      Notabene's company-reported product is designed for Travel Rule compliance,
+      and primary EU regulatory text extended transfer-information requirements
+      to covered crypto-asset transfers from December 30, 2024. That direct
+      product-to-obligation alignment is favorable structural evidence, without
+      implying that regulation alone proves Notabene demand or revenue.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Entity-specific licensing exposure, implementation outcomes, and regulatory trajectories outside the cited EU rule were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Customer and transaction counts do not establish pricing, subscriptions,
+      take rate, revenue ownership, or another recurring company monetization
+      path. Protocol architecture is not value capture.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Public pricing, contract values, subscriptions, take rate, and recognized revenue were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Financing and operating-scale claims do not establish revenue, costs,
+      margins, burn, profitability, or unit economics. Missing economics are
+      left neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, gross margin, operating expense, burn, profitability, and unit economics were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-adoption-2021, clm-notabene-adoption-series-b, clm-notabene-copper-partnership]
+    rationale: >-
+      Company-reported customer growth from more than 20 in 2021 to more than
+      165 in 2024 provides temporal evidence of repeatable distribution, while
+      Copper independently announced an integration for its institutional
+      clients. This supports favorable pull, limited by unknown partnership
+      depth, retention, acquisition economics, and the first-party aggregate
+      counts.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Integration depth, retention, acquisition cost, channel attribution, and customer expansion were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-product-2021, clm-notabene-tap-architecture]
+    rationale: >-
+      Company-controlled materials describe protocol-agnostic compliance tooling
+      and a blockchain-neutral pre-settlement authorization protocol using
+      signed requests and DIDComm. These designs are relevant to ecosystem reach
+      and integration workflow, but no onboarding time, implementation burden,
+      or comparative friction evidence establishes direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Integration time, compliance implementation burden, onboarding failure rates, and comparative access were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-tap-architecture]
+    rationale: >-
+      Company-controlled TAP specifications and code describe signed
+      pre-settlement requests, DIDComm policy coordination, and settlement
+      neutrality across blockchains. The specific architecture supports limited
+      favorable differentiation, but no independent comparison, validated
+      functionality, or universal counterparty adoption proves superiority.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative assessment, validated performance, and TAP adoption outside Notabene products were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-notabene-soc2]
+    rationale: >-
+      Notabene reported a clean SOC 2 Type II result, and an independent directory
+      lists SOC 2 Type II and ISO 27001 compliance. This supports limited
+      favorable security-posture evidence, but the underlying reports, auditor,
+      periods, and renewal dates were unavailable; attestations do not prove no
+      incidents or establish switching costs or network effects.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Public report scope, current audit periods, incident history, switching costs, participant concentration, and network effects were not established.
+analystNote: >-
+  Aggregate platform metrics and most financing disclosures are first-party and
+  are treated accordingly. Customer transfer volume is not company revenue,
+  custody, TVL, or assets; Copper and regulatory evidence are used only for the
+  partnership and legal obligations they directly establish.

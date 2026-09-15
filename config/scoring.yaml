@@ -1,0 +1,133 @@
+# Scoring configuration.
+#
+# Phase 2 validates this file. It does not implement the engines that read it.
+# Defining and validating the parameters first means later engines depend on a
+# shape that already exists and is already tested, rather than inventing one.
+#
+# Everything here is a stated number in a file a reader can open. No score in
+# Digital Asset Venture Intelligence is produced by a language model, and no
+# weight is buried in application code.
+
+schemaVersion: 1
+version: "1.0.0"
+
+# Thesis Fit dimension weights. Mirrors config/thesis.yaml and is validated on
+# load to match it exactly, so the two files cannot drift apart unnoticed.
+thesisDimensionWeights:
+  capital_efficiency: 0.20
+  growth_momentum: 0.20
+  founder_alignment: 0.15
+  market_quality: 0.15
+  business_model_quality: 0.10
+  gtm_quality: 0.10
+  competitive_position: 0.10
+
+# Momentum: how much recent signal a company is producing.
+momentum:
+  # Only signals marked isTimeSensitive in signals.yaml are aged. Enduring
+  # facts are excluded from momentum entirely rather than being decayed to zero.
+  windowDays: 540
+  minimumSignals: 2
+  # Multiplier applied to a signal whose direction is negative.
+  negativeSignalWeight: 1.25
+  # A single source cannot carry momentum on its own, however many items it
+  # published. Independence is determined by SourceRecord.originatesFrom.
+  minimumIndependentSources: 2
+
+# Convergence: agreement between independent sources across signal categories.
+convergence:
+  # Categories that must be represented before convergence can be claimed.
+  minimumDistinctCategories: 2
+  minimumIndependentSources: 2
+  # Weight given to agreement across categories versus repetition within one.
+  crossCategoryWeight: 0.70
+  withinCategoryWeight: 0.30
+  # A contradiction reduces convergence rather than being ignored.
+  contradictionPenalty: 0.50
+
+# RETIRED - vestigial composite-Priority / ranked-queue configuration.
+#
+# This block described an opaque weighted Priority composite (Thesis Fit +
+# Momentum + Convergence + Trust) feeding relevance-tier multipliers into a
+# ranked company queue. The Phase 6A decision-architecture review concluded that
+# this product should NOT be a conventional numerical-ranking system, and that
+# there is no Trust engine: Evidence Coverage and Evidence Confidence are
+# exposed separately and are never collapsed into a single Trust metric.
+#
+# No engine reads these fields. They are retained only so this file's Zod schema
+# and the scoring config hash stay stable (the hash appears in tracked
+# data/generated artifacts). Do NOT wire them into any decision function, and do
+# NOT treat them as an active or planned policy. Action Priority is human-owned
+# and inactive (PRIORITY_THRESHOLDS_ACTIVE === false); any future deterministic
+# Priority suggestion requires a fresh, non-overlapping, separately labelled
+# dataset - not these weights.
+priority:
+  weights:
+    thesisFit: 0.45
+    momentum: 0.25
+    convergence: 0.20
+    trust: 0.10
+  relevanceTiers:
+    core: { multiplier: 1.00, ceiling: 100 }
+    adjacent: { multiplier: 0.80, ceiling: 80 }
+    peripheral: { multiplier: 0.60, ceiling: 60 }
+    marginal: { multiplier: 0.40, ceiling: 40 }
+    outside: { multiplier: 0.00, ceiling: 0 }
+
+thresholds:
+  # RETIRED with the Priority block above: there is no Trust score and no
+  # company ranking, so nothing is "ranked" by a Trust value. Field kept for
+  # schema / hash stability only.
+  minimumTrustToRank: 40
+  # A fit score is produced only when every dimension has a rating. A partial
+  # set yields no score rather than a zero-coerced one.
+  requireCompleteFitComponents: true
+  # Entity matches below this confidence are held for review, never auto-merged.
+  minimumEntityMatchConfidence: 0.70
+
+confidence:
+  # Multiplier applied to a signal's contribution by the confidence of the
+  # claims supporting it. Unknown is deliberately zero: an unknown claim cannot
+  # raise a score.
+  levelMultipliers:
+    high: 1.00
+    medium_high: 0.85
+    medium: 0.70
+    low: 0.40
+    unknown: 0.00
+
+# NEGATIVE SPECIFICATION
+#
+# What must never automatically increase an investment score.
+#
+# This list is as important as the weights above. Each entry names a quantity
+# that correlates with visibility rather than with business quality, and that a
+# naive sourcing system would reward. Stating them here makes the exclusion
+# auditable, and a later scoring engine is tested against this list rather than
+# being trusted to have avoided them.
+excludedFromPositiveScoring:
+  - id: follower_count
+    rule: "Follower count alone must never raise a score."
+    rationale: "Audience size measures distribution of the account, not quality of the business."
+  - id: virality
+    rule: "Post engagement or virality alone must never raise a score."
+    rationale: "Engagement measures how well something was written, not whether anyone bought anything."
+  - id: investor_followers
+    rule: "Being followed by investors must never raise a score."
+    rationale: "It measures proximity to capital, which is what this process is trying to be early to, not evidence of quality."
+  - id: writing_style_confidence
+    rule: "Confident or polished writing must never raise a score."
+    rationale: "Articulacy is not traction, and rewarding it selects for founders who market well."
+  - id: unsupported_social_popularity
+    rule: "Social popularity with no artifact or customer evidence must never raise a score."
+    rationale: "Popularity without a shipped artifact or a named customer is attention, not demand."
+  - id: duplicated_article_count
+    rule: "The number of articles repeating one announcement must never raise a score."
+    rationale: >
+      A syndicated press release is one voice repeated. Counting reproductions rewards
+      public relations spend. Independence is determined by SourceRecord.originatesFrom.
+  - id: total_capital_raised
+    rule: "Raising more capital must never by itself raise a score."
+    rationale: >
+      This thesis weights capital efficiency. Treating capital raised as an achievement
+      would invert the dimension it is supposed to measure.

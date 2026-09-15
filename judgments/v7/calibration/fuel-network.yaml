@@ -1,0 +1,210 @@
+schemaVersion: 7
+candidateId: CPS-01
+entityId: co-fuel-network
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:215c608aae32d1cf19a2a4c1311ed8562ac95e7921f27e6aba0f8036315220c9"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-fuel-funding-80m]
+    rationale: >-
+      The frozen packet establishes primary capital consumed ($80M raised
+      September 2022) but no independently sourced scale evidence (TVL,
+      transaction volume, active addresses, or protocol fees) exists to
+      compare against it. Capital is known; scale is not, so the ratio
+      cannot be responsibly judged from either direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No network/product scale metric is present in the frozen packet
+      (see gap-fuel-network-metrics); coverage set to 0 rather than
+      inferring scale from capital or product existence alone.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The frozen packet contains no evidence of recurring labor, compute,
+      infrastructure cost, or liquidity/incentive subsidy needed to sustain
+      Fuel Ignition. No claim addresses operating economics in either
+      direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No cost, subsidy, or resource-intensity evidence exists in the frozen
+      packet for this entity.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No usage, transaction, fee, or retained-cohort evidence is present.
+      The FUEL token airdrop claim (clm-fuel-token-airdrop) documents a
+      one-time incentivized token-claim event, not recurring organic usage,
+      so it is not cited here as adoption evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption/usage metric exists in the frozen packet (see
+      gap-fuel-network-metrics).
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party integration
+      growth for Fuel or FuelVM/Sway.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fuel-ignition-mainnet]
+    rationale: >-
+      Founders Nick Dodson and John Adler are named and sourced, but the
+      packet records no prior-company history or education for either
+      (empty priorCompanies/education). The clearest direct execution
+      evidence is that the team shipped a live, functioning mainnet
+      (Fuel Ignition, October 2024), which is real delivered work rather
+      than a roadmap claim, though it does not establish individual
+      pedigree.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No prior-company track record or education background is
+      established for either founder (see gap-fuel-legal-entity for
+      related entity-identity gaps).
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 20
+    coverage: 1
+    citedEvidenceClaimIds: [clm-fuel-security-council-reduction, clm-fuel-bridge-pause-2026]
+    rationale: >-
+      The Fuel Security Council multisig, which can upgrade bridge
+      contracts with no timelock, was reduced across 2025-2026 from
+      9-of-12 down to 4-of-6 by removing four members, and the official
+      bridge was paused for eight days in July 2026 with no public
+      explanation found by an independent monitor (L2BEAT). Both are
+      independently sourced, dated, on-chain/monitor-derived facts about
+      control concentration and disclosure, not allegations. Together they
+      indicate weak accountability over an instrument with unilateral,
+      no-timelock upgrade power.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim in the frozen packet documents fee-paying demand, workflow
+      criticality, or costly third-party integration that would evidence
+      funded urgency or addressable market depth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand/market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses jurisdictional exposure or regulatory trajectory
+      for Fuel Labs or the Fuel Security Council. The packet's own
+      unresolved-boundary note states the exact legal entity and
+      jurisdiction were not established (gap-fuel-legal-entity), which
+      forecloses any regulatory-fit judgment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Legal entity and jurisdiction are unestablished (gap-fuel-legal-entity);
+      no regulatory-trajectory evidence exists.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a company-side fee, take-rate, subscription, or
+      other recurring monetization path for Fuel Labs. The token airdrop
+      claim concerns distribution, not value capture, and is not cited here.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No monetization or fee-capture evidence exists in the frozen packet.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses contribution economics, burn versus output, or
+      reliance on continuous token sales to fund operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No economic-sustainability evidence exists in the frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable sales
+      channel, or composability-driven integration pull.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution/acquisition-channel evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding friction, audit/compliance
+      requirements, or ecosystem reachability for Fuel Ignition.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction or ecosystem-access evidence exists in the
+      frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fuel-ignition-mainnet]
+    rationale: >-
+      Independent journalism (The Block) reports that Fuel Ignition
+      mainnet uses a parallelized transaction-execution model and a
+      UTXO-based state model, distinguishing it architecturally from
+      account-based rollups. This is a real, live, independently reported
+      deployment rather than a whitepaper claim, but no independent
+      benchmark in the frozen packet validates any performance or security
+      advantage from that architecture.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent benchmark or third-party technical assessment of the
+      parallelized/UTXO architecture exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 30
+    coverage: 1
+    citedEvidenceClaimIds: [clm-fuel-security-council-reduction, clm-fuel-bridge-pause-2026]
+    rationale: >-
+      Security posture evidence is negative and specific: bridge-upgrade
+      authority sits with a multisig reduced to 4-of-6 with no timelock,
+      and the official bridge was paused for eight days in 2026 without
+      disclosed cause, per an independent risk monitor. No claim in the
+      frozen packet documents switching costs, a validator/operator base,
+      or resistance to forks that would offset this weak security/control
+      posture as a durability factor.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No evidence of switching costs, validator-base durability, or
+      fork-resistance exists in the frozen packet; the security-posture
+      evidence available is negative.

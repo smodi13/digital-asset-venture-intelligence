@@ -1,0 +1,5137 @@
+{
+  "banner": "DESCRIPTIVE_DIAGNOSTIC_ONLY",
+  "methodologicalCaveat": "Phase 6C is descriptive diagnostics only. The 39 companies are CONSUMED for calibration/validation/final-test. Nothing here justifies new thresholds, weights, half-lives, Priority rules, Fit cutoffs, Fit bands, or investment recommendations. No ScoreSnapshot is persisted. No production scoring behavior changed. Companies are listed in canonical (company id) order, never ranked. Mandate Eligibility was NOT evaluated; the runner assumes mandateEligibility=ELIGIBLE (see distributions.diagnosticAssumptions).",
+  "asOf": "2026-09-08",
+  "generatedAt": "2026-09-09T02:48:25.625Z",
+  "corpusCounts": {
+    "companies": 39,
+    "sources": 222,
+    "evidenceClaims": 510,
+    "people": 84,
+    "signalEvents": 113,
+    "persistedSnapshots": 0
+  },
+  "reconciliation": {
+    "companies": 39,
+    "criterionJudgments": 546,
+    "criteriaPerCompany": [
+      14
+    ],
+    "byCohort": {
+      "calibration": {
+        "companies": 10,
+        "judgments": 140
+      },
+      "validation": {
+        "companies": 15,
+        "judgments": 210
+      },
+      "final_test": {
+        "companies": 14,
+        "judgments": 196
+      }
+    },
+    "coverageValues": [
+      0,
+      0.5,
+      1
+    ],
+    "anchorValues": [
+      null,
+      25,
+      50,
+      75,
+      100
+    ],
+    "unresolvedClaimIds": [],
+    "ok": true
+  },
+  "screening": [
+    {
+      "companyId": "co-appliedcompute-com",
+      "companyName": "Applied Compute",
+      "domain": "appliedcompute.com",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 59.9,
+      "overallEvidenceCoverage": 0.77,
+      "overallEvidenceConfidence": 0.7142857142857143,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 43,
+          "coverage": 1,
+          "confidence": 0.73,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 74.5,
+          "coverage": 0.8,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 77.5,
+          "coverage": 1,
+          "confidence": 0.725,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 41.25,
+          "coverage": 0.75,
+          "confidence": 0.7166666666666667,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 58.75,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 9,
+        "signalEvents": 4,
+        "citedClaims": 23
+      }
+    },
+    {
+      "companyId": "co-arcade-dev",
+      "companyName": "Arcade.dev",
+      "domain": "arcade.dev",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 65.75,
+      "overallEvidenceCoverage": 0.655,
+      "overallEvidenceConfidence": 0.7,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 63.125,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 3,
+        "evidenceClaims": 8,
+        "signalEvents": 3,
+        "citedClaims": 17
+      }
+    },
+    {
+      "companyId": "co-assorthealth-com",
+      "companyName": "Assort Health",
+      "domain": "assorthealth.com",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 64.61875,
+      "overallEvidenceCoverage": 0.5825,
+      "overallEvidenceConfidence": 0.7154506437768239,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 15,
+        "signalEvents": 2,
+        "citedClaims": 18
+      }
+    },
+    {
+      "companyId": "co-avoca-ai",
+      "companyName": "Avoca",
+      "domain": "avoca.ai",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 52.80625,
+      "overallEvidenceCoverage": 0.2825,
+      "overallEvidenceConfidence": 0.731858407079646,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "Screening display state is INSUFFICIENT_EVIDENCE",
+        "overall coverage 0.2825 below 0.5",
+        "only 1 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 58.75,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 16,
+        "signalEvents": 2,
+        "citedClaims": 8
+      }
+    },
+    {
+      "companyId": "co-baseten-co",
+      "companyName": "Baseten",
+      "domain": "baseten.co",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 61.08125,
+      "overallEvidenceCoverage": 0.4075,
+      "overallEvidenceConfidence": 0.7294478527607361,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.4075 below 0.5",
+        "only 2 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.75,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 18,
+        "signalEvents": 2,
+        "citedClaims": 12
+      }
+    },
+    {
+      "companyId": "co-braintrust-dev",
+      "companyName": "Braintrust",
+      "domain": "braintrust.dev",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 49.5125,
+      "overallEvidenceCoverage": 0.08,
+      "overallEvidenceConfidence": 0.8812500000000001,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "Screening display state is INSUFFICIENT_EVIDENCE",
+        "overall coverage 0.08 below 0.5",
+        "only 0 dimensions at coverage 0.5, need 4",
+        "critical dimension capital_efficiency has zero evidence coverage",
+        "critical dimension growth_momentum has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 54.25,
+          "coverage": 0.2,
+          "confidence": 0.85,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 44.375,
+          "coverage": 0.25,
+          "confidence": 0.9,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 44.375,
+          "coverage": 0.25,
+          "confidence": 0.9,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 14,
+        "signalEvents": 2,
+        "citedClaims": 3
+      }
+    },
+    {
+      "companyId": "co-browserbase-com",
+      "companyName": "Browserbase",
+      "domain": "browserbase.com",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 62.609375,
+      "overallEvidenceCoverage": 0.675,
+      "overallEvidenceConfidence": 0.6612962962962963,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 61.25,
+          "coverage": 1,
+          "confidence": 0.6599999999999999,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 54.6875,
+          "coverage": 0.25,
+          "confidence": 0.75,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 77.5,
+          "coverage": 1,
+          "confidence": 0.725,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 57.03125,
+          "coverage": 1,
+          "confidence": 0.54375,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 60.9375,
+          "coverage": 0.75,
+          "confidence": 0.5833333333333333,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 7,
+        "evidenceClaims": 8,
+        "signalEvents": 4,
+        "citedClaims": 25
+      }
+    },
+    {
+      "companyId": "co-canva-com",
+      "companyName": "Canva",
+      "domain": "canva.com",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 68.30000000000001,
+      "overallEvidenceCoverage": 0.56,
+      "overallEvidenceConfidence": 0.6535714285714284,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "critical dimension capital_efficiency has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 65.75,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 19,
+        "signalEvents": 2,
+        "citedClaims": 19
+      }
+    },
+    {
+      "companyId": "co-crewai-com",
+      "companyName": "CrewAI",
+      "domain": "crewai.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 60.50000000000001,
+      "overallEvidenceCoverage": 0.5900000000000001,
+      "overallEvidenceConfidence": 0.6466101694915253,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 55.25,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 57.875,
+          "coverage": 0.75,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 73.625,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 57.875,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 7,
+        "signalEvents": 4,
+        "citedClaims": 19
+      }
+    },
+    {
+      "companyId": "co-crosby-ai",
+      "companyName": "Crosby",
+      "domain": "crosby.ai",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 61.44375,
+      "overallEvidenceCoverage": 0.6975,
+      "overallEvidenceConfidence": 0.7365591397849465,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 42.5,
+          "coverage": 0.4,
+          "confidence": 0.7500000000000001,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 83.75,
+          "coverage": 1,
+          "confidence": 0.675,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 73.125,
+          "coverage": 0.75,
+          "confidence": 0.7333333333333334,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 40.625,
+          "coverage": 1,
+          "confidence": 0.85,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 74.75,
+          "coverage": 1,
+          "confidence": 0.6525000000000001,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 61.875,
+          "coverage": 0.75,
+          "confidence": 0.8666666666666666,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 15,
+        "signalEvents": 3,
+        "citedClaims": 27
+      }
+    },
+    {
+      "companyId": "co-decagon-ai",
+      "companyName": "Decagon",
+      "domain": "decagon.ai",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 57.51875,
+      "overallEvidenceCoverage": 0.40750000000000003,
+      "overallEvidenceConfidence": 0.6993865030674845,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.40750000000000003 below 0.5",
+        "only 3 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.75,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 58.15625,
+          "coverage": 0.5,
+          "confidence": 0.6525000000000001,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 66.875,
+          "coverage": 0.75,
+          "confidence": 0.66,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 70.8125,
+          "coverage": 0.75,
+          "confidence": 0.66,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 16,
+        "signalEvents": 2,
+        "citedClaims": 13
+      }
+    },
+    {
+      "companyId": "co-dust-tt",
+      "companyName": "Dust",
+      "domain": "dust.tt",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 66.625,
+      "overallEvidenceCoverage": 0.58,
+      "overallEvidenceConfidence": 0.6698275862068966,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "critical dimension capital_efficiency has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 70.125,
+          "coverage": 0.75,
+          "confidence": 0.6533333333333333,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 65.75,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 83.25,
+          "coverage": 1,
+          "confidence": 0.665,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 74.5,
+          "coverage": 1,
+          "confidence": 0.665,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 2,
+        "evidenceClaims": 12,
+        "signalEvents": 2,
+        "citedClaims": 26
+      }
+    },
+    {
+      "companyId": "co-e2b-dev",
+      "companyName": "E2B",
+      "domain": "e2b.dev",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 62.11875,
+      "overallEvidenceCoverage": 0.47750000000000004,
+      "overallEvidenceConfidence": 0.7,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.47750000000000004 below 0.5",
+        "only 3 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 53.5,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 9,
+        "signalEvents": 4,
+        "citedClaims": 14
+      }
+    },
+    {
+      "companyId": "co-elevenlabs-io",
+      "companyName": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 61.7375,
+      "overallEvidenceCoverage": 0.42000000000000004,
+      "overallEvidenceConfidence": 0.7214285714285713,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.42000000000000004 below 0.5",
+        "only 3 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 67.5,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 67.5,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 15,
+        "signalEvents": 3,
+        "citedClaims": 10
+      }
+    },
+    {
+      "companyId": "co-exa-ai",
+      "companyName": "Exa",
+      "domain": "exa.ai",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 56.98125,
+      "overallEvidenceCoverage": 0.4025,
+      "overallEvidenceConfidence": 0.7111801242236023,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.4025 below 0.5",
+        "only 3 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 54.25,
+          "coverage": 0.2,
+          "confidence": 0.85,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 63.125,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 3,
+        "evidenceClaims": 15,
+        "signalEvents": 2,
+        "citedClaims": 15
+      }
+    },
+    {
+      "companyId": "co-fal-ai",
+      "companyName": "fal",
+      "domain": "fal.ai",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 59.925,
+      "overallEvidenceCoverage": 0.42000000000000004,
+      "overallEvidenceConfidence": 0.5857142857142857,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.42000000000000004 below 0.5",
+        "overall scoring confidence 0.5857142857142857 below 0.6",
+        "only 3 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 55.625,
+          "coverage": 0.3,
+          "confidence": 0.75,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 65.625,
+          "coverage": 0.75,
+          "confidence": 0.5,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 62.5,
+          "coverage": 0.5,
+          "confidence": 0.5,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.5,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 62.5,
+          "coverage": 0.5,
+          "confidence": 0.5,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 16,
+        "signalEvents": 3,
+        "citedClaims": 10
+      }
+    },
+    {
+      "companyId": "co-gamma-app",
+      "companyName": "Gamma",
+      "domain": "gamma.app",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 72.78875,
+      "overallEvidenceCoverage": 0.7300000000000001,
+      "overallEvidenceConfidence": 0.6826027397260273,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 91.1,
+          "coverage": 1,
+          "confidence": 0.822,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 65.75,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 81.5,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 53.9375,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        }
+      ],
+      "evidence": {
+        "sources": 3,
+        "evidenceClaims": 14,
+        "signalEvents": 3,
+        "citedClaims": 26
+      }
+    },
+    {
+      "companyId": "co-getbasis-ai",
+      "companyName": "Basis",
+      "domain": "getbasis.ai",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 53.984375,
+      "overallEvidenceCoverage": 0.25250000000000006,
+      "overallEvidenceConfidence": 0.732178217821782,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "Screening display state is INSUFFICIENT_EVIDENCE",
+        "overall coverage 0.25250000000000006 below 0.5",
+        "only 1 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.95,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 53.9375,
+          "coverage": 0.25,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 54.25,
+          "coverage": 0.2,
+          "confidence": 0.85,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 53.9375,
+          "coverage": 0.25,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 69.6875,
+          "coverage": 0.75,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 15,
+        "signalEvents": 2,
+        "citedClaims": 9
+      }
+    },
+    {
+      "companyId": "co-glean-com",
+      "companyName": "Glean",
+      "domain": "glean.com",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 62.4875,
+      "overallEvidenceCoverage": 0.435,
+      "overallEvidenceConfidence": 0.7494252873563217,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.435 below 0.5",
+        "critical dimension capital_efficiency has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 67.5,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 61.875,
+          "coverage": 0.5,
+          "confidence": 0.95,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 17,
+        "signalEvents": 1,
+        "citedClaims": 11
+      }
+    },
+    {
+      "companyId": "co-granola-ai",
+      "companyName": "Granola",
+      "domain": "granola.ai",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 63.7734375,
+      "overallEvidenceCoverage": 0.6200000000000001,
+      "overallEvidenceConfidence": 0.6009072580645161,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.5,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 81.875,
+          "coverage": 1,
+          "confidence": 0.6375,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 70.15625,
+          "coverage": 1,
+          "confidence": 0.54375,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.5249999999999999,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 63.125,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 7,
+        "evidenceClaims": 10,
+        "signalEvents": 4,
+        "citedClaims": 18
+      }
+    },
+    {
+      "companyId": "co-linear-app",
+      "companyName": "Linear",
+      "domain": "linear.app",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 80.7,
+      "overallEvidenceCoverage": 0.88,
+      "overallEvidenceConfidence": 0.7414772727272726,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 93.5,
+          "coverage": 1,
+          "confidence": 0.87,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 86.25,
+          "coverage": 1,
+          "confidence": 0.725,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 13,
+        "signalEvents": 4,
+        "citedClaims": 29
+      }
+    },
+    {
+      "companyId": "co-listenlabs-com",
+      "companyName": "Listen Labs",
+      "domain": "listenlabs.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 58.45625,
+      "overallEvidenceCoverage": 0.395,
+      "overallEvidenceConfidence": 0.6740506329113923,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.395 below 0.5",
+        "only 3 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 69.6875,
+          "coverage": 0.75,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 57.875,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 57.875,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 14,
+        "signalEvents": 2,
+        "citedClaims": 9
+      }
+    },
+    {
+      "companyId": "co-llamaindex-ai",
+      "companyName": "LlamaIndex",
+      "domain": "llamaindex.ai",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 58.04375,
+      "overallEvidenceCoverage": 0.51,
+      "overallEvidenceConfidence": 0.6117647058823529,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 53.9375,
+          "coverage": 0.25,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 53.75,
+          "coverage": 0.5,
+          "confidence": 0.45,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 73.625,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 57.875,
+          "coverage": 0.5,
+          "confidence": 0.63,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 73.625,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 7,
+        "signalEvents": 4,
+        "citedClaims": 18
+      }
+    },
+    {
+      "companyId": "co-lovable-dev",
+      "companyName": "Lovable",
+      "domain": "lovable.dev",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 58.4125,
+      "overallEvidenceCoverage": 0.445,
+      "overallEvidenceConfidence": 0.7202247191011235,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.445 below 0.5"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 55.25,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 67,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 67.5,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 45.625,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 63.125,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 45.625,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 17,
+        "signalEvents": 3,
+        "citedClaims": 14
+      }
+    },
+    {
+      "companyId": "co-mintlify-com",
+      "companyName": "Mintlify",
+      "domain": "mintlify.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 67.235,
+      "overallEvidenceCoverage": 0.72,
+      "overallEvidenceConfidence": 0.6840625,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 56.3,
+          "coverage": 0.7,
+          "confidence": 0.7671428571428571,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 84.5,
+          "coverage": 1,
+          "confidence": 0.69,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 53.5,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 74.75,
+          "coverage": 1,
+          "confidence": 0.6525000000000001,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 61.8125,
+          "coverage": 0.75,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 82.625,
+          "coverage": 1,
+          "confidence": 0.6525000000000001,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 53.9375,
+          "coverage": 0.25,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 12,
+        "signalEvents": 3,
+        "citedClaims": 26
+      }
+    },
+    {
+      "companyId": "co-modal-com",
+      "companyName": "Modal",
+      "domain": "modal.com",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 69.9475,
+      "overallEvidenceCoverage": 0.78,
+      "overallEvidenceConfidence": 0.7024358974358975,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 64.25,
+          "coverage": 1,
+          "confidence": 0.77,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 53.150000000000006,
+          "coverage": 0.2,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 58.75,
+          "coverage": 1,
+          "confidence": 0.6,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 11,
+        "signalEvents": 3,
+        "citedClaims": 21
+      }
+    },
+    {
+      "companyId": "co-openevidence-com",
+      "companyName": "OpenEvidence",
+      "domain": "openevidence.com",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 56.984375,
+      "overallEvidenceCoverage": 0.46749999999999997,
+      "overallEvidenceConfidence": 0.7644385026737969,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.46749999999999997 below 0.5"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.6,
+          "confidence": 0.95,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 53.9375,
+          "coverage": 0.25,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 69.6875,
+          "coverage": 0.75,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0.5,
+          "confidence": 0.855,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 69.6875,
+          "coverage": 0.75,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 16,
+        "signalEvents": 3,
+        "citedClaims": 13
+      }
+    },
+    {
+      "companyId": "co-parallel-ai",
+      "companyName": "Parallel Web Systems",
+      "domain": "parallel.ai",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 51.75,
+      "overallEvidenceCoverage": 0.19,
+      "overallEvidenceConfidence": 0.7236842105263157,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "Screening display state is INSUFFICIENT_EVIDENCE",
+        "overall coverage 0.19 below 0.5",
+        "only 1 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.85,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 13,
+        "signalEvents": 2,
+        "citedClaims": 6
+      }
+    },
+    {
+      "companyId": "co-resend-com",
+      "companyName": "Resend",
+      "domain": "resend.com",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 72.53593749999999,
+      "overallEvidenceCoverage": 0.7675,
+      "overallEvidenceConfidence": 0.6422638436482084,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 86.5,
+          "coverage": 1,
+          "confidence": 0.73,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 80.625,
+          "coverage": 1,
+          "confidence": 0.6124999999999999,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 53.5,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 70.78125,
+          "coverage": 0.75,
+          "confidence": 0.6416666666666666,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.5249999999999999,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 56.5625,
+          "coverage": 0.5,
+          "confidence": 0.5249999999999999,
+          "displayState": "PROVISIONAL"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 8,
+        "signalEvents": 3,
+        "citedClaims": 23
+      }
+    },
+    {
+      "companyId": "co-retellai-com",
+      "companyName": "Retell AI",
+      "domain": "retellai.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 76.9,
+      "overallEvidenceCoverage": 0.78,
+      "overallEvidenceConfidence": 0.7631410256410258,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 92,
+          "coverage": 1,
+          "confidence": 0.8400000000000001,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 87.5,
+          "coverage": 1,
+          "confidence": 0.75,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 86.25,
+          "coverage": 1,
+          "confidence": 0.725,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 63.75,
+          "coverage": 0.75,
+          "confidence": 0.7333333333333334,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 87.5,
+          "coverage": 1,
+          "confidence": 0.75,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 9,
+        "evidenceClaims": 14,
+        "signalEvents": 4,
+        "citedClaims": 32
+      }
+    },
+    {
+      "companyId": "co-rillet-com",
+      "companyName": "Rillet",
+      "domain": "rillet.com",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 54.99375,
+      "overallEvidenceCoverage": 0.35750000000000004,
+      "overallEvidenceConfidence": 0.725174825174825,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.35750000000000004 below 0.5",
+        "only 2 dimensions at coverage 0.5, need 4"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 58.75,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 58.75,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 4,
+        "evidenceClaims": 15,
+        "signalEvents": 2,
+        "citedClaims": 14
+      }
+    },
+    {
+      "companyId": "co-serval-com",
+      "companyName": "Serval",
+      "domain": "serval.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 67.7625,
+      "overallEvidenceCoverage": 0.605,
+      "overallEvidenceConfidence": 0.6589256198347109,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "critical dimension capital_efficiency has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 83.25,
+          "coverage": 1,
+          "confidence": 0.665,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.63,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 83.25,
+          "coverage": 1,
+          "confidence": 0.665,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 83.25,
+          "coverage": 1,
+          "confidence": 0.665,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 73.625,
+          "coverage": 1,
+          "confidence": 0.63,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 8,
+        "signalEvents": 4,
+        "citedClaims": 17
+      }
+    },
+    {
+      "companyId": "co-sierra-ai",
+      "companyName": "Sierra",
+      "domain": "sierra.ai",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 65.05625,
+      "overallEvidenceCoverage": 0.5925,
+      "overallEvidenceConfidence": 0.7658227848101266,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.6,
+          "confidence": 0.95,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 16,
+        "signalEvents": 3,
+        "citedClaims": 15
+      }
+    },
+    {
+      "companyId": "co-turbopuffer-com",
+      "companyName": "turbopuffer",
+      "domain": "turbopuffer.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 68.79375,
+      "overallEvidenceCoverage": 0.875,
+      "overallEvidenceConfidence": 0.545142857142857,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall scoring confidence 0.545142857142857 below 0.6"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 60.625,
+          "coverage": 0.5,
+          "confidence": 0.8499999999999999,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 83.25,
+          "coverage": 1,
+          "confidence": 0.665,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 74.5,
+          "coverage": 1,
+          "confidence": 0.5599999999999999,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 63.125,
+          "coverage": 1,
+          "confidence": 0.35,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 63.125,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 63.125,
+          "coverage": 1,
+          "confidence": 0.35,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 67.5,
+          "coverage": 1,
+          "confidence": 0.35,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 7,
+        "evidenceClaims": 11,
+        "signalEvents": 3,
+        "citedClaims": 30
+      }
+    },
+    {
+      "companyId": "co-vercel-com",
+      "companyName": "Vercel",
+      "domain": "vercel.com",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 53.73125,
+      "overallEvidenceCoverage": 0.365,
+      "overallEvidenceConfidence": 0.5958904109589042,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.365 below 0.5",
+        "overall scoring confidence 0.5958904109589042 below 0.6"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.95,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 55.625,
+          "coverage": 0.5,
+          "confidence": 0.45,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 54.25,
+          "coverage": 0.2,
+          "confidence": 0.85,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 61.25,
+          "coverage": 0.5,
+          "confidence": 0.45,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 44.375,
+          "coverage": 0.5,
+          "confidence": 0.675,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 58.4375,
+          "coverage": 0.5,
+          "confidence": 0.45,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 15,
+        "signalEvents": 4,
+        "citedClaims": 10
+      }
+    },
+    {
+      "companyId": "co-wisprflow-ai",
+      "companyName": "Wispr Flow",
+      "domain": "wisprflow.ai",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 64.0875,
+      "overallEvidenceCoverage": 0.5900000000000001,
+      "overallEvidenceConfidence": 0.704237288135593,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": true,
+      "failedGates": [],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.3,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 71.875,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 53.5,
+          "coverage": 0.2,
+          "confidence": 0.6999999999999998,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 67.5,
+          "coverage": 0.5,
+          "confidence": 0.7,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0.5,
+          "confidence": 0.75,
+          "displayState": "PROVISIONAL"
+        }
+      ],
+      "evidence": {
+        "sources": 7,
+        "evidenceClaims": 9,
+        "signalEvents": 4,
+        "citedClaims": 18
+      }
+    },
+    {
+      "companyId": "co-withdavid-ai",
+      "companyName": "David AI",
+      "domain": "withdavid.ai",
+      "cohort": "calibration",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 51.275,
+      "overallEvidenceCoverage": 0.06,
+      "overallEvidenceConfidence": 0.85,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "Screening display state is INSUFFICIENT_EVIDENCE",
+        "overall coverage 0.06 below 0.5",
+        "only 0 dimensions at coverage 0.5, need 4",
+        "critical dimension capital_efficiency has zero evidence coverage",
+        "critical dimension growth_momentum has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 58.5,
+          "coverage": 0.4,
+          "confidence": 0.85,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 3,
+        "evidenceClaims": 14,
+        "signalEvents": 1,
+        "citedClaims": 2
+      }
+    },
+    {
+      "companyId": "co-withpace-com",
+      "companyName": "Pace",
+      "domain": "withpace.com",
+      "cohort": "validation",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 59.625,
+      "overallEvidenceCoverage": 0.465,
+      "overallEvidenceConfidence": 0.6747311827956989,
+      "displayState": "SCREENED",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "overall coverage 0.465 below 0.5"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0.2,
+          "confidence": 0.5,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 54.375,
+          "coverage": 0.25,
+          "confidence": 0.7,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 85,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0.5,
+          "confidence": 0.625,
+          "displayState": "PROVISIONAL"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 76.25,
+          "coverage": 1,
+          "confidence": 0.7,
+          "displayState": "SCORED"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 58.75,
+          "coverage": 0.75,
+          "confidence": 0.6999999999999998,
+          "displayState": "SCORED"
+        }
+      ],
+      "evidence": {
+        "sources": 5,
+        "evidenceClaims": 14,
+        "signalEvents": 4,
+        "citedClaims": 20
+      }
+    },
+    {
+      "companyId": "co-xbow-com",
+      "companyName": "XBOW",
+      "domain": "xbow.com",
+      "cohort": "final_test",
+      "analyticalMode": "screening",
+      "screeningThesisFit": 50.6375,
+      "overallEvidenceCoverage": 0.03,
+      "overallEvidenceConfidence": 0.85,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "screeningEvidenceEligible": false,
+      "failedGates": [
+        "Screening display state is INSUFFICIENT_EVIDENCE",
+        "overall coverage 0.03 below 0.5",
+        "only 0 dimensions at coverage 0.5, need 4",
+        "critical dimension capital_efficiency has zero evidence coverage",
+        "critical dimension growth_momentum has zero evidence coverage"
+      ],
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "growth_momentum",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "founder_alignment",
+          "score": 54.25,
+          "coverage": 0.2,
+          "confidence": 0.85,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "market_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "business_model_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "gtm_quality",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        },
+        {
+          "dimension": "competitive_position",
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0,
+          "displayState": "INSUFFICIENT_EVIDENCE"
+        }
+      ],
+      "evidence": {
+        "sources": 6,
+        "evidenceClaims": 15,
+        "signalEvents": 3,
+        "citedClaims": 1
+      }
+    }
+  ],
+  "temporal": [
+    {
+      "companyId": "co-appliedcompute-com",
+      "companyName": "Applied Compute",
+      "domain": "appliedcompute.com",
+      "totalEvents": 4,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 1,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 11.00145888614678,
+        "negativeMomentum": 0,
+        "netMomentum": 11.00145888614678,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0.4263822035166774,
+          "gtm_ecosystem": 0.307048388893108,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 33.33333333333333,
+        "negativeConvergence": 0,
+        "netConvergence": 33.33333333333333,
+        "positiveActiveFamilies": [
+          "product_usage",
+          "gtm_distribution"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 0.7,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-arcade-dev",
+      "companyName": "Arcade.dev",
+      "domain": "arcade.dev",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 11.465839956548155,
+        "negativeMomentum": 0,
+        "netMomentum": 11.465839956548155,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0.3741011845136224,
+          "gtm_ecosystem": 0.3902881459229212,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 20,
+        "negativeConvergence": 0,
+        "netConvergence": 20,
+        "positiveActiveFamilies": [
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 1.4,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-assorthealth-com",
+      "companyName": "Assort Health",
+      "domain": "assorthealth.com",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 12.593377667614877,
+        "negativeMomentum": 0,
+        "netMomentum": 12.593377667614877,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.5037351067045951,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0.9,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-avoca-ai",
+      "companyName": "Avoca",
+      "domain": "avoca.ai",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 10.072648378335407,
+        "negativeMomentum": 0,
+        "netMomentum": 10.072648378335407,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.40290593513341627,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-baseten-co",
+      "companyName": "Baseten",
+      "domain": "baseten.co",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 12.496760597417886,
+        "negativeMomentum": 0,
+        "netMomentum": 12.496760597417886,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.49987042389671543,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0.9,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-braintrust-dev",
+      "companyName": "Braintrust",
+      "domain": "braintrust.dev",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 0,
+        "negativeMomentum": 4.171143822511351,
+        "netMomentum": -4.171143822511351,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": -0.2780762548340901
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 0,
+        "negativeConvergence": 18.333333333333336,
+        "netConvergence": -18.333333333333336,
+        "positiveActiveFamilies": [],
+        "negativeActiveFamilies": [
+          "risk_deterioration"
+        ]
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-browserbase-com",
+      "companyName": "Browserbase",
+      "domain": "browserbase.com",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 19.231114970989438,
+        "negativeMomentum": 0,
+        "netMomentum": 19.231114970989438,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.40405162766508546,
+          "product_technical": 0.6086549519574866,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 51.666666666666664,
+        "negativeConvergence": 0,
+        "netConvergence": 51.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 1.6,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-canva-com",
+      "companyName": "Canva",
+      "domain": "canva.com",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 7.752133280313343,
+        "negativeMomentum": 0,
+        "netMomentum": 7.752133280313343,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.31008533121253373,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0.9,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-crewai-com",
+      "companyName": "CrewAI",
+      "domain": "crewai.com",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 8.817056224104569,
+        "negativeMomentum": 0,
+        "netMomentum": 8.817056224104569,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0.514225311938938,
+          "gtm_ecosystem": 0.07357843633470001,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 46.666666666666664,
+        "negativeConvergence": 0,
+        "netConvergence": 46.666666666666664,
+        "positiveActiveFamilies": [
+          "product_usage",
+          "gtm_distribution"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0.9,
+        "91-180": 0,
+        "181-365": 0.7,
+        "365+": 0.7
+      }
+    },
+    {
+      "companyId": "co-crosby-ai",
+      "companyName": "Crosby",
+      "domain": "crosby.ai",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 3.6128426100806244,
+        "negativeMomentum": 0,
+        "netMomentum": 3.6128426100806244,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.14451370440322497,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0.7,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-decagon-ai",
+      "companyName": "Decagon",
+      "domain": "decagon.ai",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 0,
+        "negativeMomentum": 0,
+        "netMomentum": 0,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 0,
+      "convergence": {
+        "positiveConvergence": 0,
+        "negativeConvergence": 0,
+        "netConvergence": 0,
+        "positiveActiveFamilies": [],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 0,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-dust-tt",
+      "companyName": "Dust",
+      "domain": "dust.tt",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 8.494139132024973,
+        "negativeMomentum": 0,
+        "netMomentum": 8.494139132024973,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.33976556528099894,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.7,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-e2b-dev",
+      "companyName": "E2B",
+      "domain": "e2b.dev",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 22.875186724992897,
+        "negativeMomentum": 0,
+        "netMomentum": 22.875186724992897,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.7611229292685888,
+          "product_technical": 0,
+          "gtm_ecosystem": 0.25647423288521165,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 50,
+        "negativeConvergence": 0,
+        "netConvergence": 50,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "gtm_distribution"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 0.7,
+        "31-90": 0.7,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-elevenlabs-io",
+      "companyName": "ElevenLabs",
+      "domain": "elevenlabs.io",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 10.387780987597733,
+        "negativeMomentum": 0,
+        "netMomentum": 10.387780987597733,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.4155112395039093,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-exa-ai",
+      "companyName": "Exa",
+      "domain": "exa.ai",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 11.005470588646949,
+        "negativeMomentum": 0,
+        "netMomentum": 11.005470588646949,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.44021882354587794,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-fal-ai",
+      "companyName": "fal",
+      "domain": "fal.ai",
+      "totalEvents": 3,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 1,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 6.715891166228835,
+        "negativeMomentum": 0,
+        "netMomentum": 6.715891166228835,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.2686356466491534,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.7,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-gamma-app",
+      "companyName": "Gamma",
+      "domain": "gamma.app",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 7.38431781350857,
+        "negativeMomentum": 0,
+        "netMomentum": 7.38431781350857,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.21098050895738774,
+          "product_technical": 0.14065367263825848,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 41.666666666666664,
+        "negativeConvergence": 0,
+        "netConvergence": 41.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 1.8,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-getbasis-ai",
+      "companyName": "Basis",
+      "domain": "getbasis.ai",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 7.933330806351992,
+        "negativeMomentum": 0,
+        "netMomentum": 7.933330806351992,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.31733323225407967,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0.9,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-glean-com",
+      "companyName": "Glean",
+      "domain": "glean.com",
+      "totalEvents": 1,
+      "scoredEvents": 1,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 0,
+      "dedupedEventCount": 1,
+      "momentum": {
+        "positiveMomentum": 11.349787448770805,
+        "negativeMomentum": 0,
+        "netMomentum": 11.349787448770805,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.4539914979508322,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-granola-ai",
+      "companyName": "Granola",
+      "domain": "granola.ai",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 3,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 11.827516911378105,
+        "negativeMomentum": 0,
+        "netMomentum": 11.827516911378105,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.47310067645512416,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 28.333333333333332,
+        "negativeConvergence": 0,
+        "netConvergence": 28.333333333333332,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-linear-app",
+      "companyName": "Linear",
+      "domain": "linear.app",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 25.681637344165765,
+        "negativeMomentum": 0,
+        "netMomentum": 25.681637344165765,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.6420409336041442,
+          "product_technical": 0.6420409336041442,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 45,
+        "negativeConvergence": 0,
+        "netConvergence": 45,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 1.8,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-listenlabs-com",
+      "companyName": "Listen Labs",
+      "domain": "listenlabs.com",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 6.77466181572224,
+        "negativeMomentum": 0,
+        "netMomentum": 6.77466181572224,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.2709864726288896,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0.9,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-llamaindex-ai",
+      "companyName": "LlamaIndex",
+      "domain": "llamaindex.ai",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 10.680572259085432,
+        "negativeMomentum": 0,
+        "netMomentum": 10.680572259085432,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0.7120381506056954,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 32.5,
+        "negativeConvergence": 0,
+        "netConvergence": 32.5,
+        "positiveActiveFamilies": [
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 0.9,
+        "91-180": 0,
+        "181-365": 0.9,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-lovable-dev",
+      "companyName": "Lovable",
+      "domain": "lovable.dev",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 11.886565690360978,
+        "negativeMomentum": 3.9219038559827095,
+        "netMomentum": 7.964661834378269,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.47546262761443914,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": -0.26146025706551396
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 18.333333333333336,
+        "netConvergence": 6.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": [
+          "risk_deterioration"
+        ]
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 1.8,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-mintlify-com",
+      "companyName": "Mintlify",
+      "domain": "mintlify.com",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 13.912740542857502,
+        "negativeMomentum": 0,
+        "netMomentum": 13.912740542857502,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.5565096217143001,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 33.33333333333333,
+        "negativeConvergence": 0,
+        "netConvergence": 33.33333333333333,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 1.8,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-modal-com",
+      "companyName": "Modal",
+      "domain": "modal.com",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 11.047932353038838,
+        "negativeMomentum": 0,
+        "netMomentum": 11.047932353038838,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.4419172941215535,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-openevidence-com",
+      "companyName": "OpenEvidence",
+      "domain": "openevidence.com",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 6.959761264704116,
+        "negativeMomentum": 0,
+        "netMomentum": 6.959761264704116,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.27839045058816464,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 1.8,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-parallel-ai",
+      "companyName": "Parallel Web Systems",
+      "domain": "parallel.ai",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 6.090314245165716,
+        "negativeMomentum": 0,
+        "netMomentum": 6.090314245165716,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0.4060209496777144,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 20,
+        "negativeConvergence": 0,
+        "netConvergence": 20,
+        "positiveActiveFamilies": [
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0.9,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-resend-com",
+      "companyName": "Resend",
+      "domain": "resend.com",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 15.432674386609913,
+        "negativeMomentum": 0,
+        "netMomentum": 15.432674386609913,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.464603046191389,
+          "product_technical": 0.25450654878834594,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 41.666666666666664,
+        "negativeConvergence": 0,
+        "netConvergence": 41.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 1.8,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-retellai-com",
+      "companyName": "Retell AI",
+      "domain": "retellai.com",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 14.026498432819695,
+        "negativeMomentum": 0,
+        "netMomentum": 14.026498432819695,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.30621387288873053,
+          "product_technical": 0.4247434407067621,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 41.666666666666664,
+        "negativeConvergence": 0,
+        "netConvergence": 41.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 1.8,
+        "31-90": 0,
+        "91-180": 0.7,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-rillet-com",
+      "companyName": "Rillet",
+      "domain": "rillet.com",
+      "totalEvents": 2,
+      "scoredEvents": 2,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 2,
+      "momentum": {
+        "positiveMomentum": 15.504266560626686,
+        "negativeMomentum": 0,
+        "netMomentum": 15.504266560626686,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.6201706624250675,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-serval-com",
+      "companyName": "Serval",
+      "domain": "serval.com",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 12.437171416180217,
+        "negativeMomentum": 0,
+        "netMomentum": 12.437171416180217,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.246536177281561,
+          "product_technical": 0.41825113227607946,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 45,
+        "negativeConvergence": 0,
+        "netConvergence": 45,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0.7,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-sierra-ai",
+      "companyName": "Sierra",
+      "domain": "sierra.ai",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 16.363065565913367,
+        "negativeMomentum": 0,
+        "netMomentum": 16.363065565913367,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.6545226226365347,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-turbopuffer-com",
+      "companyName": "turbopuffer",
+      "domain": "turbopuffer.com",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 0,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 11.931000802568706,
+        "negativeMomentum": 0,
+        "netMomentum": 11.931000802568706,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0.7954000535045804,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 50,
+        "negativeConvergence": 0,
+        "netConvergence": 50,
+        "positiveActiveFamilies": [
+          "product_usage",
+          "unit_economics"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 0.9,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0.9,
+        "365+": 0.7
+      }
+    },
+    {
+      "companyId": "co-vercel-com",
+      "companyName": "Vercel",
+      "domain": "vercel.com",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 2,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 7.423107672993422,
+        "negativeMomentum": 3.9219038559827095,
+        "netMomentum": 3.5012038170107123,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.29692430691973687,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": -0.26146025706551396
+        }
+      },
+      "contributingMomentumEvents": 2,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 18.333333333333336,
+        "netConvergence": 6.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": [
+          "risk_deterioration"
+        ]
+      },
+      "convergencePropositions": 2,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 1.6,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-wisprflow-ai",
+      "companyName": "Wispr Flow",
+      "domain": "wisprflow.ai",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 3,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 12.05887399159853,
+        "negativeMomentum": 0,
+        "netMomentum": 12.05887399159853,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.4823549596639412,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 1,
+      "convergence": {
+        "positiveConvergence": 25,
+        "negativeConvergence": 0,
+        "netConvergence": 25,
+        "positiveActiveFamilies": [
+          "customer_adoption"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 1,
+      "ageBuckets": {
+        "0-30": 0.7,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-withdavid-ai",
+      "companyName": "David AI",
+      "domain": "withdavid.ai",
+      "totalEvents": 1,
+      "scoredEvents": 1,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 1,
+      "momentum": {
+        "positiveMomentum": 0,
+        "negativeMomentum": 0,
+        "netMomentum": 0,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 0,
+      "convergence": {
+        "positiveConvergence": 0,
+        "negativeConvergence": 0,
+        "netConvergence": 0,
+        "positiveActiveFamilies": [],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 0,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-withpace-com",
+      "companyName": "Pace",
+      "domain": "withpace.com",
+      "totalEvents": 4,
+      "scoredEvents": 4,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 1,
+      "dedupedEventCount": 4,
+      "momentum": {
+        "positiveMomentum": 17.360715856757484,
+        "negativeMomentum": 0,
+        "netMomentum": 17.360715856757484,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0.351747372064556,
+          "product_technical": 0.5711354370095723,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 3,
+      "convergence": {
+        "positiveConvergence": 51.666666666666664,
+        "negativeConvergence": 0,
+        "netConvergence": 51.666666666666664,
+        "positiveActiveFamilies": [
+          "customer_adoption",
+          "product_usage"
+        ],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 3,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 1.8,
+        "91-180": 0.7,
+        "181-365": 0,
+        "365+": 0
+      }
+    },
+    {
+      "companyId": "co-xbow-com",
+      "companyName": "XBOW",
+      "domain": "xbow.com",
+      "totalEvents": 3,
+      "scoredEvents": 3,
+      "excludedUnconfirmed": 0,
+      "excludedNeutralDirection": 3,
+      "dedupedEventCount": 3,
+      "momentum": {
+        "positiveMomentum": 0,
+        "negativeMomentum": 0,
+        "netMomentum": 0,
+        "familyScores": {
+          "operating_growth": 0,
+          "customer_adoption": 0,
+          "product_technical": 0,
+          "gtm_ecosystem": 0,
+          "risk_deterioration": 0
+        }
+      },
+      "contributingMomentumEvents": 0,
+      "convergence": {
+        "positiveConvergence": 0,
+        "negativeConvergence": 0,
+        "netConvergence": 0,
+        "positiveActiveFamilies": [],
+        "negativeActiveFamilies": []
+      },
+      "convergencePropositions": 0,
+      "ageBuckets": {
+        "0-30": 0,
+        "31-90": 0,
+        "91-180": 0,
+        "181-365": 0,
+        "365+": 0
+      }
+    }
+  ],
+  "distributions": {
+    "diagnosticAssumptions": {
+      "mandateEligibility": "Phase 6C did NOT independently evaluate Mandate Eligibility. The runner supplies mandateEligibility='ELIGIBLE' for every company. 'evidenceEligible' / 'screeningEvidenceEligible' therefore mean ONLY 'passes the Screening evidence-sufficiency mechanics under the Phase 6C diagnostic assumption mandateEligibility=ELIGIBLE'. They are NOT a mandate-qualified or ranked opportunity set, and no company mandate status is inferred.",
+      "criticalDimensionGuard": "The calibrated Screening critical-dimension guard is ZERO-ONLY: a company fails it only when capital_efficiency coverage = 0 OR growth_momentum coverage = 0 (see the guard reason strings in `screening[].failedGates`). There is NO 0.30 critical-dimension coverage floor. The dimensionCoverage medians below are descriptive observations about corpus evidence thinness, not thresholds.",
+      "crossLayerDoubleCount": "Section 15 identifies real proposition overlap (growth / ARR / customer / usage) across Screening EvidenceClaims, Momentum, and Convergence. Because Priority is inactive, no Fit+Momentum+Convergence composite exists, and no production decision co-weights these layers, the system contains NO active mathematical double-counting defect. This is a LATENT cross-layer double-counting risk: overlap that would become double counting if the layers were co-weighted without de-duplication."
+    },
+    "counts": {
+      "all": 39,
+      "screened": 33,
+      "evidenceEligible": 16
+    },
+    "screeningFit": {
+      "all": {
+        "n": 39,
+        "min": 49.5125,
+        "p25": 57.2515625,
+        "median": 61.44375,
+        "p75": 66.1875,
+        "max": 80.7,
+        "mean": 61.830512820512816
+      },
+      "screened": {
+        "n": 33,
+        "min": 53.73125,
+        "p25": 59.625,
+        "median": 62.4875,
+        "p75": 67.235,
+        "max": 80.7,
+        "mean": 63.679526515151515
+      },
+      "eligible": {
+        "n": 16,
+        "min": 58.04375,
+        "p25": 62.31796875,
+        "median": 64.8375,
+        "p75": 70.594609375,
+        "max": 80.7,
+        "mean": 66.61812499999999
+      }
+    },
+    "evidenceCoverage": {
+      "all": {
+        "n": 39,
+        "min": 0.03,
+        "p25": 0.405,
+        "median": 0.51,
+        "p75": 0.665,
+        "max": 0.88,
+        "mean": 0.5107692307692309
+      },
+      "screened": {
+        "n": 33,
+        "min": 0.35750000000000004,
+        "p25": 0.435,
+        "median": 0.5825,
+        "p75": 0.6975,
+        "max": 0.88,
+        "mean": 0.5765151515151515
+      }
+    },
+    "evidenceConfidence": {
+      "all": {
+        "n": 39,
+        "min": 0.545142857142857,
+        "p25": 0.6655619412515965,
+        "median": 0.704237288135593,
+        "p75": 0.732018312450714,
+        "max": 0.8812500000000001,
+        "mean": 0.7030884232065823
+      },
+      "screened": {
+        "n": 33,
+        "min": 0.545142857142857,
+        "p25": 0.6589256198347109,
+        "median": 0.7,
+        "p75": 0.7214285714285713,
+        "max": 0.7658227848101266,
+        "mean": 0.6864084142311806
+      }
+    },
+    "dimensionCoverage": {
+      "note": "Descriptive medians/quantiles of dimension-level Evidence Coverage across all 39 companies. NOT guard thresholds. See distributions.diagnosticAssumptions.criticalDimensionGuard: the critical-dimension guard is zero-only.",
+      "byDimension": {
+        "capital_efficiency": {
+          "n": 39,
+          "min": 0,
+          "p25": 0.3,
+          "median": 0.3,
+          "p75": 0.55,
+          "max": 1,
+          "mean": 0.4051282051282051
+        },
+        "growth_momentum": {
+          "n": 39,
+          "min": 0,
+          "p25": 0.25,
+          "median": 0.75,
+          "p75": 1,
+          "max": 1,
+          "mean": 0.6474358974358975
+        },
+        "founder_alignment": {
+          "n": 39,
+          "min": 0,
+          "p25": 0.2,
+          "median": 0.2,
+          "p75": 0.4,
+          "max": 1,
+          "mean": 0.30512820512820527
+        },
+        "market_quality": {
+          "n": 39,
+          "min": 0,
+          "p25": 0.5,
+          "median": 0.75,
+          "p75": 1,
+          "max": 1,
+          "mean": 0.6923076923076923
+        },
+        "business_model_quality": {
+          "n": 39,
+          "min": 0,
+          "p25": 0,
+          "median": 0.5,
+          "p75": 0.75,
+          "max": 1,
+          "mean": 0.41025641025641024
+        },
+        "gtm_quality": {
+          "n": 39,
+          "min": 0,
+          "p25": 0.5,
+          "median": 1,
+          "p75": 1,
+          "max": 1,
+          "mean": 0.7692307692307693
+        },
+        "competitive_position": {
+          "n": 39,
+          "min": 0,
+          "p25": 0,
+          "median": 0.25,
+          "p75": 0.625,
+          "max": 1,
+          "mean": 0.3269230769230769
+        }
+      }
+    },
+    "momentum": {
+      "positive": {
+        "n": 39,
+        "min": 0,
+        "p25": 7.4037127432509955,
+        "median": 11.005470588646949,
+        "p75": 12.545069132516382,
+        "max": 25.681637344165765,
+        "mean": 10.52790293210822
+      },
+      "negative": {
+        "n": 39,
+        "min": 0,
+        "p25": 0,
+        "median": 0,
+        "p75": 0,
+        "max": 4.171143822511351,
+        "mean": 0.30807568037119926
+      },
+      "net": {
+        "n": 39,
+        "min": -4.171143822511351,
+        "p25": 7.172039539106343,
+        "median": 11.00145888614678,
+        "p75": 12.545069132516382,
+        "max": 25.681637344165765,
+        "mean": 10.21982725173702
+      },
+      "eligibleSubsetNet": {
+        "n": 16,
+        "min": 3.6128426100806244,
+        "p25": 10.921237229381443,
+        "median": 11.943195451488318,
+        "p75": 14.37804242126725,
+        "max": 25.681637344165765,
+        "mean": 12.821094994778761
+      },
+      "familyScoreTotals": {
+        "operating_growth": 0,
+        "customer_adoption": 12.034202669224529,
+        "product_technical": 6.288153970737877,
+        "gtm_ecosystem": 1.027389204035941,
+        "risk_deterioration": -0.8009967689651181
+      },
+      "companiesWithAnyPositive": 35,
+      "companiesWithAnyNegative": 3,
+      "companiesAllZero": 3
+    },
+    "convergence": {
+      "positive": {
+        "n": 39,
+        "min": 0,
+        "p25": 25,
+        "median": 25,
+        "p75": 37.5,
+        "max": 51.666666666666664,
+        "mean": 28.397435897435898
+      },
+      "negative": {
+        "n": 39,
+        "min": 0,
+        "p25": 0,
+        "median": 0,
+        "p75": 0,
+        "max": 18.333333333333336,
+        "mean": 1.4102564102564104
+      },
+      "net": {
+        "n": 39,
+        "min": -18.333333333333336,
+        "p25": 25,
+        "median": 25,
+        "p75": 37.5,
+        "max": 51.666666666666664,
+        "mean": 26.987179487179482
+      },
+      "companiesWithNonzero": 36,
+      "activeFamilyCounts": [
+        {
+          "domain": "appliedcompute.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "arcade.dev",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "assorthealth.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "avoca.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "baseten.co",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "braintrust.dev",
+          "positive": 0,
+          "negative": 1
+        },
+        {
+          "domain": "browserbase.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "canva.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "crewai.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "crosby.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "decagon.ai",
+          "positive": 0,
+          "negative": 0
+        },
+        {
+          "domain": "dust.tt",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "e2b.dev",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "elevenlabs.io",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "exa.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "fal.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "gamma.app",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "getbasis.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "glean.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "granola.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "linear.app",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "listenlabs.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "llamaindex.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "lovable.dev",
+          "positive": 1,
+          "negative": 1
+        },
+        {
+          "domain": "mintlify.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "modal.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "openevidence.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "parallel.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "resend.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "retellai.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "rillet.com",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "serval.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "sierra.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "turbopuffer.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "vercel.com",
+          "positive": 1,
+          "negative": 1
+        },
+        {
+          "domain": "wisprflow.ai",
+          "positive": 1,
+          "negative": 0
+        },
+        {
+          "domain": "withdavid.ai",
+          "positive": 0,
+          "negative": 0
+        },
+        {
+          "domain": "withpace.com",
+          "positive": 2,
+          "negative": 0
+        },
+        {
+          "domain": "xbow.com",
+          "positive": 0,
+          "negative": 0
+        }
+      ]
+    },
+    "correlations": {
+      "note": "Descriptive only on a consumed 39-company corpus. Correlation is not causation and MUST NOT justify any threshold, weight, half-life, Fit cutoff, or Priority rule.",
+      "fit_vs_coverage": 0.8753289832449254,
+      "fit_vs_sources": 0.1326415542384013,
+      "fit_vs_evidenceClaims": -0.25084756083950455,
+      "coverage_vs_sources": 0.17186857019662055,
+      "coverage_vs_evidenceClaims": -0.42128497426873546,
+      "confidence_vs_sources": -0.14489244744207522,
+      "netMomentum_vs_signalEvents": 0.447279081657166,
+      "netConvergence_vs_signalEvents": 0.5327252632235455,
+      "netMomentum_vs_netConvergence": 0.7923881828472816,
+      "fit_vs_netMomentum": 0.6059254989465076,
+      "fit_vs_netConvergence": 0.6209620170698392
+    },
+    "halfLife": {
+      "note": "Contribution proxy = |direction| * evidenceConfidence bucketed by event age. Half-lives UNCHANGED.",
+      "contributionShareByAge": {
+        "0-30": 0.2233201581027668,
+        "31-90": 0.19367588932806326,
+        "91-180": 0.3181818181818182,
+        "181-365": 0.23715415019762848,
+        "365+": 0.027667984189723317
+      },
+      "contributionTotalsByAge": {
+        "0-30": 11.3,
+        "31-90": 9.8,
+        "91-180": 16.1,
+        "181-365": 12.000000000000002,
+        "365+": 1.4
+      }
+    },
+    "coverageVsFit": {
+      "highFitLowCoverage": [
+        "listenlabs.com"
+      ],
+      "lowFitHighCoverage": [],
+      "highConfidenceLowCoverage": [
+        "avoca.ai",
+        "braintrust.dev",
+        "getbasis.ai",
+        "parallel.ai",
+        "withdavid.ai",
+        "xbow.com"
+      ],
+      "highCoverageLowConfidence": [
+        "crewai.com",
+        "granola.ai",
+        "llamaindex.ai",
+        "resend.com",
+        "turbopuffer.com"
+      ]
+    },
+    "evidenceDensity": {
+      "note": "Median split on source count. Consumed corpus; descriptive only.",
+      "sourceCountMedian": 5,
+      "byGroup": {
+        "highSourceCount": {
+          "n": 12,
+          "medianFit": 63.19140625,
+          "medianCoverage": 0.5975,
+          "medianConfidence": 0.7021186440677964,
+          "eligibleShare": 0.4166666666666667,
+          "medianNetMomentum": 11.994937397083618
+        },
+        "lowSourceCount": {
+          "n": 27,
+          "medianFit": 59.925,
+          "medianCoverage": 0.465,
+          "medianConfidence": 0.7111801242236023,
+          "eligibleShare": 0.4074074074074074,
+          "medianNetMomentum": 8.817056224104569
+        }
+      }
+    },
+    "sparseCompanies": [
+      {
+        "domain": "appliedcompute.com",
+        "signalEvents": 4,
+        "evidenceClaims": 9,
+        "netMomentum": 11.00145888614678,
+        "netConvergence": 33.33333333333333,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "arcade.dev",
+        "signalEvents": 3,
+        "evidenceClaims": 8,
+        "netMomentum": 11.465839956548155,
+        "netConvergence": 20,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "assorthealth.com",
+        "signalEvents": 2,
+        "evidenceClaims": 15,
+        "netMomentum": 12.593377667614877,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "avoca.ai",
+        "signalEvents": 2,
+        "evidenceClaims": 16,
+        "netMomentum": 10.072648378335407,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "baseten.co",
+        "signalEvents": 2,
+        "evidenceClaims": 18,
+        "netMomentum": 12.496760597417886,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "braintrust.dev",
+        "signalEvents": 2,
+        "evidenceClaims": 14,
+        "netMomentum": -4.171143822511351,
+        "netConvergence": -18.333333333333336,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "browserbase.com",
+        "signalEvents": 4,
+        "evidenceClaims": 8,
+        "netMomentum": 19.231114970989438,
+        "netConvergence": 51.666666666666664,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "canva.com",
+        "signalEvents": 2,
+        "evidenceClaims": 19,
+        "netMomentum": 7.752133280313343,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "crewai.com",
+        "signalEvents": 4,
+        "evidenceClaims": 7,
+        "netMomentum": 8.817056224104569,
+        "netConvergence": 46.666666666666664,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "decagon.ai",
+        "signalEvents": 2,
+        "evidenceClaims": 16,
+        "netMomentum": 0,
+        "netConvergence": 0,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "dust.tt",
+        "signalEvents": 2,
+        "evidenceClaims": 12,
+        "netMomentum": 8.494139132024973,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "e2b.dev",
+        "signalEvents": 4,
+        "evidenceClaims": 9,
+        "netMomentum": 22.875186724992897,
+        "netConvergence": 50,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "exa.ai",
+        "signalEvents": 2,
+        "evidenceClaims": 15,
+        "netMomentum": 11.005470588646949,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "getbasis.ai",
+        "signalEvents": 2,
+        "evidenceClaims": 15,
+        "netMomentum": 7.933330806351992,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "glean.com",
+        "signalEvents": 1,
+        "evidenceClaims": 17,
+        "netMomentum": 11.349787448770805,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "listenlabs.com",
+        "signalEvents": 2,
+        "evidenceClaims": 14,
+        "netMomentum": 6.77466181572224,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "llamaindex.ai",
+        "signalEvents": 4,
+        "evidenceClaims": 7,
+        "netMomentum": 10.680572259085432,
+        "netConvergence": 32.5,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "parallel.ai",
+        "signalEvents": 2,
+        "evidenceClaims": 13,
+        "netMomentum": 6.090314245165716,
+        "netConvergence": 20,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "resend.com",
+        "signalEvents": 3,
+        "evidenceClaims": 8,
+        "netMomentum": 15.432674386609913,
+        "netConvergence": 41.666666666666664,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "rillet.com",
+        "signalEvents": 2,
+        "evidenceClaims": 15,
+        "netMomentum": 15.504266560626686,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "serval.com",
+        "signalEvents": 4,
+        "evidenceClaims": 8,
+        "netMomentum": 12.437171416180217,
+        "netConvergence": 45,
+        "singleFamilyMomentum": false
+      },
+      {
+        "domain": "wisprflow.ai",
+        "signalEvents": 4,
+        "evidenceClaims": 9,
+        "netMomentum": 12.05887399159853,
+        "netConvergence": 25,
+        "singleFamilyMomentum": true
+      },
+      {
+        "domain": "withdavid.ai",
+        "signalEvents": 1,
+        "evidenceClaims": 14,
+        "netMomentum": 0,
+        "netConvergence": 0,
+        "singleFamilyMomentum": true
+      }
+    ],
+    "negativeSignals": [
+      {
+        "domain": "braintrust.dev",
+        "negativeMomentum": 4.171143822511351,
+        "positiveMomentum": 0,
+        "netMomentum": -4.171143822511351,
+        "negativeConvergence": 18.333333333333336,
+        "riskFamilyScore": -0.2780762548340901
+      },
+      {
+        "domain": "lovable.dev",
+        "negativeMomentum": 3.9219038559827095,
+        "positiveMomentum": 11.886565690360978,
+        "netMomentum": 7.964661834378269,
+        "negativeConvergence": 18.333333333333336,
+        "riskFamilyScore": -0.26146025706551396
+      },
+      {
+        "domain": "vercel.com",
+        "negativeMomentum": 3.9219038559827095,
+        "positiveMomentum": 7.423107672993422,
+        "netMomentum": 3.5012038170107123,
+        "negativeConvergence": 18.333333333333336,
+        "riskFamilyScore": -0.26146025706551396
+      }
+    ]
+  }
+}

@@ -1,0 +1,84 @@
+schemaVersion: 7
+candidateId: CAI-03
+canonicalId: nesa
+canonicalName: Nesa
+slug: nesa
+description: Network described by Nesa Labs as a platform for applications, protocols, and smart contracts to integrate artificial intelligence.
+domain: https://www.nesa.ai
+firstObservedAt: "2024-08-17"
+category: crypto_ai_and_agentic_infrastructure
+entityType: network
+assetType: token
+institutionalOrientation: null
+digitalAssetLifecycle: testnet
+financingStage: unknown
+cohort: VALIDATION
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Nesa's dated terms identify Nesa Labs Inc. and define the Nesa Chain as part of the services; governance and token-issuer relationships are not established.
+  unresolvedBoundaryNotes:
+    - The relationship between Nesa Labs Inc., the Nesa Chain, validators, and the NES token issuer is not established by dated evidence reviewed.
+people: []
+sources:
+  - id: src-nesa-terms-2024
+    schemaVersion: 7
+    publisher: Nesa
+    title: Terms and conditions
+    url: https://nesa.ai/terms
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-08-17"
+    availabilityDate: "2024-08-17"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+evidenceClaims:
+  - id: ev-nesa-legal-service-scope
+    schemaVersion: 7
+    companyId: nesa
+    claim: Nesa's terms, last updated August 17, 2024, identify Nesa Labs Inc. and describe services that include a platform for applications, protocols, and smart contracts to integrate AI and the Nesa Chain SDK.
+    statedValue: Nesa Labs Inc. and Nesa Chain SDK
+    numericValue: null
+    unit: null
+    sourceId: src-nesa-terms-2024
+    supportingSourceIds: []
+    sourceUrl: https://nesa.ai/terms
+    publicationDate: "2024-08-17"
+    metricAsOfDate: null
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: entity_identity_and_product
+    notes: The terms establish the disclosed service description and legal name, not usage, decentralization, token launch, or network performance.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: Establish founders, funding, network status, governance, and independently corroborated operating activity.
+    researchAssessmentId: nesa-identity-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents: []
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-nesa-team-financing
+    whatWasSearched: Dated official materials and independent coverage for founders, leadership, headquarters, financing, and legal structure.
+    whatCouldNotBeEstablished: Founder and leadership identities, headquarters, completed financing, and the entity receiving any financing.
+    expectedToMatter: true
+  - id: gap-nesa-network-token
+    whatWasSearched: Dated official materials and independent coverage for testnet operation, token generation, token supply, governance, and value capture.
+    whatCouldNotBeEstablished: Independently corroborated testnet usage, NES issuance status, token economics, governance rights, or value-capture mechanics available on or before 2026-09-10.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: The only dated legal source reviewed identifies Nesa Labs Inc. and services; it does not settle network control, token issuance, or governance boundaries.
+  sourceOriginUncertainty: No independent evidence-bearing source meeting the cutoff and availability-date standard was located.
+  likelyContradictions: null
+  completenessNotes: The frozen testnet/token attributes are preserved as universe attributes, while the packet does not treat current undated promotional pages as dated evidence.
+researchCutoff: "2026-09-10"

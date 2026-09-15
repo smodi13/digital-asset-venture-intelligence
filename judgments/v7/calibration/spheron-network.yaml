@@ -1,0 +1,227 @@
+schemaVersion: 7
+candidateId: DPC-03
+entityId: co-spheron-network
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:b8a67443786e8db4dc14640b2ff4c798a5aa20978ed0beba145bdfbaa72b8f40"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No admissible evidence establishes primary capital consumed: the only
+      two funding-round leads (a $7M round dated inconsistently by two
+      aggregators) carry no disclosed publication date and were excluded as
+      non-cutoff-admissible (gap-spheron-funding-rounds-unadmissible), and the
+      SPON token launch is a listing event, not company capital raised. Scale
+      claims (nodes, compute volume, ARR) are self-reported, low-confidence,
+      and internally inconsistent across two disclosures
+      (clm-spheron-network-scale-selfreported). With capital unestablished, no
+      scale-to-capital ratio can be responsibly judged regardless of scale
+      evidence quality.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Capital consumed is an open research gap
+      (gap-spheron-funding-rounds-unadmissible); no admissible financing
+      figure exists in the frozen packet.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim in the frozen packet addresses recurring labor, compute
+      subsidy, node-operator incentive cost, or infrastructure spend required
+      to sustain the compute-marketplace model. The token's stated role in
+      compute payment and node-operator rewards is recorded only as
+      descriptive research narrative, not as a sourced EvidenceClaim about
+      actual subsidy intensity.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or incentive-subsidy evidence exists in the frozen
+      packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The only candidate evidence (node counts, "$100M+ distributed compute,"
+      "$10M ARR") is a single-point-in-time, self-reported disclosure with no
+      independent corroboration, no stated measurement methodology, and an
+      internally conflicting parallel figure set from a separate aggregator
+      page (clm-spheron-network-scale-selfreported, evidenceStatus:
+      insufficient). A single unverified snapshot does not establish growth
+      or persistence, and node count is not usage; no credible momentum
+      judgment can rest on it.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independently corroborated or time-series usage/momentum evidence
+      exists (gap-spheron-arr-figure; gap-spheron-revenue-methodology).
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party integration
+      growth for Spheron Network.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No people records exist in the frozen packet. Candidate founder names
+      surfaced only through AI-synthesized search summaries and dead-linked
+      profile pages, which this batch's sourcing rules exclude as evidence
+      (gap-spheron-founders); no founder background or shipped-work claim was
+      admitted.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No admissible founder/team evidence exists in the frozen packet
+      (gap-spheron-founders).
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents admin/upgrade key control, on-chain governance
+      mechanics, or token-allocation/insider-concentration data for SPON. The
+      stated future role of the token in governance is descriptive research
+      narrative, not a sourced EvidenceClaim about actual control structure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No governance-structure or token-allocation evidence exists in the
+      frozen packet.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying customer demand, workflow criticality, or
+      costly third-party integration for Spheron's GPU/CPU compute
+      marketplace. The self-reported ARR figure is recorded as insufficient
+      evidence (undisclosed methodology, unverified) rather than as
+      admissible demand evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No admissible demand or market-depth evidence exists in the frozen
+      packet (gap-spheron-revenue-methodology).
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-spheron-legal-entity]
+    rationale: >-
+      The website Terms of Use names a Singapore-incorporated operating
+      entity ("Beta360 Pte Ltd," UEN 202107371K), a concrete jurisdiction
+      disclosure. However, whether this entity is the same one that raised
+      the 2021-2025 funding rounds attributed to "Spheron"/"Spheron Protocol"
+      is unresolved (gap-spheron-legal-entity-vs-fundraising-entity), leaving
+      the actual structural/regulatory footing of the fundraising entity
+      unclear. A single first-party jurisdiction disclosure with an unresolved
+      entity-boundary question does not support a favorable or unfavorable
+      lean.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The relationship between the disclosed operating entity and the
+      historical fundraising entity is unresolved
+      (gap-spheron-legal-entity-vs-fundraising-entity).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-spheron-arr-selfreported]
+    rationale: >-
+      The company self-reports "$10M ARR" but discloses no
+      revenue-recognition methodology, so it cannot be distinguished from
+      gross marketplace payment volume (which would not represent a company-
+      or protocol-side take-rate) versus actual net fee capture
+      (evidenceStatus: insufficient). This partial, low-confidence disclosure
+      is treated as weak evidence of a possible recurring monetization path
+      rather than a confirmed value-capture mechanism.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Revenue-recognition methodology behind the self-reported ARR figure is
+      undisclosed (gap-spheron-revenue-methodology).
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, contribution economics after node-operator
+      payouts, or reliance on continued token sales to fund operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No recurring burn or contribution-economics evidence exists in the
+      frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable sales
+      channel, or integration-driven pull. The self-reported "400,000+
+      community members" figure is a vanity metric with no independent
+      corroboration and no methodology, not evidence of an acquisition
+      channel.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution or integration-pull evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents time-to-production friction (compliance, wallet UX,
+      liquidity access, keys) for compute buyers or node-operator providers.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction evidence exists in the frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim in the frozen packet independently assesses the compute
+      marketplace's architecture, matching mechanism, or performance versus
+      alternative DePIN/GPU-aggregation designs. All node/compute-scale
+      figures are self-reported and unverified, not a technical assessment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Candidate security-audit references (QuillAudits, CertiK Skynet pages
+      for "Spheron-V1"/"Spheron Protocol") were located but their date,
+      scope, and findings could not be extracted within the research budget,
+      so no audit EvidenceClaim exists (gap-spheron-security-audit). No claim
+      documents validator/node-operator base durability, liquidity retention,
+      or observed resistance to competitive displacement; the only node-count
+      figures are self-reported and internally inconsistent, not durability
+      evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No confirmed security-audit evidence exists (gap-spheron-security-audit);
+      no independently corroborated network-durability evidence exists.

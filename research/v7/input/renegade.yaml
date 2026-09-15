@@ -1,0 +1,494 @@
+schemaVersion: 7
+candidateId: SPC-03
+canonicalId: co-renegade
+canonicalName: Renegade
+slug: renegade
+description: Privacy-preserving onchain dark-pool protocol using zero-knowledge proofs and multiparty computation for order matching and settlement.
+domain: https://www.renegade.fi
+firstObservedAt: "2026-09-10"
+category: security_privacy_and_cryptography
+entityType: protocol
+assetType: unknown
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Renegade is a trading protocol deployed on Arbitrum and Base and uses a separate peer-to-peer relayer network; it is not either underlying blockchain.
+  unresolvedBoundaryNotes:
+    - The reviewed sources did not establish the protocol's complete legal-entity, ownership, governance, or token boundary.
+people:
+  - &person_base
+    id: per-christopher-bender-renegade
+    schemaVersion: 7
+    name: Christopher Bender
+    aliases: []
+    currentRole: Whitepaper author
+    companyTenures:
+      - companyId: co-renegade
+        companyName: Renegade
+        role: Whitepaper author and protocol contributor
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-renegade-whitepaper]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-renegade-whitepaper]
+  - <<: *person_base
+    id: per-joseph-kraut-renegade
+    name: Joseph Kraut
+    companyTenures:
+      - companyId: co-renegade
+        companyName: Renegade
+        role: Whitepaper author and protocol contributor
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-renegade-whitepaper]
+sources:
+  - &source_base
+    id: src-renegade-theblock
+    schemaVersion: 7
+    publisher: The Block
+    title: On-chain dark pool Renegade raises $3.4 million led by Dragonfly and Naval Ravikant
+    url: https://www.theblock.co/post/213256/renegade-round-dragonfly-naval
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2023-02-20"
+    availabilityDate: "2023-02-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - <<: *source_base
+    id: src-renegade-whitepaper
+    publisher: Renegade
+    title: Renegade whitepaper v0.6
+    url: https://whitepaper.renegade.fi/
+    sourceType: official_protocol_source
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: null
+    availabilityDate: "2023-02-20"
+    supportRole: primary_fact
+  - <<: *source_base
+    id: src-renegade-home
+    publisher: Renegade
+    title: Renegade private exchange
+    url: https://renegade.fi/
+    sourceType: official_protocol_source
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: null
+    availabilityDate: "2026-06-30"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-renegade-w3p
+    publisher: Web3Privacy Now
+    title: Renegade project profile
+    url: https://explorer.web3privacy.info/project/renegade
+    sourceType: specialist_industry
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: null
+    availabilityDate: "2026-08-31"
+    supportRole: third_party_estimate
+  - <<: *source_base
+    id: src-renegade-zksecurity
+    publisher: zkSecurity
+    title: Renegade audit
+    url: https://blog.zksecurity.xyz/posts/renegade-audit/
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2024-07-22"
+    availabilityDate: "2024-07-22"
+    supportRole: audit_finding
+  - <<: *source_base
+    id: src-renegade-code4rena
+    publisher: Code4rena
+    title: Renegade bug bounty
+    url: https://code4rena.com/bounties/renegade
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: null
+    availabilityDate: "2026-06-30"
+    supportRole: audit_finding
+  - <<: *source_base
+    id: src-renegade-github
+    publisher: Renegade
+    title: Renegade protocol repository
+    url: https://github.com/renegade-fi/renegade
+    sourceType: code_repository
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: null
+    availabilityDate: "2026-08-31"
+    supportRole: primary_fact
+  - <<: *source_base
+    id: src-renegade-help
+    publisher: Renegade
+    title: Renegade help center
+    url: https://help.renegade.fi/hc/en-us
+    sourceType: official_protocol_source
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: null
+    availabilityDate: "2026-07-31"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-renegade-p2p
+    publisher: Renegade
+    title: What is the Renegade peer-to-peer network?
+    url: https://help.renegade.fi/hc/en-us/articles/32530439391763-What-is-the-Renegade-peer-to-peer-network
+    sourceType: official_protocol_source
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: null
+    availabilityDate: "2026-07-31"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-renegade-flashbots
+    publisher: Flashbots Collective
+    title: The crypto dark pool design playbook
+    url: https://collective.flashbots.net/t/the-crypto-dark-pool-design-playbook/3752
+    sourceType: specialist_industry
+    reliability: 0.76
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2024-08-10"
+    availabilityDate: "2024-08-10"
+    supportRole: contextual
+evidenceClaims:
+  - &claim_base
+    id: clm-renegade-seed
+    schemaVersion: 7
+    companyId: co-renegade
+    claim: Renegade raised a $3.4 million seed round led by Dragonfly Capital and Naval Ravikant in February 2023.
+    statedValue: $3.4 million seed
+    numericValue: 3.4
+    unit: usd_millions
+    sourceId: src-renegade-theblock
+    supportingSourceIds: []
+    sourceUrl: https://www.theblock.co/post/213256/renegade-round-dragonfly-naval
+    publicationDate: "2023-02-20"
+    metricAsOfDate: "2023-02-20"
+    lastVerified: "2026-09-13T12:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: financing
+    notes: Company or protocol financing is distinct from protocol liquidity, trading volume, revenue, and capital spent.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - <<: *claim_base
+    id: clm-renegade-testnet-plan
+    claim: The Block reported in February 2023 that Renegade was on an internal testnet and planned a public testnet for the second quarter of 2023.
+    statedValue: internal testnet; public testnet planned Q2 2023
+    numericValue: null
+    unit: null
+    metricAsOfDate: "2023-02-20"
+    confidence: medium
+    topic: deployment_status
+    notes: The planned public testnet is not treated as a completed event without confirmation.
+  - <<: *claim_base
+    id: clm-renegade-architecture
+    claim: Renegade's whitepaper describes private orders and balances, multiparty-computation matching, and zero-knowledge settlement.
+    statedValue: MPC matching and zero-knowledge settlement
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-whitepaper
+    supportingSourceIds: [src-renegade-flashbots]
+    sourceUrl: https://whitepaper.renegade.fi/
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium_high
+    topic: architecture
+    notes: Architecture is recorded separately from independent security verification.
+  - <<: *claim_base
+    id: clm-renegade-authors
+    claim: Christopher Bender and Joseph Kraut are named as authors of the Renegade whitepaper.
+    statedValue: Christopher Bender and Joseph Kraut
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-whitepaper
+    supportingSourceIds: []
+    sourceUrl: https://whitepaper.renegade.fi/
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: high
+    topic: people
+  - <<: *claim_base
+    id: clm-renegade-mainnet
+    claim: Independent directory evidence dates Renegade's mainnet launch to October 3, 2024, and identifies deployments on Arbitrum and Base.
+    statedValue: October 3, 2024; Arbitrum and Base
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-w3p
+    supportingSourceIds: [src-renegade-home]
+    sourceUrl: https://explorer.web3privacy.info/project/renegade
+    publicationDate: null
+    metricAsOfDate: "2024-10-03"
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    topic: network_deployment
+  - <<: *claim_base
+    id: clm-renegade-no-token
+    claim: Web3Privacy Now's project profile states that Renegade has no native token.
+    statedValue: no token
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-w3p
+    supportingSourceIds: []
+    sourceUrl: https://explorer.web3privacy.info/project/renegade
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    topic: token_status
+    notes: Asset type remains unknown because a directory statement does not establish the investable instrument or future token status.
+  - <<: *claim_base
+    id: clm-renegade-audit
+    claim: zkSecurity completed a three-week, two-consultant review of specified Renegade circuits and smart contracts in 2024.
+    statedValue: three weeks; two consultants; scoped circuits and contracts
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-zksecurity
+    supportingSourceIds: []
+    sourceUrl: https://blog.zksecurity.xyz/posts/renegade-audit/
+    publicationDate: "2024-07-22"
+    metricAsOfDate: null
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: security
+    notes: The review is bounded to its stated scope and timing and does not establish that later deployments are safe.
+    evidenceStatus: mixed
+    contradicts: [clm-renegade-directory-no-audit]
+    contradictionNote: Web3Privacy Now's profile says no security audits are available; this conflicts with the published zkSecurity review and may reflect directory staleness or a narrower definition.
+  - <<: *claim_base
+    id: clm-renegade-directory-no-audit
+    claim: Web3Privacy Now's project profile states that no Renegade security audits are available.
+    statedValue: no security audits available
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-w3p
+    supportingSourceIds: []
+    sourceUrl: https://explorer.web3privacy.info/project/renegade
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: third_party_estimate
+    confidence: low
+    modelEligibility: caveat
+    topic: security
+    evidenceStatus: mixed
+    contradictedBy: [clm-renegade-audit]
+    contradictionNote: A published zkSecurity review exists; the directory may be stale or may apply a narrower audit definition.
+  - <<: *claim_base
+    id: clm-renegade-admin-control
+    claim: Code4rena's bounty scope states that the Renegade contract owner can pause the system, change fees and encryption keys, and authorize upgrades.
+    statedValue: owner pause, fee, key, and upgrade controls
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-code4rena
+    supportingSourceIds: []
+    sourceUrl: https://code4rena.com/bounties/renegade
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: governance_and_control
+  - <<: *claim_base
+    id: clm-renegade-mpc-launch-limit
+    claim: Code4rena's bounty materials state that MPC matches were disabled at launch and state was managed by a Renegade cluster.
+    statedValue: MPC matches disabled at launch; Renegade-managed cluster
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-code4rena
+    supportingSourceIds: []
+    sourceUrl: https://code4rena.com/bounties/renegade
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: decentralization_and_control
+    notes: Launch-state disclosure is not assumed to describe the cutoff-date production configuration.
+  - <<: *claim_base
+    id: clm-renegade-fees
+    claim: Renegade's help center states that trades through the public relayer incur two basis points of protocol fees plus two basis points of relayer fees.
+    statedValue: 2 bps protocol fee plus 2 bps relayer fee
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-help
+    supportingSourceIds: []
+    sourceUrl: https://help.renegade.fi/hc/en-us
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: protocol_economics
+    notes: Protocol and relayer fees are not automatically Renegade company revenue.
+  - <<: *claim_base
+    id: clm-renegade-capacity-limit
+    claim: Renegade's help center documents a wallet limit of four open orders and ten token balances due to circuit-size constraints.
+    statedValue: four orders and ten balances
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-help
+    supportingSourceIds: []
+    sourceUrl: https://help.renegade.fi/hc/en-us
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: operational_limitations
+  - <<: *claim_base
+    id: clm-renegade-relayer-visibility
+    claim: Renegade documentation states that a user's directly connected relayer sees that user's orders and balances in plaintext before MPC matching across relayers.
+    statedValue: directly connected relayer sees plaintext orders and balances
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-p2p
+    supportingSourceIds: []
+    sourceUrl: https://help.renegade.fi/hc/en-us/articles/32530439391763-What-is-the-Renegade-peer-to-peer-network
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: privacy_trust_model
+  - <<: *claim_base
+    id: clm-renegade-open-source
+    claim: Renegade publishes a Rust protocol repository describing relayers, fail-stop clusters, and Byzantine inter-cluster communication.
+    statedValue: Public Rust repository
+    numericValue: null
+    unit: null
+    sourceId: src-renegade-github
+    supportingSourceIds: []
+    sourceUrl: https://github.com/renegade-fi/renegade
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium_high
+    topic: developer_ecosystem
+signalEvents:
+  - &event_base
+    id: sig-renegade-seed
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-renegade
+    subjectNameRaw: Renegade
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-renegade-theblock
+    rawStrength: 0.6
+    evidenceSummary: Renegade raised a $3.4 million seed.
+    evidenceIds: [clm-renegade-seed]
+    publicationDate: "2023-02-20"
+    availabilityDate: "2023-02-20"
+    eventDate: "2023-02-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - <<: *event_base
+    id: sig-renegade-testnet-plan
+    signalType: protocol_launch
+    signalCategory: network
+    sourceId: src-renegade-theblock
+    rawStrength: 0.4
+    evidenceSummary: A public testnet was reported as planned for Q2 2023.
+    evidenceIds: [clm-renegade-testnet-plan]
+    publicationDate: "2023-02-20"
+    availabilityDate: "2023-02-20"
+    eventDate: null
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: The source described a plan; this research did not establish that the Q2 2023 public-testnet event occurred as planned.
+  - <<: *event_base
+    id: sig-renegade-audit
+    signalType: product_launch
+    signalCategory: product
+    sourceId: src-renegade-zksecurity
+    rawStrength: 0.5
+    evidenceSummary: zkSecurity published a scoped Renegade audit.
+    evidenceIds: [clm-renegade-audit]
+    publicationDate: "2024-07-22"
+    availabilityDate: "2024-07-22"
+    eventDate: "2024-07-22"
+  - <<: *event_base
+    id: sig-renegade-mainnet
+    signalType: protocol_launch
+    signalCategory: network
+    sourceId: src-renegade-w3p
+    rawStrength: 0.6
+    evidenceSummary: Independent directory evidence dates mainnet launch to October 3, 2024.
+    evidenceIds: [clm-renegade-mainnet]
+    publicationDate: null
+    availabilityDate: "2026-08-31"
+    eventDate: "2024-10-03"
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-renegade-economics
+    whatWasSearched: Financing coverage, protocol fee documentation, and public technical materials.
+    whatCouldNotBeEstablished: Company revenue, ownership of protocol fees, gross margin, profitability, cash balance, or runway.
+    expectedToMatter: true
+  - id: gap-renegade-live-activity
+    whatWasSearched: Official protocol pages, independent directories, repositories, and security materials.
+    whatCouldNotBeEstablished: Independently verified current trading volume, active users, liquidity, customer count, or fee revenue.
+    expectedToMatter: true
+  - id: gap-renegade-current-decentralization
+    whatWasSearched: Whitepaper, peer-to-peer documentation, code, and bug-bounty disclosures.
+    whatCouldNotBeEstablished: Whether MPC matching was enabled and how many independent relayers operated at the cutoff.
+    expectedToMatter: true
+  - id: gap-renegade-entity-governance
+    whatWasSearched: Protocol documentation, repositories, financing coverage, and contract-control disclosures.
+    whatCouldNotBeEstablished: The legal entity, beneficial ownership, upgrade-key control process, and formal governance arrangement.
+    expectedToMatter: true
+  - id: gap-renegade-audit-delta
+    whatWasSearched: zkSecurity review, Code4rena bounty scope, and public repositories.
+    whatCouldNotBeEstablished: Whether cutoff-date deployed contracts and circuits matched the audited code and scope.
+    expectedToMatter: true
+  - id: gap-renegade-postseed
+    whatWasSearched: Public financing reporting through the cutoff.
+    whatCouldNotBeEstablished: Any completed financing after the February 2023 seed.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: The protocol, operating team or company, relayer network, deployments, and possible investable instrument are not fully resolved into legal entities.
+  sourceOriginUncertainty: The project directory is independent but may be stale; first-party protocol claims are not promoted to independent corroboration.
+  likelyContradictions: Web3Privacy Now says no audit is available while zkSecurity published a scoped review; both records are retained and linked.
+  completenessNotes: No token is inferred from absence; assetType remains unknown. Launch, chain deployment, trading design, and fees are contextual and not treated as adoption or company revenue.
+researchCutoff: "2026-09-10"

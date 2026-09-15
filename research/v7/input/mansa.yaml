@@ -1,0 +1,372 @@
+schemaVersion: 7
+candidateId: SAP-04
+canonicalId: co-mansa
+canonicalName: Mansa
+slug: mansa
+description: >-
+  Mansa is a stablecoin-based liquidity and pre-funding provider for payment
+  companies moving money across emerging-market corridors.
+domain: mansa.xyz
+firstObservedAt: "2024-08-01"
+category: stablecoins_and_payments
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Mansa uses stablecoins, especially USDT, as settlement/liquidity rails;
+        no public source established a Mansa-issued token.
+      relatedEntityId: null
+      relationType: settlement_asset_dependency
+  protocolNetworkRelationship: >-
+    Mansa is an operating company that provides liquidity services on existing
+    stablecoin rails, not a separate protocol/network issuer.
+  unresolvedBoundaryNotes:
+    - "Public sources use MANSA, Mansa, and Mansa Finance; no separate token issuer was established."
+people:
+  - id: per-mansa-mouloukou-sanoh
+    schemaVersion: 7
+    name: Mouloukou Sanoh
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-mansa
+        companyName: Mansa
+        role: Co-founder and CEO
+        startDate: "2025-02-20"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-mansa-techcrunch-2025, src-mansa-ledgerinsights-2025]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-mansa-techcrunch-2025, src-mansa-ledgerinsights-2025]
+  - id: per-mansa-nkiru-uwaje
+    schemaVersion: 7
+    name: Nkiru Uwaje
+    aliases: []
+    currentRole: Co-founder and COO
+    companyTenures:
+      - companyId: co-mansa
+        companyName: Mansa
+        role: Co-founder and COO
+        startDate: "2025-02-20"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-mansa-techcrunch-2025]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-mansa-techcrunch-2025]
+sources:
+  - id: src-mansa-techcrunch-2025
+    schemaVersion: 7
+    publisher: TechCrunch
+    title: "Tether backs stablecoin liquidity provider Mansa in $10M seed round"
+    url: "https://techcrunch.com/2025/02/19/tether-backs-stablecoin-liquidity-provider-mansa-in-10m-seed-round/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-02-19"
+    availabilityDate: "2025-02-19"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-mansa-theblock-2025
+    schemaVersion: 7
+    publisher: The Block
+    title: "Tether leads $10 million funding in cross-border payments firm MANSA"
+    url: "https://www.theblock.co/news/ecosystems/2025-02-20-tether-leads-10-million-funding-in-cross-border-payments-firm-mansa-342337"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-02-20"
+    availabilityDate: "2025-02-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-mansa-ledgerinsights-2025
+    schemaVersion: 7
+    publisher: Ledger Insights
+    title: "Tether backed MANSA raises $10m for cross border payments with stablecoins"
+    url: "https://www.ledgerinsights.com/tether-backed-mansa-raises-10m-for-cross-border-payments-with-stablecoins/"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-02-20"
+    availabilityDate: "2025-02-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-mansa-linkedin-2025
+    schemaVersion: 7
+    publisher: MANSA
+    title: "MANSA LinkedIn announcement of $10M raise"
+    url: "https://www.linkedin.com/posts/mansa-finance-def_were-incredibly-excited-to-share-that-mansa-activity-7298265309549895681-9GVb"
+    sourceType: official_company
+    tier: c
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-02-20"
+    availabilityDate: "2025-02-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-mansa-financing-mix
+    schemaVersion: 7
+    companyId: co-mansa
+    claim: >-
+      Mansa raised $10 million in February 2025, comprising a $3 million
+      pre-seed equity round led by Tether and Polymorphic Capital plus $7
+      million of liquidity funding from institutional investors.
+    statedValue: "$3M pre-seed equity plus $7M liquidity funding"
+    numericValue: 10
+    unit: usd_millions
+    sourceId: src-mansa-techcrunch-2025
+    supportingSourceIds: [src-mansa-theblock-2025, src-mansa-ledgerinsights-2025]
+    sourceUrl: "https://techcrunch.com/2025/02/19/tether-backs-stablecoin-liquidity-provider-mansa-in-10m-seed-round/"
+    publicationDate: "2025-02-19"
+    metricAsOfDate: "2025-02-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Financing is mixed; only $3 million is described as equity/pre-seed.
+      The $7 million component is liquidity funding and should not be counted
+      as ordinary primary venture equity.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Confirm exact legal instruments and whether any liquidity funding is debt, facility capital, or partner-supplied treasury."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-mansa-product
+    schemaVersion: 7
+    companyId: co-mansa
+    claim: >-
+      Mansa provides revolving stablecoin liquidity and embedded pre-funding
+      solutions for payment companies, allowing faster cross-border settlement
+      and payouts without tying up as much fiat pre-funded capital.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-mansa-techcrunch-2025
+    supportingSourceIds: [src-mansa-theblock-2025]
+    sourceUrl: "https://techcrunch.com/2025/02/19/tether-backs-stablecoin-liquidity-provider-mansa-in-10m-seed-round/"
+    publicationDate: "2025-02-19"
+    metricAsOfDate: "2025-02-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: "Operating model depends on stablecoin liquidity availability, borrower underwriting, and corridor-specific payment demand."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify underwriting data sources, realized losses, and facility covenants."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-mansa-volume-growth
+    schemaVersion: 7
+    companyId: co-mansa
+    claim: >-
+      TechCrunch reported that Mansa had processed nearly $31 million in
+      transaction volume since launching six months earlier, with monthly
+      volume rising from $1.6 million in August 2024 to $11 million in
+      January 2025.
+    statedValue: "$31M cumulative; $1.6M to $11M monthly volume"
+    numericValue: 31
+    unit: usd_millions
+    sourceId: src-mansa-techcrunch-2025
+    supportingSourceIds: [src-mansa-theblock-2025]
+    sourceUrl: "https://techcrunch.com/2025/02/19/tether-backs-stablecoin-liquidity-provider-mansa-in-10m-seed-round/"
+    publicationDate: "2025-02-19"
+    metricAsOfDate: "2025-01-31"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "TechCrunch attributes the operating metrics to Mansa; no audited volume source was admitted."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile Dune/onchain methodology with customer settlements and exclude circular/internal transfers."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-mansa-revenue-defaults
+    schemaVersion: 7
+    companyId: co-mansa
+    claim: >-
+      TechCrunch reported company-provided claims that Mansa had no defaults
+      so far and that revenue from financed-transaction fees had grown 350%
+      over the prior six months.
+    statedValue: "no defaults; revenue up 350%"
+    numericValue: 350
+    unit: percent
+    sourceId: src-mansa-techcrunch-2025
+    supportingSourceIds: []
+    sourceUrl: "https://techcrunch.com/2025/02/19/tether-backs-stablecoin-liquidity-provider-mansa-in-10m-seed-round/"
+    publicationDate: "2025-02-19"
+    metricAsOfDate: "2025-02-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: caveat
+    topic: risk
+    notes: "Default and revenue-growth claims are high-impact but company-reported; no loss tape, cohort, or audited financials were found."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Obtain aging/default history, facility utilization, net revenue, and loan-level performance."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-mansa-founders
+    schemaVersion: 7
+    companyId: co-mansa
+    claim: >-
+      Public reporting identifies Mouloukou Sanoh as Mansa's co-founder and
+      CEO and Nkiru Uwaje as co-founder and COO.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-mansa-techcrunch-2025
+    supportingSourceIds: []
+    sourceUrl: "https://techcrunch.com/2025/02/19/tether-backs-stablecoin-liquidity-provider-mansa-in-10m-seed-round/"
+    publicationDate: "2025-02-19"
+    metricAsOfDate: "2025-02-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: people
+    notes: "No complete senior-leadership roster or board/control structure was established."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-mansa-launch-volume-period
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-mansa
+    subjectNameRaw: Mansa
+    signalType: customer_momentum
+    signalCategory: demand
+    signalDirection: positive
+    sourceId: src-mansa-techcrunch-2025
+    rawStrength: 0.4
+    evidenceSummary: "Mansa reported nearly $31 million in processed volume over its first six months."
+    evidenceIds: [clm-mansa-volume-growth]
+    publicationDate: "2025-02-19"
+    availabilityDate: "2025-02-19"
+    eventDate: "2025-01-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-mansa-financing-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-mansa
+    subjectNameRaw: Mansa
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-mansa-techcrunch-2025
+    rawStrength: 0.45
+    evidenceSummary: "Mansa raised $3 million in pre-seed equity and $7 million in liquidity funding."
+    evidenceIds: [clm-mansa-financing-mix]
+    publicationDate: "2025-02-19"
+    availabilityDate: "2025-02-19"
+    eventDate: "2025-02-19"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-mansa-legal-entity
+    whatWasSearched: "Mansa legal entity, HQ, regulatory permissions, and jurisdiction"
+    whatCouldNotBeEstablished: "Dubai-headquartered descriptions appear in coverage, but the legal entity and regulatory permissions were not pinned from primary public filings."
+    expectedToMatter: true
+  - id: gap-mansa-credit-risk
+    whatWasSearched: "Loan book, defaults, facility covenants, collateral, and counterparty concentration"
+    whatCouldNotBeEstablished: "No public loss tape, borrower concentration, facility documentation, or audited credit-performance data was found."
+    expectedToMatter: true
+  - id: gap-mansa-client-roster
+    whatWasSearched: "Named payment customers and retained corridor usage"
+    whatCouldNotBeEstablished: "Public reporting describes customer categories and regions but not a verified customer roster or retention cohorts."
+    expectedToMatter: true
+  - id: gap-mansa-token
+    whatWasSearched: "Any Mansa-issued token or protocol governance token"
+    whatCouldNotBeEstablished: "No Mansa-issued token was established; asset exposure remains equity plus credit/facility economics."
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Mansa is treated as an operating fintech/credit company using USDT and
+    other rails, not as a token issuer.
+  sourceOriginUncertainty: >-
+    TechCrunch and The Block provide independent reporting, but many operating
+    metrics originate from company statements. Repeated funding articles should
+    not be counted as independent confirmation of revenue, defaults, or client
+    outcomes.
+  likelyContradictions: null
+  completenessNotes: >-
+    Packet establishes mixed financing, founders, operating model, and early
+    company-reported volume metrics. Credit performance, legal permissions,
+    client concentration, and audited economics remain material gaps.
+researchCutoff: "2026-09-10"

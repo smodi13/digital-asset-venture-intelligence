@@ -1,0 +1,402 @@
+schemaVersion: 7
+candidateId: DOI-04
+canonicalId: co-lagrange-labs
+canonicalName: Lagrange Labs
+slug: lagrange-labs
+description: Developer of zero-knowledge proof infrastructure, including state committees, a prover network, and a ZK coprocessor.
+domain: https://www.lagrange.dev
+firstObservedAt: "2026-09-10"
+category: data_oracles_and_indexing
+entityType: company
+assetType: equity_and_token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: Lagrange Labs develops protocol software while the Lagrange Foundation publishes LA token and network materials.
+      relatedEntityId: null
+      relationType: developer_and_foundation
+  protocolNetworkRelationship: The company developed State Committee and ZK Prover Network services deployed as EigenLayer AVSs; the LA token is a separate network asset.
+  unresolvedBoundaryNotes:
+    - Public sources do not completely allocate protocol control, intellectual property, fees, token obligations, and treasury resources between Lagrange Labs and the Lagrange Foundation.
+people:
+  - id: per-ismael-hishon-rezaizadeh
+    schemaVersion: 7
+    name: Ismael Hishon-Rezaizadeh
+    aliases: []
+    currentRole: Founder and CEO
+    companyTenures:
+      - companyId: co-lagrange-labs
+        companyName: Lagrange Labs
+        role: Founder and CEO
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-lagrange-coindesk, src-lagrange-funding]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-lagrange-seed]
+    sourceIds: [src-lagrange-coindesk, src-lagrange-funding]
+sources:
+  - &source_base
+    id: src-lagrange-state-committee
+    schemaVersion: 7
+    publisher: Lagrange Labs
+    title: State Committees on EigenLayer via Lagrange
+    url: https://lagrange.dev/blog/state-committees-on-eigenlayer-via-lagrange
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2024-01-11"
+    availabilityDate: "2024-01-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - <<: *source_base
+    id: src-lagrange-avs-mainnet
+    title: Lagrange launches as first zero-knowledge AVS on EigenLayer mainnet
+    url: https://lagrange.dev/blog/lagrange-launches-as-first-zero-knowledge-actively-validated-service-avs-on-eigenlayer-mainnet
+    publishedAt: "2024-04-11"
+    availabilityDate: "2024-04-11"
+  - <<: *source_base
+    id: src-lagrange-funding
+    publisher: Lagrange Labs
+    title: Lagrange Labs announces $13.2m in seed funding
+    url: https://lagrange.dev/blog/lagrange-labs-announces-13-2m-in-seed-funding-to-revolutionize-big-data-applications-with-its-zk-coprocessing-technology
+    sourceType: official_company
+    publishedAt: "2024-05-08"
+    availabilityDate: "2024-05-08"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-lagrange-coindesk
+    publisher: CoinDesk
+    title: Thiel-backed cryptography startup Lagrange raises $13M
+    url: https://www.coindesk.com/tech/2024/05/08/thiel-backed-cryptography-startup-lagrange-raises-13m
+    sourceType: independent_journalism
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2024-05-08"
+    availabilityDate: "2024-05-08"
+    supportRole: transaction_detail
+  - <<: *source_base
+    id: src-lagrange-prover-mainnet
+    title: Lagrange deploys production-ready ZK Prover Network
+    url: https://lagrange.dev/blog/lagrange-deploys-first-production-ready-zk-prover-network-powered-by-coinbase-kraken-and-okx
+    publishedAt: "2024-06-04"
+    availabilityDate: "2024-06-04"
+  - <<: *source_base
+    id: src-lagrange-coinbase
+    publisher: Coinbase Developer Platform
+    title: Guide to Lagrange
+    url: https://www.coinbase.com/en-ca/developer-platform/discover/protocol-guides/guide-to-lagrange
+    sourceType: customer_vendor
+    reliability: 0.74
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2024-06-04"
+    availabilityDate: "2024-06-04"
+    supportRole: customer_vendor
+  - <<: *source_base
+    id: src-lagrange-chaos
+    publisher: Chaos Labs
+    title: Lagrange onboarding assessment
+    url: https://governance.ether.fi/t/chaos-labs-lagrange-onboarding-assessment/2757
+    sourceType: specialist_industry
+    reliability: 0.76
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2025-01-13"
+    availabilityDate: "2025-01-13"
+    supportRole: third_party_estimate
+  - <<: *source_base
+    id: src-lagrange-token
+    publisher: Lagrange Foundation
+    title: Introducing the Lagrange Token
+    url: https://www.lagrangefoundation.org/blog/introducing-the-lagrange-token
+    sourceType: official_network_source
+    reliability: 0.68
+    publishedAt: "2025-05-26"
+    availabilityDate: "2025-05-26"
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-lagrange-binance
+    publisher: Binance
+    title: Binance will list Lagrange (LA)
+    url: https://www.binance.com/en/support/announcement/detail/396441b6cb6d46b983d6475b0b77daf9
+    sourceType: specialist_industry
+    reliability: 0.76
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2025-07-09"
+    availabilityDate: "2025-07-09"
+    supportRole: primary_fact
+  - <<: *source_base
+    id: src-lagrange-micar
+    publisher: Lagrange Foundation
+    title: LA MiCA crypto-asset white paper
+    url: https://www.lagrangefoundation.org/lagrange_MiCA_Whitepaper.pdf
+    sourceType: regulatory
+    reliability: 0.72
+    publishedAt: "2025-06-30"
+    availabilityDate: "2025-06-30"
+    supportRole: legal_entity_disclosure
+evidenceClaims:
+  - &claim_base
+    id: clm-lagrange-state-architecture
+    schemaVersion: 7
+    companyId: co-lagrange-labs
+    claim: Lagrange described State Committees as EigenLayer-secured committees that attest to rollup state for cross-chain access.
+    statedValue: EigenLayer-secured state attestations
+    numericValue: null
+    unit: null
+    sourceId: src-lagrange-state-committee
+    supportingSourceIds: []
+    sourceUrl: https://lagrange.dev/blog/state-committees-on-eigenlayer-via-lagrange
+    publicationDate: "2024-01-11"
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T12:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: architecture
+    notes: Architecture description is first-party and is distinct from independent security verification.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - <<: *claim_base
+    id: clm-lagrange-avs-launch
+    claim: Lagrange reported launching its State Committee as a zero-knowledge AVS on EigenLayer mainnet in April 2024.
+    statedValue: Mainnet AVS launch
+    sourceId: src-lagrange-avs-mainnet
+    sourceUrl: https://lagrange.dev/blog/lagrange-launches-as-first-zero-knowledge-actively-validated-service-avs-on-eigenlayer-mainnet
+    publicationDate: "2024-04-11"
+    metricAsOfDate: "2024-04-11"
+    topic: network_deployment
+  - <<: *claim_base
+    id: clm-lagrange-seed
+    claim: Lagrange Labs raised a $13.2 million seed round led by Founders Fund in May 2024.
+    statedValue: $13.2 million seed
+    numericValue: 13.2
+    unit: usd_millions
+    sourceId: src-lagrange-funding
+    supportingSourceIds: [src-lagrange-coindesk]
+    sourceUrl: https://lagrange.dev/blog/lagrange-labs-announces-13-2m-in-seed-funding-to-revolutionize-big-data-applications-with-its-zk-coprocessing-technology
+    publicationDate: "2024-05-08"
+    metricAsOfDate: "2024-05-08"
+    confidence: high
+    topic: financing
+    notes: Equity-company financing is not token financing, restaked value, treasury assets, network fees, or capital spent.
+  - <<: *claim_base
+    id: clm-lagrange-founder
+    claim: CoinDesk identified Ismael Hishon-Rezaizadeh as Lagrange Labs founder and CEO in May 2024.
+    statedValue: Founder and CEO
+    sourceId: src-lagrange-coindesk
+    supportingSourceIds: [src-lagrange-funding]
+    sourceUrl: https://www.coindesk.com/tech/2024/05/08/thiel-backed-cryptography-startup-lagrange-raises-13m
+    publicationDate: "2024-05-08"
+    metricAsOfDate: "2024-05-08"
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: people
+  - <<: *claim_base
+    id: clm-lagrange-prover-launch
+    claim: Lagrange announced production deployment of its ZK Prover Network in June 2024 with operators including Coinbase, Kraken, and OKX.
+    statedValue: ZK Prover Network production deployment
+    sourceId: src-lagrange-prover-mainnet
+    supportingSourceIds: [src-lagrange-coinbase]
+    sourceUrl: https://lagrange.dev/blog/lagrange-deploys-first-production-ready-zk-prover-network-powered-by-coinbase-kraken-and-okx
+    publicationDate: "2024-06-04"
+    metricAsOfDate: "2024-06-04"
+    confidence: medium_high
+    topic: network_deployment
+  - <<: *claim_base
+    id: clm-lagrange-gateway
+    claim: Lagrange stated that it operated the first gateway routing proof requests to its prover network.
+    statedValue: Lagrange operated the first gateway
+    sourceId: src-lagrange-prover-mainnet
+    supportingSourceIds: []
+    sourceUrl: https://lagrange.dev/blog/lagrange-deploys-first-production-ready-zk-prover-network-powered-by-coinbase-kraken-and-okx
+    publicationDate: "2024-06-04"
+    metricAsOfDate: "2024-06-04"
+    modelEligibility: caveat
+    topic: decentralization_and_control
+  - <<: *claim_base
+    id: clm-lagrange-slashing-official
+    claim: Lagrange's June 2024 Prover Network announcement said failure to meet obligations could result in nonpayment and slashing.
+    statedValue: nonpayment and slashing
+    sourceId: src-lagrange-prover-mainnet
+    supportingSourceIds: []
+    sourceUrl: https://lagrange.dev/blog/lagrange-deploys-first-production-ready-zk-prover-network-powered-by-coinbase-kraken-and-okx
+    publicationDate: "2024-06-04"
+    metricAsOfDate: "2024-06-04"
+    evidenceStatus: mixed
+    modelEligibility: caveat
+    topic: economic_security
+    contradicts: [clm-lagrange-no-slashing-chaos]
+    contradictionNote: Chaos Labs stated in January 2025 that Lagrange had not implemented slashing; the sources may concern different products or configurations, but the public record reviewed does not resolve the discrepancy.
+  - <<: *claim_base
+    id: clm-lagrange-no-slashing-chaos
+    claim: Chaos Labs stated in January 2025 that Lagrange had not implemented slashing.
+    statedValue: no slashing implemented
+    sourceId: src-lagrange-chaos
+    supportingSourceIds: []
+    sourceUrl: https://governance.ether.fi/t/chaos-labs-lagrange-onboarding-assessment/2757
+    publicationDate: "2025-01-13"
+    metricAsOfDate: "2025-01-13"
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    evidenceStatus: mixed
+    modelEligibility: caveat
+    topic: economic_security
+    contradictedBy: [clm-lagrange-slashing-official]
+    contradictionNote: Lagrange's June 2024 announcement described slashing as a possible penalty; the sources may concern different products or configurations, but the public record reviewed does not resolve the discrepancy.
+  - <<: *claim_base
+    id: clm-lagrange-token-supply
+    claim: The Lagrange Foundation specified a one-billion-unit total supply for LA and a 4% annual emission rate.
+    statedValue: 1 billion LA; 4% annual emissions
+    numericValue: null
+    unit: null
+    sourceId: src-lagrange-token
+    supportingSourceIds: []
+    sourceUrl: https://www.lagrangefoundation.org/blog/introducing-the-lagrange-token
+    publicationDate: "2025-05-26"
+    metricAsOfDate: "2025-05-26"
+    topic: token_economics
+    notes: Token supply and emissions do not establish company ownership, revenue, or investment quality.
+  - <<: *claim_base
+    id: clm-lagrange-token-fees
+    claim: The Foundation stated that clients may pay network fees in ETH, USDC, or LA and that non-LA proceeds are used to buy LA for prover payments.
+    statedValue: ETH, USDC, or LA fees; buyback for prover payments
+    sourceId: src-lagrange-token
+    supportingSourceIds: []
+    sourceUrl: https://www.lagrangefoundation.org/blog/introducing-the-lagrange-token
+    publicationDate: "2025-05-26"
+    metricAsOfDate: null
+    topic: protocol_economics
+    notes: Protocol fee routing is not established as Lagrange Labs company revenue.
+  - <<: *claim_base
+    id: clm-lagrange-emission-subsidy
+    claim: The Foundation described LA emissions as a mechanism to subsidize proof costs.
+    statedValue: emissions subsidize proof costs
+    sourceId: src-lagrange-token
+    supportingSourceIds: []
+    sourceUrl: https://www.lagrangefoundation.org/blog/introducing-the-lagrange-token
+    publicationDate: "2025-05-26"
+    metricAsOfDate: null
+    modelEligibility: caveat
+    topic: incentives_and_subsidies
+  - <<: *claim_base
+    id: clm-lagrange-token-live
+    claim: Binance announced LA spot trading in July 2025 and reported 193 million LA circulating out of one billion total at listing.
+    statedValue: 193 million circulating; 1 billion total
+    sourceId: src-lagrange-binance
+    supportingSourceIds: [src-lagrange-micar]
+    sourceUrl: https://www.binance.com/en/support/announcement/detail/396441b6cb6d46b983d6475b0b77daf9
+    publicationDate: "2025-07-09"
+    metricAsOfDate: "2025-07-09"
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: token_status
+    notes: Exchange listing and circulating supply are contextual, not adoption, company economics, or a recommendation.
+signalEvents:
+  - &event_base
+    id: sig-lagrange-avs
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-lagrange-labs
+    subjectNameRaw: Lagrange State Committee
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-lagrange-avs-mainnet
+    rawStrength: 0.6
+    evidenceSummary: Lagrange reported its State Committee AVS live on EigenLayer mainnet.
+    evidenceIds: [clm-lagrange-avs-launch]
+    publicationDate: "2024-04-11"
+    availabilityDate: "2024-04-11"
+    eventDate: "2024-04-11"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - <<: *event_base
+    id: sig-lagrange-seed
+    subjectType: company
+    subjectNameRaw: Lagrange Labs
+    signalType: funding
+    signalCategory: capital
+    sourceId: src-lagrange-funding
+    rawStrength: 0.7
+    evidenceSummary: Lagrange Labs raised a $13.2 million seed.
+    evidenceIds: [clm-lagrange-seed]
+    publicationDate: "2024-05-08"
+    availabilityDate: "2024-05-08"
+    eventDate: "2024-05-08"
+  - <<: *event_base
+    id: sig-lagrange-prover
+    subjectNameRaw: Lagrange ZK Prover Network
+    sourceId: src-lagrange-prover-mainnet
+    rawStrength: 0.7
+    evidenceSummary: Lagrange reported production deployment of its ZK Prover Network.
+    evidenceIds: [clm-lagrange-prover-launch]
+    publicationDate: "2024-06-04"
+    availabilityDate: "2024-06-04"
+    eventDate: "2024-06-04"
+  - <<: *event_base
+    id: sig-lagrange-token
+    subjectType: network
+    subjectNameRaw: Lagrange network
+    signalType: token_launch
+    signalCategory: capital
+    sourceId: src-lagrange-binance
+    rawStrength: 0.6
+    evidenceSummary: LA spot trading commenced by July 2025.
+    evidenceIds: [clm-lagrange-token-live]
+    publicationDate: "2025-07-09"
+    availabilityDate: "2025-07-09"
+    eventDate: "2025-07-09"
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-lagrange-company-economics
+    whatWasSearched: Financing, network architecture, token design, and independent assessments.
+    whatCouldNotBeEstablished: Lagrange Labs company revenue or ownership of protocol fees, as distinct from network fee flows.
+    expectedToMatter: true
+  - id: gap-lagrange-capital-use
+    whatWasSearched: Seed financing coverage and company announcements.
+    whatCouldNotBeEstablished: Capital actually spent, cash balance, burn rate, or runway.
+    expectedToMatter: true
+  - id: gap-lagrange-client-usage
+    whatWasSearched: Launch announcements, operator materials, and the Chaos Labs assessment.
+    whatCouldNotBeEstablished: Independently verified current paying-client count, proof volume, fee revenue, or customer retention.
+    expectedToMatter: true
+  - id: gap-lagrange-audit-scope
+    whatWasSearched: Public technical and risk-assessment materials.
+    whatCouldNotBeEstablished: A complete independent audit trail for the deployed ZK prover, gateway, and token systems at the cutoff.
+    expectedToMatter: true
+  - id: gap-lagrange-entity-boundary
+    whatWasSearched: Labs, Foundation, token, MiCA, and protocol materials.
+    whatCouldNotBeEstablished: Complete legal and economic allocation among Lagrange Labs, the Foundation, LA holders, operators, and network contracts.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: Lagrange Labs equity, the Lagrange Foundation, deployed AVSs, and LA token economics are recorded separately.
+  sourceOriginUncertainty: Operator and client names in first-party launch material were corroborated only where Coinbase independently described its operator role.
+  likelyContradictions: The official June 2024 slashing description conflicts with Chaos Labs' January 2025 statement that slashing was not implemented; both claims are retained and linked.
+  completenessNotes: Restaked commitments, token supply, emissions, and exchange listing are contextual and do not establish company capital, revenue, or adoption momentum.
+researchCutoff: "2026-09-10"

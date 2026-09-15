@@ -1,0 +1,101 @@
+# Digital-asset signal definitions (PARALLEL / DORMANT - Phase 2B).
+#
+# Half-lives are PROVISIONAL V1 HYPOTHESES, not calibration results. The event
+# record is permanent; a half-life governs only a future recency-weighted
+# analytical contribution. Not part of the active configHash.
+
+schemaVersion: 7
+version: "1.0.0-provisional"
+status: PROVISIONAL_DIGITAL_ASSET_V1_UNCALIBRATED
+
+signals:
+  - id: protocol_launch
+    category: network
+    subjectTypes: [protocol]
+    directions: [positive, neutral]
+    halfLifeDays: 365
+    description: A protocol's contracts go live on a public network for the first time.
+  - id: network_milestone
+    category: network
+    subjectTypes: [network]
+    directions: [positive, neutral]
+    halfLifeDays: 365
+    description: A network reaches a stated maturity milestone such as mainnet or a major upgrade.
+  - id: developer_activity
+    category: ecosystem
+    subjectTypes: [company, protocol, network]
+    directions: [positive, negative, neutral]
+    halfLifeDays: 120
+    description: A change in observable developer activity building on the project.
+  - id: contributor_growth
+    category: ecosystem
+    subjectTypes: [company, protocol, network]
+    directions: [positive, negative, neutral]
+    halfLifeDays: 180
+    description: A change in the count or breadth of active code contributors.
+  - id: integration_growth
+    category: ecosystem
+    subjectTypes: [company, protocol, network]
+    directions: [positive, neutral]
+    halfLifeDays: 270
+    description: New third-party integrations that build on the project.
+  - id: onchain_activity_trend
+    category: network
+    subjectTypes: [protocol, network]
+    directions: [positive, negative, ambiguous]
+    halfLifeDays: 180
+    description: A multi-period trend in on-chain usage such as transactions or active addresses.
+  - id: fee_revenue_trend
+    category: network
+    subjectTypes: [company, protocol, network]
+    directions: [positive, negative, ambiguous]
+    halfLifeDays: 270
+    description: A multi-period trend in protocol fees or protocol revenue.
+  - id: liquidity_tvl_change
+    category: network
+    subjectTypes: [protocol, network]
+    directions: [positive, negative, ambiguous]
+    halfLifeDays: 120
+    description: A material change in liquidity or total value locked. Growth alone is not adoption.
+  - id: ecosystem_funding
+    category: capital
+    subjectTypes: [company, protocol, network]
+    directions: [neutral, ambiguous]
+    halfLifeDays: 540
+    description: A financing or grant event. Never automatically positive.
+  - id: governance_change
+    category: market
+    subjectTypes: [protocol, network]
+    directions: [positive, negative, neutral, ambiguous]
+    halfLifeDays: 365
+    description: An executed change to governance, control, or parameters.
+  - id: major_integration_partnership
+    category: ecosystem
+    subjectTypes: [company, protocol, network]
+    directions: [positive, neutral]
+    halfLifeDays: 365
+    description: A significant integration or partnership with production intent.
+  - id: exploit
+    category: risk
+    subjectTypes: [protocol, network]
+    directions: [negative]
+    halfLifeDays: 540
+    description: A protocol exploit with funds at risk or drained. Permanently visible in history.
+  - id: regulatory_action
+    category: risk
+    subjectTypes: [company, protocol, network]
+    directions: [negative, ambiguous]
+    halfLifeDays: 730
+    description: An enforcement action, suspension, or ban. Permanently visible in history.
+  - id: token_launch
+    category: capital
+    subjectTypes: [company, protocol, network]
+    directions: [neutral, ambiguous, negative]
+    halfLifeDays: 365
+    description: A token instrument goes live. Never positive merely because a token launched.
+  - id: token_economic_design_change
+    category: capital
+    subjectTypes: [company, protocol, network]
+    directions: [positive, negative, neutral, ambiguous]
+    halfLifeDays: 540
+    description: A change to token economics, emissions, or value-accrual design. Direction from analysis only.

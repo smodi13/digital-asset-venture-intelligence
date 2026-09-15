@@ -1,0 +1,230 @@
+schemaVersion: 7
+candidateId: CAI-02
+entityId: co-skyfire
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:73a340d6356d57c119417cae5230ff5bb1d73c24dbcfda85f84d767494846260"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-skyfire-followon-total-95m]
+    rationale: >-
+      Primary capital consumed is well-corroborated ($9.5M total seed across
+      two tranches, independently reported by two outlets). No scale metric
+      exists in the frozen packet (digitalAssetMetrics is null;
+      gap-skyfire-quantified-traction: no transaction volume, active-agent
+      count, or revenue figure was found for any date), so no scale-to-capital
+      ratio can be responsibly judged.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No quantified scale/usage metric exists in the frozen packet
+      (gap-skyfire-quantified-traction).
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, infrastructure, or compute cost
+      needed to operate the payment/identity infrastructure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the frozen
+      packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-early-customers, clm-skyfire-kyapay-launch]
+    rationale: >-
+      Named early users exist (Denso, Payman at Aug 2024 launch; ~30 KYAPay
+      launch partners reported by PYMNTS in July 2025), but both are recorded
+      as evidenceStatus: insufficient: the launch customers were design
+      partners with no measured usage depth, and the partner count is a
+      company-supplied figure with no confirmation of how many reached live
+      production use. No transaction volume, active-agent count, or growth
+      trend exists to establish persistence rather than a point-in-time
+      announcement.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No quantified or time-series usage evidence exists
+      (gap-skyfire-quantified-traction); production status of named
+      customers/partners is unconfirmed.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-f5-partnership]
+    rationale: >-
+      F5, Inc. (a NASDAQ-listed enterprise-security vendor) independently
+      announced, on its own investor newsroom, a partnership to integrate
+      Skyfire's KYA protocol into its Bot Defense platform, materially
+      stronger provenance than a self-reported partnership. This is one
+      concrete third-party integration, but a single instance does not
+      establish a "growing" pattern of live integrations, and the stated
+      April 2026 integration-availability date was not independently
+      confirmed as reached by the cutoff.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No confirmation the F5 integration went live as scheduled, and no
+      second independently-corroborated integration exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 1
+    citedEvidenceClaimIds: [clm-skyfire-founders]
+    rationale: >-
+      Both co-founders are sourced with directly relevant shipped
+      backgrounds: Sarhangi previously founded and led Jibe Mobile to a
+      2015 acquisition by Google and held a VP of Products role at Ripple;
+      DeWitt held an executive role at Ripple. The Ripple payments
+      background is directly relevant to Skyfire's payment-infrastructure
+      product, and Sarhangi has a demonstrated prior founder exit, not
+      prestige alone. The team has also shipped a public product launch, a
+      follow-on protocol (KYAPay), and an independently-corroborated
+      enterprise partnership, evidencing continued execution.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents cap table structure, board composition, or control
+      rights for the operating company. No token exists (assetTypeCorrectionNote
+      confirms no Skyfire-issued instrument was found), so no token-governance
+      question applies.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No governance or cap-table evidence exists in the frozen packet.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-f5-partnership]
+    rationale: >-
+      A publicly-traded enterprise-security vendor investing in a bot-defense
+      integration specifically to distinguish legitimate AI-agent traffic is
+      evidence of real, funded problem urgency (an integration that cost F5
+      engineering effort to build, not a marketing mention). This is one
+      well-corroborated instance; no second independent example of
+      funded/costly integration exists, and no source quantifies addressable
+      market depth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No claim quantifies addressable market depth or a second independent
+      instance of funded integration demand.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No source established Skyfire's headquarters or incorporation
+      jurisdiction (gap-skyfire-hq-incorporation), foreclosing a
+      jurisdiction/regulatory-trajectory judgment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No jurisdiction or regulatory-trajectory evidence exists
+      (gap-skyfire-hq-incorporation).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-product-mechanics]
+    rationale: >-
+      A concrete recurring monetization mechanism is disclosed: a 2-3%
+      transaction fee on agent payments, with potential future
+      verification-service revenue. This is a real designed fee/take-rate
+      path, not a token buyback or vanity metric. However, the disclosure
+      dates to the August 2024 launch and no later source confirmed the fee
+      structure (or any realized revenue from it) as unchanged through the
+      cutoff.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No source confirms the fee structure or realized transaction-fee
+      revenue as of a date closer to the cutoff.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-followon-total-95m]
+    rationale: >-
+      No funding round was found after the October 2024 $9.5M seed total,
+      despite continued product launches (KYAPay mid-2025) and a partnership
+      (F5, March 2026) roughly a year and a half later
+      (gap-skyfire-funding-since-2024). This is genuinely ambiguous: it could
+      reflect transaction-fee revenue sufficient to avoid raising, an
+      undisclosed round, or a funding gap; no evidence in the frozen packet
+      resolves which.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No evidence resolves whether continued operation past the seed round
+      reflects revenue sufficiency, undisclosed capital, or funding strain
+      (gap-skyfire-funding-since-2024).
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-kyapay-launch, clm-skyfire-f5-partnership]
+    rationale: >-
+      KYAPay's SDK is reported as integrable "in as little as 15 minutes,"
+      with roughly 30 launch partners, a developer self-serve motion signal;
+      separately the F5 partnership is one instance of an inbound enterprise
+      channel. Both signals are real but unconfirmed at production depth: the
+      partner count is company-supplied and not verified as live, and F5 is a
+      single instance, not a demonstrated repeatable pattern.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No confirmation of how many launch partners reached live production
+      use, and no second independent enterprise-channel example exists.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-skyfire-kyapay-launch]
+    rationale: >-
+      PYMNTS reported KYAPay SDK integration as achievable "in as little as
+      15 minutes," a concrete low-friction claim. This is a company-supplied
+      figure relayed by an independent outlet, not independently timed or
+      verified across the ~30 named partners, so it is treated as a modest
+      positive signal rather than confirmed friction data.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The stated integration time is unverified across partners; no
+      compliance/wallet-UX friction evidence exists for end users of agent
+      wallets.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No independent technical assessment of the KYA/KYAPay architecture,
+      wallet-security design, or performance versus alternative agent-payment
+      approaches exists in the frozen packet.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No independent security audit exists (gap-skyfire-security-audit);
+      Skyfire's own description of JWT/JWKS-based signing and HTTPS is a
+      self-reported design description, not an independent evaluation. No
+      claim documents switching costs, network effects, or resistance to
+      competitive displacement.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent security audit exists (gap-skyfire-security-audit); no
+      network-effect or switching-cost evidence exists.

@@ -1,0 +1,257 @@
+schemaVersion: 7
+candidateId: SAP-03
+canonicalId: co-perena
+canonicalName: Perena
+slug: perena
+description: >-
+  Perena is a Solana-based stablecoin liquidity and structured-credit
+  protocol. Its core product, Numeraire, is an automated market maker
+  pooling multiple stablecoins (initially Tether, Circle USDC, and PayPal
+  USD) into a hub-and-spoke pool, issuing a liquidity-provider token (USD*)
+  representing a share of tranched yield across the pool.
+domain: perena.org
+firstObservedAt: "2024-12-11"
+category: stablecoins_and_payments
+entityType: protocol
+assetType: token
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    Perena's Numeraire AMM and USD* liquidity token operate on the Solana
+    blockchain. No independent legal-entity name or jurisdiction for the
+    developing company was established in public sources.
+  unresolvedBoundaryNotes:
+    - >-
+      No public source established a registered legal-entity name,
+      jurisdiction, or headquarters for the company/team operating Perena.
+people:
+  - id: per-anna-yuan
+    schemaVersion: 7
+    name: Anna Yuan
+    aliases: []
+    currentRole: Founder
+    companyTenures:
+      - companyId: co-perena
+        companyName: Perena
+        role: Founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-perena-coindesk-preseed]
+    priorCompanies: ["Solana Foundation"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-perena-coindesk-preseed]
+sources:
+  - id: src-perena-coindesk-preseed
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Stablecoin Trading Startup Perena Tries Its Luck on Solana"
+    url: "https://www.coindesk.com/business/2024/12/11/stablecoin-trading-startup-perena-tries-its-luck-on-solana"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-12-11"
+    availabilityDate: "2024-12-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-perena-accelerating-medium
+    schemaVersion: 7
+    publisher: Perena (official)
+    title: "Accelerating Perena"
+    url: "https://perena.org/articles/accelerating-perena"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2025-07-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-perena-preqin-round2
+    schemaVersion: 7
+    publisher: Preqin
+    title: "Perena Asset Profile"
+    url: "https://www.preqin.com/data/profile/asset/perena/716517"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.45
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2025-07-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+evidenceClaims:
+  - id: clm-perena-preseed
+    schemaVersion: 7
+    companyId: co-perena
+    claim: >-
+      Perena, founded by Anna Yuan (previously leading stablecoin initiatives
+      at the Solana Foundation), raised approximately $3 million in a
+      pre-seed round announced December 11, 2024, led by Borderless Capital,
+      to build Numeraire, a multi-stablecoin AMM on Solana with a
+      structured-yield liquidity token (USD*).
+    statedValue: "~$3 million"
+    numericValue: 3000000
+    unit: usd
+    sourceId: src-perena-coindesk-preseed
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2024/12/11/stablecoin-trading-startup-perena-tries-its-luck-on-solana"
+    publicationDate: "2024-12-11"
+    metricAsOfDate: "2024-12-11"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by CoinDesk (not a company channel or wire
+      reproduction); the article does not itemize the full investor list
+      beyond naming Borderless Capital as lead.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-perena-2025-round-undisclosed
+    schemaVersion: 7
+    companyId: co-perena
+    claim: >-
+      Perena closed a further, undisclosed-amount venture funding round in
+      July 2025, with participation reported to include Hermeneutic
+      Investments, Susquehanna Capital, and Crypto Native Capital.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-perena-preqin-round2
+    supportingSourceIds: []
+    sourceUrl: "https://www.preqin.com/data/profile/asset/perena/716517"
+    publicationDate: null
+    metricAsOfDate: "2025-07-15"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: low
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Sourced from a structured-secondary financial-data aggregator (Preqin);
+      no company-issued announcement or independent crypto-journalism outlet
+      was found reporting this round directly, and the amount is undisclosed
+      in every source found.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "What is the disclosed or estimated amount of Perena's July 2025 round, and can a primary announcement be found?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-perena-product-roadmap
+    schemaVersion: 7
+    companyId: co-perena
+    claim: >-
+      Perena's own July 2025 "Accelerating Perena" post describes Numeraire's
+      hub-and-spoke multi-stablecoin pool design and states a roadmap
+      including a collateralized-debt-position (CDP) stablecoin backed by
+      pooled stablecoin collateral, comparable in structure to MakerDAO's DAI.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-perena-accelerating-medium
+    supportingSourceIds: [src-perena-coindesk-preseed]
+    sourceUrl: "https://perena.org/articles/accelerating-perena"
+    publicationDate: null
+    metricAsOfDate: "2025-07-15"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Company-controlled roadmap disclosure; the CDP stablecoin product had
+      not shipped as of the research cutoff per available sources.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Has the CDP-stablecoin product described in Perena's roadmap shipped, and on what terms?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents: []
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-perena-legal-entity
+    whatWasSearched: "Perena's legal entity name, jurisdiction, and headquarters"
+    whatCouldNotBeEstablished: "No public source established a registered legal entity, jurisdiction, or HQ."
+    expectedToMatter: true
+  - id: gap-perena-team-roster
+    whatWasSearched: "Perena's full team / employee roster beyond founder Anna Yuan"
+    whatCouldNotBeEstablished: "No source enumerated a co-founder or team roster; only Anna Yuan is publicly identified as founder."
+    expectedToMatter: true
+  - id: gap-perena-second-round-amount
+    whatWasSearched: "Exact dollar amount of Perena's July 2025 funding round"
+    whatCouldNotBeEstablished: "Every source found characterized the amount as undisclosed."
+    expectedToMatter: true
+  - id: gap-perena-token-launch
+    whatWasSearched: "Whether Perena has launched or announced a governance/protocol token distinct from the USD* liquidity token"
+    whatCouldNotBeEstablished: >-
+      Public commentary as of mid-2026 quotes Perena leadership stating no
+      token launch is planned "for the foreseeable future"; no confirmed
+      token generation event was found as of the research cutoff.
+    expectedToMatter: true
+  - id: gap-perena-security-audit
+    whatWasSearched: "Third-party security audit of the Numeraire protocol"
+    whatCouldNotBeEstablished: "No specific audit firm, report, or audit date was established within the research budget for this batch."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    "Perena" is used as both the protocol/product name and the informal name
+    for the team building it; no distinct legal-entity name was established,
+    consistent with the frozen THIN evidence-density label.
+  sourceOriginUncertainty: >-
+    The pre-seed round is independently corroborated by CoinDesk journalism;
+    the July 2025 round rests on a single structured-secondary aggregator
+    profile with no primary announcement found, so it is recorded at lower
+    confidence.
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen THIN evidence-density label: founder identity
+    and the December 2024 pre-seed round are well established via
+    independent journalism; team composition beyond the founder, legal
+    entity, exact size of the second funding round, security-audit status,
+    and token plans could not responsibly be established within the
+    research budget for this batch and are recorded as gaps. Live TVL/token
+    market data (e.g., DefiLlama, Dune dashboards) was reviewed but
+    deliberately excluded as an EvidenceClaim: it reflects a live,
+    continuously updating dashboard state as of the research date rather
+    than a dated, citable historical figure, and could not responsibly be
+    pinned to a pre-cutoff availabilityDate.
+researchCutoff: "2026-09-10"

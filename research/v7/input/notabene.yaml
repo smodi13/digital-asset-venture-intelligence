@@ -1,0 +1,703 @@
+schemaVersion: 7
+candidateId: CCI-02
+canonicalId: co-notabene
+canonicalName: Notabene
+slug: notabene
+description: >-
+  Notabene, Inc. provides pre-transaction authorization, counterparty-risk and
+  Travel Rule compliance software for digital-asset businesses and financial
+  institutions, and develops products using the open Transaction Authorization
+  Protocol.
+domain: notabene.id
+firstObservedAt: "2020-01-01"
+category: custody_compliance_and_institutional_infrastructure
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: null
+financingStage: series_b
+cohort: FINAL_TEST
+nameAliasNote: >-
+  The packet concerns Notabene, Inc. at notabene.id, not unrelated businesses
+  using the phrase or name Nota Bene.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Notabene develops commercial compliance and transaction-authorization
+        products that use the open Transaction Authorization Protocol (TAP).
+      relatedEntityId: null
+      relationType: company_uses_and_contributes_to_open_protocol
+  protocolNetworkRelationship: >-
+    Notabene is an operating software company. TAP is an open messaging
+    protocol for authorization before blockchain settlement, not a blockchain
+    network or a Notabene-issued token. Customer transaction volume remains
+    customer-flow activity and is not company revenue or assets under custody.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not fully establish ownership and governance rights
+      over TAP relative to Notabene or the independent contributor community.
+people:
+  - id: per-pelle-braendgaard
+    schemaVersion: 7
+    name: Pelle Brændgaard
+    aliases: [Pelle Braendgaard]
+    currentRole: Co-Founder and CEO
+    companyTenures:
+      - companyId: co-notabene
+        companyName: Notabene
+        role: Co-Founder and CEO
+        startDate: "2020-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-notabene-mission-2020]
+    priorCompanies:
+      - ConsenSys
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-notabene-mission-2020]
+  - id: per-alice-nawfal
+    schemaVersion: 7
+    name: Alice Nawfal
+    aliases: []
+    currentRole: Co-Founder and President
+    companyTenures:
+      - companyId: co-notabene
+        companyName: Notabene
+        role: Co-Founder and President
+        startDate: "2020-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-notabene-mission-2020, src-notabene-seed-2020]
+    priorCompanies:
+      - ConsenSys
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-notabene-mission-2020, src-notabene-seed-2020]
+sources:
+  - id: src-notabene-mission-2020
+    schemaVersion: 7
+    publisher: Notabene
+    title: "Note from Pelle, our CEO, about Notabene's mission"
+    url: "https://notabene.id/post/notabenes-mission"
+    sourceType: founder_or_executive
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2020-11-24"
+    availabilityDate: "2020-11-24"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-notabene-seed-2020
+    schemaVersion: 7
+    publisher: Notabene
+    title: "Notabene raises seed round to bring confidence to crypto transactions"
+    url: "https://notabene.id/post/notabene-raises-seed-round-to-bring-confidence-to-crypto-transactions"
+    sourceType: official_company
+    tier: b
+    reliability: 0.7
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2020-11-23"
+    availabilityDate: "2020-11-23"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-notabene-series-a-2021
+    schemaVersion: 7
+    publisher: Notabene
+    title: "Notabene raises $10M+ to enable compliant crypto transactions"
+    url: "https://notabene.id/post/notabene-raises-10m-to-enable-compliant-crypto-transactions"
+    sourceType: official_company
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2021-11-08"
+    availabilityDate: "2021-11-08"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-notabene-soc2-2022
+    schemaVersion: 7
+    publisher: Notabene
+    title: "Notabene earns SOC 2 security certification"
+    url: "https://notabene.id/post/notabene-earns-soc-2-security-certification"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2022-01-10"
+    availabilityDate: "2022-01-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-notabene-gbbc-2023
+    schemaVersion: 7
+    publisher: Global Blockchain Business Council
+    title: "2023 Annual Report: Preventing Illicit Activity on the Blockchain"
+    url: "https://assets.ctfassets.net/so75yocayyva/xnEHHYDDNKkjE6kR4cxQh/660f63332a9db94952c0646607b4a7a7/2023_Annual_Report_GBBC.pdf"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-12-31"
+    availabilityDate: "2023-12-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-notabene-copper-2023
+    schemaVersion: 7
+    publisher: Copper
+    title: "Copper partners with Notabene to streamline Travel Rule compliance"
+    url: "https://copper.co/en-us/insights/emea/copper-partners-with-notabene-to-streamline-travel-rule"
+    sourceType: customer_vendor
+    tier: b
+    reliability: 0.76
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-06-26"
+    availabilityDate: "2023-06-26"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: customer_vendor
+  - id: src-notabene-eu-tfr-2023
+    schemaVersion: 7
+    publisher: EUR-Lex
+    title: "Regulation (EU) 2023/1113 on information accompanying transfers of funds and certain crypto-assets"
+    url: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32023R1113"
+    sourceType: regulatory
+    tier: a
+    reliability: 0.95
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-06-09"
+    availabilityDate: "2023-06-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-notabene-series-b-2024
+    schemaVersion: 7
+    publisher: Notabene
+    title: "Notabene Raises $14.5M in Series B Funding Led by DRW VC"
+    url: "https://notabene.id/post/notabene-raises-14-5m-in-series-b-funding-led-by-drw-vc-to-drive-the-future-of-stablecoins-and-payments"
+    sourceType: official_company
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2024-11-12"
+    availabilityDate: "2024-11-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-notabene-year-review-2024
+    schemaVersion: 7
+    publisher: Notabene
+    title: "Notabene's 2024 Year in Review"
+    url: "https://notabene.id/post/2024-year-in-review"
+    sourceType: official_company
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2024-12-22"
+    availabilityDate: "2024-12-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-notabene-tap-official
+    schemaVersion: 7
+    publisher: Notabene / Transaction Authorization Protocol
+    title: "TAP: The open protocol for trusted blockchain payments"
+    url: "https://notabene.id/tap"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-22"
+    isPressReleaseReproduction: false
+    originatesFrom: src-notabene-year-review-2024
+    supportRole: direct_company_disclosure
+  - id: src-notabene-tap-rs
+    schemaVersion: 7
+    publisher: Transaction Authorization Protocol contributors
+    title: "TAP-RS: Transaction Authorization Protocol in Rust"
+    url: "https://github.com/TransactionAuthorizationProtocol/tap-rs"
+    sourceType: code_repository
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-12-22"
+    isPressReleaseReproduction: false
+    originatesFrom: src-notabene-tap-official
+    supportRole: direct_company_disclosure
+  - id: src-notabene-soc2c-2026
+    schemaVersion: 7
+    publisher: SOC2C
+    title: "Notabene Inc security and compliance profile"
+    url: "https://www.soc2c.com/company/notabene"
+    sourceType: structured_secondary
+    tier: c
+    reliability: 0.58
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-08-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+evidenceClaims:
+  - id: clm-notabene-founders
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Pelle Brændgaard identified Alice Nawfal, Ania Lipinska and Andrés Junge
+      as his Notabene co-founders and said the group had previously worked
+      together at ConsenSys.
+    sourceId: src-notabene-mission-2020
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabenes-mission"
+    publicationDate: "2020-11-24"
+    metricAsOfDate: "2020-11-24"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: team
+    evidenceStatus: supported
+  - id: clm-notabene-seed-2020
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Notabene announced a $1.765 million venture seed round led by Castle
+      Island Ventures in November 2020, bringing company-reported funding to
+      date to $2.3 million.
+    statedValue: "$1.765 million seed; $2.3 million total to date"
+    numericValue: 1765000
+    unit: usd
+    sourceId: src-notabene-seed-2020
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabene-raises-seed-round-to-bring-confidence-to-crypto-transactions"
+    publicationDate: "2020-11-23"
+    metricAsOfDate: "2020-11-23"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: company_financing
+    evidenceStatus: supported
+  - id: clm-notabene-series-a-2021
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Notabene announced a $10.2 million Series A co-led by F-Prime Capital and
+      Jump Capital in November 2021.
+    statedValue: "$10.2 million Series A"
+    numericValue: 10200000
+    unit: usd
+    sourceId: src-notabene-series-a-2021
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabene-raises-10m-to-enable-compliant-crypto-transactions"
+    publicationDate: "2021-11-08"
+    metricAsOfDate: "2021-11-08"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: company_financing
+    evidenceStatus: supported
+  - id: clm-notabene-series-b-2024
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Notabene announced a $14.5 million Series B led by DRW VC in November
+      2024, with participation including funds managed by Apollo, Nextblock and
+      Wintermute and several existing investors.
+    statedValue: "$14.5 million Series B"
+    numericValue: 14500000
+    unit: usd
+    sourceId: src-notabene-series-b-2024
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabene-raises-14-5m-in-series-b-funding-led-by-drw-vc-to-drive-the-future-of-stablecoins-and-payments"
+    publicationDate: "2024-11-12"
+    metricAsOfDate: "2024-11-12"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: company_financing
+    evidenceStatus: supported
+  - id: clm-notabene-disclosed-financing-total
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      The disclosed company-financing amounts imply at least $27.0 million
+      raised through the end of the 2024 Series B: $2.3 million total through
+      the 2020 seed, plus $10.2 million Series A and $14.5 million Series B.
+    statedValue: "$27.0 million minimum disclosed company financing"
+    numericValue: 27000000
+    unit: usd
+    sourceId: src-notabene-series-b-2024
+    supportingSourceIds: [src-notabene-seed-2020, src-notabene-series-a-2021]
+    sourceUrl: "https://notabene.id/post/notabene-raises-14-5m-in-series-b-funding-led-by-drw-vc-to-drive-the-future-of-stablecoins-and-payments"
+    publicationDate: "2024-11-12"
+    metricAsOfDate: "2024-11-12"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: derived
+    sourceSubtype: null
+    confidence: high
+    modelEligibility: context_only
+    topic: company_financing
+    notes: "Arithmetic sum of disclosed company financing; not capital deployed, customer assets, protocol liquidity or revenue."
+    evidenceStatus: supported
+  - id: clm-notabene-product-2021
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      In 2021 Notabene described a protocol-agnostic suite for counterparty-risk
+      management and privacy-preserving exchange of customer data to support
+      Travel Rule compliance.
+    sourceId: src-notabene-series-a-2021
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabene-raises-10m-to-enable-compliant-crypto-transactions"
+    publicationDate: "2021-11-08"
+    metricAsOfDate: "2021-11-08"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    evidenceStatus: supported
+  - id: clm-notabene-adoption-2021
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      At the Series A announcement, Notabene reported more than 20 platform
+      customers, including Luno, Bitso, Paxful and Crypto.com, and said more
+      than 50 exchanges had processed Travel Rule transactions with its
+      solution.
+    statedValue: "20+ customers; 50+ exchanges"
+    numericValue: 20
+    unit: customers_minimum
+    sourceId: src-notabene-series-a-2021
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabene-raises-10m-to-enable-compliant-crypto-transactions"
+    publicationDate: "2021-11-08"
+    metricAsOfDate: "2021-11-08"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: adoption
+    evidenceStatus: supported
+  - id: clm-notabene-copper-partnership
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Copper independently announced a June 2023 partnership with Notabene to
+      provide Travel Rule compliance capabilities for Copper's institutional
+      clients.
+    sourceId: src-notabene-copper-2023
+    supportingSourceIds: []
+    sourceUrl: "https://copper.co/en-us/insights/emea/copper-partners-with-notabene-to-streamline-travel-rule"
+    publicationDate: "2023-06-26"
+    metricAsOfDate: "2023-06-26"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: partnership
+    notes: "The announcement establishes the partnership, not transaction depth or resulting Notabene revenue."
+    evidenceStatus: supported
+  - id: clm-notabene-adoption-series-b
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      At the November 2024 Series B announcement, Notabene reported more than
+      165 companies on its platform across more than 80 jurisdictions and
+      nearly $500 billion of customer transaction volume processed.
+    statedValue: "165+ companies; 80+ jurisdictions; nearly $500 billion transaction volume"
+    numericValue: 500000000000
+    unit: usd_customer_transaction_volume
+    sourceId: src-notabene-series-b-2024
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/notabene-raises-14-5m-in-series-b-funding-led-by-drw-vc-to-drive-the-future-of-stablecoins-and-payments"
+    publicationDate: "2024-11-12"
+    metricAsOfDate: "2024-11-12"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: adoption
+    notes: "Processed customer transfer volume is not Notabene revenue, assets, custody or TVL."
+    evidenceStatus: supported
+  - id: clm-notabene-year-end-2024
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Notabene's year-end review reported more than 32 million compliant
+      transfers across more than 85 jurisdictions and more than 190 customers
+      during or through 2024.
+    statedValue: "32+ million transfers; 85+ jurisdictions; 190+ customers"
+    numericValue: 32000000
+    unit: transfers_minimum
+    sourceId: src-notabene-year-review-2024
+    supportingSourceIds: []
+    sourceUrl: "https://notabene.id/post/2024-year-in-review"
+    publicationDate: "2024-12-22"
+    metricAsOfDate: "2024-12-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "The figures are first-party and do not disclose customer retention, contract value or company revenue."
+    evidenceStatus: supported
+  - id: clm-notabene-tap-architecture
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      TAP defines signed pre-settlement transfer requests, DIDComm messaging
+      and policy coordination so wallets, exchanges, institutions and smart
+      contracts can authorize blockchain payments before funds move, without
+      tying settlement to one blockchain.
+    sourceId: src-notabene-tap-official
+    supportingSourceIds: [src-notabene-tap-rs]
+    sourceUrl: "https://notabene.id/tap"
+    publicationDate: null
+    metricAsOfDate: "2024-12-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: protocol_architecture
+    notes: "Available specifications and code establish architecture, not universal counterparty adoption or independent security verification."
+    evidenceStatus: supported
+  - id: clm-notabene-eu-regulatory-context
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      EU Regulation 2023/1113 extended transfer-information requirements to
+      covered crypto-asset transfers and applied from December 30, 2024.
+    sourceId: src-notabene-eu-tfr-2023
+    supportingSourceIds: []
+    sourceUrl: "https://eur-lex.europa.eu/legal-content/EN/ALL/?uri=CELEX:32023R1113"
+    publicationDate: "2023-06-09"
+    metricAsOfDate: "2024-12-30"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: regulatory_context
+    notes: "The regulation creates compliance obligations for covered providers; it does not itself establish Notabene customer demand or revenue."
+    evidenceStatus: supported
+  - id: clm-notabene-soc2
+    schemaVersion: 7
+    companyId: co-notabene
+    claim: >-
+      Notabene announced a clean SOC 2 Type II report covering security and
+      privacy in January 2022; a later independent directory lists Notabene as
+      SOC 2 Type II and ISO 27001 compliant but does not publish the auditor,
+      report period or renewal date.
+    sourceId: src-notabene-soc2-2022
+    supportingSourceIds: [src-notabene-soc2c-2026]
+    sourceUrl: "https://notabene.id/post/notabene-earns-soc-2-security-certification"
+    publicationDate: "2022-01-10"
+    metricAsOfDate: "2026-08-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: security_attestation
+    notes: "The underlying reports were not public in the reviewed sources; attestations are not proof that no security incident or implementation flaw exists."
+    evidenceStatus: supported
+signalEvents:
+  - id: sig-notabene-seed-2020
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-notabene
+    subjectNameRaw: Notabene
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-notabene-seed-2020
+    rawStrength: 0.6
+    evidenceSummary: "Notabene announced a $1.765 million seed round."
+    evidenceIds: [clm-notabene-seed-2020]
+    publicationDate: "2020-11-23"
+    availabilityDate: "2020-11-23"
+    eventDate: "2020-11-23"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-notabene-series-a-2021
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-notabene
+    subjectNameRaw: Notabene
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-notabene-series-a-2021
+    rawStrength: 0.8
+    evidenceSummary: "Notabene announced a $10.2 million Series A."
+    evidenceIds: [clm-notabene-series-a-2021]
+    publicationDate: "2021-11-08"
+    availabilityDate: "2021-11-08"
+    eventDate: "2021-11-08"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-notabene-copper-2023
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-notabene
+    subjectNameRaw: Notabene
+    signalType: partnership
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-notabene-copper-2023
+    rawStrength: 0.7
+    evidenceSummary: "Copper announced a partnership with Notabene for Travel Rule compliance."
+    evidenceIds: [clm-notabene-copper-partnership]
+    publicationDate: "2023-06-26"
+    availabilityDate: "2023-06-26"
+    eventDate: "2023-06-26"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-notabene-series-b-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-notabene
+    subjectNameRaw: Notabene
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-notabene-series-b-2024
+    rawStrength: 0.8
+    evidenceSummary: "Notabene announced a $14.5 million Series B."
+    evidenceIds: [clm-notabene-series-b-2024, clm-notabene-disclosed-financing-total]
+    publicationDate: "2024-11-12"
+    availabilityDate: "2024-11-12"
+    eventDate: "2024-11-12"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-notabene-customer-momentum-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-notabene
+    subjectNameRaw: Notabene
+    signalType: customer_momentum
+    signalCategory: demand
+    signalDirection: neutral
+    sourceId: src-notabene-year-review-2024
+    rawStrength: 0.7
+    evidenceSummary: "Notabene reported more than 190 customers and 32 million transfers by year end 2024."
+    evidenceIds: [clm-notabene-adoption-series-b, clm-notabene-year-end-2024]
+    publicationDate: "2024-12-22"
+    availabilityDate: "2024-12-22"
+    eventDate: "2024-12-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-notabene-tap-development-2024
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: null
+    subjectNameRaw: Transaction Authorization Protocol
+    signalType: developer_activity
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-notabene-tap-official
+    rawStrength: 0.6
+    evidenceSummary: "Notabene documented and published open TAP specifications and implementations."
+    evidenceIds: [clm-notabene-tap-architecture]
+    publicationDate: null
+    availabilityDate: "2024-12-22"
+    eventDate: "2024-12-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-notabene-revenue-pricing
+    whatWasSearched: "Company materials, product documentation and independent coverage for pricing, fees, ARR and recognized revenue."
+    whatCouldNotBeEstablished: "Public pricing, annual recurring revenue, recognized company revenue, gross margin or contract values."
+    expectedToMatter: true
+  - id: gap-notabene-retention
+    whatWasSearched: "Company adoption releases, customer announcements and industry coverage for retained customers and cohort behavior."
+    whatCouldNotBeEstablished: "Customer retention, churn, expansion revenue or the proportion of announced customers actively transacting at the cutoff."
+    expectedToMatter: true
+  - id: gap-notabene-security-reports
+    whatWasSearched: "Company security pages, independent compliance directory and public web for SOC 2, ISO and penetration-test reports."
+    whatCouldNotBeEstablished: "Public underlying SOC 2/ISO reports, current audit periods, renewal dates or penetration-test scope and findings."
+    expectedToMatter: true
+  - id: gap-notabene-tap-governance
+    whatWasSearched: "TAP site, repositories and improvement-proposal documentation for maintainer and governance control."
+    whatCouldNotBeEstablished: "Binding governance rights, maintainer concentration or adoption of TAP independent of Notabene products."
+    expectedToMatter: true
+  - id: gap-notabene-profitability-costs
+    whatWasSearched: "Financing and operating coverage for headcount, compliance costs, infrastructure spend and profitability."
+    whatCouldNotBeEstablished: "Headcount history, operating expense, cash burn, profitability or capital remaining."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Notabene the company, its commercial network/products, TAP and customer
+    blockchain transfers are distinct. No Notabene token or custody pool was
+    established.
+  sourceOriginUncertainty: >-
+    Financing and aggregate platform metrics are primarily company-originated.
+    Copper independently confirms its own partnership; GBBC supplies earlier
+    industry context; regulatory text establishes obligations rather than
+    company performance.
+  likelyContradictions: null
+  completenessNotes: >-
+    Funding, product architecture, named customer evidence, customer-flow
+    metrics, security attestations and regulatory context are documented.
+    Revenue, pricing, retention, profitability and public audit scope remain
+    unresolved.
+researchCutoff: "2026-09-10"

@@ -1,0 +1,385 @@
+schemaVersion: 7
+candidateId: DOI-03
+canonicalId: co-eoracle
+canonicalName: eOracle
+slug: eoracle
+description: >-
+  eOracle (EO) is an Ethereum-native oracle network that uses EigenLayer
+  restaking to have Ethereum validators/operators attest to off-chain data
+  (initially price feeds) for consumption by DeFi and other on-chain
+  applications.
+domain: eo.app
+firstObservedAt: "2024-04-11"
+category: data_oracles_and_indexing
+entityType: network
+assetType: token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_early
+financingStage: null
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    eOracle is an Ethereum-native oracle network secured via EigenLayer
+    restaking (validators/operators stake and are slashable for incorrect
+    data). Secondary aggregator sources (a venture-capital portfolio page and
+    a startup database) associate an entity called "Lightblocks Labs"
+    (reportedly Tel Aviv-based) as the team building eOracle and name Matan
+    Sitbon as co-founder/CEO, but these could not be independently
+    corroborated from a source carrying an established availabilityDate
+    within this research pass, so no EvidenceClaim is made about company
+    identity or founders.
+  unresolvedBoundaryNotes:
+    - >-
+      No public source independently confirmed a registered legal-entity
+      name, jurisdiction, or headquarters for the team operating eOracle
+      within this research pass.
+    - >-
+      eo.app now 301-redirects to eo.tech, whose current site content
+      (accessed 2026-09-11) describes a "verification and intelligence layer
+      for deployed compute" unrelated to oracle/blockchain price-feed data.
+      Whether this reflects an actual business pivot by the eOracle team, a
+      different entity holding the domain, or an in-progress redesign could
+      not be established, and no EvidenceClaim is made about it; it is
+      recorded only as an unresolved observation.
+people: []
+sources:
+  - id: src-eoracle-theblock-avs-launch
+    schemaVersion: 7
+    publisher: The Block
+    title: "EigenLayer introduces six actively validated services including restaked rollups and Ethereum-native oracle"
+    url: "https://www.theblock.co/post/287957/eigenlayer-introduces-six-actively-validated-services-including-restaked-rollups-and-ethereum-native-oracle"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-04-12"
+    availabilityDate: "2024-04-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-eoracle-mainnet-live-blog
+    schemaVersion: 7
+    publisher: eOracle (official)
+    title: "The Ethereum Oracle; Staking live on EigenLayer mainnet"
+    url: "https://blog.eo.app/the-ethereum-oracle-now-live-on-eigenlayer-mainnet/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-04-11"
+    availabilityDate: "2024-04-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-eoracle-dedaub-audit-blog
+    schemaVersion: 7
+    publisher: eOracle (official)
+    title: "Dedaub Commissioned by EO to Audit Smart Contracts"
+    url: "https://blog.eo.app/dedaub-commissioned-by-eo-to-audit-smart-contracts/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-10-31"
+    availabilityDate: "2024-10-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-eoracle-silo-integration-blog
+    schemaVersion: 7
+    publisher: eOracle (official)
+    title: "EO Launches on Silo; Powering Next-Gen DeFi Lending For Leading Market Curators"
+    url: "https://blog.eo.app/eo-launches-on-silo-powering-next-gen-defi-lending-for-leading-market-curators/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-08-22"
+    availabilityDate: "2025-08-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-eoracle-eigenlayer-avs-launch
+    schemaVersion: 7
+    companyId: co-eoracle
+    claim: >-
+      eOracle launched as one of six initial actively validated services
+      (AVSs) introduced with EigenLayer's stage-3 mainnet rollout (alongside
+      AltLayer, Brevis, Lagrange, WitnessChain, and Xterio), reported by The
+      Block on April 12, 2024 and described as the first Ethereum-native
+      oracle network built on EigenLayer restaking.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-eoracle-theblock-avs-launch
+    supportingSourceIds: [src-eoracle-mainnet-live-blog]
+    sourceUrl: "https://www.theblock.co/post/287957/eigenlayer-introduces-six-actively-validated-services-including-restaked-rollups-and-ethereum-native-oracle"
+    publicationDate: "2024-04-12"
+    metricAsOfDate: "2024-04-12"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Independently reported by The Block, corroborated by eOracle's own
+      contemporaneous announcement (src-eoracle-mainnet-live-blog).
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-eoracle-staking-phase1-live
+    schemaVersion: 7
+    companyId: co-eoracle
+    claim: >-
+      eOracle's own April 11, 2024 announcement states that "Phase 1" of its
+      mainnet rollout (ETH delegation/staking to Operators) is live on
+      EigenLayer mainnet, and explicitly describes a separate, future "Phase
+      2" milestone: launch of the "EO chain" mainnet, distinct from the
+      restaking/staking layer that was live as of this announcement.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-eoracle-mainnet-live-blog
+    supportingSourceIds: []
+    sourceUrl: "https://blog.eo.app/the-ethereum-oracle-now-live-on-eigenlayer-mainnet/"
+    publicationDate: "2024-04-11"
+    metricAsOfDate: "2024-04-11"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Company-controlled disclosure; distinguishes the restaking/staking
+      layer (live as of this post) from the separate "EO chain" mainnet
+      (stated as a future objective), which matters for not conflating the
+      two under a single "mainnet" label.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Has the separate 'EO chain' (Phase 2) mainnet referenced in this post launched as of the research cutoff, and on what terms?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-eoracle-dedaub-audit
+    schemaVersion: 7
+    companyId: co-eoracle
+    claim: >-
+      eOracle commissioned security firm Dedaub to audit its EO Target
+      Contracts (which verify and store aggregated oracle data) and EO AVS
+      Contracts (EigenLayer-integration contracts); eOracle's own October 31,
+      2024 post describing the engagement states Dedaub "noted the
+      professionalism and quality" of EO's code and documentation, but the
+      post does not disclose specific findings, a report link, or a full
+      audit scope beyond the two contract categories named.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-eoracle-dedaub-audit-blog
+    supportingSourceIds: []
+    sourceUrl: "https://blog.eo.app/dedaub-commissioned-by-eo-to-audit-smart-contracts/"
+    publicationDate: "2024-10-31"
+    metricAsOfDate: "2024-10-31"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: security
+    notes: >-
+      Only eOracle's own summary of the audit engagement was located; the
+      underlying Dedaub report itself was not independently found or
+      verified within this research pass.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Can the full Dedaub audit report(s) be located to verify scope and confirm no material unresolved findings?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-eoracle-silo-integration
+    schemaVersion: 7
+    companyId: co-eoracle
+    claim: >-
+      eOracle announced on August 22, 2025 that its oracle feeds went live on
+      Silo Finance's isolated lending markets, supporting Principal Tokens
+      (PTs) and vault-curated stablecoins for market curators including
+      Varlamore.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-eoracle-silo-integration-blog
+    supportingSourceIds: []
+    sourceUrl: "https://blog.eo.app/eo-launches-on-silo-powering-next-gen-defi-lending-for-leading-market-curators/"
+    publicationDate: "2025-08-22"
+    metricAsOfDate: "2025-08-22"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: demand
+    notes: >-
+      Company-controlled disclosure of a specific, named integration; no
+      independent confirmation (e.g. from Silo Finance's own channels) was
+      located within this research pass.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-eoracle-eigenlayer-mainnet-2024
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-eoracle
+    subjectNameRaw: eOracle
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-eoracle-theblock-avs-launch
+    rawStrength: 0.5
+    evidenceSummary: >-
+      eOracle's restaking/staking layer went live on EigenLayer mainnet as
+      one of the first six AVSs (April 2024), independently reported by The
+      Block and confirmed by eOracle's own contemporaneous announcement; the
+      separate "EO chain" mainnet remained a stated future milestone as of
+      this announcement.
+    evidenceIds: [clm-eoracle-eigenlayer-avs-launch, clm-eoracle-staking-phase1-live]
+    publicationDate: "2024-04-12"
+    availabilityDate: "2024-04-11"
+    eventDate: "2024-04-11"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-eoracle-silo-integration-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-eoracle
+    subjectNameRaw: eOracle
+    signalType: integration_growth
+    signalCategory: ecosystem
+    signalDirection: positive
+    sourceId: src-eoracle-silo-integration-blog
+    rawStrength: 0.3
+    evidenceSummary: >-
+      eOracle's oracle feeds went live on Silo Finance's isolated lending
+      markets (August 2025), per eOracle's own announcement; not
+      independently confirmed by Silo Finance's own channels within this
+      research pass.
+    evidenceIds: [clm-eoracle-silo-integration]
+    publicationDate: "2025-08-22"
+    availabilityDate: "2025-08-22"
+    eventDate: "2025-08-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-eoracle-founders-entity
+    whatWasSearched: "eOracle's legal entity name, jurisdiction, headquarters, and founder/team identity"
+    whatCouldNotBeEstablished: >-
+      Secondary aggregator sources (a VC portfolio page, a startup database)
+      suggest a company "Lightblocks Labs" (Tel Aviv) and a co-founder named
+      Matan Sitbon, but no source carrying an established availabilityDate
+      independently corroborated this within the research budget for this
+      batch; several candidate sources returned access errors.
+    expectedToMatter: true
+  - id: gap-eoracle-legion-token-sale-status
+    whatWasSearched: "Whether eOracle's planned ~$5M Legion public token sale (originally targeted for February 10-12, 2025) actually executed, was postponed, and on what final terms"
+    whatCouldNotBeEstablished: >-
+      Aggregator/tracker sources conflict: one search result described the
+      Legion sale as postponed due to poor market conditions, while an
+      ICO-tracking site (icodrops) still listed the round and the EO Token
+      Generation Event as "Upcoming" with no confirmed date as of its last
+      update, and a separate price-tracking aggregator appears to carry a
+      live EO price. No dated primary or independent-journalism source
+      resolving this conflict was found within the research budget for this
+      batch, so no EvidenceClaim is made about the sale's outcome.
+    expectedToMatter: true
+  - id: gap-eoracle-eo-chain-mainnet-status
+    whatWasSearched: >-
+      Current status of the separate "EO chain" (Phase 2) mainnet referenced
+      in eOracle's own April 2024 announcement and in the frozen universe
+      contract's "planned EO chain mainnet" characterization
+    whatCouldNotBeEstablished: >-
+      No dated source confirming an "EO chain" mainnet launch (as distinct
+      from the live EigenLayer restaking/staking layer) was found as of the
+      research cutoff.
+    expectedToMatter: true
+  - id: gap-eoracle-financing-history
+    whatWasSearched: "eOracle's/Lightblocks Labs's pre-seed and seed financing amounts, dates, and investors"
+    whatCouldNotBeEstablished: >-
+      No source carrying an established availabilityDate independently
+      corroborated a specific financing round amount, date, or investor list
+      within the research budget for this batch.
+    expectedToMatter: true
+  - id: gap-eoracle-site-content-change
+    whatWasSearched: "Whether eo.app / eo.tech's current 'compute verification' site content reflects an actual business pivot"
+    whatCouldNotBeEstablished: >-
+      eo.app now redirects to eo.tech, whose current content (accessed
+      2026-09-11) describes an unrelated compute-verification product; no
+      dated announcement explaining this change was found, so it is recorded
+      only as an unresolved observation and not asserted as fact.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    eOracle is treated as the network/protocol entity per the frozen
+    universe assignment (entityType: network). Secondary sources associate a
+    company "Lightblocks Labs" as the building team, but this could not be
+    independently corroborated within this research pass (see
+    gap-eoracle-founders-entity).
+  sourceOriginUncertainty: >-
+    Most operational facts in this packet rest on eOracle's own blog
+    (official_network_source, non-independent); The Block's April 2024
+    coverage of the EigenLayer AVS cohort is the only independent-journalism
+    corroboration found, and it covers only the mainnet-launch fact, not the
+    audit or integration claims.
+  likelyContradictions: >-
+    Aggregator/tracker sources disagree on the status of the Legion public
+    token sale and EO token launch: one search result described the sale as
+    postponed, while icodrops still listed the round and TGE as "Upcoming"
+    with no confirmed date, and a separate price-tracking aggregator appears
+    to track a live EO price. This packet does not resolve the conflict and
+    makes no EvidenceClaim about the sale's outcome (see
+    gap-eoracle-legion-token-sale-status).
+  completenessNotes: >-
+    Evidence density is THIN per the frozen cohort assignment. Research
+    established the EigenLayer AVS mainnet launch, a security-audit
+    disclosure, and one concrete DeFi integration (Silo), each from a dated
+    source. Team/company identity, full financing history, the Legion token
+    sale's actual outcome, and the separate "EO chain" mainnet status could
+    not responsibly be established within the research budget for this batch
+    and are recorded as gaps rather than asserted.
+researchCutoff: "2026-09-10"

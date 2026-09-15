@@ -1,0 +1,448 @@
+schemaVersion: 7
+candidateId: TRA-02
+canonicalId: co-plume-network
+canonicalName: Plume Network
+slug: plume-network
+description: >-
+  Plume Network is an EVM-compatible RWAfi chain and ecosystem focused on
+  tokenizing real-world assets and making them usable inside DeFi.
+domain: plume.org
+firstObservedAt: "2023-01-01"
+category: tokenization_and_real_world_assets
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: Series A
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Plume Network Foundation is described in tokenomics materials as
+        responsible for R&D, growth, and decentralization of Plume Network.
+      relatedEntityId: null
+      relationType: foundation
+    - description: >-
+        PLUME is the native token for Plume Network; equity financing in the
+        operating company and PLUME token exposure are distinct.
+      relatedEntityId: null
+      relationType: token
+  protocolNetworkRelationship: >-
+    Plume combines an operating company/core team, foundation/governance
+    functions, the PLUME token, and a purpose-built RWA chain.
+  unresolvedBoundaryNotes:
+    - "Exact legal issuer, foundation jurisdiction, and operating-company HQ were not fully pinned from primary filings."
+people:
+  - id: per-plume-chris-yin
+    schemaVersion: 7
+    name: Chris Yin
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-plume-network
+        companyName: Plume Network
+        role: Co-founder
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-plume-fortune-series-a-2024]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-plume-fortune-series-a-2024]
+  - id: per-plume-teddy-pornprinya
+    schemaVersion: 7
+    name: Teddy Pornprinya
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-plume-network
+        companyName: Plume Network
+        role: Co-founder
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-plume-fortune-series-a-2024]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-plume-fortune-series-a-2024]
+  - id: per-plume-eugene-shen
+    schemaVersion: 7
+    name: Eugene Shen
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-plume-network
+        companyName: Plume Network
+        role: Co-founder
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-plume-fortune-series-a-2024]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-plume-fortune-series-a-2024]
+sources:
+  - id: src-plume-series-a-pr-2024
+    schemaVersion: 7
+    publisher: Plume Network / PR Newswire
+    title: "Plume Raises $20M Series A from Brevan Howard Digital, Haun Ventures, Galaxy Ventures, Lightspeed Faction"
+    url: "https://www.prnewswire.com/news-releases/plume-raises-20m-series-a-from-brevan-howard-digital-haun-ventures-galaxy-ventures-lightspeed-faction-302335131.html"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-12-18"
+    availabilityDate: "2024-12-18"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-plume-fortune-series-a-2024
+    schemaVersion: 7
+    publisher: Fortune
+    title: "Tokenization startup Plume gets $20 million in funding to build a real-world asset finance ecosystem"
+    url: "https://fortune.com/crypto/2024/12/18/tokenization-plume-funding-blockchain-fintech/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-12-18"
+    availabilityDate: "2024-12-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-plume-tokenomics-2025
+    schemaVersion: 7
+    publisher: Plume
+    title: "Introducing PLUME"
+    url: "https://www.plume.org/blog/tokenomics"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-01-21"
+    availabilityDate: "2025-01-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-plume-genesis-pr-2025
+    schemaVersion: 7
+    publisher: Plume Network / PR Newswire
+    title: "YZi Labs and Galaxy Ventures-Backed Plume Unveils $150M Genesis Mainnet to Pioneer RWAfi Ecosystem"
+    url: "https://www.prnewswire.com/news-releases/yzi-labs-and-apollo-backed-plume-unveils-150m-genesis-mainnet-to-pioneer-rwafi-ecosystem-302473653.html"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-06-05"
+    availabilityDate: "2025-06-05"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-plume-q2-update-2025
+    schemaVersion: 7
+    publisher: Plume
+    title: "Plume Update: Q2 2025"
+    url: "https://www.plume.org/blog/plume-update-q2-2025"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-15"
+    availabilityDate: "2025-07-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-plume-series-a
+    schemaVersion: 7
+    companyId: co-plume-network
+    claim: >-
+      Plume announced a $20 million Series A on December 18, 2024, with
+      investors including Brevan Howard Digital, Haun Ventures, Galaxy
+      Ventures, Lightspeed Faction, Superscrypt, HashKey, Laser Digital, and
+      others.
+    statedValue: "$20M Series A"
+    numericValue: 20
+    unit: usd_millions
+    sourceId: src-plume-series-a-pr-2024
+    supportingSourceIds: [src-plume-fortune-series-a-2024]
+    sourceUrl: "https://www.prnewswire.com/news-releases/plume-raises-20m-series-a-from-brevan-howard-digital-haun-ventures-galaxy-ventures-lightspeed-faction-302335131.html"
+    publicationDate: "2024-12-18"
+    metricAsOfDate: "2024-12-18"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: "Fortune independently reported the same round and total funding of $30 million."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Confirm valuation, close date, and equity/token-warrant structure."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-plume-founders
+    schemaVersion: 7
+    companyId: co-plume-network
+    claim: "Fortune reported that Chris Yin, Teddy Pornprinya, and Eugene Shen co-founded Plume in 2023."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-plume-fortune-series-a-2024
+    supportingSourceIds: []
+    sourceUrl: "https://fortune.com/crypto/2024/12/18/tokenization-plume-funding-blockchain-fintech/"
+    publicationDate: "2024-12-18"
+    metricAsOfDate: "2024-12-18"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: people
+    notes: "Roles/titles beyond co-founder were not independently pinned in admitted sources."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Confirm current executive roles and control rights."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-plume-tokenomics
+    schemaVersion: 7
+    companyId: co-plume-network
+    claim: >-
+      Plume's January 2025 tokenomics post set PLUME maximum supply at 10
+      billion tokens, with 59% allocated to Community, Ecosystem and
+      Foundation, 21% to early backers, 20% to core contributors, and 20%
+      initial circulation at TGE.
+    statedValue: "10B max supply; 20% initial circulation"
+    numericValue: 10000000000
+    unit: tokens
+    sourceId: src-plume-tokenomics-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.plume.org/blog/tokenomics"
+    publicationDate: "2025-01-21"
+    metricAsOfDate: "2025-01-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: token_economics
+    notes: "Allocation is company/foundation reported; actual circulating supply and unlock execution require separate verification."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify token issuer, governance rights, circulating supply, and unlock execution after TGE."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-plume-mainnet-genesis
+    schemaVersion: 7
+    companyId: co-plume-network
+    claim: >-
+      Plume announced public mainnet Genesis on June 5, 2025, stating that
+      the launch followed an Alpha phase and put $150 million of capital to
+      use onchain.
+    statedValue: "$150M capital put to use onchain"
+    numericValue: 150
+    unit: usd_millions
+    sourceId: src-plume-genesis-pr-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.prnewswire.com/news-releases/yzi-labs-and-apollo-backed-plume-unveils-150m-genesis-mainnet-to-pioneer-rwafi-ecosystem-302473653.html"
+    publicationDate: "2025-06-05"
+    metricAsOfDate: "2025-06-05"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: network
+    notes: "Press-release metric; should be reconciled with independent RWA/on-chain analytics before underwriting."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify utilized RWA capital by protocol and chain address."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-plume-q2-metrics
+    schemaVersion: 7
+    companyId: co-plume-network
+    claim: >-
+      Plume's Q2 2025 update reported more than $200 million in RWA TVL,
+      more than 400,000 addresses, more than 55 million mainnet transactions,
+      and roughly 6 million daily transactions after mainnet launch.
+    statedValue: "$200M+ RWA TVL; 400K+ addresses; 55M+ transactions"
+    numericValue: 200
+    unit: usd_millions
+    sourceId: src-plume-q2-update-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.plume.org/blog/plume-update-q2-2025"
+    publicationDate: "2025-07-15"
+    metricAsOfDate: "2025-07-15"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "Company-reported operating metrics; source says it combines DeFi Llama and RWA.xyz to tell the story."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile holder, TVL, and transaction definitions against independent analytics and incentive programs."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-plume-series-a-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-plume-network
+    subjectNameRaw: Plume Network
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-plume-series-a-pr-2024
+    rawStrength: 0.45
+    evidenceSummary: "Plume announced a $20 million Series A."
+    evidenceIds: [clm-plume-series-a]
+    publicationDate: "2024-12-18"
+    availabilityDate: "2024-12-18"
+    eventDate: "2024-12-18"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-plume-tokenomics-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-plume-network
+    subjectNameRaw: PLUME
+    signalType: token_economic_design_change
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-plume-tokenomics-2025
+    rawStrength: 0.35
+    evidenceSummary: "Plume published PLUME supply, allocation, and initial-circulation details."
+    evidenceIds: [clm-plume-tokenomics]
+    publicationDate: "2025-01-21"
+    availabilityDate: "2025-01-21"
+    eventDate: "2025-01-21"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-plume-mainnet-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-plume-network
+    subjectNameRaw: Plume Genesis
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-plume-genesis-pr-2025
+    rawStrength: 0.55
+    evidenceSummary: "Plume launched public mainnet Genesis with company-reported $150 million of utilized RWA capital."
+    evidenceIds: [clm-plume-mainnet-genesis]
+    publicationDate: "2025-06-05"
+    availabilityDate: "2025-06-05"
+    eventDate: "2025-06-05"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-plume-q2-activity-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-plume-network
+    subjectNameRaw: Plume Network
+    signalType: onchain_activity_trend
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-plume-q2-update-2025
+    rawStrength: 0.45
+    evidenceSummary: "Plume reported $200M+ RWA TVL, 400K+ addresses, and 55M+ mainnet transactions."
+    evidenceIds: [clm-plume-q2-metrics]
+    publicationDate: "2025-07-15"
+    availabilityDate: "2025-07-15"
+    eventDate: "2025-07-15"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-plume-legal-issuer
+    whatWasSearched: "Plume operating company, token issuer, foundation jurisdiction, and HQ"
+    whatCouldNotBeEstablished: "Public materials did not fully establish the legal/control structure behind the network and token."
+    expectedToMatter: true
+  - id: gap-plume-independent-metrics
+    whatWasSearched: "Independent TVL, RWA-holder, transaction, and utilized-capital metrics"
+    whatCouldNotBeEstablished: "Company-reported metrics were found; a full independent point-in-time reconstruction by address/protocol was not completed."
+    expectedToMatter: true
+  - id: gap-plume-security
+    whatWasSearched: "Independent security audits, exploit history, bridge risk, and chain-client security"
+    whatCouldNotBeEstablished: "No dated independent audit or direct exploit record was admitted into this packet."
+    expectedToMatter: true
+  - id: gap-plume-asset-quality
+    whatWasSearched: "Underlying RWA composition, issuer quality, utilization mechanics, and user concentration"
+    whatCouldNotBeEstablished: "Public updates list categories and names, but not enough portfolio-level quality, maturity, default, or concentration data."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Plume combines company, foundation, network, and token roles. These should
+    not be collapsed when evaluating control, economics, or legal risk.
+  sourceOriginUncertainty: >-
+    The Series A press release and mainnet PR are company-originated. Fortune
+    is the strongest independent source for founders and financing. Network
+    activity metrics in admitted sources remain company-reported.
+  likelyContradictions: null
+  completenessNotes: >-
+    Packet establishes founders, Series A, tokenomics, mainnet launch, and
+    company-reported early usage. Legal issuer, audit coverage, and independent
+    RWA/TVL methodology remain material gaps.
+researchCutoff: "2026-09-10"

@@ -1,0 +1,274 @@
+schemaVersion: 7
+candidateId: CSG-02
+canonicalId: neynar
+canonicalName: Neynar
+slug: neynar
+description: Developer infrastructure company providing APIs, hosted hubs, indexes, authentication, webhooks, and data tooling for social protocols.
+domain: https://neynar.com
+firstObservedAt: "2024-05-30"
+category: consumer_social_and_gaming
+entityType: company
+assetType: equity
+institutionalOrientation: false
+digitalAssetLifecycle: null
+financingStage: Series A
+cohort: VALIDATION
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Neynar described itself as infrastructure for Farcaster and announced an acquisition of Farcaster assets from Merkle; completed transfer and continuing control allocation were not established by the announcement.
+  unresolvedBoundaryNotes:
+    - The announced Farcaster handoff does not by itself establish completed transfer of contracts, repositories, client, or Clanker.
+people:
+  - id: person-neynar-rish
+    schemaVersion: 7
+    name: Rish
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: neynar
+        companyName: Neynar
+        role: Co-founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-neynar-series-a-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-neynar-series-a-2024]
+  - id: person-neynar-manan
+    schemaVersion: 7
+    name: Manan
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: neynar
+        companyName: Neynar
+        role: Co-founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-neynar-series-a-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-neynar-series-a-2024]
+sources:
+  - id: src-neynar-series-a-2024
+    schemaVersion: 7
+    publisher: Neynar
+    title: Neynar raises $14M to build technology stack for social protocols
+    url: https://neynar.com/blog/series-a-fundraise-announcement
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-05-30"
+    availabilityDate: "2024-05-30"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-neynar-fortune-2024
+    schemaVersion: 7
+    publisher: Fortune
+    title: Coinbase and Haun Ventures invest $11 million in Neynar
+    url: https://fortune.com/crypto/2024/05/30/haun-ventures-coinbase-and-a16z-invest-11-million-in-neynar-a-toolbox-for-web3-social-networks/
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-05-30"
+    availabilityDate: "2024-05-30"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-neynar-farcaster-2026
+    schemaVersion: 7
+    publisher: Neynar
+    title: Neynar is acquiring Farcaster
+    url: https://neynar.com/blog/neynar-is-acquiring-farcaster
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-01-21"
+    availabilityDate: "2026-01-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: ev-neynar-product-stack
+    schemaVersion: 7
+    companyId: neynar
+    claim: Neynar described its product stack as hosted hubs, APIs, authentication, indexed databases, webhooks, and data pipelines for Farcaster developers.
+    statedValue: developer infrastructure
+    numericValue: null
+    unit: null
+    sourceId: src-neynar-series-a-2024
+    supportingSourceIds: []
+    sourceUrl: https://neynar.com/blog/series-a-fundraise-announcement
+    publicationDate: "2024-05-30"
+    metricAsOfDate: null
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: Product description is first-party; specific customer counts and usage were not independently established.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: What paid production adoption and protocol diversification are independently evidenced?
+    researchAssessmentId: neynar-product-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: ev-neynar-series-a
+    schemaVersion: 7
+    companyId: neynar
+    claim: Neynar and Fortune reported an $11 million Series A led by Haun Ventures with Union Square Ventures, a16z CSX, and Coinbase Ventures participation.
+    statedValue: $11 million Series A
+    numericValue: 11
+    unit: usd_millions
+    sourceId: src-neynar-fortune-2024
+    supportingSourceIds: [src-neynar-series-a-2024]
+    sourceUrl: https://fortune.com/crypto/2024/05/30/haun-ventures-coinbase-and-a16z-invest-11-million-in-neynar-a-toolbox-for-web3-social-networks/
+    publicationDate: "2024-05-30"
+    metricAsOfDate: "2024-05-30"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: financing
+    notes: Neynar's post headline says $14M while its body and Fortune report $11M; the headline/body discrepancy remains unresolved.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: Reconcile the $14 million headline with the $11 million body and external reporting, including any prior capital included in the headline.
+    researchAssessmentId: neynar-financing-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: [ev-neynar-series-a-headline]
+    contradictedBy: []
+    contradictionNote: The contemporaneous official headline states $14M while the post body and independent report state $11M.
+  - id: ev-neynar-series-a-headline
+    schemaVersion: 7
+    companyId: neynar
+    claim: Neynar's May 2024 announcement headline states that Neynar raised $14 million.
+    statedValue: $14 million headline
+    numericValue: 14
+    unit: usd_millions
+    sourceId: src-neynar-series-a-2024
+    supportingSourceIds: []
+    sourceUrl: https://neynar.com/blog/series-a-fundraise-announcement
+    publicationDate: "2024-05-30"
+    metricAsOfDate: "2024-05-30"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: caveat
+    topic: financing
+    notes: Retained as a material conflict with the announcement body and Fortune's $11 million report.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: Reconcile headline and body amounts.
+    researchAssessmentId: neynar-financing-2
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: [ev-neynar-series-a]
+    contradictionNote: The contemporaneous official headline states $14M while the post body and independent report state $11M.
+  - id: ev-neynar-farcaster-announcement
+    schemaVersion: 7
+    companyId: neynar
+    claim: Neynar announced in January 2026 that it was acquiring Farcaster from Merkle and expected protocol contracts, repositories, the client, and Clanker to transfer over subsequent weeks.
+    statedValue: acquisition announcement
+    numericValue: null
+    unit: null
+    sourceId: src-neynar-farcaster-2026
+    supportingSourceIds: []
+    sourceUrl: https://neynar.com/blog/neynar-is-acquiring-farcaster
+    publicationDate: "2026-01-21"
+    metricAsOfDate: null
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: entity_structure
+    notes: Establishes the announcement, not completion of each prospective transfer or the final control arrangement.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: Confirm transaction completion, assets transferred, governance, and financial terms.
+    researchAssessmentId: neynar-structure-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-neynar-series-a-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: neynar
+    subjectNameRaw: Neynar
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-neynar-fortune-2024
+    rawStrength: 0.55
+    evidenceSummary: Neynar's Series A was reported at $11 million, with an unresolved $14 million official headline discrepancy.
+    evidenceIds: [ev-neynar-series-a, ev-neynar-series-a-headline]
+    publicationDate: "2024-05-30"
+    availabilityDate: "2024-05-30"
+    eventDate: "2024-05-30"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-neynar-farcaster-handoff-2026
+    schemaVersion: 7
+    subjectType: company
+    subjectId: neynar
+    subjectNameRaw: Neynar
+    signalType: technical_adoption
+    signalCategory: product
+    signalDirection: ambiguous
+    sourceId: src-neynar-farcaster-2026
+    rawStrength: 0.35
+    evidenceSummary: Neynar announced a prospective Farcaster handoff from Merkle.
+    evidenceIds: [ev-neynar-farcaster-announcement]
+    publicationDate: "2026-01-21"
+    availabilityDate: "2026-01-21"
+    eventDate: "2026-01-21"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: The announcement says transfer would occur over subsequent weeks and does not itself prove each asset transfer completed.
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-neynar-financing
+    whatWasSearched: Official announcement and independent reporting on the Series A.
+    whatCouldNotBeEstablished: Whether the $14 million headline includes capital outside the $11 million Series A reported in the body and by Fortune.
+    expectedToMatter: true
+  - id: gap-neynar-adoption
+    whatWasSearched: Dated sources for paid customers, revenue, retention, and independently defined production usage.
+    whatCouldNotBeEstablished: Independently corroborated operating metrics available on or before 2026-09-10.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: The announced Farcaster handoff requires diligence on completion and the boundaries between Neynar, Farcaster assets, and any protocol governance.
+  sourceOriginUncertainty: Fortune provides an independent report for the Series A; the official financing post is an additional first-party source, not a second independent voice.
+  likelyContradictions: The $14 million official headline conflicts with the $11 million official body and Fortune amount and is explicitly linked at claim level.
+  completenessNotes: Financing, product description, founders by named bylines, and the announced handoff are retained; usage and commercial metrics remain unresolved.
+researchCutoff: "2026-09-10"

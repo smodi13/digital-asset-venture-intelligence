@@ -1,0 +1,2725 @@
+# Batch 1 dated signal events. 67 events.
+#
+# Generated from the Batch 1 research handoff by
+# scripts/research/translate-batch1.ts on 2026-09-06. The handoff packet is a
+# transport format; this file is the authoritative research record and is what
+# a human reviews and edits from here on.
+#
+# No value here was authored by the translator. Everything is copied from the
+# packet or produced by a stated mapping table in that script.
+
+schemaVersion: 6
+
+events:
+  - company: "mintlify.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2025-12-31"
+    availabilityDate: "2025-12-31"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.mintlify.com/blog/2025-year-in-review"
+      sourceRecordId: "mintlify_2025_review"
+      note: "The source carries its own publication date."
+    eventDate: "2025-12-31"
+    source: "https://www.mintlify.com/blog/2025-year-in-review"
+    evidenceSummary: "Mintlify reported reaching 10,000+ companies, more than eight figures of ARR, and 1M+ monthly AI queries during 2025."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Customer and usage scale accelerated materially during 2025."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-01-evt-01"
+
+  - company: "mintlify.com"
+    signalType: enterprise_expansion
+    category: demand
+    direction: positive
+    publicationDate: "2026-02-11"
+    availabilityDate: "2026-02-11"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.mintlify.com/blog/mintlify-for-enterprise"
+      sourceRecordId: "mintlify_enterprise_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-02-11"
+    source: "https://www.mintlify.com/blog/mintlify-for-enterprise"
+    evidenceSummary: "Mintlify launched expanded enterprise capabilities including self-serve SSO, RBAC, and security workflows, while naming major enterprise customers."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is moving further upmarket."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-01-evt-02"
+
+  - company: "mintlify.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-04-14"
+    availabilityDate: "2026-04-14"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.mintlify.com/blog/series-b"
+      sourceRecordId: "mintlify_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-04-14"
+    source: "https://www.mintlify.com/blog/series-b"
+    evidenceSummary: "Mintlify raised a $45M Series B at a $500M valuation, bringing total funding to $67M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round funds expansion but increases the capital base against which efficiency should be judged."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-01-evt-03"
+
+  - company: "dust.tt"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-05-18"
+    availabilityDate: "2026-05-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.globenewswire.com/news-release/2026/05/18/3296726/0/en/Dust-raises-40M-to-make-AI-multiplayer-inside-the-enterprise.html"
+      sourceRecordId: "dust_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-05-18"
+    source: "https://www.globenewswire.com/news-release/2026/05/18/3296726/0/en/Dust-raises-40M-to-make-AI-multiplayer-inside-the-enterprise.html"
+    evidenceSummary: "Dust raised a $40M Series B, bringing total funding above $60M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Funding supports scale but should not itself be treated as a positive investment signal."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-02-evt-01"
+
+  - company: "dust.tt"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-05-18"
+    availabilityDate: "2026-05-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.globenewswire.com/news-release/2026/05/18/3296726/0/en/Dust-raises-40M-to-make-AI-multiplayer-inside-the-enterprise.html"
+      sourceRecordId: "dust_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-05-18"
+    source: "https://www.globenewswire.com/news-release/2026/05/18/3296726/0/en/Dust-raises-40M-to-make-AI-multiplayer-inside-the-enterprise.html"
+    evidenceSummary: "Dust reported 3,000+ organizations, 51,000 MAU, 300,000 deployed agents, 240% NRR, zero 2025 churn, and 70%+ weekly active usage."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "High expansion and engagement suggest the product is becoming embedded in customer workflows."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-02-evt-02"
+
+  - company: "llamaindex.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-03-04"
+    availabilityDate: "2025-03-04"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://llamaindex-marketing-website-clone.pr.staging.llamaindex.ai/blog/announcing-our-series-a-and-llamacloud-general-availability"
+      sourceRecordId: "llama_series_a_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-03-04"
+    source: "https://llamaindex-marketing-website-clone.pr.staging.llamaindex.ai/blog/announcing-our-series-a-and-llamacloud-general-availability"
+    evidenceSummary: "LlamaIndex announced a $19M Series A alongside general availability of LlamaParse."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Capital supports commercialization of an open-source developer funnel."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-03-evt-01"
+
+  - company: "llamaindex.ai"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-01-22"
+    availabilityDate: "2026-01-22"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.llamaindex.ai/blog/announcing-new-llamacloud-sdks-and-parse-api-v2"
+      sourceRecordId: "llama_api_v2_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-01-22"
+    source: "https://www.llamaindex.ai/blog/announcing-new-llamacloud-sdks-and-parse-api-v2"
+    evidenceSummary: "LlamaIndex launched new LlamaParse SDKs and Parse API v2 after working with thousands of developers."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The product is maturing toward production developer workflows."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-03-evt-02"
+
+  - company: "llamaindex.ai"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-06-29"
+    availabilityDate: "2026-06-29"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.llamaindex.ai/blog/announcing-retrieval-harness"
+      sourceRecordId: "llama_retrieval_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-29"
+    source: "https://www.llamaindex.ai/blog/announcing-retrieval-harness"
+    evidenceSummary: "LlamaIndex launched Retrieval Harness for agent-native document traversal and managed retrieval infrastructure."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is moving up the stack from parsing toward broader agent data infrastructure."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-03-evt-03"
+
+  - company: "llamaindex.ai"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-09-03"
+    availabilityDate: "2026-09-03"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.llamaindex.ai/blog/introducing-turbo-our-fastest-extraction-tier"
+      sourceRecordId: "llama_turbo_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-09-03"
+    source: "https://www.llamaindex.ai/blog/introducing-turbo-our-fastest-extraction-tier"
+    evidenceSummary: "LlamaIndex introduced Turbo, a faster extraction tier."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Continued product velocity supports a widening commercial platform."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-03-evt-04"
+
+  - company: "crewai.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2024-10-27"
+    availabilityDate: "2024-10-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://crewai.com/blog/crewai---building-the-agentic-future-together"
+      sourceRecordId: "crewai_funding_2024"
+      note: "The source carries its own publication date."
+    eventDate: "2024-10-27"
+    source: "https://crewai.com/blog/crewai---building-the-agentic-future-together"
+    evidenceSummary: "CrewAI announced more than $18M of funding and said its platform powered more than 10M agents per month."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The funding followed rapid open-source and enterprise adoption."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-04-evt-01"
+
+  - company: "crewai.com"
+    signalType: partnership
+    category: market
+    direction: positive
+    publicationDate: "2025-07-30"
+    availabilityDate: "2025-07-30"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://blog.crewai.com/pwc-choses-crewai/"
+      sourceRecordId: "crewai_pwc_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-07-30"
+    source: "https://blog.crewai.com/pwc-choses-crewai/"
+    evidenceSummary: "PwC selected CrewAI as a foundational layer in its global Agent OS."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "A large strategic deployment validates enterprise-grade orchestration requirements."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-04-evt-02"
+
+  - company: "crewai.com"
+    signalType: technical_adoption
+    category: demand
+    direction: positive
+    publicationDate: "2026-01-24"
+    availabilityDate: "2026-01-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://crewai.com/blog/lessons-from-2-billion-agentic-workflows"
+      sourceRecordId: "crewai_2b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-01-24"
+    source: "https://crewai.com/blog/lessons-from-2-billion-agentic-workflows"
+    evidenceSummary: "CrewAI reported roughly 2B agentic system executions over the prior 12 months across dozens of enterprise deployments."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Production execution scale is a stronger signal than repository popularity alone."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-04-evt-03"
+
+  - company: "crewai.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-07-28"
+    availabilityDate: "2026-07-28"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://crewai.com/blog/crew-studio-automated-agent-builder"
+      sourceRecordId: "crewai_studio_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-07-28"
+    source: "https://crewai.com/blog/crew-studio-automated-agent-builder"
+    evidenceSummary: "CrewAI launched Crew Studio, an automated agent builder with 1,000+ connectors."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is broadening from framework/orchestration into a more accessible enterprise build layer."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-04-evt-04"
+
+  - company: "e2b.dev"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-07-28"
+    availabilityDate: "2025-07-28"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://changelog.e2b.dev/blog/series-a"
+      sourceRecordId: "e2b_series_a_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-07-28"
+    source: "https://changelog.e2b.dev/blog/series-a"
+    evidenceSummary: "E2B raised a $21M Series A, bringing total funding to $32M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The financing follows substantial reported enterprise sandbox usage."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-05-evt-01"
+
+  - company: "e2b.dev"
+    signalType: partnership
+    category: market
+    direction: positive
+    publicationDate: "2026-04-15"
+    availabilityDate: "2026-04-15"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://e2b.dev/blog/e2b-is-now-in-agents-sdk"
+      sourceRecordId: "e2b_openai_sdk_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-04-15"
+    source: "https://e2b.dev/blog/e2b-is-now-in-agents-sdk"
+    evidenceSummary: "E2B became a supported sandbox provider in the OpenAI Agents SDK."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "SDK distribution can lower adoption friction for agent developers."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-05-evt-02"
+
+  - company: "e2b.dev"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-07-20"
+    availabilityDate: "2026-07-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://changelog.e2b.dev/blog/anything"
+      sourceRecordId: "e2b_anything_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-07-20"
+    source: "https://changelog.e2b.dev/blog/anything"
+    evidenceSummary: "E2B published a customer case showing Anything using E2B to power app-generation agents for more than one million users."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Customer workload scale supports production infrastructure relevance."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-05-evt-03"
+
+  - company: "e2b.dev"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-08-27"
+    availabilityDate: "2026-08-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://e2b.dev/blog/replicas"
+      sourceRecordId: "e2b_replicas_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-27"
+    source: "https://e2b.dev/blog/replicas"
+    evidenceSummary: "Replicas reported cutting customer latency 60% using E2B for cloud coding agents."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Measured customer outcomes strengthen the infrastructure value proposition."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-05-evt-04"
+
+  - company: "crosby.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-06-17"
+    availabilityDate: "2025-06-17"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://crosby.ai/blog/introducing-crosby-the-worlds-first-hybrid-law-firm"
+      sourceRecordId: "crosby_launch_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-06-17"
+    source: "https://crosby.ai/blog/introducing-crosby-the-worlds-first-hybrid-law-firm"
+    evidenceSummary: "Crosby launched publicly after raising $5.8M and said it had reviewed more than 1,000 contracts."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Launch combined early funding with initial customer throughput."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-06-evt-01"
+
+  - company: "crosby.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2025-10-08"
+    availabilityDate: "2025-10-08"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://crosby.ai/blog/series-a-and-faster-agreements"
+      sourceRecordId: "crosby_series_a_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-10-08"
+    source: "https://crosby.ai/blog/series-a-and-faster-agreements"
+    evidenceSummary: "Crosby said the time to review each additional 1,000 contracts compressed from 173 days to about three weeks and monthly GTM-team adoption was growing 30%."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Throughput and customer adoption were accelerating quickly."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-06-evt-02"
+
+  - company: "crosby.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-03-31"
+    availabilityDate: "2026-03-31"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://crosby.ai/blog/series-b-planting-our-flag"
+      sourceRecordId: "crosby_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-03-31"
+    source: "https://crosby.ai/blog/series-b-planting-our-flag"
+    evidenceSummary: "Crosby raised a $60M Series B and reiterated that it is a vertically integrated AI-native law firm."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round accelerates a capital-intensive integrated model rather than a pure SaaS model."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-06-evt-03"
+
+  - company: "arcade.dev"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-06-12"
+    availabilityDate: "2026-06-12"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.arcade.dev/blog/arcade-series-a/"
+      sourceRecordId: "arcade_series_a_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-12"
+    source: "https://www.arcade.dev/blog/arcade-series-a/"
+    evidenceSummary: "Arcade.dev raised a $60M Series A, bringing total financing to $72M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Large early financing increases the need to validate revenue efficiency."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-07-evt-01"
+
+  - company: "arcade.dev"
+    signalType: technical_adoption
+    category: demand
+    direction: positive
+    publicationDate: "2026-06-12"
+    availabilityDate: "2026-06-12"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.arcade.dev/blog/arcade-series-a/"
+      sourceRecordId: "arcade_series_a_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-12"
+    source: "https://www.arcade.dev/blog/arcade-series-a/"
+    evidenceSummary: "Arcade.dev reported 25x growth in tool-call volume over six months and production deployments in large regulated enterprises."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Usage growth suggests emerging product-market fit in agent authorization."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-07-evt-02"
+
+  - company: "arcade.dev"
+    signalType: regulatory_milestone
+    category: market
+    direction: positive
+    publicationDate: "2026-06-23"
+    availabilityDate: "2026-06-23"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.arcade.dev/blog/arcade-supports-ema/"
+      sourceRecordId: "arcade_ema_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-23"
+    source: "https://www.arcade.dev/blog/arcade-supports-ema/"
+    evidenceSummary: "Arcade.dev highlighted stable Enterprise-Managed Authorization adoption across Anthropic, Microsoft, Okta, and MCP servers."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Ecosystem standardization validates the enterprise authorization problem, while also inviting incumbent competition."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-07-evt-03"
+
+  - company: "withpace.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-01-27"
+    availabilityDate: "2026-01-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://withpace.com/news/a-new-era"
+      sourceRecordId: "pace_seed_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-01-27"
+    source: "https://withpace.com/news/a-new-era"
+    evidenceSummary: "Pace announced $10M of funding led by Sequoia for AI-native insurance operations."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is funding an embedded vertical operating model."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-08-evt-01"
+
+  - company: "withpace.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-05-27"
+    availabilityDate: "2026-05-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://withpace.com/news/next-century"
+      sourceRecordId: "pace_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-05-27"
+    source: "https://withpace.com/news/next-century"
+    evidenceSummary: "Pace reported more than 250,000 critical insurance workflows completed and material automation at Prudential, Palomar, and Convex."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Workflow scale and insurer outcomes support adoption."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-08-evt-02"
+
+  - company: "withpace.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-06-22"
+    availabilityDate: "2026-06-22"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://withpace.com/news/product-launch"
+      sourceRecordId: "pace_product_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-22"
+    source: "https://withpace.com/news/product-launch"
+    evidenceSummary: "Pace introduced a multimodal agent designed to complete the full unit of insurance operational work."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The product is moving from point automation toward end-to-end workflows."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-08-evt-03"
+
+  - company: "withpace.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-07-20"
+    availabilityDate: "2026-07-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://withpace.com/news/tempo"
+      sourceRecordId: "pace_tempo_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-07-20"
+    source: "https://withpace.com/news/tempo"
+    evidenceSummary: "Pace launched Tempo, allowing insurance subject-matter experts to build agents from SOPs and sample files."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "A self-service builder can reduce implementation intensity and improve software scalability."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-08-evt-04"
+
+  - company: "resend.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2024-12-04"
+    availabilityDate: "2024-12-04"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://resend.com/blog/series-a"
+      sourceRecordId: "resend_series_a_2024"
+      note: "The source carries its own publication date."
+    eventDate: "2024-12-04"
+    source: "https://resend.com/blog/series-a"
+    evidenceSummary: "Resend raised an $18M Series A after reaching more than 200,000 developer signups."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The financing followed strong product-led adoption."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-09-evt-01"
+
+  - company: "resend.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-04-13"
+    availabilityDate: "2026-04-13"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://resend.com/blog/introducing-automations"
+      sourceRecordId: "resend_automations_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-04-13"
+    source: "https://resend.com/blog/introducing-automations"
+    evidenceSummary: "Resend launched Automations for lifecycle and drip messaging."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The product expanded from core email APIs into higher-level communication workflows."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-09-evt-02"
+
+  - company: "resend.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-06-03"
+    availabilityDate: "2026-06-03"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://resend.com/blog/3-million-users"
+      sourceRecordId: "resend_3m_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-03"
+    source: "https://resend.com/blog/3-million-users"
+    evidenceSummary: "Resend reached 3M users, up from 1M six months earlier, while weekly npm downloads rose from 1.4M to 6.8M and the company remained profitable."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Rapid user growth alongside profitability is a high-quality momentum signal."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-09-evt-03"
+
+  - company: "retellai.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2024-05-01"
+    availabilityDate: "2024-05-01"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.retellai.com/blog/seed-announcement"
+      sourceRecordId: "retell_seed_2024"
+      note: "The source carries its own publication date."
+    eventDate: "2024-05-01"
+    source: "https://www.retellai.com/blog/seed-announcement"
+    evidenceSummary: "Retell AI raised a $4.6M seed round after surpassing $3M annualized revenue."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company showed early revenue traction before taking significant capital."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-10-evt-01"
+
+  - company: "retellai.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-04-21"
+    availabilityDate: "2026-04-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.retellai.com/newsroom"
+      sourceRecordId: "retell_news_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-04-21"
+    source: "https://www.retellai.com/newsroom"
+    evidenceSummary: "Retell's newsroom reported more than 40M monthly calls fueled by 300% growth."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Call volume indicates substantial production usage."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-10-evt-02"
+
+  - company: "retellai.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-08-24"
+    availabilityDate: "2026-08-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.retellai.com/changelog/retell-workflows-brex-top-25-and-more"
+      sourceRecordId: "retell_workflows_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-24"
+    source: "https://www.retellai.com/changelog/retell-workflows-brex-top-25-and-more"
+    evidenceSummary: "Retell launched Workflows, a native orchestration layer with integrations, tools, and preset functions."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is expanding from voice execution into surrounding workflow automation."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-10-evt-03"
+
+  - company: "retellai.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-08-24"
+    availabilityDate: "2026-08-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.retellai.com/changelog/retell-workflows-brex-top-25-and-more"
+      sourceRecordId: "retell_workflows_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-24"
+    source: "https://www.retellai.com/changelog/retell-workflows-brex-top-25-and-more"
+    evidenceSummary: "Retell's August release also added newer model support and operational reliability improvements across call handling and analytics."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Continued product depth supports enterprise-scale operations."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-10-evt-04"
+
+  - company: "serval.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-10-21"
+    availabilityDate: "2025-10-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.serval.com/serval-news/series-a"
+      sourceRecordId: "serval_series_a_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-10-21"
+    source: "https://www.serval.com/serval-news/series-a"
+    evidenceSummary: "Serval raised a $47M Series A, bringing total funding to $52M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The financing followed rapid IT automation adoption."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-11-evt-01"
+
+  - company: "serval.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-12-11"
+    availabilityDate: "2025-12-11"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+      sourceRecordId: "serval_series_b_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-12-11"
+    source: "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+    evidenceSummary: "Serval raised a $75M Series B at a $1B valuation, bringing total funding to $127M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round followed 500% reported revenue growth over three months."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-11-evt-02"
+
+  - company: "serval.com"
+    signalType: enterprise_expansion
+    category: demand
+    direction: positive
+    publicationDate: "2025-12-11"
+    availabilityDate: "2025-12-11"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+      sourceRecordId: "serval_series_b_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-12-11"
+    source: "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+    evidenceSummary: "Serval reported expansion from IT into HR, Finance, Legal, Security, and Engineering, with some customers replacing legacy systems of record."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Cross-department expansion can materially increase account value and switching costs."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-11-evt-03"
+
+  - company: "serval.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-08-20"
+    availabilityDate: "2026-08-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.serval.com/serval-news/catalyst-general-availability"
+      sourceRecordId: "serval_catalyst_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-20"
+    source: "https://www.serval.com/serval-news/catalyst-general-availability"
+    evidenceSummary: "Serval made Catalyst generally available after reporting more than 90% customer adoption during beta."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "High module adoption suggests strong cross-sell and product engagement."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-11-evt-04"
+
+  - company: "granola.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2024-10-23"
+    availabilityDate: "2024-10-23"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.granola.ai/blog/series-a"
+      sourceRecordId: "granola_series_a_2024"
+      note: "The source carries its own publication date."
+    eventDate: "2024-10-23"
+    source: "https://www.granola.ai/blog/series-a"
+    evidenceSummary: "Granola raised a $20M Series A after reporting 6x weekly-user growth and strong ten-week retention."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Early funding followed strong prosumer retention."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-12-evt-01"
+
+  - company: "granola.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-05-14"
+    availabilityDate: "2025-05-14"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.granola.ai/blog/two-dot-zero"
+      sourceRecordId: "granola_2_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-05-14"
+    source: "https://www.granola.ai/blog/two-dot-zero"
+    evidenceSummary: "Granola raised a $43M Series B while launching team collaboration capabilities."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company funded a move from individual note-taking toward team context."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-12-evt-02"
+
+  - company: "granola.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-03-25"
+    availabilityDate: "2026-03-25"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.granola.ai/blog/series-c"
+      sourceRecordId: "granola_series_c_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-03-25"
+    source: "https://www.granola.ai/blog/series-c"
+    evidenceSummary: "Granola raised a $125M Series C at a $1.5B valuation."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round significantly expands the capital base."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-12-evt-03"
+
+  - company: "granola.ai"
+    signalType: enterprise_expansion
+    category: demand
+    direction: positive
+    publicationDate: "2026-03-25"
+    availabilityDate: "2026-03-25"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.granola.ai/blog/series-c"
+      sourceRecordId: "granola_series_c_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-03-25"
+    source: "https://www.granola.ai/blog/series-c"
+    evidenceSummary: "Granola launched Spaces, personal and enterprise APIs, updated MCP, and enterprise administration while naming customers such as Vanta, Gusto, Thumbtack, and Asana."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The product is expanding from prosumer use into enterprise knowledge workflows."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-12-evt-04"
+
+  - company: "gamma.app"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2025-11-10"
+    availabilityDate: "2025-11-10"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+      sourceRecordId: "gamma_100m_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-11-10"
+    source: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+    evidenceSummary: "Gamma reported crossing $100M ARR profitably with 70M users and more than 400M pieces of content created."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Scale, profitability, and broad usage make this a high-quality growth signal."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-13-evt-01"
+
+  - company: "gamma.app"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-11-10"
+    availabilityDate: "2025-11-10"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+      sourceRecordId: "gamma_100m_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-11-10"
+    source: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+    evidenceSummary: "Gamma announced a $68M Series B at a $2.1B valuation, including a secondary component."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round provides liquidity and growth capital after the company had already reached substantial profitable scale."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-13-evt-02"
+
+  - company: "gamma.app"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2025-11-10"
+    availabilityDate: "2025-11-10"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+      sourceRecordId: "gamma_100m_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-11-10"
+    source: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+    evidenceSummary: "Gamma reported launching AI image editing, Gamma Agent, an API, Teams, and Ultra during 2025."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Product expansion broadens monetization beyond the original presentation use case."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-13-evt-03"
+
+  - company: "appliedcompute.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-04-08"
+    availabilityDate: "2026-04-08"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.appliedcompute.com/company/fundraise"
+      sourceRecordId: "applied_fundraise_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-04-08"
+    source: "https://www.appliedcompute.com/company/fundraise"
+    evidenceSummary: "Applied Compute raised $80M at a $1.3B post-money valuation, bringing total funding to $160M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is heavily capitalized for rapid enterprise AI expansion."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-14-evt-01"
+
+  - company: "appliedcompute.com"
+    signalType: partnership
+    category: market
+    direction: positive
+    publicationDate: "2026-08-05"
+    availabilityDate: "2026-08-05"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.appliedcompute.com/case-studies/nvidia"
+      sourceRecordId: "applied_nvidia_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-05"
+    source: "https://www.appliedcompute.com/case-studies/nvidia"
+    evidenceSummary: "Applied Compute described an active post-training collaboration with NVIDIA using real production enterprise workloads."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Strategic collaboration with a major AI infrastructure vendor validates technical credibility."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-14-evt-02"
+
+  - company: "appliedcompute.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-08-25"
+    availabilityDate: "2026-08-25"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.appliedcompute.com/platform/introducing-ac2"
+      sourceRecordId: "applied_ac2_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-25"
+    source: "https://www.appliedcompute.com/platform/introducing-ac2"
+    evidenceSummary: "Applied Compute launched AC2, a private-beta training and inference cloud for open-weight models."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company is productizing embedded research work into a repeatable platform."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-14-evt-03"
+
+  - company: "appliedcompute.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-09-02"
+    availabilityDate: "2026-09-02"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.forbes.com/sites/richardnieva/2026/09/01/applied-compute-openai-the-ex-openai-guys-building-cheaper-open-source-alternative/"
+      sourceRecordId: "applied_forbes_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-09-02"
+    source: "https://www.forbes.com/sites/richardnieva/2026/09/01/applied-compute-openai-the-ex-openai-guys-building-cheaper-open-source-alternative/"
+    evidenceSummary: "Forbes and The Information reported Applied Compute was discussing a potential $350M financing at about $3.25B, with terms explicitly not final."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "This is a financing watch item, not a completed-round fact."
+    interpretationBasis: evidence
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: "Phase 3D: as of 2026-09-07 no reviewed source establishes the round closed. Forbes and The Information continue to describe it as under discussion with terms not final; The Information also reports approximately $50M annualized revenue (third-party estimate). The proposed $350M is not capital raised and the $3.25B is not a completed-transaction valuation. Confirm the outcome before any use as a completed event."
+    researchEventId: "b1-14-evt-04"
+
+  - company: "modal.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-09-29"
+    availabilityDate: "2025-09-29"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://modal.com/blog/announcing-our-series-b"
+      sourceRecordId: "modal_series_b_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-09-29"
+    source: "https://modal.com/blog/announcing-our-series-b"
+    evidenceSummary: "Modal raised more than $80M in its Series B, bringing total funding to $111M at a $1.1B post-money valuation."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Capital supported expansion of a broad AI cloud platform."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-15-evt-01"
+
+  - company: "modal.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-05-21"
+    availabilityDate: "2026-05-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://modal.com/blog/modal-series-c"
+      sourceRecordId: "modal_series_c_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-05-21"
+    source: "https://modal.com/blog/modal-series-c"
+    evidenceSummary: "Modal reported growing fivefold since September 2025 and surpassing $300M annualized revenue."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "This is one of the strongest disclosed growth events in the corpus."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-15-evt-02"
+
+  - company: "modal.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-05-21"
+    availabilityDate: "2026-05-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://modal.com/blog/modal-series-c"
+      sourceRecordId: "modal_series_c_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-05-21"
+    source: "https://modal.com/blog/modal-series-c"
+    evidenceSummary: "Modal raised a $355M Series C at a $4.65B post-money valuation."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Large financing increases resources and capital intensity simultaneously."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-15-evt-03"
+
+  - company: "linear.app"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-06-10"
+    availabilityDate: "2025-06-10"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://linear.app/now/building-our-way"
+      sourceRecordId: "linear_series_c_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-06-10"
+    source: "https://linear.app/now/building-our-way"
+    evidenceSummary: "Linear raised an $82M Series C at a $1.25B valuation, including primary and secondary funding."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round included employee/investor liquidity as well as company capital."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-16-evt-01"
+
+  - company: "linear.app"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-08-26"
+    availabilityDate: "2026-08-26"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+      sourceRecordId: "linear_tender_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-26"
+    source: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+    evidenceSummary: "Linear reported passing $100M ARR, more than 40,000 paying companies, and 177% NRR."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Scale and expansion metrics indicate exceptional software growth quality."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-16-evt-02"
+
+  - company: "linear.app"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-08-26"
+    availabilityDate: "2026-08-26"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+      sourceRecordId: "linear_tender_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-26"
+    source: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+    evidenceSummary: "Linear completed a $99M employee tender at a $2.5B valuation without raising new primary capital because it was cash-flow positive."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Secondary liquidity without new primary capital is a positive capital-discipline signal, even though funding itself remains an ambiguous event class."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-16-evt-03"
+
+  - company: "linear.app"
+    signalType: technical_adoption
+    category: demand
+    direction: positive
+    publicationDate: "2026-08-26"
+    availabilityDate: "2026-08-26"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+      sourceRecordId: "linear_tender_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-26"
+    source: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+    evidenceSummary: "Linear reported agents installed across 95% of paid workspaces and agent-created work rising from 3% to 50% in one year."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Agent adoption strengthens Linear's position in AI-native product development workflows."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-16-evt-04"
+
+  - company: "wisprflow.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-06-24"
+    availabilityDate: "2025-06-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://wisprflow.ai/blog"
+      sourceRecordId: "wispr_series_a_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-06-24"
+    source: "https://wisprflow.ai/blog"
+    evidenceSummary: "Wispr Flow raised a $30M Series A."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round funded expansion of its voice interface product."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-17-evt-01"
+
+  - company: "wisprflow.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-11-20"
+    availabilityDate: "2025-11-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://wisprflow.ai/post/wispr-raises-another-round-series-a-extension"
+      sourceRecordId: "wispr_extension_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-11-20"
+    source: "https://wisprflow.ai/post/wispr-raises-another-round-series-a-extension"
+    evidenceSummary: "Wispr Flow announced additional financing roughly four months after its Series A."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Rapid follow-on financing increased available capital and implied strong investor demand."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-17-evt-02"
+
+  - company: "wisprflow.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-08-17"
+    availabilityDate: "2026-08-17"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://wisprflow.ai/post/series-b"
+      sourceRecordId: "wispr_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-17"
+    source: "https://wisprflow.ai/post/series-b"
+    evidenceSummary: "Wispr Flow raised a $280M Series B at a $2B valuation."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The financing materially increases the capital base."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-17-evt-03"
+
+  - company: "wisprflow.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-08-17"
+    availabilityDate: "2026-08-17"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://wisprflow.ai/post/series-b"
+      sourceRecordId: "wispr_series_b_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-17"
+    source: "https://wisprflow.ai/post/series-b"
+    evidenceSummary: "Wispr Flow reported more than 60B words written, usage at almost all Fortune 500 companies, and more than 10,000 enterprises."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Usage scale indicates substantial adoption across individual and enterprise contexts."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-17-evt-04"
+
+  - company: "turbopuffer.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2024-07-08"
+    availabilityDate: "2024-07-08"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://turbopuffer.com/blog/turbopuffer?__from__=talkingdev"
+      sourceRecordId: "tpuf_core_2024"
+      note: "The source carries its own publication date."
+    eventDate: "2024-07-08"
+    source: "https://turbopuffer.com/blog/turbopuffer?__from__=talkingdev"
+    evidenceSummary: "turbopuffer publicly described its object-storage-native search architecture and Cursor's migration with a reported 95% cost reduction."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "A large lighthouse customer validated the core architectural cost advantage."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-18-evt-01"
+
+  - company: "turbopuffer.com"
+    signalType: technical_adoption
+    category: demand
+    direction: positive
+    publicationDate: "2026-01-21"
+    availabilityDate: "2026-01-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://turbopuffer.com/blog"
+      sourceRecordId: "tpuf_ann_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-01-21"
+    source: "https://turbopuffer.com/blog"
+    evidenceSummary: "turbopuffer published a major vector-search performance milestone for 100B-vector scale."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Scaling very large indexes is relevant to high-end AI retrieval workloads."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-18-evt-02"
+
+  - company: "turbopuffer.com"
+    signalType: pricing_change
+    category: market
+    direction: positive
+    publicationDate: "2026-08-18"
+    availabilityDate: "2026-08-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://turbopuffer.com/docs/pricing-log"
+      sourceRecordId: "tpuf_pricing_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-18"
+    source: "https://turbopuffer.com/docs/pricing-log"
+    evidenceSummary: "turbopuffer reduced large-namespace query pricing by up to 94% in February 2026 and lowered the Launch plan minimum to $16 per month in June."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Falling unit prices may expand addressable workloads, though they also affect revenue per unit of usage."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-18-evt-03"
+
+  - company: "browserbase.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-06-18"
+    availabilityDate: "2025-06-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.browserbase.com/blog/series-b-and-beyond"
+      sourceRecordId: "browserbase_series_b_2025"
+      note: "The source carries its own publication date."
+    eventDate: "2025-06-18"
+    source: "https://www.browserbase.com/blog/series-b-and-beyond"
+    evidenceSummary: "Browserbase raised a $40M Series B led by Notable Capital."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The round funded continued browser-infrastructure expansion."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-19-evt-01"
+
+  - company: "browserbase.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-06-30"
+    availabilityDate: "2026-06-30"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.browserbase.com/blog/introducing-browserbase-agents"
+      sourceRecordId: "browserbase_agents_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-06-30"
+    source: "https://www.browserbase.com/blog/introducing-browserbase-agents"
+    evidenceSummary: "Browserbase launched Browserbase Agents, a managed browser agent running on the same infrastructure used for 35M+ monthly browser sessions."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "The company expanded from infrastructure primitives into a higher-level agent product."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-19-evt-02"
+
+  - company: "browserbase.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-07-02"
+    availabilityDate: "2026-07-02"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.browserbase.com/blog/case-study-hyperagent"
+      sourceRecordId: "browserbase_airtable_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-07-02"
+    source: "https://www.browserbase.com/blog/case-study-hyperagent"
+    evidenceSummary: "Airtable's Hyperagent ran 300,000+ sessions on Browserbase since April 2026."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Large production workload growth validates Browserbase inside an enterprise agent platform."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-19-evt-03"
+
+  - company: "browserbase.com"
+    signalType: product_launch
+    category: product
+    direction: positive
+    publicationDate: "2026-08-10"
+    availabilityDate: "2026-08-10"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.browserbase.com/blog/stagehand-v4"
+      sourceRecordId: "browserbase_stagehand_v4_2026"
+      note: "The source carries its own publication date."
+    eventDate: "2026-08-10"
+    source: "https://www.browserbase.com/blog/stagehand-v4"
+    evidenceSummary: "Browserbase launched Stagehand v4 with TypeScript, Python, and Go SDK parity and a browser-extension architecture."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch1 research"
+    verifiedAt: "2026-09-06T00:00:00.000Z"
+    interpretation: "Open-source/developer tooling continues to deepen the platform's distribution and technical differentiation."
+    interpretationBasis: evidence
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b1-19-evt-04"
+
+# --- BATCH 2 (Phase 4B ingestion) ---
+  - company: "withdavid.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-10-08"
+    availabilityDate: "2025-10-08"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.withdavid.ai/news/announcing-our-50m-series-b"
+      sourceRecordId: null
+      note: null
+    eventDate: "2025-10-08"
+    source: "https://www.withdavid.ai/news/announcing-our-50m-series-b"
+    evidenceSummary: "$50M Series B; Bloomberg reported about $500M valuation. Corroborated by Bloomberg."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-withdavid-ai-1"
+
+  - company: "exa.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://exa.ai/blog/announcing-series-c"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-20"
+    source: "https://exa.ai/blog/announcing-series-c"
+    evidenceSummary: "$250M Series C at $2.2B."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-exa-ai-1"
+
+  - company: "exa.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://exa.ai/blog/announcing-series-c"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-20"
+    source: "https://exa.ai/blog/announcing-series-c"
+    evidenceSummary: "Company reported 5,000+ companies using Exa."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-exa-ai-2"
+
+  - company: "listenlabs.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-01-14"
+    availabilityDate: "2026-01-14"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-01-14"
+    source: "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html"
+    evidenceSummary: "$69M Series B; company said total funding reached $100M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-listenlabs-com-1"
+
+  - company: "listenlabs.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-01-14"
+    availabilityDate: "2026-01-14"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-01-14"
+    source: "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html"
+    evidenceSummary: "Company reported 15x annualized revenue growth in nine months to eight figures."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-listenlabs-com-2"
+
+  - company: "rillet.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-08-17"
+    availabilityDate: "2026-08-17"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.rillet.com/blog/rillet-raises-100m-series-c-at-1b-valuation-to-build-accounting-superintelligence"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-08-17"
+    source: "https://www.rillet.com/blog/rillet-raises-100m-series-c-at-1b-valuation-to-build-accounting-superintelligence"
+    evidenceSummary: "$100M Series C at $1B; total funding above $200M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-rillet-com-1"
+
+  - company: "rillet.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-08-17"
+    availabilityDate: "2026-08-17"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.rillet.com/blog/rillet-raises-100m-series-c-at-1b-valuation-to-build-accounting-superintelligence"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-08-17"
+    source: "https://www.rillet.com/blog/rillet-raises-100m-series-c-at-1b-valuation-to-build-accounting-superintelligence"
+    evidenceSummary: "Company reported 600+ customers and doubled new ARR in the latest quarter."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-rillet-com-2"
+
+  - company: "parallel.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-04-29"
+    availabilityDate: "2026-04-29"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://parallel.ai/blog/series-b"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-29"
+    source: "https://parallel.ai/blog/series-b"
+    evidenceSummary: "$100M Series B at $2B; total capital $230M. Corroborated by TechCrunch."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-parallel-ai-1"
+
+  - company: "parallel.ai"
+    signalType: technical_adoption
+    category: demand
+    direction: positive
+    publicationDate: "2026-04-29"
+    availabilityDate: "2026-04-29"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://parallel.ai/blog/series-b"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-29"
+    source: "https://parallel.ai/blog/series-b"
+    evidenceSummary: "Company reported 100,000+ developers."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-parallel-ai-2"
+
+  - company: "braintrust.dev"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-02-17"
+    availabilityDate: "2026-02-17"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.braintrust.dev/blog/announcing-series-b"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-02-17"
+    source: "https://www.braintrust.dev/blog/announcing-series-b"
+    evidenceSummary: "$80M Series B; Axios reported $800M post-money valuation. Corroborated by Axios."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-braintrust-dev-1"
+
+  - company: "braintrust.dev"
+    signalType: security_incident
+    category: risk
+    direction: negative
+    publicationDate: "2026-05-06"
+    availabilityDate: "2026-05-06"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-06"
+    source: "https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/"
+    evidenceSummary: "Unauthorized AWS access prompted customer key rotation."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-braintrust-dev-2"
+
+  - company: "xbow.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-06-24"
+    availabilityDate: "2025-06-24"
+    availabilityEvidence:
+      method: manual_verified
+      sourceUrl: "https://xbow.com/blog/series-b"
+      sourceRecordId: null
+      note: "Page metadata is inconsistent in some crawls; financing history sources place the Series B in June 2025."
+    eventDate: "2025-06-24"
+    source: "https://xbow.com/blog/series-b"
+    evidenceSummary: "$75M Series B; total funding reported at $117M. Corroborated by Nasdaq Private Market."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-xbow-com-1"
+
+  - company: "xbow.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://xbow.com/news/xbow-raises-120m-to-scale"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-03-18"
+    source: "https://xbow.com/news/xbow-raises-120m-to-scale"
+    evidenceSummary: "$120M Series C."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-xbow-com-2"
+
+  - company: "xbow.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-05-06"
+    availabilityDate: "2026-05-06"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://xbow.com/news/xbow-secures-additional-35m-from-strategic-investors"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-06"
+    source: "https://xbow.com/news/xbow-secures-additional-35m-from-strategic-investors"
+    evidenceSummary: "$35M Series C extension."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-xbow-com-3"
+
+  - company: "getbasis.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-02-24"
+    availabilityDate: "2026-02-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.marketscreener.com/news/ai-accounting-startup-basis-raises-100-million-at-1-15-billion-valuation-ce7e5cdade88f425"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-02-24"
+    source: "https://www.marketscreener.com/news/ai-accounting-startup-basis-raises-100-million-at-1-15-billion-valuation-ce7e5cdade88f425"
+    evidenceSummary: "$100M Series B at $1.15B. Corroborated by Basis."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-getbasis-ai-1"
+
+  - company: "getbasis.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-02-24"
+    availabilityDate: "2026-02-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.getbasis.ai/blogs/basis-raises-100m-series-b-led-by-accel-and-google-ventures"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-02-24"
+    source: "https://www.getbasis.ai/blogs/basis-raises-100m-series-b-led-by-accel-and-google-ventures"
+    evidenceSummary: "Company said Basis was used by about 30% of the top 25 accounting firms."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-getbasis-ai-2"
+
+  - company: "avoca.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-04-27"
+    availabilityDate: "2026-04-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://getavoca.ai/blog/avoca-raises-125m-series-b-1b-valuation"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-27"
+    source: "https://getavoca.ai/blog/avoca-raises-125m-series-b-1b-valuation"
+    evidenceSummary: "Series B at $1B valuation; company said total funding across Seed through Series B exceeded $125M. Corroborated by Fortune."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-avoca-ai-1"
+
+  - company: "avoca.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-04-27"
+    availabilityDate: "2026-04-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://fortune.com/2026/04/27/avoca-ai-agents-missed-calls-hvac-plumbing-roofing-kleiner-perkins-chen-shrivastava-braswell/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-27"
+    source: "https://fortune.com/2026/04/27/avoca-ai-agents-missed-calls-hvac-plumbing-roofing-kleiner-perkins-chen-shrivastava-braswell/"
+    evidenceSummary: "Fortune reported more than 800 customers based on founder interview."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-avoca-ai-2"
+
+  - company: "assorthealth.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-06-24"
+    availabilityDate: "2026-06-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-06-24"
+    source: "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+    evidenceSummary: "$120M Series C at $1.2B; total funding above $222M. Corroborated by Forbes."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-assorthealth-com-1"
+
+  - company: "assorthealth.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-06-24"
+    availabilityDate: "2026-06-24"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-06-24"
+    source: "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+    evidenceSummary: "Company reported 20x revenue growth over 15 months."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-assorthealth-com-2"
+
+  - company: "elevenlabs.io"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-02-04"
+    availabilityDate: "2026-02-04"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://elevenlabs.io/blog/series-d"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-02-04"
+    source: "https://elevenlabs.io/blog/series-d"
+    evidenceSummary: "$500M Series D at $11B."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-elevenlabs-io-1"
+
+  - company: "elevenlabs.io"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-05-05"
+    availabilityDate: "2026-05-05"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-05"
+    source: "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+    evidenceSummary: "Company reported more than $500M ARR."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-elevenlabs-io-2"
+
+  - company: "elevenlabs.io"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-05-05"
+    availabilityDate: "2026-05-05"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-05"
+    source: "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+    evidenceSummary: "$100M tender offer, separate from company financing. Corroborated by TechCrunch."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-elevenlabs-io-3"
+
+  - company: "vercel.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-09-30"
+    availabilityDate: "2025-09-30"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.investing.com/news/stock-market-news/ai-coding-startup-vercel-raises-300-million-valued-at-93-billion-4264199"
+      sourceRecordId: null
+      note: null
+    eventDate: "2025-09-30"
+    source: "https://www.investing.com/news/stock-market-news/ai-coding-startup-vercel-raises-300-million-valued-at-93-billion-4264199"
+    evidenceSummary: "$300M Series F at $9.3B. Corroborated by Vercel."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-vercel-com-1"
+
+  - company: "vercel.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-09-30"
+    availabilityDate: "2025-09-30"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://vercel.com/blog/series-f"
+      sourceRecordId: null
+      note: null
+    eventDate: "2025-09-30"
+    source: "https://vercel.com/blog/series-f"
+    evidenceSummary: "Approximately $300M secondary tender announced."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-vercel-com-2"
+
+  - company: "vercel.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-04-13"
+    availabilityDate: "2026-04-13"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-13"
+    source: "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/"
+    evidenceSummary: "TechCrunch reported about $340M revenue run-rate by February 2026."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-vercel-com-3"
+
+  - company: "vercel.com"
+    signalType: security_incident
+    category: risk
+    direction: negative
+    publicationDate: "2026-04-20"
+    availabilityDate: "2026-04-20"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-20"
+    source: "https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/"
+    evidenceSummary: "Vercel confirmed security incident involving customer data or credentials."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-vercel-com-4"
+
+  - company: "openevidence.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-01-21"
+    availabilityDate: "2026-01-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-01-21"
+    source: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+    evidenceSummary: "$250M Series D at $12B; total funding about $700M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-openevidence-com-1"
+
+  - company: "openevidence.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-01-21"
+    availabilityDate: "2026-01-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-01-21"
+    source: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+    evidenceSummary: "Company said revenue surpassed $100M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-openevidence-com-2"
+
+  - company: "openevidence.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-01-21"
+    availabilityDate: "2026-01-21"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-01-21"
+    source: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+    evidenceSummary: "Company said the platform handled 18M clinical consultations in December 2025."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-openevidence-com-3"
+
+  - company: "decagon.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-01-27"
+    availabilityDate: "2026-01-27"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://decagon.ai/blog/series-d-announcement"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-01-27"
+    source: "https://decagon.ai/blog/series-d-announcement"
+    evidenceSummary: "$250M financing at $4.5B."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-decagon-ai-1"
+
+  - company: "decagon.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-03-04"
+    availabilityDate: "2026-03-04"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://decagon.ai/blog/decagon-closes-employee-tender-at-4-5-billion-valuation"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-03-04"
+    source: "https://decagon.ai/blog/decagon-closes-employee-tender-at-4-5-billion-valuation"
+    evidenceSummary: "Employee tender at $4.5B valuation."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-decagon-ai-2"
+
+  - company: "glean.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-05-28"
+    availabilityDate: "2026-05-28"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.glean.com/press/glean-surpasses-300m-arr-unrivaled-enterprise-context-fuels-ai-adoption"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-28"
+    source: "https://www.glean.com/press/glean-surpasses-300m-arr-unrivaled-enterprise-context-fuels-ai-adoption"
+    evidenceSummary: "Glean announced $300M ARR; external reporting documented consumption-pricing nuance. Corroborated by TechCrunch."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-glean-com-1"
+
+  - company: "sierra.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-05-04"
+    availabilityDate: "2026-05-04"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-05-04"
+    source: "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    evidenceSummary: "$950M financing at post-money valuation above $15B. Corroborated by Sierra."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-sierra-ai-1"
+
+  - company: "sierra.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-08-31"
+    availabilityDate: "2026-08-31"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://sierra.ai/jp/blog/julia-brau-donnelly-joins-sierra"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-08-31"
+    source: "https://sierra.ai/jp/blog/julia-brau-donnelly-joins-sierra"
+    evidenceSummary: "Sierra said ARR reached $200M in nine quarters."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-sierra-ai-2"
+
+  - company: "sierra.ai"
+    signalType: executive_hire
+    category: team
+    direction: ambiguous
+    publicationDate: "2026-08-31"
+    availabilityDate: "2026-08-31"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://sierra.ai/jp/blog/julia-brau-donnelly-joins-sierra"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-08-31"
+    source: "https://sierra.ai/jp/blog/julia-brau-donnelly-joins-sierra"
+    evidenceSummary: "Julia Brau Donnelly joined as CFO."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-sierra-ai-3"
+
+  - company: "canva.com"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-02-18"
+    availabilityDate: "2026-02-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-02-18"
+    source: "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/"
+    evidenceSummary: "Canva said it ended 2025 at $4B ARR with 265M+ MAUs and 31M+ paid users."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-canva-com-1"
+
+  - company: "canva.com"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-06-30"
+    availabilityDate: "2026-06-30"
+    availabilityEvidence:
+      method: regulatory_filing_timestamp
+      sourceUrl: "https://www.sec.gov/Archives/edgar/data/2085091/000089418926022643/rvi.htm"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-06-24"
+    source: "https://www.sec.gov/Archives/edgar/data/2085091/000089418926022643/rvi.htm"
+    evidenceSummary: "RVI purchased about $25M of Canva Class A common stock; primary versus secondary not established. Corroborated by Robinhood Ventures Fund I."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-canva-com-2"
+
+  - company: "lovable.dev"
+    signalType: security_incident
+    category: risk
+    direction: negative
+    publicationDate: "2026-04-22"
+    availabilityDate: "2026-04-22"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://lovable.dev/blog/our-response-to-the-april-2026-incident"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-04-20"
+    source: "https://lovable.dev/blog/our-response-to-the-april-2026-incident"
+    evidenceSummary: "Lovable disclosed a public-project access-control incident and missed vulnerability escalations."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-lovable-dev-1"
+
+  - company: "lovable.dev"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-06-09"
+    availabilityDate: "2026-06-09"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-06-09"
+    source: "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/"
+    evidenceSummary: "Lovable said annualized revenue run-rate exceeded $500M."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-lovable-dev-2"
+
+  - company: "lovable.dev"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-08-12"
+    availabilityDate: "2026-08-12"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://lovable.dev/blog/series-c"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-08-12"
+    source: "https://lovable.dev/blog/series-c"
+    evidenceSummary: "$400M Series C at $13.3B."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-lovable-dev-3"
+
+  - company: "fal.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2025-12-09"
+    availabilityDate: "2025-12-09"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://blog.fal.ai/our-series-d-scaling-fal/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2025-12-09"
+    source: "https://blog.fal.ai/our-series-d-scaling-fal/"
+    evidenceSummary: "$140M Series D at $4.5B; external reporting says broader transaction also included secondary sale. Corroborated by TechCrunch."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-fal-ai-1"
+
+  - company: "fal.ai"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.theinformation.com/articles/video-hosting-startup-fal-funding-talks-8-billion-valuation"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-03-18"
+    source: "https://www.theinformation.com/articles/video-hosting-startup-fal-funding-talks-8-billion-valuation"
+    evidenceSummary: "The Information reported talks for $300M-$350M financing with highest-priced tranche around $8B."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: "Reported financing talks only. No reviewed source through the 2026-09-07 research cutoff establishes a closing. Not capital raised."
+    researchEventId: "b2-evt-fal-ai-2"
+
+  - company: "fal.ai"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-03-18"
+    availabilityDate: "2026-03-18"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.theinformation.com/articles/video-hosting-startup-fal-funding-talks-8-billion-valuation"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-03-18"
+    source: "https://www.theinformation.com/articles/video-hosting-startup-fal-funding-talks-8-billion-valuation"
+    evidenceSummary: "The Information reported annualized revenue around $400M."
+    confidence: medium
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-fal-ai-3"
+
+  - company: "baseten.co"
+    signalType: funding
+    category: capital
+    direction: ambiguous
+    publicationDate: "2026-06-22"
+    availabilityDate: "2026-06-22"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.baseten.co/blog/announcing-our-series-f/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-06-22"
+    source: "https://www.baseten.co/blog/announcing-our-series-f/"
+    evidenceSummary: "$1.5B Series F across $13B and $11B valuation tranches. Corroborated by TechCrunch, Business Wire via Yahoo Finance."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-baseten-co-1"
+
+  - company: "baseten.co"
+    signalType: customer_momentum
+    category: demand
+    direction: positive
+    publicationDate: "2026-06-22"
+    availabilityDate: "2026-06-22"
+    availabilityEvidence:
+      method: intrinsic_timestamp
+      sourceUrl: "https://www.baseten.co/blog/announcing-our-series-f/"
+      sourceRecordId: null
+      note: null
+    eventDate: "2026-06-22"
+    source: "https://www.baseten.co/blog/announcing-our-series-f/"
+    evidenceSummary: "Company reported 20x revenue growth and 40x inference-volume growth."
+    confidence: high
+    humanVerified: verified
+    verifiedBy: "batch2 research"
+    verifiedAt: "2026-09-07T00:00:00.000Z"
+    interpretation: null
+    interpretationBasis: unknown
+    eventStatus: completed
+    unconfirmedNote: null
+    researchEventId: "b2-evt-baseten-co-2"

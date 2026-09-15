@@ -1,0 +1,424 @@
+schemaVersion: 7
+candidateId: CPS-02
+canonicalId: co-initia
+canonicalName: Initia
+slug: initia
+description: >-
+  Initia is a Layer-1 blockchain paired with an interwoven stack of
+  application-specific optimistic rollups ("Minitias") supporting EVM,
+  MoveVM, and CosmWasm execution environments, aiming to let developers
+  launch custom appchains that share liquidity and security with the L1.
+domain: initia.xyz
+firstObservedAt: "2024-02-27"
+category: core_protocols_and_scaling
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: "Series A"
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    Initia Labs (reported by TechCrunch as Singapore-headquartered) is the
+    company that developed the Initia L1 network, the Minitia rollup
+    framework, and the INIT token. No distinct foundation entity separate
+    from Initia Labs was established in public sources reviewed.
+  unresolvedBoundaryNotes:
+    - >-
+      No public source established a full registered legal-entity name or
+      jurisdiction filing for "Initia Labs" beyond TechCrunch's reporting of
+      a Singapore headquarters.
+people:
+  - id: per-initia-ezaan-mangalji
+    schemaVersion: 7
+    name: "Ezaan Mangalji"
+    aliases: ["Zon"]
+    currentRole: "Co-Founder"
+    companyTenures:
+      - companyId: co-initia
+        companyName: Initia
+        role: Co-Founder
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-initia-techcrunch-seed]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-initia-techcrunch-seed]
+  - id: per-initia-stan-liu
+    schemaVersion: 7
+    name: "Stan Liu"
+    aliases: []
+    currentRole: "Co-Founder"
+    companyTenures:
+      - companyId: co-initia
+        companyName: Initia
+        role: Co-Founder
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-initia-techcrunch-seed]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-initia-techcrunch-seed]
+sources:
+  - id: src-initia-techcrunch-seed
+    schemaVersion: 7
+    publisher: TechCrunch
+    title: "Initia raises $7.5M seed money to ease blockchain development"
+    url: "https://techcrunch.com/2024/02/27/initia-raises-7-5m-seed-money-to-ease-blockchain-development/"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-02-27"
+    availabilityDate: "2024-02-27"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-initia-theblock-seriesa
+    schemaVersion: 7
+    publisher: The Block
+    title: "Initia raises $14 million Series A at $350 million token valuation"
+    url: "https://www.theblock.co/post/318102/initia-funding-token-valuation"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-09-25"
+    availabilityDate: "2024-09-25"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-initia-bitget-launch
+    schemaVersion: 7
+    publisher: Bitget Academy
+    title: "Initia (INIT) Listing Launch Date, Airdrop Eligibility, and How to Trade It"
+    url: "https://web3.bitget.com/en/academy/initia-init-listing-launch-date-airdrop-eligibility-and-how-to-trade-it"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.55
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-04-18"
+    availabilityDate: "2025-04-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-initia-defiant-postlaunch
+    schemaVersion: 7
+    publisher: "The Defiant"
+    title: "Initia Token Recovers from Post-Airdrop Slump with 30% Rally"
+    url: "https://thedefiant.io/news/blockchains/initia-token-recovers-from-post-airdrop-slump-with-30-rally"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-04-25"
+    availabilityDate: "2025-04-25"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+evidenceClaims:
+  - id: clm-initia-seed-round
+    schemaVersion: 7
+    companyId: co-initia
+    claim: >-
+      Initia Labs, co-founded in 2022 by Ezaan Mangalji ("Zon") and Stan Liu
+      and headquartered in Singapore per TechCrunch, raised a $7.5 million
+      seed round announced February 27, 2024, led by Delphi Ventures and
+      Hack VC with participation from Nascent, Figment Capital, Big Brain,
+      and A.Capital, following an earlier pre-seed investment from Binance
+      Labs in October 2023.
+    statedValue: "$7.5 million"
+    numericValue: 7500000
+    unit: usd
+    sourceId: src-initia-techcrunch-seed
+    supportingSourceIds: []
+    sourceUrl: "https://techcrunch.com/2024/02/27/initia-raises-7-5m-seed-money-to-ease-blockchain-development/"
+    publicationDate: "2024-02-27"
+    metricAsOfDate: "2024-02-27"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by TechCrunch; team size at the time was
+      reported as approximately 20 people globally.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-initia-series-a
+    schemaVersion: 7
+    companyId: co-initia
+    claim: >-
+      Initia raised a $14 million Series A round, structured as a SAFE with
+      token warrants, closed by June 2024 and reported September 25, 2024,
+      led by Theory Ventures with participation from Delphi Ventures, Hack
+      VC, and angel investors (Keone Hon, Bryan Pellegrino, Zaki Manion,
+      Jordi Alexander, Michael Egorov), implying a $350 million fully
+      diluted token valuation and bringing total reported funding to $22.5
+      million including the prior seed and pre-seed rounds.
+    statedValue: "$14 million"
+    numericValue: 14000000
+    unit: usd
+    sourceId: src-initia-theblock-seriesa
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/318102/initia-funding-token-valuation"
+    publicationDate: "2024-09-25"
+    metricAsOfDate: "2024-09-25"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      The Block reported the public testnet ("The Initiation") had logged
+      125+ million transactions and nearly 3 million unique wallets at the
+      time of the round, and that Initia had ~40 employees and had acquired
+      the Celatone block-explorer team and Alles Labs.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Testnet transaction/wallet counts are self-reported testnet activity,
+      not audited mainnet usage; does mainnet activity corroborate this
+      scale?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-initia-mainnet-token-launch
+    schemaVersion: 7
+    companyId: co-initia
+    claim: >-
+      Initia's Layer-1 mainnet and INIT token launched April 24, 2025, with
+      a total supply of 1 billion INIT tokens, an airdrop of 50 million
+      INIT (5% of supply, allocated across testnet participants, partner
+      ecosystem users, and social contributors) claimable within a 30-day
+      window, and same-day listing (INIT/USDT and other pairs) on major
+      exchanges including Binance.
+    statedValue: "1,000,000,000 INIT total supply; 50,000,000 INIT airdrop"
+    numericValue: 1000000000
+    unit: init_tokens
+    sourceId: src-initia-bitget-launch
+    supportingSourceIds: [src-initia-defiant-postlaunch]
+    sourceUrl: "https://web3.bitget.com/en/academy/initia-init-listing-launch-date-airdrop-eligibility-and-how-to-trade-it"
+    publicationDate: "2025-04-18"
+    metricAsOfDate: "2025-04-24"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      The Bitget Academy article was published April 18, 2025, previewing
+      launch logistics ahead of the April 24 date; the actual mainnet/token
+      debut on April 24 is corroborated by The Defiant's post-launch
+      reporting (src-initia-defiant-postlaunch), which describes the token
+      trading and airdrop as already live "this morning" after the mainnet
+      debut.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-initia-post-launch-volatility
+    schemaVersion: 7
+    companyId: co-initia
+    claim: >-
+      In the 24 hours following the April 24, 2025 mainnet/token debut and
+      airdrop, INIT rose approximately 30% from $0.65 to $0.81 (market cap
+      approximately $121 million, FDV approximately $830 million); a
+      financial advisor quoted by The Defiant attributed part of the move
+      to a single high-leverage long position and thin initial liquidity
+      rather than confirmed fundamentals, warning that such positioning can
+      trigger amplified copycat trading.
+    statedValue: "+30% in 24h ($0.65 to $0.81); FDV ~$830M"
+    numericValue: 30
+    unit: percent
+    sourceId: src-initia-defiant-postlaunch
+    supportingSourceIds: []
+    sourceUrl: "https://thedefiant.io/news/blockchains/initia-token-recovers-from-post-airdrop-slump-with-30-rally"
+    publicationDate: "2025-04-25"
+    metricAsOfDate: "2025-04-25"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    modelEligibility: context_only
+    topic: market
+    notes: >-
+      Recorded as a caveat on early price-discovery quality (thin liquidity,
+      leverage-driven), not as evidence of durable market interest or
+      adoption; token price appreciation is a forbidden automatic positive
+      and is not treated as a quality signal here.
+    evidenceStatus: mixed
+    analystInterpretation: >-
+      Early INIT price action appears to reflect thin post-TGE liquidity and
+      leveraged speculative positioning more than confirmed product-market
+      fit, per the cited on-the-record commentary.
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-initia-mainnet-launch
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-initia
+    subjectNameRaw: Initia
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-initia-defiant-postlaunch
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Initia's Layer-1 mainnet went live April 24, 2025, confirmed by
+      post-launch trading/airdrop activity reported the following day.
+    evidenceIds: [clm-initia-mainnet-token-launch]
+    publicationDate: "2025-04-25"
+    availabilityDate: "2025-04-25"
+    eventDate: "2025-04-24"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-initia-token-generation-event
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-initia
+    subjectNameRaw: Initia
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-initia-defiant-postlaunch
+    rawStrength: 0.5
+    evidenceSummary: >-
+      INIT token generation event and exchange listings occurred alongside
+      the April 24, 2025 mainnet launch, with a 5%-of-supply airdrop to
+      testnet participants and ecosystem contributors.
+    evidenceIds: [clm-initia-mainnet-token-launch, clm-initia-post-launch-volatility]
+    publicationDate: "2025-04-25"
+    availabilityDate: "2025-04-25"
+    eventDate: "2025-04-24"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-initia-series-a-close
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-initia
+    subjectNameRaw: Initia Labs
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-initia-theblock-seriesa
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Initia Labs closed a $14 million Series A (SAFE with token warrants,
+      $350M FDV) reported September 25, 2024, led by Theory Ventures.
+    evidenceIds: [clm-initia-series-a]
+    publicationDate: "2024-09-25"
+    availabilityDate: "2024-09-25"
+    eventDate: "2024-09-25"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-initia-legal-entity
+    whatWasSearched: "Initia Labs' full registered legal-entity name, incorporation jurisdiction, and any corporate filing"
+    whatCouldNotBeEstablished: >-
+      Only TechCrunch's characterization of a Singapore headquarters was
+      found; no registry filing or full legal name was located.
+    expectedToMatter: true
+  - id: gap-initia-tvl-adoption
+    whatWasSearched: "Post-mainnet TVL, transaction volume, and active-address figures across the Initia L1 and its Minitia rollups"
+    whatCouldNotBeEstablished: >-
+      No dated, citable historical figure for real (non-testnet) usage or
+      TVL across Minitia rollups was found within the research budget for
+      this batch; live dashboard state (e.g. DefiLlama) was reviewed but
+      excluded as it cannot be responsibly pinned to a pre-cutoff
+      availabilityDate. Consistent with the frozen major-uncertainty note
+      for this candidate.
+    expectedToMatter: true
+  - id: gap-initia-security-audit
+    whatWasSearched: "Third-party security audit of the Initia L1, Minitia rollup framework, or bridge contracts"
+    whatCouldNotBeEstablished: >-
+      No specific audit firm, report, or audit date was established within
+      the research budget for this batch.
+    expectedToMatter: true
+  - id: gap-initia-post-series-a-financing
+    whatWasSearched: "Any financing round subsequent to the September 2024 Series A"
+    whatCouldNotBeEstablished: >-
+      Aggregator profiles (Tracxn) reference later funding/company-profile
+      activity through 2025-2026 but no independently corroborated
+      subsequent round (amount, date, investors) with a primary or
+      independent-journalism source was found within the research budget.
+    expectedToMatter: false
+  - id: gap-initia-current-team-size
+    whatWasSearched: "Current headcount / team size as of the research cutoff"
+    whatCouldNotBeEstablished: >-
+      TechCrunch reported ~20 people (Feb 2024) and The Block reported ~40
+      employees (Sept 2024); no updated figure closer to the research
+      cutoff was established.
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    "Initia" refers interchangeably to the operating company (Initia Labs),
+    the L1 network, and the INIT token; no separate foundation entity is
+    established in sources reviewed, consistent with the frozen hybrid
+    entityType / equity_and_token assetType assignment.
+  sourceOriginUncertainty: >-
+    The seed and Series A rounds are each independently corroborated by a
+    single named-byline journalism outlet (TechCrunch, The Block
+    respectively); no wire-service or press-release reproduction was relied
+    upon for either figure. Mainnet/token-launch logistics rest on an
+    exchange-academy explainer (Bitget) corroborated by independent
+    post-launch market reporting (The Defiant).
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen MODERATE evidence-density label: founder
+    identity, seed and Series A financing, and the mainnet/token launch
+    event are well established via independent journalism; real post-launch
+    usage/TVL across Minitia rollups, a security-audit record, and any
+    financing subsequent to the Series A could not responsibly be
+    established within the research budget for this batch and are recorded
+    as gaps.
+researchCutoff: "2026-09-10"

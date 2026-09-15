@@ -1,0 +1,1842 @@
+{
+  "schemaVersion": 7,
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "batch": "CALIBRATION",
+  "entityCount": 15,
+  "researchBaselineCommit": "0c10a376c3ccc5df3429d397673b59ab97812b5f",
+  "judgmentAnalyticalInputSha256": "sha256:f771e2a5ffe3f3e11cba28e9aa447f3ee2999999d5d5c8f52661cbbf9966fc89",
+  "methodologyConfigFingerprint": "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17",
+  "calibrationConfigFreezeFingerprint": "sha256:ac21028eb04722ce8bea6d14107435df0963da90259db041a69a6dc24f44b96f",
+  "scores": [
+    {
+      "entityId": "co-anemoy",
+      "candidateId": "TRA-04",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.93
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 48.5,
+          "coverage": 1,
+          "confidence": 0.7150000000000001
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 52.5,
+          "coverage": 0.75,
+          "confidence": 0.8833333333333334
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 49.25,
+          "coverage": 0.5,
+          "confidence": 0.65
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 47.5,
+          "coverage": 0.25,
+          "confidence": 0.5
+        }
+      ],
+      "thesisFit": 50.075,
+      "overallCoverage": 0.3875,
+      "overallConfidence": 0.7693548387096775,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 3,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0.25
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-chronicle-protocol",
+      "candidateId": "DOI-02",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.85
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 53.75,
+          "coverage": 0.25,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.85
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 53.25,
+          "coverage": 0.5,
+          "confidence": 0.925
+        }
+      ],
+      "thesisFit": 51.45,
+      "overallCoverage": 0.25,
+      "overallConfidence": 0.9149999999999999,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 1,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0.25,
+          "growth_momentum": 0.25
+        },
+        "pass": true
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-cyfrin",
+      "candidateId": "SPC-04",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.8625
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.55
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.75
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 50.375,
+      "overallCoverage": 0.1,
+      "overallConfidence": 0.7171875,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 0,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-echelon-prime-parallel",
+      "candidateId": "CSG-01",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 47.5,
+          "coverage": 0.25,
+          "confidence": 0.6
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.5
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.5,
+          "confidence": 0.8300000000000001
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.5
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 49.6875,
+      "overallCoverage": 0.19999999999999998,
+      "overallConfidence": 0.64875,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 1,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0.25,
+          "growth_momentum": 0.25
+        },
+        "pass": true
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-fuel-network",
+      "candidateId": "CPS-01",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 36.25,
+          "coverage": 0.75,
+          "confidence": 0.75
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 41.25,
+          "coverage": 0.75,
+          "confidence": 0.75
+        }
+      ],
+      "thesisFit": 47.0625,
+      "overallCoverage": 0.1875,
+      "overallConfidence": 0.75,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 2,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-lava-network",
+      "candidateId": "DIM-03",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 48.75,
+          "coverage": 0.25,
+          "confidence": 0.94
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 43.75,
+          "coverage": 0.75,
+          "confidence": 0.9466666666666667
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 48.75,
+          "coverage": 0.25,
+          "confidence": 0.94
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 47.5,
+          "coverage": 0.25,
+          "confidence": 0.85
+        }
+      ],
+      "thesisFit": 48.4375,
+      "overallCoverage": 0.21249999999999997,
+      "overallConfidence": 0.9329411764705882,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 1,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0.25,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-nillion",
+      "candidateId": "SPC-01",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 46.25,
+          "coverage": 0.75,
+          "confidence": 0.75
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 48.75,
+          "coverage": 0.25,
+          "confidence": 0.7
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 40,
+          "coverage": 0.5,
+          "confidence": 0.65
+        }
+      ],
+      "thesisFit": 48.3125,
+      "overallCoverage": 0.1875,
+      "overallConfidence": 0.7166666666666667,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 2,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-nubit",
+      "candidateId": "CPS-04",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 46.25,
+          "coverage": 0.25,
+          "confidence": 0.4
+        }
+      ],
+      "thesisFit": 49.625,
+      "overallCoverage": 0.025,
+      "overallConfidence": 0.4000000000000001,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 0,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": false,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-perena",
+      "candidateId": "SAP-03",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 52,
+          "coverage": 0.25,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 50.3,
+      "overallCoverage": 0.0375,
+      "overallConfidence": 0.95,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 0,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-pixels",
+      "candidateId": "CSG-04",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 46.25,
+          "coverage": 0.5,
+          "confidence": 0.58375
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 40,
+          "coverage": 0.5,
+          "confidence": 0.6174999999999999
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.48750000000000004
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 47.5,
+          "coverage": 0.5,
+          "confidence": 0.55
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 47,
+      "overallCoverage": 0.28750000000000003,
+      "overallConfidence": 0.5770652173913043,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 3,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0.5,
+          "growth_momentum": 0.5
+        },
+        "pass": true
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": false,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-skyfire",
+      "candidateId": "CAI-02",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.5,
+          "confidence": 0.825
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 55,
+          "coverage": 0.5,
+          "confidence": 0.85
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.7
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.5,
+          "confidence": 0.85
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.5,
+          "confidence": 0.8049999999999999
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 51.4375,
+      "overallCoverage": 0.3125,
+      "overallConfidence": 0.8168,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 4,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0.5
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": true,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-spheron-network",
+      "candidateId": "DPC-03",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0.68
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 48.75,
+          "coverage": 0.25,
+          "confidence": 0.44999999999999996
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 49.875,
+      "overallCoverage": 0.0625,
+      "overallConfidence": 0.5880000000000001,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 0,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": false,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-superstate",
+      "candidateId": "TRA-01",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 51.25,
+          "coverage": 0.25,
+          "confidence": 0.8
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 61,
+          "coverage": 0.5,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 60.25,
+          "coverage": 0.75,
+          "confidence": 0.9499999999999998
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 56,
+          "coverage": 0.5,
+          "confidence": 0.8
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 52.5,
+          "coverage": 0.5,
+          "confidence": 0.8
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        }
+      ],
+      "thesisFit": 54.2875,
+      "overallCoverage": 0.33749999999999997,
+      "overallConfidence": 0.8833333333333333,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 4,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0.25,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": true,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-wildcat-protocol",
+      "candidateId": "DCM-02",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 56,
+          "coverage": 0.5,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 59,
+          "coverage": 0.5,
+          "confidence": 0.95
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 54,
+          "coverage": 0.5,
+          "confidence": 0.8
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 46,
+          "coverage": 0.5,
+          "confidence": 0.8
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 49.5,
+          "coverage": 0.75,
+          "confidence": 0.9166666666666666
+        }
+      ],
+      "thesisFit": 52.70000000000001,
+      "overallCoverage": 0.375,
+      "overallConfidence": 0.8933333333333332,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 5,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0.5,
+          "growth_momentum": 0
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": true,
+        "dimensionBreadthPass": true,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    },
+    {
+      "entityId": "co-zodia-custody",
+      "candidateId": "CCI-03",
+      "cohort": "CALIBRATION",
+      "mandateStatus": "NOT_ASSESSED",
+      "dimensions": [
+        {
+          "dimension": "capital_efficiency",
+          "effectiveWeights": {
+            "observable_scale_vs_capital": 0.5,
+            "operating_resource_intensity": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "growth_momentum",
+          "effectiveWeights": {
+            "adoption_and_usage_momentum": 0.5,
+            "developer_and_ecosystem_momentum": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50.5,
+          "coverage": 0.25,
+          "confidence": 0
+        },
+        {
+          "dimension": "founder_alignment",
+          "effectiveWeights": {
+            "team_execution_credibility": 0.5,
+            "governance_and_incentive_alignment": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 56.25,
+          "coverage": 0.75,
+          "confidence": 0.7133333333333333
+        },
+        {
+          "dimension": "market_quality",
+          "effectiveWeights": {
+            "problem_urgency_and_market_depth": 0.5,
+            "structural_and_regulatory_fit": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 60,
+          "coverage": 0.5,
+          "confidence": 0.94
+        },
+        {
+          "dimension": "business_model_quality",
+          "effectiveWeights": {
+            "value_capture_model": 0.5,
+            "economic_sustainability": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0,
+          "confidence": 0
+        },
+        {
+          "dimension": "gtm_quality",
+          "effectiveWeights": {
+            "distribution_and_integration_pull": 0.5,
+            "adoption_friction_and_ecosystem_access": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 50,
+          "coverage": 0.25,
+          "confidence": 0
+        },
+        {
+          "dimension": "competitive_position",
+          "effectiveWeights": {
+            "technical_and_product_differentiation": 0.5,
+            "defensibility_security_and_network_effects": 0.5
+          },
+          "excludedNotApplicable": [],
+          "unresolvedApplicability": [],
+          "score": 52.5,
+          "coverage": 0.5,
+          "confidence": 0.425
+        }
+      ],
+      "thesisFit": 52.7875,
+      "overallCoverage": 0.3125,
+      "overallConfidence": 0.5504,
+      "displayState": "INSUFFICIENT_EVIDENCE",
+      "dimensionsAtCoverageFloor": 3,
+      "criticalDimensionGuard": {
+        "status": "PROVISIONAL_DIGITAL_ASSET_V1",
+        "dimensions": [
+          "capital_efficiency",
+          "growth_momentum"
+        ],
+        "coverageByDimension": {
+          "capital_efficiency": 0,
+          "growth_momentum": 0.25
+        },
+        "pass": false
+      },
+      "evidenceSufficiency": {
+        "thresholdsActive": false,
+        "minOverallCoverage": 0.5,
+        "minOverallConfidence": 0.6,
+        "minDimensionsAtFloor": 4,
+        "dimensionCoverageFloor": 0.5,
+        "overallCoveragePass": false,
+        "overallConfidencePass": false,
+        "dimensionBreadthPass": false,
+        "confidenceEvaluable": true,
+        "result": "BELOW_PROVISIONAL_THRESHOLD"
+      },
+      "rankEligibility": "NOT_ASSESSED"
+    }
+  ]
+}

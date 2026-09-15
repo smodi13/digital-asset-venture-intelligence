@@ -1,0 +1,411 @@
+schemaVersion: 7
+candidateId: CPS-01
+canonicalId: co-fuel-network
+canonicalName: Fuel Network
+slug: fuel-network
+description: >-
+  Fuel is a modular execution-layer rollup network (branded "Fuel Ignition"
+  on mainnet) built around a custom parallelized virtual machine (FuelVM) and
+  the Sway smart-contract language, developed by Fuel Labs and governed
+  on-chain by a Fuel Security Council multisig. The FUEL token secures and
+  incentivizes the network alongside the equity of the developing company.
+domain: fuel.network
+firstObservedAt: "2022-09-06"
+category: core_protocols_and_scaling
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: Series B
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Fuel Labs is the primary development entity behind the Fuel protocol
+        and FuelVM; the live network (Fuel Ignition) is governed on-chain by
+        a separate Fuel Security Council multisig that controls upgrade keys
+        for the L1<->L2 bridge contracts.
+      relatedEntityId: null
+      relationType: developer_of_protocol
+  protocolNetworkRelationship: >-
+    Fuel Labs (company) develops the Fuel protocol; Fuel Ignition is the live
+    mainnet network instance; FUEL is the network's native token. The packet
+    treats these as one hybrid entity per the frozen universe assignment.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not establish the exact legal name or jurisdiction
+      of the Fuel Labs corporate entity, nor its precise relationship (if
+      any) to the nonprofit/foundation structure (if one exists) that may
+      hold the FUEL token treasury.
+people:
+  - id: per-nick-dodson
+    schemaVersion: 7
+    name: Nick Dodson
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-fuel-network
+        companyName: Fuel Labs
+        role: Co-founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-fuel-theblock-funding-2022]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-fuel-theblock-funding-2022]
+  - id: per-john-adler
+    schemaVersion: 7
+    name: John Adler
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-fuel-network
+        companyName: Fuel Labs
+        role: Co-founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-fuel-theblock-funding-2022]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-fuel-theblock-funding-2022]
+sources:
+  - id: src-fuel-theblock-funding-2022
+    schemaVersion: 7
+    publisher: The Block
+    title: "Fuel Labs raises $80 million for modular execution layer, touting superior speed"
+    url: "https://www.theblock.co/news/ecosystems/2022-09-06-fuel-labs-scaling-startup-fundraise-167763"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2022-09-06"
+    availabilityDate: "2022-09-06"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-fuel-theblock-ignition-2024
+    schemaVersion: 7
+    publisher: The Block
+    title: "Fuel Labs debuts 'Ignition' rollup network with focus on parallellization, UTXO-based model"
+    url: "https://www.theblock.co/post/321365/fuel-labs-debuts-ignition-rollup-network-with-focus-on-parallellization-utxo-based-model"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-10-15"
+    availabilityDate: "2024-10-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-fuel-coindesk-airdrop-2024
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Layer-2 Network Fuel to Airdrop 10% of New FUEL Token Supply to 200K Wallets"
+    url: "https://www.coindesk.com/business/2024/12/17/layer-2-network-fuel-to-airdrop-10-of-new-token-supply-to-200-k-wallets"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-12-17"
+    availabilityDate: "2024-12-17"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-fuel-l2beat-risk-2026
+    schemaVersion: 7
+    publisher: L2BEAT
+    title: "Fuel Ignition - project page and risk analysis"
+    url: "https://l2beat.com/layer2s/projects/fuel"
+    sourceType: onchain_analytics
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-07-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: onchain_fact
+  - id: src-fuel-docs-tokenomics
+    schemaVersion: 7
+    publisher: Fuel Labs
+    title: "Fuel Token Overview - Tokenomics"
+    url: "https://docs.fuel.network/docs/fuel-token-overview/tokenomics/"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: null
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+evidenceClaims:
+  - id: clm-fuel-funding-80m
+    schemaVersion: 7
+    companyId: co-fuel-network
+    claim: >-
+      Fuel Labs raised $80 million in a funding round announced September 6,
+      2022, led by Blockchain Capital and Stratos Technologies, with
+      participation from Alameda Research, CoinFund, Bain Capital Crypto,
+      TRGC, Maven 11 Capital, Blockwall, Spartan, Dialectic, and ZMT.
+    statedValue: "$80 million"
+    numericValue: 80000000
+    unit: usd
+    sourceId: src-fuel-theblock-funding-2022
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/news/ecosystems/2022-09-06-fuel-labs-scaling-startup-fundraise-167763"
+    publicationDate: "2022-09-06"
+    metricAsOfDate: "2022-09-06"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      One of the funding participants (Alameda Research) later became
+      insolvent and was the subject of separate, unrelated fraud
+      proceedings; this does not itself establish anything about Fuel Labs.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      What is the current cap-table/ownership structure and has any investor
+      exited or written down its position?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fuel-ignition-mainnet
+    schemaVersion: 7
+    companyId: co-fuel-network
+    claim: >-
+      Fuel Labs launched its "Fuel Ignition" mainnet rollup network on
+      October 15, 2024, emphasizing a parallelized transaction-execution
+      model and a UTXO-based state model.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-fuel-theblock-ignition-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/321365/fuel-labs-debuts-ignition-rollup-network-with-focus-on-parallellization-utxo-based-model"
+    publicationDate: "2024-10-15"
+    metricAsOfDate: "2024-10-15"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fuel-token-airdrop
+    schemaVersion: 7
+    companyId: co-fuel-network
+    claim: >-
+      Fuel opened FUEL token airdrop claims to more than 200,000 eligible
+      wallets on December 19, 2024, distributing 10% of total token supply
+      in the first genesis drop, with the claim window open through
+      January 19, 2025.
+    statedValue: "10% of total supply to 200,000+ wallets"
+    numericValue: null
+    unit: null
+    sourceId: src-fuel-coindesk-airdrop-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2024/12/17/layer-2-network-fuel-to-airdrop-10-of-new-token-supply-to-200-k-wallets"
+    publicationDate: "2024-12-17"
+    metricAsOfDate: "2024-12-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fuel-security-council-reduction
+    schemaVersion: 7
+    companyId: co-fuel-network
+    claim: >-
+      The Fuel Security Council multisig threshold, which can upgrade the
+      FuelERC20Gateway, FuelMessagePortal, and FuelChainState bridge
+      contracts with no timelock delay, was reduced across 2025-2026: from
+      9-of-12 (75%) on October 21, 2025, to 8-of-11 (73%) on January 9,
+      2026, to 7-of-10 (70%) prior to July 2026, and to 4-of-6 (67%) on
+      July 6, 2026, by removing four council members.
+    statedValue: "4 of 6 (67%) as of July 6, 2026"
+    numericValue: null
+    unit: null
+    sourceId: src-fuel-l2beat-risk-2026
+    supportingSourceIds: []
+    sourceUrl: "https://l2beat.com/layer2s/projects/fuel"
+    publicationDate: null
+    metricAsOfDate: "2026-07-06"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: risk
+    notes: >-
+      L2BEAT derives multisig membership and threshold directly from
+      on-chain contract state; this is a chain fact reported by an
+      independent risk-analytics provider, not a self-reported company
+      claim.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Why was the Security Council reduced repeatedly across three
+      consecutive periods, and what governance process (if any) approved
+      each reduction?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fuel-bridge-pause-2026
+    schemaVersion: 7
+    companyId: co-fuel-network
+    claim: >-
+      Fuel's official L1<->L2 bridge was paused (stopping deposits and
+      withdrawal messages) from July 2, 2026 to July 10, 2026, an eight-day
+      gap during which L2BEAT found no public communication explaining the
+      pause.
+    statedValue: null
+    numericValue: 8
+    unit: days
+    sourceId: src-fuel-l2beat-risk-2026
+    supportingSourceIds: []
+    sourceUrl: "https://l2beat.com/layer2s/projects/fuel"
+    publicationDate: null
+    metricAsOfDate: "2026-07-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: risk
+    notes: >-
+      This is a disclosure/governance-transparency finding by an
+      independent monitor, not an allegation of a hack or loss of funds.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      What caused the July 2026 bridge pause, and why was it not publicly
+      disclosed at the time?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-fuel-security-council-2026
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-fuel-network
+    subjectNameRaw: Fuel Network
+    signalType: governance_change
+    signalCategory: market
+    signalDirection: negative
+    sourceId: src-fuel-l2beat-risk-2026
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Fuel Security Council multisig threshold was reduced from 7-of-10 to
+      4-of-6 on July 6, 2026 (removing four members), coinciding with an
+      undisclosed eight-day bridge pause (July 2-10, 2026); the reduced
+      council retains no-timelock upgrade power over bridge contracts.
+    evidenceIds: [clm-fuel-security-council-reduction, clm-fuel-bridge-pause-2026]
+    publicationDate: null
+    availabilityDate: "2026-07-15"
+    eventDate: "2026-07-06"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-fuel-legal-entity
+    whatWasSearched: "Fuel Labs legal entity name, incorporation jurisdiction, and headquarters"
+    whatCouldNotBeEstablished: "No primary or high-reliability secondary source established the exact legal entity name or jurisdiction."
+    expectedToMatter: true
+  - id: gap-fuel-financing-stage
+    whatWasSearched: >-
+      An official financing-stage label (e.g., Series A/B) for the $80M 2022
+      round; the frozen universe contract labels it "Series B" citing an
+      official Fuel Labs blog post that is no longer live (redirects to a
+      generic Ghost hosting placeholder as of 2026-09-11).
+    whatCouldNotBeEstablished: >-
+      This packet carries financingStage "Series B" to match the frozen
+      universe contract, but could not independently re-verify that label
+      from a currently reachable primary source; The Block's contemporaneous
+      report described only a dollar amount, not a round letter.
+    expectedToMatter: false
+  - id: gap-fuel-network-metrics
+    whatWasSearched: "TVL, transaction volume, active addresses, protocol fees/revenue for Fuel Ignition"
+    whatCouldNotBeEstablished: "No independently sourced, dated figures for these metrics were established within the research budget for this batch."
+    expectedToMatter: true
+  - id: gap-fuel-total-capital-raised
+    whatWasSearched: "Total cumulative capital raised across all rounds"
+    whatCouldNotBeEstablished: >-
+      Aggregator sites (CryptoRank) state $90.9M across 7 rounds, but no
+      primary or independent-journalism source corroborates a figure beyond
+      the $80M 2022 round; not treated as evidence.
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Fuel Labs (company), the Fuel protocol/FuelVM, and Fuel Ignition
+    (network) are treated as one hybrid entity per the frozen universe
+    assignment; a Fuel Security Council multisig exercises governance
+    control over bridge contracts and is functionally distinct from Fuel
+    Labs the company, but no source clearly separates the two as legal
+    entities.
+  sourceOriginUncertainty: null
+  likelyContradictions: >-
+    Aggregator/tracker sites (CryptoRank) report cumulative funding of
+    $90.9M across 7 rounds versus the single well-corroborated $80M round
+    reported by The Block in 2022; this packet cites only the corroborated
+    figure and flags the discrepancy rather than resolving it.
+  completenessNotes: >-
+    Evidence density for this candidate is MODERATE per the frozen cohort
+    assignment. Research here prioritized financing, mainnet launch, token
+    launch, and the most material governance/risk finding (Security Council
+    reduction and undisclosed bridge pause) over exhaustive adoption-metric
+    collection.
+researchCutoff: "2026-09-10"

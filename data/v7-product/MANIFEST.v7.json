@@ -1,0 +1,12 @@
+{
+  "schemaVersion": 7,
+  "generatedAt": "2026-09-15T02:48:46.875Z",
+  "generator": "scripts/product/build-corpus.ts",
+  "companyCount": 44,
+  "cohortCounts": {
+    "CALIBRATION": 15,
+    "VALIDATION": 15,
+    "FINAL_TEST": 14
+  },
+  "sha256": "sha256:0cde2b410187d299294de2c686726fcc5dd39243b842f86ad6824c349ac4cc22"
+}

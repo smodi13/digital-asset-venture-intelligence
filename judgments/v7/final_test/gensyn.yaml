@@ -1,0 +1,185 @@
+schemaVersion: 7
+candidateId: CAI-04
+entityId: co-gensyn
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:565ee382d546254165522be8db412e4e31738a494a1be62ba954a95207314433
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-series-a-43m, clm-gensyn-company-financing-2025, clm-gensyn-mainnet-delphi]
+    rationale: >-
+      The packet documents $49.5 million across the seed and Series A and a
+      separate $16.7 million company round, plus an independently reported
+      mainnet and application launch. Launch is not observable operating scale,
+      and capital raised is not capital consumed, so the evidence supports a
+      capital-and-deployment context but no directional comparison.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Production workloads, customers, throughput, and capital deployed were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-protocol-design]
+    rationale: >-
+      Investor- and company-originated architecture describes compute providers,
+      off-chain workloads, verification, and blockchain settlement, all directly
+      relevant operating dependencies. The packet does not establish realized
+      capacity, utilization, provider payouts, or costs, so direction remains
+      neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Production compute supply, utilization, pricing, payouts, and operating costs were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Testnet, mainnet, product, and token launches are documented, but none is a
+      temporal usage series. Token-sale participation is financing demand, not
+      workload or customer momentum, and the packet has no retained-usage data.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related launch evidence exists, but growing and persistent workloads, users, transactions, fees, or customers were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      RL Swarm and the testnet were released, but releases alone do not establish
+      external developer growth or integration expansion. The later pause and
+      sunset of testnet products describes product status, not measured external
+      contributor or ecosystem momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related developer-product evidence exists, but external contributors, integrations, and ecosystem growth were not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 1
+    citedEvidenceClaimIds: [clm-gensyn-testnet-launch, clm-gensyn-mainnet-delphi, clm-gensyn-testnet-program-status]
+    rationale: >-
+      Gensyn progressed from a company-reported public testnet to an independently
+      reported live mainnet and Delphi application, demonstrating relevant
+      technical delivery. Independent reporting that earlier testnet products
+      were later paused and sunset limits the strength of the favorable signal
+      but does not erase the delivered network and application.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Sustained production operation and independently verified delivery quality remain unresolved.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-sale-design, clm-gensyn-legal-structure, clm-gensyn-token-launch]
+    rationale: >-
+      Issuer disclosures and reporting establish a 3% public-sale allocation, a
+      Foundation and treasury-manager structure, and a protocol-fee allocation
+      involving burns and the community treasury. These are relevant incentive
+      facts, but they do not establish operational governance authority, signer
+      control, treasury limits, ownership alignment, or token-holder rights.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Community governance authority, control rights, signer structure, and treasury constraints were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The decentralized-compute problem and launched products are described, but
+      the packet has no paid workload volume, provider utilization, contracted
+      customers, customer budgets, or evidence of realized compute demand.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related product descriptions exist, but funded customer demand, utilization, and reachable market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-legal-structure]
+    rationale: >-
+      The issuer's MiCA white paper documents a Cayman Foundation, token issuer,
+      and UK development company, providing directly relevant regulatory and
+      structural context. It does not establish regulatory acceptance,
+      restrictions, enforcement exposure, or a favorable or hostile trajectory.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Regulatory status, operating permissions, and inter-entity rights across jurisdictions were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-delphi-economics, clm-gensyn-token-launch]
+    rationale: >-
+      Independent reporting describes a 1.5% Delphi creator fee and a 0.5%
+      protocol fee intended for token repurchases, burns, and treasury flows.
+      These are relevant fee designs, but the creator fee is not Gensyn revenue
+      and fee-and-burn is not company revenue or token-holder ownership, leaving
+      actual entity-level capture unresolved.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Realized fees, company revenue ownership, and enforceable token-holder accrual were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Financing and token-sale facts do not establish revenue, cost, margin,
+      provider economics, burn, or subsidy dependence. Missing economics are
+      left neutral rather than treated as unsustainability.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, provider payouts, utilization, margins, costs, burn, and subsidy dependence were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Mainnet and application launches and a security-vendor engagement do not
+      establish customer acquisition, live customer integrations, repeatability,
+      expansion, or channel pull.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related launch and vendor evidence exists, but functioning customer integrations and distribution pull were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-rl-swarm-release, clm-gensyn-testnet-program-status]
+    rationale: >-
+      Company-reported MIT-licensed, permissionless RL Swarm access is relevant
+      to developer reach, while independent reporting that RL Swarm and other
+      testnet products were later paused and sunset limits continuity. The
+      packet does not establish onboarding time or production integration
+      burden, so the combined direction is neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current developer access, onboarding time, hardware burden, and production integration requirements were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-protocol-design, clm-gensyn-rl-swarm-release, clm-gensyn-testnet-launch]
+    rationale: >-
+      Company- and investor-originated materials describe a custom Ethereum
+      rollup with off-chain execution and verification plus permissionless
+      peer-to-peer collaborative reinforcement learning. These specific
+      mechanisms support limited favorable differentiation, but no independent
+      benchmark, comparative assessment, or realized cost advantage validates
+      the claims.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative validation, production throughput, and realized cost advantage were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-gensyn-security-monitoring]
+    rationale: >-
+      A vendor reported real-time monitoring and response coverage for the EVM
+      infrastructure and Delphi. This is relevant security-posture evidence but
+      is not independent corroboration or a scoped code audit and establishes no
+      switching costs, network effects, or broad safety conclusion.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Scoped public audits, reviewed commits, incidents, participant concentration, switching costs, and network effects were not established.
+analystNote: >-
+  Judgment keeps company financing, Foundation/token proceeds, application
+  fees, and network activity separate. First-party, investor, press-release,
+  and vendor evidence is identified as such and not treated as independent.

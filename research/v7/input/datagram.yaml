@@ -1,0 +1,166 @@
+schemaVersion: 7
+candidateId: DPC-04
+canonicalId: datagram
+canonicalName: Datagram
+slug: datagram
+description: Coordination and interoperability network for distributed DePIN workloads.
+domain: https://datagram.network
+firstObservedAt: "2025-06-11"
+category: depin_and_decentralized_compute
+entityType: network
+assetType: token
+institutionalOrientation: false
+digitalAssetLifecycle: testnet
+financingStage: unknown
+cohort: VALIDATION
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Datagram describes its Alpha environment as a testnet node network; a distinct operating-company boundary is not established in the dated sources.
+  unresolvedBoundaryNotes:
+    - The legal operator and founder identities were not established from dated public evidence.
+people: []
+sources:
+  - id: src-datagram-alpha-2025
+    schemaVersion: 7
+    publisher: Datagram
+    title: Join the Alpha Testnet
+    url: https://datagram.network/alpha-testnet.html
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-06-11"
+    availabilityDate: "2025-06-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-datagram-funding-wire-2025
+    schemaVersion: 7
+    publisher: Chainwire
+    title: Blizzard the Avalanche Fund Leads Datagram's $4M Pre-Seed Round
+    url: https://chainwire.org/2025/07/01/blizzard-the-avalanche-fund-leads-datagrams-4m-pre-seed-round-to-become-depin-baselayer/
+    sourceType: specialist_industry
+    tier: c
+    reliability: 0.45
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-01"
+    availabilityDate: "2025-07-01"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: repeated_announcement
+evidenceClaims:
+  - id: ev-datagram-alpha-testnet
+    schemaVersion: 7
+    companyId: datagram
+    claim: Datagram described Alpha as an early-stage testnet in which selected users operate nodes and test performance, stability, and reward mechanics.
+    statedValue: Alpha Testnet
+    numericValue: null
+    unit: null
+    sourceId: src-datagram-alpha-2025
+    supportingSourceIds: []
+    sourceUrl: https://datagram.network/alpha-testnet.html
+    publicationDate: "2025-06-11"
+    metricAsOfDate: null
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product_status
+    notes: This establishes a testnet announcement and described function, not mainnet operation or production demand.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: What independently observable workload, node, and mainnet evidence exists?
+    researchAssessmentId: datagram-product-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: ev-datagram-preseed-announcement
+    schemaVersion: 7
+    companyId: datagram
+    claim: A Chainwire publication reproducing a Datagram announcement reported a $4 million pre-seed round led by Blizzard the Avalanche Fund.
+    statedValue: $4 million pre-seed
+    numericValue: 4
+    unit: usd_millions
+    sourceId: src-datagram-funding-wire-2025
+    supportingSourceIds: []
+    sourceUrl: https://chainwire.org/2025/07/01/blizzard-the-avalanche-fund-leads-datagrams-4m-pre-seed-round-to-become-depin-baselayer/
+    publicationDate: "2025-07-01"
+    metricAsOfDate: "2025-07-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: financing
+    notes: This is a press-release reproduction and is not independent confirmation of amount, close, or investor participation.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: Obtain an independent report, filing, or investor confirmation for the round and legal recipient.
+    researchAssessmentId: datagram-financing-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-datagram-alpha-launch-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: datagram
+    subjectNameRaw: Datagram Network
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-datagram-alpha-2025
+    rawStrength: 0.45
+    evidenceSummary: Datagram announced an early-stage Alpha Testnet for node operation and testing.
+    evidenceIds: [ev-datagram-alpha-testnet]
+    publicationDate: "2025-06-11"
+    availabilityDate: "2025-06-11"
+    eventDate: "2025-06-11"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-datagram-preseed-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: datagram
+    subjectNameRaw: Datagram Network
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-datagram-funding-wire-2025
+    rawStrength: 0.3
+    evidenceSummary: A company-originated wire announcement reported a $4 million pre-seed financing.
+    evidenceIds: [ev-datagram-preseed-announcement]
+    publicationDate: "2025-07-01"
+    availabilityDate: "2025-07-01"
+    eventDate: "2025-07-01"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: Public evidence reviewed is a press-release reproduction and does not independently establish the round close or legal recipient.
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-datagram-team
+    whatWasSearched: Official site, documentation, and dated industry coverage for founders, leadership, legal entity, and headquarters.
+    whatCouldNotBeEstablished: Founder identities, leadership, legal structure, and headquarters from reliable dated sources.
+    expectedToMatter: true
+  - id: gap-datagram-usage
+    whatWasSearched: Official Alpha materials for independently reconstructable workload, node-count, and adoption metrics.
+    whatCouldNotBeEstablished: Independently corroborated testnet or mainnet usage metrics available on or before 2026-09-10.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: The testnet terms identify an operator, but the dated Alpha materials do not establish how that operator, the network, and any token issuer relate.
+  sourceOriginUncertainty: The funding item is a wire reproduction; it is retained as a single company-originated voice.
+  likelyContradictions: null
+  completenessNotes: Product status and a reported financing were established conservatively; material identity, governance, token, and operating evidence remains sparse.
+researchCutoff: "2026-09-10"

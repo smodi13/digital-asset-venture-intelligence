@@ -1,0 +1,459 @@
+schemaVersion: 7
+candidateId: DOI-02
+canonicalId: co-chronicle-protocol
+canonicalName: Chronicle Protocol
+slug: chronicle-protocol
+description: >-
+  Chronicle Protocol is a decentralized oracle network, developed by
+  Chronicle Labs Ltd, that originated as MakerDAO's Oracle Core Unit and
+  now provides on-chain price and data feeds (via its "Scribe" mechanism)
+  to DeFi and real-world-asset (RWA) platforms, including continued service
+  to Sky (formerly MakerDAO).
+domain: chroniclelabs.org
+firstObservedAt: "2022-01-01"
+category: data_oracles_and_indexing
+entityType: hybrid
+assetType: unknown
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Chronicle Labs Ltd (Zug, Switzerland) is the development entity
+        behind Chronicle Protocol; the protocol originated inside
+        MakerDAO's Oracle Core Unit and was spun out as an independent
+        company, retaining an ongoing oracle-service relationship with Sky
+        (formerly MakerDAO).
+      relatedEntityId: null
+      relationType: spun_out_of_makerdao_oracle_core_unit
+  protocolNetworkRelationship: >-
+    Chronicle Labs Ltd develops and operates the Chronicle oracle network;
+    the underlying validator set includes both Chronicle-run and
+    third-party financial-data-provider nodes.
+  unresolvedBoundaryNotes:
+    - >-
+      No source established whether a separate token or token-based
+      instrument exists for Chronicle; assetType is recorded as unknown per
+      the frozen universe assignment.
+people:
+  - id: per-niklas-kunkel
+    schemaVersion: 7
+    name: Niklas Kunkel
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-chronicle-protocol
+        companyName: Chronicle Labs Ltd
+        role: Co-founder
+        startDate: "2022-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-chronicle-theblock-seed-2025]
+    priorCompanies:
+      - "MakerDAO Oracle Core Unit"
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-chronicle-theblock-seed-2025]
+sources:
+  - id: src-chronicle-theblock-seed-2025
+    schemaVersion: 7
+    publisher: The Block
+    title: "Why Chronicle, Ethereum's first oracle, is raising a seed round seven years after launch"
+    url: "https://www.theblock.co/post/348308/chronicle-oracle-raises-seed-makerdao-sky-real-world-assets-tokenization"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-26"
+    availabilityDate: "2025-03-26"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-chronicle-coindesk-seed-2025
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Blockchain Data Provider Chronicle Raises $12M to Expand Infrastructure for Tokenized Assets"
+    url: "https://www.coindesk.com/business/2025/03/25/blockchain-data-provider-chronicle-raises-usd12m-to-expand-infrastructure-for-tokenized-assets"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-25"
+    availabilityDate: "2025-03-25"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-chronicle-theblock-rwa-2025
+    schemaVersion: 7
+    publisher: The Block
+    title: "MakerDAO securer Chronicle launching RWA oracle via M^0 integration"
+    url: "https://www.theblock.co/post/312448/makerdao-chronicle-rwa-oracle"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-08-21"
+    availabilityDate: "2024-08-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-chronicle-chainsecurity-audit
+    schemaVersion: 7
+    publisher: ChainSecurity
+    title: "Chronicle - Scribe (MakerDAO) Security Audit"
+    url: "https://www.chainsecurity.com/security-audit/chronicle-scribe-makerdao"
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2023-09-05"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: audit_finding
+  - id: src-chronicle-launch-globenewswire-2023
+    schemaVersion: 7
+    publisher: Chronicle Protocol (GlobeNewswire press release)
+    title: "Chronicle Protocol, the Exclusive $5B+ Oracle of MakerDAO, Opens Access to All Web3 Builders"
+    url: "https://www.globenewswire.com/news-release/2023/09/05/2737624/0/en/Chronicle-Protocol-the-Exclusive-5B-Oracle-of-MakerDAO-Opens-Access-to-All-Web3-Builders.html"
+    sourceType: official_company
+    tier: c
+    reliability: 0.4
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-09-05"
+    availabilityDate: "2023-09-05"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+digitalAssetMetrics: null
+evidenceClaims:
+  - id: clm-chronicle-seed-12m
+    schemaVersion: 7
+    companyId: co-chronicle-protocol
+    claim: >-
+      Chronicle Labs raised $12 million in a seed round announced March
+      25-26, 2025, led by Strobe Ventures (formerly BlockTower Capital),
+      with participation from Galaxy Vision Hill, Brevan Howard Digital,
+      and angel investors including Sky/MakerDAO founder Rune Christensen,
+      Andre Cronje, and Stani Kulechov.
+    statedValue: "$12 million"
+    numericValue: 12000000
+    unit: usd
+    sourceId: src-chronicle-theblock-seed-2025
+    supportingSourceIds: [src-chronicle-coindesk-seed-2025]
+    sourceUrl: "https://www.theblock.co/post/348308/chronicle-oracle-raises-seed-makerdao-sky-real-world-assets-tokenization"
+    publicationDate: "2025-03-26"
+    metricAsOfDate: "2025-03-26"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Two independent-journalism outlets (The Block, CoinDesk) reported
+      this round with materially consistent figures and investor lists on
+      consecutive days; treated as independently corroborated, not a
+      single-origin reproduction.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-chronicle-origin
+    schemaVersion: 7
+    companyId: co-chronicle-protocol
+    claim: >-
+      Chronicle Protocol originated as MakerDAO's Oracle Core Unit and was
+      spun out as an independent company (Chronicle Labs Ltd) after the
+      Maker Foundation dissolved; it publicly launched its oracle service
+      outside the Maker ecosystem in September 2023 and continues to serve
+      Sky (formerly MakerDAO) as a client/data provider.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-chronicle-theblock-seed-2025
+    supportingSourceIds: [src-chronicle-theblock-rwa-2025]
+    sourceUrl: "https://www.theblock.co/post/348308/chronicle-oracle-raises-seed-makerdao-sky-real-world-assets-tokenization"
+    publicationDate: "2025-03-26"
+    metricAsOfDate: null
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      Chronicle's continued commercial relationship with Sky/MakerDAO is a
+      concentration/dependency fact worth surfacing: a material share of
+      Chronicle's demonstrated track record (per-source claims of
+      securing tens of billions of dollars in Maker/Sky collateral over
+      time) is tied to one long-standing client relationship.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      What share of Chronicle's current revenue or usage depends on the
+      Sky/MakerDAO relationship versus newer RWA/DeFi integrations
+      (Centrifuge, Midas, Superstate, M^0, Euler, Morpho)?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-chronicle-m0-integration
+    schemaVersion: 7
+    companyId: co-chronicle-protocol
+    claim: >-
+      Chronicle integrated its real-world-asset oracle with M^0, an
+      Ethereum-based overcollateralized stablecoin protocol, to validate
+      collateral balances for M^0's $M token, announced August 21, 2024.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-chronicle-theblock-rwa-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/312448/makerdao-chronicle-rwa-oracle"
+    publicationDate: "2024-08-21"
+    metricAsOfDate: "2024-08-21"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-chronicle-public-launch-2023
+    schemaVersion: 7
+    companyId: co-chronicle-protocol
+    claim: >-
+      Chronicle Protocol publicly launched its Scribe oracle product on
+      September 5, 2023, opening access outside the MakerDAO ecosystem for
+      the first time, and described itself at launch as safeguarding over
+      $5 billion for MakerDAO and its ecosystem.
+    statedValue: ">$5 billion safeguarded for MakerDAO (as of Sept 2023, self-reported)"
+    numericValue: null
+    unit: null
+    sourceId: src-chronicle-launch-globenewswire-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.globenewswire.com/news-release/2023/09/05/2737624/0/en/Chronicle-Protocol-the-Exclusive-5B-Oracle-of-MakerDAO-Opens-Access-to-All-Web3-Builders.html"
+    publicationDate: "2023-09-05"
+    metricAsOfDate: "2023-09-05"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      The launch date is corroborated by independent coverage referencing
+      the same September 2023 launch (Messari, Token Terminal); the "$5
+      billion safeguarded" figure is the company's own characterization at
+      launch time, not independently audited.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-chronicle-chainsecurity-audit-2023
+    schemaVersion: 7
+    companyId: co-chronicle-protocol
+    claim: >-
+      ChainSecurity audited Chronicle's Scribe oracle mechanism ahead of
+      its September 2023 public launch. The audit's stated scope covered
+      functional correctness, integration of the signature scheme, and
+      access control (plus code complexity, external-system integration,
+      and documentation quality); the Schnorr signature scheme's underlying
+      cryptography was explicitly excluded from scope. Three issues were
+      identified (stale poke-data on update; finalized-status assessment
+      after an authenticated action; unreset op-poke-data after an
+      unsuccessful challenge), all of which were resolved or acknowledged
+      by the Chronicle team. ChainSecurity's stated conclusion was that
+      "the codebase provides a good level of security," not that the
+      protocol is secure without qualification.
+    statedValue: "3 issues found, all resolved or acknowledged"
+    numericValue: 3
+    unit: audit_findings
+    sourceId: src-chronicle-chainsecurity-audit
+    supportingSourceIds: [src-chronicle-launch-globenewswire-2023]
+    sourceUrl: "https://www.chainsecurity.com/security-audit/chronicle-scribe-makerdao"
+    publicationDate: null
+    metricAsOfDate: "2023-09-05"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: security
+    notes: >-
+      This audit covers the Scribe mechanism as it existed at the 2023
+      launch. It is explicit evidence that a historical, scoped audit
+      occurred with a specific, bounded scope (and one explicit exclusion:
+      the Schnorr signature scheme cryptography itself). It is NOT evidence
+      that Chronicle's current production contracts (as of the research
+      cutoff) are comprehensively audited, nor that "Chronicle is secure"
+      in any general sense; no audit report covering current code, and no
+      exploit/incident history, was found within the research budget for
+      this batch. These are two distinct claims and this packet keeps them
+      distinct.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Has Chronicle's Scribe mechanism, or any newer component, been
+      audited again since 2023, and does any audit cover code changes made
+      after the original review?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: >-
+      The codebase provides a good level of security.
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-chronicle-public-launch-2023
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-chronicle-protocol
+    subjectNameRaw: Chronicle Labs
+    signalType: product_launch
+    signalCategory: product
+    signalDirection: positive
+    sourceId: src-chronicle-launch-globenewswire-2023
+    rawStrength: 0.45
+    evidenceSummary: >-
+      Chronicle Protocol publicly launched its Scribe oracle product on
+      September 5, 2023, opening access outside MakerDAO for the first
+      time, preceded by a ChainSecurity audit of the Scribe mechanism.
+    evidenceIds: [clm-chronicle-public-launch-2023, clm-chronicle-chainsecurity-audit-2023]
+    publicationDate: "2023-09-05"
+    availabilityDate: "2023-09-05"
+    eventDate: "2023-09-05"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-chronicle-m0-integration
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-chronicle-protocol
+    subjectNameRaw: Chronicle Labs
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: positive
+    sourceId: src-chronicle-theblock-rwa-2025
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Chronicle integrated its RWA oracle with M^0 to validate collateral
+      for M^0's $M stablecoin, announced August 21, 2024, extending
+      Chronicle's RWA-oracle footprint beyond its original MakerDAO/Sky
+      relationship.
+    evidenceIds: [clm-chronicle-m0-integration]
+    publicationDate: "2024-08-21"
+    availabilityDate: "2024-08-21"
+    eventDate: "2024-08-21"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-chronicle-seed-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-chronicle-protocol
+    subjectNameRaw: Chronicle Labs
+    signalType: funding
+    signalCategory: capital
+    signalDirection: positive
+    sourceId: src-chronicle-theblock-seed-2025
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Chronicle Labs raised a $12 million seed round in March 2025, led by
+      Strobe Ventures with participation from Galaxy Vision Hill and Brevan
+      Howard Digital, independently reported by The Block and CoinDesk.
+    evidenceIds: [clm-chronicle-seed-12m]
+    publicationDate: "2025-03-26"
+    availabilityDate: "2025-03-26"
+    eventDate: "2025-03-25"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-chronicle-corporate-structure
+    whatWasSearched: "Current corporate structure, cap table, and full headcount for Chronicle Labs Ltd"
+    whatCouldNotBeEstablished: >-
+      Beyond the March 2025 seed round and Zug, Switzerland registration,
+      no source established a fuller corporate structure or headcount.
+    expectedToMatter: false
+  - id: gap-chronicle-revenue
+    whatWasSearched: "Chronicle's fee/revenue model and actual protocol revenue figures"
+    whatCouldNotBeEstablished: >-
+      Sources describe cumulative value secured (a security/track-record
+      claim) but not a sourced, dated revenue or fee figure suitable for a
+      digitalAssetMetrics record.
+    expectedToMatter: true
+  - id: gap-chronicle-audit-scope
+    whatWasSearched: "Current security audit coverage and any exploit/incident history for Chronicle's live Scribe contracts"
+    whatCouldNotBeEstablished: >-
+      This packet now records the 2023 ChainSecurity audit of Scribe as it
+      existed at launch, including its explicit scope and one explicit
+      exclusion (the Schnorr signature scheme cryptography). What remains
+      unestablished: whether any audit has covered Chronicle's current
+      production contracts (post-2023 code changes), and no exploit/
+      incident history was found for Chronicle at any point. "A historical
+      audit exists" and "current code is comprehensively audited" are kept
+      as two distinct, separately gapped claims.
+    expectedToMatter: true
+  - id: gap-chronicle-token
+    whatWasSearched: "Whether Chronicle has any token or token-based instrument"
+    whatCouldNotBeEstablished: "No source confirmed or denied a token; assetType recorded as unknown."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Chronicle Labs Ltd (company) and the Chronicle oracle network/protocol
+    are treated as one hybrid entity per the frozen universe assignment.
+  sourceOriginUncertainty: null
+  likelyContradictions: null
+  completenessNotes: >-
+    Evidence density MODERATE per the frozen cohort assignment. This
+    research substantially extends the Phase 3A universe note (which found
+    "external funding amount/investors... not established") with a
+    corroborated March 2025 seed round, and this QA pass further adds the
+    September 2023 public launch and the ChainSecurity Scribe audit (with
+    explicit scope and one explicit exclusion), distinguishing a historical
+    scoped audit from any claim of current comprehensive audit coverage.
+    All additions are additive evidence, not corrections to any frozen
+    field.
+researchCutoff: "2026-09-10"

@@ -1,0 +1,14 @@
+# Headline Radar input.
+#
+# EMPTY BY DESIGN. The Batch 1 handoff contains no separately approved headline
+# research. The 67 curated events in events.yaml are the authoritative Batch 1
+# event record.
+#
+# Generating headlines from evidence summaries purely to exercise this file
+# would manufacture research, and would put classifier output into the corpus
+# with nothing behind it. The adapter and its tests remain covered by synthetic
+# fixtures in tests/, which is where synthetic data belongs.
+
+schemaVersion: 6
+
+headlines: []

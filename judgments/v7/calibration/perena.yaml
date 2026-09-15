@@ -1,0 +1,207 @@
+schemaVersion: 7
+candidateId: SAP-03
+entityId: co-perena
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:399eb160035ef89db7ba9aa7679c30c15bbe6ae57ce978028c6b4ff7eb193128"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Primary capital consumed is only partly known ($3M pre-seed disclosed;
+      a second July 2025 round exists but its amount is undisclosed in
+      every source found). No network/product scale metric (pool TVL,
+      transaction volume, LP count) exists as an EvidenceClaim: live
+      dashboard TVL data was deliberately excluded from this frozen packet
+      as not independently pinnable to a dated, citable figure. No
+      responsible ratio can be judged.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Second-round amount is undisclosed (gap-perena-second-round-amount);
+      no citable scale metric exists in the frozen packet.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, compute, or liquidity-incentive
+      cost for operating the Numeraire pool.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the frozen
+      packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents pool deposits, LP count, or usage over time. Live
+      TVL/volume dashboard data was deliberately excluded as not
+      responsibly pinnable to a dated, pre-cutoff figure, so no momentum
+      judgment can be made from it.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No usage or growth-trend evidence exists in the frozen packet.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party integration
+      growth for Perena or Numeraire.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 58
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-perena-preseed, clm-perena-product-roadmap]
+    rationale: >-
+      Anna Yuan is independently reported (CoinDesk) as founder, with a
+      directly problem-relevant prior role leading stablecoin initiatives
+      at the Solana Foundation, not merely a prestigious but unrelated
+      affiliation. The team shipped a live protocol (Numeraire, mainnet
+      per the frozen lifecycle field) and published a concrete product
+      roadmap. No co-founder or additional team member is named anywhere in
+      the frozen packet, which limits how far execution credibility can be
+      extended beyond the one sourced founder.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No team roster beyond the single named founder exists
+      (gap-perena-team-roster); no claim documents specific prior
+      achievements at the Solana Foundation beyond the role title.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents control, admin-key, or ownership structure for
+      Perena. No protocol token has launched (leadership is reported
+      elsewhere as stating none is planned "for the foreseeable future",
+      but that commentary is not captured as a citable EvidenceClaim in
+      this frozen packet), so no token-allocation or governance-token
+      structure exists to assess either.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No governance, control, or incentive-structure evidence exists in the
+      frozen packet; Perena's legal entity itself is unresolved
+      (gap-perena-legal-entity).
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying demand, workflow criticality, or
+      costly third-party integration establishing funded urgency for
+      multi-stablecoin liquidity/structured-yield infrastructure. Investor
+      funding of the company is evidence of investor conviction, not of
+      user willingness to pay, and is judged separately under team
+      execution and capital criteria.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses jurisdictional exposure or regulatory trajectory
+      for Perena. No legal entity, jurisdiction, or headquarters was
+      established in any public source found.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Legal entity, jurisdiction, and HQ are unresolved
+      (gap-perena-legal-entity); no regulatory-trajectory evidence exists.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The Numeraire design and CDP-stablecoin roadmap describe product
+      mechanics, not a documented company- or protocol-side fee or
+      take-rate mechanism. No claim establishes how Perena itself (as
+      distinct from LPs earning tranched yield) captures value.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee-capture or take-rate evidence distinct from LP yield-sharing
+      design exists in the frozen packet.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, contribution economics, or reliance on
+      continued fundraising versus organic revenue to fund operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No cost-structure or capital-reliance evidence exists in the frozen
+      packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable sales
+      channel, or composability-driven integration pull for Numeraire
+      beyond its own Solana deployment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution or integration-pull evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding friction, compliance requirements, or
+      wallet/UX barriers for depositing into or redeeming from Numeraire.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No friction or ecosystem-access evidence exists in the frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The hub-and-spoke multi-stablecoin pool design and CDP-stablecoin
+      roadmap are described only in Perena's own materials
+      (company-reported roadmap), with no independent technical assessment
+      or benchmark against alternative stablecoin-AMM designs. Per the
+      criterion, whitepaper/self-benchmark claims are not proof.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment of the Numeraire architecture
+      exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No third-party security audit of Numeraire was established. No
+      claim documents liquidity retention, validator/operator base, or
+      observed resistance to competitive displacement.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No confirmed security audit exists (gap-perena-security-audit); no
+      liquidity-retention or competitive-moat evidence exists in the
+      frozen packet.

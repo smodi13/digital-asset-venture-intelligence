@@ -1,0 +1,232 @@
+schemaVersion: 7
+candidateId: SPC-04
+entityId: co-cyfrin
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:23f33566fa815c9f8e582a862031d724c82778c42b3580adcce5e66e3bfbe16d"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No confirmed external funding was found (a single low-confidence
+      aggregator characterizes Cyfrin as unfunded), so no capital-consumed
+      baseline exists. The self-reported "$100B+ value secured" and
+      "$110M advised" figures have no disclosed methodology and are not
+      independently corroborated, so no responsible scale-vs-capital ratio
+      can be judged.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No confirmed funding baseline exists (gap-cyfrin-funding); no
+      independently corroborated scale metric exists distinct from
+      self-reported aggregates.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, compute, or infrastructure cost
+      for Cyfrin's audit, tooling, or education operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the frozen
+      packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The self-reported "120+ customers" figure is a single point-in-time
+      aggregate with no disclosed methodology and no independent
+      corroboration of the count itself, so it cannot establish that usage
+      is recently growing or persisting rather than simply cumulative
+      since founding.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No dated growth trend for customers, audits performed, or repeat
+      engagements exists in the frozen packet; only an undated aggregate
+      count is claimed.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Cyfrin maintains a public GitHub organization (independently
+      observable), but no claim documents growth in external contributors
+      or third-party integrations; repository existence alone does not
+      establish momentum per the criterion definition.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No contributor-growth or third-party-integration evidence exists in
+      the frozen packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-cyfrin-founder-patrick-collins, clm-cyfrin-identity-products]
+    rationale: >-
+      Patrick Collins is independently identifiable as co-founder (GitHub
+      profile, a third-party professional-network listing), corroborated
+      distinctly from Cyfrin's own "About Us" page, which names different
+      individuals in leadership roles that could not be reconciled with
+      this attribution. Per the criterion, prior Chainlink Labs affiliation
+      alone contributes zero; the anchor instead rests on demonstrated
+      delivery: the company built and operates four distinct shipped
+      products (CodeHawks, Solodit, Aderyn, Updraft). The unreconciled
+      leadership roster and absence of any other named team member limits
+      how far this can be credited.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Cyfrin's own leadership roster (per its About Us page) does not
+      reconcile with the independently corroborated founder attribution
+      (gap-cyfrin-leadership-roster); no other team member is named or
+      sourced.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses control, ownership, or incentive structure for
+      Cyfrin Inc. (a private company with no token). The unreconciled
+      leadership-roster discrepancy bears on identity/team credibility
+      above, not on any documented governance or incentive mechanism.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No governance, control, or ownership-structure evidence exists in
+      the frozen packet.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-cyfrin-clients-scale]
+    rationale: >-
+      Cyfrin names specific, recognizable clients (ZKsync, Chainlink,
+      Wormhole, Curve) for which Cyfrin-authored audit reports are publicly
+      listed in its GitHub audit-reports repository, independently
+      corroborating that these named engagements are real rather than
+      wholly self-reported. This supports genuine funded demand (protocols
+      pay for security audits) for at least a handful of named engagements,
+      though the aggregate "$100B+ secured" and "120+ customers" figures
+      remain unverified and are not relied on here.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The aggregate customer count and dollar-value figures are
+      self-reported with no disclosed methodology and no independent
+      corroboration beyond the named clients whose audit reports are
+      publicly listed.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses Cyfrin's incorporation jurisdiction, licensing, or
+      regulatory trajectory; security auditing is a largely unregulated
+      service line and no claim discusses any regulatory exposure or
+      tailwind specific to Cyfrin.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Cyfrin's incorporation jurisdiction and HQ are not independently
+      confirmed (gap-cyfrin-hq-legal-entity); no regulatory-trajectory
+      evidence exists.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents Cyfrin's actual pricing, fee structure, or
+      recurring-revenue mechanism for audits or tooling. The "$110M under
+      security advisory" figure describes the value of assets advised on,
+      not company revenue or a fee/take-rate mechanism.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee, pricing, or recurring-revenue-mechanism evidence exists in
+      the frozen packet.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses cost structure, burn, or reliance on external
+      capital to fund operations. The absence of a confirmed funding round
+      is itself unresolved (aggregator-only, low confidence) and does not
+      establish either self-sufficiency or capital dependence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No cost-structure or capital-reliance evidence exists in the frozen
+      packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-cyfrin-identity-products]
+    rationale: >-
+      CodeHawks is structurally a self-serve, competitive audit marketplace
+      rather than a purely direct-sales audit shop, which is a genuine
+      distribution-mechanism fact. No claim, however, documents actual
+      traction, repeat usage, or integration-driven growth on that
+      marketplace, so the anchor stays neutral rather than crediting an
+      unevidenced growth trend.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No claim documents CodeHawks marketplace transaction volume, repeat
+      usage, or integration-driven growth.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding time, pricing friction, or engagement
+      process for a protocol seeking a Cyfrin audit or tooling engagement.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No onboarding or engagement-friction evidence exists in the frozen
+      packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim independently assesses Aderyn's static-analysis performance,
+      CodeHawks' audit-quality outcomes, or Solodit's dataset value against
+      alternative tools; the frozen packet only describes what these
+      products are, not an independent differentiation assessment, and
+      self-description is not proof per the criterion definition.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment or benchmark of Cyfrin's tooling
+      exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Operating a security company is a business-model description, not
+      evidence of a moat; per the entity-specific caution, security
+      positioning is distinguished here from evidence of defensibility. No
+      claim documents switching costs, competitive displacement resistance,
+      or network effects specific to Cyfrin's marketplace or tooling.
+      Search for a negative security-track-record event tied specifically
+      to a Cyfrin audit found none, but this absence is recorded as an
+      unresolved research gap, not as affirmative evidence of a clean
+      record.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No moat-specific (switching-cost, network-effect, or
+      forkability-resistance) evidence exists; whether any Cyfrin-audited
+      protocol was later exploited within the audited scope could not be
+      established either way (gap-cyfrin-audit-track-record).

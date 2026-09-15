@@ -1,0 +1,1581 @@
+[
+  {
+    "id": "per-aethir-daniel-wang",
+    "schemaVersion": 7,
+    "name": "Daniel Wang",
+    "aliases": [],
+    "currentRole": "Co-founder / CEO in third-party research",
+    "companyTenures": [
+      {
+        "companyId": "co-aethir",
+        "companyName": "Aethir",
+        "role": "Co-founder",
+        "startDate": "2024-03-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-aethir-impossible-report-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Riot Games",
+      "YGG SEA"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-aethir-impossible-report-2024"
+    ]
+  },
+  {
+    "id": "per-aethir-kyle-okamoto",
+    "schemaVersion": 7,
+    "name": "Kyle Okamoto",
+    "aliases": [],
+    "currentRole": "CTO",
+    "companyTenures": [
+      {
+        "companyId": "co-aethir",
+        "companyName": "Aethir",
+        "role": "CTO",
+        "startDate": "2024-03-01",
+        "endDate": null,
+        "isFounder": false,
+        "sourceIds": [
+          "src-aethir-impossible-report-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Ericsson",
+      "Edge Gravity",
+      "Verizon Media"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-aethir-impossible-report-2024"
+    ]
+  },
+  {
+    "id": "per-aethir-mark-rydon",
+    "schemaVersion": 7,
+    "name": "Mark Rydon",
+    "aliases": [],
+    "currentRole": "Co-founder / CEO or CSO in different public materials",
+    "companyTenures": [
+      {
+        "companyId": "co-aethir",
+        "companyName": "Aethir",
+        "role": "Co-founder",
+        "startDate": "2023-07-26",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-aethir-pr-prea-2023",
+          "src-aethir-impossible-report-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-aethir-pr-prea-2023",
+      "src-aethir-impossible-report-2024"
+    ]
+  },
+  {
+    "id": "per-agora-drake-evans",
+    "schemaVersion": 7,
+    "name": "Drake Evans",
+    "aliases": [],
+    "currentRole": "Co-founder and CTO",
+    "companyTenures": [
+      {
+        "companyId": "co-agora",
+        "companyName": "Agora",
+        "role": "Co-founder and CTO",
+        "startDate": "2024-04-02",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-agora-seed-pr-2024",
+          "src-agora-theblock-series-a-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Coinbase"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-agora-seed-pr-2024",
+      "src-agora-theblock-series-a-2025"
+    ]
+  },
+  {
+    "id": "per-agora-joe-mcgrady",
+    "schemaVersion": 7,
+    "name": "Joe McGrady",
+    "aliases": [],
+    "currentRole": "Co-founder and COO",
+    "companyTenures": [
+      {
+        "companyId": "co-agora",
+        "companyName": "Agora",
+        "role": "Co-founder and COO",
+        "startDate": "2024-04-02",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-agora-seed-pr-2024",
+          "src-agora-theblock-series-a-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Coinbase"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-agora-seed-pr-2024",
+      "src-agora-theblock-series-a-2025"
+    ]
+  },
+  {
+    "id": "per-agora-nick-van-eck",
+    "schemaVersion": 7,
+    "name": "Nick van Eck",
+    "aliases": [],
+    "currentRole": "Co-founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-agora",
+        "companyName": "Agora",
+        "role": "Co-founder and CEO",
+        "startDate": "2024-04-02",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-agora-seed-pr-2024",
+          "src-agora-theblock-series-a-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-agora-seed-pr-2024",
+      "src-agora-theblock-series-a-2025"
+    ]
+  },
+  {
+    "id": "per-alex-page",
+    "schemaVersion": 7,
+    "name": "Alex Page",
+    "aliases": [],
+    "currentRole": "CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-nillion",
+        "companyName": "Nillion",
+        "role": "CEO",
+        "startDate": "2021-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-nillion-coindesk-seriesA-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Hedera",
+      "Goldman Sachs"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-nillion-coindesk-seriesA-2024"
+    ]
+  },
+  {
+    "id": "per-amir-sarhangi",
+    "schemaVersion": 7,
+    "name": "Amir Sarhangi",
+    "aliases": [],
+    "currentRole": "Co-Founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-skyfire",
+        "companyName": "Skyfire",
+        "role": "Co-Founder and CEO",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-skyfire-techcrunch-launch-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Ripple (VP of Products)",
+      "Jibe Mobile (Founder and CEO)",
+      "Google (leadership role, following Jibe Mobile acquisition, 2015)"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-skyfire-techcrunch-launch-2024",
+      "src-skyfire-theaiinsider-launch-2025"
+    ]
+  },
+  {
+    "id": "per-andrew-masanto",
+    "schemaVersion": 7,
+    "name": "Andrew Masanto",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-nillion",
+        "companyName": "Nillion",
+        "role": "Co-founder",
+        "startDate": "2021-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-nillion-coindesk-seriesA-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Hedera",
+      "Reserve"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-nillion-coindesk-seriesA-2024"
+    ]
+  },
+  {
+    "id": "per-anil-sood",
+    "schemaVersion": 7,
+    "name": "Anil Sood",
+    "aliases": [],
+    "currentRole": "Co-Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-anemoy",
+        "companyName": "Anemoy",
+        "role": "Co-Founder",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-anemoy-janushenderson-ir"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-anemoy-janushenderson-ir"
+    ]
+  },
+  {
+    "id": "per-anna-yuan",
+    "schemaVersion": 7,
+    "name": "Anna Yuan",
+    "aliases": [],
+    "currentRole": "Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-perena",
+        "companyName": "Perena",
+        "role": "Founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-perena-coindesk-preseed"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Solana Foundation"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-perena-coindesk-preseed"
+    ]
+  },
+  {
+    "id": "per-craig-dewitt",
+    "schemaVersion": 7,
+    "name": "Craig DeWitt",
+    "aliases": [],
+    "currentRole": "Co-Founder and Chief Product Officer",
+    "companyTenures": [
+      {
+        "companyId": "co-skyfire",
+        "companyName": "Skyfire",
+        "role": "Co-Founder and Chief Product Officer",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-skyfire-techcrunch-launch-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Ripple (executive role, prior to Skyfire)"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-skyfire-techcrunch-launch-2024",
+      "src-skyfire-theaiinsider-launch-2025"
+    ]
+  },
+  {
+    "id": "per-dillon-kellar",
+    "schemaVersion": 7,
+    "name": "Dillon Kellar",
+    "aliases": [],
+    "currentRole": "Co-Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-wildcat-protocol",
+        "companyName": "Wildcat Labs",
+        "role": "Co-Founder",
+        "startDate": "2023-05-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-wildcat-theblock-seedext"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Indexed Finance"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-wildcat-theblock-seedext"
+    ]
+  },
+  {
+    "id": "per-hanzhi-liu",
+    "schemaVersion": 7,
+    "name": "Hanzhi Liu",
+    "aliases": [
+      "Hans Liu"
+    ],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-nubit",
+        "companyName": "Riema Labs Inc.",
+        "role": "Co-founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-nubit-thunderbolt-globenewswire"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [
+      {
+        "institution": "University of California, Santa Barbara",
+        "field": "Computer Science (Ph.D. studies, on leave)",
+        "completedYear": null
+      }
+    ],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [
+      "sig-nubit-thunderbolt-2025"
+    ],
+    "sourceIds": [
+      "src-nubit-thunderbolt-globenewswire"
+    ]
+  },
+  {
+    "id": "per-initia-ezaan-mangalji",
+    "schemaVersion": 7,
+    "name": "Ezaan Mangalji",
+    "aliases": [
+      "Zon"
+    ],
+    "currentRole": "Co-Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-initia",
+        "companyName": "Initia",
+        "role": "Co-Founder",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-initia-techcrunch-seed"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-initia-techcrunch-seed"
+    ]
+  },
+  {
+    "id": "per-initia-stan-liu",
+    "schemaVersion": 7,
+    "name": "Stan Liu",
+    "aliases": [],
+    "currentRole": "Co-Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-initia",
+        "companyName": "Initia",
+        "role": "Co-Founder",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-initia-techcrunch-seed"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-initia-techcrunch-seed"
+    ]
+  },
+  {
+    "id": "per-john-adler",
+    "schemaVersion": 7,
+    "name": "John Adler",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-fuel-network",
+        "companyName": "Fuel Labs",
+        "role": "Co-founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-fuel-theblock-funding-2022"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-fuel-theblock-funding-2022"
+    ]
+  },
+  {
+    "id": "per-julian-sawyer",
+    "schemaVersion": 7,
+    "name": "Julian Sawyer",
+    "aliases": [],
+    "currentRole": "Chief Executive Officer, Zodia Custody",
+    "companyTenures": [
+      {
+        "companyId": "co-zodia-custody",
+        "companyName": "Zodia Custody",
+        "role": "Chief Executive Officer",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": false,
+        "sourceIds": [
+          "src-zodia-coindesk-seriesa-2023"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [
+      "sig-zodia-sc-acquisition-offer",
+      "sig-zodia-solutions-spinout-announced"
+    ],
+    "sourceIds": [
+      "src-zodia-coindesk-seriesa-2023",
+      "src-zodia-scventures-solutions-2026"
+    ]
+  },
+  {
+    "id": "per-laurence-day",
+    "schemaVersion": 7,
+    "name": "Laurence Day",
+    "aliases": [],
+    "currentRole": "Co-Founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-wildcat-protocol",
+        "companyName": "Wildcat Labs",
+        "role": "Co-Founder and CEO",
+        "startDate": "2023-05-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-wildcat-theblock-seedext"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-wildcat-theblock-seedext"
+    ]
+  },
+  {
+    "id": "per-luke-barwikowski",
+    "schemaVersion": 7,
+    "name": "Luke Barwikowski",
+    "aliases": [],
+    "currentRole": "Founder, CEO & CTO",
+    "companyTenures": [
+      {
+        "companyId": "co-pixels",
+        "companyName": "Pixels",
+        "role": "Founder, CEO & CTO",
+        "startDate": "2021-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-pixels-cryptonews-interview"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": "https://www.linkedin.com/in/lbarwiko/",
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-pixels-cryptonews-interview"
+    ]
+  },
+  {
+    "id": "per-mansa-mouloukou-sanoh",
+    "schemaVersion": 7,
+    "name": "Mouloukou Sanoh",
+    "aliases": [],
+    "currentRole": "Co-founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-mansa",
+        "companyName": "Mansa",
+        "role": "Co-founder and CEO",
+        "startDate": "2025-02-20",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-mansa-techcrunch-2025",
+          "src-mansa-ledgerinsights-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-mansa-techcrunch-2025",
+      "src-mansa-ledgerinsights-2025"
+    ]
+  },
+  {
+    "id": "per-mansa-nkiru-uwaje",
+    "schemaVersion": 7,
+    "name": "Nkiru Uwaje",
+    "aliases": [],
+    "currentRole": "Co-founder and COO",
+    "companyTenures": [
+      {
+        "companyId": "co-mansa",
+        "companyName": "Mansa",
+        "role": "Co-founder and COO",
+        "startDate": "2025-02-20",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-mansa-techcrunch-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-mansa-techcrunch-2025"
+    ]
+  },
+  {
+    "id": "per-martin-quensel",
+    "schemaVersion": 7,
+    "name": "Martin Quensel",
+    "aliases": [],
+    "currentRole": "Co-Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-anemoy",
+        "companyName": "Anemoy",
+        "role": "Co-Founder",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-anemoy-janushenderson-ir"
+        ]
+      },
+      {
+        "companyId": null,
+        "companyName": "Centrifuge",
+        "role": "Co-Founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-anemoy-janushenderson-ir"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-anemoy-janushenderson-ir"
+    ]
+  },
+  {
+    "id": "per-maxime-de-guillebon",
+    "schemaVersion": 7,
+    "name": "Maxime De Guillebon",
+    "aliases": [],
+    "currentRole": null,
+    "companyTenures": [
+      {
+        "companyId": "co-zodia-custody",
+        "companyName": "Zodia Custody",
+        "role": "Chief Executive Officer (founding)",
+        "startDate": "2020-12-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-zodia-sc-fca-registration-2021"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-zodia-sc-fca-registration-2021"
+    ]
+  },
+  {
+    "id": "per-miguel-de-vega",
+    "schemaVersion": 7,
+    "name": "Miguel de Vega",
+    "aliases": [],
+    "currentRole": "Chief Scientist",
+    "companyTenures": [
+      {
+        "companyId": "co-nillion",
+        "companyName": "Nillion",
+        "role": "Chief Scientist",
+        "startDate": "2021-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-nillion-coindesk-seriesA-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-nillion-coindesk-seriesA-2024"
+    ]
+  },
+  {
+    "id": "per-nick-dodson",
+    "schemaVersion": 7,
+    "name": "Nick Dodson",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-fuel-network",
+        "companyName": "Fuel Labs",
+        "role": "Co-founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-fuel-theblock-funding-2022"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-fuel-theblock-funding-2022"
+    ]
+  },
+  {
+    "id": "per-niklas-kunkel",
+    "schemaVersion": 7,
+    "name": "Niklas Kunkel",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-chronicle-protocol",
+        "companyName": "Chronicle Labs Ltd",
+        "role": "Co-founder",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-chronicle-theblock-seed-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "MakerDAO Oracle Core Unit"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-chronicle-theblock-seed-2025"
+    ]
+  },
+  {
+    "id": "per-patrick-collins",
+    "schemaVersion": 7,
+    "name": "Patrick Collins",
+    "aliases": [
+      "PatrickAlphaC"
+    ],
+    "currentRole": "Co-Founder",
+    "companyTenures": [
+      {
+        "companyId": "co-cyfrin",
+        "companyName": "Cyfrin Inc.",
+        "role": "Co-Founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-cyfrin-weekday-profile"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Chainlink Labs"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": "https://github.com/PatrickAlphaC",
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-cyfrin-weekday-profile"
+    ]
+  },
+  {
+    "id": "per-paul-chan",
+    "schemaVersion": 7,
+    "name": "Paul Chan",
+    "aliases": [],
+    "currentRole": "COO",
+    "companyTenures": [
+      {
+        "companyId": "co-echelon-prime-parallel",
+        "companyName": "Echelon Prime (Parallel)",
+        "role": "COO",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": false,
+        "sourceIds": [
+          "src-echelon-gamesgg-seriesb-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-echelon-gamesgg-seriesb-2024"
+    ]
+  },
+  {
+    "id": "per-perry-haldenby",
+    "schemaVersion": 7,
+    "name": "Perry Haldenby",
+    "aliases": [],
+    "currentRole": "CTO",
+    "companyTenures": [
+      {
+        "companyId": "co-echelon-prime-parallel",
+        "companyName": "Echelon Prime (Parallel)",
+        "role": "CTO",
+        "startDate": "2021-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-echelon-vikara-deepdive-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-echelon-vikara-deepdive-2025"
+    ]
+  },
+  {
+    "id": "per-plume-chris-yin",
+    "schemaVersion": 7,
+    "name": "Chris Yin",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-plume-network",
+        "companyName": "Plume Network",
+        "role": "Co-founder",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-plume-fortune-series-a-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-plume-fortune-series-a-2024"
+    ]
+  },
+  {
+    "id": "per-plume-eugene-shen",
+    "schemaVersion": 7,
+    "name": "Eugene Shen",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-plume-network",
+        "companyName": "Plume Network",
+        "role": "Co-founder",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-plume-fortune-series-a-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-plume-fortune-series-a-2024"
+    ]
+  },
+  {
+    "id": "per-plume-teddy-pornprinya",
+    "schemaVersion": 7,
+    "name": "Teddy Pornprinya",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-plume-network",
+        "companyName": "Plume Network",
+        "role": "Co-founder",
+        "startDate": "2023-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-plume-fortune-series-a-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-plume-fortune-series-a-2024"
+    ]
+  },
+  {
+    "id": "per-robert-leshner",
+    "schemaVersion": 7,
+    "name": "Robert Leshner",
+    "aliases": [],
+    "currentRole": "Co-Founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-superstate",
+        "companyName": "Superstate",
+        "role": "Co-Founder and CEO",
+        "startDate": "2023-11-15",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-superstate-coindesk-seriesa"
+        ]
+      },
+      {
+        "companyId": null,
+        "companyName": "Compound Labs",
+        "role": "Founder",
+        "startDate": "2017-01-01",
+        "endDate": "2023-01-01",
+        "isFounder": true,
+        "sourceIds": [
+          "src-superstate-block-ustb"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Compound Labs",
+      "Robot Ventures"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [
+      "sig-superstate-seriesb-2026"
+    ],
+    "sourceIds": [
+      "src-superstate-coindesk-seriesa",
+      "src-superstate-block-ustb"
+    ]
+  },
+  {
+    "id": "per-sascha-mojtahedi",
+    "schemaVersion": 7,
+    "name": "Sascha Darius Mojtahedi",
+    "aliases": [],
+    "currentRole": "CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-echelon-prime-parallel",
+        "companyName": "Echelon Prime (Parallel)",
+        "role": "CEO",
+        "startDate": "2021-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-echelon-vikara-deepdive-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-echelon-vikara-deepdive-2025"
+    ]
+  },
+  {
+    "id": "per-taceo-christian-rechberger",
+    "schemaVersion": 7,
+    "name": "Christian Rechberger",
+    "aliases": [],
+    "currentRole": "Co-founder and Chief Scientist",
+    "companyTenures": [
+      {
+        "companyId": "co-taceo",
+        "companyName": "TACEO",
+        "role": "Co-founder and Chief Scientist",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-taceo-core-seed-announcement"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Graz University of Technology"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-taceo-core-seed-announcement"
+    ]
+  },
+  {
+    "id": "per-taceo-daniel-kales",
+    "schemaVersion": 7,
+    "name": "Daniel Kales",
+    "aliases": [],
+    "currentRole": "Co-founder and CTO",
+    "companyTenures": [
+      {
+        "companyId": "co-taceo",
+        "companyName": "TACEO",
+        "role": "Co-founder and CTO",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-taceo-core-seed-announcement"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-taceo-core-seed-announcement"
+    ]
+  },
+  {
+    "id": "per-taceo-lukas-helminger",
+    "schemaVersion": 7,
+    "name": "Lukas Helminger",
+    "aliases": [],
+    "currentRole": "Co-founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-taceo",
+        "companyName": "TACEO",
+        "role": "Co-founder and CEO",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-taceo-core-seed-announcement",
+          "src-taceo-techeu-seed"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-taceo-core-seed-announcement",
+      "src-taceo-techeu-seed"
+    ]
+  },
+  {
+    "id": "per-term-dion-chu",
+    "schemaVersion": 7,
+    "name": "Dion Chu",
+    "aliases": [],
+    "currentRole": "CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-term-finance",
+        "companyName": "Term Finance",
+        "role": "CEO",
+        "startDate": "2025-09-16",
+        "endDate": null,
+        "isFounder": false,
+        "sourceIds": [
+          "src-term-pareto-integration-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-term-pareto-integration-2025"
+    ]
+  },
+  {
+    "id": "per-turnkey-bryce-ferguson",
+    "schemaVersion": 7,
+    "name": "Bryce Ferguson",
+    "aliases": [],
+    "currentRole": "Co-founder and CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-turnkey",
+        "companyName": "Turnkey",
+        "role": "Co-founder and CEO",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-turnkey-coindesk-seriesa",
+          "src-turnkey-theblock-seriesb"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Coinbase"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-turnkey-coindesk-seriesa",
+      "src-turnkey-theblock-seriesb"
+    ]
+  },
+  {
+    "id": "per-turnkey-jack-kearney",
+    "schemaVersion": 7,
+    "name": "Jack Kearney",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-turnkey",
+        "companyName": "Turnkey",
+        "role": "Co-founder",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-turnkey-coindesk-seriesa"
+        ]
+      }
+    ],
+    "priorCompanies": [
+      "Coinbase"
+    ],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-turnkey-coindesk-seriesa"
+    ]
+  },
+  {
+    "id": "per-yair-cleper",
+    "schemaVersion": 7,
+    "name": "Yair Cleper",
+    "aliases": [],
+    "currentRole": "CEO",
+    "companyTenures": [
+      {
+        "companyId": "co-lava-network",
+        "companyName": "Lava Network",
+        "role": "CEO",
+        "startDate": "2022-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-lava-theblock-seed-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-lava-theblock-seed-2024"
+    ]
+  },
+  {
+    "id": "per-yu-feng",
+    "schemaVersion": 7,
+    "name": "Yu Feng",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "co-nubit",
+        "companyName": "Riema Labs Inc.",
+        "role": "Co-founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-nubit-preseed-medium"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [
+      {
+        "institution": "University of California, Santa Barbara",
+        "field": "Computer Science (faculty)",
+        "completedYear": null
+      }
+    ],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-nubit-preseed-medium"
+    ]
+  },
+  {
+    "id": "person-dfns-clarisse-hagege",
+    "schemaVersion": 7,
+    "name": "Clarisse Hagege",
+    "aliases": [
+      "Clarisse Hagège"
+    ],
+    "currentRole": "CEO and co-founder",
+    "companyTenures": [
+      {
+        "companyId": "dfns",
+        "companyName": "Dfns",
+        "role": "CEO and co-founder",
+        "startDate": "2020-01-01",
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-dfns-whitestar-2025"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-dfns-whitestar-2025"
+    ]
+  },
+  {
+    "id": "person-neynar-manan",
+    "schemaVersion": 7,
+    "name": "Manan",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "neynar",
+        "companyName": "Neynar",
+        "role": "Co-founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-neynar-series-a-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-neynar-series-a-2024"
+    ]
+  },
+  {
+    "id": "person-neynar-rish",
+    "schemaVersion": 7,
+    "name": "Rish",
+    "aliases": [],
+    "currentRole": "Co-founder",
+    "companyTenures": [
+      {
+        "companyId": "neynar",
+        "companyName": "Neynar",
+        "role": "Co-founder",
+        "startDate": null,
+        "endDate": null,
+        "isFounder": true,
+        "sourceIds": [
+          "src-neynar-series-a-2024"
+        ]
+      }
+    ],
+    "priorCompanies": [],
+    "education": [],
+    "publicHandles": {
+      "github": null,
+      "x": null,
+      "linkedin": null,
+      "website": null
+    },
+    "signalEventIds": [],
+    "sourceIds": [
+      "src-neynar-series-a-2024"
+    ]
+  }
+]

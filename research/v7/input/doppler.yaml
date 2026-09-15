@@ -1,0 +1,572 @@
+schemaVersion: 7
+candidateId: DCM-04
+canonicalId: co-doppler
+canonicalName: Doppler
+slug: doppler
+description: >-
+  Doppler is an onchain token-issuance, price-discovery, and liquidity-
+  bootstrapping protocol developed by Whetstone Research. Its contracts and
+  SDK let applications configure auctions, token supply, vesting, governance,
+  fees, and migration into generalized automated markets.
+domain: doppler.lol
+firstObservedAt: "2024-01-01"
+category: defi_and_capital_markets
+entityType: hybrid
+assetType: unknown
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: Seed
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: "Whetstone Research designed Doppler, develops the reference implementation, and operates the Pure Markets interface as a separate product."
+      relatedEntityId: null
+      relationType: protocol_developer
+    - description: "Pure Markets is a Whetstone-built interface for creating, discovering, and swapping assets issued through Doppler."
+      relatedEntityId: null
+      relationType: affiliated_interface
+  protocolNetworkRelationship: >-
+    Doppler is a smart-contract protocol deployed across EVM networks and
+    developed by Whetstone Research; it relies on underlying networks and
+    Uniswap markets rather than operating a sovereign blockchain.
+  unresolvedBoundaryNotes:
+    - "The public record did not establish the precise legal entity name, jurisdiction, or IP ownership of Whetstone Research."
+    - "Doppler had no publicly established native protocol token at cutoff; Whetstone financing included token warrants whose referenced future instrument and rights were not publicly specified."
+people:
+  - id: per-austin-adams-whetstone
+    schemaVersion: 7
+    name: Austin Adams
+    aliases: []
+    currentRole: Founder of Whetstone Research and creator of Doppler
+    companyTenures:
+      - companyId: co-doppler
+        companyName: Whetstone Research
+        role: Founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-doppler-variant-2025]
+    priorCompanies: [Uniswap Labs, Federal Reserve]
+    education: []
+    publicHandles: { github: aadams, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-doppler-variant-2025, src-doppler-uniswap-foundation]
+  - id: per-clement-lakhal
+    schemaVersion: 7
+    name: Clement Lakhal
+    aliases: []
+    currentRole: Whetstone Research team member
+    companyTenures:
+      - companyId: co-doppler
+        companyName: Whetstone Research
+        role: Protocol engineer
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-doppler-variant-2025]
+    priorCompanies: [Primitive Finance]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-doppler-variant-2025]
+  - id: per-matt-czernik
+    schemaVersion: 7
+    name: Matt Czernik
+    aliases: []
+    currentRole: Whetstone Research team member
+    companyTenures:
+      - companyId: co-doppler
+        companyName: Whetstone Research
+        role: Team member
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-doppler-variant-2025]
+    priorCompanies: [Primitive Finance]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-doppler-variant-2025]
+sources:
+  - id: src-doppler-whitepaper-2024
+    schemaVersion: 7
+    publisher: Whetstone Research
+    title: "Doppler: A liquidity bootstrapping ecosystem"
+    url: "https://www.doppler.lol/whitepaper.pdf"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-01-01"
+    availabilityDate: "2024-01-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-doppler-whetstone-launch-2025
+    schemaVersion: 7
+    publisher: Whetstone Research
+    title: "Doppler is the Future of Onchain Markets"
+    url: "https://paragraph.com/@whetstone/doppler-is-the-future-of-onchain-markets"
+    sourceType: official_company
+    tier: b
+    reliability: 0.7
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-02-11"
+    availabilityDate: "2025-02-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-doppler-variant-2025
+    schemaVersion: 7
+    publisher: Variant
+    title: "Investing in Whetstone"
+    url: "https://variant.fund/articles/investing-in-whetstone/"
+    sourceType: investor_industry
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-02-11"
+    availabilityDate: "2025-02-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: historical_context
+  - id: src-doppler-theblock-funding-2026
+    schemaVersion: 7
+    publisher: The Block
+    title: "Token creation platform Doppler raises $9 million seed round led by Pantera Capital"
+    url: "https://www.theblock.co/news/deals/2026-01-28-token-creation-platform-doppler-seed-round-pantera-capital-387485"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2026-01-28"
+    availabilityDate: "2026-01-28"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-doppler-docs-explainer
+    schemaVersion: 7
+    publisher: Whetstone Research
+    title: "Doppler Explainer"
+    url: "https://docs.doppler.lol/how-it-works/publish-your-docs"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-04-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-doppler-github-core
+    schemaVersion: 7
+    publisher: Whetstone Research
+    title: "Core contracts for the Doppler Protocol"
+    url: "https://github.com/whetstoneresearch/doppler"
+    sourceType: code_repository
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-doppler-docs-security
+    schemaVersion: 7
+    publisher: Whetstone Research
+    title: "Security and bug bounties"
+    url: "https://docs.doppler.lol/resources/security-and-bug-bounties"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-02-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-doppler-uniswap-foundation
+    schemaVersion: 7
+    publisher: Uniswap Foundation
+    title: "Builder Stories: Austin Adams on Doppler and Pure Markets"
+    url: "https://www.uniswapfoundation.org/builder-stories/austin-adams-doppler-pure-markets"
+    sourceType: founder_or_executive
+    tier: b
+    reliability: 0.7
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-03-06"
+    availabilityDate: "2025-03-06"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: historical_context
+  - id: src-doppler-docs-solana-fees
+    schemaVersion: 7
+    publisher: Whetstone Research
+    title: "Solana SDK examples and fee settings"
+    url: "https://github.com/whetstoneresearch/doppler-docs/blob/main/reference/svm-sdk-examples/README.md"
+    sourceType: code_repository
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-doppler-architecture
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Doppler uses onchain Dutch-auction dynamic bonding curves to source initial two-sided liquidity and perform price discovery before migrating liquidity to a generalized AMM."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-doppler-whitepaper-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.doppler.lol/whitepaper.pdf"
+    publicationDate: "2024-01-01"
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: architecture
+    notes: "Architecture is not independent verification of market outcomes or MEV reduction."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-mainnet-launch
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Doppler and its Pure Markets interface launched on Unichain on February 11, 2025."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-doppler-whetstone-launch-2025
+    supportingSourceIds: [src-doppler-variant-2025]
+    sourceUrl: "https://paragraph.com/@whetstone/doppler-is-the-future-of-onchain-markets"
+    publicationDate: "2025-02-11"
+    metricAsOfDate: "2025-02-11"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: protocol_launch
+    notes: "Launch establishes production availability, not sustained adoption."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-preseed
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Whetstone announced a $1.3 million pre-seed round on February 11, 2025 from Variant, Nascent, Credibly Neutral, Uniswap Ventures, Ambush, Figment, and angel investors."
+    statedValue: "$1.3 million"
+    numericValue: 1300000
+    unit: usd
+    sourceId: src-doppler-whetstone-launch-2025
+    supportingSourceIds: [src-doppler-variant-2025]
+    sourceUrl: "https://paragraph.com/@whetstone/doppler-is-the-future-of-onchain-markets"
+    publicationDate: "2025-02-11"
+    metricAsOfDate: "2025-02-11"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: equity_financing
+    notes: "The later independent financing report characterized this pre-seed as a SAFE with token warrants."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-seed
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Whetstone raised a $9 million seed round led by Pantera Capital, with Variant, Figment Capital, and Coinbase Ventures participating."
+    statedValue: "$9 million"
+    numericValue: 9000000
+    unit: usd
+    sourceId: src-doppler-theblock-funding-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/news/deals/2026-01-28-token-creation-platform-doppler-seed-round-pantera-capital-387485"
+    publicationDate: "2026-01-28"
+    metricAsOfDate: "2025-06-30"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: equity_financing
+    notes: "The round was publicly announced in January 2026; The Block reported it closed in Q2 2025 as SAFEs with token warrants."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What future token or protocol instrument do the warrants cover, and what supply and governance rights would they create?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-integrations
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Whetstone documentation identifies Zora, Paragraph, Noice, and Bankr as applications using Doppler to create tokens."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-doppler-docs-explainer
+    supportingSourceIds: []
+    sourceUrl: "https://docs.doppler.lol/how-it-works/publish-your-docs"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: integrations
+    notes: "This first-party integration list does not quantify usage or independently verify each production deployment."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify active contracts, launch counts, and retained use for each named integrator."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-airlock
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Doppler's Airlock contract provides a unified interface that routes configured launches to token factories, auction initializers, governance factories, and downstream modules."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-doppler-docs-explainer
+    supportingSourceIds: [src-doppler-github-core]
+    sourceUrl: "https://docs.doppler.lol/how-it-works/publish-your-docs"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: architecture
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-codebase
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Whetstone publishes Doppler's core contracts, deployment records, and unit, fuzz, invariant, and integration tests in a public repository."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-doppler-github-core
+    supportingSourceIds: []
+    sourceUrl: "https://github.com/whetstoneresearch/doppler"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: developer_activity
+    notes: "Repository existence and tests do not establish external developer adoption or security."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-security-reviews
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "Doppler states that OpenZeppelin and Certora reviewed its contracts in November 2024 and that Cantina ran a public audit contest and bug bounty."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-doppler-docs-security
+    supportingSourceIds: []
+    sourceUrl: "https://docs.doppler.lol/resources/security-and-bug-bounties"
+    publicationDate: null
+    metricAsOfDate: "2024-11-30"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: security
+    notes: "This is a first-party audit inventory, not an independent statement that all current deployments are safe or in scope."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Map every live deployment and module to exact reviewed commits and unresolved findings."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-doppler-solana-fee-share
+    schemaVersion: 7
+    companyId: co-doppler
+    claim: "For documented Solana launches, Doppler receives 7.5% of each collected trading fee, with the remaining fee paid to launch-selected beneficiaries."
+    statedValue: "7.5% of collected trading fee"
+    numericValue: 7.5
+    unit: percent_of_collected_trading_fee
+    sourceId: src-doppler-docs-solana-fees
+    supportingSourceIds: []
+    sourceUrl: "https://github.com/whetstoneresearch/doppler-docs/blob/main/reference/svm-sdk-examples/README.md"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: protocol_fees
+    notes: "This is a protocol fee share for the Solana implementation, not evidence of total fees or Whetstone company revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Which entity receives this share and what fees were realized net of integrator and beneficiary distributions?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-doppler-unichain-launch-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-doppler
+    subjectNameRaw: Doppler Protocol
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-doppler-whetstone-launch-2025
+    rawStrength: 0.8
+    evidenceSummary: "Doppler launched on Unichain with Pure Markets as its first interface."
+    evidenceIds: [clm-doppler-mainnet-launch]
+    publicationDate: "2025-02-11"
+    availabilityDate: "2025-02-11"
+    eventDate: "2025-02-11"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-doppler-preseed-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-doppler
+    subjectNameRaw: Whetstone Research
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-doppler-whetstone-launch-2025
+    rawStrength: 0.7
+    evidenceSummary: "Whetstone announced a $1.3 million pre-seed financing."
+    evidenceIds: [clm-doppler-preseed]
+    publicationDate: "2025-02-11"
+    availabilityDate: "2025-02-11"
+    eventDate: "2025-02-11"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-doppler-seed-2026
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-doppler
+    subjectNameRaw: Whetstone Research
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-doppler-theblock-funding-2026
+    rawStrength: 0.9
+    evidenceSummary: "Whetstone's $9 million seed SAFE financing with token warrants was publicly announced in January 2026."
+    evidenceIds: [clm-doppler-seed]
+    publicationDate: "2026-01-28"
+    availabilityDate: "2026-01-28"
+    eventDate: "2025-06-30"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-doppler-revenue
+    whatWasSearched: "Protocol documentation and financing reporting for fees, protocol revenue, and Whetstone company revenue."
+    whatCouldNotBeEstablished: "Total realized protocol fees, Whetstone operating revenue, gross margin, burn, and runway."
+    expectedToMatter: true
+  - id: gap-doppler-adoption
+    whatWasSearched: "Official documentation, repository, interface, and independent reporting for launches, traders, issuers, and retained integrators."
+    whatCouldNotBeEstablished: "A reproducible cutoff-date series for successful launches, unique issuers, unique traders, retained integrations, and liquidity after migration."
+    expectedToMatter: true
+  - id: gap-doppler-token-rights
+    whatWasSearched: "Financing reporting and protocol materials for the token warrants and any native Doppler token."
+    whatCouldNotBeEstablished: "The instrument, supply, allocation, governance, value accrual, or launch status referenced by Whetstone's token warrants."
+    expectedToMatter: true
+  - id: gap-doppler-legal-entity
+    whatWasSearched: "Whetstone and Doppler sites plus financing reporting for corporate identity and ownership."
+    whatCouldNotBeEstablished: "Whetstone's legal name, jurisdiction, IP ownership, and contractual relationship to protocol fee recipients."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: "Doppler Protocol, Whetstone Research, and Pure Markets are operationally linked but their legal and fee-recipient boundaries are not fully public."
+  sourceOriginUncertainty: "Named integration claims are first-party; no press-release reproduction is counted as independent corroboration."
+  likelyContradictions: null
+  completenessNotes: "The packet records launch and financing as facts without treating either as adoption momentum; protocol fee mechanics remain separate from company revenue."
+researchCutoff: "2026-09-10"

@@ -1,0 +1,229 @@
+schemaVersion: 7
+candidateId: DOI-02
+entityId: co-chronicle-protocol
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:27baf6c077b8364cceb485a748d22bed3e199860bc88d92c93ebc6138922192e"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-seed-12m, clm-chronicle-public-launch-2023]
+    rationale: >-
+      Capital consumed is well-corroborated ($12M seed, March 2025). The
+      only candidate scale figure is Chronicle's own September 2023
+      launch claim of safeguarding ">$5 billion" for MakerDAO, which is
+      self-reported and not independently audited, and predates the 2025
+      raise by roughly 18 months, so it cannot cleanly establish today's
+      scale-vs-capital ratio. No revenue or current TVL-equivalent figure
+      exists (gap-chronicle-revenue).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The only scale figure is self-reported and dated (2023); no
+      independently audited or current scale metric exists in the frozen
+      packet.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, compute, infrastructure cost, or
+      subsidy needs for Chronicle's oracle operation.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the
+      frozen packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents transaction, fee, or customer-growth trend data.
+      The M^0 integration is a discrete partnership event, addressed under
+      developer_and_ecosystem_momentum and distribution_and_integration_pull
+      rather than cited here as usage-momentum evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No usage/fee-growth metric exists in the frozen packet.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-m0-integration]
+    rationale: >-
+      Chronicle's RWA oracle was integrated with M^0, an independent
+      Ethereum-based stablecoin protocol, to validate collateral for its
+      $M token (announced August 2024), independently reported by The
+      Block. This is one concrete, sourced integration expanding
+      Chronicle's footprint beyond its original MakerDAO/Sky relationship,
+      though it is a single data point with no broader integration-growth
+      trend established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Only one additional integration is documented; no data on
+      integration cadence, retention, or a broader growth trend exists.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-origin, clm-chronicle-public-launch-2023]
+    rationale: >-
+      Chronicle originated as MakerDAO's Oracle Core Unit and was spun out
+      into an independent company after the Maker Foundation dissolved,
+      then publicly launched a Scribe oracle product outside the Maker
+      ecosystem in September 2023, continuing to serve Sky/MakerDAO. This
+      is directly on-point, sourced execution history: the founding team
+      built and operated the exact oracle function at MakerDAO before
+      independently shipping a launched product in the same domain, which
+      is stronger and more specific than a general founder-background
+      claim.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Only one founder (Niklas Kunkel) is named; no broader team
+      composition or headcount is established (gap-chronicle-corporate-structure).
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses admin/control-key structure, governance process,
+      or ownership/incentive alignment. No token exists to assess
+      token-based incentive alignment against (gap-chronicle-token).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No governance or control-structure evidence exists in the frozen
+      packet; token existence is unconfirmed (gap-chronicle-token).
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-origin, clm-chronicle-m0-integration]
+    rationale: >-
+      Chronicle maintains a long-standing service relationship with
+      Sky/MakerDAO and has expanded into the growing real-world-asset
+      oracle category via the M^0 integration, evidencing real,
+      independently reported client relationships rather than only a
+      stated market thesis. No sourced fee or revenue figure confirms
+      these relationships are presently fee-paying (gap-chronicle-revenue),
+      which limits confidence that funded urgency, rather than
+      relationship continuity alone, is established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No revenue or fee figure confirms these client relationships are
+      currently fee-paying (gap-chronicle-revenue).
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The packet's entity-structure description states Chronicle Labs Ltd
+      is registered in Zug, Switzerland, but this is not tied to any
+      citable EvidenceClaim, and no claim in the frozen packet addresses
+      regulatory trajectory or jurisdictional exposure in a sourced,
+      evidentiary way.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No citable EvidenceClaim establishes jurisdiction or regulatory
+      trajectory, despite a jurisdiction being named in the packet's
+      unsourced entity-structure description.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a fee, take-rate, or other recurring
+      monetization mechanism for Chronicle's oracle services, despite real
+      client relationships existing (gap-chronicle-revenue confirms this
+      was searched and not established).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee/revenue model evidence exists in the frozen packet
+      (gap-chronicle-revenue).
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, contribution economics, or reliance on
+      continued fundraising to fund operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No economic-sustainability evidence exists in the frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-m0-integration]
+    rationale: >-
+      The M^0 integration is a real, independently reported expansion
+      beyond Chronicle's original MakerDAO/Sky relationship into a new
+      protocol's collateral-validation stack, consistent with
+      composability-driven pull. The packet does not establish whether the
+      integration was incentivized or unpaid, and it is a single instance
+      rather than a demonstrated repeatable pattern.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Whether the M^0 integration was incentivized/paid is not
+      established; only one additional integration point exists.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding friction, compliance requirements, or
+      ecosystem reachability for integrating with Chronicle's oracle.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction or ecosystem-access evidence exists in the
+      frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 58
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-chainsecurity-audit-2023]
+    rationale: >-
+      An independent ChainSecurity audit of the Scribe mechanism (ahead of
+      the September 2023 launch) found three issues, all resolved or
+      acknowledged, and concluded the codebase "provides a good level of
+      security." This is genuine independent technical assessment, not a
+      self-benchmark claim. However, the audit explicitly excluded the
+      underlying Schnorr signature-scheme cryptography from scope and does
+      not cover current production code (gap-chronicle-audit-scope), so it
+      establishes historical code quality rather than present-day
+      architectural differentiation from other oracle designs.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No audit or independent technical assessment covers Chronicle's
+      current (post-2023) production code (gap-chronicle-audit-scope).
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-chronicle-chainsecurity-audit-2023, clm-chronicle-origin, clm-chronicle-public-launch-2023]
+    rationale: >-
+      Chronicle has a long-standing, independently corroborated service
+      relationship with Sky/MakerDAO and a historically scoped independent
+      audit with a favorable but bounded conclusion, both consistent with
+      some incumbency-based durability. Against this, the same origin
+      claim explicitly flags that a material share of Chronicle's
+      demonstrated track record depends on one long-standing client
+      relationship, a concentration risk rather than a network-effect
+      moat, and no claim documents current validator-set size,
+      decentralization, or exploit-free history beyond the 2023 audit
+      window.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No current audit coverage, validator-set size, or exploit-history
+      evidence exists beyond the 2023 launch window
+      (gap-chronicle-audit-scope).

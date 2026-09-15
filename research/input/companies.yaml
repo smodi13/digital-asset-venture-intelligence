@@ -1,0 +1,1270 @@
+# Batch 1 company universe. Real companies, research reviewed.
+#
+# Generated from the Batch 1 research handoff by
+# scripts/research/translate-batch1.ts on 2026-09-06. The handoff packet is a
+# transport format; this file is the authoritative research record and is what
+# a human reviews and edits from here on.
+#
+# No value here was authored by the translator. Everything is copied from the
+# packet or produced by a stated mapping table in that script.
+
+schemaVersion: 6
+
+companies:
+  - name: "Mintlify"
+    domain: "mintlify.com"
+    aliases: []
+    sector: "Developer tools and knowledge infrastructure"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, CA"
+    foundingYear: 2022
+    founders:
+      - name: "Han Wang"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Hahnbee Lee"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "B2B software for documentation, knowledge, and developer content workflows"
+    reasonSourced: "Batch 1 research universe, seed position 1."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.mintlify.com/blog/2025-year-in-review"
+      - "https://www.mintlify.com/blog/mintlify-for-enterprise"
+      - "https://www.mintlify.com/blog/series-b"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Total funding is approximately $67M after the $45M Series B, company-reported. Forbes independently reports eight-figure revenue in early 2026 and approximately 20,000 company customers; exact ARR remains undisclosed. Do not convert eight figures into a point ARR."
+
+  - name: "Dust"
+    domain: "dust.tt"
+    aliases: []
+    sector: "Enterprise AI agents"
+    subsector: null
+    stage: series_b
+    headquarters: null
+    foundingYear: 2023
+    founders:
+      - name: "Gabriel Hubert"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Stanislas Polu"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Enterprise AI agent platform for shared company-context workflows"
+    reasonSourced: "Batch 1 research universe, seed position 2."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.globenewswire.com/news-release/2026/05/18/3296726/0/en/Dust-raises-40M-to-make-AI-multiplayer-inside-the-enterprise.html"
+      - "https://www.axios.com/pro/enterprise-software-deals/2026/05/18/agentic-ai-dust-snowflake-sequoia"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Verify canonical HQ from a primary source | Total funding is derived and should be reconciled | high: 240% NRR, zero churn, 51,000 MAU, 300,000 deployed agents, and weekly active usage are company-reported and now held as separate atomic claims. Phase 3D adds Forbes and Axios company context and Vanta enterprise-expansion evidence, none of which independently verifies NRR or churn. If those metrics are used quantitatively, apply a confidence penalty."
+
+  - name: "LlamaIndex"
+    domain: "llamaindex.ai"
+    aliases: []
+    sector: "AI data and agent infrastructure"
+    subsector: null
+    stage: series_a
+    headquarters: "San Francisco, CA"
+    foundingYear: 2023
+    founders:
+      - name: "Jerry Liu"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Simon Suo"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Open-source framework plus enterprise SaaS and on-premise products for unstructured-data agents"
+    reasonSourced: "Batch 1 research universe, seed position 3."
+    researchStatus: approved
+    sourceUrls:
+      - "https://llamaindex-marketing-website-clone.pr.staging.llamaindex.ai/blog/announcing-our-series-a-and-llamacloud-general-availability"
+      - "https://techcrunch.com/2025/03/04/llamaindex-launches-a-cloud-service-for-building-unstructed-data-agents/"
+      - "https://www.llamaindex.ai/blog/announcing-new-llamacloud-sdks-and-parse-api-v2"
+      - "https://www.llamaindex.ai/blog/announcing-retrieval-harness"
+      - "https://www.llamaindex.ai/blog/introducing-turbo-our-fastest-extraction-tier"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Verify current commercial revenue mix"
+
+  - name: "CrewAI"
+    domain: "crewai.com"
+    aliases: []
+    sector: "AI agent orchestration"
+    subsector: null
+    stage: series_a
+    headquarters: null
+    foundingYear: 2023
+    founders:
+      - name: "Joao Moura"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Rob Bailey"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Open-source framework plus enterprise cloud subscription for multi-agent orchestration"
+    reasonSourced: "Batch 1 research universe, seed position 4."
+    researchStatus: approved
+    sourceUrls:
+      - "https://crewai.com/blog/crewai---building-the-agentic-future-together"
+      - "https://www.insightpartners.com/ideas/behind-the-investment-crewai/"
+      - "https://blog.crewai.com/pwc-choses-crewai/"
+      - "https://crewai.com/blog/lessons-from-2-billion-agentic-workflows"
+      - "https://crewai.com/blog/crew-studio-automated-agent-builder"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Verify canonical HQ | Verify current ARR and paid-customer count if disclosed"
+
+  - name: "E2B"
+    domain: "e2b.dev"
+    aliases: []
+    sector: "AI agent cloud and secure sandboxes"
+    subsector: null
+    stage: series_a
+    headquarters: "San Francisco, CA"
+    foundingYear: 2023
+    founders:
+      - name: "Vasek Mlejnsky"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Tomas Valenta"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Usage-based cloud infrastructure for isolated AI-agent execution environments"
+    reasonSourced: "Batch 1 research universe, seed position 5."
+    researchStatus: approved
+    sourceUrls:
+      - "https://changelog.e2b.dev/blog/series-a"
+      - "https://e2b.dev/blog/e2b-is-now-in-agents-sdk"
+      - "https://changelog.e2b.dev/blog/anything"
+      - "https://e2b.dev/blog/replicas"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Funding figures reconciled in Phase 3D as a temporal difference, not a contradiction: $32M is a July 2025 snapshot and current E2B hiring materials state more than $37M funding and eight-figure revenue. Treat current funding as a lower bound above $37M, not exactly $37M. VentureBeat independently corroborates the 2025 Series A. Company.totalRaised remains unknown."
+
+  - name: "Crosby"
+    domain: "crosby.ai"
+    aliases: []
+    sector: "AI-native legal services"
+    subsector: null
+    stage: series_b
+    headquarters: "New York, NY"
+    foundingYear: 2024
+    founders:
+      - name: "Ryan Daniels"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "John Sarihan"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Vertically integrated AI-native law firm selling legal services rather than pure software licenses"
+    reasonSourced: "Batch 1 research universe, seed position 6."
+    researchStatus: approved
+    sourceUrls:
+      - "https://crosby.ai/blog/introducing-crosby-the-worlds-first-hybrid-law-firm"
+      - "https://techcrunch.com/2025/06/17/sequoia-backed-crosby-launches-a-new-kind-of-ai-powered-law-firm/"
+      - "https://crosby.ai/blog/series-a-and-faster-agreements"
+      - "https://crosby.ai/blog/series-b-planting-our-flag"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "AI-native legal services and a registered law firm that assumes liability, not a pure software company. Phase 3D (Forbes) adds per-contract pricing of roughly $250 to $1,000, about 100 clients, 30 lawyers, about 13,000 contracts reviewed, and about 400% revenue growth since October, each held as an atomic claim. Do not apply SaaS gross-margin, ARR, NRR, or retention assumptions. Gross margin, lawyer utilization, liability economics, and the scalability of legal labor remain open."
+
+  - name: "Arcade.dev"
+    domain: "arcade.dev"
+    aliases: []
+    sector: "Agent identity, authorization, and action infrastructure"
+    subsector: null
+    stage: series_a
+    headquarters: "San Francisco, CA"
+    foundingYear: 2024
+    founders:
+      - name: "Alex Salazar"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Sam Partee"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Enterprise software for identity, governance, and secure actions by AI agents"
+    reasonSourced: "Batch 1 research universe, seed position 7."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.arcade.dev/blog/arcade-series-a/"
+      - "https://www.wsj.com/cio-journal/arcade-dev-raises-60-million-to-secure-ai-agents-5d07eff4"
+      - "https://www.arcade.dev/blog/arcade-supports-ema/"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Verify Sam Partee current operating role"
+
+  - name: "Pace"
+    domain: "withpace.com"
+    aliases: []
+    sector: "AI-native insurance operations"
+    subsector: null
+    stage: series_b
+    headquarters: "New York, NY"
+    foundingYear: 2024
+    founders:
+      - name: "Jamie Cuffe"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI operations platform and agentic process outsourcer for insurance workflows"
+    reasonSourced: "Batch 1 research universe, seed position 8."
+    researchStatus: approved
+    sourceUrls:
+      - "https://withpace.com/news/a-new-era"
+      - "https://withpace.com/news/next-century"
+      - "https://withpace.com/news/product-launch"
+      - "https://withpace.com/news/tempo"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "AI-native insurance operations, a process-outsourcing hybrid with a software-platform layer, not pure SaaS. Phase 3D (Forbes) adds about 28 employees, about $375M valuation, named insurance deployments, and the elastic-labor operating model. Software versus applied-services revenue mix and blended gross margin remain unknown and are held as explicit unknown claims; do not assume pure-software margins."
+
+  - name: "Resend"
+    domain: "resend.com"
+    aliases: []
+    sector: "Developer communications infrastructure"
+    subsector: null
+    stage: series_a
+    headquarters: "San Francisco, CA"
+    foundingYear: 2022
+    founders:
+      - name: "Zeno Rocha"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Bu Kinoshita"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Jonni Lundy"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Developer email API and communication infrastructure with usage-driven software economics"
+    reasonSourced: "Batch 1 research universe, seed position 9."
+    researchStatus: approved
+    sourceUrls:
+      - "https://resend.com/blog/what-is-next-after-100-000-users"
+      - "https://resend.com/blog/series-a"
+      - "https://resend.com/blog/introducing-automations"
+      - "https://resend.com/blog/3-million-users"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Official financing is a $3M seed and an $18M Series A, company-reported. CB Insights separately estimates $21.5M total funding across five financings; that is a structured-secondary estimate, not a primary-source fact. Exact cumulative primary capital is unresolved. | Clarify Jonni Lundy legal founder status versus founding-team designation"
+
+  - name: "Retell AI"
+    domain: "retellai.com"
+    aliases: []
+    sector: "Voice AI and contact-center automation"
+    subsector: null
+    stage: seed
+    headquarters: "San Francisco, CA"
+    foundingYear: 2023
+    founders:
+      - name: "Bing Wu"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Zexia Zhang"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Todd Li"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Weijia Yu"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Evie Wang"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Usage-based enterprise voice-agent platform"
+    reasonSourced: "Batch 1 research universe, seed position 10."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.retellai.com/blog/seed-announcement"
+      - "https://www.retellai.com/about-us"
+      - "https://www.retellai.com/newsroom"
+      - "https://www.retellai.com/changelog/retell-workflows-brex-top-25-and-more"
+      - "https://www.retellai.com/blog/bill-partners-with-retell"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Officially disclosed financing is a $4.6M seed; CB Insights estimates $5.1M total, held as a structured-secondary estimate. Company-reported $40M annualized revenue, full profitability, and a 25-person team carry no established as-of date. Sacra separately estimates about $60M annualized revenue in April 2026 and about $80M in August 2026 as third-party estimates; these are time-separated snapshots, not contradictions, and are not averaged. Stripe corroborates the revenue-growth trajectory and call volume but does not verify profitability, gross margin, audited revenue, or funding. Confirm revenue recognition and gross margin before underwriting."
+
+  - name: "Serval"
+    domain: "serval.com"
+    aliases: []
+    sector: "AI-native IT service management"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, CA"
+    foundingYear: 2024
+    founders:
+      - name: "Jake Stauch"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Alex McLeod"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Enterprise software platform for AI-driven IT service management and workflow automation"
+    reasonSourced: "Batch 1 research universe, seed position 11."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.serval.com/serval-news/series-a"
+      - "https://www.serval.com/serval-news/general-catalyst-serval-article"
+      - "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+      - "https://www.serval.com/serval-news/partnering-with-serval-empowering-it-for-ai-enterprise-automation"
+      - "https://www.serval.com/serval-news/catalyst-general-availability"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Establish revenue scale, retention, and contract economics before capital-efficiency scoring. Phase 3D: Forbes independently corroborates $127M total funding and a $1B valuation; revenue-growth claims remain company-sourced."
+
+  - name: "Granola"
+    domain: "granola.ai"
+    aliases: []
+    sector: "AI productivity and meeting intelligence"
+    subsector: null
+    stage: series_c
+    headquarters: "London, UK"
+    foundingYear: 2023
+    founders:
+      - name: "Chris Pedregal"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Sam Stephenson"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Subscription software for meeting notes, context, and enterprise knowledge workflows"
+    reasonSourced: "Batch 1 research universe, seed position 12."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.granola.ai/blog/series-a"
+      - "https://www.granola.ai/blog/two-dot-zero"
+      - "https://www.granola.ai/blog/series-c"
+      - "https://techcrunch.com/2026/03/25/granola-raises-125m-hits-1-5b-valuation-as-it-expands-from-meeting-notetaker-to-enterprise-ai-app/"
+      - "https://www.granola.ai/customers"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Series C of $125M and the $1.5B valuation are independently corroborated by Bloomberg and The Times. The Times reports revenue by mid-March 2026 at approximately 2.5x the prior-year level and about 55 employees. Absolute revenue, ARR, and profitability remain undisclosed; use the growth rate qualitatively only. Capital-efficiency scoring is blocked pending absolute financials."
+
+  - name: "Gamma"
+    domain: "gamma.app"
+    aliases: []
+    sector: "AI content creation and productivity"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, CA"
+    foundingYear: 2020
+    founders:
+      - name: "Grant Lee"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "James Fox"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Jon Noronha"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Self-serve and team subscription software for AI-native presentations, websites, and content"
+    reasonSourced: "Batch 1 research universe, seed position 13."
+    researchStatus: approved
+    sourceUrls:
+      - "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Company-reported more than $100M ARR profitably, with about $23M of initial funding used before the $68M Series B. Phase 3D resolved the primary-versus-secondary question with a caveat: TechCrunch reported a $20M secondary component, giving a derived Series B primary of approximately $48M and a derived cumulative primary through the Series B of approximately $71M. The approximately $71M figure is rounded and derived, not an audited exact primary-capital total. Verify ARR and gross margin before underwriting."
+
+  - name: "Applied Compute"
+    domain: "appliedcompute.com"
+    aliases: []
+    sector: "Custom enterprise AI and agent systems"
+    subsector: null
+    stage: growth
+    headquarters: "San Francisco, CA"
+    foundingYear: 2025
+    founders:
+      - name: "Yash Patil"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Rhythm Garg"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Linden Li"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Proprietary AI platform plus deeply embedded engineering for custom enterprise agents and models"
+    reasonSourced: "Batch 1 research universe, seed position 14."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.appliedcompute.com/company/fundraise"
+      - "https://www.appliedcompute.com/case-studies/nvidia"
+      - "https://www.appliedcompute.com/platform/introducing-ac2"
+      - "https://www.forbes.com/sites/richardnieva/2026/09/01/applied-compute-openai-the-ex-openai-guys-building-cheaper-open-source-alternative/"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Enterprise AI platform combining embedded custom model work with compute infrastructure, not traditional SaaS. Services intensity, gross margin, compute commitments, and infrastructure capital requirements are unresolved; do not assume software gross margins. Company-reported $160M total funding at a $1.3B post-money as of April 2026. The possible approximately $350M financing at about $3.25B reported by Forbes and The Information remains under discussion with terms not final; it is recorded as a reported_unconfirmed event and is not counted as capital raised or as a completed-transaction valuation. The Information estimates approximately $50M annualized revenue as a third-party estimate, not audited. | Confirm founding year and HQ with the primary corporate record before approval."
+
+  - name: "Modal"
+    domain: "modal.com"
+    aliases: []
+    sector: "Serverless cloud compute for AI and data workloads"
+    subsector: null
+    stage: series_b
+    headquarters: "New York, NY"
+    foundingYear: 2021
+    founders:
+      - name: "Erik Bernhardsson"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Akshat Bubna"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Usage-based cloud infrastructure for CPUs, GPUs, inference, and compute-heavy applications"
+    reasonSourced: "Batch 1 research universe, seed position 15."
+    researchStatus: approved
+    sourceUrls:
+      - "https://modal.com/blog/announcing-our-series-b"
+      - "https://modal.com/blog/modal-series-c"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Diligence gross margin, compute pass-through economics, and hyperscaler exposure | Phase 3D: independent reporting (Reuters, SiliconANGLE) confirms the $355M Series C at a $4.65B valuation and describes Modal as renting third-party compute capacity rather than owning all underlying hardware. Infrastructure gross margin, not software margin, is the gating diligence question; do not treat as SaaS. | Ignore unverified financing rumors"
+
+  - name: "Linear"
+    domain: "linear.app"
+    aliases: []
+    sector: "Product development and issue tracking"
+    subsector: null
+    stage: series_c
+    headquarters: "San Francisco, CA"
+    foundingYear: 2019
+    founders:
+      - name: "Karri Saarinen"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Jori Lallo"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Tuomas Artman"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "B2B subscription software for product development, planning, and issue management"
+    reasonSourced: "Batch 1 research universe, seed position 16."
+    researchStatus: approved
+    sourceUrls:
+      - "https://linear.app/now/building-our-way"
+      - "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Company-reported more than $100M ARR, 177% NRR, more than 40,000 paying customers, cash-flow positive, and profitable since year two per Business Insider. Capital reconciled in Phase 3D: known pre-Series-C primary is $52.2M, being a $4.2M seed plus a $13M Series A plus a $35M Series B; the $82M Series C headline mixed primary and secondary and its primary component is unknown; the 2026 $99M tender was entirely secondary and contributed $0 of new primary capital. Do not treat the $99M tender or the $134.2M Crunchbase total as company primary capital. Cumulative primary through the Series C cannot be pinned."
+
+  - name: "Wispr Flow"
+    domain: "wisprflow.ai"
+    aliases: []
+    sector: "Voice productivity and AI interface software"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, CA"
+    foundingYear: 2023
+    operatingOriginYear: 2021
+    founders:
+      - name: "Tanay Kothari"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Sahaj Garg"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Subscription software for voice-driven productivity, dictation, and enterprise workflows"
+    reasonSourced: "Batch 1 research universe, seed position 18."
+    researchStatus: approved
+    sourceUrls:
+      - "https://wisprflow.ai/blog"
+      - "https://wisprflow.ai/post/wispr-raises-another-round-series-a-extension"
+      - "https://wisprflow.ai/post/series-b"
+      - "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/"
+      - "https://wisprflow.ai/enterprise-pricing"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Founding date resolved in Phase 3D and no longer a scoring blocker: 2021 is the operating/project origin (NEA first invested in the founders' Wispr AI hardware effort in 2021, per Forbes) and 2023 is the current legal entity, Wispr AI, Inc., a Delaware C-corporation (per the company security and compliance FAQ). Held as foundedYear 2023 and operatingOriginYear 2021; the two are not a contradiction. | Cumulative funding is high at approximately $361M after the 2026 Series B per independent TechCrunch reporting. A large capital base is not by itself a positive signal; capital-efficiency interpretation still requires revenue and burn context."
+
+  - name: "turbopuffer"
+    domain: "turbopuffer.com"
+    aliases: []
+    sector: "Serverless search and vector database infrastructure"
+    subsector: null
+    stage: seed
+    headquarters: "Ottawa, Canada"
+    foundingYear: 2023
+    founders:
+      - name: "Simon Horup Eskildsen"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Justine Li"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Usage-based database and search infrastructure built on object storage"
+    reasonSourced: "Batch 1 research universe, seed position 19."
+    researchStatus: approved
+    sourceUrls:
+      - "https://turbopuffer.com/about"
+      - "https://turbopuffer.com/blog/turbopuffer?__from__=talkingdev"
+      - "https://turbopuffer.com/blog"
+      - "https://marketplace.turbopuffer.com/customers/cursor"
+      - "https://turbopuffer.com/docs/pricing-log"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Funding and revenue improved but not fully resolved in Phase 3D. Founder disclosure: raised less than $1M, a strict upper bound from an undated source, and crossed an approximately $100M run-rate while profitable. Sacra separately estimates approximately $100M annualized revenue in March 2026. BetaKit independently reports an undisclosed financing from Thrive and Lachy Groom and roughly tenfold 2025 sales growth; its timing relative to the founder's sub-$1M disclosure is not established. Exact current cumulative financing is unknown and Company.totalRaised remains unknown. Do not represent less than $1M as exactly $1M, and do not use secondary estimates as model inputs."
+
+  - name: "Browserbase"
+    domain: "browserbase.com"
+    aliases: []
+    sector: "Cloud browser infrastructure and agent web access"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, CA"
+    foundingYear: 2024
+    founders:
+      - name: "Paul Klein IV"
+        role: null
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "Usage-based developer infrastructure and platform for browser automation and AI-agent web access"
+    reasonSourced: "Batch 1 research universe, seed position 20."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.browserbase.com/blog/series-b-and-beyond"
+      - "https://www.forbes.com/sites/amyfeldman/2025/08/12/next-billion-dollar-startups-2025/"
+      - "https://www.browserbase.com/blog/introducing-browserbase-agents"
+      - "https://www.browserbase.com/blog/case-study-hyperagent"
+      - "https://www.browserbase.com/blog/stagehand-v4"
+      - "https://www.browserbase.com/"
+    isPrivate: true
+    firstObservedAt: "2026-09-06"
+    notes: "Current 2026 revenue is unknown and remains open for financial use. The Forbes approximately $1M 2024 revenue estimate is stale: do not use it for current revenue, current ARR, current growth, valuation multiples, or capital-efficiency ratios. Stripe corroborates early revenue generation, large browser-session billing volume, and operating scale but does not establish a current 2026 revenue figure."
+
+# --- BATCH 2 (Phase 4B ingestion) ---  # identity enriched (Phase 4C-B)
+  - name: "David AI"
+    domain: "withdavid.ai"
+    aliases: []
+    sector: "audio training-data and evaluation infrastructure"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2024
+    founders:
+      - name: "Tomer Cohen"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Ben Wiley"
+        role: "Co-founder & CTO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "audio training-data and evaluation infrastructure"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to withdavid.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.withdavid.ai/news/announcing-our-50m-series-b"
+      - "https://www.bloomberg.com/news/articles/2025-10-08/david-ai-raises-50-million-to-bring-audio-data-to-ai-models"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: audio training-data and evaluation infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: current financial scale (unresolved): Current revenue, margin, burn, and concentration remain unknown."
+
+  - name: "Exa"
+    domain: "exa.ai"
+    aliases: []
+    sector: "web search and retrieval APIs for AI agents"
+    subsector: null
+    stage: series_c
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2021
+    founders:
+      - name: "Will Bryk"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Jeffrey Wang"
+        role: "Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "web search and retrieval APIs for AI agents"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to exa.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://exa.ai/blog/announcing-series-c"
+      - "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: web search and retrieval APIs for AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital efficiency (blocked): Revenue, gross margin, cloud cost, and burn are not public."
+
+  - name: "Listen Labs"
+    domain: "listenlabs.com"
+    aliases: []
+    sector: "AI-led qualitative customer research"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Alfred Wahlforss"
+        role: "CEO & Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Florian Juengermann"
+        role: "CTO & Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI-led qualitative customer research"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to listenlabs.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html"
+      - "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI-led qualitative customer research. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: eight-figure revenue (resolved_with_caveat): Keep as a range-style scale statement, not a point estimate."
+
+  - name: "Rillet"
+    domain: "rillet.com"
+    aliases: []
+    sector: "AI-native ERP and accounting software"
+    subsector: null
+    stage: series_c
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2021
+    founders:
+      - name: "Nicolas Kopp"
+        role: "CEO & Founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Stelios Modes"
+        role: "CTO & Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI-native ERP and accounting software"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to rillet.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.rillet.com/blog/rillet-raises-100m-series-c-at-1b-valuation-to-build-accounting-superintelligence"
+      - "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/"
+      - "https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI-native ERP and accounting software. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: absolute ARR (unresolved): New ARR doubled, but absolute ARR is still undisclosed."
+
+  - name: "Parallel Web Systems"
+    domain: "parallel.ai"
+    aliases: []
+    sector: "web search and research APIs for AI agents"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Parag Agrawal"
+        role: "Founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "web search and research APIs for AI agents"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to parallel.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://parallel.ai/blog/series-b"
+      - "https://techcrunch.com/2026/04/29/parallel-web-systems-hits-2b-valuation-five-months-after-its-last-big-raise/"
+      - "https://www.wsj.com/cio-journal/ex-twitter-ceos-ai-startup-raises-funds-at-2-billion-valuation-63c927fc"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: web search and research APIs for AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital efficiency (blocked): No public revenue or margin despite $230M capital raised."
+
+  - name: "Braintrust"
+    domain: "braintrust.dev"
+    aliases: []
+    sector: "AI evaluation and observability infrastructure"
+    subsector: null
+    stage: series_b
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Ankur Goyal"
+        role: "Founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI evaluation and observability infrastructure"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to braintrust.dev."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.braintrust.dev/blog/announcing-series-b"
+      - "https://www.axios.com/pro/enterprise-software-deals/2026/02/17/ai-observability-braintrust-80-million-800-million"
+      - "https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI evaluation and observability infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: security incident (open_diligence): The May 2026 incident is a negative event and enterprise-trust diligence item."
+
+  - name: "XBOW"
+    domain: "xbow.com"
+    aliases: []
+    sector: "autonomous offensive-security software"
+    subsector: null
+    stage: series_c
+    headquarters: "Seattle, Washington, United States"
+    foundingYear: 2024
+    founders:
+      - name: "Oege de Moor"
+        role: "Founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "autonomous offensive-security software"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to xbow.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://xbow.com/blog/series-b"
+      - "https://xbow.com/news/xbow-raises-120m-to-scale"
+      - "https://xbow.com/news/xbow-secures-additional-35m-from-strategic-investors"
+      - "https://www.nasdaqprivatemarket.com/company/xbow/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: autonomous offensive-security software. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: cumulative funding (partially_resolved): Derived disclosed total through Series C extension is about $272M; retain caveat because Series B page-date metadata is inconsistent and early round history should be checked again before modeling."
+
+  - name: "Basis"
+    domain: "getbasis.ai"
+    aliases: []
+    sector: "AI agents for accounting firms"
+    subsector: null
+    stage: series_b
+    headquarters: "New York, New York, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Matthew Harpe"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Mitchell Troyanovsky"
+        role: "Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI agents for accounting firms"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to getbasis.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.getbasis.ai/blogs/basis-raises-100m-series-b-led-by-accel-and-google-ventures"
+      - "https://www.marketscreener.com/news/ai-accounting-startup-basis-raises-100-million-at-1-15-billion-valuation-ce7e5cdade88f425"
+      - "https://www.cpapracticeadvisor.com/2026/02/24/basis-raises-100-million-to-deploy-ai-agents-for-accounting-firms/178759/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI agents for accounting firms. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital efficiency (blocked): Funding is established around $138M, but revenue and margin are not."
+
+  - name: "Avoca"
+    domain: "avoca.ai"
+    aliases: []
+    sector: "AI front-office agents for home and field services"
+    subsector: null
+    stage: series_b
+    headquarters: "New York, New York, United States"
+    foundingYear: 2022
+    founders:
+      - name: "Tyson Chen"
+        role: "Co-founder & President"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Apurva Shrivastava"
+        role: "Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI front-office agents for home and field services"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to avoca.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://getavoca.ai/blog/avoca-raises-125m-series-b-1b-valuation"
+      - "https://fortune.com/2026/04/27/avoca-ai-agents-missed-calls-hvac-plumbing-roofing-kleiner-perkins-chen-shrivastava-braswell/"
+      - "https://www.cbinsights.com/company/avoca/financials"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI front-office agents for home and field services. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: Series B amount (unresolved): Company and Fortune say >$125M across Seed through Series B. Do not use CB Insights' $125M Series B label as exact without reconciliation. | $1B jobs claim (resolved): This is customer job volume, not Avoca revenue."
+
+  - name: "Assort Health"
+    domain: "assorthealth.com"
+    aliases: []
+    sector: "AI agents for healthcare patient-access workflows"
+    subsector: null
+    stage: series_c
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Jon Wang"
+        role: "Founder & co-CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Jeffery Liu"
+        role: "Founder & co-CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI agents for healthcare patient-access workflows"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to assorthealth.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+      - "https://www.forbes.com/sites/amyfeldman/2026/06/24/these-29-year-olds-ai-chatbot-for-scheduling-doctor-visits-is-now-worth-12-billion/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI agents for healthcare patient-access workflows. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: revenue scale (partially_resolved): 20x growth is usable as momentum evidence; absolute revenue remains unknown."
+
+  - name: "ElevenLabs"
+    domain: "elevenlabs.io"
+    aliases: []
+    sector: "generative audio models, APIs, and voice agents"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "London, United Kingdom"
+    foundingYear: 2022
+    founders:
+      - name: "Mati Staniszewski"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Piotr Dabkowski"
+        role: "Co-founder & CTO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "generative audio models, APIs, and voice agents"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to elevenlabs.io."
+    researchStatus: approved
+    sourceUrls:
+      - "https://elevenlabs.io/blog/series-d"
+      - "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+      - "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: generative audio models, APIs, and voice agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: primary versus tender (resolved): The $100M May tender is secondary liquidity and must not be counted as company primary capital."
+
+  - name: "Vercel"
+    domain: "vercel.com"
+    aliases: []
+    sector: "developer cloud and AI application infrastructure"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2015
+    founders:
+      - name: "Guillermo Rauch"
+        role: "Founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "developer cloud and AI application infrastructure"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to vercel.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://vercel.com/blog/series-f"
+      - "https://www.investing.com/news/stock-market-news/ai-coding-startup-vercel-raises-300-million-valued-at-93-billion-4264199"
+      - "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/"
+      - "https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: developer cloud and AI application infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: Series F versus tender (resolved): $300M Series F is primary financing; separate ~ $300M tender is secondary. | security incident (open_diligence): Keep as a negative enterprise-trust event and investigate commercial impact."
+
+  - name: "OpenEvidence"
+    domain: "openevidence.com"
+    aliases: []
+    sector: "free ad-supported clinical information platform"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "Miami, Florida, United States"
+    foundingYear: null
+    operatingOriginYear: 2021
+    founders:
+      - name: "Daniel Nadler"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Zachary Ziegler"
+        role: "Co-founder & CTO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "free ad-supported clinical information platform"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to openevidence.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+      - "https://www.statnews.com/2026/05/20/openevidence-pitches-hospitals-we-are-not-monsters/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: free ad-supported clinical information platform. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: business model (resolved_with_caveat): Free ad-supported physician product is not conventional SaaS; ad concentration, trust, and health-system contract economics remain open."
+
+  - name: "Decagon"
+    domain: "decagon.ai"
+    aliases: []
+    sector: "enterprise customer-experience AI agents"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Jesse Zhang"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Ashwin Sreenivas"
+        role: "Co-founder & President"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "enterprise customer-experience AI agents"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to decagon.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://decagon.ai/blog/series-d-announcement"
+      - "https://decagon.ai/blog/decagon-closes-employee-tender-at-4-5-billion-valuation"
+      - "https://sacra.com/c/decagon/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: enterprise customer-experience AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: current revenue (partially_resolved): Sacra estimates ~$100M annualized revenue in July 2026; keep as third-party estimate, not company fact."
+
+  - name: "Glean"
+    domain: "glean.com"
+    aliases: []
+    sector: "enterprise search, context, and AI-agent platform"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2019
+    founders:
+      - name: "Arvind Jain"
+        role: "Founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "T.R. Vishwanath"
+        role: "Co-founder & CTO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Piyush Prahladka"
+        role: "Co-founder, Engineering"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Tony Gentilcore"
+        role: "Co-founder & Product Engineering Lead"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "enterprise search, context, and AI-agent platform"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to glean.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.glean.com/press/glean-surpasses-300m-arr-unrivaled-enterprise-context-fuels-ai-adoption"
+      - "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: enterprise search, context, and AI-agent platform. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: ARR definition (resolved_with_caveat): Company calls $300M ARR, but independent reporting documents consumption and hybrid pricing. Do not treat all $300M as traditional subscription ARR."
+
+  - name: "Sierra"
+    domain: "sierra.ai"
+    aliases: []
+    sector: "enterprise customer-experience AI agents"
+    subsector: null
+    stage: growth
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2023
+    founders:
+      - name: "Bret Taylor"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Clay Bavor"
+        role: "Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "enterprise customer-experience AI agents"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to sierra.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://sierra.ai/blog/better-customer-experiences-built-on-sierra"
+      - "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+      - "https://sierra.ai/jp/blog/julia-brau-donnelly-joins-sierra"
+      - "https://www.cbinsights.com/company/sierra-2001/financials"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: enterprise customer-experience AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital base (partially_resolved): CB Insights estimates ~$1.585B total funding; keep as structured-secondary until round history is fully reconstructed from primary sources."
+
+  - name: "Canva"
+    domain: "canva.com"
+    aliases: []
+    sector: "visual communication and design software"
+    subsector: null
+    stage: growth
+    headquarters: "Sydney, New South Wales, Australia"
+    foundingYear: 2012
+    founders:
+      - name: "Melanie Perkins"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Cliff Obrecht"
+        role: "Co-founder & COO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Cameron Adams"
+        role: "Co-founder & Chief Product Officer"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "visual communication and design software"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to canva.com."
+    researchStatus: approved
+    sourceUrls:
+      - "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/"
+      - "https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_L8N3UC03F%3A0-canva-launched-employee-tender-offer-at-valuation-of-42-billion-statement/"
+      - "https://robinhood.com/us/en/newsroom/rvi-canva/"
+      - "https://www.sec.gov/Archives/edgar/data/2085091/000089418926022643/rvi.htm"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: visual communication and design software. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: current revenue scale (resolved_with_caveat): Company told TechCrunch it ended 2025 at $4B ARR, with $500M B2B ARR. Still company-reported. | 2026 RVI transaction (unresolved_structure): SEC establishes ~$25M Class A stock purchase. Primary versus secondary is not established; do not count as company capital."
+
+  - name: "Lovable"
+    domain: "lovable.dev"
+    aliases: []
+    sector: "AI-native app and website creation platform"
+    subsector: null
+    stage: series_c
+    headquarters: "Stockholm, Sweden"
+    foundingYear: 2023
+    founders:
+      - name: "Anton Osika"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Fabian Hedin"
+        role: "Co-founder & CTO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI-native app and website creation platform"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to lovable.dev."
+    researchStatus: approved
+    sourceUrls:
+      - "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/"
+      - "https://lovable.dev/blog/our-response-to-the-april-2026-incident"
+      - "https://lovable.dev/blog/series-c"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI-native app and website creation platform. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: annualized revenue definition (resolved_with_caveat): $500M is annualized revenue run-rate, not automatically contracted ARR. | security incident (open_diligence): Access-control regression and failed vulnerability escalation remain negative enterprise-readiness evidence."
+
+  - name: "fal"
+    domain: "fal.ai"
+    aliases: []
+    sector: "usage-based generative-media inference infrastructure"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2021
+    founders:
+      - name: "Burkay Gur"
+        role: "Co-founder & CEO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Gorkem Yurtseven"
+        role: "Co-founder & CTO"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "usage-based generative-media inference infrastructure"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to fal.ai."
+    researchStatus: approved
+    sourceUrls:
+      - "https://blog.fal.ai/our-series-d-scaling-fal/"
+      - "https://techcrunch.com/2025/12/09/fal-nabs-140m-in-fresh-funding-led-by-sequoia-tripling-valuation-to-4-5b/"
+      - "https://www.theinformation.com/articles/video-hosting-startup-fal-funding-talks-8-billion-valuation"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: usage-based generative-media inference infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: 2025 Series D transaction (resolved): $140M is company financing; TechCrunch says broader transaction also included secondary sale. Keep separate. | 2026 financing talks (unresolved_watch): As of 2026-09-07, reviewed evidence still shows talks reported on 2026-03-18, not a confirmed closing."
+
+  - name: "Baseten"
+    domain: "baseten.co"
+    aliases: []
+    sector: "AI inference, serving, and post-training infrastructure"
+    subsector: null
+    stage: series_d_plus
+    headquarters: "San Francisco, California, United States"
+    foundingYear: 2019
+    founders:
+      - name: "Tuhin Srivastava"
+        role: "CEO & Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Amir Haghighat"
+        role: "CTO & Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Phil Howes"
+        role: "Co-founder & Chief Scientist"
+        priorCompanies: []
+        github: null
+        linkedin: null
+      - name: "Pankaj Gupta"
+        role: "Co-founder"
+        priorCompanies: []
+        github: null
+        linkedin: null
+    knownInvestors: []
+    description: "AI inference, serving, and post-training infrastructure"
+    reasonSourced: "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to baseten.co."
+    researchStatus: approved
+    sourceUrls:
+      - "https://www.baseten.co/blog/announcing-our-series-f/"
+      - "https://finance.yahoo.com/technology/ai/articles/baseten-raises-1-5-billion-130000555.html"
+      - "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
+      - "https://www.cbinsights.com/company/baseten/financials"
+    isPrivate: true
+    firstObservedAt: "2026-09-07"
+    notes: "Batch 2 business-model boundary: AI inference, serving, and post-training infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: Series F valuation (resolved_with_caveat): Split-priced financing used $13B and $11B valuation tranches. Do not model the full round as if every investor paid the $13B price. | capital efficiency (partially_resolved): Cumulative funding estimate is about $2.085B, but absolute revenue and gross margin remain insufficiently verified."

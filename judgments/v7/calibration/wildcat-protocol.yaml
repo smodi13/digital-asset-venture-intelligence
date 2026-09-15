@@ -1,0 +1,239 @@
+schemaVersion: 7
+candidateId: DCM-02
+entityId: co-wildcat-protocol
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:52207127f0968fa8fef2a7bf0b5a02080285002e2ab90891b176f7f30e3fce27"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 62
+    coverage: 1
+    citedEvidenceClaimIds: [clm-wildcat-seed-extension, clm-wildcat-kinto-default]
+    rationale: >-
+      Total disclosed primary capital raised to date is $5.3 million
+      (pre-seed, seed, and seed-extension combined). Against that, the
+      protocol had originated $368 million in credit since its 2023
+      launch and carried $150+ million outstanding as of the September
+      2025 report -- a figure disclosed incidentally in independent
+      reporting of a borrower default, not in a marketing context, which
+      supports its reliability. This is a genuinely large operating-scale
+      figure relative to capital consumed, though it is a cumulative
+      origination total rather than a current, verified TVL, and the same
+      report shows the protocol experiencing a real default within that
+      book.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses labor, compute, or operational subsidy costs for
+      running the permissionless, borrower-configured credit-market
+      architecture.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the
+      frozen packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The $368 million origination and $150+ million outstanding figures
+      are a single point-in-time aggregate as of September 2025, with no
+      earlier or later data point in the frozen packet to establish
+      whether origination volume, active borrower count, or lender
+      participation is growing, flat, or declining.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No dated multi-period series exists to assess growth trend; only a
+      single cumulative aggregate is available.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party
+      integration growth for the Wildcat protocol.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 68
+    coverage: 1
+    citedEvidenceClaimIds: [clm-wildcat-seed-extension, clm-wildcat-kinto-default, clm-wildcat-audit-code4rena]
+    rationale: >-
+      Laurence Day (CEO) and Dillon Kellar (co-founder, previously at
+      Indexed Finance, a directly relevant prior DeFi protocol) are named
+      and sourced by independent journalism. The team raised three rounds
+      from credible funds (Robot Ventures, Wintermute Ventures, Polygon
+      Ventures, among others) across 2023-2025, shipped and operated a
+      live undercollateralized-lending protocol that originated $368
+      million since 2023, commissioned an independent third-party audit
+      prior to relying on the design at scale, and navigated the
+      protocol's first borrower default with reporting indicating losses
+      stayed contained to the affected market. This is demonstrated
+      execution under real operating stress, not merely credentialing.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No EvidenceClaim documents admin-key control, upgrade rights, or
+      incentive/ownership structure for Wildcat. The frozen packet records
+      (outside of any citable EvidenceClaim) that the relationship between
+      "Wildcat Labs" (the funding-round entity) and the "Wildcat
+      Foundation" (referenced in bug-bounty materials) is not publicly
+      resolved, which is a real structural-clarity gap but is not itself
+      backed by a citable EvidenceClaim in this packet.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The Wildcat Labs / Wildcat Foundation relationship is unresolved
+      (gap-wildcat-legal-entity); no EvidenceClaim documents control or
+      incentive-alignment structure.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 58
+    coverage: 1
+    citedEvidenceClaimIds: [clm-wildcat-kinto-default]
+    rationale: >-
+      $368 million in credit originated and $150+ million outstanding as
+      of the report represents real capital that borrowers sought and
+      lenders committed under real repayment terms, which is concrete
+      evidence of funded participation in undercollateralized on-chain
+      credit. This is not converted mechanically into a top score: it is
+      a single aggregate without a growth trend or borrower-count detail,
+      and the same evidence shows a realized default within that book.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No borrower-count, market-count, or growth-trend detail accompanies
+      the aggregate origination figure.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses jurisdictional exposure or regulatory trajectory
+      for permissionless, undercollateralized on-chain lending.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No regulatory-trajectory evidence exists in the frozen packet; the
+      Wildcat Labs / Wildcat Foundation legal-entity relationship is
+      unresolved (gap-wildcat-legal-entity).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents how Wildcat Labs itself (as distinct from
+      lenders earning interest) captures fee or take-rate value from the
+      credit markets it enables. No protocol token has launched.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee-capture or take-rate mechanism evidence exists in the frozen
+      packet; no protocol token has launched (gap-wildcat-token).
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 42
+    coverage: 1
+    citedEvidenceClaimIds: [clm-wildcat-kinto-default]
+    rationale: >-
+      A real borrower default occurred (Kinto/Phoenix Facility, September
+      2025), with Phoenix lenders facing a partial principal loss
+      (expected ~76% recovery, final realized recovery not established).
+      This is direct evidence that the lending model's loss-absorption
+      relies on the affected market's own reserves rather than a system-
+      wide backstop. Reporting indicates the loss stayed contained to the
+      one affected market rather than propagating protocol-wide, which is
+      a point in favor of the isolation design, but a real, unresolved
+      capital loss to a class of lenders on the platform is itself a
+      negative economic-sustainability data point for that market.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Final realized recovery for Phoenix lenders was not established
+      (gap-wildcat-final-kinto-recovery).
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable
+      borrower-acquisition channel, or composability-driven integration
+      pull beyond the protocol's own permissionless market-creation
+      mechanism.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution or integration-pull evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding time, compliance requirements, or
+      lender-whitelisting friction in practice for a borrower creating a
+      market or a lender participating in one.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No onboarding or ecosystem-access-friction evidence exists in the
+      frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 52
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-wildcat-audit-code4rena]
+    rationale: >-
+      An independent, third-party competitive audit (Code4rena) was
+      conducted on the Wildcat smart-contract system, yielding 9 findings
+      including one rated HIGH severity, which is exactly the kind of
+      independently assessed evidence the criterion calls for rather than
+      a self-benchmark. Whether the HIGH-severity finding was remediated
+      before mainnet launch was not established, which tempers how far
+      this can be credited toward differentiation confidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Remediation status of the HIGH-severity Code4rena finding prior to
+      mainnet launch was not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 48
+    coverage: 1
+    citedEvidenceClaimIds: [clm-wildcat-audit-code4rena, clm-wildcat-kinto-default]
+    rationale: >-
+      Two distinct, relevant facts pull in different directions. The
+      Code4rena audit found one HIGH-severity issue whose remediation
+      status is unconfirmed, a real security-posture gap. Separately, the
+      Kinto default was an exploit that occurred upstream at the borrower
+      Kinto itself, draining Kinto's own pools -- it is not a Wildcat
+      smart-contract exploit, and this packet does not treat it as one.
+      What is directly relevant to Wildcat's own defensibility is that its
+      per-market, borrower-isolated design appears (per reporting) to have
+      contained the resulting default's losses to the single affected
+      market rather than letting it cascade protocol-wide, which is
+      evidence the risk-isolation architecture functioned as designed
+      under a real stress event. No claim documents validator/lender-base
+      size or observed resistance to forks that would further support a
+      network-effects judgment either way.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No validator/lender-base-size or fork-resistance evidence exists;
+      final confirmation that losses remained fully isolated to the
+      Phoenix Facility market was not established
+      (gap-wildcat-final-kinto-recovery).

@@ -1,0 +1,371 @@
+schemaVersion: 7
+candidateId: CPS-04
+canonicalId: co-nubit
+canonicalName: Nubit
+slug: nubit
+description: >-
+  Nubit is a Bitcoin-native data availability protocol developed by Riema
+  Labs Inc., originally positioned as infrastructure that lets
+  Bitcoin-ecosystem applications (BRC-20-style indexers, rollups, modular
+  services) post and verify data with Bitcoin-level security assumptions.
+  Since March 2025 Nubit has repositioned around "Bitcoin Thunderbolt," a
+  proposed Bitcoin base-layer soft-fork upgrade Nubit says it co-developed,
+  aimed at faster transactions and native programmability.
+domain: nubit.org
+firstObservedAt: "2024-03-01"
+category: core_protocols_and_scaling
+entityType: protocol
+assetType: unknown
+institutionalOrientation: null
+digitalAssetLifecycle: testnet
+financingStage: seed
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Riema Labs Inc. is the developing company behind the Nubit protocol;
+        public communications are issued under both the "Riema Labs" and
+        "Nubit" names interchangeably.
+      relatedEntityId: null
+      relationType: developer_of_protocol
+  protocolNetworkRelationship: >-
+    Riema Labs Inc. (company, Cayman Islands per press materials) develops
+    the Nubit protocol. No independent Nubit token had launched or was
+    confirmed as of the research cutoff; assetType is recorded as unknown
+    per the frozen universe assignment.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not establish whether "Nubit" is itself a
+      registered legal entity distinct from Riema Labs Inc., or purely a
+      product/protocol brand name.
+people:
+  - id: per-yu-feng
+    schemaVersion: 7
+    name: Yu Feng
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-nubit
+        companyName: Riema Labs Inc.
+        role: Co-founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-nubit-preseed-medium]
+    priorCompanies: []
+    education:
+      - institution: University of California, Santa Barbara
+        field: Computer Science (faculty)
+        completedYear: null
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-nubit-preseed-medium]
+  - id: per-hanzhi-liu
+    schemaVersion: 7
+    name: Hanzhi Liu
+    aliases: ["Hans Liu"]
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-nubit
+        companyName: Riema Labs Inc.
+        role: Co-founder
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-nubit-thunderbolt-globenewswire]
+    priorCompanies: []
+    education:
+      - institution: University of California, Santa Barbara
+        field: Computer Science (Ph.D. studies, on leave)
+        completedYear: null
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-nubit-thunderbolt-2025]
+    sourceIds: [src-nubit-thunderbolt-globenewswire]
+sources:
+  - id: src-nubit-preseed-medium
+    schemaVersion: 7
+    publisher: Nubit (official Medium)
+    title: "Nubit Secures $3M in Pre-Seed Funding to Lead Bitcoin-Native Data Availability Infrastructure"
+    url: "https://medium.com/@nubit_org/nubit-secures-3m-in-pre-seed-funding-to-lead-bitcoin-native-data-availability-infrastructure-c6b5bc812697"
+    sourceType: official_company
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-03-01"
+    availabilityDate: "2024-03-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-nubit-seed-cointelegraph
+    schemaVersion: 7
+    publisher: Cointelegraph (press release wire)
+    title: "Polychain leads $8M seed round for Nubit to enhance blockchain scalability and multichain ecosystem"
+    url: "https://cointelegraph.com/press-releases/polychain-leads-8m-seed-round-for-nubit-to-enhance-blockchain-scalability-and-multichain-ecosystem"
+    sourceType: official_company
+    tier: c
+    reliability: 0.4
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-06-01"
+    isPressReleaseReproduction: true
+    originatesFrom: src-nubit-seed-medium
+    supportRole: repeated_announcement
+  - id: src-nubit-seed-medium
+    schemaVersion: 7
+    publisher: Nubit (official Medium)
+    title: "Polychain Leads $8M Seed Round for Nubit to Enhance Blockchain Scalability and Multi-Chain Ecosystem"
+    url: "https://medium.com/nubit-official/polychain-leads-8m-seed-round-for-nubit-to-enhance-blockchain-scalability-and-multi-chain-bea6c98eb46e"
+    sourceType: official_company
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-06-01"
+    availabilityDate: "2024-06-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-nubit-thunderbolt-globenewswire
+    schemaVersion: 7
+    publisher: Nubit (GlobeNewswire press release)
+    title: "Nubit Unveils Bitcoin Thunderbolt: The Most Groundbreaking Paradigm Shift Matters to Bitcoin in the Past 10 Years"
+    url: "https://www.globenewswire.com/news-release/2025/03/05/3037136/0/en/nubit-unveils-bitcoin-thunderbolt-the-most-groundbreaking-paradigm-shift-matters-to-bitcoin-in-the-past-10-years.html"
+    sourceType: official_company
+    tier: c
+    reliability: 0.4
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-05"
+    availabilityDate: "2025-03-05"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-nubit-preseed
+    schemaVersion: 7
+    companyId: co-nubit
+    claim: >-
+      Riema Labs Inc. (operating as Nubit) announced a $3 million pre-seed
+      funding round in March 2024 for its Bitcoin-native data availability
+      infrastructure, with participation from dao5, OKX Ventures, and
+      Primitive Ventures among others.
+    statedValue: "$3 million"
+    numericValue: 3000000
+    unit: usd
+    sourceId: src-nubit-preseed-medium
+    supportingSourceIds: []
+    sourceUrl: "https://medium.com/@nubit_org/nubit-secures-3m-in-pre-seed-funding-to-lead-bitcoin-native-data-availability-infrastructure-c6b5bc812697"
+    publicationDate: "2024-03-01"
+    metricAsOfDate: "2024-03-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Company-reported only; no independent-journalism corroboration of the
+      exact amount or full investor list was found within the research
+      budget for this batch.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Can the pre-seed amount and investor list be independently corroborated?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-nubit-seed
+    schemaVersion: 7
+    companyId: co-nubit
+    claim: >-
+      Nubit closed an $8 million seed funding round led by Polychain
+      Capital, with participation from Nomad Capital, Spartan Group, Gate
+      Ventures, and Animoca, announced mid-2024.
+    statedValue: "$8 million"
+    numericValue: 8000000
+    unit: usd
+    sourceId: src-nubit-seed-medium
+    supportingSourceIds: [src-nubit-seed-cointelegraph]
+    sourceUrl: "https://medium.com/nubit-official/polychain-leads-8m-seed-round-for-nubit-to-enhance-blockchain-scalability-and-multi-chain-bea6c98eb46e"
+    publicationDate: "2024-06-01"
+    metricAsOfDate: "2024-06-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      The Cointelegraph "press release" wire item reproduces the Nubit
+      announcement verbatim and is not an independent voice; it is recorded
+      here as a same-origin reproduction, not a second source.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Has any independent outlet (not a wire reproduction) confirmed this round and its lead investor?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-nubit-thunderbolt-pivot
+    schemaVersion: 7
+    companyId: co-nubit
+    claim: >-
+      On March 5, 2025, Nubit announced "Bitcoin Thunderbolt," which it
+      describes as a proposed Bitcoin base-layer soft-fork upgrade
+      targeting faster transaction processing, native programmability, and
+      a unified asset protocol ("Goldinals") spanning BRC-20, Runes, and
+      Ordinals; Nubit presents itself as a core developer of this
+      initiative rather than only a standalone data-availability layer.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-nubit-thunderbolt-globenewswire
+    supportingSourceIds: []
+    sourceUrl: "https://www.globenewswire.com/news-release/2025/03/05/3037136/0/en/nubit-unveils-bitcoin-thunderbolt-the-most-groundbreaking-paradigm-shift-matters-to-bitcoin-in-the-past-10-years.html"
+    publicationDate: "2025-03-05"
+    metricAsOfDate: "2025-03-05"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      This is a company self-disclosure of a strategic/product pivot; the
+      technical claims about a Bitcoin soft-fork (a change that would
+      require Bitcoin Core consensus, not something any single company can
+      unilaterally ship) are Nubit's own characterization and were not
+      independently verified against Bitcoin Core proposal channels within
+      the research budget for this batch. A later sponsored press item
+      (news.bitcoin.com, June 25, 2025) claimed Thunderbolt had facilitated
+      "over 4 million transactions" and "267,000 unique users," but that
+      figure is (a) sponsored/company-adjacent content, not independent
+      reporting, and (b) attributed to the broader Thunderbolt initiative,
+      not specifically to Nubit; it is deliberately excluded from this
+      packet's evidence rather than recorded as an adoption metric.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Has Bitcoin Thunderbolt been proposed through any recognized Bitcoin
+      Core / BIP process, and can the claimed transaction/user figures be
+      independently attributed specifically to Nubit's contribution rather
+      than the initiative as a whole?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-nubit-thunderbolt-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-nubit
+    subjectNameRaw: Nubit
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-nubit-thunderbolt-globenewswire
+    rawStrength: 0.35
+    evidenceSummary: >-
+      Nubit repositioned its public messaging around "Bitcoin Thunderbolt,"
+      a proposed Bitcoin base-layer soft-fork upgrade, announced March 5,
+      2025, shifting from a standalone data-availability-layer narrative
+      toward positioning as a core contributor to a broader Bitcoin
+      scaling initiative.
+    evidenceIds: [clm-nubit-thunderbolt-pivot]
+    publicationDate: "2025-03-05"
+    availabilityDate: "2025-03-05"
+    eventDate: "2025-03-05"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: >-
+      Nubit's own announcement is the only source for this positioning and
+      for the underlying technical claims; whether Bitcoin Thunderbolt has
+      any standing within an actual Bitcoin Core proposal process, and
+      whether it will ship as described, is not independently confirmed.
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-nubit-independent-corroboration
+    whatWasSearched: "Independent (non-company-controlled, non-wire-reproduction) journalism confirming Nubit's funding rounds"
+    whatCouldNotBeEstablished: >-
+      Every source found for both funding rounds traces back to Nubit's own
+      Medium announcements or a wire reproduction of the same; no
+      independent financial or crypto-native journalism outlet was found to
+      have independently reported or verified these rounds.
+    expectedToMatter: true
+  - id: gap-nubit-mainnet-status
+    whatWasSearched: "Nubit mainnet launch date or current network status as of the research cutoff"
+    whatCouldNotBeEstablished: >-
+      Public sources describe a pre-alpha and alpha testnet (2024) but no
+      source within the research budget established a mainnet launch date
+      or confirmed the network remained in testnet as of 2026-09-10.
+    expectedToMatter: true
+  - id: gap-nubit-token
+    whatWasSearched: "Whether a NUBIT-style token has launched, its structure, and any exchange listing"
+    whatCouldNotBeEstablished: "No confirmed token launch was established; assetType recorded as unknown."
+    expectedToMatter: true
+  - id: gap-nubit-governance-control
+    whatWasSearched: "Governance model, admin keys, multisig/control structure for Nubit infrastructure"
+    whatCouldNotBeEstablished: "No source addressed governance or control structure."
+    expectedToMatter: true
+  - id: gap-nubit-aggregate-funding-figure
+    whatWasSearched: >-
+      A "$12 million total funding" figure attributed to Nubit (via a
+      Polychain-affiliated social post and secondary financial-media
+      pickups referencing it)
+    whatCouldNotBeEstablished: >-
+      The $3M pre-seed and $8M seed rounds already in this packet sum to
+      $11M, not $12M; the secondary articles repeating "$12M" were either
+      unreachable (403/404) or themselves traced back to the same
+      company-affiliated announcement within the research budget for this
+      batch. Not recorded as evidence; the reconciled $11M ($3M + $8M) is
+      what this packet actually supports.
+    expectedToMatter: false
+  - id: gap-nubit-legal-entity
+    whatWasSearched: "Legal entity name, jurisdiction, headquarters"
+    whatCouldNotBeEstablished: >-
+      Press materials name "Riema Labs Inc." at an address in George Town,
+      Grand Cayman, Cayman Islands, but this was not independently
+      corroborated by a registry or non-company source.
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Riema Labs Inc. and "Nubit" are used interchangeably across the
+    company's own communications; this packet treats them as one entity per
+    the frozen universe assignment (entityType protocol).
+  sourceOriginUncertainty: >-
+    Both funding-round claims rest entirely on company-controlled channels
+    (official Medium) plus a wire reproduction of the same text; per source-
+    independence rules, this is one voice, not two. Evidence density for
+    this candidate is correctly THIN.
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen THIN evidence-density label, research here
+    is limited to what could be established about identity, founders,
+    capital, and the March 2025 Bitcoin Thunderbolt product/strategic
+    pivot; adoption, mainnet status, token structure, and governance could
+    not responsibly be established within the research budget for this
+    batch and are recorded as gaps rather than estimated. This packet
+    remains intentionally THIN: additional company-controlled press
+    material was found (e.g., Goldinals launch, USD1 stablecoin
+    integration claims, a sponsored "4 million transactions / 267,000
+    users" figure) but was not added because it does not meaningfully
+    change the independence/evidentiary picture (same voice) or could not
+    be attributed specifically to Nubit rather than the broader Thunderbolt
+    initiative.
+researchCutoff: "2026-09-10"

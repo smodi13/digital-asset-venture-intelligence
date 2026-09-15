@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: SAP-02
+entityId: co-huma-finance
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:b51820dfcc54e6588e30df4f4d6ca16bc3342906c638d7943a140398d5ac3aea
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-equity-10m-2024, clm-huma-reported-volume]
+    rationale: "Independent reporting establishes $10 million of equity financing, while Huma reports more than $7 billion of cumulative onchain volume. The volume is first-party, not independently verified, and neither capital consumed nor comparable operating output is established, so the evidence is relevant but directionally inconclusive."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Capital spent and independently reproducible operating-scale measures are unavailable."
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-payfi-mechanism, clm-huma-institutional-access]
+    rationale: "Company-controlled documentation shows a model requiring liquidity-pool capital and, for the institutional product, professional-investor qualification and KYC/KYB. These requirements establish relevant resources but not their recurring cost or directional intensity."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Labor, infrastructure, liquidity-subsidy, and compliance operating costs are not quantified."
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-reported-volume]
+    rationale: "Huma reports more than $7 billion of cumulative onchain transaction volume, which is relevant usage evidence but is a first-party point-in-time cumulative figure without a comparable time series, retention, or independently reproducible methodology."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Temporal usage, unique-user, repeat-use, and retention evidence is unavailable."
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-permissionless-launch]
+    rationale: "Company-controlled documentation establishes a permissionless Solana launch, which is relevant ecosystem context but a product release alone does not establish external developer growth, expanding integrations, or sustained external usage."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "External developer, contributor, integration-growth, and sustained ecosystem-usage evidence is unavailable."
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-arf-merger, clm-huma-permissionless-launch, clm-huma-reported-volume]
+    rationale: "The team completed the Arf merger and, according to company-controlled documentation, delivered a permissionless Solana product and substantial cumulative transaction volume. This supports limited favorable execution direction, while the operating metric remains company-reported and not independently verified."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Role-specific delivery attribution and independently verified operating execution remain limited."
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-token-allocation, clm-huma-token-supply]
+    rationale: "First-party token materials disclose a fixed maximum supply and allocations to investors, team and advisers, and the protocol treasury. These allocation facts are relevant but do not establish control rights, concentration after vesting, or favorable alignment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Governance control, vesting, holder concentration, and post-merger entity alignment are unresolved."
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-rwa-capital-28m-2024, clm-huma-reported-volume]
+    rationale: "Independent transaction reporting establishes $28 million placed into platform RWAs, and Huma reports more than $7 billion of cumulative onchain volume. The committed asset capital provides concrete demand evidence, while the larger operating figure is first-party and lacks independent methodology."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Paid-customer counts, utilization, retention, and independently verified market-depth measures are unavailable."
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-institutional-access]
+    rationale: "Company-controlled documentation shows that Huma Institutional limits access to professional investors and requires KYC/KYB. This is relevant structural and compliance evidence, but regulated-party roles and jurisdiction-specific legal fit are not established."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "The regulated-entity map and jurisdiction-by-jurisdiction legal analysis are unavailable."
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-payfi-mechanism]
+    rationale: "First-party product documentation describes borrower cash flows and liquidity-pool deployment, establishing an economic mechanism. It does not disclose how borrower fees are divided or whether any recurring economics accrue to the operating company, so direction remains neutral."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Fee allocation, protocol take rate, and company monetization are not established."
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet contains no criterion-relevant evidence sufficient to assess revenue against costs, margins, burn, losses, incentives, or subsidy dependence."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Company economics and complete credit-performance history are unavailable."
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet establishes product availability but does not establish functioning third-party integrations, repeatable acquisition channels, repeat customers, or customer expansion."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Live integration performance and repeatable distribution evidence are unavailable."
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-institutional-access]
+    rationale: "Company-controlled documentation explicitly requires professional-investor qualification and KYC/KYB for Huma Institutional, creating concrete eligibility and onboarding friction for that product. The evidence does not measure implementation time or the permissionless product's user friction."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Onboarding duration, rejection rates, integration effort, and permissionless-product friction are unavailable."
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-payfi-mechanism, clm-huma-permissionless-launch]
+    rationale: "First-party materials describe payment-receivable financing funded through liquidity pools and a delivered permissionless Solana product, supporting limited favorable product-mechanism differentiation. No independent comparative assessment validates superiority to alternatives."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent technical comparison and validated performance benchmarks are unavailable."
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-huma-security-controls]
+    rationale: "Huma's own documentation lists reviews by Halborn, Sec3, Spearbit, and Certora. This first-party audit inventory is relevant but is not independent verification of safety, deployed-version coverage, remediation, defensibility, or network effects."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Audit scope mapping, unresolved findings, incident history, switching costs, and durable network effects are unavailable."
+analystNote: "Judged only from the frozen Huma Finance FINAL_TEST packet; no external research or aggregate scoring was used."

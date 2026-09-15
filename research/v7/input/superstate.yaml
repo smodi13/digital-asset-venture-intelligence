@@ -1,0 +1,420 @@
+schemaVersion: 7
+candidateId: TRA-01
+canonicalId: co-superstate
+canonicalName: Superstate
+slug: superstate
+description: >-
+  Superstate is a New York-based asset manager building compliant,
+  blockchain-based investment fund products for institutional investors,
+  including tokenized short-term U.S. Treasury and Agency securities funds
+  (USTB), a crypto-basis-trade fund (USCC), and an SEC-registered digital
+  transfer-agent infrastructure (Superstate Services LLC) it is extending
+  toward on-chain issuance of public equities.
+domain: superstate.co
+firstObservedAt: "2023-11-15"
+category: tokenization_and_real_world_assets
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: Series B
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Superstate Services LLC is Superstate's SEC-registered digital
+        transfer-agent subsidiary, registered with the SEC in March 2025,
+        supporting recordkeeping for Superstate's own tokenized funds (USTB,
+        USCC) with stated plans to extend transfer-agent services to other
+        issuers.
+      relatedEntityId: null
+      relationType: subsidiary
+  protocolNetworkRelationship: null
+  unresolvedBoundaryNotes: []
+people:
+  - id: per-robert-leshner
+    schemaVersion: 7
+    name: Robert Leshner
+    aliases: []
+    currentRole: Co-Founder and CEO
+    companyTenures:
+      - companyId: co-superstate
+        companyName: Superstate
+        role: Co-Founder and CEO
+        startDate: "2023-11-15"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-superstate-coindesk-seriesa]
+      - companyId: null
+        companyName: Compound Labs
+        role: Founder
+        startDate: "2017-01-01"
+        endDate: "2023-01-01"
+        isFounder: true
+        sourceIds: [src-superstate-block-ustb]
+    priorCompanies: ["Compound Labs", "Robot Ventures"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-superstate-seriesb-2026]
+    sourceIds: [src-superstate-coindesk-seriesa, src-superstate-block-ustb]
+sources:
+  - id: src-superstate-coindesk-seriesa
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Tokenization Firm Superstate Gets $14M Investment to Bring Traditional Funds On-Chain"
+    url: "https://www.coindesk.com/business/2023/11/15/tokenization-firm-superstate-gets-14m-investment-to-bring-traditional-funds-on-chain"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-11-15"
+    availabilityDate: "2023-11-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-superstate-unchained-seriesa
+    schemaVersion: 7
+    publisher: Unchained
+    title: "Superstate, a Tokenized Investment Fund Manager, Closes $14M Series A Funding Round"
+    url: "https://unchainedcrypto.com/superstate-14m-seriesa-round/"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.75
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-11-15"
+    availabilityDate: "2023-11-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-superstate-coindesk-seriesb
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Tokenization firm Superstate raises $82.5 million to bring Wall Street onchain"
+    url: "https://www.coindesk.com/business/2026/01/22/tokenization-firm-superstate-raises-usd82-5-million-to-bring-wall-street-onchain"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-01-22"
+    availabilityDate: "2026-01-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-superstate-block-ustb
+    schemaVersion: 7
+    publisher: The Block
+    title: "Robert Leshner's Superstate introduces Ethereum-based tokenized fund"
+    url: "https://www.theblock.co/post/275554/robert-leshner-superstate-ethereum-tokenized-fund-ustb"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-02-01"
+    availabilityDate: "2024-02-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-superstate-coindesk-transferagent
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Tokenized Asset Manager Superstate Registers Transfer Agent with SEC"
+    url: "https://www.coindesk.com/business/2025/03/06/tokenized-asset-manager-superstate-registers-transfer-agent-with-sec"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-06"
+    availabilityDate: "2025-03-06"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-superstate-sec-letter
+    schemaVersion: 7
+    publisher: U.S. Securities and Exchange Commission (Crypto Task Force correspondence)
+    title: "Superstate letter to the SEC Crypto Task Force"
+    url: "https://www.sec.gov/files/ctf-superstate-letter-061725.pdf"
+    sourceType: regulatory
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-06-17"
+    availabilityDate: "2025-06-17"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+evidenceClaims:
+  - id: clm-superstate-seriesa
+    schemaVersion: 7
+    companyId: co-superstate
+    claim: >-
+      Superstate, founded by Robert Leshner (founder of Compound Labs, DeFi
+      lending protocol founded 2017), closed a $14 million Series A round
+      announced November 15, 2023, co-led by Distributed Global and
+      CoinFund, with participation from Breyer Capital, Galaxy, Arrington
+      Capital, Road Capital, CMT Digital, Folius Ventures, Nascent, Hack VC,
+      Modular Capital, and Department of XYZ, to build compliant
+      blockchain-based investment fund products including a tokenized
+      short-term government bond fund.
+    statedValue: "$14 million"
+    numericValue: 14000000
+    unit: usd
+    sourceId: src-superstate-coindesk-seriesa
+    supportingSourceIds: [src-superstate-unchained-seriesa]
+    sourceUrl: "https://www.coindesk.com/business/2023/11/15/tokenization-firm-superstate-gets-14m-investment-to-bring-traditional-funds-on-chain"
+    publicationDate: "2023-11-15"
+    metricAsOfDate: "2023-11-15"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently corroborated by two separate crypto-native journalism
+      outlets (CoinDesk, Unchained), each naming overlapping but not
+      identical investor lists; treated as one corroborated fact rather
+      than reconciling the exact investor roster.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-superstate-seriesb
+    schemaVersion: 7
+    companyId: co-superstate
+    claim: >-
+      Superstate raised $82.5 million in a Series B round announced January
+      22, 2026, led by Bain Capital Crypto and Distributed Global, with
+      participation from Galaxy Digital, Haun Ventures, Brevan Howard
+      Digital, Sentinel Global, Bullish, Hypersphere Capital, and Flowdesk
+      among existing investors, to expand from tokenized Treasury products
+      toward a fully on-chain stock-issuance layer on Ethereum and Solana.
+      Superstate reported combined assets under management surpassing $1.2
+      billion across its tokenized products as of the same announcement.
+    statedValue: "$82.5 million; $1.2 billion AUM"
+    numericValue: 82500000
+    unit: usd
+    sourceId: src-superstate-coindesk-seriesb
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2026/01/22/tokenization-firm-superstate-raises-usd82-5-million-to-bring-wall-street-onchain"
+    publicationDate: "2026-01-22"
+    metricAsOfDate: "2026-01-22"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by CoinDesk; the $1.2 billion AUM figure is
+      company-reported within the same announcement and was not
+      independently audited or verified against a third-party AUM tracker
+      within the research budget for this batch.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Can the $1.2 billion combined AUM figure be independently verified (e.g., against on-chain USTB/USCC token supply data)?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-superstate-ustb-launch
+    schemaVersion: 7
+    companyId: co-superstate
+    claim: >-
+      Superstate launched USTB, a tokenized short-duration U.S. Treasury and
+      Agency securities fund purchasable and redeemable by eligible
+      investors via USDC, targeting the federal funds rate with a 0.15%
+      management fee; it later launched a second, distinct product, USCC
+      (Superstate Crypto Carry Fund), targeting basis-trade returns rather
+      than Treasury yield.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-superstate-block-ustb
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/275554/robert-leshner-superstate-ethereum-tokenized-fund-ustb"
+    publicationDate: "2024-02-01"
+    metricAsOfDate: "2024-02-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: "Independently reported by The Block."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-superstate-transfer-agent
+    schemaVersion: 7
+    companyId: co-superstate
+    claim: >-
+      Superstate Services LLC registered as a digital transfer agent with
+      the SEC (announced March 6, 2025), enabling it to maintain
+      blockchain-integrated shareholder recordkeeping and smart-contract
+      allowlist-based investor eligibility checks for its own tokenized
+      funds, with stated plans to extend the service to other issuers.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-superstate-coindesk-transferagent
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2025/03/06/tokenized-asset-manager-superstate-registers-transfer-agent-with-sec"
+    publicationDate: "2025-03-06"
+    metricAsOfDate: "2025-03-06"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: market_regulation
+    notes: >-
+      Independently reported by CoinDesk; regulatory registration is a
+      verifiable public-record fact (SEC registrant status), though this
+      packet did not independently confirm the registration directly
+      against SEC filings beyond the journalism report.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Can the Superstate Services LLC transfer-agent registration be independently confirmed directly against SEC filings?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-superstate-sec-engagement
+    schemaVersion: 7
+    companyId: co-superstate
+    claim: >-
+      Superstate submitted a written letter to the SEC's Crypto Task Force,
+      dated June 17, 2025, engaging directly with the regulator on
+      tokenized-securities policy matters.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-superstate-sec-letter
+    supportingSourceIds: []
+    sourceUrl: "https://www.sec.gov/files/ctf-superstate-letter-061725.pdf"
+    publicationDate: "2025-06-17"
+    metricAsOfDate: "2025-06-17"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: market_regulation
+    notes: >-
+      Primary regulatory-record source (hosted on sec.gov); the letter's
+      specific substantive positions were not further parsed for this
+      packet beyond confirming Superstate's direct, dated engagement with
+      the SEC Crypto Task Force process.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What specific policy positions did Superstate advocate for in its June 2025 Crypto Task Force letter, and were any adopted?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-superstate-seriesb-2026
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-superstate
+    subjectNameRaw: Superstate
+    signalType: funding
+    signalCategory: capital
+    signalDirection: positive
+    sourceId: src-superstate-coindesk-seriesb
+    rawStrength: 0.7
+    evidenceSummary: >-
+      Superstate closed an $82.5 million Series B led by Bain Capital
+      Crypto and Distributed Global, announced January 22, 2026, to expand
+      from tokenized Treasuries toward on-chain equity issuance, alongside
+      a reported $1.2 billion combined AUM across its tokenized products.
+    evidenceIds: [clm-superstate-seriesb]
+    publicationDate: "2026-01-22"
+    availabilityDate: "2026-01-22"
+    eventDate: "2026-01-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-superstate-aum-verification
+    whatWasSearched: "Independent verification of Superstate's $1.2 billion combined AUM figure (e.g., against on-chain token supply)"
+    whatCouldNotBeEstablished: "No independent AUM tracker or on-chain analysis corroborating the figure was found within the research budget for this batch."
+    expectedToMatter: true
+  - id: gap-superstate-headcount
+    whatWasSearched: "Superstate employee headcount"
+    whatCouldNotBeEstablished: "No source established a current headcount figure."
+    expectedToMatter: false
+  - id: gap-superstate-round-stage-labeling
+    whatWasSearched: "Consistent round-stage labeling (Series A vs. seed) for Superstate's funding history across outlets"
+    whatCouldNotBeEstablished: >-
+      The frozen universe contract notes round-stage labeling inconsistency
+      across outlets; this packet records the November 2023 round as
+      reported (Series A, per CoinDesk and Unchained) without independently
+      reconciling alternate labels found in other secondary sources.
+    expectedToMatter: false
+  - id: gap-superstate-equity-token-structure
+    whatWasSearched: "Whether Superstate itself (the company) has issued or plans to issue an equity token, distinct from the funds (USTB/USCC) it manages"
+    whatCouldNotBeEstablished: >-
+      Public sources describe Superstate's Series B equity round (company
+      shares, not tokenized) and its funds' tokenized shares (USTB/USCC)
+      as distinct; no source suggested Superstate company equity itself is
+      tokenized, consistent with assetType being recorded as equity.
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Superstate (the operating company, equity) and Superstate Services LLC
+    (its SEC-registered transfer-agent subsidiary) are treated as one
+    entity for research purposes, consistent with the frozen universe
+    assignment.
+  sourceOriginUncertainty: >-
+    Every material claim in this packet is independently reported by a
+    named crypto-native or mainstream financial journalism outlet (CoinDesk,
+    The Block, Unchained) or a primary regulatory record (sec.gov), with no
+    reliance on wire-service press-release reproductions; consistent with
+    the frozen RICH evidence-density label.
+  likelyContradictions: >-
+    The frozen universe contract flags round-stage labeling inconsistency
+    across outlets for Superstate's financing history; this packet does not
+    attempt to reconcile every secondary label and instead cites primary
+    independent-journalism reporting for each round.
+  completenessNotes: >-
+    Consistent with the frozen RICH evidence-density label: identity,
+    founder background, two funding rounds, two flagship products (USTB,
+    USCC), regulatory transfer-agent registration, and direct SEC
+    engagement are each independently corroborated. AUM verification
+    against an independent source and headcount remain open gaps.
+researchCutoff: "2026-09-10"

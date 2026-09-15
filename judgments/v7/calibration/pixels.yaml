@@ -1,0 +1,227 @@
+schemaVersion: 7
+candidateId: CSG-04
+entityId: co-pixels
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:150d7c1d1035535351bb40f5e94ef23451fd9baf0806e9879a1d07e4894ff246"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pixels-seed-round, clm-pixels-strategic-round, clm-pixels-1m-dau-selfreported]
+    rationale: >-
+      Primary capital consumed is well-corroborated ($2.4M seed plus $4.8M
+      strategic, roughly $7.2M cumulative). The only candidate scale figure,
+      a self-reported "1 million DAU" claim, is directly undermined by
+      independent reporting two weeks later estimating roughly 70% of
+      Pixels-linked accounts as bots (clm-pixels-bot-activity); with the
+      scale side of the ratio this materially contested, no confident
+      favorable or unfavorable scale-to-capital judgment can rest on the raw
+      claimed figure.
+    acknowledgedContradictionIds: [clm-pixels-bot-activity]
+    evidenceGapNote: >-
+      The only scale figure is self-reported and materially contested by
+      independent bot-activity reporting; no independently verified
+      human-user scale metric exists.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pixels-fdv-decline]
+    rationale: >-
+      Following the reported PIXEL FDV decline, Pixels introduced heavier
+      withdrawal fees redirected to stakers and automatic in-game staking,
+      a real, currently-documented reliance on token-incentive engineering
+      to retain player/holder participation, though the source is a single
+      independent outlet and the operational scale of these mechanics is
+      unverified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No compute/infrastructure cost evidence exists; only token-incentive
+      mechanics are documented, from a single source.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 30
+    coverage: 1
+    citedEvidenceClaimIds: [clm-pixels-1m-dau-selfreported, clm-pixels-bot-activity]
+    rationale: >-
+      Pixels self-reported surpassing 1 million DAU in May 2024, but
+      independent on-chain analytics (ChainArgos) and third-party commentary
+      two weeks later estimated roughly 70% of Pixels-linked Ronin accounts
+      were bots, with a growth curve "too smooth" for organic activity; the
+      company's own developers acknowledged the problem by banning 750,000
+      accounts in a single week, though bot activity reportedly rebounded
+      afterward. Reported daily-active-account counts are not equated with
+      durable human user adoption per this criterion's evidentiary standard;
+      the credible, sourced bot-contamination finding materially undercuts
+      any claim of real, persisting usage momentum from this period.
+    acknowledgedContradictionIds: [clm-pixels-1m-dau-selfreported, clm-pixels-bot-activity]
+    evidenceGapNote: null
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents developer, contributor, or third-party integration
+      growth for Pixels beyond its own migration to the Ronin ecosystem,
+      which is an infrastructure/platform choice, not an integration-growth
+      metric.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pixels-bot-activity]
+    rationale: >-
+      No sourced background or prior shipped work exists for founder Luke
+      Barwikowski beyond his current role (priorCompanies is empty), so
+      prestige/background cannot inform this judgment. What is observable is
+      an operational response to a real problem: when independent reporting
+      surfaced material bot contamination, the team acknowledged it and
+      banned 750,000 accounts within a week, demonstrated responsiveness
+      rather than denial, though bot activity reportedly rebounded
+      afterward, so the response's durability is unconfirmed.
+    acknowledgedContradictionIds: [clm-pixels-1m-dau-selfreported]
+    evidenceGapNote: >-
+      No founder background or prior-track-record evidence exists; the
+      durability of the bot-mitigation response is unconfirmed.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents PIXEL token allocation, insider concentration,
+      admin/upgrade key control, or a token-issuer entity distinct from the
+      Pixels studio (gap-pixels-token-issuer-entity).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No token-allocation or control-structure evidence exists; the
+      token-issuer entity relationship is unresolved
+      (gap-pixels-token-issuer-entity).
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying customer demand, workflow criticality,
+      or addressable market depth for Pixels beyond its own capital raises,
+      which are supply-side financing facts, not demand-side evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand-side or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No source established a legal entity name, incorporation
+      jurisdiction, or headquarters location for Pixels
+      (gap-pixels-legal-entity), foreclosing a regulatory-fit judgment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Legal entity name and incorporation jurisdiction are unresolved
+      (gap-pixels-legal-entity).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pixels-fdv-decline]
+    rationale: >-
+      A real fee mechanism is documented: new PIXEL withdrawal fees
+      redirected to stakers and a new vPIXEL fee-free-withdrawal token,
+      introduced alongside a stated pivot from raw DAU toward
+      higher-lifetime-value users. This is a genuine, if recent, designed
+      fee-redistribution mechanism rather than a pure buyback-and-burn, but
+      it directs value to token stakers, not confirmed company-side revenue
+      capture, and its methodology and scale are not independently verified
+      (single source).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The fee mechanism's scale and whether it represents company-side
+      capture versus purely token-holder redistribution is not established
+      by an independent source.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-pixels-fdv-decline]
+    rationale: >-
+      The PIXEL token is reported to have declined roughly 95% from its
+      2024/2025 peak fully diluted valuation, material evidence that the
+      original token-incentive economics did not hold. The subsequent
+      introduction of withdrawal fees to stakers and a pivot toward
+      higher-lifetime-value users is a genuine corrective response, but its
+      effectiveness is unconfirmed and the source is a single independent
+      outlet.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The precise peak/trough dates and current effectiveness of the
+      economic-model pivot are not independently cross-verified.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable sales
+      channel, or integration-driven pull; the Ronin ecosystem relationship
+      (advisory support, Mavis Hub distribution) is recorded only as
+      descriptive research narrative, not as a sourced EvidenceClaim about
+      actual distribution volume or effect.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution or integration-pull evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents wallet UX, onboarding time, compliance
+      requirements, or liquidity-access friction for a new player entering
+      Pixels or acquiring PIXEL.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction evidence exists in the frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim in the frozen packet independently assesses Pixels' game
+      mechanics, on-chain design, or architecture against other Web3 or
+      traditional farming/exploration games.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical or competitive-differentiation assessment
+      exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No Pixels-specific security audit was found (gap-pixels-security-audit);
+      the frozen packet explicitly notes that Ronin bridge security incidents
+      concern Sky Mavis' underlying infrastructure, not Pixels' own
+      contracts, and are not attributed to Pixels here. No claim documents
+      player switching costs, retained liquidity, or observed resistance to
+      competitive displacement.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No Pixels-specific security-audit evidence exists
+      (gap-pixels-security-audit); no network-effect or switching-cost
+      evidence exists.

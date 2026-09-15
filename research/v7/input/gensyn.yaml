@@ -1,0 +1,752 @@
+schemaVersion: 7
+candidateId: CAI-04
+canonicalId: co-gensyn
+canonicalName: Gensyn
+slug: gensyn
+description: >-
+  Gensyn is a hybrid company/protocol ecosystem for decentralized machine
+  learning, combining a custom Ethereum rollup and off-chain execution,
+  verification and communication systems with the AI token and applications
+  including RL Swarm and Delphi.
+domain: gensyn.ai
+firstObservedAt: "2020-05-13"
+category: crypto_ai_and_agentic_infrastructure
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_early
+financingStage: venture
+cohort: FINAL_TEST
+nameAliasNote: >-
+  The packet uses Gensyn as the umbrella project name while separating Gensyn
+  Limited, Gensyn Foundation, Gensyn Network Ltd, the Gensyn Network and the AI
+  token where the sources distinguish them.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: >-
+  The frozen cohort lists assetType unknown. By the cutoff, Gensyn Limited had
+  disclosed venture financing and the Gensyn Foundation/Network had completed
+  a public AI-token sale and launched the token. The investable exposure is
+  therefore recorded as equity_and_token, without treating the instruments as
+  economically interchangeable.
+entityStructure:
+  relationships:
+    - description: >-
+        Gensyn Limited is the UK development company that initially developed
+        the protocol and received venture financing.
+      relatedEntityId: null
+      relationType: protocol_development_company
+    - description: >-
+        Gensyn Network Ltd, a subsidiary of the Cayman Islands Gensyn
+        Foundation, is identified as issuer of the AI utility token and works
+        with the Foundation on protocol treasury management.
+      relatedEntityId: null
+      relationType: token_issuer_and_foundation_subsidiary
+    - description: >-
+        The Gensyn Network is the Ethereum-rollup network on which Delphi and
+        other machine-learning coordination applications operate.
+      relatedEntityId: null
+      relationType: affiliated_network
+  protocolNetworkRelationship: >-
+    The development company, Foundation, token issuer, protocol and rollup
+    network are related but distinct. Venture capital at Gensyn Limited, token
+    sale proceeds, network transaction activity and application fees are not
+    collapsed into one company-level capital or revenue figure.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not establish the complete ownership, service and IP
+      agreements among Gensyn Limited, Gensyn Foundation, Gensyn Network Ltd
+      and any U.S. entity referenced in web terms.
+people:
+  - id: per-ben-fielding
+    schemaVersion: 7
+    name: Ben Fielding
+    aliases: []
+    currentRole: Co-Founder and CEO
+    companyTenures:
+      - companyId: co-gensyn
+        companyName: Gensyn
+        role: Co-Founder and CEO
+        startDate: "2020-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-gensyn-goodwin-series-a-2023, src-gensyn-a16z-series-a-2023]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: "https://www.linkedin.com/in/ben-fielding/", website: null }
+    signalEventIds: []
+    sourceIds: [src-gensyn-goodwin-series-a-2023, src-gensyn-a16z-series-a-2023]
+  - id: per-harry-grieve
+    schemaVersion: 7
+    name: Harry Grieve
+    aliases: []
+    currentRole: Co-Founder and CTO
+    companyTenures:
+      - companyId: co-gensyn
+        companyName: Gensyn
+        role: Co-Founder and CTO
+        startDate: "2020-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-gensyn-goodwin-series-a-2023, src-gensyn-a16z-series-a-2023]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-gensyn-goodwin-series-a-2023, src-gensyn-a16z-series-a-2023]
+sources:
+  - id: src-gensyn-goodwin-series-a-2023
+    schemaVersion: 7
+    publisher: Goodwin Procter
+    title: "Gensyn Completes $43 Million Series A"
+    url: "https://www.goodwinlaw.com/en/news-and-events/news/2023/06/announcements-technology-gensyn-completes"
+    sourceType: customer_vendor
+    tier: b
+    reliability: 0.78
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-06-12"
+    availabilityDate: "2023-06-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-gensyn-a16z-series-a-2023
+    schemaVersion: 7
+    publisher: a16z crypto
+    title: "Investing in Gensyn"
+    url: "https://a16zcrypto.com/posts/article/investing-in-gensyn"
+    sourceType: investor_industry
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2023-06-11"
+    availabilityDate: "2023-06-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-gensyn-rl-swarm-2025
+    schemaVersion: 7
+    publisher: Gensyn
+    title: "RL Swarm: a framework for collaborative RL"
+    url: "https://www.gensyn.ai/news/rl-swarm-a-framework-for-collaborative-rl"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-02-25"
+    availabilityDate: "2025-02-25"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-gensyn-testnet-docs
+    schemaVersion: 7
+    publisher: Gensyn
+    title: "Public Testnet Overview"
+    url: "https://docs.gensyn.ai/testnet"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2025-03-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-gensyn-depinscope-status-2026
+    schemaVersion: 7
+    publisher: DepinScope
+    title: "Gensyn: requirements, costs and risks"
+    url: "https://depinscope.com/projects/gensyn"
+    sourceType: specialist_industry
+    tier: c
+    reliability: 0.6
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-08-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-gensyn-token-sale-release-2025
+    schemaVersion: 7
+    publisher: Gensyn Limited via PR Newswire
+    title: "Gensyn Launches AI Token Sale on Sonar"
+    url: "https://www.prnewswire.com/apac/news-releases/gensyn-launches-ai-token-sale-on-sonar-881636941.html"
+    sourceType: official_network_source
+    tier: c
+    reliability: 0.62
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-12-15"
+    availabilityDate: "2025-12-15"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-gensyn-lookonchain-sale-2025
+    schemaVersion: 7
+    publisher: Lookonchain
+    title: "Gensyn has completed an AI token public sale"
+    url: "https://lookonchain.com/feeds/41189"
+    sourceType: onchain_analytics
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-12-21"
+    availabilityDate: "2025-12-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-gensyn-mica-whitepaper-2025
+    schemaVersion: 7
+    publisher: Gensyn Network Ltd / Gensyn Foundation
+    title: "Gensyn AI Token MiCA Crypto-Asset White Paper"
+    url: "https://gensyn.network/docs/MiCA-whitepaper.pdf"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-12-15"
+    availabilityDate: "2025-12-15"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+  - id: src-gensyn-theblock-mainnet-2026
+    schemaVersion: 7
+    publisher: The Block
+    title: "a16z crypto-backed Gensyn launches Delphi, an AI-settled information markets platform"
+    url: "https://www.theblock.co/news/business/2026-04-22-a16z-crypto-gensyn-delphi-ai-settled-information-markets-platform-398419"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-04-22"
+    availabilityDate: "2026-04-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-gensyn-official-delphi-2026
+    schemaVersion: 7
+    publisher: Gensyn
+    title: "Gensyn Launches Delphi: Decentralised Information Markets"
+    url: "https://www.gensyn.ai/news/delphi"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-04-22"
+    availabilityDate: "2026-04-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-gensyn-hypernative-2026
+    schemaVersion: 7
+    publisher: Hypernative
+    title: "Gensyn Selects Hypernative to Secure Its Decentralized AI Compute Network"
+    url: "https://www.hypernative.io/blog/gensyn-selects-hypernative-to-secure-its-decentralized-ai-compute-network"
+    sourceType: customer_vendor
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-04-22"
+    availabilityDate: "2026-04-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: customer_vendor
+  - id: src-gensyn-coinness-token-2026
+    schemaVersion: 7
+    publisher: CoinNess
+    title: "Gensyn launches native token AI"
+    url: "https://coinness.com/en/news/1155933"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.68
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-04-30"
+    availabilityDate: "2026-04-30"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+evidenceClaims:
+  - id: clm-gensyn-founders-2020
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: "Gensyn was founded in London in 2020 by Ben Fielding and Harry Grieve."
+    sourceId: src-gensyn-goodwin-series-a-2023
+    supportingSourceIds: [src-gensyn-a16z-series-a-2023]
+    sourceUrl: "https://www.goodwinlaw.com/en/news-and-events/news/2023/06/announcements-technology-gensyn-completes"
+    publicationDate: "2023-06-12"
+    metricAsOfDate: "2023-06-12"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: team
+    evidenceStatus: supported
+  - id: clm-gensyn-series-a-43m
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn Limited completed a $43 million Series A led by a16z crypto in
+      June 2023, after a $6.5 million seed round led by Eden Block in March
+      2022.
+    statedValue: "$43 million Series A; $6.5 million seed"
+    numericValue: 43000000
+    unit: usd
+    sourceId: src-gensyn-goodwin-series-a-2023
+    supportingSourceIds: [src-gensyn-a16z-series-a-2023]
+    sourceUrl: "https://www.goodwinlaw.com/en/news-and-events/news/2023/06/announcements-technology-gensyn-completes"
+    publicationDate: "2023-06-12"
+    metricAsOfDate: "2023-06-12"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: company_financing
+    notes: "These are company financing rounds, not token-sale proceeds, network treasury assets, or capital deployed."
+    evidenceStatus: supported
+  - id: clm-gensyn-protocol-design
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn describes a marketplace protocol connecting machine-learning
+      workload developers with compute providers and using verification and
+      blockchain settlement to coordinate untrusted participants.
+    sourceId: src-gensyn-a16z-series-a-2023
+    supportingSourceIds: [src-gensyn-testnet-docs]
+    sourceUrl: "https://a16zcrypto.com/posts/article/investing-in-gensyn"
+    publicationDate: "2023-06-11"
+    metricAsOfDate: "2023-06-11"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: protocol_architecture
+    notes: "Architecture descriptions do not establish production throughput, cost advantage, or independent security verification."
+    evidenceStatus: supported
+  - id: clm-gensyn-rl-swarm-release
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn released RL Swarm under the MIT license in February 2025 as an
+      open, permissionless framework for collaborative reinforcement learning
+      across peer-to-peer nodes on consumer or data-center hardware.
+    sourceId: src-gensyn-rl-swarm-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.gensyn.ai/news/rl-swarm-a-framework-for-collaborative-rl"
+    publicationDate: "2025-02-25"
+    metricAsOfDate: "2025-02-25"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: developer_product
+    evidenceStatus: supported
+  - id: clm-gensyn-testnet-launch
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn's public testnet launched in March 2025 as a custom Ethereum
+      rollup integrated with off-chain execution, verification and
+      communication frameworks.
+    sourceId: src-gensyn-testnet-docs
+    supportingSourceIds: []
+    sourceUrl: "https://docs.gensyn.ai/testnet"
+    publicationDate: null
+    metricAsOfDate: "2025-03-31"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: network_deployment
+    evidenceStatus: supported
+  - id: clm-gensyn-testnet-program-status
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      On August 9, 2026, DepinScope reported that Gensyn's previous testnet
+      products RL Swarm, BlockAssist and CodeAssist had been paused and sunset.
+    sourceId: src-gensyn-depinscope-status-2026
+    supportingSourceIds: []
+    sourceUrl: "https://depinscope.com/projects/gensyn"
+    publicationDate: null
+    metricAsOfDate: "2026-08-09"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: caveat
+    topic: product_status
+    evidenceStatus: supported
+  - id: clm-gensyn-sale-design
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      The December 2025 public AI-token sale offered 3% of a 10 billion-token
+      supply through an English auction, with a testnet-participant bonus.
+    statedValue: "3% of 10 billion AI tokens"
+    numericValue: 300000000
+    unit: tokens_offered
+    sourceId: src-gensyn-token-sale-release-2025
+    supportingSourceIds: [src-gensyn-mica-whitepaper-2025]
+    sourceUrl: "https://www.prnewswire.com/apac/news-releases/gensyn-launches-ai-token-sale-on-sonar-881636941.html"
+    publicationDate: "2025-12-15"
+    metricAsOfDate: "2025-12-15"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: token_financing
+    evidenceStatus: supported
+  - id: clm-gensyn-sale-result
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Lookonchain reported 7,412 participants and approximately $16.14 million
+      committed at the close of Gensyn's public token sale, at a $473 million
+      fully diluted valuation.
+    statedValue: "$16.14 million commitments; 7,412 participants; $473 million FDV"
+    numericValue: 16140000
+    unit: usd_committed
+    sourceId: src-gensyn-lookonchain-sale-2025
+    supportingSourceIds: [src-gensyn-theblock-mainnet-2026]
+    sourceUrl: "https://lookonchain.com/feeds/41189"
+    publicationDate: "2025-12-21"
+    metricAsOfDate: "2025-12-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: token_financing
+    notes: >-
+      The Block later reported $11.7 million of proceeds after refunds. Gross
+      commitments and net proceeds are distinct, so the two values are not a
+      contradiction.
+    evidenceStatus: supported
+  - id: clm-gensyn-company-financing-2025
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      The Block reported that Gensyn raised a separate $16.7 million venture
+      round led by a16z crypto in October 2025 at a $1 billion fully diluted
+      network valuation.
+    statedValue: "$16.7 million venture round"
+    numericValue: 16700000
+    unit: usd
+    sourceId: src-gensyn-theblock-mainnet-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/news/business/2026-04-22-a16z-crypto-gensyn-delphi-ai-settled-information-markets-platform-398419"
+    publicationDate: "2026-04-22"
+    metricAsOfDate: "2025-10-01"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: company_financing
+    notes: "This venture financing is not the December 2025 token sale."
+    evidenceStatus: supported
+  - id: clm-gensyn-legal-structure
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn's MiCA white paper identifies Gensyn Network Ltd as the AI-token
+      issuer, Gensyn Foundation as its Cayman parent and protocol-treasury
+      manager, and Gensyn Limited as the UK protocol-development company.
+    sourceId: src-gensyn-mica-whitepaper-2025
+    supportingSourceIds: []
+    sourceUrl: "https://gensyn.network/docs/MiCA-whitepaper.pdf"
+    publicationDate: "2025-12-15"
+    metricAsOfDate: "2025-12-15"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: legal_identity
+    evidenceStatus: supported
+  - id: clm-gensyn-mainnet-delphi
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn launched its mainnet and Delphi application on April 22, 2026;
+      Delphi lets users create and trade in information markets whose outcomes
+      are settled by AI models.
+    sourceId: src-gensyn-theblock-mainnet-2026
+    supportingSourceIds: [src-gensyn-official-delphi-2026]
+    sourceUrl: "https://www.theblock.co/news/business/2026-04-22-a16z-crypto-gensyn-delphi-ai-settled-information-markets-platform-398419"
+    publicationDate: "2026-04-22"
+    metricAsOfDate: "2026-04-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: mainnet_and_product_launch
+    evidenceStatus: supported
+  - id: clm-gensyn-delphi-economics
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      The Block reported that Delphi pays market creators a 1.5% fee in USDC;
+      this is an application-level fee design and does not establish Gensyn
+      company revenue.
+    statedValue: "1.5% creator fee in USDC"
+    numericValue: 1.5
+    unit: percent
+    sourceId: src-gensyn-theblock-mainnet-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/news/business/2026-04-22-a16z-crypto-gensyn-delphi-ai-settled-information-markets-platform-398419"
+    publicationDate: "2026-04-22"
+    metricAsOfDate: "2026-04-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: protocol_fee_design
+    evidenceStatus: supported
+  - id: clm-gensyn-token-launch
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Gensyn launched the AI token on April 29, 2026 after mainnet; CoinNess
+      reported a 0.5% protocol fee intended for automatic token repurchases,
+      with 70% of repurchased tokens burned and 29% sent to the community
+      treasury.
+    statedValue: "0.5% protocol fee; 70% burn; 29% community treasury"
+    numericValue: 0.5
+    unit: percent_of_transaction_volume
+    sourceId: src-gensyn-coinness-token-2026
+    supportingSourceIds: [src-gensyn-mica-whitepaper-2025]
+    sourceUrl: "https://coinness.com/en/news/1155933"
+    publicationDate: "2026-04-30"
+    metricAsOfDate: "2026-04-29"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: token_launch_and_economics
+    notes: "A fee-and-burn design is not equivalent to company revenue or token-holder ownership rights."
+    evidenceStatus: supported
+  - id: clm-gensyn-security-monitoring
+    schemaVersion: 7
+    companyId: co-gensyn
+    claim: >-
+      Hypernative announced real-time monitoring and response coverage for
+      Gensyn's EVM infrastructure and Delphi, with chain integration timed to
+      the April 2026 mainnet launch.
+    sourceId: src-gensyn-hypernative-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.hypernative.io/blog/gensyn-selects-hypernative-to-secure-its-decentralized-ai-compute-network"
+    publicationDate: "2026-04-22"
+    metricAsOfDate: "2026-04-22"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: security_monitoring
+    notes: "Vendor monitoring is not a substitute for a scoped independent code-audit report."
+    evidenceStatus: supported
+signalEvents:
+  - id: sig-gensyn-series-a-2023
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-gensyn
+    subjectNameRaw: Gensyn Limited
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-gensyn-goodwin-series-a-2023
+    rawStrength: 0.9
+    evidenceSummary: "Gensyn completed a $43 million Series A."
+    evidenceIds: [clm-gensyn-series-a-43m]
+    publicationDate: "2023-06-12"
+    availabilityDate: "2023-06-12"
+    eventDate: "2023-06-12"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-gensyn-rl-swarm-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-gensyn
+    subjectNameRaw: Gensyn RL Swarm
+    signalType: developer_activity
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-gensyn-rl-swarm-2025
+    rawStrength: 0.7
+    evidenceSummary: "Gensyn released RL Swarm as open-source collaborative-RL software."
+    evidenceIds: [clm-gensyn-rl-swarm-release]
+    publicationDate: "2025-02-25"
+    availabilityDate: "2025-02-25"
+    eventDate: "2025-02-25"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-gensyn-testnet-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-gensyn
+    subjectNameRaw: Gensyn Public Testnet
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-gensyn-testnet-docs
+    rawStrength: 0.8
+    evidenceSummary: "Gensyn launched its public testnet in March 2025."
+    evidenceIds: [clm-gensyn-testnet-launch]
+    publicationDate: null
+    availabilityDate: "2025-03-31"
+    eventDate: "2025-03-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-gensyn-token-sale-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-gensyn
+    subjectNameRaw: Gensyn Network
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-gensyn-lookonchain-sale-2025
+    rawStrength: 0.8
+    evidenceSummary: "The Gensyn Foundation completed a public AI-token sale."
+    evidenceIds: [clm-gensyn-sale-design, clm-gensyn-sale-result]
+    publicationDate: "2025-12-21"
+    availabilityDate: "2025-12-21"
+    eventDate: "2025-12-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-gensyn-mainnet-2026
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-gensyn
+    subjectNameRaw: Gensyn Network
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-gensyn-theblock-mainnet-2026
+    rawStrength: 0.9
+    evidenceSummary: "Gensyn mainnet went live on April 22, 2026."
+    evidenceIds: [clm-gensyn-mainnet-delphi]
+    publicationDate: "2026-04-22"
+    availabilityDate: "2026-04-22"
+    eventDate: "2026-04-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-gensyn-delphi-2026
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-gensyn
+    subjectNameRaw: Delphi
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-gensyn-theblock-mainnet-2026
+    rawStrength: 0.8
+    evidenceSummary: "Gensyn launched the Delphi information-market application."
+    evidenceIds: [clm-gensyn-mainnet-delphi, clm-gensyn-delphi-economics]
+    publicationDate: "2026-04-22"
+    availabilityDate: "2026-04-22"
+    eventDate: "2026-04-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-gensyn-ai-token-2026
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-gensyn
+    subjectNameRaw: Gensyn Network
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-gensyn-coinness-token-2026
+    rawStrength: 0.8
+    evidenceSummary: "Gensyn launched the network's AI token on April 29, 2026."
+    evidenceIds: [clm-gensyn-token-launch]
+    publicationDate: "2026-04-30"
+    availabilityDate: "2026-04-30"
+    eventDate: "2026-04-29"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-gensyn-company-revenue
+    whatWasSearched: "Company, protocol, token and independent reporting for company-level revenue and customer contracts."
+    whatCouldNotBeEstablished: "Gensyn Limited revenue, contracted customers, recurring revenue, or the share of protocol economics accruing to the company."
+    expectedToMatter: true
+  - id: gap-gensyn-compute-economics
+    whatWasSearched: "Protocol documentation and reporting for production compute supply, workload demand, utilization and realized pricing."
+    whatCouldNotBeEstablished: "Production compute capacity, paid workload volume, provider utilization, or realized cost advantage over centralized alternatives."
+    expectedToMatter: true
+  - id: gap-gensyn-audit-reports
+    whatWasSearched: "Protocol documentation, security-provider announcements, repositories and public audit references."
+    whatCouldNotBeEstablished: "A public scoped audit report tying reviewed commits to the full live mainnet, AI token and Delphi deployments."
+    expectedToMatter: true
+  - id: gap-gensyn-governance-control
+    whatWasSearched: "Token disclosures, protocol documentation and public governance materials."
+    whatCouldNotBeEstablished: "Operational community-governance authority, current signer/control structure, or limits on Foundation treasury discretion."
+    expectedToMatter: true
+  - id: gap-gensyn-frozen-metrics
+    whatWasSearched: "Official network sources, explorers and analytics for cutoff-date network, fee and token-supply measurements."
+    whatCouldNotBeEstablished: "A methodologically documented cutoff-date snapshot suitable for the packet's structured metric fields."
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Gensyn's company, Foundation, issuer, protocol, network, applications and
+    token are linked but not interchangeable. Public inter-entity agreements
+    and full control rights were not established.
+  sourceOriginUncertainty: >-
+    Funding and technical architecture have substantial issuer/investor origin.
+    The Block and Lookonchain add independent reporting for specified events,
+    while Hypernative is a vendor disclosure and cannot self-corroborate.
+  likelyContradictions: >-
+    Public-sale gross commitments of approximately $16.14 million and reported
+    net proceeds of $11.7 million describe different bases after refunds, not
+    competing totals. They are preserved distinctly rather than reconciled.
+  completenessNotes: >-
+    Mainnet, token and product launches are documented, but production compute
+    demand, company revenue, governance control and fully scoped public audit
+    evidence remain unresolved.
+researchCutoff: "2026-09-10"

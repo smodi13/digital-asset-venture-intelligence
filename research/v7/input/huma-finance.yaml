@@ -1,0 +1,636 @@
+schemaVersion: 7
+candidateId: SAP-02
+canonicalId: co-huma-finance
+canonicalName: Huma Finance
+slug: huma-finance
+description: >-
+  Huma Finance is a payment-financing (PayFi) protocol and operating company
+  that connects stablecoin liquidity to real-world payment receivables and
+  settlement flows. It offers permissionless Solana pools and a separate
+  permissioned institutional product, and the HUMA token governs and
+  incentivizes the protocol.
+domain: huma.finance
+firstObservedAt: "2023-05-01"
+category: stablecoins_and_payments
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_established
+financingStage: Series A
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Huma Finance merged with Swiss transaction-services and cross-border
+        liquidity company Arf in April 2024; public materials continued to use
+        both brands after the merger.
+      relatedEntityId: null
+      relationType: merged_operating_company
+    - description: >-
+        The Huma Foundation described itself as the issuer/steward of the HUMA
+        utility and governance token, while Huma Finance and Arf operate the
+        payment-financing products.
+      relatedEntityId: null
+      relationType: foundation_protocol_steward
+  protocolNetworkRelationship: >-
+    The packet treats Huma Finance, its Huma protocol, and the HUMA-governed
+    PayFi network as one hybrid entity under the frozen assignment, while
+    distinguishing company financing, protocol liquidity, and token economics.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not establish the complete post-merger legal-entity
+      chart or the precise ownership and contractual relationships among Huma
+      Finance, Arf, Arf Capital, and the Huma Foundation.
+people:
+  - id: per-richard-liu-huma
+    schemaVersion: 7
+    name: Richard Liu
+    aliases: []
+    currentRole: Co-founder and Co-CEO
+    companyTenures:
+      - companyId: co-huma-finance
+        companyName: Huma Finance
+        role: Co-founder and Co-CEO
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-huma-wublockchain-2024]
+    priorCompanies: [Google, Leap.ai, EarnIn]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-huma-wublockchain-2024]
+  - id: per-erbil-karaman
+    schemaVersion: 7
+    name: Erbil Karaman
+    aliases: []
+    currentRole: Co-founder and Co-CEO
+    companyTenures:
+      - companyId: co-huma-finance
+        companyName: Huma Finance
+        role: Co-founder and Co-CEO
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-huma-arf-merger-2024]
+    priorCompanies: [Facebook, Lyft, EarnIn]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-huma-arf-merger-2024]
+sources:
+  - id: src-huma-coindesk-funding-2024
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Tokenized RWA Platform Huma Finance Gets $38M Investment, Plans Expansion to Solana and Stellar's Soroban"
+    url: "https://www.coindesk.com/business/2024/09/11/tokenized-rwa-platform-huma-finance-gets-38m-investment-plans-expansion-to-solana-and-stellars-soroban"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-09-11"
+    availabilityDate: "2024-09-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-huma-blog-funding-2024
+    schemaVersion: 7
+    publisher: Huma Finance
+    title: "Huma Raises $38M to Hyper-scale its Payment Financing (PayFi) Network"
+    url: "https://blog.huma.finance/huma-raises-38m-to-hyper-scale-its-payfi-network"
+    sourceType: official_company
+    tier: b
+    reliability: 0.7
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-09-11"
+    availabilityDate: "2024-09-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-huma-arf-merger-2024
+    schemaVersion: 7
+    publisher: Arf
+    title: "Huma Finance and Arf Merge to Transform Global Finance Through Real World Asset Tokenization"
+    url: "https://arf.one/huma-finance-and-arf-merge-to-transform-global-finance-through-real-world-asset-tokenization/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.7
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-04-17"
+    availabilityDate: "2024-04-17"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+  - id: src-huma-docs-overview
+    schemaVersion: 7
+    publisher: Huma Finance
+    title: "What is Huma?"
+    url: "https://docs.huma.finance/about-huma/what-is-huma"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-05-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-huma-docs-product
+    schemaVersion: 7
+    publisher: Huma Finance
+    title: "Huma 2.0 Overview"
+    url: "https://docs.huma.finance/products/huma-2.0/overview"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2025-11-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-huma-docs-faq
+    schemaVersion: 7
+    publisher: Huma Finance
+    title: "Huma 2.0 FAQs"
+    url: "https://docs.huma.finance/products/huma-2.0/faqs"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-03-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-huma-tokenomics-2025
+    schemaVersion: 7
+    publisher: Huma Foundation
+    title: "Introducing HUMA: Powering the Future of PayFi"
+    url: "https://blog.huma.finance/introducing-huma-powering-the-future-of-payfi"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-05-21"
+    availabilityDate: "2025-05-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-huma-binance-2025
+    schemaVersion: 7
+    publisher: Binance Academy
+    title: "What Is Huma Finance (HUMA)?"
+    url: "https://www.binance.com/en/academy/articles/what-is-huma-finance-huma"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2026-05-28"
+    availabilityDate: "2026-05-28"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-huma-docs-security
+    schemaVersion: 7
+    publisher: Huma Finance
+    title: "Security and Audits"
+    url: "https://docs.huma.finance/ecosystem-resources/security-audits"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-08-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-huma-wublockchain-2024
+    schemaVersion: 7
+    publisher: Wu Blockchain
+    title: "Conversation with Huma founder Richard Liu"
+    url: "https://finance.sina.cn/blockchain/2024-09-23/detail-incqawvx0337400.d.html"
+    sourceType: founder_or_executive
+    tier: c
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-09-23"
+    availabilityDate: "2024-09-23"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: historical_context
+evidenceClaims:
+  - id: clm-huma-equity-10m-2024
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma's September 2024 financing included a $10 million equity investment led by Distributed Global."
+    statedValue: "$10 million equity investment"
+    numericValue: 10000000
+    unit: usd
+    sourceId: src-huma-coindesk-funding-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2024/09/11/tokenized-rwa-platform-huma-finance-gets-38m-investment-plans-expansion-to-solana-and-stellars-soroban"
+    publicationDate: "2024-09-11"
+    metricAsOfDate: "2024-09-11"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: equity_financing
+    notes: "Kept separate from the $28 million invested into platform RWAs."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-rwa-capital-28m-2024
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "The same September 2024 announcement included $28 million invested in yield-bearing real-world assets offered on Huma's platform."
+    statedValue: "$28 million in platform RWAs"
+    numericValue: 28000000
+    unit: usd
+    sourceId: src-huma-coindesk-funding-2024
+    supportingSourceIds: [src-huma-blog-funding-2024]
+    sourceUrl: "https://www.coindesk.com/business/2024/09/11/tokenized-rwa-platform-huma-finance-gets-38m-investment-plans-expansion-to-solana-and-stellars-soroban"
+    publicationDate: "2024-09-11"
+    metricAsOfDate: "2024-09-11"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: customer_capital
+    notes: "This is platform asset capital, not equity financing, company revenue, or capital spent."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-arf-merger
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma Finance and Arf announced that they had merged on April 17, 2024."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-huma-arf-merger-2024
+    supportingSourceIds: [src-huma-coindesk-funding-2024]
+    sourceUrl: "https://arf.one/huma-finance-and-arf-merge-to-transform-global-finance-through-real-world-asset-tokenization/"
+    publicationDate: "2024-04-17"
+    metricAsOfDate: "2024-04-17"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: entity_identity
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What legal entity survived the merger and owns the relevant intellectual property and customer contracts?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-permissionless-launch
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma launched its permissionless Solana product in April 2025."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-huma-docs-overview
+    supportingSourceIds: [src-huma-docs-faq]
+    sourceUrl: "https://docs.huma.finance/about-huma/what-is-huma"
+    publicationDate: null
+    metricAsOfDate: "2025-04-01"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product_launch
+    notes: "The source states month but not day; the metric date uses the first day only as month-level normalization."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-institutional-access
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma Institutional requires professional-investor qualification and KYC/KYB verification."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-huma-docs-faq
+    supportingSourceIds: []
+    sourceUrl: "https://docs.huma.finance/products/huma-2.0/faqs"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: compliance
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Which regulated entities perform onboarding, underwriting, servicing, and custody in each jurisdiction?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-payfi-mechanism
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma deploys liquidity-pool capital into payment-financing applications whose borrowers generate cash flow from payment transactions."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-huma-docs-product
+    supportingSourceIds: []
+    sourceUrl: "https://docs.huma.finance/products/huma-2.0/overview"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: business_model
+    notes: "The claim describes protocol capital deployment; it does not establish Huma company revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What portion of borrower fees accrues to liquidity providers, the protocol treasury, service providers, and the operating company?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-token-supply
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "HUMA launched with a fixed maximum supply of 10 billion tokens and an initial circulating supply of 17.33%."
+    statedValue: "10 billion maximum; 17.33% initially circulating"
+    numericValue: 10000000000
+    unit: huma_tokens_max_supply
+    sourceId: src-huma-tokenomics-2025
+    supportingSourceIds: [src-huma-binance-2025]
+    sourceUrl: "https://blog.huma.finance/introducing-huma-powering-the-future-of-payfi"
+    publicationDate: "2025-05-21"
+    metricAsOfDate: "2025-05-26"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: token_supply
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-token-allocation
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma allocated 20.6% of HUMA supply to investors, 19.3% to team and advisers, and 11.1% to the protocol treasury."
+    statedValue: "20.6% investors; 19.3% team/advisers; 11.1% treasury"
+    numericValue: null
+    unit: null
+    sourceId: src-huma-tokenomics-2025
+    supportingSourceIds: []
+    sourceUrl: "https://blog.huma.finance/introducing-huma-powering-the-future-of-payfi"
+    publicationDate: "2025-05-21"
+    metricAsOfDate: "2025-05-21"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: token_distribution
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What was the circulating ownership concentration after vesting began in May 2026?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-reported-volume
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma reported more than $7 billion in cumulative on-chain transaction volume by May 2026."
+    statedValue: "over $7 billion"
+    numericValue: 7000000000
+    unit: usd_cumulative_transaction_volume_lower_bound
+    sourceId: src-huma-docs-overview
+    supportingSourceIds: []
+    sourceUrl: "https://docs.huma.finance/about-huma/what-is-huma"
+    publicationDate: null
+    metricAsOfDate: "2026-05-13"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "Cumulative transaction volume is not TVL, protocol fees, company revenue, unique users, or retained usage."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Provide independently reproducible transaction-level methodology and exclude refinancing or repeated capital turnover."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-huma-security-controls
+    schemaVersion: 7
+    companyId: co-huma-finance
+    claim: "Huma states that its Solana programs were audited by Halborn and Sec3, its EVM contracts by Spearbit, and its Stellar contracts by Certora."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-huma-docs-security
+    supportingSourceIds: []
+    sourceUrl: "https://docs.huma.finance/ecosystem-resources/security-audits"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: security
+    notes: "This first-party audit inventory is not independent verification of safety and does not establish coverage of later deployments."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Map each deployed contract version to an audit report, scope, unresolved finding, and remediation commit."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-huma-arf-merger-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-huma-finance
+    subjectNameRaw: Huma Finance
+    signalType: partnership
+    signalCategory: market
+    signalDirection: neutral
+    sourceId: src-huma-arf-merger-2024
+    rawStrength: 0.8
+    evidenceSummary: "Huma Finance and Arf announced a completed merger."
+    evidenceIds: [clm-huma-arf-merger]
+    publicationDate: "2024-04-17"
+    availabilityDate: "2024-04-17"
+    eventDate: "2024-04-17"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-huma-financing-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-huma-finance
+    subjectNameRaw: Huma Finance
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-huma-coindesk-funding-2024
+    rawStrength: 0.9
+    evidenceSummary: "Huma closed $10 million of equity funding alongside $28 million placed into platform RWAs."
+    evidenceIds: [clm-huma-equity-10m-2024, clm-huma-rwa-capital-28m-2024]
+    publicationDate: "2024-09-11"
+    availabilityDate: "2024-09-11"
+    eventDate: "2024-09-11"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-huma-permissionless-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-huma-finance
+    subjectNameRaw: Huma protocol
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-huma-docs-overview
+    rawStrength: 0.8
+    evidenceSummary: "The permissionless Huma product launched on Solana in April 2025."
+    evidenceIds: [clm-huma-permissionless-launch]
+    publicationDate: null
+    availabilityDate: "2026-05-13"
+    eventDate: "2025-04-01"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-huma-token-launch-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-huma-finance
+    subjectNameRaw: Huma protocol
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-huma-binance-2025
+    rawStrength: 0.8
+    evidenceSummary: "HUMA spot trading began on May 26, 2025 following Binance Launchpool distribution."
+    evidenceIds: [clm-huma-token-supply]
+    publicationDate: "2026-05-28"
+    availabilityDate: "2026-05-28"
+    eventDate: "2025-05-26"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-huma-company-economics
+    whatWasSearched: "Official documentation, financing coverage, and product materials for company revenue, gross margin, operating costs, and runway."
+    whatCouldNotBeEstablished: "Audited or independently verified operating-company revenue, margin, burn, runway, and the company's share of protocol economics."
+    expectedToMatter: true
+  - id: gap-huma-credit-performance
+    whatWasSearched: "Official product and security materials plus independent coverage for pool-level defaults, delinquencies, losses, and recoveries."
+    whatCouldNotBeEstablished: "A complete independently verified historical credit-performance series across Huma and Huma Institutional pools."
+    expectedToMatter: true
+  - id: gap-huma-user-retention
+    whatWasSearched: "Official disclosures and independent coverage for unique active users and cohort retention."
+    whatCouldNotBeEstablished: "Unique-user, repeat-use, or retention data distinct from wallets, liquidity providers, and cumulative transaction volume."
+    expectedToMatter: true
+  - id: gap-huma-legal-boundary
+    whatWasSearched: "Merger announcement, protocol documentation, and token materials for legal-entity and intellectual-property ownership."
+    whatCouldNotBeEstablished: "The complete legal and ownership structure among Huma Finance, Arf, Arf Capital, and Huma Foundation."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    The protocol, merged operating businesses, Arf Capital issuance vehicles,
+    and Huma Foundation are publicly linked but not consolidated into a fully
+    disclosed legal-entity chart.
+  sourceOriginUncertainty: >-
+    The 2024 company funding announcement and related press coverage share
+    company-supplied deal information; CoinDesk independently reported the
+    transaction structure but is not treated as independent verification of
+    Huma's operating metrics.
+  likelyContradictions: null
+  completenessNotes: >-
+    Research separates the $10 million equity round from $28 million of
+    platform RWA investment and treats cumulative transaction volume as
+    contextual company-reported adoption, not revenue or TVL.
+researchCutoff: "2026-09-10"

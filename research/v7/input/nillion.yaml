@@ -1,0 +1,582 @@
+schemaVersion: 7
+candidateId: SPC-01
+canonicalId: co-nillion
+canonicalName: Nillion
+slug: nillion
+description: >-
+  Nillion is a "blind computation" privacy-infrastructure network (branded
+  "Petnet"), combining multi-party computation (MPC) and other
+  privacy-enhancing technologies to let applications process data without
+  revealing its contents. Nillion launched its own Cosmos-based mainnet
+  ("nilChain") in March 2025, then announced in January 2026 a migration
+  to Ethereum ("Nillion 2.0"), redefining NIL's role around staking,
+  node-operator access, and payments on Ethereum rather than governance of
+  a standalone chain.
+domain: nillion.com
+firstObservedAt: "2021-01-01"
+category: security_privacy_and_cryptography
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: later
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        A core development team (co-founded by Alex Page, Andrew Masanto,
+        and Miguel de Vega) built the Nillion network and NIL token; a
+        separate "Nillion Association" is referenced in public statements
+        as the entity with legal authorization over token treasury/market
+        operations.
+      relatedEntityId: null
+      relationType: developer_and_association_structure
+  protocolNetworkRelationship: >-
+    The Nillion network (protocol/chain layer) and the NIL token are
+    developed and stewarded by the founding team and the Nillion
+    Association; equity in the underlying company is a separate instrument
+    from the NIL token per the frozen universe's equity_and_token
+    assetType.
+  unresolvedBoundaryNotes:
+    - >-
+      No source fully clarified the legal relationship between the
+      operating company, the "Nillion Association," and the entities that
+      hold or authorize movement of the NIL token treasury.
+people:
+  - id: per-alex-page
+    schemaVersion: 7
+    name: Alex Page
+    aliases: []
+    currentRole: CEO
+    companyTenures:
+      - companyId: co-nillion
+        companyName: Nillion
+        role: CEO
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-nillion-coindesk-seriesA-2024]
+    priorCompanies: ["Hedera", "Goldman Sachs"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-nillion-coindesk-seriesA-2024]
+  - id: per-andrew-masanto
+    schemaVersion: 7
+    name: Andrew Masanto
+    aliases: []
+    currentRole: Co-founder
+    companyTenures:
+      - companyId: co-nillion
+        companyName: Nillion
+        role: Co-founder
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-nillion-coindesk-seriesA-2024]
+    priorCompanies: ["Hedera", "Reserve"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-nillion-coindesk-seriesA-2024]
+  - id: per-miguel-de-vega
+    schemaVersion: 7
+    name: Miguel de Vega
+    aliases: []
+    currentRole: Chief Scientist
+    companyTenures:
+      - companyId: co-nillion
+        companyName: Nillion
+        role: Chief Scientist
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-nillion-coindesk-seriesA-2024]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-nillion-coindesk-seriesA-2024]
+sources:
+  - id: src-nillion-coindesk-seriesA-2024
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Privacy Blockchain Project Nillion Raises $25M to Expand 'Blind Computing'"
+    url: "https://www.coindesk.com/tech/2024/10/30/privacy-blockchain-project-nillion-raises-25m-to-expand-blind-computing"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-10-30"
+    availabilityDate: "2024-10-30"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-nillion-chainwire-mainnet-2025
+    schemaVersion: 7
+    publisher: Nillion (Chainwire press release)
+    title: "Nillion Launches Mainnet, Introducing Revolutionary Privacy Infrastructure for Web3"
+    url: "https://chainwire.org/2025/03/24/nillion-launches-mainnet-introducing-revolutionary-privacy-infrastructure-for-web3/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-24"
+    availabilityDate: "2025-03-24"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-nillion-messari-mainnet-2025
+    schemaVersion: 7
+    publisher: Messari
+    title: "Nillion Mainnet, TGE, and the Web3 Privacy Frontier"
+    url: "https://messari.io/report/nillion-mainnet-tge-and-the-web3-privacy-frontier"
+    sourceType: specialist_industry
+    tier: a
+    reliability: 0.75
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-01"
+    availabilityDate: "2025-03-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-nillion-bitget-crash-2025
+    schemaVersion: 7
+    publisher: Bitget News
+    title: "Nillion (NIL) price crashes 50% after unauthorized market-maker sell-off"
+    url: "https://www.bitget.com/news/detail/12560605074401"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-11-20"
+    availabilityDate: "2025-11-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-nillion-official-ethereum-migration
+    schemaVersion: 7
+    publisher: Nillion (official blog)
+    title: "Nillion, Now on Ethereum"
+    url: "https://nillion.com/news/nillion-now-on-ethereum/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-01-27"
+    availabilityDate: "2026-01-27"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-nillion-kraken-migration-support
+    schemaVersion: 7
+    publisher: Kraken (exchange support documentation)
+    title: "Nillion (NIL) Token Migration to Ethereum"
+    url: "https://support.kraken.com/articles/nil-migration"
+    sourceType: customer_vendor
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-02-27"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+evidenceClaims:
+  - id: clm-nillion-seriesA-25m
+    schemaVersion: 7
+    companyId: co-nillion
+    claim: >-
+      Nillion raised $25 million in a funding round announced October 30,
+      2024, led by Hack VC, with participation from angel investors and
+      strategic contributors associated with Arbitrum, Worldcoin, and Sei,
+      bringing total disclosed funding across two rounds to $45 million.
+    statedValue: "$25 million"
+    numericValue: 25000000
+    unit: usd
+    sourceId: src-nillion-coindesk-seriesA-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/tech/2024/10/30/privacy-blockchain-project-nillion-raises-25m-to-expand-blind-computing"
+    publicationDate: "2024-10-30"
+    metricAsOfDate: "2024-10-30"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      The $45 million cumulative figure across two rounds is stated by
+      secondary aggregation, not independently itemized round-by-round in
+      this research; the $25 million figure for this specific round is the
+      well-corroborated fact.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-nillion-mainnet-tge
+    schemaVersion: 7
+    companyId: co-nillion
+    claim: >-
+      Nillion's NIL Token Generation Event occurred February 19, 2025, and
+      its public mainnet launched March 24, 2025, with the NIL total
+      supply set at 1 billion tokens and approximately 20% entering
+      circulation at genesis.
+    statedValue: "TGE 2025-02-19; mainnet 2025-03-24; 1B total supply, ~20% at genesis"
+    numericValue: 1000000000
+    unit: NIL_tokens
+    sourceId: src-nillion-chainwire-mainnet-2025
+    supportingSourceIds: [src-nillion-messari-mainnet-2025]
+    sourceUrl: "https://chainwire.org/2025/03/24/nillion-launches-mainnet-introducing-revolutionary-privacy-infrastructure-for-web3/"
+    publicationDate: "2025-03-24"
+    metricAsOfDate: "2025-03-24"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Primary source is a company press release distributed via Chainwire
+      (not independent), but Messari's independent research report
+      corroborates the mainnet/TGE timeline and supply figures.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-nillion-insider-allocation
+    schemaVersion: 7
+    companyId: co-nillion
+    claim: >-
+      Published NIL tokenomics allocate approximately 41% of total token
+      supply to insiders (Early Backers 21% plus Core Contributors 20%),
+      with Ecosystem & R&D at 29%, Community at 20%, and Protocol
+      Development at 10%.
+    statedValue: "~41% insider allocation (Early Backers 21% + Core Contributors 20%)"
+    numericValue: 41
+    unit: percent_of_total_supply
+    sourceId: src-nillion-messari-mainnet-2025
+    supportingSourceIds: []
+    sourceUrl: "https://messari.io/report/nillion-mainnet-tge-and-the-web3-privacy-frontier"
+    publicationDate: "2025-03-01"
+    metricAsOfDate: "2025-03-24"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    modelEligibility: context_only
+    topic: risk
+    notes: >-
+      Concentration of allocation is a governance/decentralization risk
+      fact, recorded neutrally; it is not itself evidence of misconduct.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: >-
+      What is the current unlocked/circulating share held by insiders
+      versus community, and has voting/governance power been exercised
+      disproportionately by insider holders?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-nillion-mm-crash-2025
+    schemaVersion: 7
+    companyId: co-nillion
+    claim: >-
+      On or around November 20, 2025, an unauthorized market maker sold a
+      large quantity of NIL tokens without authorization from the Nillion
+      Association, causing NIL to crash roughly 50% (from above $0.21 to
+      an intraday low near $0.086-0.092) on a 680% spike in daily volume;
+      Nillion stated it deployed treasury funds for buybacks, worked with
+      exchanges to freeze associated accounts, and pursued legal action.
+    statedValue: "~50% price crash; ~680% volume spike"
+    numericValue: 50
+    unit: percent_price_decline
+    sourceId: src-nillion-bitget-crash-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.bitget.com/news/detail/12560605074401"
+    publicationDate: "2025-11-20"
+    metricAsOfDate: "2025-11-20"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: risk
+    notes: >-
+      The account of what happened traces to the Nillion team's own
+      statement as reported by specialist crypto-news outlets; no
+      independent forensic/on-chain investigation report was located
+      within the research budget for this batch to corroborate the
+      "unauthorized" characterization independently of Nillion's own
+      account.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Was the counterparty market maker's authorization status confirmed
+      by any party other than Nillion, and what was the outcome of the
+      stated legal action?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-nillion-ethereum-migration-2026
+    schemaVersion: 7
+    companyId: co-nillion
+    claim: >-
+      Nillion announced on January 27, 2026 that it is migrating its
+      network architecture from a Cosmos-based chain ("nilChain") to
+      Ethereum, rebranded "Nillion 2.0," redefining NIL from primarily a
+      governance/staking token on its own chain to a token required for
+      access, staking (including a stated 70,000 NIL requirement to
+      operate a "Blacklight" verification node launching February 2, 2026),
+      and peer-to-peer payments on Ethereum. Kraken's exchange support
+      documentation (last updated February 27, 2026) independently
+      confirmed the migration was underway, scheduling a Cosmos deposit/
+      withdrawal pause (March 13, 2026) and a client migration window
+      (March 16-20, 2026) with balances converted 1:1.
+    statedValue: "70,000 NIL to operate a Blacklight node; 1:1 token conversion"
+    numericValue: 70000
+    unit: NIL_tokens
+    sourceId: src-nillion-official-ethereum-migration
+    supportingSourceIds: [src-nillion-kraken-migration-support]
+    sourceUrl: "https://nillion.com/news/nillion-now-on-ethereum/"
+    publicationDate: "2026-01-27"
+    metricAsOfDate: "2026-01-27"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      This is a material architecture and token-design change occurring
+      after the network's March 2025 mainnet launch (already in this
+      packet). Independent corroboration is limited to Kraken confirming
+      the migration's operational reality and schedule (a third party with
+      no stake in Nillion's narrative), not to Nillion's own framing of the
+      migration's strategic rationale.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: >-
+      Has the migration completed as scheduled (nilChain halt around March
+      23, 2026, per secondary reporting not independently confirmed here),
+      and what portion of total NIL supply has actually bridged to
+      Ethereum?
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-nillion-seriesA-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-nillion
+    subjectNameRaw: Nillion
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-nillion-coindesk-seriesA-2024
+    rawStrength: 0.55
+    evidenceSummary: >-
+      Nillion raised $25 million led by Hack VC, announced October 30,
+      2024, reported by CoinDesk.
+    evidenceIds: [clm-nillion-seriesA-25m]
+    publicationDate: "2024-10-30"
+    availabilityDate: "2024-10-30"
+    eventDate: "2024-10-30"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-nillion-mainnet-tge-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-nillion
+    subjectNameRaw: Nillion
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-nillion-chainwire-mainnet-2025
+    rawStrength: 0.55
+    evidenceSummary: >-
+      Nillion launched its public mainnet on March 24, 2025, following a
+      February 19, 2025 NIL Token Generation Event, corroborated by an
+      independent Messari research report.
+    evidenceIds: [clm-nillion-mainnet-tge]
+    publicationDate: "2025-03-24"
+    availabilityDate: "2025-03-24"
+    eventDate: "2025-03-24"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-nillion-mm-crash-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-nillion
+    subjectNameRaw: Nillion
+    signalType: token_economic_design_change
+    signalCategory: capital
+    signalDirection: negative
+    sourceId: src-nillion-bitget-crash-2025
+    rawStrength: 0.5
+    evidenceSummary: >-
+      An unauthorized market maker's large NIL sale caused a ~50% price
+      crash around November 20, 2025; Nillion responded with treasury
+      buybacks, exchange coordination to freeze accounts, and stated legal
+      action. Recorded as reported_unconfirmed because the counterparty's
+      "unauthorized" status is established only via Nillion's own account,
+      not an independent third-party finding.
+    evidenceIds: [clm-nillion-mm-crash-2025]
+    publicationDate: "2025-11-20"
+    availabilityDate: "2025-11-20"
+    eventDate: "2025-11-20"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: >-
+      The characterization of the market maker's sale as "unauthorized"
+      and the outcome of Nillion's stated legal action against the
+      counterparty were not independently corroborated within the
+      research budget for this batch; the price crash itself is
+      well-documented, but the legal/authorization narrative rests on
+      Nillion's own account as relayed by specialist crypto-news outlets.
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-nillion-ethereum-migration-2026
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-nillion
+    subjectNameRaw: Nillion
+    signalType: token_economic_design_change
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-nillion-official-ethereum-migration
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Nillion announced a migration from its Cosmos-based chain to
+      Ethereum ("Nillion 2.0"), redefining NIL's utility around staking,
+      node access, and payments, announced January 27, 2026 and
+      independently corroborated as operationally real by Kraken's
+      exchange migration documentation.
+    evidenceIds: [clm-nillion-ethereum-migration-2026]
+    publicationDate: "2026-01-27"
+    availabilityDate: "2026-01-27"
+    eventDate: "2026-01-27"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-nillion-legal-entity
+    whatWasSearched: "Legal entity/foundation structure (company vs. 'Nillion Association') and total confirmed funding"
+    whatCouldNotBeEstablished: >-
+      No primary source (e.g., corporate registry filing) was located to
+      confirm the precise legal relationship between the operating company
+      and the 'Nillion Association,' consistent with the frozen universe's
+      own note that this was unconfirmed as of Phase 3A.
+    expectedToMatter: true
+  - id: gap-nillion-network-metrics
+    whatWasSearched: "TVL, transaction volume, active nodes/operators for the live Nillion network"
+    whatCouldNotBeEstablished: >-
+      No sourced, dated figures for these operating metrics were
+      established within the research budget for this batch.
+    expectedToMatter: true
+  - id: gap-nillion-market-maker-identity
+    whatWasSearched: "The identity of the market maker responsible for the November 2025 unauthorized sale, and resolution of any legal action"
+    whatCouldNotBeEstablished: "No source named the counterparty or reported a resolution of the stated legal action."
+    expectedToMatter: true
+  - id: gap-nillion-phase0-upgrade-detail
+    whatWasSearched: >-
+      Nillion's "Phase 0" mainnet upgrade, reported live July 1, 2025
+      (nilDB/nilAI/nilAuth/nilCC changes, a UCAN-based permissioning
+      model, and stated node-count/capacity figures)
+    whatCouldNotBeEstablished: >-
+      The official announcement page (nillion.com/news/phase-0-...) could
+      only be reached as a client-side-rendered redirect during this
+      research pass; its full content could not be directly opened and
+      reviewed, so no SourceRecord or EvidenceClaim was created from it
+      per this project's rule against citing search-snippet content
+      without opening the underlying page. Recorded as a gap rather than
+      cited on weak provenance.
+    expectedToMatter: false
+  - id: gap-nillion-migration-completion-status
+    whatWasSearched: >-
+      Whether the Cosmos-to-Ethereum migration (announced January 27,
+      2026) actually completed on the schedule secondary sources describe
+      (nilChain halt around March 23, 2026) and what share of total NIL
+      supply bridged
+    whatCouldNotBeEstablished: >-
+      Kraken's support documentation (last updated Feb 27, 2026) describes
+      the migration prospectively/operationally but does not itself
+      confirm completion; no source independently confirmed the migration
+      finished as scheduled within the research budget for this batch.
+    expectedToMatter: true
+  - id: gap-nillion-audit-scope
+    whatWasSearched: >-
+      Security audit coverage for Nillion's NIL ERC-20 token contract and
+      the core MPC network contracts
+    whatCouldNotBeEstablished: >-
+      Secondary explainer sources describe a Quantstamp audit of the
+      ERC-20 token contract, but no dated, admissible source (primary
+      audit report or dated independent reporting) was found within the
+      research budget for this batch, so no evidence claim was created;
+      audit scope and existence remain unconfirmed at evidentiary standard.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Treated as one hybrid entity per the frozen universe assignment; the
+    operating company, the Nillion network/protocol, and the "Nillion
+    Association" referenced in the November 2025 incident statement are
+    not clearly separated in public sources.
+  sourceOriginUncertainty: >-
+    The mainnet/TGE launch is corroborated by an independent Messari report
+    alongside the company's own Chainwire press release; the November 2025
+    market-maker crash rests entirely on Nillion's own account as relayed
+    by specialist outlets (Bitget News, Cryptopolitan, PANews), which is
+    recorded here as one voice (company-reported, relayed) rather than
+    independently confirmed.
+  likelyContradictions: null
+  completenessNotes: >-
+    Evidence density RICH per the frozen cohort assignment, reflected here
+    in richer coverage across capital, product/network milestones,
+    tokenomics/concentration risk, a material negative governance/market
+    event, and (added in this QA pass) the January 2026 Ethereum migration
+    and associated token-utility redesign, independently corroborated as
+    operationally real by an exchange (Kraken) rather than resting solely
+    on Nillion's own framing. Several gaps (legal structure, network
+    metrics, counterparty identity, full audit scope, Phase 0 upgrade
+    detail, migration-completion confirmation) remain explicitly recorded
+    rather than estimated.
+researchCutoff: "2026-09-10"

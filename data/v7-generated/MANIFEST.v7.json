@@ -1,0 +1,47 @@
+{
+  "schemaVersion": 7,
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "batch": "VALIDATION",
+  "entries": [
+    {
+      "path": "data/v7-generated/companies.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/research-v7/build-corpus.ts",
+      "recordCount": 30,
+      "sha256": "20fcfa78a89a92310effc62ada2a07b15285da2d04ae18a1e9695a2557b8ecfd"
+    },
+    {
+      "path": "data/v7-generated/people.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/research-v7/build-corpus.ts",
+      "recordCount": 46,
+      "sha256": "9a5051561b139b2dcb13428523cfa8c95780e89d39d9ba3efab19a2782795853"
+    },
+    {
+      "path": "data/v7-generated/sources.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/research-v7/build-corpus.ts",
+      "recordCount": 139,
+      "sha256": "b8b49aec29c866de2a6e69e8de2d918f15693ed8c3511b26e74b7fa96bbb7695"
+    },
+    {
+      "path": "data/v7-generated/evidence-claims.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/research-v7/build-corpus.ts",
+      "recordCount": 141,
+      "sha256": "4a16a0077d7680b6e4733d378d8ffe192dcd6f2624dbbdbbfc93a39ac2fc1540"
+    },
+    {
+      "path": "data/v7-generated/signal-events.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/research-v7/build-corpus.ts",
+      "recordCount": 65,
+      "sha256": "25dfe2c48346f3f01fc3b539a7f6603d94f1d103293508355de10b758ab0c9d6"
+    }
+  ]
+}

@@ -1,0 +1,82 @@
+# Digital-asset source classes (PARALLEL / DORMANT - Phase 2B).
+#
+# Seven new classes. Reliability priors are PROVISIONAL and uncalibrated.
+# Independence is decidable, never counted. Not part of the active configHash.
+
+schemaVersion: 7
+version: "1.0.0-provisional"
+status: PROVISIONAL_DIGITAL_ASSET_V1_UNCALIBRATED
+
+sourceClasses:
+  - id: official_protocol_source
+    name: Official protocol source
+    reliabilityPrior: 0.68
+    isIndependent: false
+    canCorroborate: false
+    originDedupRequired: true
+    description: A protocol's own documentation, blog, or maintained channel.
+    constraints: First-party. Cannot corroborate itself. Roadmap is not shipped state.
+  - id: official_network_source
+    name: Official network source
+    reliabilityPrior: 0.68
+    isIndependent: false
+    canCorroborate: false
+    originDedupRequired: true
+    description: A network foundation's or core organization's official communications.
+    constraints: First-party. Cannot corroborate itself. Selective metric disclosure risk.
+  - id: governance_forum
+    name: Governance forum
+    reliabilityPrior: 0.55
+    isIndependent: false
+    canCorroborate: false
+    originDedupRequired: true
+    description: On-chain governance forum with proposals, votes, delegate posts, and treasury reports.
+    constraints: >
+      Participant or governance record. Not independent by default and cannot
+      corroborate broad project claims alone. An executed governance record may
+      still be a primary fact.
+  - id: block_explorer
+    name: Block explorer
+    reliabilityPrior: 0.9
+    isIndependent: true
+    canCorroborate: true
+    originDedupRequired: true
+    description: Chain data surfaced by an explorer such as balances, transactions, and deployments.
+    constraints: >
+      High reliability for facts of ledger state. Two explorers exposing the
+      same underlying transaction or state are one origin, not two. Address
+      labeling and interpretation are not automatically a chain fact.
+  - id: onchain_analytics
+    name: On-chain analytics
+    reliabilityPrior: 0.6
+    isIndependent: true
+    canCorroborate: true
+    originDedupRequired: true
+    description: Third-party analytics computing derived metrics from chain data.
+    constraints: >
+      May be independent but methodology-sensitive. originatesFrom must collapse
+      republished dashboards, copied dashboards, and shared upstream
+      methodologies. N dashboards derived from one provider are not N voices.
+  - id: code_repository
+    name: Code repository
+    reliabilityPrior: 0.75
+    isIndependent: false
+    canCorroborate: false
+    originDedupRequired: true
+    description: A public source repository with commits, contributors, and releases.
+    constraints: >
+      High reliability for repository facts. The project normally controls its
+      repository. Commits and releases establish development facts. Stars and
+      forks never establish customers, revenue, commercial traction, or
+      investment quality.
+  - id: security_audit
+    name: Security audit
+    reliabilityPrior: 0.85
+    isIndependent: true
+    canCorroborate: true
+    originDedupRequired: true
+    description: A published audit report from a named security firm.
+    constraints: >
+      Independent third-party within the explicit audit scope. May corroborate
+      audit findings. Audited never means safe. Later code may be outside scope.
+      Repeated marketing mentions of one audit remain one source.

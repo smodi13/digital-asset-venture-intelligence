@@ -1,0 +1,522 @@
+schemaVersion: 7
+candidateId: TRA-03
+canonicalId: co-tradable
+canonicalName: Tradable
+slug: tradable
+description: >-
+  Tradable is a private-credit syndication and tokenization company whose
+  platform combines deal data rooms, document execution, investor onboarding,
+  compliance controls, capital calls, distributions, reporting, and onchain
+  representations of private-credit interests.
+domain: tradable.xyz
+firstObservedAt: "2023-08-22"
+category: tokenization_and_real_world_assets
+entityType: company
+assetType: unknown
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_established
+financingStage: Seed
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: "Tradable partnered with and received seed investment from Victory Park Capital and Spring Labs to develop and launch its private-credit platform."
+      relatedEntityId: null
+      relationType: investor_and_platform_partner
+    - description: "Tradable uses ZKsync Era as settlement infrastructure for tokenized private-credit positions but does not operate ZKsync."
+      relatedEntityId: null
+      relationType: network_user
+  protocolNetworkRelationship: >-
+    Tradable is an operating company and workflow platform, not a sovereign
+    network or open lending protocol. Tokenized positions represent interests
+    in individual private-credit transactions and are distinct from company
+    equity and from any platform-native token.
+  unresolvedBoundaryNotes:
+    - "Public sources did not establish the legal issuer, custodian, transfer agent, servicing party, and bankruptcy-remoteness structure for every tokenized position."
+people:
+  - id: per-johnny-reinsch
+    schemaVersion: 7
+    name: Johnny Reinsch
+    aliases: []
+    currentRole: Executive Director, Tokenized Asset Coalition
+    companyTenures:
+      - companyId: co-tradable
+        companyName: Tradable
+        role: Founder and CEO
+        startDate: null
+        endDate: "2025-01-17"
+        isFounder: true
+        sourceIds: [src-tradable-vpc-2023, src-tradable-sec-2025]
+    priorCompanies: [Qwil, Xapo]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-tradable-leadership-change]
+    sourceIds: [src-tradable-vpc-2023, src-tradable-sec-2025]
+  - id: per-alex-cordover
+    schemaVersion: 7
+    name: Alex Cordover
+    aliases: []
+    currentRole: CEO
+    companyTenures:
+      - companyId: co-tradable
+        companyName: Tradable
+        role: CEO
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-tradable-ledger-2025, src-tradable-delphi-2025]
+    priorCompanies: [Victory Park Capital]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-tradable-leadership-change]
+    sourceIds: [src-tradable-ledger-2025, src-tradable-delphi-2025]
+sources:
+  - id: src-tradable-vpc-2023
+    schemaVersion: 7
+    publisher: Victory Park Capital
+    title: "Tradable Partners with Victory Park Capital and Spring Labs to Revolutionize Access to Private Credit"
+    url: "https://www.victoryparkcapital.com/article/tradable-partners-with-victory-park-capital-and-spring-labs-to-revolutionize-access-to-private-credit/"
+    sourceType: investor_industry
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2023-08-22"
+    availabilityDate: "2023-08-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-tradable-ledger-2025
+    schemaVersion: 7
+    publisher: Ledger Insights
+    title: "Janus, Victory Park-backed Tradable tokenizes $1.7 billion in private credit"
+    url: "https://www.ledgerinsights.com/janus-victory-park-backed-tradable-tokenizes-1-7-billion-in-private-credit/"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-01-17"
+    availabilityDate: "2025-01-17"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: repeated_announcement
+  - id: src-tradable-delphi-2025
+    schemaVersion: 7
+    publisher: Delphi Digital
+    title: "ZKsync and The Elastic Network Endgame"
+    url: "https://members.delphidigital.io/reports/zksync-the-elastic-network-endgame"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-03-31"
+    availabilityDate: "2025-03-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: repeated_announcement
+  - id: src-tradable-sec-2025
+    schemaVersion: 7
+    publisher: U.S. Securities and Exchange Commission
+    title: "Crypto Task Force Roundtable - Tokenization: Moving Assets Onchain"
+    url: "https://www.sec.gov/newsroom/meetings-events/tokenization-moving-assets-onchain-where-tradfi-defi-meet"
+    sourceType: regulatory
+    tier: a
+    reliability: 0.9
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-05-12"
+    availabilityDate: "2025-05-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: historical_context
+  - id: src-tradable-site
+    schemaVersion: 7
+    publisher: Tradable
+    title: "We Make Private Credit Tradable"
+    url: "https://www.tradable.xyz/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-tradable-sp-2024
+    schemaVersion: 7
+    publisher: S&P Global
+    title: "Tokenized Private Credit: A New Digital Frontier for Real World Assets"
+    url: "https://www.spglobal.com/en/research-insights/special-reports/tokenized-private-credit"
+    sourceType: specialist_industry
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-10-22"
+    availabilityDate: "2024-10-22"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-tradable-binance-h1-2025
+    schemaVersion: 7
+    publisher: Binance Research
+    title: "Half-Year Report 2025"
+    url: "https://public.bnbstatic.com/static/files/research/half-year-report-2025.pdf"
+    sourceType: structured_secondary
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-07-31"
+    availabilityDate: "2025-07-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: third_party_estimate
+evidenceClaims:
+  - id: clm-tradable-seed
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Victory Park Capital and Spring Labs participated in Tradable's seed financing announced in August 2023."
+    statedValue: "amount not disclosed"
+    numericValue: null
+    unit: null
+    sourceId: src-tradable-vpc-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.victoryparkcapital.com/article/tradable-partners-with-victory-park-capital-and-spring-labs-to-revolutionize-access-to-private-credit/"
+    publicationDate: "2023-08-22"
+    metricAsOfDate: "2023-08-22"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: equity_financing
+    notes: "The amount and security terms were not disclosed in the cited source."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What amount, security, valuation, ownership, and investor rights applied to the seed round?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-product-2023
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Tradable's 2023 platform combined a data room, document signing, investor management, and ongoing deal operations for private-credit syndication."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-tradable-vpc-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.victoryparkcapital.com/article/tradable-partners-with-victory-park-capital-and-spring-labs-to-revolutionize-access-to-private-credit/"
+    publicationDate: "2023-08-22"
+    metricAsOfDate: "2023-08-22"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: product
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-supply-contracted
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Tradable reported $500 million of contracted supply-side flow at its August 2023 platform announcement."
+    statedValue: "$500 million contracted supply-side flow"
+    numericValue: 500000000
+    unit: usd_contracted_supply_side_flow
+    sourceId: src-tradable-vpc-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.victoryparkcapital.com/article/tradable-partners-with-victory-park-capital-and-spring-labs-to-revolutionize-access-to-private-credit/"
+    publicationDate: "2023-08-22"
+    metricAsOfDate: "2023-08-22"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: commercial_pipeline
+    notes: "Contracted flow is not funded volume, tokenized principal, revenue, or assets under management."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "How much contracted supply converted into funded deals and recurring platform revenue?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-tokenized-1-7b
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Tradable announced that it had tokenized $1.7 billion across 27 private-credit positions on ZKsync by January 17, 2025."
+    statedValue: "$1.7 billion across 27 tokenizations"
+    numericValue: 1700000000
+    unit: usd_tokenized_notional
+    sourceId: src-tradable-ledger-2025
+    supportingSourceIds: [src-tradable-delphi-2025]
+    sourceUrl: "https://www.ledgerinsights.com/janus-victory-park-backed-tradable-tokenizes-1-7-billion-in-private-credit/"
+    publicationDate: "2025-01-17"
+    metricAsOfDate: "2025-01-17"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: tokenized_assets
+    notes: "Ledger Insights sought originator detail but did not receive it before publication; tokenized notional is not funded volume, secondary liquidity, company revenue, or TVL."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Provide position-level identifiers, original principal, funded balance, outstanding balance, transfers, repayments, defaults, and methodology."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-tokenized-1-4b
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "A May 2025 SEC speaker biography stated that Johnny Reinsch led more than $1.4 billion of private-credit tokenizations while CEO of Tradable."
+    statedValue: "over $1.4 billion"
+    numericValue: 1400000000
+    unit: usd_tokenized_notional_lower_bound
+    sourceId: src-tradable-sec-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.sec.gov/newsroom/meetings-events/tokenization-moving-assets-onchain-where-tradfi-defi-meet"
+    publicationDate: "2025-05-12"
+    metricAsOfDate: "2025-05-12"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: tokenized_assets
+    notes: "The SEC page is reliable for the published biography but does not document the underlying calculation."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile the biography's $1.4 billion-plus figure with the January 2025 $1.7 billion announcement."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-leadership
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Alex Cordover was identified as Tradable's new CEO in January 2025, and a May 2025 SEC biography described founder Johnny Reinsch as a former Tradable CEO."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-tradable-ledger-2025
+    supportingSourceIds: [src-tradable-sec-2025]
+    sourceUrl: "https://www.ledgerinsights.com/janus-victory-park-backed-tradable-tokenizes-1-7-billion-in-private-credit/"
+    publicationDate: "2025-01-17"
+    metricAsOfDate: "2025-01-17"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: leadership
+    notes: "The exact transition date was not disclosed."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What prompted the CEO transition and what continuing ownership or governance role, if any, does the founder retain?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-compliance-controls
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Tradable's platform supports AML/KYC, accreditation requirements, transfer restrictions, controlled data-room access, capital calls, distributions, and ongoing deal reporting."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-tradable-site
+    supportingSourceIds: []
+    sourceUrl: "https://www.tradable.xyz/"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product_and_compliance
+    notes: "Feature availability does not independently establish legal compliance in every offering or jurisdiction."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Identify regulated service providers and legal opinions supporting each offering and transfer restriction."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-active-loans-2025
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "Binance Research, citing RWA.xyz, estimated Tradable had $2.08 billion of active loans and $4.72 billion of total loans as of June 30, 2025."
+    statedValue: "$2.08B active; $4.72B total"
+    numericValue: 2080000000
+    unit: usd_active_loans
+    sourceId: src-tradable-binance-h1-2025
+    supportingSourceIds: []
+    sourceUrl: "https://public.bnbstatic.com/static/files/research/half-year-report-2025.pdf"
+    publicationDate: "2025-07-31"
+    metricAsOfDate: "2025-06-30"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    modelEligibility: context_only
+    topic: active_loans
+    notes: "Active and cumulative loan values are not company revenue, AUM, or secondary-market liquidity; methodology depends on RWA.xyz classification."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile the active-loan dataset with position-level outstanding balances and Tradable's own tokenized-notional claims."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-tradable-market-limit
+    schemaVersion: 7
+    companyId: co-tradable
+    claim: "S&P Global reported in October 2024 that tokenized private credit remained nascent and that a secondary market had not been established for the examined private-credit tokens."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-tradable-sp-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.spglobal.com/en/research-insights/special-reports/tokenized-private-credit"
+    publicationDate: "2024-10-22"
+    metricAsOfDate: "2024-10-22"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: high
+    modelEligibility: caveat
+    topic: market_structure
+    notes: "This is category context, not a claim that every Tradable position lacked liquidity."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What Tradable positions had actual third-party secondary transfers, bid depth, and executable redemption paths by cutoff?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-tradable-seed-2023
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-tradable
+    subjectNameRaw: Tradable
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-tradable-vpc-2023
+    rawStrength: 0.6
+    evidenceSummary: "Tradable announced an undisclosed seed round with Victory Park Capital and Spring Labs participating."
+    evidenceIds: [clm-tradable-seed]
+    publicationDate: "2023-08-22"
+    availabilityDate: "2023-08-22"
+    eventDate: "2023-08-22"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-tradable-zksync-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-tradable
+    subjectNameRaw: Tradable
+    signalType: product_launch
+    signalCategory: product
+    signalDirection: neutral
+    sourceId: src-tradable-ledger-2025
+    rawStrength: 0.7
+    evidenceSummary: "Tradable announced 27 tokenized private-credit positions on ZKsync with $1.7 billion of stated notional."
+    evidenceIds: [clm-tradable-tokenized-1-7b]
+    publicationDate: "2025-01-17"
+    availabilityDate: "2025-01-17"
+    eventDate: "2025-01-16"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-tradable-leadership-change
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-tradable
+    subjectNameRaw: Tradable
+    signalType: leadership_departure
+    signalCategory: team
+    signalDirection: neutral
+    sourceId: src-tradable-ledger-2025
+    rawStrength: 0.6
+    evidenceSummary: "Alex Cordover was identified as new CEO and Johnny Reinsch was subsequently described as former CEO."
+    evidenceIds: [clm-tradable-leadership]
+    publicationDate: "2025-01-17"
+    availabilityDate: "2025-01-17"
+    eventDate: null
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-tradable-company-financials
+    whatWasSearched: "Financing announcement, company site, and industry reporting for revenue, pricing, margin, burn, and runway."
+    whatCouldNotBeEstablished: "Tradable company revenue, fee schedule, gross margin, burn, runway, and the size and terms of its seed round."
+    expectedToMatter: true
+  - id: gap-tradable-position-economics
+    whatWasSearched: "Platform listings and industry reports for outstanding principal, losses, defaults, recoveries, transfers, and servicing economics."
+    whatCouldNotBeEstablished: "A complete position-level dataset for funded balances, repayments, defaults, losses, recoveries, and secondary-market liquidity."
+    expectedToMatter: true
+  - id: gap-tradable-legal-structure
+    whatWasSearched: "Product and partnership materials for issuers, SPVs, custody, transfer agency, servicing, and bankruptcy remoteness."
+    whatCouldNotBeEstablished: "A consistent legal and regulated-party map across all tokenized credit positions."
+    expectedToMatter: true
+  - id: gap-tradable-customer-retention
+    whatWasSearched: "Company and independent sources for unique asset managers, repeat issuers, investor counts, and retention."
+    whatCouldNotBeEstablished: "Verified unique customer counts, repeat issuance, investor retention, and recurring platform use."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: "Tradable is distinct from underlying credit originators, issuers, SPVs, service providers, ZKsync, and the deal-specific tokens it administers."
+  sourceOriginUncertainty: "The $1.7 billion figure originates with a Tradable/ZKsync announcement; Ledger Insights and Delphi are not counted as independent corroboration of the amount."
+  likelyContradictions: null
+  completenessNotes: "Tokenized notional, active loans, cumulative loans, contracted pipeline, and company revenue remain separate concepts throughout the packet."
+researchCutoff: "2026-09-10"

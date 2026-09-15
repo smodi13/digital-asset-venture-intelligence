@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: DCM-04
+entityId: co-doppler
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:7a708aca6d783e6628b5feb2d2e152af645bc33d81d709613adaf1b1ce821557
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-preseed, clm-doppler-seed, clm-doppler-integrations]
+    rationale: "The frozen packet establishes $10.3 million of SAFE financing with token warrants and identifies several applications as Doppler users. The integration list is first-party and unquantified, while capital consumed and observable operating output are unknown, so the evidence is directionally inconclusive."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Capital spent and reproducible launch, user, volume, or revenue scale are unavailable."
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-architecture]
+    rationale: "Whetstone's architecture requires initial two-sided liquidity and downstream AMM migration, establishing a relevant resource requirement. The first-party description does not quantify recurring liquidity, labor, compute, infrastructure, incentives, or directional operating burden."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Recurring operating-resource quantities and costs are unavailable."
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-mainnet-launch]
+    rationale: "Company and investor materials establish a completed Unichain launch, which is relevant adoption context but a single launch does not establish temporal usage momentum or persistence."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Launch, issuer, trader, liquidity-retention, and repeat-use time series are unavailable."
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-integrations, clm-doppler-codebase]
+    rationale: "Whetstone publishes the codebase and reports Zora, Paragraph, Noice, and Bankr as applications using Doppler. These first-party facts are relevant but do not establish external developer growth, independently verified production use, or sustained ecosystem expansion."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "External contributor, integration-growth, and retained-use evidence is unavailable."
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-mainnet-launch, clm-doppler-airlock, clm-doppler-codebase]
+    rationale: "Whetstone delivered a mainnet protocol and interface plus published modular contracts and test infrastructure. This company-controlled delivery record supports limited favorable execution direction without relying on prior-employer or investor prestige."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent operating validation and role-specific delivery attribution remain limited."
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-seed, clm-doppler-airlock]
+    rationale: "Independent financing reporting establishes SAFEs with token warrants, and first-party documentation describes configurable governance factories. These facts are relevant to ownership incentives and governance design but do not establish the warrant instrument, supply, allocation, actual control, or alignment direction."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Token-warrant rights and protocol control and incentive arrangements are unavailable."
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-integrations]
+    rationale: "Whetstone reports four external applications using Doppler to create tokens, providing limited favorable evidence that integrators have a live need for issuance infrastructure. The list is first-party, unquantified, and not independently verified for retained production use."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Paid use, utilization, retained integrators, and reachable market depth are unavailable."
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet contains no criterion-relevant evidence sufficient to assess jurisdictional exposure, regulatory trajectory, or a structural opening or hostile environment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Legal-entity jurisdiction, token-issuance compliance structure, and regulatory analysis are unavailable."
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-solana-fee-share]
+    rationale: "Company-controlled Solana documentation specifies that Doppler receives 7.5% of collected trading fees, establishing a recurring designed protocol take rate and limited favorable direction. It does not establish realized fee volume, the recipient legal entity, or Whetstone company revenue."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Realized fees, net economics, fee recipient, and company monetization are unavailable."
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet does not provide criterion-relevant realized revenue, costs, margins, burn, incentives, or subsidy evidence sufficient to assess sustainability."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Protocol and company economics are unavailable."
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-integrations]
+    rationale: "Whetstone reports that four named applications use Doppler for token creation, supporting limited favorable integration-driven distribution. The first-party list does not independently verify active contracts, retained use, acquisition economics, or channel repeatability."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Live-contract verification, retained integrations, customer expansion, and repeatable channel metrics are unavailable."
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-airlock]
+    rationale: "First-party documentation describes Airlock as a unified interface routing launch configuration across factories, auction initialization, governance, and downstream modules, supporting limited favorable developer access. Integration time and observed user friction are not measured."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Implementation duration, failure rates, liquidity requirements, and user-onboarding evidence are unavailable."
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-architecture, clm-doppler-airlock]
+    rationale: "Whetstone's whitepaper and documentation describe Dutch-auction dynamic bonding curves that bootstrap two-sided liquidity before AMM migration and a modular Airlock router. These first-party mechanisms support limited favorable differentiation but lack independent comparative validation."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent benchmarks, comparative assessment, and validated market outcomes are unavailable."
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-doppler-security-reviews]
+    rationale: "Doppler states that OpenZeppelin and Certora reviewed contracts and that Cantina ran a contest and bounty. This first-party audit inventory is relevant but does not independently establish current deployment coverage, remediation, broad safety, switching costs, or network effects."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Review reports, deployed-commit mapping, findings, incidents, and durability evidence are unavailable."
+analystNote: "Judged only from the frozen Doppler FINAL_TEST packet; no external research or aggregate scoring was used."

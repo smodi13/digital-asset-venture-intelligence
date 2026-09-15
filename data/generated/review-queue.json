@@ -1,0 +1,33 @@
+{
+  "researchRunId": "run-f7ae9ddd00b3",
+  "generatedAt": "2026-09-07T00:00:00.000Z",
+  "schemaVersion": 6,
+  "thesisConfigHash": "sha256:2d260e69a41cc9b5c43f62f75f261279eed119a340604dbd61a82f381e9bb20f",
+  "signalConfigHash": "sha256:a0da529722637f39a3da943103aad4a072a56089f847cf7119d260d02170172c",
+  "scoringConfigHash": "sha256:218fc38b03a754c4b11543468637092a1eb02dcfc75c4dcef66232f06becca0a",
+  "sourceConfigHash": "sha256:9d982ef6d2c5075f717ff89637fd35a4c281f3545e7d41953dd9de94f4cbb632",
+  "researchInputHash": "sha256:fb2569905f8fc3ce4594da3ca567c4df31546e804c0400522dfcec8e2889eaf1",
+  "generator": "scripts/research/build-corpus.ts",
+  "totalItems": 2,
+  "byReason": {
+    "unconfirmed_financing": 2
+  },
+  "items": [
+    {
+      "reason": "unconfirmed_financing",
+      "sourceFile": "research/input/events.yaml",
+      "recordKey": "appliedcompute.com: funding",
+      "detail": "Phase 3D: as of 2026-09-07 no reviewed source establishes the round closed. Forbes and The Information continue to describe it as under discussion with terms not final; The Information also reports approximately $50M annualized revenue (third-party estimate). The proposed $350M is not capital raised and the $3.25B is not a completed-transaction valuation. Confirm the outcome before any use as a completed event.",
+      "guidance": "An event was reported but not confirmed to have occurred. Confirm the outcome with a definitive source before it is treated as completed, and do not count it as capital raised.",
+      "candidates": []
+    },
+    {
+      "reason": "unconfirmed_financing",
+      "sourceFile": "research/input/events.yaml",
+      "recordKey": "fal.ai: funding",
+      "detail": "Reported financing talks only. No reviewed source through the 2026-09-07 research cutoff establishes a closing. Not capital raised.",
+      "guidance": "An event was reported but not confirmed to have occurred. Confirm the outcome with a definitive source before it is treated as completed, and do not count it as capital raised.",
+      "candidates": []
+    }
+  ]
+}

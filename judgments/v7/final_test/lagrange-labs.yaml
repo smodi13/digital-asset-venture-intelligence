@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: DOI-04
+entityId: co-lagrange-labs
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:f414e9e16652ab2646be4fdcc2596127af7359a2f6c6b52d5d71e121f6544bd9
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-seed, clm-lagrange-avs-launch, clm-lagrange-prover-launch]
+    rationale: The packet establishes $13.2 million of primary-company financing and company-reported production deployments, with Coinbase corroborating an operator role. Capital consumed and customer or proof-processing scale are unknown, so the comparison is relevant but directionally inconclusive.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Capital spent, current paying-client count, proof volume, company revenue, burn, and runway were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-prover-launch, clm-lagrange-gateway, clm-lagrange-emission-subsidy]
+    rationale: Company and Foundation materials describe a prover-operator network, a Lagrange-operated initial gateway, and LA emissions used to subsidize proof costs. The explicit ongoing subsidy mechanism is adverse resource-intensity evidence, although proof costs, operator payouts, and company burden are unquantified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Proof costs, operator payouts, compute requirements, subsidy magnitude, company expenses, and margins were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but launch milestones alone do not establish customer, paid-usage, proof-volume, or retention momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independently verified current paying-client count, comparable proof volume, fee growth, and customer retention were not established; only launch milestones were documented.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-avs-launch, clm-lagrange-prover-launch]
+    rationale: Company-controlled materials report an EigenLayer AVS launch and a prover network with external operators, with Coinbase corroborating its operator role. This is relevant ecosystem participation, but it does not establish temporal growth in developers, contributors, operators, or integrations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: External developer growth, contributor retention, operator growth, and expanding integrations were not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-avs-launch, clm-lagrange-prover-launch]
+    rationale: Lagrange company materials report delivery of two mainnet services, and the prover-network claim includes independent Coinbase corroboration of an operator role. This is favorable shipped-product evidence, limited by first-party deployment reporting and absent broader team execution history.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Broader team depth, independently measured production performance, and organizational execution history were not established.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-token-supply, clm-lagrange-token-fees, clm-lagrange-emission-subsidy, clm-lagrange-gateway]
+    rationale: Foundation materials specify supply, emissions, fee routing, and proof-cost subsidies, while company materials say Lagrange operated the initial gateway. These facts are relevant to incentives and control but do not establish token allocations, governance rights, accountable control, or favorable alignment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Token allocations, governance rights, gateway control evolution, and legal-economic allocation among Labs, Foundation, holders, and operators were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish paying-client demand, proof utilization, budgets, revenue, workflow criticality, or market depth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Paying-client demand, proof volume, fees, retention, customer budgets, and reachable market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen claims do not establish favorable or adverse regulatory treatment, jurisdictional exposure, or market-structure fit.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Regulatory treatment, jurisdictional exposure, and material structural tailwinds or constraints were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-token-fees]
+    rationale: Foundation-controlled material describes network fees in ETH, USDC, or LA and routing of non-LA proceeds into LA purchases for prover payments. This establishes a protocol payment mechanism but not Lagrange Labs revenue ownership or token-holder accrual, so direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Lagrange Labs revenue, ownership of protocol fees, take rate, and token-holder value accrual were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-token-supply, clm-lagrange-emission-subsidy]
+    rationale: Foundation-controlled materials specify 4% annual emissions and state that emissions subsidize proof costs. This explicit continuing subsidy mechanism is adverse sustainability evidence, while utilization, cost, revenue, and post-subsidy economics remain unknown.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Proof costs, fee revenue, operator payouts, margins, burn, treasury dependence, and economics without emissions were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-avs-launch, clm-lagrange-prover-launch]
+    rationale: The EigenLayer deployment and externally operated prover network provide relevant functioning ecosystem-route evidence, with Coinbase corroborating its operator role. Operator participation is not customer pull, and repeatable customer acquisition or expansion is not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Paying integrations, repeat customers, customer expansion, acquisition repeatability, and organic pull were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but EigenLayer and gateway dependencies alone do not establish favorable or adverse onboarding or implementation friction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Integration time, implementation burden, developer access, compliance burden, and client onboarding outcomes were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-state-architecture, clm-lagrange-avs-launch, clm-lagrange-prover-launch]
+    rationale: Company-controlled materials describe EigenLayer-secured state attestations and deployed ZK state and proof services, while Coinbase corroborates participation in the prover network. These are favorable architecture and delivered-capability signals, but comparative superiority and complete independent validation are not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative technical assessment, complete audit coverage, and validated cutoff-date performance were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-lagrange-gateway, clm-lagrange-slashing-official, clm-lagrange-no-slashing-chaos]
+    rationale: Company material says Lagrange operated the initial gateway, while a first-party slashing description conflicts with Chaos Labs' later statement that slashing was not implemented; scope or product differences may explain the discrepancy, but the packet does not resolve it. Concentrated routing and unresolved economic-security enforcement provide limited adverse durability evidence.
+    acknowledgedContradictionIds: [clm-lagrange-slashing-official, clm-lagrange-no-slashing-chaos]
+    evidenceGapNote: Current gateway control, implemented slashing, operator concentration, complete audit coverage, switching costs, and network effects were not established.
+analystNote: null

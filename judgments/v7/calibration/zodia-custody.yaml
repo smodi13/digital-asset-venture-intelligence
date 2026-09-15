@@ -1,0 +1,219 @@
+schemaVersion: 7
+candidateId: CCI-03
+entityId: co-zodia-custody
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:2ba2a38db6177af456be1da4172f09e5bbd55c4fc91a085ac562161e35fe687a"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-zodia-seriesa-36m]
+    rationale: >-
+      Primary capital consumed is well-corroborated (a $36M Series A plus an
+      undisclosed-amount Emirates NBD strategic investment, on top of
+      Standard Chartered/Northern Trust founding capital). No scale metric
+      (AUM, revenue, or client count) exists in the frozen packet
+      (gap-zodia-aum-revenue), so no scale-to-capital ratio can be
+      responsibly judged.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No AUM, revenue, or client-count evidence exists (gap-zodia-aum-revenue).
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, infrastructure, or compliance-cost
+      intensity for operating a regulated custody business.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the frozen
+      packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents AUM growth, client-count growth, or transaction
+      volume for Zodia Custody at any date (gap-zodia-aum-revenue). Product
+      and regulatory milestones (staking launch, Luxembourg license) are
+      capability/footprint expansions, not usage evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No AUM, revenue, or client-count growth evidence exists
+      (gap-zodia-aum-revenue).
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 52
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-zodia-staking-launch]
+    rationale: >-
+      Zodia's 2023 institutional staking launch was built in partnership
+      with Blockdaemon (validator infrastructure provider), a real named
+      third-party technology integration. This is one concrete instance; no
+      subsequent independent integration is documented in the frozen
+      packet, so it does not establish a pattern of growing integrations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No second independent technology-integration example exists in the
+      frozen packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-zodia-founding-jv, clm-zodia-staking-launch, clm-zodia-luxembourg-license]
+    rationale: >-
+      No prior-company background is sourced for either the founding CEO
+      (Maxime De Guillebon) or the current CEO (Julian Sawyer). What is
+      observable is continued execution under sequential leadership since
+      the December 2020 founding: FCA registration (2021), a staking-product
+      launch with a named infrastructure partner (2023), and an EU
+      regulatory-license expansion (2026), a real multi-year record of
+      regulatory and product delivery even absent personal-background
+      sourcing.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No prior-company background or track record is sourced for either
+      named CEO.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 1
+    citedEvidenceClaimIds: [clm-zodia-founding-jv, clm-zodia-nbd-strategic-investor]
+    rationale: >-
+      Ownership is unusually well-documented: founded as a joint venture
+      between SC Ventures (majority) and Northern Trust, with SBI Holdings,
+      National Australia Bank, and Emirates NBD added as named minority
+      institutional shareholders through 2024. A concentrated ownership
+      structure among reputable, regulated financial institutions is a
+      credible accountability structure for a custody business, though the
+      precise governance/voting rights among minority shareholders are not
+      detailed in the frozen packet.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Specific voting/governance rights among the named minority
+      shareholders are not detailed in the frozen packet.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying client demand, workflow criticality, or
+      addressable market depth for institutional digital-asset custody
+      beyond the company's own capital raises, which are supply-side
+      financing facts, not demand-side evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand-side or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 70
+    coverage: 1
+    citedEvidenceClaimIds: [clm-zodia-founding-jv, clm-zodia-luxembourg-license]
+    rationale: >-
+      Zodia Custody holds FCA registration in the UK (since 2021) and, as of
+      June 2026, both a MiCA CASP license and a Luxembourg CSSF payment
+      institution license extending regulated stablecoin custody/transfer
+      services across the EU. Multi-jurisdiction regulated status, actively
+      expanding rather than static, and backing from a globally systemic
+      bank (Standard Chartered) as majority/anchor shareholder, is a
+      concrete structural and regulatory-fit strength for an institutional
+      custody business specifically.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents Zodia's fee structure, AUM-based pricing, or
+      revenue mechanism for custody, staking, or Interchange settlement
+      services.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee, pricing, or revenue-mechanism evidence exists in the frozen
+      packet (gap-zodia-aum-revenue).
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, contribution economics, or reliance on
+      continued equity fundraising to fund operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No cost-structure or capital-reliance evidence exists in the frozen
+      packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-zodia-staking-launch]
+    rationale: >-
+      The Blockdaemon-partnered staking launch is one real integration
+      channel, but no claim documents a repeatable enterprise sales motion,
+      composability-driven pull, or additional integrations resulting from
+      it.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No repeatable distribution-channel or downstream-integration evidence
+      exists beyond the single Blockdaemon partnership.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding time, compliance requirements, or
+      account-opening friction for an institutional client engaging Zodia
+      Custody.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction evidence exists in the frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-zodia-staking-launch]
+    rationale: >-
+      The 2023 staking launch is reported (by an independent specialist
+      trade outlet, not only Zodia itself) with concrete, verifiable-in-
+      principle differentiating features: a stated 100% slashing-insurance
+      guarantee and ISO 27001 certification. These are specific claims
+      rather than vague positioning language, though no independent
+      benchmark against competing institutional-staking or custody
+      providers exists.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent competitive benchmark against other institutional
+      custody/staking providers exists.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-zodia-luxembourg-license, clm-zodia-staking-launch, clm-zodia-no-known-exploit]
+    rationale: >-
+      Multi-jurisdiction regulatory licensing (FCA, MiCA, Luxembourg CSSF)
+      functions as a real, hard-to-replicate structural moat for a
+      regulated custody business, and the staking product carries an ISO
+      27001 certification. A targeted search found no security breach
+      specifically attributed to Zodia Custody as of the cutoff, but this is
+      explicitly an absence-of-evidence finding, not an independent security
+      audit or attestation, and is weighted accordingly (evidenceStatus:
+      insufficient in the underlying claim). No claim documents client
+      switching costs or observed resistance to competitive displacement.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent third-party security audit of Zodia's custody
+      infrastructure exists; the absence-of-known-exploit finding is not a
+      positive security attestation.

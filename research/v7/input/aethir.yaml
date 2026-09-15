@@ -1,0 +1,632 @@
+schemaVersion: 7
+candidateId: DPC-01
+canonicalId: co-aethir
+canonicalName: Aethir
+slug: aethir
+description: >-
+  Aethir is a decentralized GPU cloud and DePIN network for AI, gaming, and
+  compute workloads, using the ATH token for staking, rewards, and compute
+  settlement.
+domain: aethir.com
+firstObservedAt: "2021-01-01"
+category: depin_and_decentralized_compute
+entityType: network
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_established
+financingStage: later
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Aethir Ltd. / Aethir operating company and the Aethir network are
+        economically connected but not identical to the ATH token contract or
+        any foundation/controller entity.
+      relatedEntityId: null
+      relationType: operating_company
+    - description: >-
+        ATH is the network utility token used in Aethir's staking, rewards,
+        and compute-purchase model.
+      relatedEntityId: null
+      relationType: token
+    - description: >-
+        A 2026 public-company filing describes Aethir as a DePIN developed by
+        DCI Foundation, a Panama foundation company; this is treated as a
+        separate entity-boundary clue, not as proof of all control economics.
+      relatedEntityId: null
+      relationType: foundation
+  protocolNetworkRelationship: >-
+    Aethir operates a decentralized physical infrastructure network aggregating
+    GPU compute supply; token, node, foundation, and operating-company
+    relationships require separate treatment.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources conflict or evolve on CEO/CSO titles and do not fully
+      establish the legal control relationship among Aethir Ltd., DCI
+      Foundation, ATH token contracts, and compute purchasers.
+people:
+  - id: per-aethir-mark-rydon
+    schemaVersion: 7
+    name: Mark Rydon
+    aliases: []
+    currentRole: Co-founder / CEO or CSO in different public materials
+    companyTenures:
+      - companyId: co-aethir
+        companyName: Aethir
+        role: Co-founder
+        startDate: "2023-07-26"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-aethir-pr-prea-2023, src-aethir-impossible-report-2024]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-aethir-pr-prea-2023, src-aethir-impossible-report-2024]
+  - id: per-aethir-daniel-wang
+    schemaVersion: 7
+    name: Daniel Wang
+    aliases: []
+    currentRole: Co-founder / CEO in third-party research
+    companyTenures:
+      - companyId: co-aethir
+        companyName: Aethir
+        role: Co-founder
+        startDate: "2024-03-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-aethir-impossible-report-2024]
+    priorCompanies: [Riot Games, YGG SEA]
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-aethir-impossible-report-2024]
+  - id: per-aethir-kyle-okamoto
+    schemaVersion: 7
+    name: Kyle Okamoto
+    aliases: []
+    currentRole: CTO
+    companyTenures:
+      - companyId: co-aethir
+        companyName: Aethir
+        role: CTO
+        startDate: "2024-03-01"
+        endDate: null
+        isFounder: false
+        sourceIds: [src-aethir-impossible-report-2024]
+    priorCompanies: [Ericsson, Edge Gravity, Verizon Media]
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-aethir-impossible-report-2024]
+sources:
+  - id: src-aethir-pr-prea-2023
+    schemaVersion: 7
+    publisher: Aethir / PR Newswire
+    title: "Aethir Closes $150 Million Valuation, Pre-A Funding Round to Scale its Decentralized Cloud Infrastructure"
+    url: "https://www.prnewswire.com/news-releases/aethir-closes-150-million-valuation-pre-a-funding-round-to-scale-its-decentralized-cloud-infrastructure-301886287.html"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-07-26"
+    availabilityDate: "2023-07-26"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-aethir-impossible-report-2024
+    schemaVersion: 7
+    publisher: Impossible Finance
+    title: "Aethir Research Report"
+    url: "https://blog.impossible.finance/aethir-research-report-2/"
+    sourceType: specialist_industry
+    tier: c
+    reliability: 0.58
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-03-01"
+    availabilityDate: "2024-03-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-aethir-mainnet-2024
+    schemaVersion: 7
+    publisher: Aethir
+    title: "Aethir's Mainnet Launch: Claim & Stake ATH"
+    url: "https://ecosystem.aethir.com/blog-posts/aethirs-mainnet-launch-claim-stake-ath"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-06-12"
+    availabilityDate: "2024-06-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-aethir-checker-nodes-2024
+    schemaVersion: 7
+    publisher: Aethir
+    title: "Aethir Checker Nodes Launch: Start Earning Rewards"
+    url: "https://tc-site-ecosystem.aethir.com/blog-posts/aethir-checker-nodes-launch-start-earning-rewards"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-06-07"
+    availabilityDate: "2024-06-07"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-aethir-revenue-2024
+    schemaVersion: 7
+    publisher: Aethir
+    title: "Unveiling Aethir's Core Business and Annual Revenue"
+    url: "https://ecosystem.aethir.com/blog-posts/unveiling-aethir-the-revolutionary-decentralized-gpu-infrastructure"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-07-01"
+    availabilityDate: "2024-07-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-aethir-token-docs-2024
+    schemaVersion: 7
+    publisher: Aethir documentation
+    title: "Token Overview"
+    url: "https://docs.aethir.com/aethir-tokenomics/token-overview"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-06-12"
+    availabilityDate: "2024-06-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-aethir-eigenlayer-2025
+    schemaVersion: 7
+    publisher: Aethir
+    title: "Aethir Bringing its $91m Annualized On-Chain Revenue to EigenLayer's Restaking Infrastructure"
+    url: "https://www.aethir.ai/blog-posts/aethir-bringing-its-91m-annualized-on-chain-revenue-to-eigenlayers-restaking-infrastructure"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-03-04"
+    availabilityDate: "2025-03-04"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-aethir-poai-10k-2026
+    schemaVersion: 7
+    publisher: SEC EDGAR
+    title: "Predictive Oncology 2025 Form 10-K discussion of ATH treasury and DCI Foundation"
+    url: "https://www.sec.gov/Archives/edgar/data/1446159/000117184326002094/poai20251231_10k.htm"
+    sourceType: regulatory
+    tier: a
+    reliability: 0.9
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-04-01"
+    availabilityDate: "2026-04-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+evidenceClaims:
+  - id: clm-aethir-prea-funding
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Aethir announced in July 2023 that it had completed a Pre-A round,
+      bringing total value raised to more than $9 million and valuing the
+      company at $150 million.
+    statedValue: "over $9M raised; $150M valuation"
+    numericValue: 9
+    unit: usd_millions
+    sourceId: src-aethir-pr-prea-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.prnewswire.com/news-releases/aethir-closes-150-million-valuation-pre-a-funding-round-to-scale-its-decentralized-cloud-infrastructure-301886287.html"
+    publicationDate: "2023-07-26"
+    metricAsOfDate: "2023-07-26"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: "Company-originated financing announcement; primary/secondary mix and token rights were not disclosed."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Confirm round instruments, valuation basis, and later equity/token financing."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-team
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Impossible Finance's 2024 research report identified Mark Rydon, Daniel
+      Wang, Kyle Okamoto, and Paul Thind as Aethir leadership, with Rydon and
+      Wang described as co-founders in leadership roles.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-aethir-impossible-report-2024
+    supportingSourceIds: [src-aethir-pr-prea-2023]
+    sourceUrl: "https://blog.impossible.finance/aethir-research-report-2/"
+    publicationDate: "2024-03-01"
+    metricAsOfDate: "2024-03-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: people
+    notes: "Role titles vary across materials; packet records the ambiguity rather than selecting one title history."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Confirm current titles, board/control rights, and foundation roles."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-mainnet-ath
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Aethir announced mainnet launch and ATH token availability on June 12,
+      2024, including Ethereum and Arbitrum contract addresses and staking
+      for AI and gaming pools.
+    statedValue: "ATH live on June 12, 2024"
+    numericValue: null
+    unit: null
+    sourceId: src-aethir-mainnet-2024
+    supportingSourceIds: [src-aethir-token-docs-2024]
+    sourceUrl: "https://ecosystem.aethir.com/blog-posts/aethirs-mainnet-launch-claim-stake-ath"
+    publicationDate: "2024-06-12"
+    metricAsOfDate: "2024-06-12"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: token_launch
+    notes: "Token launch is not treated as positive by itself; it establishes network/token chronology."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify circulating supply and realized usage of ATH for compute settlement."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-checker-node-supply
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Aethir's June 2024 Checker Node launch materials said more than 75,000
+      Checker Node licenses had been distributed to more than 22,000 community
+      members, with 15% of ATH supply allocated to Checker Node rewards over
+      four years.
+    statedValue: "75,000+ licenses; 22,000+ members; 15% ATH rewards"
+    numericValue: 75000
+    unit: node_licenses
+    sourceId: src-aethir-checker-nodes-2024
+    supportingSourceIds: []
+    sourceUrl: "https://tc-site-ecosystem.aethir.com/blog-posts/aethir-checker-nodes-launch-start-earning-rewards"
+    publicationDate: "2024-06-07"
+    metricAsOfDate: "2024-06-07"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: network_supply
+    notes: "License distribution is not the same as active, performant GPU supply or customer demand."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify active node count, operator concentration, uptime, and slashing/enforcement."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-2024-arr
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Aethir's 2024 revenue transparency post claimed more than $36 million
+      of annual recurring revenue from GPU network/cloud solutions, with
+      existing compute orders expected to convert into ATH settlement.
+    statedValue: "$36M+ ARR"
+    numericValue: 36
+    unit: usd_millions
+    sourceId: src-aethir-revenue-2024
+    supportingSourceIds: []
+    sourceUrl: "https://ecosystem.aethir.com/blog-posts/unveiling-aethir-the-revolutionary-decentralized-gpu-infrastructure"
+    publicationDate: "2024-07-01"
+    metricAsOfDate: "2024-07-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: caveat
+    topic: revenue
+    notes: "High-impact revenue claim is company-reported and unaudited in admitted sources."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Obtain customer contracts, gross/net revenue definitions, proof-of-revenue methodology, and churn."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-2025-revenue-scale
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Aethir reported in March 2025 that its decentralized cloud had more
+      than $91 million in annual revenue booked through its on-chain protocol
+      and 400,000 GPU containers across more than 93 locations.
+    statedValue: "$91M+ annual revenue; 400,000 GPU containers"
+    numericValue: 91
+    unit: usd_millions
+    sourceId: src-aethir-eigenlayer-2025
+    supportingSourceIds: []
+    sourceUrl: "https://www.aethir.ai/blog-posts/aethir-bringing-its-91m-annualized-on-chain-revenue-to-eigenlayers-restaking-infrastructure"
+    publicationDate: "2025-03-04"
+    metricAsOfDate: "2025-03-04"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: caveat
+    topic: revenue
+    notes: "Company-reported metric; exact customer, accounting, and on-chain booking methodology unresolved."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Verify proof-of-revenue data and separate booked, recognized, net, and token-denominated revenue."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-token-supply
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      Aethir token documentation states that ATH listed on June 12, 2024 and
+      has a total supply of 42 billion tokens, with canonical Ethereum and
+      Arbitrum token contract addresses.
+    statedValue: "42,000,000,000 ATH"
+    numericValue: 42000000000
+    unit: tokens
+    sourceId: src-aethir-token-docs-2024
+    supportingSourceIds: [src-aethir-mainnet-2024]
+    sourceUrl: "https://docs.aethir.com/aethir-tokenomics/token-overview"
+    publicationDate: "2024-06-12"
+    metricAsOfDate: "2024-06-12"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: token_economics
+    notes: "Total supply is not circulating supply and is not evidence of value capture."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify circulating supply, unlock schedule, foundation/insider allocation, and compute-burn/buyback mechanics."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-aethir-dci-foundation-filing
+    schemaVersion: 7
+    companyId: co-aethir
+    claim: >-
+      A 2026 SEC filing by a public company with an ATH treasury strategy
+      describes Aethir as a DePIN developed by DCI Foundation, a Panama
+      foundation company, and says ATH is used for GPU rentals, staking,
+      validation, and network incentives.
+    statedValue: "DCI Foundation, a Panama foundation company"
+    numericValue: null
+    unit: null
+    sourceId: src-aethir-poai-10k-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.sec.gov/Archives/edgar/data/1446159/000117184326002094/poai20251231_10k.htm"
+    publicationDate: "2026-04-01"
+    metricAsOfDate: "2026-04-01"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: entity_structure
+    notes: "Regulatory filing is independent of Aethir but authored by a treasury holder; use for legal-entity clue, not full control proof."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Obtain DCI Foundation formation/governance documents and relationship to Aethir Ltd."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-aethir-prea-2023
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-aethir
+    subjectNameRaw: Aethir
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-aethir-pr-prea-2023
+    rawStrength: 0.45
+    evidenceSummary: "Aethir announced more than $9 million raised and a $150 million valuation."
+    evidenceIds: [clm-aethir-prea-funding]
+    publicationDate: "2023-07-26"
+    availabilityDate: "2023-07-26"
+    eventDate: "2023-07-26"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-aethir-checker-2024
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-aethir
+    subjectNameRaw: Aethir
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-aethir-checker-nodes-2024
+    rawStrength: 0.4
+    evidenceSummary: "Aethir announced Checker Node launch and reward mechanics before mainnet."
+    evidenceIds: [clm-aethir-checker-node-supply]
+    publicationDate: "2024-06-07"
+    availabilityDate: "2024-06-07"
+    eventDate: "2024-06-12"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-aethir-mainnet-ath-2024
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-aethir
+    subjectNameRaw: Aethir / ATH
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-aethir-mainnet-2024
+    rawStrength: 0.45
+    evidenceSummary: "Aethir launched mainnet and ATH token availability on June 12, 2024."
+    evidenceIds: [clm-aethir-mainnet-ath, clm-aethir-token-supply]
+    publicationDate: "2024-06-12"
+    availabilityDate: "2024-06-12"
+    eventDate: "2024-06-12"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-aethir-revenue-2024
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-aethir
+    subjectNameRaw: Aethir
+    signalType: fee_revenue_trend
+    signalCategory: network
+    signalDirection: ambiguous
+    sourceId: src-aethir-revenue-2024
+    rawStrength: 0.35
+    evidenceSummary: "Aethir company-reported more than $36 million ARR before full protocolized settlement."
+    evidenceIds: [clm-aethir-2024-arr]
+    publicationDate: "2024-07-01"
+    availabilityDate: "2024-07-01"
+    eventDate: "2024-07-01"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-aethir-eigenlayer-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-aethir
+    subjectNameRaw: Aethir
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-aethir-eigenlayer-2025
+    rawStrength: 0.4
+    evidenceSummary: "Aethir announced an EigenLayer restaking integration tied to its company-reported on-chain revenue."
+    evidenceIds: [clm-aethir-2025-revenue-scale]
+    publicationDate: "2025-03-04"
+    availabilityDate: "2025-03-04"
+    eventDate: "2025-03-04"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-aethir-legal-control
+    whatWasSearched: "Aethir Ltd., DCI Foundation, token issuer, and governance/control documents"
+    whatCouldNotBeEstablished: "Admitted sources do not fully map control rights, foundation governance, token issuer obligations, or operating-company economics."
+    expectedToMatter: true
+  - id: gap-aethir-revenue-quality
+    whatWasSearched: "Customer contracts, proof-of-revenue, gross/net revenue, churn, margin, and token settlement mechanics"
+    whatCouldNotBeEstablished: "Revenue and ARR figures are company-reported; independent audit-quality proof was not admitted."
+    expectedToMatter: true
+  - id: gap-aethir-gpu-supply-quality
+    whatWasSearched: "Active GPUs, H100 count, container definition, operator concentration, uptime, and geographic distribution"
+    whatCouldNotBeEstablished: "Public materials report large supply counts but not enough independently verified performance or concentration data."
+    expectedToMatter: true
+  - id: gap-aethir-customers
+    whatWasSearched: "Named paying AI/gaming customers, workload durability, and demand concentration"
+    whatCouldNotBeEstablished: "Partner/customer counts and examples were found, but not a verified revenue-by-customer or retention cohort."
+    expectedToMatter: true
+  - id: gap-aethir-security
+    whatWasSearched: "Protocol audits, node slashing incidents, exploits, and ATH contract security incidents"
+    whatCouldNotBeEstablished: "No dated independent protocol-audit report or direct exploit record was admitted; absence of incidents is not evidence of safety."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Aethir Ltd., Aethir network, ATH contracts, DCI Foundation, node operators,
+    and compute purchasers have different legal/economic roles. The packet
+    preserves that uncertainty rather than collapsing them.
+  sourceOriginUncertainty: >-
+    Most scale and revenue evidence is first-party. The SEC filing is
+    independent legal disclosure from a treasury holder but does not verify
+    Aethir's own revenue or complete governance.
+  likelyContradictions: >-
+    Public materials use different titles for Mark Rydon and Daniel Wang over
+    time; this is recorded as role ambiguity, not a claim-level contradiction.
+  completenessNotes: >-
+    Packet establishes Pre-A financing, mainnet/ATH launch, token supply,
+    checker-node program, company-reported revenue/compute scale, and one
+    independent filing tying Aethir to DCI Foundation. Revenue quality,
+    customer concentration, active GPU performance, foundation control, and
+    audit/incident posture remain material gaps.
+researchCutoff: "2026-09-10"

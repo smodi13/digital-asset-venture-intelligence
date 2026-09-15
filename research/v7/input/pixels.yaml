@@ -1,0 +1,619 @@
+schemaVersion: 7
+candidateId: CSG-04
+canonicalId: co-pixels
+canonicalName: Pixels
+slug: pixels
+description: >-
+  Pixels is a farming/exploration-themed multiplayer on-chain game, currently
+  built on Sky Mavis' Ronin blockchain, with an associated PIXEL governance
+  and reward token used for staking, ecosystem rewards, and in-game economy.
+domain: pixels.xyz
+firstObservedAt: "2021-01-01"
+category: consumer_social_and_gaming
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: CALIBRATION
+nameAliasNote: >-
+  Formerly operated as "Pixels.online" during its Polygon-hosted phase before
+  migrating to Ronin in 2023; official docs are now hosted at docs.pixels.xyz
+  (previously docs.pixels.online). No entity-identity change is asserted,
+  only a domain/branding continuity note.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Pixels was founded by Luke Barwikowski, who serves as Founder, CEO,
+        and CTO. The project is closely tied to Sky Mavis' Ronin Network
+        ecosystem (advisory support, Mavis Hub distribution) following a
+        September 2023 migration from Polygon, without Pixels being owned by
+        Sky Mavis.
+      relatedEntityId: null
+      relationType: ecosystem_partner_of_ronin
+  protocolNetworkRelationship: >-
+    Pixels is a game studio/project (entityType hybrid: an operating
+    company/team plus a token-governed in-game economy) whose game runs as an
+    application on the Ronin blockchain; Pixels does not operate its own
+    independent settlement layer as of the sources reviewed. The PIXEL token
+    both rewards in-game activity and is stakable across a small family of
+    "partner games" (e.g., Sleepagotchi, Core Pixels) referenced in company
+    channels.
+  unresolvedBoundaryNotes:
+    - >-
+      No source in this batch established Pixels' legal entity name,
+      incorporation jurisdiction, or headquarters location (universe-stage
+      gap; still open after this research pass).
+    - >-
+      The precise legal/organizational relationship between "Pixels" (the
+      game/studio) and the "PIXEL" token issuer (e.g., a separate foundation
+      entity, as is common in this sector) was not established from public
+      sources reviewed.
+people:
+  - id: per-luke-barwikowski
+    schemaVersion: 7
+    name: Luke Barwikowski
+    aliases: []
+    currentRole: Founder, CEO & CTO
+    companyTenures:
+      - companyId: co-pixels
+        companyName: Pixels
+        role: Founder, CEO & CTO
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-pixels-cryptonews-interview]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: "https://www.linkedin.com/in/lbarwiko/", website: null }
+    signalEventIds: []
+    sourceIds: [src-pixels-cryptonews-interview]
+sources:
+  - id: src-pixels-investors-docs
+    schemaVersion: 7
+    publisher: Pixels (official docs)
+    title: "Investors | Pixels Whitepaper"
+    url: "https://docs.pixels.xyz/about-us/investors"
+    sourceType: official_network_source
+    tier: c
+    reliability: 0.5
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-01-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-pixels-tokeninsight-seed
+    schemaVersion: 7
+    publisher: TokenInsight
+    title: "P2E Game Pixels Closed a $2.4 Million Seed Funding Round Led by Animoca Brands and Others"
+    url: "https://tokeninsight.com/en/news/p2e-game-pixels-closed-a-2.4-million-seed-funding-round-led-by-animoca-brands-and-others"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.6
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2022-02-14"
+    availabilityDate: "2022-02-14"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-pixels-chaincatcher-strategic
+    schemaVersion: 7
+    publisher: ChainCatcher
+    title: "Web3 game Pixels completes $4.8 million strategic financing, with participation from Framework Ventures and others"
+    url: "https://www.chaincatcher.com/en/article/2113881"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.6
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-02-09"
+    availabilityDate: "2024-02-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-pixels-cointelegraph-valuation
+    schemaVersion: 7
+    publisher: Cointelegraph
+    title: "Web3 game Pixels now valued at $2.7B after migration to Ronin"
+    url: "https://cointelegraph.com/news/web3-game-pixels-valued-2-7-billion-after-ronin-migration"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.75
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-02-20"
+    availabilityDate: "2024-02-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-pixels-theblock-1m-dau
+    schemaVersion: 7
+    publisher: The Block
+    title: "Crypto video game Pixels says it hit 1 million daily active users"
+    url: "https://www.theblock.co/post/294058/crypto-video-game-pixels-says-it-hit-1-million-daily-active-users"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-05-13"
+    availabilityDate: "2024-05-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-pixels-cointelegraph-bots
+    schemaVersion: 7
+    publisher: Cointelegraph Magazine
+    title: "Bots, airdrops push Ronin to No.2 blockchain for daily users - Not Pixels fans"
+    url: "https://cointelegraph.com/magazine/bots-airdrops-push-ronin-to-no-2-blockchain-for-daily-users-not-pixels-fans/"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.75
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-05-27"
+    availabilityDate: "2024-05-27"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-pixels-gamesgg-strategic-pivot
+    schemaVersion: 7
+    publisher: GAMES.GG
+    title: "Pixels Strategic Updates to Improve Token Utility"
+    url: "https://games.gg/news/pixels-updates-token-utility/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.55
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-04-21"
+    availabilityDate: "2026-06-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-pixels-cryptonews-interview
+    schemaVersion: 7
+    publisher: Cryptonews
+    title: "Pixels CEO Luke Barwikowski on The Current State of Web3 Gaming, Growing to 500K Daily Active Users, and Building on Ronin Blockchain"
+    url: "https://cryptonews.com/exclusives/luke-barwikowski-ceo-of-web3-game-pixels-on-the-current-state-of-web3-gaming-growing-to-500k-daily-active-users-and-building-on-ronin-blockchain-ep-322/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.55
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-09-01"
+    availabilityDate: "2024-09-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+evidenceClaims:
+  - id: clm-pixels-seed-round
+    schemaVersion: 7
+    companyId: co-pixels
+    claim: >-
+      Pixels closed a $2.4 million strategic seed funding round, led by
+      Animoca Brands and PKO Investments (a syndicate of angel investors made
+      up of former founders), with participation from OpenSea, Untapped
+      Capital, and Leonis Capital, reported February 14, 2022.
+    statedValue: "$2.4 million"
+    numericValue: 2400000
+    unit: usd
+    sourceId: src-pixels-tokeninsight-seed
+    supportingSourceIds: [src-pixels-investors-docs]
+    sourceUrl: "https://tokeninsight.com/en/news/p2e-game-pixels-closed-a-2.4-million-seed-funding-round-led-by-animoca-brands-and-others"
+    publicationDate: "2022-02-14"
+    metricAsOfDate: "2022-02-14"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Investor list corroborated between independent journalism (TokenInsight)
+      and the official Pixels investors page; the official page does not
+      itself count as independent corroboration (direct company disclosure)
+      but the underlying fact of the round is independently reported.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-pixels-strategic-round
+    schemaVersion: 7
+    companyId: co-pixels
+    claim: >-
+      Pixels raised $4.8 million in a strategic financing round announced
+      February 9, 2024, with participation from Framework Ventures,
+      Collab+Currency, Volt Capital, Yield Guild Games, Sky Mavis, Token
+      Metrics Ventures, Forj Network, Mechanism Capital, and Fenbushi
+      Capital, ahead of its PIXEL token generation event and Binance listing.
+    statedValue: "$4.8 million"
+    numericValue: 4800000
+    unit: usd
+    sourceId: src-pixels-chaincatcher-strategic
+    supportingSourceIds: []
+    sourceUrl: "https://www.chaincatcher.com/en/article/2113881"
+    publicationDate: "2024-02-09"
+    metricAsOfDate: "2024-02-09"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Only one independent outlet (ChainCatcher) with clear publication
+      details was opened and cited directly; several other aggregator sites
+      reported the same figure and are treated as likely reproductions of
+      the same underlying announcement rather than separate corroboration.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What was the round's valuation/terms, and who led it (no single lead investor was identified in reporting)?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-pixels-ronin-migration-valuation
+    schemaVersion: 7
+    companyId: co-pixels
+    claim: >-
+      Following its migration from Polygon to the Ronin blockchain and the
+      PIXEL token's Binance listing on February 19, 2024 (opening at
+      approximately $0.04), independent reporting (Cointelegraph) valued the
+      project at approximately $2.7 billion on a fully diluted basis by
+      February 20, 2024, after the token price rose roughly 1,246% from its
+      listing price.
+    statedValue: "~$2.7 billion FDV"
+    numericValue: 2700000000
+    unit: usd
+    sourceId: src-pixels-cointelegraph-valuation
+    supportingSourceIds: []
+    sourceUrl: "https://cointelegraph.com/news/web3-game-pixels-valued-2-7-billion-after-ronin-migration"
+    publicationDate: "2024-02-20"
+    metricAsOfDate: "2024-02-20"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: market
+    notes: >-
+      A token-price-derived FDV snapshot at a specific point in time,
+      immediately post-listing; not treated as a durable valuation and not
+      converted into a digitalAssetMetrics record given extreme point-in-time
+      volatility documented separately (see clm-pixels-fdv-decline).
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-pixels-1m-dau-selfreported
+    schemaVersion: 7
+    companyId: co-pixels
+    claim: >-
+      Pixels stated in early-to-mid May 2024 that it had surpassed 1 million
+      daily active users, a self-reported company claim covered by The
+      Block, with the CEO separately citing a 30-day PIXEL-token
+      spend-to-distribution ratio (4.4 million PIXEL spent, ~$1.6 million)
+      as a supporting metric; The Block's coverage does not independently
+      verify the 1 million figure.
+    statedValue: "1,000,000+ self-reported DAU"
+    numericValue: 1000000
+    unit: users
+    sourceId: src-pixels-theblock-1m-dau
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/294058/crypto-video-game-pixels-says-it-hit-1-million-daily-active-users"
+    publicationDate: "2024-05-13"
+    metricAsOfDate: "2024-05-13"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Recorded as an attributed self-reported claim, not as a
+      digitalAssetMetrics record: it is company-stated, lacks independent
+      methodology disclosure, and is directly contradicted in substantial
+      part by later independent bot-activity reporting (see
+      clm-pixels-bot-activity, clm-pixels-bot-activity contradicts this
+      claim's reliability though not necessarily every real user counted).
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "What share of the claimed 1 million DAU reflects genuine distinct human users versus automated/bot wallets?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: [clm-pixels-bot-activity]
+    contradictionNote: >-
+      Independent reporting two weeks later estimated roughly 70% of Pixels
+      accounts on Ronin were bots, directly undermining the reliability
+      (though not necessarily the entire premise) of the 1 million DAU claim.
+  - id: clm-pixels-bot-activity
+    schemaVersion: 7
+    companyId: co-pixels
+    claim: >-
+      Independent reporting (Cointelegraph Magazine, May 27, 2024) cited
+      on-chain analytics firm ChainArgos finding the growth curve of daily
+      unique PIXEL recipients "too smooth" for organic human activity, and
+      quoted Eldarune CEO Can Picak estimating approximately 70% of Pixels
+      accounts on Ronin were bots; Pixels' developers acknowledged the
+      problem, stating they banned 750,000 accounts in a single week, though
+      bot activity reportedly rebounded after ban waves.
+    statedValue: "~70% of accounts estimated as bots"
+    numericValue: 0.7
+    unit: ratio
+    sourceId: src-pixels-cointelegraph-bots
+    supportingSourceIds: []
+    sourceUrl: "https://cointelegraph.com/magazine/bots-airdrops-push-ronin-to-no-2-blockchain-for-daily-users-not-pixels-fans/"
+    publicationDate: "2024-05-27"
+    metricAsOfDate: "2024-05-27"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: >-
+      Material negative/conflicting evidence relative to the company's DAU
+      claims; the 70% figure is itself a third-party estimate (Eldarune CEO),
+      not a precise audited measurement, and is recorded with that caveat.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: [clm-pixels-1m-dau-selfreported]
+    contradictedBy: []
+    contradictionNote: >-
+      Directly undermines the reliability of the company's self-reported 1
+      million DAU figure from two weeks earlier.
+  - id: clm-pixels-fdv-decline
+    schemaVersion: 7
+    companyId: co-pixels
+    claim: >-
+      Independent reporting (GAMES.GG, content current as of June 10, 2026)
+      states the PIXEL token reached a fully diluted valuation exceeding $2
+      billion in 2024/2025 before declining approximately 95% from its peak,
+      and that Pixels has since pursued a strategic pivot away from raw
+      daily-active-user counts toward users with higher lifetime value,
+      alongside new withdrawal fees funneled to stakers and a new vPIXEL
+      fee-free-withdrawal token.
+    statedValue: "~95% FDV decline from peak"
+    numericValue: -0.95
+    unit: ratio
+    sourceId: src-pixels-gamesgg-strategic-pivot
+    supportingSourceIds: []
+    sourceUrl: "https://games.gg/news/pixels-updates-token-utility/"
+    publicationDate: "2025-04-21"
+    metricAsOfDate: "2026-06-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: market
+    notes: >-
+      Single independent-outlet source (GAMES.GG); exact peak/trough dates
+      and methodology for the 95% figure were not independently
+      cross-verified within this batch's research budget. Recorded as
+      material negative evidence on token/FDV trajectory and as an explicit
+      example of value-capture-model and metric-methodology change over
+      time.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What are the precise peak and current PIXEL FDV figures and dates behind the cited ~95% decline?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-pixels-ronin-migration
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-pixels
+    subjectNameRaw: Pixels
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: positive
+    sourceId: src-pixels-cointelegraph-valuation
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Pixels migrated from Polygon to the Ronin blockchain and its PIXEL
+      token listed on Binance on February 19, 2024, with independent
+      reporting valuing the project at roughly $2.7 billion FDV the
+      following day.
+    evidenceIds: [clm-pixels-ronin-migration-valuation]
+    publicationDate: "2024-02-20"
+    availabilityDate: "2024-02-20"
+    eventDate: "2024-02-19"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-pixels-strategic-round
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-pixels
+    subjectNameRaw: Pixels
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-pixels-chaincatcher-strategic
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Pixels raised $4.8 million in a strategic financing round announced
+      February 9, 2024, ahead of its PIXEL token generation event.
+    evidenceIds: [clm-pixels-strategic-round]
+    publicationDate: "2024-02-09"
+    availabilityDate: "2024-02-09"
+    eventDate: "2024-02-09"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-pixels-bot-activity-concern
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-pixels
+    subjectNameRaw: Pixels
+    signalType: onchain_activity_trend
+    signalCategory: network
+    signalDirection: negative
+    sourceId: src-pixels-cointelegraph-bots
+    rawStrength: 0.5
+    evidenceSummary: >-
+      Independent analytics (ChainArgos) and third-party commentary
+      estimated roughly 70% of Pixels-related accounts on Ronin were bots,
+      undermining the reliability of the company's contemporaneous 1
+      million DAU claim; Pixels acknowledged banning 750,000 accounts in one
+      week.
+    evidenceIds: [clm-pixels-bot-activity]
+    publicationDate: "2024-05-27"
+    availabilityDate: "2024-05-27"
+    eventDate: "2024-05-27"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-pixels-token-strategic-pivot
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-pixels
+    subjectNameRaw: Pixels
+    signalType: token_economic_design_change
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-pixels-gamesgg-strategic-pivot
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Following a reported ~95% PIXEL FDV decline from its 2024/2025 peak,
+      Pixels introduced heavier PIXEL withdrawal fees redirected to
+      stakers, automatic in-game staking, and a new vPIXEL fee-free token,
+      alongside a stated strategic pivot from raw DAU counts toward
+      higher-lifetime-value users.
+    evidenceIds: [clm-pixels-fdv-decline]
+    publicationDate: "2025-04-21"
+    availabilityDate: "2026-06-10"
+    eventDate: "2026-06-10"
+    eventStatus: reported_unconfirmed
+    unconfirmedNote: >-
+      Reported by a single independent gaming-news outlet; the exact
+      dates/magnitude of the FDV decline and the operational effect of the
+      new fee/staking mechanics were not independently cross-verified
+      within this batch's research budget.
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-pixels-legal-entity
+    whatWasSearched: "Legal entity name, incorporation jurisdiction, and headquarters for the Pixels studio/team"
+    whatCouldNotBeEstablished: >-
+      No source established a legal entity name, incorporation jurisdiction,
+      or headquarters location for Pixels; official docs and independent
+      reporting reviewed name only the product/brand and the founder, not a
+      registered corporate entity.
+    expectedToMatter: true
+  - id: gap-pixels-founding-team-roster
+    whatWasSearched: "Full founding team roster beyond the CEO"
+    whatCouldNotBeEstablished: >-
+      Sources consistently name only Luke Barwikowski (Founder/CEO/CTO); no
+      co-founder or early core-team roster was established from the sources
+      reviewed.
+    expectedToMatter: true
+  - id: gap-pixels-token-issuer-entity
+    whatWasSearched: >-
+      Whether the PIXEL token is issued by Pixels directly or by a
+      separate foundation/issuing entity (a common structure in this
+      sector)
+    whatCouldNotBeEstablished: >-
+      No source explicitly named a separate token-issuing entity or
+      described the legal relationship between the Pixels studio and the
+      PIXEL token issuance, distinct from the operating game/studio.
+    expectedToMatter: true
+  - id: gap-pixels-revenue-fee-data
+    whatWasSearched: "Protocol/company revenue, fee capture, or treasury data with clear methodology"
+    whatCouldNotBeEstablished: >-
+      No source with clear value/period/asOf methodology was found for
+      protocol fees, company revenue, or treasury holdings; withdrawal-fee
+      and staking-reward mechanics are described qualitatively (see
+      clm-pixels-fdv-decline) but not quantified with a defensible metric
+      basis, so no digitalAssetMetrics record was created.
+    expectedToMatter: true
+  - id: gap-pixels-security-audit
+    whatWasSearched: "Pixels-specific smart contract security audit reports"
+    whatCouldNotBeEstablished: >-
+      No Pixels-specific security audit report was found. Ronin bridge
+      security incidents (e.g., an August 2024 ~$12M bridge exploit) concern
+      Sky Mavis' underlying Ronin infrastructure, not Pixels' own contracts,
+      and are not attributed to Pixels in this packet.
+    expectedToMatter: true
+  - id: gap-pixels-near-cutoff-status
+    whatWasSearched: "Pixels status, player metrics, and token performance closest to the 2026-09-10 research cutoff"
+    whatCouldNotBeEstablished: >-
+      The most recent admissible independent source found (GAMES.GG,
+      content current as of 2026-06-10) describes an "Industrial Expansion" /
+      Chapter 3 development phase and a token-utility strategic pivot, but no
+      source between mid-2026-06 and the 2026-09-10 cutoff was found to
+      confirm current player activity levels or PIXEL token performance.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Treated as one hybrid entity (operating studio/team plus the PIXEL
+    token-governed in-game economy) per the frozen universe assignment. The
+    "Pixels" brand previously operated as "Pixels.online" on Polygon before
+    its September 2023 migration to Ronin; no separate legal entity is
+    asserted for the two branding phases in the absence of contrary evidence.
+  sourceOriginUncertainty: >-
+    Several aggregator/exchange-calendar sites (Bitget, Binance Square,
+    CryptoDiffer, Gate) reported the same $4.8 million strategic-round figure
+    from February 2024; only one independent outlet with clear publication
+    details (ChainCatcher) was opened and cited as the primary source for
+    that claim, and these aggregator reproductions are treated as one voice,
+    not separate corroboration.
+  likelyContradictions: >-
+    The company's self-reported "1 million daily active users" claim (May
+    13, 2024) is in material tension with independent reporting two weeks
+    later (May 27, 2024) estimating roughly 70% of Pixels-linked Ronin
+    accounts as bots; both claims are retained with the conflict preserved
+    (see clm-pixels-1m-dau-selfreported / clm-pixels-bot-activity) rather
+    than resolved in either direction.
+  completenessNotes: >-
+    Evidence density MODERATE per the frozen cohort assignment; research
+    depth achieved is consistent with that label. IDENTITY, CAPITAL
+    (seed + strategic rounds), and ADOPTION dimensions (including negative
+    evidence on bot activity and token FDV decline) reached PARTIAL-to-
+    ESTABLISHED coverage. TEAM/GOVERNANCE beyond the CEO, legal-entity
+    structure, revenue/fee metrics, and security-audit posture remain open
+    research gaps despite active searching; no responsible evidence was
+    found to close them within this batch's research budget, and no
+    aggregator or promotional figures were substituted for that missing
+    evidence.
+researchCutoff: "2026-09-10"

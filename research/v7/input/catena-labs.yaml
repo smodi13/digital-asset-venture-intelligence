@@ -1,0 +1,511 @@
+schemaVersion: 7
+candidateId: CAI-01
+canonicalId: co-catena-labs
+canonicalName: Catena Labs
+slug: catena-labs
+description: >-
+  Catena Labs, Inc. is building regulated financial infrastructure and a
+  banking/control platform for AI agents, alongside the open-source Agent
+  Commerce Kit for agent identity and payment workflows.
+domain: catena.com
+firstObservedAt: "2025-05-20"
+category: crypto_ai_and_agentic_infrastructure
+entityType: company
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: null
+financingStage: series_a
+cohort: FINAL_TEST
+nameAliasNote: >-
+  The frozen cohort name is Catena Labs. The operating company identifies
+  itself as Catena Labs, Inc. and now markets the product as Catena; this
+  packet excludes unrelated entities named Catena or Catena Media.
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: >-
+  The frozen cohort lists equity. Fortune reported that the 2025 financing
+  gave investors equity with an attached token warrant or allocation of a
+  yet-to-be-released cryptocurrency. The packet therefore records
+  equity_and_token while preserving that no Catena token launch had been
+  announced at that time and no token issuance was established by the cutoff.
+entityStructure:
+  relationships:
+    - description: >-
+        Catena Labs, Inc., a Delaware corporation, is the sponsoring
+        organization and proposed sole shareholder of Catena Trust Bank,
+        National Association.
+      relatedEntityId: null
+      relationType: proposed_wholly_owned_bank_subsidiary
+    - description: >-
+        Catena Labs runs the open-source Agent Commerce Kit project; ACK is a
+        protocol and reference-implementation initiative, not a separately
+        evidenced legal entity or token network.
+      relatedEntityId: null
+      relationType: company_operated_open_source_protocol
+  protocolNetworkRelationship: >-
+    Catena Labs is the operating company. ACK-ID and ACK-Pay are open-source
+    protocol patterns controlled and maintained by the company, while Catena
+    Trust Bank, N.A. remained a proposed regulated subsidiary whose OCC charter
+    application was pending as of the cutoff.
+  unresolvedBoundaryNotes:
+    - >-
+      Public sources did not establish whether any future Catena-issued token
+      would belong to Catena Labs, ACK, the proposed bank, or another entity.
+people:
+  - id: per-sean-neville
+    schemaVersion: 7
+    name: Patrick Sean Neville
+    aliases: [Sean Neville]
+    currentRole: Co-Founder and CEO
+    companyTenures:
+      - companyId: co-catena-labs
+        companyName: Catena Labs
+        role: Co-Founder and CEO
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-catena-fortune-seed-2025, src-catena-occ-application-2026]
+    priorCompanies:
+      - "Circle Internet Financial (Co-Founder and Co-CEO)"
+      - "Adobe (software engineer)"
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-catena-fortune-seed-2025, src-catena-occ-application-2026]
+  - id: per-matthew-venables
+    schemaVersion: 7
+    name: Matthew Venables
+    aliases: [Matt Venables]
+    currentRole: Co-Founder and CTO
+    companyTenures:
+      - companyId: co-catena-labs
+        companyName: Catena Labs
+        role: Co-Founder and CTO
+        startDate: "2021-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-catena-fortune-seed-2025, src-catena-occ-application-2026]
+    priorCompanies:
+      - "Circle Internet Financial (senior engineering executive)"
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-catena-fortune-seed-2025, src-catena-occ-application-2026]
+sources:
+  - id: src-catena-fortune-seed-2025
+    schemaVersion: 7
+    publisher: Fortune
+    title: "Exclusive: Circle cofounder raises $18 million to build 'AI-native bank'"
+    url: "https://fortune.com/crypto/2025/05/20/sean-neville-catena-labs-18-million-a16z-breyer-circle-coinbase-tom-brady/"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-05-20"
+    availabilityDate: "2025-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-catena-official-launch-2025
+    schemaVersion: 7
+    publisher: Catena Labs
+    title: "Building the First AI-Native Financial Institution"
+    url: "https://catena.com/blog/announcing-catena-labs"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-05-20"
+    availabilityDate: "2025-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-catena-banking-dive-2025
+    schemaVersion: 7
+    publisher: Banking Dive
+    title: "Circle co-founder to build new 'AI-native' bank"
+    url: "https://www.bankingdive.com/news/circle-co-founder-build-new-ai-native-bank/748767/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.75
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2025-05-21"
+    availabilityDate: "2025-05-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-catena-ack-github
+    schemaVersion: 7
+    publisher: Catena Labs / Agent Commerce Kit
+    title: "The Agent Commerce Kit (ACK)"
+    url: "https://github.com/agentcommercekit/ack"
+    sourceType: code_repository
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2025-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: src-catena-official-launch-2025
+    supportRole: direct_company_disclosure
+  - id: src-catena-official-series-a-2026
+    schemaVersion: 7
+    publisher: Catena Labs
+    title: "Our Banking and Governance Platform for AI Agents is Open"
+    url: "https://catena.com/blog/banking-governance-platform-for-ai-agents-open"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-catena-theblock-series-a-2026
+    schemaVersion: 7
+    publisher: The Block
+    title: "Catena Labs lands $30 million Series A, files for national trust bank charter to underpin agentic finance"
+    url: "https://www.theblock.co/news/deals/2026-05-20-catena-labs-lands-30-million-series-a-files-for-national-trust-bank-charter-to-underpin-agentic-finance-402029"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-catena-occ-application-2026
+    schemaVersion: 7
+    publisher: Office of the Comptroller of the Currency
+    title: "Charter Application for Catena Trust Bank, National Association"
+    url: "https://www.occ.gov/topics/charters-and-licensing/digital-assets-licensing-applications/catena-trust-bank-na.pdf"
+    sourceType: regulatory
+    tier: a
+    reliability: 0.95
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-14T00:00:00.000Z"
+    publishedAt: "2026-05-18"
+    availabilityDate: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+evidenceClaims:
+  - id: clm-catena-founders-history
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      Sean Neville and Matt Venables created a venture studio in 2021 and moved
+      its focus fully to AI-oriented financial infrastructure in 2023.
+    sourceId: src-catena-fortune-seed-2025
+    supportingSourceIds: []
+    sourceUrl: "https://fortune.com/crypto/2025/05/20/sean-neville-catena-labs-18-million-a16z-breyer-circle-coinbase-tom-brady/"
+    publicationDate: "2025-05-20"
+    metricAsOfDate: "2025-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: team
+    evidenceStatus: supported
+  - id: clm-catena-seed-18m
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      Catena Labs announced an $18 million seed financing led by a16z crypto,
+      with Breyer Capital, Circle Ventures and Coinbase Ventures among the
+      participants.
+    statedValue: "$18 million seed financing"
+    numericValue: 18000000
+    unit: usd
+    sourceId: src-catena-fortune-seed-2025
+    supportingSourceIds: [src-catena-official-launch-2025, src-catena-banking-dive-2025]
+    sourceUrl: "https://fortune.com/crypto/2025/05/20/sean-neville-catena-labs-18-million-a16z-breyer-circle-coinbase-tom-brady/"
+    publicationDate: "2025-05-20"
+    metricAsOfDate: "2025-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    evidenceStatus: supported
+  - id: clm-catena-seed-instrument
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      Fortune reported that investors in Catena's 2025 round received equity
+      with an attached token warrant or allocation of a yet-to-be-released
+      cryptocurrency.
+    sourceId: src-catena-fortune-seed-2025
+    supportingSourceIds: []
+    sourceUrl: "https://fortune.com/crypto/2025/05/20/sean-neville-catena-labs-18-million-a16z-breyer-circle-coinbase-tom-brady/"
+    publicationDate: "2025-05-20"
+    metricAsOfDate: "2025-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: financing_instrument
+    evidenceStatus: supported
+  - id: clm-catena-no-token-plan-2025
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      At the May 2025 financing announcement, Sean Neville said Catena had no
+      plan at that point to launch a cryptocurrency or stablecoin.
+    sourceId: src-catena-fortune-seed-2025
+    supportingSourceIds: []
+    sourceUrl: "https://fortune.com/crypto/2025/05/20/sean-neville-catena-labs-18-million-a16z-breyer-circle-coinbase-tom-brady/"
+    publicationDate: "2025-05-20"
+    metricAsOfDate: "2025-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: caveat
+    topic: token_status
+    evidenceStatus: supported
+  - id: clm-catena-ack-architecture
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      ACK is an MIT-licensed open-source kit with separable ACK-ID and ACK-Pay
+      protocols using decentralized identifiers and verifiable credentials for
+      identity, payment requirements and verifiable receipts; ACK-Pay does not
+      prescribe a settlement rail and can support bank, card or stablecoin
+      payments.
+    sourceId: src-catena-ack-github
+    supportingSourceIds: [src-catena-official-launch-2025]
+    sourceUrl: "https://github.com/agentcommercekit/ack"
+    publicationDate: null
+    metricAsOfDate: "2025-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: product_architecture
+    notes: >-
+      This establishes documented architecture and available code, not external
+      adoption, production deployment, or an independent security review.
+    evidenceStatus: supported
+  - id: clm-catena-series-a-30m
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      Catena disclosed a $30 million Series A co-led by a16z crypto and Acrew in
+      May 2026, bringing company-reported total financing to $48 million.
+    statedValue: "$30 million Series A; $48 million total financing"
+    numericValue: 30000000
+    unit: usd
+    sourceId: src-catena-official-series-a-2026
+    supportingSourceIds: [src-catena-theblock-series-a-2026]
+    sourceUrl: "https://catena.com/blog/banking-governance-platform-for-ai-agents-open"
+    publicationDate: "2026-05-20"
+    metricAsOfDate: "2026-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      The $48 million is financing raised, not capital deployed or company
+      revenue.
+    evidenceStatus: supported
+  - id: clm-catena-platform-access
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      In May 2026 Catena described a platform that gives agents verified
+      identities, accounts and payment access while letting human operators set
+      spending, counterparty and audit policies; access was offered through a
+      private-access application rather than documented general availability.
+    sourceId: src-catena-official-series-a-2026
+    supportingSourceIds: [src-catena-theblock-series-a-2026]
+    sourceUrl: "https://catena.com/blog/banking-governance-platform-for-ai-agents-open"
+    publicationDate: "2026-05-20"
+    metricAsOfDate: "2026-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product_deployment
+    notes: >-
+      The release did not provide customer counts, transaction volume, pricing
+      or evidence that every described banking function was generally live.
+    evidenceStatus: insufficient
+  - id: clm-catena-charter-pending
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      Catena Labs submitted an application for a de novo national trust-bank
+      charter for Catena Trust Bank, N.A.; the application was pending and did
+      not itself constitute charter approval.
+    sourceId: src-catena-occ-application-2026
+    supportingSourceIds: [src-catena-theblock-series-a-2026]
+    sourceUrl: "https://www.occ.gov/topics/charters-and-licensing/digital-assets-licensing-applications/catena-trust-bank-na.pdf"
+    publicationDate: "2026-05-18"
+    metricAsOfDate: "2026-05-20"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: regulatory_status
+    evidenceStatus: supported
+  - id: clm-catena-bank-scope
+    schemaVersion: 7
+    companyId: co-catena-labs
+    claim: >-
+      The proposed non-FDIC-insured trust bank would be wholly owned by Catena
+      Labs and sought authority for custody, investment management, trust,
+      conversion, clearing and execution services involving fiat, securities
+      and approved digital assets, serving U.S. customers through APIs.
+    sourceId: src-catena-occ-application-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.occ.gov/topics/charters-and-licensing/digital-assets-licensing-applications/catena-trust-bank-na.pdf"
+    publicationDate: "2026-05-18"
+    metricAsOfDate: "2026-05-18"
+    lastVerified: "2026-09-14T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: regulatory_business_scope
+    notes: >-
+      These were proposed activities in an application, not evidence the bank
+      was operating or licensed as of the cutoff.
+    evidenceStatus: supported
+signalEvents:
+  - id: sig-catena-seed-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-catena-labs
+    subjectNameRaw: Catena Labs
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-catena-fortune-seed-2025
+    rawStrength: 0.8
+    evidenceSummary: "Catena announced an $18 million seed financing."
+    evidenceIds: [clm-catena-seed-18m, clm-catena-seed-instrument]
+    publicationDate: "2025-05-20"
+    availabilityDate: "2025-05-20"
+    eventDate: "2025-05-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-catena-ack-release-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: null
+    subjectNameRaw: Agent Commerce Kit
+    signalType: protocol_launch
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-catena-official-launch-2025
+    rawStrength: 0.6
+    evidenceSummary: "Catena publicly released the open-source ACK protocol patterns and code."
+    evidenceIds: [clm-catena-ack-architecture]
+    publicationDate: "2025-05-20"
+    availabilityDate: "2025-05-20"
+    eventDate: "2025-05-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-catena-series-a-2026
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-catena-labs
+    subjectNameRaw: Catena Labs
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-catena-official-series-a-2026
+    rawStrength: 0.8
+    evidenceSummary: "Catena disclosed a $30 million Series A."
+    evidenceIds: [clm-catena-series-a-30m]
+    publicationDate: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    eventDate: "2026-05-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-catena-charter-application-2026
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-catena-labs
+    subjectNameRaw: Catena Labs
+    signalType: regulatory_milestone
+    signalCategory: risk
+    signalDirection: neutral
+    sourceId: src-catena-occ-application-2026
+    rawStrength: 0.8
+    evidenceSummary: "The OCC made Catena Trust Bank's national trust-bank charter application public."
+    evidenceIds: [clm-catena-charter-pending, clm-catena-bank-scope]
+    publicationDate: "2026-05-18"
+    availabilityDate: "2026-05-20"
+    eventDate: "2026-05-18"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-catena-customers-usage
+    whatWasSearched: "Company releases, product pages, and independent coverage for named customers and measured production use."
+    whatCouldNotBeEstablished: "Named production customers, retained customer count, transaction count, or payment volume."
+    expectedToMatter: true
+  - id: gap-catena-pricing-revenue
+    whatWasSearched: "Company product pages and reporting for pricing, fees, revenue, or contracted recurring economics."
+    whatCouldNotBeEstablished: "Public pricing, protocol fees, company revenue, or recurring revenue."
+    expectedToMatter: true
+  - id: gap-catena-charter-outcome
+    whatWasSearched: "OCC application records and company statements through the cutoff."
+    whatCouldNotBeEstablished: "Final approval or denial of the proposed national trust-bank charter."
+    expectedToMatter: true
+  - id: gap-catena-token-terms
+    whatWasSearched: "Financing coverage, company announcements, ACK materials, and public product documentation."
+    whatCouldNotBeEstablished: "Token issuer, token rights, supply, distribution, launch plan, or relationship to ACK and the proposed bank."
+    expectedToMatter: true
+  - id: gap-catena-security
+    whatWasSearched: "ACK repository, company materials, and public coverage for audit reports, attestations, incidents, and production security reviews."
+    whatCouldNotBeEstablished: "An independent public security audit of ACK or Catena's banking platform, or the absence of security incidents."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Catena Labs, the proposed Catena Trust Bank subsidiary, ACK protocols and
+    any future token must remain separate. Only the first two had a documented
+    legal ownership relationship by the cutoff.
+  sourceOriginUncertainty: >-
+    Financing coverage substantially originates in Catena and investor
+    announcements; Fortune independently reported the seed instrument terms,
+    while the OCC filing independently establishes only the application and
+    proposed legal structure.
+  likelyContradictions: null
+  completenessNotes: >-
+    Research found credible financing, architecture and regulatory-application
+    evidence, but no public operating metrics, customer economics or completed
+    charter outcome by the cutoff.
+researchCutoff: "2026-09-10"

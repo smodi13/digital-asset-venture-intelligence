@@ -1,0 +1,224 @@
+schemaVersion: 7
+candidateId: CCI-01
+canonicalId: dfns
+canonicalName: Dfns
+slug: dfns
+description: Wallet-as-a-service and digital-asset custody infrastructure for developers, fintechs, and institutions.
+domain: https://dfns.co
+firstObservedAt: "2020-01-01"
+category: custody_compliance_and_institutional_infrastructure
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: Series A
+cohort: VALIDATION
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Dfns is researched as an operating company providing wallet infrastructure; no separate network or token issuer was established.
+  unresolvedBoundaryNotes: []
+people:
+  - id: person-dfns-clarisse-hagege
+    schemaVersion: 7
+    name: Clarisse Hagege
+    aliases: [Clarisse Hagège]
+    currentRole: CEO and co-founder
+    companyTenures:
+      - companyId: dfns
+        companyName: Dfns
+        role: CEO and co-founder
+        startDate: "2020-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-dfns-whitestar-2025]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-dfns-whitestar-2025]
+sources:
+  - id: src-dfns-seed-2022
+    schemaVersion: 7
+    publisher: Dfns
+    title: DFNS Raises $13.5M
+    url: https://dfns.co/article/dfns-closes-13-5m-seed-round
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2022-04-13"
+    availabilityDate: "2022-04-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-dfns-bpifrance-2022
+    schemaVersion: 7
+    publisher: Bpifrance
+    title: Dfns raises 12.3M EUR seed funding
+    url: https://presse.bpifrance.fr/dfns-leve-12-3-m-en-seed-pour-securiser-les-actifs-numeriques-des-fintechs-et-des-banques/?lang=fra
+    sourceType: investor_industry
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2022-04-13"
+    availabilityDate: "2022-04-13"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-dfns-series-a-2025
+    schemaVersion: 7
+    publisher: Dfns
+    title: DFNS Secures Series A Funding
+    url: https://dfns.co/article/dfns-secures-series-a-funding
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-01-14"
+    availabilityDate: "2025-01-14"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-dfns-whitestar-2025
+    schemaVersion: 7
+    publisher: White Star Capital
+    title: Dfns portfolio profile
+    url: https://whitestarcapital.com/companies/dfns/
+    sourceType: investor_industry
+    tier: c
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: null
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+evidenceClaims:
+  - id: ev-dfns-seed
+    schemaVersion: 7
+    companyId: dfns
+    claim: Dfns announced a $13.5 million seed round on April 13, 2022 led by White Star Capital; Bpifrance separately reported 12.3 million euros for the financing.
+    statedValue: $13.5 million / 12.3 million euros
+    numericValue: null
+    unit: null
+    sourceId: src-dfns-seed-2022
+    supportingSourceIds: [src-dfns-bpifrance-2022]
+    sourceUrl: https://dfns.co/article/dfns-closes-13-5m-seed-round
+    publicationDate: "2022-04-13"
+    metricAsOfDate: "2022-04-13"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: financing
+    notes: Amounts are reported in different currencies and are retained without treating them as a contradiction or a precise currency conversion.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: Confirm legal recipient and whether headline amounts represent gross primary proceeds.
+    researchAssessmentId: dfns-financing-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: ev-dfns-series-a
+    schemaVersion: 7
+    companyId: dfns
+    claim: Dfns announced a completed $16 million Series A on January 14, 2025 led by Further Ventures, with named new and existing investors.
+    statedValue: $16 million Series A
+    numericValue: 16
+    unit: usd_millions
+    sourceId: src-dfns-series-a-2025
+    supportingSourceIds: []
+    sourceUrl: https://dfns.co/article/dfns-secures-series-a-funding
+    publicationDate: "2025-01-14"
+    metricAsOfDate: "2025-01-14"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: financing
+    notes: No independent transaction documentation establishing primary versus secondary mix was located.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: Confirm primary capital, valuation, ownership, and any secondary component.
+    researchAssessmentId: dfns-financing-2
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: ev-dfns-client-claim
+    schemaVersion: 7
+    companyId: dfns
+    claim: Dfns reported that its wallet infrastructure supported more than 400 fintechs and institutions as of its January 2025 Series A announcement.
+    statedValue: 400+ clients
+    numericValue: 400
+    unit: clients
+    sourceId: src-dfns-series-a-2025
+    supportingSourceIds: []
+    sourceUrl: https://dfns.co/article/dfns-secures-series-a-funding
+    publicationDate: "2025-01-14"
+    metricAsOfDate: "2025-01-14"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: adoption
+    notes: Company-reported customer count; no customer-by-customer reconciliation was performed.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: Confirm contracted customers, active deployments, pricing, and retention.
+    researchAssessmentId: dfns-adoption-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-dfns-series-a-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: dfns
+    subjectNameRaw: Dfns
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-dfns-series-a-2025
+    rawStrength: 0.55
+    evidenceSummary: Dfns announced completion of a $16 million Series A led by Further Ventures.
+    evidenceIds: [ev-dfns-series-a]
+    publicationDate: "2025-01-14"
+    availabilityDate: "2025-01-14"
+    eventDate: "2025-01-14"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-dfns-economics
+    whatWasSearched: Dated official and investor materials for revenue, pricing, margins, burn, and primary-versus-secondary financing composition.
+    whatCouldNotBeEstablished: Revenue, margins, burn, valuation, ownership, and Series A primary/secondary mix.
+    expectedToMatter: true
+  - id: gap-dfns-security-scope
+    whatWasSearched: Public dated materials for independently scoped wallet-product audits, incidents, and security attestations.
+    whatCouldNotBeEstablished: A dated independent audit scope for the current product and a complete incident history.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: No material company/protocol/token boundary issue was established; Dfns is treated as the operating company.
+  sourceOriginUncertainty: The Bpifrance seed report is an interested investor/public-finance source and corroborates the event context, not all product or financial claims.
+  likelyContradictions: null
+  completenessNotes: Financing and high-level product/adoption claims are established with stated caveats; economics and security scope remain public-record gaps.
+researchCutoff: "2026-09-10"

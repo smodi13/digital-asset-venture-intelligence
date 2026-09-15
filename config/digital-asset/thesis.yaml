@@ -1,0 +1,96 @@
+# Digital-asset venture thesis / mandate (PARALLEL / DORMANT - Phase 2B).
+#
+# Firm-neutral. Global and jurisdiction-aware, not jurisdiction-excluding.
+# Not read by lib/config/load.ts and not part of the active configHash.
+# Phase 3 activates this document.
+
+schemaVersion: 7
+id: digital-asset-venture-default
+version: "1.0.0-provisional"
+name: Digital-asset venture sourcing thesis
+attribution: >
+  Independent analyst framework for early-stage digital-asset venture sourcing.
+  Not the methodology of any investment firm.
+coreBelief: >
+  Early-stage value in digital assets accrues where blockchain, cryptography, or
+  decentralized coordination is load-bearing to the product rather than
+  incidental, and where real usage, developer adoption, or economic throughput
+  is observable from outside. Token existence is orthogonal to quality. Capital
+  efficiency and durable adoption are the outside-in signals that a coordination
+  system or infrastructure business is working. No token is never a negative and
+  a token is never a positive on its own.
+
+allowedEntityTypes:
+  - company
+  - protocol
+  - network
+  - hybrid
+
+allowedAssetTypes:
+  - equity
+  - token
+  - equity_and_token
+  - network_no_token
+  - unknown
+
+categories:
+  - core_protocols_and_scaling
+  - developer_infrastructure_and_middleware
+  - data_oracles_and_indexing
+  - security_privacy_and_cryptography
+  - stablecoins_and_payments
+  - defi_and_capital_markets
+  - tokenization_and_real_world_assets
+  - depin_and_decentralized_compute
+  - crypto_ai_and_agentic_infrastructure
+  - consumer_social_and_gaming
+  - custody_compliance_and_institutional_infrastructure
+
+jurisdictionPolicy:
+  question: How does market structure and regulatory trajectory affect this opportunity?
+  note: >
+    Jurisdiction and regulatory quality are carried into scoring through the
+    structural_and_regulatory_fit screening criterion and deeper regulatory
+    underwriting. No jurisdiction is a blanket exclusion and no primary
+    geography is encoded here as a hidden firm mandate.
+
+hardExclusions:
+  - id: pure_speculative_token_exposure
+    rule: >
+      No product, protocol, or operating system under development. The investable
+      object is token price exposure only.
+    rationale: There is no venture thesis without something being built or coordinated.
+  - id: meme_token_speculation
+    rule: The stated purpose is a meme or social token with no product or coordination function.
+    rationale: Speculation on attention is not an operating business.
+  - id: passive_asset_vehicle
+    rule: The entity is a passive vehicle for holding digital assets rather than an operating business or protocol.
+    rationale: A wrapper is not a venture-stage company.
+  - id: incidental_blockchain_marketing
+    rule: >
+      Blockchain, token, or decentralization appears in positioning but is not
+      part of the product architecture. Removing it would not change the product.
+    rationale: The thesis requires the technology to be load-bearing.
+  - id: credible_fraud_evidence
+    rule: Credible public evidence of fraud, a rug-pull pattern, or a fabricated team or metrics.
+    rationale: No amount of other quality offsets this.
+  - id: outside_venture_stage_scope
+    rule: The company is publicly listed, late-stage, or otherwise clearly outside early-stage venture scope.
+    rationale: Out of mandate by stage.
+  - id: no_accessible_investable_instrument
+    rule: There is conclusively no accessible investable instrument in any form.
+    rationale: >
+      Distinct from "no token": an equity-investable tokenless company is in
+      scope. This exclusion applies only when nothing can be invested in at all.
+
+# PROVISIONAL / UNVALIDATED digital-asset dimension weights. Not calibrated on
+# any digital-asset corpus.
+dimensionWeights:
+  capital_efficiency: 0.2
+  growth_momentum: 0.2
+  founder_alignment: 0.15
+  market_quality: 0.15
+  business_model_quality: 0.1
+  gtm_quality: 0.1
+  competitive_position: 0.1
+weightsStatus: PROVISIONAL_DIGITAL_ASSET_V1_UNVALIDATED

@@ -1,0 +1,754 @@
+schemaVersion: 7
+candidateId: DPC-02
+canonicalId: co-fluence-network
+canonicalName: Fluence Network
+slug: fluence-network
+description: >-
+  Fluence is a decentralized compute marketplace and cloud platform developed
+  by Cloudless Labs and governed by Fluence DAO. Independent providers supply
+  CPU and GPU capacity, buyers pay for compute in stablecoins, and the FLT
+  token supports staking and governance.
+domain: fluence.network
+firstObservedAt: "2022-02-16"
+category: depin_and_decentralized_compute
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: false
+digitalAssetLifecycle: mainnet_established
+financingStage: Series A
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: "Cloudless Labs Limited, formerly Fluence Labs, is the privately owned core developer of the Fluence platform."
+      relatedEntityId: null
+      relationType: protocol_developer
+    - description: "Fluence DAO is described as a Swiss Association that governs protocol development, community initiatives, grants, and treasury resources through FLT governance."
+      relatedEntityId: null
+      relationType: dao_protocol_steward
+  protocolNetworkRelationship: >-
+    The frozen hybrid entity combines the Cloudless Labs operating company,
+    Fluence compute network and marketplace, Fluence DAO, and FLT token while
+    preserving their distinct ownership, governance, and economic roles.
+  unresolvedBoundaryNotes:
+    - "Public materials do not fully disclose Cloudless Labs shareholders, contracts with Fluence DAO, or rights to protocol IP and fee flows."
+people:
+  - id: per-evgeny-ponomarev
+    schemaVersion: 7
+    name: Evgeny Ponomarev
+    aliases: []
+    currentRole: Co-founder and COO
+    companyTenures:
+      - companyId: co-fluence-network
+        companyName: Cloudless Labs
+        role: Co-founder and COO
+        startDate: "2017-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-fluence-about]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-fluence-about, src-fluence-medium-series-a]
+  - id: per-dmitry-kurinskiy
+    schemaVersion: 7
+    name: Dmitry Kurinskiy
+    aliases: []
+    currentRole: Co-founder and technical leader
+    companyTenures:
+      - companyId: co-fluence-network
+        companyName: Cloudless Labs
+        role: Co-founder
+        startDate: "2017-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-fluence-about]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-fluence-about, src-fluence-mainnet-2024]
+  - id: per-tom-trowbridge
+    schemaVersion: 7
+    name: Tom Trowbridge
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-fluence-network
+        companyName: Cloudless Labs
+        role: Co-founder and CEO
+        startDate: "2017-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-fluence-about]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-fluence-about, src-fluence-decrypt-series-a]
+sources:
+  - id: src-fluence-decrypt-series-a
+    schemaVersion: 7
+    publisher: Decrypt
+    title: "Cloud $9 Million: Fluence Labs Raises Cash, Aims to Liberate Web3 From AWS"
+    url: "https://decrypt.co/93090/cloud-9-million-fluence-labs-raises-cash-aims-liberate-Web3-aws"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.82
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2022-02-16"
+    availabilityDate: "2022-02-16"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-fluence-medium-series-a
+    schemaVersion: 7
+    publisher: Fluence Network
+    title: "$9 million Series A led by Multicoin Capital"
+    url: "https://medium.com/fluence-network/9-million-series-a-led-by-multicoin-capital-3fccafd2cf23"
+    sourceType: official_company
+    tier: b
+    reliability: 0.7
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2022-02-17"
+    availabilityDate: "2022-02-17"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-fluence-about
+    schemaVersion: 7
+    publisher: Cloudless Labs
+    title: "About Fluence"
+    url: "https://fluence.ai/about-us"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: legal_entity_disclosure
+  - id: src-fluence-mainnet-2024
+    schemaVersion: 7
+    publisher: Fluence Network
+    title: "Fluence Developer Updates - March 28, 2024"
+    url: "https://www.fluence.network/blog/building-fluence-together/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-03-28"
+    availabilityDate: "2024-03-28"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-fluence-filecoin-2024
+    schemaVersion: 7
+    publisher: Filecoin
+    title: "InterPlanetary Consensus and Fluence Power the Future of Cloudless Computing"
+    url: "https://www.filecoin.io/blog/interplanetary-consensus--fluence-power-the-future-of-cloudless-computing"
+    sourceType: customer_vendor
+    tier: b
+    reliability: 0.72
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-02-27"
+    availabilityDate: "2024-02-27"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: customer_vendor
+  - id: src-fluence-dao-proposal-2024
+    schemaVersion: 7
+    publisher: Fluence DAO
+    title: "Cloudless Labs Development And Funding Proposal"
+    url: "https://gov.fluence.network/t/cloudless-labs-development-and-funding-proposal/392"
+    sourceType: governance_forum
+    tier: b
+    reliability: 0.65
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-07-09"
+    availabilityDate: "2024-07-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+  - id: src-fluence-dao-report-2025
+    schemaVersion: 7
+    publisher: Fluence DAO
+    title: "2024 Fluence DAO Report"
+    url: "https://gov.fluence.network/t/2024-fluence-dao-report/472"
+    sourceType: governance_forum
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-01-06"
+    availabilityDate: "2025-01-06"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+  - id: src-fluence-decurity-2024
+    schemaVersion: 7
+    publisher: Decurity
+    title: "Fluence DAO Security Audit"
+    url: "https://www.decurity.io/audits/fluence-dao"
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2024-02-12"
+    availabilityDate: "2024-02-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: audit_finding
+  - id: src-fluence-vision-2025
+    schemaVersion: 7
+    publisher: Fluence
+    title: "Fluence Vision 2026: Tokenizing Compute to Meet AI's Exponential Demand"
+    url: "https://fluence.ai/blog/fluence-vision-2026/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.65
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2025-05-29"
+    availabilityDate: "2025-05-29"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-fluence-year-end-2025
+    schemaVersion: 7
+    publisher: Fluence
+    title: "Fluence 2025 Year-End Recap"
+    url: "https://fluence.ai/blog/fluence-2025-year-end-recap/"
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.65
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: "2026-02-03"
+    availabilityDate: "2026-02-03"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-fluence-github
+    schemaVersion: 7
+    publisher: Fluence Labs
+    title: "Fluence Project GitHub organization"
+    url: "https://github.com/fluencelabs"
+    sourceType: code_repository
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+evidenceClaims:
+  - id: clm-fluence-series-a
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence Labs raised a $9 million Series A led by Multicoin Capital in February 2022."
+    statedValue: "$9 million"
+    numericValue: 9000000
+    unit: usd
+    sourceId: src-fluence-decrypt-series-a
+    supportingSourceIds: [src-fluence-medium-series-a]
+    sourceUrl: "https://decrypt.co/93090/cloud-9-million-fluence-labs-raises-cash-aims-liberate-Web3-aws"
+    publicationDate: "2022-02-16"
+    metricAsOfDate: "2022-02-16"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: equity_financing
+    notes: "The public sources do not disclose security type, valuation, or ownership."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-total-funding
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Cloudless Labs reported $14 million of total funding from investors including 1kx, Multicoin, Distributed Global, Tiger Global, and Protocol Labs."
+    statedValue: "$14 million total"
+    numericValue: 14000000
+    unit: usd_total_funding
+    sourceId: src-fluence-about
+    supportingSourceIds: []
+    sourceUrl: "https://fluence.ai/about-us"
+    publicationDate: null
+    metricAsOfDate: "2026-09-10"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: equity_financing
+    notes: "The source does not provide a round-by-round reconciliation beyond the separately documented $9 million Series A."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile the remaining $5 million by date, security, valuation, and investor."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-founders
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence was founded in 2017 by Evgeny Ponomarev, Dmitry Kurinskiy, and Tom Trowbridge."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-fluence-about
+    supportingSourceIds: []
+    sourceUrl: "https://fluence.ai/about-us"
+    publicationDate: null
+    metricAsOfDate: "2017-01-01"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: founders
+    notes: "The source gives the year but not the exact founding date."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-mainnet
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence's Kras mainnet launched on March 20, 2024 with Ethereum and Filecoin contracts, an Axelar bridge, an IPC blockchain anchored to Filecoin, a compute marketplace, and capacity-commitment contracts."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-fluence-mainnet-2024
+    supportingSourceIds: [src-fluence-filecoin-2024]
+    sourceUrl: "https://www.fluence.network/blog/building-fluence-together/"
+    publicationDate: "2024-03-28"
+    metricAsOfDate: "2024-03-20"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: network_launch
+    notes: "The launch post stated that initial compute-provider and peer counts were limited and capacity would be added cautiously."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-payment-staking
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence compute is paid in USDC, while FLT is used for provider staking and protocol governance."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-fluence-about
+    supportingSourceIds: [src-fluence-filecoin-2024]
+    sourceUrl: "https://fluence.ai/about-us"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: high
+    modelEligibility: context_only
+    topic: business_model_and_token
+    notes: "Stablecoin compute payments, provider income, FLT rewards, and company revenue are distinct."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What transaction fees or service margins accrue to the DAO and Cloudless Labs from compute payments?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-development-subsidy
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "A July 2024 DAO proposal specified $400,000 monthly operating payments to Cloudless Labs, marketing reimbursements capped at $250,000 monthly, and a $1 million setup reimbursement."
+    statedValue: "$400K monthly operations; up to $250K monthly marketing; $1M setup reimbursement"
+    numericValue: 400000
+    unit: usd_monthly_operating_payment
+    sourceId: src-fluence-dao-proposal-2024
+    supportingSourceIds: [src-fluence-dao-report-2025]
+    sourceUrl: "https://gov.fluence.network/t/cloudless-labs-development-and-funding-proposal/392"
+    publicationDate: "2024-07-09"
+    metricAsOfDate: "2024-07-09"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: ecosystem_funding
+    notes: "DAO payments are ecosystem funding and operating support, not customer revenue or equity financing."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What deliverables were accepted, what payments continued after 2024, and what percentage of Cloudless Labs spending depended on DAO funding?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-dao-treasury
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence DAO reported a January 2025 treasury balance of 379,770,446 FLT and $7,175,164 USDC after 2024 spending."
+    statedValue: "379,770,446 FLT and $7,175,164 USDC"
+    numericValue: 7175164
+    unit: usdc_treasury_balance
+    sourceId: src-fluence-dao-report-2025
+    supportingSourceIds: []
+    sourceUrl: "https://gov.fluence.network/t/2024-fluence-dao-report/472"
+    publicationDate: "2025-01-06"
+    metricAsOfDate: "2025-01-06"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: treasury
+    notes: "DAO treasury assets are not Cloudless Labs cash, equity financing, protocol liquidity, or revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-token-supply
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence DAO reported total FLT supply of 1 billion and circulating supply of 90,545,768 FLT on January 6, 2025."
+    statedValue: "1,000,000,000 total; 90,545,768 circulating"
+    numericValue: 1000000000
+    unit: flt_total_supply
+    sourceId: src-fluence-dao-report-2025
+    supportingSourceIds: []
+    sourceUrl: "https://gov.fluence.network/t/2024-fluence-dao-report/472"
+    publicationDate: "2025-01-06"
+    metricAsOfDate: "2025-01-06"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: token_supply
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile circulating-supply methodology and subsequent unlocks through the cutoff."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-audit-findings
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Decurity's February 2024 Fluence DAO engagement reported nine findings: one high-severity, two low-severity, and six informational."
+    statedValue: "1 high, 2 low, 6 informational"
+    numericValue: 9
+    unit: audit_findings
+    sourceId: src-fluence-decurity-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.decurity.io/audits/fluence-dao"
+    publicationDate: "2024-02-12"
+    metricAsOfDate: "2024-02-12"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: security_audit
+    notes: "Finding counts apply only to the audited DAO scope and do not characterize later network or marketplace code."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify remediation status and map the audited commit to deployed governance contracts."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-provider-economics-2025
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence reported in May 2025 that compute providers were generating millions of dollars in annualized revenue and that users had received more than $4 million of cloud-cost savings."
+    statedValue: "millions in provider annualized revenue; over $4M user savings"
+    numericValue: 4000000
+    unit: usd_reported_user_savings_lower_bound
+    sourceId: src-fluence-vision-2025
+    supportingSourceIds: []
+    sourceUrl: "https://fluence.ai/blog/fluence-vision-2026/"
+    publicationDate: "2025-05-29"
+    metricAsOfDate: "2025-05-29"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: low
+    modelEligibility: context_only
+    topic: provider_economics
+    notes: "Provider annualized revenue is not realized network revenue or Cloudless Labs revenue; savings methodology was not independently verified."
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Provide provider invoices, paid USDC flows, workload utilization, comparison methodology, and realized company take rate."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-network-revenue-2025
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence reported that combined FLT- and USD-denominated network revenue reached a cumulative $1 million on December 26, 2025."
+    statedValue: "$1 million cumulative network revenue"
+    numericValue: 1000000
+    unit: usd_equivalent_cumulative_network_revenue
+    sourceId: src-fluence-year-end-2025
+    supportingSourceIds: []
+    sourceUrl: "https://fluence.ai/blog/fluence-2025-year-end-recap/"
+    publicationDate: "2026-02-03"
+    metricAsOfDate: "2025-12-26"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: network_revenue
+    notes: "The source combines FLT and USD revenue and does not establish Cloudless Labs company revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Provide currency conversion methodology, paying customers, refunds, provider share, protocol fees, and company-recognized revenue."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-gpu-launch
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence reported that its GPU marketplace went live in October 2025 and that its first GPU deal was signed in the fourth quarter of 2025."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-fluence-year-end-2025
+    supportingSourceIds: []
+    sourceUrl: "https://fluence.ai/blog/fluence-2025-year-end-recap/"
+    publicationDate: "2026-02-03"
+    metricAsOfDate: "2025-12-31"
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product_launch
+    notes: "One signed deal does not establish recurring utilization or revenue."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What capacity, term, utilization, buyer identity, and recognized revenue resulted from the first GPU deal?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-fluence-open-source
+    schemaVersion: 7
+    companyId: co-fluence-network
+    claim: "Fluence publishes repositories for its network, compute marketplace, developer tooling, and monitoring software under the Fluence Labs GitHub organization."
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-fluence-github
+    supportingSourceIds: []
+    sourceUrl: "https://github.com/fluencelabs"
+    publicationDate: null
+    metricAsOfDate: null
+    lastVerified: "2026-09-13T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: developer_activity
+    notes: "Repository availability does not establish independent contributors, customers, or security."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-fluence-series-a-2022
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-fluence-network
+    subjectNameRaw: Fluence Labs
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-fluence-decrypt-series-a
+    rawStrength: 0.9
+    evidenceSummary: "Fluence Labs raised a $9 million Series A led by Multicoin Capital."
+    evidenceIds: [clm-fluence-series-a]
+    publicationDate: "2022-02-16"
+    availabilityDate: "2022-02-16"
+    eventDate: "2022-02-16"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-fluence-mainnet-2024
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-fluence-network
+    subjectNameRaw: Fluence Kras mainnet
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-fluence-mainnet-2024
+    rawStrength: 0.9
+    evidenceSummary: "The Fluence Kras compute-network mainnet launched on March 20, 2024."
+    evidenceIds: [clm-fluence-mainnet]
+    publicationDate: "2024-03-28"
+    availabilityDate: "2024-03-28"
+    eventDate: "2024-03-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-fluence-dao-funding-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-fluence-network
+    subjectNameRaw: Cloudless Labs
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-fluence-dao-proposal-2024
+    rawStrength: 0.8
+    evidenceSummary: "Fluence DAO approved operating, marketing, setup, and milestone-linked token support for Cloudless Labs."
+    evidenceIds: [clm-fluence-development-subsidy]
+    publicationDate: "2024-07-09"
+    availabilityDate: "2024-07-09"
+    eventDate: "2024-07-09"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-fluence-gpu-2025
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-fluence-network
+    subjectNameRaw: Fluence Network
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-fluence-year-end-2025
+    rawStrength: 0.7
+    evidenceSummary: "Fluence reported a live GPU marketplace and first signed GPU deal in Q4 2025."
+    evidenceIds: [clm-fluence-gpu-launch]
+    publicationDate: "2026-02-03"
+    availabilityDate: "2026-02-03"
+    eventDate: "2025-12-31"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics:
+  network:
+    tvlUsd: null
+    protocolFeesUsd: null
+    protocolRevenueUsd: null
+    activeAddresses: null
+    transactionCount: null
+    transactionVolumeUsd: null
+    operatorCount: null
+    contributorCount: null
+    treasuryAssetsUsd:
+      value: 7175164
+      asOf: "2025-01-06"
+      provenance:
+        kind: sourced
+        confidence: medium_high
+        sourceIds: [src-fluence-dao-report-2025]
+        evidenceIds: [clm-fluence-dao-treasury]
+        note: "USDC component of Fluence DAO treasury only; excludes FLT and is not company cash."
+    incentiveSpendUsd: null
+  tokenMarket: null
+unknowns:
+  - id: gap-fluence-company-economics
+    whatWasSearched: "Financing, DAO reports, development proposals, and operating updates for Cloudless Labs financials."
+    whatCouldNotBeEstablished: "Cloudless Labs recognized revenue, gross margin, burn, runway, or dependence on DAO payments after the disclosed period."
+    expectedToMatter: true
+  - id: gap-fluence-network-utilization
+    whatWasSearched: "Network posts, repositories, and year-end updates for active buyers, workloads, capacity, utilization, and retention."
+    whatCouldNotBeEstablished: "Independently verified buyer counts, active workloads, compute hours, provider capacity, utilization, repeat use, and retention."
+    expectedToMatter: true
+  - id: gap-fluence-token-emissions
+    whatWasSearched: "DAO treasury report and governance materials for FLT supply, unlocks, emissions, incentives, and concentration."
+    whatCouldNotBeEstablished: "A complete cutoff-date FLT circulating-supply reconciliation, holder concentration, emissions schedule, and incentive expenditure series."
+    expectedToMatter: true
+  - id: gap-fluence-security-scope
+    whatWasSearched: "Independent audit source and public materials for deployed contract mappings, exploit history, and remediation."
+    whatCouldNotBeEstablished: "A complete mapping of all live protocol components to audit scopes and an independently verified incident history through cutoff."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: "Cloudless Labs, Fluence DAO, Fluence Network, compute providers, and FLT holders have distinct roles; contractual and IP boundaries remain incomplete publicly."
+  sourceOriginUncertainty: "Operating, provider-revenue, savings, and network-revenue figures are first-party and are not treated as independently verified."
+  likelyContradictions: null
+  completenessNotes: "The packet distinguishes company funding, DAO treasury resources, DAO development support, provider revenue, network revenue, compute payments, and token incentives."
+researchCutoff: "2026-09-10"

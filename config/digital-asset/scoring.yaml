@@ -1,0 +1,58 @@
+# Digital-asset scoring firewall config (PARALLEL / DORMANT - Phase 2B).
+#
+# Forbidden automatic positives, critical dimensions, and PROVISIONAL inactive
+# evidence thresholds. Not part of the active configHash.
+
+schemaVersion: 7
+version: "1.0.0-provisional"
+status: PROVISIONAL_DIGITAL_ASSET_V1_UNCALIBRATED
+
+forbiddenAutomaticPositive:
+  - id: funding
+    rule: A financing event never automatically raises a score.
+  - id: ecosystem_funding
+    rule: An ecosystem grant or financing never automatically raises a score.
+  - id: token_launch
+    rule: A token launch alone is not adoption, traction, or a positive signal.
+  - id: token_price_appreciation
+    rule: Token price appreciation never raises Thesis Fit or Underwriting.
+  - id: fdv_or_market_cap_appreciation
+    rule: FDV or market-cap appreciation never raises Thesis Fit or Underwriting.
+  - id: tvl_growth_alone
+    rule: TVL growth alone does not establish product-market fit.
+  - id: github_stars
+    rule: GitHub stars never establish customers, revenue, or commercial traction.
+  - id: repo_popularity
+    rule: Repository popularity never establishes commercial traction.
+  - id: emission_funded_activity
+    rule: Usage or yield that exists only because of token emissions is not organic demand.
+  - id: article_count
+    rule: The number of articles about a project never raises a score.
+  - id: publication_repetition
+    rule: Repetition of one announcement across outlets never increases independence or confidence.
+  - id: famous_logo_without_operating_evidence
+    rule: A famous partner or investor logo with no operating evidence never raises a score.
+  - id: prestige
+    rule: Team, school, employer, or investor prestige never raises a score on its own.
+
+criticalDimensions:
+  status: PROVISIONAL_DIGITAL_ASSET_V1
+  calibrated: false
+  dimensions:
+    - capital_efficiency
+    - growth_momentum
+  requireNonzeroCoverage: true
+
+evidenceThresholds:
+  status: PROVISIONAL_UNVALIDATED_INACTIVE
+  active: false
+  calibrated: false
+  # Phase 3C-2.1 briefly set this to 0.35 on a flawed algebraic claim (see
+  # lib/scoring/digital-asset/config.ts). Phase 3C-2.2 corrected the algebra
+  # (the breadth rule permits any four of seven dimensions, so its true
+  # implied minimum is 0.225, not 0.35) and reverted to 0.5: an independent,
+  # uncalibrated global bar, not a value derived from the breadth rule.
+  minOverallCoverage: 0.5
+  minOverallConfidence: 0.6
+  dimensionCoverageFloor: 0.5
+  minDimensionsAtFloor: 4

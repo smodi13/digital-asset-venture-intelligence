@@ -1,0 +1,58 @@
+{
+  "name": "digital-asset-venture-intelligence",
+  "version": "0.1.0",
+  "private": true,
+  "description": "Digital Asset Venture Intelligence: AI-assisted sourcing, market intelligence, and portfolio monitoring for early-stage digital asset investing. Independent investment research project by Sahil Modi, not affiliated with or endorsed by any investment firm.",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "eslint .",
+    "typecheck": "tsc --noEmit",
+    "test": "vitest run",
+    "test:watch": "vitest",
+    "test:policy": "vitest run tests/policy.test.ts tests/policy-negative.test.ts",
+    "test:cutoff": "vitest run tests/cutoff-leakage.test.ts",
+    "verify": "npm run lint && npm run typecheck && npm run test && npm run build",
+    "research": "tsx scripts/research/build-corpus.ts",
+    "test:research": "vitest run tests/research",
+    "research:v7:validate": "tsx scripts/research-v7/validate-packets.ts",
+    "research:v7:build": "tsx scripts/research-v7/build-corpus.ts",
+    "research:v7:audit": "tsx scripts/research-v7/audit-packets.ts",
+    "test:research-v7": "vitest run tests/research-v7",
+    "judgments:v7:validate": "tsx scripts/judgments-v7/validate.ts",
+    "judgments:v7:build": "tsx scripts/judgments-v7/build.ts",
+    "judgments:v7:audit": "tsx scripts/judgments-v7/audit.ts",
+    "judgments:v7:score": "tsx scripts/judgments-v7/score.ts",
+    "test:judgments-v7": "vitest run tests/judgments-v7",
+    "product:build": "tsx scripts/product/build-corpus.ts",
+    "test:product": "vitest run tests/product"
+  },
+  "engines": {
+    "node": ">=20.9.0"
+  },
+  "dependencies": {
+    "minisearch": "^7.2.0",
+    "next": "^16.3.4",
+    "react": "^19.2.8",
+    "react-dom": "^19.2.8",
+    "zod": "^4.5.4"
+  },
+  "devDependencies": {
+    "@playwright/test": "^1.63.0",
+    "@tailwindcss/postcss": "^4.3.3",
+    "@types/js-yaml": "^4.0.9",
+    "@types/node": "^22.20.1",
+    "@types/react": "^19.2.18",
+    "@types/react-dom": "^19.2.7",
+    "cheerio": "^1.2.0",
+    "eslint": "^9.39.5",
+    "eslint-config-next": "^16.3.4",
+    "js-yaml": "^4.3.2",
+    "postcss": "^8.5.28",
+    "tailwindcss": "^4.3.3",
+    "tsx": "^4.23.13",
+    "typescript": "^5.9.3",
+    "vitest": "^3.2.7"
+  }
+}

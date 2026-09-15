@@ -1,0 +1,621 @@
+[
+  {
+    "id": "co-aethir",
+    "schemaVersion": 7,
+    "entityType": "network",
+    "assetType": "equity_and_token",
+    "name": "Aethir",
+    "description": "Aethir is a decentralized GPU cloud and DePIN network for AI, gaming, and compute workloads, using the ATH token for staking, rewards, and compute settlement.",
+    "domain": "aethir.com",
+    "digitalAssetCategory": "depin_and_decentralized_compute",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_established",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2021-01-01",
+    "sourceIds": [
+      "src-aethir-checker-nodes-2024",
+      "src-aethir-eigenlayer-2025",
+      "src-aethir-impossible-report-2024",
+      "src-aethir-mainnet-2024",
+      "src-aethir-poai-10k-2026",
+      "src-aethir-pr-prea-2023",
+      "src-aethir-revenue-2024",
+      "src-aethir-token-docs-2024"
+    ]
+  },
+  {
+    "id": "co-agora",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity_and_token",
+    "name": "Agora",
+    "description": "Agora is a stablecoin infrastructure company behind AUSD, a fully reserved U.S. dollar stablecoin and white-label stablecoin platform for institutions and crypto-native partners.",
+    "domain": "agora.finance",
+    "digitalAssetCategory": "stablecoins_and_payments",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-04-02",
+    "sourceIds": [
+      "src-agora-fortune-series-a-2025",
+      "src-agora-seed-pr-2024",
+      "src-agora-sui-chainwire-2024",
+      "src-agora-theblock-series-a-2025"
+    ]
+  },
+  {
+    "id": "co-anemoy",
+    "schemaVersion": 7,
+    "entityType": "protocol",
+    "assetType": "unknown",
+    "name": "Anemoy",
+    "description": "Anemoy is a web3-native asset manager, founded 2023, operating as an affiliated asset-management vehicle built on the Centrifuge protocol, tokenizing and distributing real-world-asset funds (short-term Treasuries via the Janus Henderson Anemoy Treasury Fund / JTRSY, and private/direct credit via the Anemoy Tokenized Apollo Diversified Credit Fund / ACRDX) for institutional on-chain access.",
+    "domain": "anemoy.io",
+    "digitalAssetCategory": "tokenization_and_real_world_assets",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2023-01-01",
+    "sourceIds": [
+      "src-anemoy-cbinsights",
+      "src-anemoy-centrifuge-gov-forum",
+      "src-anemoy-crypto-news-acrdx",
+      "src-anemoy-janushenderson-ir"
+    ]
+  },
+  {
+    "id": "co-candide",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Candide",
+    "description": "Candide is an open-source account-abstraction (ERC-4337 / EIP-7702) infrastructure provider. Its main components are Voltaire, a Python/Rust ERC-4337 bundler, and AbstractionKit, a TypeScript SDK for building and sending UserOperations with first-class support for Safe smart accounts, alongside a Safe-based smart contract wallet and a social-recovery module.",
+    "domain": "candide.dev",
+    "digitalAssetCategory": "developer_infrastructure_and_middleware",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2022-06-11",
+    "sourceIds": [
+      "src-candide-abstractionkit-v2-blog",
+      "src-candide-ackee-audit-2024",
+      "src-candide-optimism-grant-2022",
+      "src-candide-voltaire-bundler-blog"
+    ]
+  },
+  {
+    "id": "co-chronicle-protocol",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "unknown",
+    "name": "Chronicle Protocol",
+    "description": "Chronicle Protocol is a decentralized oracle network, developed by Chronicle Labs Ltd, that originated as MakerDAO's Oracle Core Unit and now provides on-chain price and data feeds (via its \"Scribe\" mechanism) to DeFi and real-world-asset (RWA) platforms, including continued service to Sky (formerly MakerDAO).",
+    "domain": "chroniclelabs.org",
+    "digitalAssetCategory": "data_oracles_and_indexing",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2022-01-01",
+    "sourceIds": [
+      "src-chronicle-chainsecurity-audit",
+      "src-chronicle-coindesk-seed-2025",
+      "src-chronicle-launch-globenewswire-2023",
+      "src-chronicle-theblock-rwa-2025",
+      "src-chronicle-theblock-seed-2025"
+    ]
+  },
+  {
+    "id": "co-cyfrin",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Cyfrin",
+    "description": "Cyfrin is a blockchain security company offering smart contract audits, formal verification, and security tooling, including the CodeHawks competitive-audit marketplace, the Solodit vulnerability/finding database, and the Aderyn open-source Solidity static analyzer. It also runs Cyfrin Updraft, a free smart-contract security education platform.",
+    "domain": "cyfrin.io",
+    "digitalAssetCategory": "security_privacy_and_cryptography",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2023-01-01",
+    "sourceIds": [
+      "src-cyfrin-about-us",
+      "src-cyfrin-github-org",
+      "src-cyfrin-tracxn",
+      "src-cyfrin-weekday-profile"
+    ]
+  },
+  {
+    "id": "co-echelon-prime-parallel",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "equity_and_token",
+    "name": "Echelon Prime (Parallel)",
+    "description": "Echelon Prime is the Toronto-based studio/foundation ecosystem behind Parallel, a sci-fi NFT trading card game (built on Ethereum, in open beta on Epic Games Store) with an associated PRIME governance token, a foundation-run governance body (Emissaries Prime), and a competitive esports league (Parallel Prime League).",
+    "domain": "echelon.io",
+    "digitalAssetCategory": "consumer_social_and_gaming",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2021-01-01",
+    "sourceIds": [
+      "src-echelon-docs-official",
+      "src-echelon-gamesgg-roadmap-2025",
+      "src-echelon-gamesgg-seriesb-2024",
+      "src-echelon-icodrops-tge",
+      "src-echelon-playtoearn-esports-2025",
+      "src-echelon-techcrunch-seriesa-2021",
+      "src-echelon-vikara-deepdive-2025",
+      "src-echelon-x-beezie-2026"
+    ]
+  },
+  {
+    "id": "co-eoracle",
+    "schemaVersion": 7,
+    "entityType": "network",
+    "assetType": "token",
+    "name": "eOracle",
+    "description": "eOracle (EO) is an Ethereum-native oracle network that uses EigenLayer restaking to have Ethereum validators/operators attest to off-chain data (initially price feeds) for consumption by DeFi and other on-chain applications.",
+    "domain": "eo.app",
+    "digitalAssetCategory": "data_oracles_and_indexing",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-04-11",
+    "sourceIds": [
+      "src-eoracle-dedaub-audit-blog",
+      "src-eoracle-mainnet-live-blog",
+      "src-eoracle-silo-integration-blog",
+      "src-eoracle-theblock-avs-launch"
+    ]
+  },
+  {
+    "id": "co-fuel-network",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "equity_and_token",
+    "name": "Fuel Network",
+    "description": "Fuel is a modular execution-layer rollup network (branded \"Fuel Ignition\" on mainnet) built around a custom parallelized virtual machine (FuelVM) and the Sway smart-contract language, developed by Fuel Labs and governed on-chain by a Fuel Security Council multisig. The FUEL token secures and incentivizes the network alongside the equity of the developing company.",
+    "domain": "fuel.network",
+    "digitalAssetCategory": "core_protocols_and_scaling",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2022-09-06",
+    "sourceIds": [
+      "src-fuel-coindesk-airdrop-2024",
+      "src-fuel-docs-tokenomics",
+      "src-fuel-l2beat-risk-2026",
+      "src-fuel-theblock-funding-2022",
+      "src-fuel-theblock-ignition-2024"
+    ]
+  },
+  {
+    "id": "co-initia",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "equity_and_token",
+    "name": "Initia",
+    "description": "Initia is a Layer-1 blockchain paired with an interwoven stack of application-specific optimistic rollups (\"Minitias\") supporting EVM, MoveVM, and CosmWasm execution environments, aiming to let developers launch custom appchains that share liquidity and security with the L1.",
+    "domain": "initia.xyz",
+    "digitalAssetCategory": "core_protocols_and_scaling",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-02-27",
+    "sourceIds": [
+      "src-initia-bitget-launch",
+      "src-initia-defiant-postlaunch",
+      "src-initia-techcrunch-seed",
+      "src-initia-theblock-seriesa"
+    ]
+  },
+  {
+    "id": "co-lava-network",
+    "schemaVersion": 7,
+    "entityType": "network",
+    "assetType": "token",
+    "name": "Lava Network",
+    "description": "Lava Network is a decentralized RPC/data-access protocol that routes application, exchange, and AI-agent traffic to independent data providers across many blockchains, incentivized and secured by the LAVA token.",
+    "domain": "lavanet.xyz",
+    "digitalAssetCategory": "developer_infrastructure_and_middleware",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2022-01-01",
+    "sourceIds": [
+      "src-lava-explorer-proposal28",
+      "src-lava-official-eruption-blog",
+      "src-lava-official-mainnet-reflections",
+      "src-lava-panews-proposal28",
+      "src-lava-theblock-foundation-round-2024",
+      "src-lava-theblock-mainnet-2024",
+      "src-lava-theblock-seed-2024"
+    ]
+  },
+  {
+    "id": "co-mansa",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Mansa",
+    "description": "Mansa is a stablecoin-based liquidity and pre-funding provider for payment companies moving money across emerging-market corridors.",
+    "domain": "mansa.xyz",
+    "digitalAssetCategory": "stablecoins_and_payments",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-08-01",
+    "sourceIds": [
+      "src-mansa-ledgerinsights-2025",
+      "src-mansa-linkedin-2025",
+      "src-mansa-techcrunch-2025",
+      "src-mansa-theblock-2025"
+    ]
+  },
+  {
+    "id": "co-nillion",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "equity_and_token",
+    "name": "Nillion",
+    "description": "Nillion is a \"blind computation\" privacy-infrastructure network (branded \"Petnet\"), combining multi-party computation (MPC) and other privacy-enhancing technologies to let applications process data without revealing its contents. Nillion launched its own Cosmos-based mainnet (\"nilChain\") in March 2025, then announced in January 2026 a migration to Ethereum (\"Nillion 2.0\"), redefining NIL's role around staking, node-operator access, and payments on Ethereum rather than governance of a standalone chain.",
+    "domain": "nillion.com",
+    "digitalAssetCategory": "security_privacy_and_cryptography",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2021-01-01",
+    "sourceIds": [
+      "src-nillion-bitget-crash-2025",
+      "src-nillion-chainwire-mainnet-2025",
+      "src-nillion-coindesk-seriesA-2024",
+      "src-nillion-kraken-migration-support",
+      "src-nillion-messari-mainnet-2025",
+      "src-nillion-official-ethereum-migration"
+    ]
+  },
+  {
+    "id": "co-nubit",
+    "schemaVersion": 7,
+    "entityType": "protocol",
+    "assetType": "unknown",
+    "name": "Nubit",
+    "description": "Nubit is a Bitcoin-native data availability protocol developed by Riema Labs Inc., originally positioned as infrastructure that lets Bitcoin-ecosystem applications (BRC-20-style indexers, rollups, modular services) post and verify data with Bitcoin-level security assumptions. Since March 2025 Nubit has repositioned around \"Bitcoin Thunderbolt,\" a proposed Bitcoin base-layer soft-fork upgrade Nubit says it co-developed, aimed at faster transactions and native programmability.",
+    "domain": "nubit.org",
+    "digitalAssetCategory": "core_protocols_and_scaling",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "testnet",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-03-01",
+    "sourceIds": [
+      "src-nubit-preseed-medium",
+      "src-nubit-seed-cointelegraph",
+      "src-nubit-seed-medium",
+      "src-nubit-thunderbolt-globenewswire"
+    ]
+  },
+  {
+    "id": "co-perena",
+    "schemaVersion": 7,
+    "entityType": "protocol",
+    "assetType": "token",
+    "name": "Perena",
+    "description": "Perena is a Solana-based stablecoin liquidity and structured-credit protocol. Its core product, Numeraire, is an automated market maker pooling multiple stablecoins (initially Tether, Circle USDC, and PayPal USD) into a hub-and-spoke pool, issuing a liquidity-provider token (USD*) representing a share of tranched yield across the pool.",
+    "domain": "perena.org",
+    "digitalAssetCategory": "stablecoins_and_payments",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-12-11",
+    "sourceIds": [
+      "src-perena-accelerating-medium",
+      "src-perena-coindesk-preseed",
+      "src-perena-preqin-round2"
+    ]
+  },
+  {
+    "id": "co-pixels",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "equity_and_token",
+    "name": "Pixels",
+    "description": "Pixels is a farming/exploration-themed multiplayer on-chain game, currently built on Sky Mavis' Ronin blockchain, with an associated PIXEL governance and reward token used for staking, ecosystem rewards, and in-game economy.",
+    "domain": "pixels.xyz",
+    "digitalAssetCategory": "consumer_social_and_gaming",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2021-01-01",
+    "sourceIds": [
+      "src-pixels-chaincatcher-strategic",
+      "src-pixels-cointelegraph-bots",
+      "src-pixels-cointelegraph-valuation",
+      "src-pixels-cryptonews-interview",
+      "src-pixels-gamesgg-strategic-pivot",
+      "src-pixels-investors-docs",
+      "src-pixels-theblock-1m-dau",
+      "src-pixels-tokeninsight-seed"
+    ]
+  },
+  {
+    "id": "co-plume-network",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "equity_and_token",
+    "name": "Plume Network",
+    "description": "Plume Network is an EVM-compatible RWAfi chain and ecosystem focused on tokenizing real-world assets and making them usable inside DeFi.",
+    "domain": "plume.org",
+    "digitalAssetCategory": "tokenization_and_real_world_assets",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2023-01-01",
+    "sourceIds": [
+      "src-plume-fortune-series-a-2024",
+      "src-plume-genesis-pr-2025",
+      "src-plume-q2-update-2025",
+      "src-plume-series-a-pr-2024",
+      "src-plume-tokenomics-2025"
+    ]
+  },
+  {
+    "id": "co-skyfire",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "unknown",
+    "name": "Skyfire",
+    "description": "Skyfire (skyfire.xyz) builds the \"Agent Trust Stack,\" payment infrastructure that gives AI agents verifiable identity (the KYA / Know Your Agent protocol) and their own USDC-stablecoin or card-rail-backed wallets so they can autonomously identify themselves and transact without human intervention at time of payment.",
+    "domain": "skyfire.xyz",
+    "digitalAssetCategory": "crypto_ai_and_agentic_infrastructure",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-08-21",
+    "sourceIds": [
+      "src-skyfire-f5-partnership-2026",
+      "src-skyfire-official-kya",
+      "src-skyfire-pymnts-kyapay-2025",
+      "src-skyfire-techcrunch-launch-2024",
+      "src-skyfire-theaiinsider-launch-2025",
+      "src-skyfire-theblock-follow-on-2024"
+    ]
+  },
+  {
+    "id": "co-spheron-network",
+    "schemaVersion": 7,
+    "entityType": "network",
+    "assetType": "equity_and_token",
+    "name": "Spheron Network",
+    "description": "Spheron Network is a decentralized compute network/marketplace that aggregates GPU, CPU, and Mac-chip capacity from independent providers into a shared pool for AI/ML and other compute workloads, incentivized and governed by the SPON token.",
+    "domain": "spheron.network",
+    "digitalAssetCategory": "depin_and_decentralized_compute",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2021-04-18",
+    "sourceIds": [
+      "src-spheron-cryptofundraising",
+      "src-spheron-defiant-tge-pr",
+      "src-spheron-gate-fundraising",
+      "src-spheron-official-tou"
+    ]
+  },
+  {
+    "id": "co-superstate",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Superstate",
+    "description": "Superstate is a New York-based asset manager building compliant, blockchain-based investment fund products for institutional investors, including tokenized short-term U.S. Treasury and Agency securities funds (USTB), a crypto-basis-trade fund (USCC), and an SEC-registered digital transfer-agent infrastructure (Superstate Services LLC) it is extending toward on-chain issuance of public equities.",
+    "domain": "superstate.co",
+    "digitalAssetCategory": "tokenization_and_real_world_assets",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2023-11-15",
+    "sourceIds": [
+      "src-superstate-block-ustb",
+      "src-superstate-coindesk-seriesa",
+      "src-superstate-coindesk-seriesb",
+      "src-superstate-coindesk-transferagent",
+      "src-superstate-sec-letter",
+      "src-superstate-unchained-seriesa"
+    ]
+  },
+  {
+    "id": "co-taceo",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "TACEO",
+    "description": "TACEO is an Austrian cryptography company building \"Private Shared State\" infrastructure using coSNARKs, a technique combining multiparty computation (MPC) and zero-knowledge proofs (ZK), so multiple parties can jointly compute on and prove facts about encrypted data without any party seeing the underlying inputs.",
+    "domain": "taceo.io",
+    "digitalAssetCategory": "security_privacy_and_cryptography",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2025-07-31",
+    "sourceIds": [
+      "src-taceo-core-seed-announcement",
+      "src-taceo-techeu-seed",
+      "src-taceo-thenextweb-network-launch"
+    ]
+  },
+  {
+    "id": "co-term-finance",
+    "schemaVersion": 7,
+    "entityType": "hybrid",
+    "assetType": "token",
+    "name": "Term Finance",
+    "description": "Term Finance is a noncustodial DeFi fixed-rate lending protocol that uses recurring on-chain auctions to match crypto-collateralized borrowers and lenders for fixed terms.",
+    "domain": "term.finance",
+    "digitalAssetCategory": "defi_and_capital_markets",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2023-02-28",
+    "sourceIds": [
+      "src-term-chainbroker-funding",
+      "src-term-developer-docs-protocol",
+      "src-term-formal-verification",
+      "src-term-intro-2023",
+      "src-term-pareto-integration-2025"
+    ]
+  },
+  {
+    "id": "co-turnkey",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Turnkey",
+    "description": "Turnkey provides non-custodial wallet infrastructure and open-source SDKs for developers to embed crypto wallets and automate on-chain transaction signing. Its core architecture uses AWS Nitro Enclave-based Trusted Execution Environments (TEEs) and an open-source \"QuorumOS\" secure-computing layer to keep private keys inaccessible outside the enclave, with cryptographic attestations intended to make the system's behavior independently verifiable rather than trusted blindly.",
+    "domain": "turnkey.com",
+    "digitalAssetCategory": "developer_infrastructure_and_middleware",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2022-01-01",
+    "sourceIds": [
+      "src-turnkey-blog-2025wrap",
+      "src-turnkey-blog-seriesb",
+      "src-turnkey-coindesk-seriesa",
+      "src-turnkey-theblock-seriesb"
+    ]
+  },
+  {
+    "id": "co-wildcat-protocol",
+    "schemaVersion": 7,
+    "entityType": "protocol",
+    "assetType": "unknown",
+    "name": "Wildcat Protocol",
+    "description": "Wildcat is a permissionless, on-chain undercollateralized lending protocol where borrowers create their own credit markets, setting parameters including reserve ratios, withdrawal cycles, and lender whitelisting, without traditional loan underwriting by the protocol itself.",
+    "domain": "wildcat.finance",
+    "digitalAssetCategory": "defi_and_capital_markets",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2023-05-01",
+    "sourceIds": [
+      "src-wildcat-code4rena-audit",
+      "src-wildcat-docs",
+      "src-wildcat-theblock-kinto",
+      "src-wildcat-theblock-seedext"
+    ]
+  },
+  {
+    "id": "co-zodia-custody",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Zodia Custody",
+    "description": "Zodia Custody is an FCA-registered institutional digital-asset custody, off-venue settlement (Interchange), and staking infrastructure provider, founded in 2020/2021 by SC Ventures (Standard Chartered's innovation arm) and Northern Trust, with Standard Chartered as majority shareholder. As of the research cutoff, Standard Chartered's non-binding offer to acquire the remainder of Zodia Custody's regulated custody business had been accepted by other shareholders/noteholders but had not been confirmed closed.",
+    "domain": "zodia-custody.com",
+    "digitalAssetCategory": "custody_compliance_and_institutional_infrastructure",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2020-12-01",
+    "sourceIds": [
+      "src-zodia-coindesk-sc-acquire-2026",
+      "src-zodia-coindesk-seriesa-2023",
+      "src-zodia-disruptionbanking-2026",
+      "src-zodia-ledgerinsights-nbd-2024",
+      "src-zodia-marketsmedia-staking-2023",
+      "src-zodia-sc-fca-registration-2021",
+      "src-zodia-scventures-solutions-2026",
+      "src-zodia-theblock-luxembourg-2026",
+      "src-zodia-theblock-sc-acquire-2026"
+    ]
+  },
+  {
+    "id": "datagram",
+    "schemaVersion": 7,
+    "entityType": "network",
+    "assetType": "token",
+    "name": "Datagram",
+    "description": "Coordination and interoperability network for distributed DePIN workloads.",
+    "domain": "https://datagram.network",
+    "digitalAssetCategory": "depin_and_decentralized_compute",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": "testnet",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2025-06-11",
+    "sourceIds": [
+      "src-datagram-alpha-2025",
+      "src-datagram-funding-wire-2025"
+    ]
+  },
+  {
+    "id": "dfns",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Dfns",
+    "description": "Wallet-as-a-service and digital-asset custody infrastructure for developers, fintechs, and institutions.",
+    "domain": "https://dfns.co",
+    "digitalAssetCategory": "custody_compliance_and_institutional_infrastructure",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2020-01-01",
+    "sourceIds": [
+      "src-dfns-bpifrance-2022",
+      "src-dfns-seed-2022",
+      "src-dfns-series-a-2025",
+      "src-dfns-whitestar-2025"
+    ]
+  },
+  {
+    "id": "nesa",
+    "schemaVersion": 7,
+    "entityType": "network",
+    "assetType": "token",
+    "name": "Nesa",
+    "description": "Network described by Nesa Labs as a platform for applications, protocols, and smart contracts to integrate artificial intelligence.",
+    "domain": "https://www.nesa.ai",
+    "digitalAssetCategory": "crypto_ai_and_agentic_infrastructure",
+    "institutionalOrientation": null,
+    "digitalAssetLifecycle": "testnet",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-08-17",
+    "sourceIds": [
+      "src-nesa-terms-2024"
+    ]
+  },
+  {
+    "id": "neynar",
+    "schemaVersion": 7,
+    "entityType": "company",
+    "assetType": "equity",
+    "name": "Neynar",
+    "description": "Developer infrastructure company providing APIs, hosted hubs, indexes, authentication, webhooks, and data tooling for social protocols.",
+    "domain": "https://neynar.com",
+    "digitalAssetCategory": "consumer_social_and_gaming",
+    "institutionalOrientation": false,
+    "digitalAssetLifecycle": null,
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2024-05-30",
+    "sourceIds": [
+      "src-neynar-farcaster-2026",
+      "src-neynar-fortune-2024",
+      "src-neynar-series-a-2024"
+    ]
+  },
+  {
+    "id": "quadrata",
+    "schemaVersion": 7,
+    "entityType": "protocol",
+    "assetType": "token",
+    "name": "Quadrata",
+    "description": "Protocol for a privacy-preserving Web3 identity passport and associated compliance attestations.",
+    "domain": "https://quadrata.com",
+    "digitalAssetCategory": "custody_compliance_and_institutional_infrastructure",
+    "institutionalOrientation": true,
+    "digitalAssetLifecycle": "mainnet_early",
+    "digitalAssetMetrics": null,
+    "firstObservedAt": "2022-07-12",
+    "sourceIds": [
+      "src-quadrata-coindesk-2022"
+    ]
+  }
+]

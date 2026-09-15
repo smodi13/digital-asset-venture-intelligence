@@ -1,0 +1,180 @@
+schemaVersion: 7
+candidateId: CAI-01
+entityId: co-catena-labs
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:9ba0ecfd5d47b51a6ac230e91bc4dd6fd5168b1d45b752e0589e0416ab24a6c0
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-series-a-30m]
+    rationale: >-
+      Catena reported $48 million of total primary-company financing, but the
+      frozen packet establishes no customer, transaction, or other operating
+      scale with which to compare that capital. Financing raised is not capital
+      consumed, so the relevant capital evidence supports coverage but no
+      favorable or adverse direction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Operating scale and capital deployed were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-platform-access, clm-catena-bank-scope]
+    rationale: >-
+      Company-reported private-access platform functions and the proposed
+      regulated bank scope indicate operational, compliance, and infrastructure
+      dependencies. They do not quantify labor, infrastructure cost, or ongoing
+      regulatory burden, so direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Recurring labor, infrastructure, compliance cost, and subsidy requirements were not quantified.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The packet contains a private-access product description, but no temporal
+      or comparative customer, transaction, payment-volume, or retained-usage
+      evidence that can responsibly establish momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related launch evidence exists, but measured adoption and usage momentum were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      ACK code and architecture exist, but a product or repository release alone
+      does not establish external developer growth, contributors, live
+      third-party integrations, or ecosystem expansion.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related open-source product evidence exists, but external developer or ecosystem momentum was not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-ack-architecture, clm-catena-platform-access]
+    rationale: >-
+      Catena made MIT-licensed ACK code and a specific identity-and-payment
+      architecture available and later described a private-access operating
+      platform. This is limited evidence of relevant delivery, although the
+      architecture and platform status are company-controlled or
+      company-reported and production breadth is not independently verified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Production deployment breadth and independently verified delivery outcomes remain unresolved.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-seed-instrument, clm-catena-no-token-plan-2025]
+    rationale: >-
+      Independent reporting establishes that 2025 equity carried a future-token
+      warrant or allocation, while a founder said no token launch was then
+      planned. Those facts are relevant to ownership and incentives but provide
+      no token terms, governance rights, control structure, or evidence of
+      alignment, so direction is neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Token rights, allocation, issuer, control, and governance terms were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Product and proposed-bank descriptions identify a problem, but the frozen
+      packet contains no named production customers, paid usage, utilization,
+      customer budgets, or other evidence of funded demand and market depth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related problem descriptions exist, but customer pull, willingness to pay, and reachable market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-charter-pending, clm-catena-bank-scope]
+    rationale: >-
+      The OCC record confirms a pending de novo national trust-bank application
+      for a broad proposed digital-asset and fiat service scope. Because the
+      authorization remained pending and the proposed activities were not yet
+      licensed or operating, the documented approval dependency is modestly
+      adverse to current structural fit; it is not treated as a denial.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: The final charter outcome and resulting permissible operating scope were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Neither the platform description nor the possible future token establishes
+      pricing, fees, subscriptions, take rate, company revenue ownership, or
+      token accrual.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Public pricing, fees, recurring revenue, and token value-capture terms were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The frozen packet contains financing but no revenue, cost, margin, burn,
+      subsidy, or unit-economic evidence. Missing economics are not treated as
+      adverse evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, costs, margins, burn, subsidies, and unit economics were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Private-access availability and proposed API service do not establish a
+      functioning integration, customer acquisition, repeatability, customer
+      expansion, or channel pull.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related access and proposed API evidence exists, but functioning integrations and distribution pull were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-platform-access, clm-catena-charter-pending]
+    rationale: >-
+      Platform access required a private-access application, and the proposed
+      regulated banking component still depended on a pending charter. These are
+      concrete access and authorization gates that modestly increase adoption
+      friction, although implementation time and customer onboarding burden are
+      not quantified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Integration time, onboarding steps, and production compliance burden were not quantified.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-catena-ack-architecture]
+    rationale: >-
+      Company-controlled ACK documentation and code describe separable identity
+      and payment protocols using decentralized identifiers, verifiable
+      credentials, receipts, and settlement-rail neutrality. The specific
+      architecture supports limited favorable differentiation, but it lacks
+      independent comparative validation or production proof.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparison, validated performance, and production deployment were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Documented architecture is not an audit, security proof, switching cost,
+      or network effect. The packet establishes none of those durability
+      mechanisms and does not establish absence of incidents.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Security audits, incident evidence, switching costs, workflow embedment, and network effects were not established.
+analystNote: >-
+  Judgment uses only the frozen Catena Labs packet. Company-controlled product
+  evidence is treated as limited and is not represented as independent
+  verification.

@@ -1,0 +1,230 @@
+schemaVersion: 7
+candidateId: SPC-01
+entityId: co-nillion
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:d4b608e9cfad3ff9b8efca8e45c1c72b4848048ab3cb6998943350598f64ead8"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-nillion-seriesA-25m]
+    rationale: >-
+      Primary capital consumed is well-corroborated ($25M in the most
+      recent disclosed round; $45M cumulative across two rounds is a
+      secondary aggregate, not independently itemized). No scale evidence
+      (TVL, transaction volume, active node/operator counts) exists in the
+      frozen packet despite a live mainnet, so no ratio can be responsibly
+      judged.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No network/product scale metric exists (gap-nillion-network-metrics).
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, compute, infrastructure cost, or
+      subsidy needs for the Nillion network.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the
+      frozen packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No usage, transaction, or node-operator-count evidence exists. A
+      July 2025 "Phase 0" upgrade announcement that might have contained
+      capacity or usage detail could not be opened and reviewed during
+      research and was deliberately excluded rather than cited on weak
+      provenance.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No usage/network-activity metric exists (gap-nillion-network-metrics);
+      the Phase 0 upgrade announcement was inaccessible and excluded
+      (gap-nillion-phase0-upgrade-detail).
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party
+      integration growth for Nillion.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-nillion-mainnet-tge, clm-nillion-ethereum-migration-2026]
+    rationale: >-
+      The founding team is named and sourced with prior-company
+      affiliations (Hedera, Goldman Sachs, Reserve) recorded in the
+      packet's people data, but per criterion definition prestige alone
+      contributes zero, so the anchor rests instead on demonstrated
+      delivery: the team shipped a public mainnet and TGE (independently
+      corroborated by a Messari research report, not only the company's
+      own release) and later executed a material architecture migration
+      from a Cosmos-based chain to Ethereum, independently confirmed as
+      operationally real by an exchange (Kraken) rather than resting
+      solely on Nillion's own framing.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No claim documents specifically what each founder built or achieved
+      at their named prior companies; only affiliation, not accomplishment,
+      is sourced.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 35
+    coverage: 1
+    citedEvidenceClaimIds: [clm-nillion-insider-allocation, clm-nillion-mm-crash-2025]
+    rationale: >-
+      Published tokenomics allocate roughly 41% of total NIL supply to
+      insiders (21% Early Backers, 20% Core Contributors), a material
+      concentration fact from an independent third-party estimate
+      (Messari). Separately, in November 2025 a market maker sold a large
+      quantity of NIL without authorization, per Nillion's own account,
+      crashing the price roughly 50%; whether or not the counterparty was
+      ultimately at fault, the episode demonstrates that a large,
+      uncontrolled token sale by a market-facing counterparty was
+      possible, which bears on the adequacy of treasury/market-access
+      controls. The legal relationship between the operating company, the
+      "Nillion Association," and the token treasury is also not clearly
+      established (gap-nillion-legal-entity), compounding the
+      accountability picture.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying demand, workflow criticality, or
+      costly third-party integration that would evidence funded urgency or
+      addressable market depth for MPC-based "blind computation"
+      infrastructure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses jurisdictional exposure or regulatory trajectory.
+      The unresolved legal relationship between the operating company and
+      the "Nillion Association" (gap-nillion-legal-entity) leaves the
+      entity's structural footing itself unclear, foreclosing a
+      regulatory-fit judgment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Legal/entity structure is unresolved (gap-nillion-legal-entity); no
+      regulatory-trajectory evidence exists.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The Ethereum migration redefines NIL's utility around staking, node
+      access, and payments, but this is a token-utility redesign, not
+      evidence of a recurring company- or protocol-side fee/take-rate
+      mechanism. No claim documents such a mechanism.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee-capture or take-rate evidence exists distinct from
+      token-utility design.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, contribution economics, or reliance on
+      continued token sales versus fundraising to fund operations. The
+      treasury buyback response to the November 2025 incident shows funds
+      were available at that moment for a defensive market action, but
+      this does not establish ongoing economic sustainability.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No recurring burn or contribution-economics evidence exists in the
+      frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a developer self-serve motion, repeatable sales
+      channel, or composability-driven integration pull for Nillion.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No distribution or integration-pull evidence exists in the frozen
+      packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-nillion-ethereum-migration-2026]
+    rationale: >-
+      Operating a "Blacklight" verification node under the Nillion 2.0
+      design requires staking 70,000 NIL, a concrete, quantified capital
+      barrier to that specific participation role. This is real friction
+      evidence for node operators, though it says nothing about end-user
+      onboarding friction (wallet UX, compliance, liquidity access).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No end-user-facing friction evidence (wallet UX, compliance,
+      liquidity access) exists; only node-operator capital friction is
+      documented.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim in the frozen packet independently assesses the MPC-based
+      "blind computation" architecture's performance, security, or
+      differentiation versus alternative privacy-infrastructure designs.
+      Messari's independent report corroborates the mainnet/TGE timeline
+      and supply figures, not a technical differentiation assessment, so
+      it is not cited here as differentiation evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment or benchmark of the MPC
+      architecture exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 30
+    coverage: 1
+    citedEvidenceClaimIds: [clm-nillion-mm-crash-2025]
+    rationale: >-
+      No confirmed, admissible-standard security audit exists for either
+      the NIL token contract or the core MPC network contracts
+      (gap-nillion-audit-scope: secondary sources mention a Quantstamp
+      audit but no dated, admissible source was found). Separately, a
+      large, uncontrolled NIL token sale by a market-facing counterparty
+      occurred in November 2025, causing a roughly 50% price crash; this
+      is direct evidence of a real access/market-control weakness at that
+      point in the network's history, regardless of how the "unauthorized"
+      characterization is ultimately resolved. No claim documents a
+      validator/node-operator base size or observed resistance to forks
+      that would offset this.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No confirmed audit exists (gap-nillion-audit-scope); no
+      validator/node-base-size or liquidity-retention data exists
+      (gap-nillion-network-metrics).

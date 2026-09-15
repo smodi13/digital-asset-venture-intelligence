@@ -1,0 +1,452 @@
+schemaVersion: 7
+candidateId: SAP-01
+canonicalId: co-agora
+canonicalName: Agora
+slug: agora
+description: >-
+  Agora is a stablecoin infrastructure company behind AUSD, a fully reserved
+  U.S. dollar stablecoin and white-label stablecoin platform for institutions
+  and crypto-native partners.
+domain: agora.finance
+firstObservedAt: "2024-04-02"
+category: stablecoins_and_payments
+entityType: company
+assetType: equity_and_token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: Series A
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Agora Bermuda Limited is the BMA-licensed AUSD issuer named in
+        Agora's product materials; the broader Agora operating company and
+        issuer/reserve structure should be kept distinct.
+      relatedEntityId: null
+      relationType: issuer
+    - description: >-
+        AUSD is the tokenized U.S. dollar product; equity financing in Agora
+        and AUSD token supply/value are separate instruments.
+      relatedEntityId: null
+      relationType: token_product
+  protocolNetworkRelationship: >-
+    Agora issues and supports AUSD across multiple chains rather than running
+    a separate base-layer network.
+  unresolvedBoundaryNotes:
+    - >-
+      The public record does not fully reconcile the U.S. operating company,
+      Bermuda issuer, reserve fund, and token-contract control entities.
+people:
+  - id: per-agora-nick-van-eck
+    schemaVersion: 7
+    name: Nick van Eck
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-agora
+        companyName: Agora
+        role: Co-founder and CEO
+        startDate: "2024-04-02"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-agora-seed-pr-2024, src-agora-theblock-series-a-2025]
+    priorCompanies: []
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-agora-seed-pr-2024, src-agora-theblock-series-a-2025]
+  - id: per-agora-drake-evans
+    schemaVersion: 7
+    name: Drake Evans
+    aliases: []
+    currentRole: Co-founder and CTO
+    companyTenures:
+      - companyId: co-agora
+        companyName: Agora
+        role: Co-founder and CTO
+        startDate: "2024-04-02"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-agora-seed-pr-2024, src-agora-theblock-series-a-2025]
+    priorCompanies: [Coinbase]
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-agora-seed-pr-2024, src-agora-theblock-series-a-2025]
+  - id: per-agora-joe-mcgrady
+    schemaVersion: 7
+    name: Joe McGrady
+    aliases: []
+    currentRole: Co-founder and COO
+    companyTenures:
+      - companyId: co-agora
+        companyName: Agora
+        role: Co-founder and COO
+        startDate: "2024-04-02"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-agora-seed-pr-2024, src-agora-theblock-series-a-2025]
+    priorCompanies: [Coinbase]
+    education: []
+    publicHandles:
+      github: null
+      x: null
+      linkedin: null
+      website: null
+    signalEventIds: []
+    sourceIds: [src-agora-seed-pr-2024, src-agora-theblock-series-a-2025]
+sources:
+  - id: src-agora-seed-pr-2024
+    schemaVersion: 7
+    publisher: Agora / PR Newswire
+    title: "Agora has raised a $12M Seed round led by Dragonfly"
+    url: "https://www.prnewswire.com/news-releases/agora-has-raised-a-12m-seed-round-led-by-dragonfly-302106149.html"
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-04-02"
+    availabilityDate: "2024-04-02"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-agora-theblock-series-a-2025
+    schemaVersion: 7
+    publisher: The Block
+    title: "Paradigm leads $50 million Series A for stablecoin builder Agora"
+    url: "https://www.theblock.co/news/deals/2025-07-10-paradigm-50-million-stablecoin-agora-362005"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-10"
+    availabilityDate: "2025-07-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-agora-fortune-series-a-2025
+    schemaVersion: 7
+    publisher: Fortune
+    title: "Stablecoin startup Agora raises $50 million Series A led by crypto VC giant Paradigm"
+    url: "https://fortune.com/crypto/2025/07/10/exclusive-agora-stablecoin-series-a-venture-paradigm-crypto-van-eck/"
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.72
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-07-10"
+    availabilityDate: "2025-07-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-agora-sui-chainwire-2024
+    schemaVersion: 7
+    publisher: Chainwire
+    title: "Agora-Backed AUSD Stablecoin is Live on Sui"
+    url: "https://chainwire.org/2024/09/05/agora-backed-ausd-stablecoin-is-live-on-sui/"
+    sourceType: specialist_industry
+    tier: c
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-09-05"
+    availabilityDate: "2024-09-05"
+    isPressReleaseReproduction: true
+    originatesFrom: null
+    supportRole: repeated_announcement
+evidenceClaims:
+  - id: clm-agora-seed-round
+    schemaVersion: 7
+    companyId: co-agora
+    claim: >-
+      Agora announced a $12 million seed round on April 2, 2024, led by
+      Dragonfly with participation from General Catalyst, Hack VC, Kraken
+      Ventures, and strategic crypto investors.
+    statedValue: "$12M seed"
+    numericValue: 12
+    unit: usd_millions
+    sourceId: src-agora-seed-pr-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.prnewswire.com/news-releases/agora-has-raised-a-12m-seed-round-led-by-dragonfly-302106149.html"
+    publicationDate: "2024-04-02"
+    metricAsOfDate: "2024-04-02"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: "Company-originated announcement; no primary/secondary split beyond company financing was disclosed."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Confirm legal issuer/operating-company capitalization and whether any token warrants were included."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-agora-series-a-round
+    schemaVersion: 7
+    companyId: co-agora
+    claim: >-
+      The Block reported on July 10, 2025 that Paradigm led a $50 million
+      Series A for Agora, bringing disclosed funding to roughly $62 million.
+    statedValue: "$50M Series A; roughly $62M total funding"
+    numericValue: 50
+    unit: usd_millions
+    sourceId: src-agora-theblock-series-a-2025
+    supportingSourceIds: [src-agora-fortune-series-a-2025]
+    sourceUrl: "https://www.theblock.co/news/deals/2025-07-10-paradigm-50-million-stablecoin-agora-362005"
+    publicationDate: "2025-07-10"
+    metricAsOfDate: "2025-07-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: "Independent reporting; round close date beyond publication date and any token-warrant structure were not disclosed."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Confirm close date, security type, valuation, and token warrant/equity split."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-agora-founders
+    schemaVersion: 7
+    companyId: co-agora
+    claim: >-
+      Agora identifies Nick van Eck, Drake Evans, and Joe McGrady as
+      co-founders, with Nick van Eck as CEO, Drake Evans as CTO, and Joe
+      McGrady as COO.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-agora-seed-pr-2024
+    supportingSourceIds: [src-agora-theblock-series-a-2025]
+    sourceUrl: "https://www.prnewswire.com/news-releases/agora-has-raised-a-12m-seed-round-led-by-dragonfly-302106149.html"
+    publicationDate: "2024-04-02"
+    metricAsOfDate: "2024-04-02"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: people
+    notes: "The Block independently repeats founder identities and reports former Coinbase backgrounds for Evans and McGrady."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-agora-ausd-reserves-business-model
+    schemaVersion: 7
+    companyId: co-agora
+    claim: >-
+      The Block reported that AUSD was backed one-for-one by cash and
+      short-term U.S. Treasurys held in a segregated reserve administered by
+      State Street and VanEck, and that Agora shares reserve yield with
+      partners launching branded stablecoins.
+    statedValue: "1-for-1 cash and short-term U.S. Treasurys"
+    numericValue: null
+    unit: null
+    sourceId: src-agora-theblock-series-a-2025
+    supportingSourceIds: [src-agora-fortune-series-a-2025]
+    sourceUrl: "https://www.theblock.co/news/deals/2025-07-10-paradigm-50-million-stablecoin-agora-362005"
+    publicationDate: "2025-07-10"
+    metricAsOfDate: "2025-07-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: token_economics
+    notes: "Reserve details remain operationally important and should be reconciled against dated attestations before underwriting."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Obtain dated reserve attestations and issuer legal documents for the same as-of date."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-agora-ausd-market-cap-2025
+    schemaVersion: 7
+    companyId: co-agora
+    claim: >-
+      Fortune reported on July 10, 2025 that AUSD had approximately $130
+      million of market capitalization while competing with much larger USDT
+      and USDC incumbents.
+    statedValue: "$130 million"
+    numericValue: 130
+    unit: usd_millions
+    sourceId: src-agora-fortune-series-a-2025
+    supportingSourceIds: [src-agora-theblock-series-a-2025]
+    sourceUrl: "https://fortune.com/crypto/2025/07/10/exclusive-agora-stablecoin-series-a-venture-paradigm-crypto-van-eck/"
+    publicationDate: "2025-07-10"
+    metricAsOfDate: "2025-07-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "Point-in-time market-cap context only; not treated as revenue, durability, or a score input."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Reconcile AUSD supply by chain and redeemed/minted balances from dated primary attestations."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-agora-sui-deployment
+    schemaVersion: 7
+    companyId: co-agora
+    claim: >-
+      A September 5, 2024 Chainwire announcement said AUSD had launched on Sui
+      after earlier Ethereum and Avalanche deployments, and claimed nearly
+      $60 million had been minted within six weeks across Ethereum and
+      Avalanche.
+    statedValue: "nearly $60M minted within six weeks"
+    numericValue: 60
+    unit: usd_millions
+    sourceId: src-agora-sui-chainwire-2024
+    supportingSourceIds: []
+    sourceUrl: "https://chainwire.org/2024/09/05/agora-backed-ausd-stablecoin-is-live-on-sui/"
+    publicationDate: "2024-09-05"
+    metricAsOfDate: "2024-09-05"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: adoption
+    notes: "Press-release reproduction; useful for dated deployment chronology but not independent corroboration of adoption quality."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Verify chain-by-chain mint/redeem history from block explorers or dated reserve reports."
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-agora-seed-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-agora
+    subjectNameRaw: Agora
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-agora-seed-pr-2024
+    rawStrength: 0.4
+    evidenceSummary: "Agora announced a $12 million seed round led by Dragonfly."
+    evidenceIds: [clm-agora-seed-round]
+    publicationDate: "2024-04-02"
+    availabilityDate: "2024-04-02"
+    eventDate: "2024-04-02"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-agora-sui-2024
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-agora
+    subjectNameRaw: AUSD
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-agora-sui-chainwire-2024
+    rawStrength: 0.35
+    evidenceSummary: "AUSD launched on Sui after earlier Ethereum and Avalanche deployments."
+    evidenceIds: [clm-agora-sui-deployment]
+    publicationDate: "2024-09-05"
+    availabilityDate: "2024-09-05"
+    eventDate: "2024-09-05"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-agora-series-a-2025
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-agora
+    subjectNameRaw: Agora
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-agora-theblock-series-a-2025
+    rawStrength: 0.55
+    evidenceSummary: "Paradigm led a $50 million Series A for Agora, per The Block."
+    evidenceIds: [clm-agora-series-a-round]
+    publicationDate: "2025-07-10"
+    availabilityDate: "2025-07-10"
+    eventDate: "2025-07-10"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-agora-issuer-structure
+    whatWasSearched: "Agora operating company, Agora Bermuda Limited, reserve fund, and token-control structure"
+    whatCouldNotBeEstablished: "A complete legal-entity control chart and bankruptcy-remoteness documentation were not found in dated public sources."
+    expectedToMatter: true
+  - id: gap-agora-attestations
+    whatWasSearched: "Dated AUSD reserve attestations and auditor scope"
+    whatCouldNotBeEstablished: "Current documentation references attestations, but packet research did not admit an independently dated attestation file into evidence."
+    expectedToMatter: true
+  - id: gap-agora-contract-audits
+    whatWasSearched: "Independent AUSD smart-contract audit reports and incident history"
+    whatCouldNotBeEstablished: "No dated independent smart-contract audit report or material exploit record was established from admitted sources."
+    expectedToMatter: true
+  - id: gap-agora-customers
+    whatWasSearched: "Named white-label customers and production payment/customer volumes"
+    whatCouldNotBeEstablished: "Named customer roster and durable payment usage were not independently established beyond examples and partner claims."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    Agora, Agora Bermuda Limited, the AUSD token contracts, and reserve/custody
+    arrangements are economically linked but not interchangeable legal
+    entities.
+  sourceOriginUncertainty: >-
+    The seed PR and Sui Chainwire item are company-originated; The Block and
+    Fortune are independent journalism but still rely partly on company and
+    investor disclosures for private financing details.
+  likelyContradictions: null
+  completenessNotes: >-
+    Packet establishes founders, seed and Series A financing, AUSD product
+    positioning, reserve-manager/custodian claims, and a dated Sui deployment.
+    It does not independently prove reserve sufficiency, customer retention,
+    audited contract security, or full legal control.
+researchCutoff: "2026-09-10"

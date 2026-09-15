@@ -1,0 +1,59 @@
+# Dependencies
+node_modules/
+
+# Next.js
+.next/
+out/
+next-env.d.ts
+*.tsbuildinfo
+
+# Secrets. Never commit a real credential.
+.env
+.env.*
+!.env.example
+
+# Human-to-engineering research handoff packages. Raw import material only.
+# Never part of the public repository: these are unreviewed handoff artifacts,
+# and the reviewed form of the same research lives in research/input.
+research/imports/
+
+# Research-time private cache. May hold retrieved HTML so a snapshot diff can
+# be computed. Never committed and never a public fixture: it would republish
+# copyrighted content at scale. See docs/source-policy.md.
+research/cache/
+research/private/
+
+# Test and tool caches
+coverage/
+.vitest/
+test-results/
+playwright-report/
+
+# Deployment
+.vercel/
+
+# Project-local Hookify guardrails. Local developer safety rules, not shared config.
+.claude/*.local.md
+
+# OS
+.DS_Store
+
+# Local calibration and validation audit artifacts
+# Preserved locally for methodology audit and reproducibility, not committed.
+originationiq_phase5c_*.json
+phase5c_a_*
+phase5c_d_*
+phase5c_f_*
+phase5c_g_*
+
+# Local AI-tooling outputs. Regenerated at external checkpoints, never committed.
+.qmd/
+graphify-out/
+
+# Local-only project artifacts
+local-artifacts/
+.vercel/
+.env
+.env.local
+.env.production
+.env.development.local

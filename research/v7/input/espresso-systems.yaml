@@ -1,0 +1,516 @@
+schemaVersion: 7
+candidateId: CPS-03
+canonicalId: co-espresso-systems
+canonicalName: Espresso Systems
+slug: espresso-systems
+description: Developer of the Espresso shared sequencing network, HotShot consensus, and Tiramisu data availability system for rollups.
+domain: https://www.espressosys.com
+firstObservedAt: "2026-09-10"
+category: core_protocols_and_scaling
+entityType: hybrid
+assetType: equity_and_token
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: series_b
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: Espresso Systems develops software for the Espresso network; the Espresso Foundation publishes token and staking materials.
+      relatedEntityId: null
+      relationType: developer_and_foundation
+  protocolNetworkRelationship: The company develops a shared sequencing network whose consensus and data-availability components are HotShot and Tiramisu.
+  unresolvedBoundaryNotes:
+    - Public materials do not fully allocate intellectual property, network control, token obligations, and economics between Espresso Systems, the Espresso Foundation, and the network.
+people:
+  - id: per-ben-fisch
+    schemaVersion: 7
+    name: Ben Fisch
+    aliases: []
+    currentRole: Co-founder and CEO
+    companyTenures:
+      - companyId: co-espresso-systems
+        companyName: Espresso Systems
+        role: Co-founder and CEO
+        startDate: null
+        endDate: null
+        isFounder: true
+        sourceIds: [src-espresso-blockworks-2022]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-espresso-raise-2022]
+    sourceIds: [src-espresso-blockworks-2022]
+sources:
+  - id: src-espresso-blockworks-2022
+    schemaVersion: 7
+    publisher: Blockworks
+    title: Espresso Systems Launches to Public Amid a $32M Raise
+    url: https://blockworks.co/news/espresso-systems-launches-to-public-amid-a-32m-raise/
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2022-03-07"
+    availabilityDate: "2022-03-07"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-espresso-coindesk-2022
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: Espresso Systems Raises $32M to Bring Scaling and Privacy to Web 3
+    url: https://www.coindesk.com/business/2022/03/07/espresso-systems-raises-32m-to-bring-scaling-and-privacy-to-web-3
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2022-03-07"
+    availabilityDate: "2022-03-07"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+  - id: src-espresso-theblock-2024
+    schemaVersion: 7
+    publisher: The Block
+    title: Espresso raises $28 million in Series B round for shared sequencing marketplace
+    url: https://www.theblock.co/post/283558/espresso-raises-28-million-in-series-b-round-for-shared-sequencing-marketplace
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2024-03-21"
+    availabilityDate: "2024-03-21"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: transaction_detail
+  - id: src-espresso-cappuccino
+    schemaVersion: 7
+    publisher: Espresso Systems Documentation
+    title: Cappuccino Testnet Release
+    url: https://docs.espressosys.com/network/releases/testnets/cappuccino-testnet-release
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-05-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-espresso-mainnet0
+    schemaVersion: 7
+    publisher: Espresso Systems Documentation
+    title: Mainnet 0
+    url: https://docs.espressosys.com/network/releases/mainnet-0
+    sourceType: official_network_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-10-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-espresso-faq
+    schemaVersion: 7
+    publisher: Espresso Systems
+    title: Frequently Asked Questions
+    url: https://www.espressosys.com/faq
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-espresso-nitro
+    schemaVersion: 7
+    publisher: Espresso Systems Documentation
+    title: Integrating an Optimistic Rollup - Nitro
+    url: https://docs.espressosys.com/network/concepts/rollup-developers/integrating-an-optimistic-rollup/nitro
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-07-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-espresso-audits-repo
+    schemaVersion: 7
+    publisher: Espresso Systems
+    title: espresso-audits repository
+    url: https://github.com/EspressoSystems/espresso-audits
+    sourceType: code_repository
+    tier: b
+    reliability: 0.75
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2026-08-31"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+  - id: src-espresso-informal-audit
+    schemaVersion: 7
+    publisher: Informal Systems
+    title: Securing Epoch Transitions in Espresso's HotShot Protocol
+    url: https://informal.systems/blog/securing-epoch-transitions-in-espressos-hotshot-protocol-2025
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2025-06-24"
+    availabilityDate: "2025-06-24"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: audit_finding
+  - id: src-espresso-binance-token
+    schemaVersion: 7
+    publisher: Binance
+    title: Binance Will List Espresso (ESP)
+    url: https://www.binance.com/en-TR/support/announcement/detail/c8f9e4e1e7de458482a2af3cf64c9093
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.76
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2026-02-12"
+    availabilityDate: "2026-02-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+evidenceClaims:
+  - &claim_defaults
+    id: clm-espresso-funding-2022
+    schemaVersion: 7
+    companyId: co-espresso-systems
+    claim: Espresso Systems announced an aggregate $32 million financing in March 2022.
+    statedValue: $32 million
+    numericValue: 32
+    unit: usd_millions
+    sourceId: src-espresso-blockworks-2022
+    supportingSourceIds: [src-espresso-coindesk-2022]
+    sourceUrl: https://blockworks.co/news/espresso-systems-launches-to-public-amid-a-32m-raise/
+    publicationDate: "2022-03-07"
+    metricAsOfDate: "2022-03-07"
+    lastVerified: "2026-09-13T12:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: financing
+    notes: This is financing raised, not capital deployed, protocol liquidity, or revenue.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - <<: *claim_defaults
+    id: clm-espresso-founder
+    claim: Ben Fisch was identified as Espresso Systems co-founder and CEO in March 2022.
+    statedValue: Co-founder and CEO
+    numericValue: null
+    unit: null
+    supportingSourceIds: []
+    metricAsOfDate: null
+    topic: people
+    notes: Role is frozen to the dated source and is not assumed current beyond it.
+  - <<: *claim_defaults
+    id: clm-espresso-funding-2024
+    claim: Espresso Systems raised a $28 million Series B led by Andreessen Horowitz in March 2024.
+    statedValue: $28 million Series B
+    numericValue: 28
+    sourceId: src-espresso-theblock-2024
+    supportingSourceIds: []
+    sourceUrl: https://www.theblock.co/post/283558/espresso-raises-28-million-in-series-b-round-for-shared-sequencing-marketplace
+    publicationDate: "2024-03-21"
+    metricAsOfDate: "2024-03-21"
+    topic: financing
+    notes: This equity-company financing is distinct from token financing, treasury assets, network fees, and capital spent.
+  - <<: *claim_defaults
+    id: clm-espresso-prior-round-breakdown
+    claim: The Block described Espresso's pre-Series-B financing as a $30 million Series A in 2022 plus a $2 million seed round in 2020.
+    statedValue: $30 million Series A and $2 million seed
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-theblock-2024
+    supportingSourceIds: []
+    sourceUrl: https://www.theblock.co/post/283558/espresso-raises-28-million-in-series-b-round-for-shared-sequencing-marketplace
+    publicationDate: "2024-03-21"
+    metricAsOfDate: null
+    topic: financing
+    notes: This breakdown reconciles with, rather than adds to, the aggregate $32 million announced in 2022.
+  - <<: *claim_defaults
+    id: clm-espresso-cappuccino
+    claim: Espresso's Cappuccino testnet release used ten operators running 100 nodes and introduced Tiramisu data availability.
+    statedValue: 10 operators and 100 nodes
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-cappuccino
+    supportingSourceIds: []
+    sourceUrl: https://docs.espressosys.com/network/releases/testnets/cappuccino-testnet-release
+    publicationDate: null
+    metricAsOfDate: "2024-05-31"
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: network_deployment
+  - <<: *claim_defaults
+    id: clm-espresso-mainnet0-production
+    claim: Espresso documentation labels Mainnet 0 a production release of HotShot with an initial 20 operators running 100 nodes.
+    statedValue: Mainnet 0 production release; 20 operators; 100 nodes
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-mainnet0
+    supportingSourceIds: []
+    sourceUrl: https://docs.espressosys.com/network/releases/mainnet-0
+    publicationDate: null
+    metricAsOfDate: "2024-10-31"
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: network_deployment
+  - <<: *claim_defaults
+    id: clm-espresso-launch-october
+    claim: The Mainnet 0 documentation dates the release to October 2024.
+    statedValue: October 2024
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-mainnet0
+    supportingSourceIds: []
+    sourceUrl: https://docs.espressosys.com/network/releases/mainnet-0
+    publicationDate: null
+    metricAsOfDate: "2024-10-31"
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: launch_date
+    evidenceStatus: mixed
+    contradicts: [clm-espresso-launch-november]
+    contradictionNote: Espresso's FAQ instead states that the network launched in November 2024; the public materials do not resolve whether these dates denote release versus launch.
+  - <<: *claim_defaults
+    id: clm-espresso-launch-november
+    claim: Espresso's FAQ states that the Espresso network launched in November 2024.
+    statedValue: November 2024
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-faq
+    supportingSourceIds: []
+    sourceUrl: https://www.espressosys.com/faq
+    publicationDate: null
+    metricAsOfDate: "2024-11-30"
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: launch_date
+    evidenceStatus: mixed
+    contradicts: []
+    contradictedBy: [clm-espresso-launch-october]
+    contradictionNote: The Mainnet 0 documentation dates the release to October 2024; the public materials do not resolve whether these dates denote release versus launch.
+  - <<: *claim_defaults
+    id: clm-espresso-nitro-trust
+    claim: Espresso's Nitro integration documentation says its minimal-change optimistic-rollup integration relies on a trusted execution environment.
+    statedValue: relies on a TEE
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-nitro
+    supportingSourceIds: []
+    sourceUrl: https://docs.espressosys.com/network/concepts/rollup-developers/integrating-an-optimistic-rollup/nitro
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: architecture_limitations
+  - <<: *claim_defaults
+    id: clm-espresso-nitro-fees
+    claim: Espresso documentation states that Espresso initially covered network fees for Nitro integrations during Mainnet 0.
+    statedValue: Espresso initially covered fees
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-nitro
+    supportingSourceIds: []
+    sourceUrl: https://docs.espressosys.com/network/concepts/rollup-developers/integrating-an-optimistic-rollup/nitro
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: caveat
+    topic: incentives_and_subsidies
+    notes: The source does not quantify subsidy cost or establish company revenue.
+  - <<: *claim_defaults
+    id: clm-espresso-audit-corpus
+    claim: Espresso's audit repository lists external reviews of the Plonk verifier, light client, HotShot epoch code, Merkle and BLS components, token contracts, proof-of-stake contracts, and TEE-related integration code.
+    statedValue: Multiple scoped external audit reports
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-audits-repo
+    supportingSourceIds: []
+    sourceUrl: https://github.com/EspressoSystems/espresso-audits
+    publicationDate: null
+    metricAsOfDate: null
+    sourceSubtype: company_reported
+    confidence: medium
+    topic: security
+    notes: A list of scoped audits does not establish that all deployed code is audited or safe.
+  - <<: *claim_defaults
+    id: clm-espresso-audit-finding
+    claim: Informal Systems reported differences between HotShot's protocol specification and implementation during its epoch-transition review.
+    statedValue: protocol-code differences
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-informal-audit
+    supportingSourceIds: []
+    sourceUrl: https://informal.systems/blog/securing-epoch-transitions-in-espressos-hotshot-protocol-2025
+    publicationDate: "2025-06-24"
+    metricAsOfDate: null
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: caveat
+    topic: security
+    notes: The reviewer also said Espresso addressed its recommendations; the finding is bounded to the review scope.
+  - <<: *claim_defaults
+    id: clm-espresso-token-listing
+    claim: Binance announced exchange trading for the ESP token in February 2026 and identified Ethereum and Arbitrum token contracts.
+    statedValue: ESP listed; Ethereum and Arbitrum contracts
+    numericValue: null
+    unit: null
+    sourceId: src-espresso-binance-token
+    supportingSourceIds: []
+    sourceUrl: https://www.binance.com/en-TR/support/announcement/detail/c8f9e4e1e7de458482a2af3cf64c9093
+    publicationDate: "2026-02-12"
+    metricAsOfDate: "2026-02-12"
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: token_status
+    notes: Listing is contextual and does not establish adoption, company economics, or investment quality.
+signalEvents:
+  - id: sig-espresso-raise-2022
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-espresso-systems
+    subjectNameRaw: Espresso Systems
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-espresso-blockworks-2022
+    rawStrength: 0.7
+    evidenceSummary: An aggregate $32 million financing was announced.
+    evidenceIds: [clm-espresso-funding-2022]
+    publicationDate: "2022-03-07"
+    availabilityDate: "2022-03-07"
+    eventDate: "2022-03-07"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-espresso-series-b
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-espresso-systems
+    subjectNameRaw: Espresso Systems
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-espresso-theblock-2024
+    rawStrength: 0.7
+    evidenceSummary: Espresso raised a $28 million Series B.
+    evidenceIds: [clm-espresso-funding-2024]
+    publicationDate: "2024-03-21"
+    availabilityDate: "2024-03-21"
+    eventDate: "2024-03-21"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-espresso-mainnet0
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-espresso-systems
+    subjectNameRaw: Espresso network
+    signalType: network_milestone
+    signalCategory: network
+    signalDirection: neutral
+    sourceId: src-espresso-mainnet0
+    rawStrength: 0.7
+    evidenceSummary: Mainnet 0 was documented as a production HotShot release.
+    evidenceIds: [clm-espresso-mainnet0-production, clm-espresso-launch-october, clm-espresso-launch-november]
+    publicationDate: null
+    availabilityDate: "2024-10-31"
+    eventDate: null
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-espresso-token
+    schemaVersion: 7
+    subjectType: network
+    subjectId: co-espresso-systems
+    subjectNameRaw: Espresso network
+    signalType: token_launch
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-espresso-binance-token
+    rawStrength: 0.6
+    evidenceSummary: ESP began exchange trading in February 2026.
+    evidenceIds: [clm-espresso-token-listing]
+    publicationDate: "2026-02-12"
+    availabilityDate: "2026-02-12"
+    eventDate: "2026-02-12"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-espresso-company-revenue
+    whatWasSearched: Public financing coverage, protocol documentation, fee documentation, and company materials.
+    whatCouldNotBeEstablished: Audited or independently corroborated Espresso Systems company revenue, as distinct from network fees.
+    expectedToMatter: true
+  - id: gap-espresso-capital-use
+    whatWasSearched: Public financing announcements and company descriptions of planned use of proceeds.
+    whatCouldNotBeEstablished: Actual capital deployed, current cash balance, burn rate, or runway.
+    expectedToMatter: true
+  - id: gap-espresso-adoption
+    whatWasSearched: Network release documentation, integration documentation, and independent reporting.
+    whatCouldNotBeEstablished: Independently verified current customer count, paying rollup count, or sustained production transaction volume.
+    expectedToMatter: true
+  - id: gap-espresso-entity-boundary
+    whatWasSearched: Company, network, foundation, token, and financing materials.
+    whatCouldNotBeEstablished: Complete legal and economic allocation among Espresso Systems, the Espresso Foundation, ESP token holders, and network operators.
+    expectedToMatter: true
+  - id: gap-espresso-audit-coverage
+    whatWasSearched: Espresso's audit repository and an independent HotShot review.
+    whatCouldNotBeEstablished: Whether all code deployed as of the cutoff matched reviewed commits and fell within completed audit scopes.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: Espresso Systems, the Espresso Foundation, the protocol components, the live network, and ESP are related but not interchangeable.
+  sourceOriginUncertainty: First-party network metrics and integration statements were not promoted to independent verification.
+  likelyContradictions: Public Espresso materials give October 2024 and November 2024 for the Mainnet 0 release or network launch; both claims are retained and linked.
+  completenessNotes: No post-cutoff source supports a claim. Token, launch, node, and audit facts are contextual and are not treated as adoption, revenue, or a recommendation.
+researchCutoff: "2026-09-10"

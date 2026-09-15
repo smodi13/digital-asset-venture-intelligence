@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: CPS-02
+entityId: co-initia
+cohort: VALIDATION
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:14dbbcc9f37c9a438f8c6670a9e15d508d8028a474dd54490972f80020628650
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The packet reports financing but no usable operating-scale evidence relative to capital consumed."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No frozen claim establishes comparable product, network, or operating scale and capital use."
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-initia-seed-round, clm-initia-series-a]
+    rationale: "The approximately 20-person February 2024 and 40-person September 2024 staffing observations provide limited evidence of historical labor footprint, but do not establish whether recurring resource intensity is favorable or adverse."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Current staffing, labor cost, infrastructure, liquidity, incentive, and marginal scaling requirements remain unestablished."
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet contains no usable evidence of real adoption or usage growth and persistence. Mainnet launch, token issuance, airdrop, and exchange-listing facts establish availability and market events, not adoption momentum; the reported testnet activity is not persistent mainnet usage. Neutral anchor and zero coverage are therefore appropriate."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No multi-period mainnet usage, retention, fee, transaction-growth, wallet/user-growth, or independently corroborated adoption trend is present in the frozen packet."
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The launch record does not establish developer, contributor, or live third-party integration momentum."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No frozen claim measures developer participation or persistent ecosystem activity."
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-initia-mainnet-token-launch]
+    rationale: "The confirmed Initia L1 mainnet debut provides limited favorable evidence of team-level product delivery. Token issuance, exchange listing, and investor identities do not add execution merit, and founder-specific track records are not established."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Sourced founder backgrounds, individual execution histories, role continuity, and operating outcomes beyond mainnet delivery remain unestablished."
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-initia-mainnet-token-launch]
+    rationale: "The 5% airdrop allocation, recipient categories, and 30-day claim window provide limited incentive-structure evidence, but do not establish favorable or adverse long-term alignment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Control, upgrade rights, governance accountability, ownership concentration, vesting, remaining allocations, and durable incentive alignment remain unestablished."
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "A Layer-1 launch does not by itself evidence funded urgency or reachable market depth."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No frozen customer, fee, workflow-criticality, or market-depth evidence is supplied."
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The packet contains no criterion-specific jurisdictional, regulatory, or market-structure analysis."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Frozen research does not resolve structural or regulatory fit."
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The INIT token launch does not establish a recurring value-capture path."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No frozen claim links delivered value to fees, pricing, or another capture mechanism."
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The documented one-time launch airdrop does not establish recurring subsidy dependence or durable unit economics, and initial token-market volatility is not evidence of sustainability direction."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Beyond the documented 50 million INIT launch airdrop and recipient groups, the packet does not establish recurring incentives, burn, supply-side payouts, contribution economics, margins, or activity after subsidies."
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The packet does not document a repeatable distribution motion or production integrations."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No frozen evidence establishes organic pull, sales repeatability, or integration-led growth."
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "Mainnet availability alone does not describe user or developer friction to production use."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "The packet provides no onboarding, audit, liquidity, compliance, or access evidence."
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen claims identify a Layer-1 launch but do not substantiate differentiation from alternatives."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No independently assessed architecture, mechanism, security, or UX comparison is available."
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "Launch and trading facts do not establish durable security posture, switching costs, or network effects."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "No frozen audit, operator-base, retention, or fork-resistance evidence is provided."
+analystNote: "Judged solely from the isolated frozen Batch A packet."

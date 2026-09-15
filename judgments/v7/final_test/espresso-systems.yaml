@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: CPS-03
+entityId: co-espresso-systems
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:c452c6287ca52e87329cfce350f4e42be559bdcebe0d2258d254aef87b8cad74
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-funding-2022, clm-espresso-funding-2024, clm-espresso-mainnet0-production]
+    rationale: Independent reporting establishes $60 million of aggregate primary-company financing, while company documentation reports a production release with 20 operators and 100 nodes. Capital raised is not capital consumed, and the operating footprint does not establish customer or transaction scale, so the comparison is relevant but directionally inconclusive.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Actual capital deployed and independently verified production usage were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-mainnet0-production, clm-espresso-nitro-fees]
+    rationale: Company-controlled documentation reports a 100-node production footprint and says Espresso initially covered network fees for Nitro integrations. The explicit fee subsidy is adverse resource-burden evidence, but its amount and duration and the company's recurring infrastructure costs are not independently verified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Recurring labor, compute, operator, subsidy-cost, and company expense data were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-cappuccino, clm-espresso-mainnet0-production]
+    rationale: Company documentation reports a move from a testnet with 10 operators and 100 nodes to a production release with 20 operators and 100 nodes. This is temporal deployment evidence, but it does not establish growth in paying rollups, customers, transactions, or retained usage.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independently verified current customer counts, paying-rollup counts, and sustained production volume were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-cappuccino, clm-espresso-mainnet0-production]
+    rationale: Company-reported operator participation increased from 10 operators on Cappuccino to 20 on Mainnet 0, providing limited favorable temporal evidence of external network-participant expansion. The node count remained 100 and external developer, contributor, and live third-party integration growth were not independently verified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: External developer growth, contributor retention, and independently verified integration expansion were not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-mainnet0-production, clm-espresso-audit-finding]
+    rationale: Company documentation reports delivery of HotShot into a production release, and an independent scoped review examined epoch-transition implementation and found specification-to-code differences. Shipping reviewed network software is limited favorable execution evidence, while the delivery claim remains company-reported and the review was bounded in scope.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Broader independently verified operating execution and current deployed-code audit coverage were not established.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish governance rights, control allocation, token allocations, or stakeholder incentive alignment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Governance, control, ownership, and economic allocation among the company, Foundation, network, operators, and token holders were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish customer budgets, paid usage, utilization, workflow criticality, or market depth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Paying-rollup demand, customer budgets, sustained utilization, and reachable market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet contains no criterion-relevant evidence establishing favorable or adverse structural or regulatory fit.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Regulatory treatment, jurisdictional exposure, and material structural tailwinds or constraints were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-nitro-fees]
+    rationale: Company-controlled documentation establishes that network fees existed for Nitro integrations and were initially covered by Espresso. It does not establish pricing, fee ownership, recurring company revenue, or token accrual, so value-capture direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Espresso Systems revenue and ownership of network fee flows were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-nitro-fees]
+    rationale: Company-controlled documentation says Espresso initially subsidized network fees for Nitro integrations, which is actual adverse evidence of subsidy dependence during Mainnet 0. The cost, duration, current status, and offsetting economics were not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, costs, margins, burn, runway, and the magnitude and duration of fee subsidies were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-nitro-trust, clm-espresso-nitro-fees]
+    rationale: Company-controlled documentation describes a Nitro integration route and refers to integrations receiving initially subsidized fees. This is relevant integration evidence, but no named live customer, repeatable acquisition pattern, or organic channel pull is independently verified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Live paying integrations, repeat customers, customer expansion, and acquisition repeatability were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-nitro-trust]
+    rationale: Company-controlled documentation describes a minimal-change Nitro integration that relies on a trusted execution environment. The workflow is criterion-relevant, but neither the claimed ease nor the TEE dependency alone establishes favorable or adverse adoption friction.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Measured integration time, implementation burden, audit requirements, and production onboarding outcomes were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-cappuccino, clm-espresso-mainnet0-production, clm-espresso-nitro-trust]
+    rationale: Company-controlled documentation identifies HotShot, Tiramisu data availability, a production network, and a minimal-change Nitro path using a TEE. These are limited favorable capability and architecture signals, but comparative superiority and independently validated deployed functionality are not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative assessment and complete validation of cutoff-date production functionality were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-espresso-audit-corpus, clm-espresso-audit-finding, clm-espresso-mainnet0-production]
+    rationale: Espresso's company-controlled repository lists multiple scoped external reviews, and Informal Systems independently reviewed epoch-transition code and reported specification-to-implementation differences; company documentation also reports 20 operators. This is limited favorable security-posture evidence with a concrete caveat, not proof of broad safety, switching costs, or network effects.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Complete deployed-code audit coverage, durable operator participation, switching costs, and network effects were not established.
+analystNote: null

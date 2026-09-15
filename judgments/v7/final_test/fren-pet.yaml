@@ -1,0 +1,190 @@
+schemaVersion: 7
+candidateId: CSG-03
+entityId: co-fren-pet
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:5e7a1475cc439e25c993b418852a8eeb7f38509bd0736fbed81f6349236dc10c
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-early-activity-2023]
+    rationale: >-
+      A 2023 independent estimate describes high interaction and 127.6 ETH held
+      by contracts, providing limited point-in-time scale context. Contract-held
+      ETH is not company capital or treasury, and no permitted primary-capital
+      amount or capital consumed was established, so no directional comparison
+      is possible.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current operating scale and permitted primary-company or protocol capital were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-free-and-pass, clm-frenpet-trading-fee-later]
+    rationale: >-
+      First-party documentation states that the protocol subsidizes up to ten
+      transactions per player per day and allocates portions of trading tax to
+      player rewards and liquidity. Those are relevant recurring resource and
+      incentive dependencies, but their cost and necessity for sustained use
+      are not quantified, so direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Subsidy spend, labor, infrastructure cost, liquidity depth, and dependence on incentives were not quantified.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The packet contains a single 2023 interaction estimate and product
+      milestones but no comparable multi-period activity, customer, payer, or
+      retention series. A point-in-time footprint does not establish momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related early activity evidence exists, but current users, paying users, retention, and a comparable adoption series were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Contract and product releases do not establish growth in external
+      developers, contributors, integrations, or third-party ecosystem usage.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related product and contract evidence exists, but external developer and ecosystem momentum were not established.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-launch-token, clm-frenpet-v2-contracts]
+    rationale: >-
+      Explorer evidence establishes the 2023 protocol and token deployment, and
+      first-party documentation identifies a subsequent V2 diamond deployment
+      while deprecating V1. This supports limited favorable delivery evidence,
+      although the V2 operating state and quality are not independently
+      verified and broader creator track records are unresolved.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent verification of V2 operation and role-specific execution history remains limited.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 1
+    citedEvidenceClaimIds: [clm-frenpet-distribution-burn, clm-frenpet-token-admin-controls, clm-frenpet-trading-fee-later]
+    rationale: >-
+      First-party materials describe no initial team allocation and a fee split,
+      but the distribution was not independently wallet-attributed. The verified
+      token contract exposes owner powers to change fees and limits, exclude
+      addresses, redirect wallets, and blacklist addresses. That documented
+      concentrated control surface is adverse to accountable governance and
+      alignment even though the packet does not show that the powers were
+      abused.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current controller identity, any multisig or timelock, actual exercise of powers, and independently attributed distribution remain unresolved.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Game mechanics, a monthly-pass offer, and early activity do not establish
+      paying-user demand, customer budgets, durable utilization, or a
+      venture-scale reachable market.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Related product and pricing evidence exists, but paying demand, durable utilization, and market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The protocol's legal operator and liabilities were not established, and
+      the packet contains no actual regulatory or market-structure evidence from
+      which to infer favorable or adverse fit. Missing regulatory information is
+      neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: The responsible legal entity, jurisdiction, regulatory exposure, and relevant market-structure trajectory were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-free-and-pass, clm-frenpet-trading-fee-later]
+    rationale: >-
+      First-party documentation describes a $15 monthly pass and a later 4%
+      trading tax with 1% allocated to developers, providing specific recurring
+      monetization paths. The limited favorable direction reflects designed
+      capture only: realized receipts, payer count, and whether developer
+      allocation is company revenue are not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Realized pass sales, fee receipts, payer counts, and legal ownership of developer revenue were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-free-and-pass, clm-frenpet-trading-fee-later]
+    rationale: >-
+      The documented model combines transaction subsidies with pass pricing and
+      trading-tax allocations to rewards, developers, and liquidity. Those facts
+      are economically relevant, but the packet provides no realized revenue,
+      subsidy cost, operating cost, margin, or evidence that activity persists
+      without incentives, so direction remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Realized revenue, subsidy expense, operating cost, margins, and incentive dependence were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-game-architecture]
+    rationale: >-
+      Company-controlled documentation describes a progressive web app and
+      embedded-wallet onboarding, a relevant self-serve distribution design.
+      It does not establish repeatable acquisition, live third-party
+      integrations, customer expansion, or organic channel pull, so direction
+      remains neutral.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Acquisition repeatability, integration pull, and customer expansion were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-game-architecture, clm-frenpet-free-and-pass]
+    rationale: >-
+      First-party materials describe embedded-wallet PWA onboarding, a free-play
+      mode, and up to ten subsidized transactions per day. These concrete design
+      choices reduce wallet and transaction-cost friction, supporting limited
+      favorable direction, although observed onboarding completion and retention
+      are not independently measured.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Observed onboarding time, conversion, failure rates, and retention were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-game-architecture, clm-frenpet-stake-to-play, clm-frenpet-v2-contracts]
+    rationale: >-
+      Company-controlled documentation describes an embedded-wallet onchain pet
+      game, a reversible 30-day Stake to Play mechanism, and an EIP-2535 V2
+      diamond deployment. These specific mechanisms support limited favorable
+      product differentiation, but no independent comparison or validated
+      performance establishes superiority or resistance to copying.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative assessment, validated functionality, and fork resistance were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-frenpet-token-admin-controls, clm-frenpet-downtime-2023]
+    rationale: >-
+      The verified token contract exposes concentrated owner controls over fees,
+      limits, exclusions, wallets, and blacklisting, and independent 2023
+      reporting recorded intermittent application downtime. These are adverse
+      security and operational-durability facts, although the service was
+      reportedly restored quickly and neither abuse nor an exploit is
+      established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current control configuration, V2 audit coverage, exploit history, switching costs, and durable network effects were not established.
+analystNote: >-
+  Judgment separates contract-held assets from capital and revenue. Current
+  mechanics are primarily first-party; explorer and independent 2023 evidence
+  are used only for the facts they directly establish.

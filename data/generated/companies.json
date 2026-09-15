@@ -1,0 +1,3039 @@
+{
+  "researchRunId": "run-f7ae9ddd00b3",
+  "generatedAt": "2026-09-07T00:00:00.000Z",
+  "schemaVersion": 6,
+  "thesisConfigHash": "sha256:2d260e69a41cc9b5c43f62f75f261279eed119a340604dbd61a82f381e9bb20f",
+  "signalConfigHash": "sha256:a0da529722637f39a3da943103aad4a072a56089f847cf7119d260d02170172c",
+  "scoringConfigHash": "sha256:218fc38b03a754c4b11543468637092a1eb02dcfc75c4dcef66232f06becca0a",
+  "sourceConfigHash": "sha256:9d982ef6d2c5075f717ff89637fd35a4c281f3545e7d41953dd9de94f4cbb632",
+  "researchInputHash": "sha256:fb2569905f8fc3ce4594da3ca567c4df31546e804c0400522dfcec8e2889eaf1",
+  "generator": "scripts/research/build-corpus.ts",
+  "recordCount": 39,
+  "records": [
+    {
+      "id": "co-appliedcompute-com",
+      "schemaVersion": 6,
+      "name": "Applied Compute",
+      "aliases": [],
+      "domain": "appliedcompute.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2025,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Custom enterprise AI and agent systems",
+      "subsector": null,
+      "stage": "growth",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-yash-patil-3623e080ea",
+        "per-rhythm-garg-58207aef48",
+        "per-linden-li-0085d84849"
+      ],
+      "description": "Proprietary AI platform plus deeply embedded engineering for custom enterprise agents and models",
+      "sourceIds": [
+        "src-a5832c52ca",
+        "src-ba5e506bf2",
+        "src-22634fd48b",
+        "src-d5714ccc89"
+      ],
+      "notes": "Enterprise AI platform combining embedded custom model work with compute infrastructure, not traditional SaaS. Services intensity, gross margin, compute commitments, and infrastructure capital requirements are unresolved; do not assume software gross margins. Company-reported $160M total funding at a $1.3B post-money as of April 2026. The possible approximately $350M financing at about $3.25B reported by Forbes and The Information remains under discussion with terms not final; it is recorded as a reported_unconfirmed event and is not counted as capital raised or as a completed-transaction valuation. The Information estimates approximately $50M annualized revenue as a third-party estimate, not audited. | Confirm founding year and HQ with the primary corporate record before approval.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 14."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-arcade-dev",
+      "schemaVersion": 6,
+      "name": "Arcade.dev",
+      "aliases": [],
+      "domain": "arcade.dev",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Agent identity, authorization, and action infrastructure",
+      "subsector": null,
+      "stage": "series_a",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-alex-salazar-7bf6aa525d",
+        "per-sam-partee-686b3dcd9c"
+      ],
+      "description": "Enterprise software for identity, governance, and secure actions by AI agents",
+      "sourceIds": [
+        "src-03c792f78a",
+        "src-0d0dbbfcd4",
+        "src-1c31ed88bf"
+      ],
+      "notes": "Verify Sam Partee current operating role",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 7."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-assorthealth-com",
+      "schemaVersion": 6,
+      "name": "Assort Health",
+      "aliases": [],
+      "domain": "assorthealth.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "AI agents for healthcare patient-access workflows",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-jon-wang-818eddc58c",
+        "per-jeffery-liu-4d3e08d288"
+      ],
+      "description": "AI agents for healthcare patient-access workflows",
+      "sourceIds": [
+        "src-5d39da76fd",
+        "src-c299b4d5f3"
+      ],
+      "notes": "Batch 2 business-model boundary: AI agents for healthcare patient-access workflows. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: revenue scale (partially_resolved): 20x growth is usable as momentum evidence; absolute revenue remains unknown.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to assorthealth.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-avoca-ai",
+      "schemaVersion": 6,
+      "name": "Avoca",
+      "aliases": [],
+      "domain": "avoca.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2022,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "New York, New York, United States",
+      "sector": "AI front-office agents for home and field services",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-tyson-chen-b2d0f3b722",
+        "per-apurva-shrivastava-85a49de95f"
+      ],
+      "description": "AI front-office agents for home and field services",
+      "sourceIds": [
+        "src-4ca2450123",
+        "src-0b0da59130",
+        "src-57977ea9d5"
+      ],
+      "notes": "Batch 2 business-model boundary: AI front-office agents for home and field services. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: Series B amount (unresolved): Company and Fortune say >$125M across Seed through Series B. Do not use CB Insights' $125M Series B label as exact without reconciliation. | $1B jobs claim (resolved): This is customer job volume, not Avoca revenue.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to avoca.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-baseten-co",
+      "schemaVersion": 6,
+      "name": "Baseten",
+      "aliases": [],
+      "domain": "baseten.co",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2019,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "AI inference, serving, and post-training infrastructure",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-tuhin-srivastava-b1d3da8cf7",
+        "per-amir-haghighat-baa164efe9",
+        "per-phil-howes-cac00ba4d4",
+        "per-pankaj-gupta-a3cd9a78db"
+      ],
+      "description": "AI inference, serving, and post-training infrastructure",
+      "sourceIds": [
+        "src-191e14e78e",
+        "src-22717509ee",
+        "src-b8ade19f73",
+        "src-c1494193b5"
+      ],
+      "notes": "Batch 2 business-model boundary: AI inference, serving, and post-training infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: Series F valuation (resolved_with_caveat): Split-priced financing used $13B and $11B valuation tranches. Do not model the full round as if every investor paid the $13B price. | capital efficiency (partially_resolved): Cumulative funding estimate is about $2.085B, but absolute revenue and gross margin remain insufficiently verified.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to baseten.co."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-braintrust-dev",
+      "schemaVersion": 6,
+      "name": "Braintrust",
+      "aliases": [],
+      "domain": "braintrust.dev",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "AI evaluation and observability infrastructure",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-ankur-goyal-45d7db1f0d"
+      ],
+      "description": "AI evaluation and observability infrastructure",
+      "sourceIds": [
+        "src-942fd9f38f",
+        "src-85b74ffd05",
+        "src-d132f3c98e"
+      ],
+      "notes": "Batch 2 business-model boundary: AI evaluation and observability infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: security incident (open_diligence): The May 2026 incident is a negative event and enterprise-trust diligence item.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to braintrust.dev."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-browserbase-com",
+      "schemaVersion": 6,
+      "name": "Browserbase",
+      "aliases": [],
+      "domain": "browserbase.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Cloud browser infrastructure and agent web access",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-paul-klein-iv-0d963a37c0"
+      ],
+      "description": "Usage-based developer infrastructure and platform for browser automation and AI-agent web access",
+      "sourceIds": [
+        "src-36b023fc88",
+        "src-c62becf856",
+        "src-1d8f1e0b3b",
+        "src-9983a4191c",
+        "src-22534e5fc4",
+        "src-38a2144ab5"
+      ],
+      "notes": "Current 2026 revenue is unknown and remains open for financial use. The Forbes approximately $1M 2024 revenue estimate is stale: do not use it for current revenue, current ARR, current growth, valuation multiples, or capital-efficiency ratios. Stripe corroborates early revenue generation, large browser-session billing volume, and operating scale but does not establish a current 2026 revenue figure.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 20."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-canva-com",
+      "schemaVersion": 6,
+      "name": "Canva",
+      "aliases": [],
+      "domain": "canva.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2012,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "Sydney, New South Wales, Australia",
+      "sector": "visual communication and design software",
+      "subsector": null,
+      "stage": "growth",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-melanie-perkins-95b0fc09fb",
+        "per-cliff-obrecht-9efbe02096",
+        "per-cameron-adams-8e58b73db5"
+      ],
+      "description": "visual communication and design software",
+      "sourceIds": [
+        "src-4cb1871c6c",
+        "src-bd7eb70098",
+        "src-bdfacc8c58",
+        "src-8171b042a2"
+      ],
+      "notes": "Batch 2 business-model boundary: visual communication and design software. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: current revenue scale (resolved_with_caveat): Company told TechCrunch it ended 2025 at $4B ARR, with $500M B2B ARR. Still company-reported. | 2026 RVI transaction (unresolved_structure): SEC establishes ~$25M Class A stock purchase. Primary versus secondary is not established; do not count as company capital.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to canva.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-crewai-com",
+      "schemaVersion": 6,
+      "name": "CrewAI",
+      "aliases": [],
+      "domain": "crewai.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": null,
+      "sector": "AI agent orchestration",
+      "subsector": null,
+      "stage": "series_a",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-joao-moura-30d414cd90",
+        "per-rob-bailey-8e4577a22a"
+      ],
+      "description": "Open-source framework plus enterprise cloud subscription for multi-agent orchestration",
+      "sourceIds": [
+        "src-f855b79a68",
+        "src-f996ab897b",
+        "src-9ea6a43cea",
+        "src-034921f3d3",
+        "src-08511be403"
+      ],
+      "notes": "Verify canonical HQ | Verify current ARR and paid-customer count if disclosed",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 4."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-crosby-ai",
+      "schemaVersion": 6,
+      "name": "Crosby",
+      "aliases": [],
+      "domain": "crosby.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "New York, NY",
+      "sector": "AI-native legal services",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-ryan-daniels-d50e146050",
+        "per-john-sarihan-0cacb8b2e4"
+      ],
+      "description": "Vertically integrated AI-native law firm selling legal services rather than pure software licenses",
+      "sourceIds": [
+        "src-03daf9b5f4",
+        "src-e65ab0b447",
+        "src-b24f001980",
+        "src-6cede9042c"
+      ],
+      "notes": "AI-native legal services and a registered law firm that assumes liability, not a pure software company. Phase 3D (Forbes) adds per-contract pricing of roughly $250 to $1,000, about 100 clients, 30 lawyers, about 13,000 contracts reviewed, and about 400% revenue growth since October, each held as an atomic claim. Do not apply SaaS gross-margin, ARR, NRR, or retention assumptions. Gross margin, lawyer utilization, liability economics, and the scalability of legal labor remain open.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 6."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-decagon-ai",
+      "schemaVersion": 6,
+      "name": "Decagon",
+      "aliases": [],
+      "domain": "decagon.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "enterprise customer-experience AI agents",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-jesse-zhang-56bb82157f",
+        "per-ashwin-sreenivas-1d20f8c712"
+      ],
+      "description": "enterprise customer-experience AI agents",
+      "sourceIds": [
+        "src-e42b1fd130",
+        "src-4332f1e575",
+        "src-21cf6b0fb9"
+      ],
+      "notes": "Batch 2 business-model boundary: enterprise customer-experience AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: current revenue (partially_resolved): Sacra estimates ~$100M annualized revenue in July 2026; keep as third-party estimate, not company fact.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to decagon.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-dust-tt",
+      "schemaVersion": 6,
+      "name": "Dust",
+      "aliases": [],
+      "domain": "dust.tt",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": null,
+      "sector": "Enterprise AI agents",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-gabriel-hubert-e59fcc21cb",
+        "per-stanislas-polu-1e1aaf6d62"
+      ],
+      "description": "Enterprise AI agent platform for shared company-context workflows",
+      "sourceIds": [
+        "src-e609a5e10f",
+        "src-a09b94054f"
+      ],
+      "notes": "Verify canonical HQ from a primary source | Total funding is derived and should be reconciled | high: 240% NRR, zero churn, 51,000 MAU, 300,000 deployed agents, and weekly active usage are company-reported and now held as separate atomic claims. Phase 3D adds Forbes and Axios company context and Vanta enterprise-expansion evidence, none of which independently verifies NRR or churn. If those metrics are used quantitatively, apply a confidence penalty.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 2."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-e2b-dev",
+      "schemaVersion": 6,
+      "name": "E2B",
+      "aliases": [],
+      "domain": "e2b.dev",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "AI agent cloud and secure sandboxes",
+      "subsector": null,
+      "stage": "series_a",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-vasek-mlejnsky-70fe12e355",
+        "per-tomas-valenta-60d3a9b779"
+      ],
+      "description": "Usage-based cloud infrastructure for isolated AI-agent execution environments",
+      "sourceIds": [
+        "src-8b119a3812",
+        "src-59fb1d1385",
+        "src-312166999b",
+        "src-ff5b4384d6"
+      ],
+      "notes": "Funding figures reconciled in Phase 3D as a temporal difference, not a contradiction: $32M is a July 2025 snapshot and current E2B hiring materials state more than $37M funding and eight-figure revenue. Treat current funding as a lower bound above $37M, not exactly $37M. VentureBeat independently corroborates the 2025 Series A. Company.totalRaised remains unknown.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 5."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-elevenlabs-io",
+      "schemaVersion": 6,
+      "name": "ElevenLabs",
+      "aliases": [],
+      "domain": "elevenlabs.io",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2022,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "London, United Kingdom",
+      "sector": "generative audio models, APIs, and voice agents",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-mati-staniszewski-bfaef4496f",
+        "per-piotr-dabkowski-f177356a5a"
+      ],
+      "description": "generative audio models, APIs, and voice agents",
+      "sourceIds": [
+        "src-7bbfa0b094",
+        "src-3709b9848f",
+        "src-da3293140f"
+      ],
+      "notes": "Batch 2 business-model boundary: generative audio models, APIs, and voice agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: primary versus tender (resolved): The $100M May tender is secondary liquidity and must not be counted as company primary capital.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to elevenlabs.io."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-exa-ai",
+      "schemaVersion": 6,
+      "name": "Exa",
+      "aliases": [],
+      "domain": "exa.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2021,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "web search and retrieval APIs for AI agents",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-will-bryk-a58bac2957",
+        "per-jeffrey-wang-7b4dc484b8"
+      ],
+      "description": "web search and retrieval APIs for AI agents",
+      "sourceIds": [
+        "src-6e41646537",
+        "src-dfe912e4d2"
+      ],
+      "notes": "Batch 2 business-model boundary: web search and retrieval APIs for AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital efficiency (blocked): Revenue, gross margin, cloud cost, and burn are not public.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to exa.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-fal-ai",
+      "schemaVersion": 6,
+      "name": "fal",
+      "aliases": [],
+      "domain": "fal.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2021,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "usage-based generative-media inference infrastructure",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-burkay-gur-db3ff48838",
+        "per-gorkem-yurtseven-100c39ae72"
+      ],
+      "description": "usage-based generative-media inference infrastructure",
+      "sourceIds": [
+        "src-69e6d0599d",
+        "src-06dcf2808f",
+        "src-b928104c1f"
+      ],
+      "notes": "Batch 2 business-model boundary: usage-based generative-media inference infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: 2025 Series D transaction (resolved): $140M is company financing; TechCrunch says broader transaction also included secondary sale. Keep separate. | 2026 financing talks (unresolved_watch): As of 2026-09-07, reviewed evidence still shows talks reported on 2026-03-18, not a confirmed closing.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to fal.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-gamma-app",
+      "schemaVersion": 6,
+      "name": "Gamma",
+      "aliases": [],
+      "domain": "gamma.app",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2020,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "AI content creation and productivity",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-grant-lee-841efc9831",
+        "per-james-fox-45437cec5d",
+        "per-jon-noronha-cd25aa6c98"
+      ],
+      "description": "Self-serve and team subscription software for AI-native presentations, websites, and content",
+      "sourceIds": [
+        "src-651d2d4030"
+      ],
+      "notes": "Company-reported more than $100M ARR profitably, with about $23M of initial funding used before the $68M Series B. Phase 3D resolved the primary-versus-secondary question with a caveat: TechCrunch reported a $20M secondary component, giving a derived Series B primary of approximately $48M and a derived cumulative primary through the Series B of approximately $71M. The approximately $71M figure is rounded and derived, not an audited exact primary-capital total. Verify ARR and gross margin before underwriting.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 13."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-getbasis-ai",
+      "schemaVersion": 6,
+      "name": "Basis",
+      "aliases": [],
+      "domain": "getbasis.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "New York, New York, United States",
+      "sector": "AI agents for accounting firms",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-matthew-harpe-dd9055a08f",
+        "per-mitchell-troyanovsky-d15d09ca4a"
+      ],
+      "description": "AI agents for accounting firms",
+      "sourceIds": [
+        "src-685e928630",
+        "src-eb214a9f18",
+        "src-20083e606b"
+      ],
+      "notes": "Batch 2 business-model boundary: AI agents for accounting firms. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital efficiency (blocked): Funding is established around $138M, but revenue and margin are not.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to getbasis.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-glean-com",
+      "schemaVersion": 6,
+      "name": "Glean",
+      "aliases": [],
+      "domain": "glean.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2019,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "enterprise search, context, and AI-agent platform",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-arvind-jain-f9b6c3e07d",
+        "per-t-r-vishwanath-47f81492c4",
+        "per-piyush-prahladka-2fbfb9f332",
+        "per-tony-gentilcore-5d902a1f15"
+      ],
+      "description": "enterprise search, context, and AI-agent platform",
+      "sourceIds": [
+        "src-9ea94374af",
+        "src-4357ac7523"
+      ],
+      "notes": "Batch 2 business-model boundary: enterprise search, context, and AI-agent platform. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: ARR definition (resolved_with_caveat): Company calls $300M ARR, but independent reporting documents consumption and hybrid pricing. Do not treat all $300M as traditional subscription ARR.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to glean.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-granola-ai",
+      "schemaVersion": 6,
+      "name": "Granola",
+      "aliases": [],
+      "domain": "granola.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "London, UK",
+      "sector": "AI productivity and meeting intelligence",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-chris-pedregal-8fe5e376fe",
+        "per-sam-stephenson-f228a755e0"
+      ],
+      "description": "Subscription software for meeting notes, context, and enterprise knowledge workflows",
+      "sourceIds": [
+        "src-aef4488de9",
+        "src-eea5fdf1ac",
+        "src-fe9e8e60d0",
+        "src-84661dfbe2",
+        "src-48c7d2e58e"
+      ],
+      "notes": "Series C of $125M and the $1.5B valuation are independently corroborated by Bloomberg and The Times. The Times reports revenue by mid-March 2026 at approximately 2.5x the prior-year level and about 55 employees. Absolute revenue, ARR, and profitability remain undisclosed; use the growth rate qualitatively only. Capital-efficiency scoring is blocked pending absolute financials.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 12."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-linear-app",
+      "schemaVersion": 6,
+      "name": "Linear",
+      "aliases": [],
+      "domain": "linear.app",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2019,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Product development and issue tracking",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-karri-saarinen-a9ae4bb704",
+        "per-jori-lallo-b97fe6f083",
+        "per-tuomas-artman-43a16bc258"
+      ],
+      "description": "B2B subscription software for product development, planning, and issue management",
+      "sourceIds": [
+        "src-5ff1a775e3",
+        "src-56ea8f8607"
+      ],
+      "notes": "Company-reported more than $100M ARR, 177% NRR, more than 40,000 paying customers, cash-flow positive, and profitable since year two per Business Insider. Capital reconciled in Phase 3D: known pre-Series-C primary is $52.2M, being a $4.2M seed plus a $13M Series A plus a $35M Series B; the $82M Series C headline mixed primary and secondary and its primary component is unknown; the 2026 $99M tender was entirely secondary and contributed $0 of new primary capital. Do not treat the $99M tender or the $134.2M Crunchbase total as company primary capital. Cumulative primary through the Series C cannot be pinned.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 16."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-listenlabs-com",
+      "schemaVersion": 6,
+      "name": "Listen Labs",
+      "aliases": [],
+      "domain": "listenlabs.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "AI-led qualitative customer research",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-alfred-wahlforss-88e7821c8d",
+        "per-florian-juengermann-fd6d874d7c"
+      ],
+      "description": "AI-led qualitative customer research",
+      "sourceIds": [
+        "src-cc1fa6b682",
+        "src-2f6e8f891c"
+      ],
+      "notes": "Batch 2 business-model boundary: AI-led qualitative customer research. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: eight-figure revenue (resolved_with_caveat): Keep as a range-style scale statement, not a point estimate.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to listenlabs.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-llamaindex-ai",
+      "schemaVersion": 6,
+      "name": "LlamaIndex",
+      "aliases": [],
+      "domain": "llamaindex.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "AI data and agent infrastructure",
+      "subsector": null,
+      "stage": "series_a",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-jerry-liu-fd11f99748",
+        "per-simon-suo-bef2442218"
+      ],
+      "description": "Open-source framework plus enterprise SaaS and on-premise products for unstructured-data agents",
+      "sourceIds": [
+        "src-97cceee0d3",
+        "src-88cc885b5a",
+        "src-d224b442a8",
+        "src-4a36f90c54",
+        "src-ece179fb06"
+      ],
+      "notes": "Verify current commercial revenue mix",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 3."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-lovable-dev",
+      "schemaVersion": 6,
+      "name": "Lovable",
+      "aliases": [],
+      "domain": "lovable.dev",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "Stockholm, Sweden",
+      "sector": "AI-native app and website creation platform",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-anton-osika-fb03d64c76",
+        "per-fabian-hedin-1e3a8dfe8c"
+      ],
+      "description": "AI-native app and website creation platform",
+      "sourceIds": [
+        "src-cebda9ae16",
+        "src-e5515c68f9",
+        "src-94676d99b2"
+      ],
+      "notes": "Batch 2 business-model boundary: AI-native app and website creation platform. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: annualized revenue definition (resolved_with_caveat): $500M is annualized revenue run-rate, not automatically contracted ARR. | security incident (open_diligence): Access-control regression and failed vulnerability escalation remain negative enterprise-readiness evidence.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to lovable.dev."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-mintlify-com",
+      "schemaVersion": 6,
+      "name": "Mintlify",
+      "aliases": [],
+      "domain": "mintlify.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2022,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Developer tools and knowledge infrastructure",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-han-wang-73c84bd9d6",
+        "per-hahnbee-lee-71975b0469"
+      ],
+      "description": "B2B software for documentation, knowledge, and developer content workflows",
+      "sourceIds": [
+        "src-a28853fb6a",
+        "src-5891c99196",
+        "src-ed172a5642"
+      ],
+      "notes": "Total funding is approximately $67M after the $45M Series B, company-reported. Forbes independently reports eight-figure revenue in early 2026 and approximately 20,000 company customers; exact ARR remains undisclosed. Do not convert eight figures into a point ARR.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 1."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-modal-com",
+      "schemaVersion": 6,
+      "name": "Modal",
+      "aliases": [],
+      "domain": "modal.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2021,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "New York, NY",
+      "sector": "Serverless cloud compute for AI and data workloads",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-erik-bernhardsson-b4b318ac55",
+        "per-akshat-bubna-62f6ddba5f"
+      ],
+      "description": "Usage-based cloud infrastructure for CPUs, GPUs, inference, and compute-heavy applications",
+      "sourceIds": [
+        "src-ad1ddd6de8",
+        "src-733016c3a3"
+      ],
+      "notes": "Diligence gross margin, compute pass-through economics, and hyperscaler exposure | Phase 3D: independent reporting (Reuters, SiliconANGLE) confirms the $355M Series C at a $4.65B valuation and describes Modal as renting third-party compute capacity rather than owning all underlying hardware. Infrastructure gross margin, not software margin, is the gating diligence question; do not treat as SaaS. | Ignore unverified financing rumors",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 15."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-openevidence-com",
+      "schemaVersion": 6,
+      "name": "OpenEvidence",
+      "aliases": [],
+      "domain": "openevidence.com",
+      "foundedYear": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "operatingOriginYear": 2021,
+      "hqLocation": "Miami, Florida, United States",
+      "sector": "free ad-supported clinical information platform",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-daniel-nadler-11b51a50d3",
+        "per-zachary-ziegler-6c0eb8371c"
+      ],
+      "description": "free ad-supported clinical information platform",
+      "sourceIds": [
+        "src-f384cfeb28",
+        "src-d790103020"
+      ],
+      "notes": "Batch 2 business-model boundary: free ad-supported clinical information platform. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: business model (resolved_with_caveat): Free ad-supported physician product is not conventional SaaS; ad concentration, trust, and health-system contract economics remain open.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to openevidence.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-parallel-ai",
+      "schemaVersion": 6,
+      "name": "Parallel Web Systems",
+      "aliases": [],
+      "domain": "parallel.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "web search and research APIs for AI agents",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-parag-agrawal-6adb8f1d35"
+      ],
+      "description": "web search and research APIs for AI agents",
+      "sourceIds": [
+        "src-b16eb082e5",
+        "src-d9c309f2c8",
+        "src-e4597eca75"
+      ],
+      "notes": "Batch 2 business-model boundary: web search and research APIs for AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital efficiency (blocked): No public revenue or margin despite $230M capital raised.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to parallel.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-resend-com",
+      "schemaVersion": 6,
+      "name": "Resend",
+      "aliases": [],
+      "domain": "resend.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2022,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Developer communications infrastructure",
+      "subsector": null,
+      "stage": "series_a",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-zeno-rocha-9d91b5c457",
+        "per-bu-kinoshita-24e573d492",
+        "per-jonni-lundy-86972c7c2e"
+      ],
+      "description": "Developer email API and communication infrastructure with usage-driven software economics",
+      "sourceIds": [
+        "src-58808b277b",
+        "src-285a54231d",
+        "src-61151d8e9e",
+        "src-91be420110"
+      ],
+      "notes": "Official financing is a $3M seed and an $18M Series A, company-reported. CB Insights separately estimates $21.5M total funding across five financings; that is a structured-secondary estimate, not a primary-source fact. Exact cumulative primary capital is unresolved. | Clarify Jonni Lundy legal founder status versus founding-team designation",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 9."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-retellai-com",
+      "schemaVersion": 6,
+      "name": "Retell AI",
+      "aliases": [],
+      "domain": "retellai.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Voice AI and contact-center automation",
+      "subsector": null,
+      "stage": "seed",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-bing-wu-c45cf6ac5f",
+        "per-zexia-zhang-cfc51ce9ee",
+        "per-todd-li-338428deb0",
+        "per-weijia-yu-8354e5d39b",
+        "per-evie-wang-e043d635d3"
+      ],
+      "description": "Usage-based enterprise voice-agent platform",
+      "sourceIds": [
+        "src-b6518dcc47",
+        "src-a90e531b01",
+        "src-77f760a3aa",
+        "src-b5fda171f2",
+        "src-c5c72aba88"
+      ],
+      "notes": "Officially disclosed financing is a $4.6M seed; CB Insights estimates $5.1M total, held as a structured-secondary estimate. Company-reported $40M annualized revenue, full profitability, and a 25-person team carry no established as-of date. Sacra separately estimates about $60M annualized revenue in April 2026 and about $80M in August 2026 as third-party estimates; these are time-separated snapshots, not contradictions, and are not averaged. Stripe corroborates the revenue-growth trajectory and call volume but does not verify profitability, gross margin, audited revenue, or funding. Confirm revenue recognition and gross margin before underwriting.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 10."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-rillet-com",
+      "schemaVersion": 6,
+      "name": "Rillet",
+      "aliases": [],
+      "domain": "rillet.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2021,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "AI-native ERP and accounting software",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-nicolas-kopp-37b21febe8",
+        "per-stelios-modes-24f30eeae2"
+      ],
+      "description": "AI-native ERP and accounting software",
+      "sourceIds": [
+        "src-a2e4fbb879",
+        "src-c16a02bf3b",
+        "src-d422d4b35a"
+      ],
+      "notes": "Batch 2 business-model boundary: AI-native ERP and accounting software. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: absolute ARR (unresolved): New ARR doubled, but absolute ARR is still undisclosed.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to rillet.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-serval-com",
+      "schemaVersion": 6,
+      "name": "Serval",
+      "aliases": [],
+      "domain": "serval.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, CA",
+      "sector": "AI-native IT service management",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-jake-stauch-672e710de2",
+        "per-alex-mcleod-e604d87b18"
+      ],
+      "description": "Enterprise software platform for AI-driven IT service management and workflow automation",
+      "sourceIds": [
+        "src-320b6ea545",
+        "src-bb9654382f",
+        "src-c6bcc18dd7",
+        "src-ddcc5a83ff",
+        "src-6c3caec330"
+      ],
+      "notes": "Establish revenue scale, retention, and contract economics before capital-efficiency scoring. Phase 3D: Forbes independently corroborates $127M total funding and a $1B valuation; revenue-growth claims remain company-sourced.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 11."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-sierra-ai",
+      "schemaVersion": 6,
+      "name": "Sierra",
+      "aliases": [],
+      "domain": "sierra.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "enterprise customer-experience AI agents",
+      "subsector": null,
+      "stage": "growth",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-bret-taylor-868e8cf1e8",
+        "per-clay-bavor-ce328cc12e"
+      ],
+      "description": "enterprise customer-experience AI agents",
+      "sourceIds": [
+        "src-30c4e1c974",
+        "src-f8e63d4a6f",
+        "src-1892475252",
+        "src-424af73a81"
+      ],
+      "notes": "Batch 2 business-model boundary: enterprise customer-experience AI agents. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: capital base (partially_resolved): CB Insights estimates ~$1.585B total funding; keep as structured-secondary until round history is fully reconstructed from primary sources.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to sierra.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-turbopuffer-com",
+      "schemaVersion": 6,
+      "name": "turbopuffer",
+      "aliases": [],
+      "domain": "turbopuffer.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "Ottawa, Canada",
+      "sector": "Serverless search and vector database infrastructure",
+      "subsector": null,
+      "stage": "seed",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-simon-horup-eskildsen-9988b5986b",
+        "per-justine-li-7b91997cf1"
+      ],
+      "description": "Usage-based database and search infrastructure built on object storage",
+      "sourceIds": [
+        "src-d2e0a43cd2",
+        "src-31e234e3ac",
+        "src-2a6af46bdc",
+        "src-162cf2afe8",
+        "src-5e03944f3b"
+      ],
+      "notes": "Funding and revenue improved but not fully resolved in Phase 3D. Founder disclosure: raised less than $1M, a strict upper bound from an undated source, and crossed an approximately $100M run-rate while profitable. Sacra separately estimates approximately $100M annualized revenue in March 2026. BetaKit independently reports an undisclosed financing from Thrive and Lachy Groom and roughly tenfold 2025 sales growth; its timing relative to the founder's sub-$1M disclosure is not established. Exact current cumulative financing is unknown and Company.totalRaised remains unknown. Do not represent less than $1M as exactly $1M, and do not use secondary estimates as model inputs.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 19."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-vercel-com",
+      "schemaVersion": 6,
+      "name": "Vercel",
+      "aliases": [],
+      "domain": "vercel.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2015,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "developer cloud and AI application infrastructure",
+      "subsector": null,
+      "stage": "series_d_plus",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-guillermo-rauch-2b720f23a8"
+      ],
+      "description": "developer cloud and AI application infrastructure",
+      "sourceIds": [
+        "src-fb246508a9",
+        "src-a443ae14c0",
+        "src-52761ff0bc",
+        "src-0d424e613f"
+      ],
+      "notes": "Batch 2 business-model boundary: developer cloud and AI application infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: Series F versus tender (resolved): $300M Series F is primary financing; separate ~ $300M tender is secondary. | security incident (open_diligence): Keep as a negative enterprise-trust event and investigate commercial impact.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to vercel.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-wisprflow-ai",
+      "schemaVersion": 6,
+      "name": "Wispr Flow",
+      "aliases": [],
+      "domain": "wisprflow.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2023,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": 2021,
+      "hqLocation": "San Francisco, CA",
+      "sector": "Voice productivity and AI interface software",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-tanay-kothari-fc2d5c817b",
+        "per-sahaj-garg-59821dadc2"
+      ],
+      "description": "Subscription software for voice-driven productivity, dictation, and enterprise workflows",
+      "sourceIds": [
+        "src-c6b2be6b1d",
+        "src-9096fac00f",
+        "src-484016eb68",
+        "src-c7de0ac22c",
+        "src-c42aac0911"
+      ],
+      "notes": "Founding date resolved in Phase 3D and no longer a scoring blocker: 2021 is the operating/project origin (NEA first invested in the founders' Wispr AI hardware effort in 2021, per Forbes) and 2023 is the current legal entity, Wispr AI, Inc., a Delaware C-corporation (per the company security and compliance FAQ). Held as foundedYear 2023 and operatingOriginYear 2021; the two are not a contradiction. | Cumulative funding is high at approximately $361M after the 2026 Series B per independent TechCrunch reporting. A large capital base is not by itself a positive signal; capital-efficiency interpretation still requires revenue and burn context.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 18."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-withdavid-ai",
+      "schemaVersion": 6,
+      "name": "David AI",
+      "aliases": [],
+      "domain": "withdavid.ai",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "San Francisco, California, United States",
+      "sector": "audio training-data and evaluation infrastructure",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-tomer-cohen-fc87a4a4f1",
+        "per-ben-wiley-3fc4f22e40"
+      ],
+      "description": "audio training-data and evaluation infrastructure",
+      "sourceIds": [
+        "src-7d53d50581",
+        "src-35078fc42b"
+      ],
+      "notes": "Batch 2 business-model boundary: audio training-data and evaluation infrastructure. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: current financial scale (unresolved): Current revenue, margin, burn, and concentration remain unknown.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to withdavid.ai."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-withpace-com",
+      "schemaVersion": 6,
+      "name": "Pace",
+      "aliases": [],
+      "domain": "withpace.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "New York, NY",
+      "sector": "AI-native insurance operations",
+      "subsector": null,
+      "stage": "series_b",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-jamie-cuffe-c349f2c0d7"
+      ],
+      "description": "AI operations platform and agentic process outsourcer for insurance workflows",
+      "sourceIds": [
+        "src-a4b33c6381",
+        "src-0538ac7019",
+        "src-b104a1bda2",
+        "src-e3bb599859"
+      ],
+      "notes": "AI-native insurance operations, a process-outsourcing hybrid with a software-platform layer, not pure SaaS. Phase 3D (Forbes) adds about 28 employees, about $375M valuation, named insurance deployments, and the elastic-labor operating model. Software versus applied-services revenue mix and blended gross margin remain unknown and are held as explicit unknown claims; do not assume pure-software margins.",
+      "firstObservedAt": "2026-09-06",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 1 research universe, seed position 8."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    },
+    {
+      "id": "co-xbow-com",
+      "schemaVersion": 6,
+      "name": "XBOW",
+      "aliases": [],
+      "domain": "xbow.com",
+      "foundedYear": {
+        "provenance": "sourced",
+        "value": 2024,
+        "sourceSubtype": "company_reported",
+        "confidence": "medium",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": []
+      },
+      "operatingOriginYear": null,
+      "hqLocation": "Seattle, Washington, United States",
+      "sector": "autonomous offensive-security software",
+      "subsector": null,
+      "stage": "series_c",
+      "employeeCount": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "totalRaised": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "lastRound": {
+        "provenance": "unknown",
+        "value": null,
+        "confidence": "unknown",
+        "modelEligibility": "context_only",
+        "asOf": null,
+        "evidenceIds": [],
+        "note": "not disclosed in the research input"
+      },
+      "investorIds": [],
+      "founderIds": [
+        "per-oege-de-moor-ea7ca9d75c"
+      ],
+      "description": "autonomous offensive-security software",
+      "sourceIds": [
+        "src-1c43ca8764",
+        "src-608bf72cc3",
+        "src-04a05fb630",
+        "src-3754205c8c"
+      ],
+      "notes": "Batch 2 business-model boundary: autonomous offensive-security software. Do not infer SaaS gross margins. Research issues carried from the Batch 2 packet: cumulative funding (partially_resolved): Derived disclosed total through Series C extension is about $272M; retain caveat because Series B page-date metadata is inconsistent and early round history should be checked again before modeling.",
+      "firstObservedAt": "2026-09-07",
+      "lastUpdatedAt": "2026-09-07T00:00:00.000Z",
+      "isPrivate": true,
+      "properties": {
+        "reason_sourced": {
+          "type": "string",
+          "value": "Batch 2 research universe (Phase 4B ingestion). Domain-identity resolved to xbow.com."
+        },
+        "research_status": {
+          "type": "string",
+          "value": "approved"
+        },
+        "known_investors": {
+          "type": "string_list",
+          "value": []
+        }
+      }
+    }
+  ]
+}

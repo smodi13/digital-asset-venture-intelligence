@@ -1,0 +1,142 @@
+/**
+ * Screening Brief - stand-alone institutional research dossier.
+ *
+ * Screen: a centred A4-width document on a neutral ground.
+ * Print:  the app chrome is hidden, the document fills the page, running
+ *         header/footer repeat, tables break cleanly, colours stay legible in
+ *         black and white.
+ *
+ * No hero, no gradient, no illustration. Compact hierarchy, tabular numerals,
+ * thin rules - consistent with the Phase 6D-C design system.
+ */
+
+.brief {
+  --ink: #14181e;
+  --ink-muted: #4a515c;
+  --ink-faint: #6b7280;
+  --rule: #c5cbd3;
+  --rule-soft: #dfe3e8;
+  max-width: 820px;
+  margin: 0 auto;
+  padding: 32px 40px 64px;
+  background: #fff;
+  color: var(--ink);
+  font-size: 12px;
+  line-height: 1.5;
+  font-family: var(--font-sans, system-ui, sans-serif);
+}
+
+.brief h1 { font-size: 20px; font-weight: 600; letter-spacing: -0.01em; margin: 0; }
+.brief h2 {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ink-muted);
+  margin: 26px 0 8px;
+  padding-bottom: 3px;
+  border-bottom: 1px solid var(--rule);
+  break-after: avoid;
+}
+.brief h3 { font-size: 12px; font-weight: 600; margin: 14px 0 4px; break-after: avoid; }
+.brief p { margin: 4px 0; }
+.brief .muted { color: var(--ink-muted); }
+.brief .faint { color: var(--ink-faint); }
+.brief .tnum { font-variant-numeric: tabular-nums; }
+.brief .mono { font-family: var(--font-mono, ui-monospace, monospace); font-size: 11px; }
+/* Links only ever hold a short host (domainOf); `anywhere` saves a genuinely
+ * long token from overflowing without chopping a 12-char host mid-word. */
+.brief a { color: #1f4d7a; text-decoration: none; overflow-wrap: anywhere; }
+/* In the source appendix / signals tables the host is an atom - keep it whole
+ * and let the auto table layout give the column the width instead. */
+.brief td a { white-space: nowrap; }
+
+.brief-cover { border-bottom: 2px solid var(--ink); padding-bottom: 12px; }
+.brief-kicker {
+  font-size: 11px; text-transform: uppercase; letter-spacing: 0.12em;
+  color: var(--ink-faint); font-weight: 600;
+}
+.brief-notice {
+  margin-top: 10px; padding: 6px 10px;
+  border: 1px solid var(--rule); background: #f1f3f6;
+  font-weight: 600; font-size: 11px;
+}
+
+.brief-meta {
+  display: grid; grid-template-columns: max-content 1fr; gap: 2px 14px;
+  margin-top: 10px; font-size: 11px;
+}
+.brief-meta dt { color: var(--ink-faint); }
+.brief-meta dd { margin: 0; }
+
+.brief table { width: 100%; border-collapse: collapse; font-size: 11px; margin-top: 4px; }
+.brief th, .brief td {
+  text-align: left; padding: 4px 8px; border-bottom: 1px solid var(--rule-soft);
+  vertical-align: top;
+}
+.brief thead th {
+  border-bottom: 1px solid var(--rule); font-size: 10px; text-transform: uppercase;
+  letter-spacing: 0.04em; color: var(--ink-muted); background: #f7f8fa;
+}
+.brief td.num, .brief th.num { text-align: right; font-variant-numeric: tabular-nums; white-space: nowrap; }
+
+.brief-tag {
+  display: inline-block; padding: 0 5px; border: 1px solid var(--rule);
+  border-radius: 3px; font-size: 10px; font-weight: 600; color: var(--ink-muted);
+  white-space: nowrap;
+}
+.brief-tag--warn { border-color: #8a5a00; color: #8a5a00; }
+.brief-tag--neg { border-color: #a12b2b; color: #a12b2b; }
+.brief-tag--pos { border-color: #1f6b46; color: #1f6b46; }
+
+.brief-crit { break-inside: avoid; border: 1px solid var(--rule-soft); padding: 8px 10px; margin-top: 6px; }
+.brief-crit-head { display: flex; flex-wrap: wrap; gap: 4px 10px; align-items: baseline; }
+.brief-crit-name { font-weight: 600; }
+.brief-claim { margin: 3px 0 3px 0; padding-left: 8px; border-left: 2px solid var(--rule); }
+.brief-claim.excluded { color: var(--ink-faint); }
+
+.brief-list { margin: 4px 0; padding-left: 18px; }
+.brief-list li { margin: 2px 0; }
+
+.brief-print-actions { margin: 0 auto 0; max-width: 820px; padding: 12px 40px 0; }
+
+/* Screen preview only: below the document width the fixed 40px gutters and
+ * 820px max-width overflow a phone/tablet. Shrink the gutters and let the wide
+ * summary / signals / appendix tables scroll within their own box. The print
+ * rules below are untouched, so the PDF fidelity is unchanged. */
+@media screen and (max-width: 900px) {
+  .brief { max-width: 100%; padding: 24px 16px 48px; }
+  .brief-print-actions { max-width: 100%; padding: 12px 16px 0; }
+  /* Keep the tables as tables (no horizontal scroll region, which would be a
+     keyboard trap); just let them get denser and wrap on a narrow screen. */
+  .brief table { font-size: 10px; }
+  .brief th,
+  .brief td { padding: 4px 5px; overflow-wrap: anywhere; }
+  .brief td a,
+  .brief td.num,
+  .brief th.num { white-space: normal; }
+}
+
+@media print {
+  .brief { padding: 0; max-width: none; font-size: 10.5px; }
+  .brief-print-actions { display: none; }
+  .brief a { color: var(--ink); }
+  .brief h2 { margin-top: 18px; }
+  .brief-crit, .brief tr, .brief-claim { break-inside: avoid; }
+  thead { display: table-header-group; }
+
+  /*
+   * Running footer via an @page margin box. Unlike a position:fixed element -
+   * which Chrome anchors to the page content box, letting bare <p>/<li> print
+   * on top of it - a margin box has its own reserved space and can never
+   * collide with body text. (Chrome ignores string()/running() in margin
+   * boxes, so the per-page line is static; the company name is on the cover.)
+   */
+  @page {
+    margin: 16mm 14mm 20mm;
+    @bottom-center {
+      content: "Digital Asset Venture Intelligence Screening Brief · not an investment recommendation";
+      font-size: 8.5px; color: #6b7280;
+    }
+  }
+}

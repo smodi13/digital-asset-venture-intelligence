@@ -1,0 +1,2366 @@
+{
+  "researchRunId": "run-f7ae9ddd00b3",
+  "generatedAt": "2026-09-07T00:00:00.000Z",
+  "schemaVersion": 6,
+  "thesisConfigHash": "sha256:2d260e69a41cc9b5c43f62f75f261279eed119a340604dbd61a82f381e9bb20f",
+  "signalConfigHash": "sha256:a0da529722637f39a3da943103aad4a072a56089f847cf7119d260d02170172c",
+  "scoringConfigHash": "sha256:218fc38b03a754c4b11543468637092a1eb02dcfc75c4dcef66232f06becca0a",
+  "sourceConfigHash": "sha256:9d982ef6d2c5075f717ff89637fd35a4c281f3545e7d41953dd9de94f4cbb632",
+  "researchInputHash": "sha256:fb2569905f8fc3ce4594da3ca567c4df31546e804c0400522dfcec8e2889eaf1",
+  "generator": "scripts/research/build-corpus.ts",
+  "recordCount": 84,
+  "records": [
+    {
+      "id": "per-akshat-bubna-62f6ddba5f",
+      "schemaVersion": 6,
+      "name": "Akshat Bubna",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-modal-com",
+          "companyName": "Modal",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-alex-mcleod-e604d87b18",
+      "schemaVersion": 6,
+      "name": "Alex McLeod",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-serval-com",
+          "companyName": "Serval",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-alex-salazar-7bf6aa525d",
+      "schemaVersion": 6,
+      "name": "Alex Salazar",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-arcade-dev",
+          "companyName": "Arcade.dev",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-alfred-wahlforss-88e7821c8d",
+      "schemaVersion": 6,
+      "name": "Alfred Wahlforss",
+      "aliases": [],
+      "currentRole": "CEO & Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-listenlabs-com",
+          "companyName": "Listen Labs",
+          "role": "CEO & Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-amir-haghighat-baa164efe9",
+      "schemaVersion": 6,
+      "name": "Amir Haghighat",
+      "aliases": [],
+      "currentRole": "CTO & Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-baseten-co",
+          "companyName": "Baseten",
+          "role": "CTO & Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-ankur-goyal-45d7db1f0d",
+      "schemaVersion": 6,
+      "name": "Ankur Goyal",
+      "aliases": [],
+      "currentRole": "Founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-braintrust-dev",
+          "companyName": "Braintrust",
+          "role": "Founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-anton-osika-fb03d64c76",
+      "schemaVersion": 6,
+      "name": "Anton Osika",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-lovable-dev",
+          "companyName": "Lovable",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-apurva-shrivastava-85a49de95f",
+      "schemaVersion": 6,
+      "name": "Apurva Shrivastava",
+      "aliases": [],
+      "currentRole": "Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-avoca-ai",
+          "companyName": "Avoca",
+          "role": "Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-arvind-jain-f9b6c3e07d",
+      "schemaVersion": 6,
+      "name": "Arvind Jain",
+      "aliases": [],
+      "currentRole": "Founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-glean-com",
+          "companyName": "Glean",
+          "role": "Founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-ashwin-sreenivas-1d20f8c712",
+      "schemaVersion": 6,
+      "name": "Ashwin Sreenivas",
+      "aliases": [],
+      "currentRole": "Co-founder & President",
+      "companyTenures": [
+        {
+          "companyId": "co-decagon-ai",
+          "companyName": "Decagon",
+          "role": "Co-founder & President",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-ben-wiley-3fc4f22e40",
+      "schemaVersion": 6,
+      "name": "Ben Wiley",
+      "aliases": [],
+      "currentRole": "Co-founder & CTO",
+      "companyTenures": [
+        {
+          "companyId": "co-withdavid-ai",
+          "companyName": "David AI",
+          "role": "Co-founder & CTO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-bing-wu-c45cf6ac5f",
+      "schemaVersion": 6,
+      "name": "Bing Wu",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-retellai-com",
+          "companyName": "Retell AI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-bret-taylor-868e8cf1e8",
+      "schemaVersion": 6,
+      "name": "Bret Taylor",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-sierra-ai",
+          "companyName": "Sierra",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-bu-kinoshita-24e573d492",
+      "schemaVersion": 6,
+      "name": "Bu Kinoshita",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-resend-com",
+          "companyName": "Resend",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-burkay-gur-db3ff48838",
+      "schemaVersion": 6,
+      "name": "Burkay Gur",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-fal-ai",
+          "companyName": "fal",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-cameron-adams-8e58b73db5",
+      "schemaVersion": 6,
+      "name": "Cameron Adams",
+      "aliases": [],
+      "currentRole": "Co-founder & Chief Product Officer",
+      "companyTenures": [
+        {
+          "companyId": "co-canva-com",
+          "companyName": "Canva",
+          "role": "Co-founder & Chief Product Officer",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-chris-pedregal-8fe5e376fe",
+      "schemaVersion": 6,
+      "name": "Chris Pedregal",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-granola-ai",
+          "companyName": "Granola",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-clay-bavor-ce328cc12e",
+      "schemaVersion": 6,
+      "name": "Clay Bavor",
+      "aliases": [],
+      "currentRole": "Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-sierra-ai",
+          "companyName": "Sierra",
+          "role": "Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-cliff-obrecht-9efbe02096",
+      "schemaVersion": 6,
+      "name": "Cliff Obrecht",
+      "aliases": [],
+      "currentRole": "Co-founder & COO",
+      "companyTenures": [
+        {
+          "companyId": "co-canva-com",
+          "companyName": "Canva",
+          "role": "Co-founder & COO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-daniel-nadler-11b51a50d3",
+      "schemaVersion": 6,
+      "name": "Daniel Nadler",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-openevidence-com",
+          "companyName": "OpenEvidence",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-erik-bernhardsson-b4b318ac55",
+      "schemaVersion": 6,
+      "name": "Erik Bernhardsson",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-modal-com",
+          "companyName": "Modal",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-evie-wang-e043d635d3",
+      "schemaVersion": 6,
+      "name": "Evie Wang",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-retellai-com",
+          "companyName": "Retell AI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-fabian-hedin-1e3a8dfe8c",
+      "schemaVersion": 6,
+      "name": "Fabian Hedin",
+      "aliases": [],
+      "currentRole": "Co-founder & CTO",
+      "companyTenures": [
+        {
+          "companyId": "co-lovable-dev",
+          "companyName": "Lovable",
+          "role": "Co-founder & CTO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-florian-juengermann-fd6d874d7c",
+      "schemaVersion": 6,
+      "name": "Florian Juengermann",
+      "aliases": [],
+      "currentRole": "CTO & Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-listenlabs-com",
+          "companyName": "Listen Labs",
+          "role": "CTO & Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-gabriel-hubert-e59fcc21cb",
+      "schemaVersion": 6,
+      "name": "Gabriel Hubert",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-dust-tt",
+          "companyName": "Dust",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-gorkem-yurtseven-100c39ae72",
+      "schemaVersion": 6,
+      "name": "Gorkem Yurtseven",
+      "aliases": [],
+      "currentRole": "Co-founder & CTO",
+      "companyTenures": [
+        {
+          "companyId": "co-fal-ai",
+          "companyName": "fal",
+          "role": "Co-founder & CTO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-grant-lee-841efc9831",
+      "schemaVersion": 6,
+      "name": "Grant Lee",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-gamma-app",
+          "companyName": "Gamma",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-guillermo-rauch-2b720f23a8",
+      "schemaVersion": 6,
+      "name": "Guillermo Rauch",
+      "aliases": [],
+      "currentRole": "Founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-vercel-com",
+          "companyName": "Vercel",
+          "role": "Founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-hahnbee-lee-71975b0469",
+      "schemaVersion": 6,
+      "name": "Hahnbee Lee",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-mintlify-com",
+          "companyName": "Mintlify",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-han-wang-73c84bd9d6",
+      "schemaVersion": 6,
+      "name": "Han Wang",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-mintlify-com",
+          "companyName": "Mintlify",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jake-stauch-672e710de2",
+      "schemaVersion": 6,
+      "name": "Jake Stauch",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-serval-com",
+          "companyName": "Serval",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-james-fox-45437cec5d",
+      "schemaVersion": 6,
+      "name": "James Fox",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-gamma-app",
+          "companyName": "Gamma",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jamie-cuffe-c349f2c0d7",
+      "schemaVersion": 6,
+      "name": "Jamie Cuffe",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-withpace-com",
+          "companyName": "Pace",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jeffery-liu-4d3e08d288",
+      "schemaVersion": 6,
+      "name": "Jeffery Liu",
+      "aliases": [],
+      "currentRole": "Founder & co-CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-assorthealth-com",
+          "companyName": "Assort Health",
+          "role": "Founder & co-CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jeffrey-wang-7b4dc484b8",
+      "schemaVersion": 6,
+      "name": "Jeffrey Wang",
+      "aliases": [],
+      "currentRole": "Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-exa-ai",
+          "companyName": "Exa",
+          "role": "Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jerry-liu-fd11f99748",
+      "schemaVersion": 6,
+      "name": "Jerry Liu",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-llamaindex-ai",
+          "companyName": "LlamaIndex",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jesse-zhang-56bb82157f",
+      "schemaVersion": 6,
+      "name": "Jesse Zhang",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-decagon-ai",
+          "companyName": "Decagon",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-joao-moura-30d414cd90",
+      "schemaVersion": 6,
+      "name": "Joao Moura",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-crewai-com",
+          "companyName": "CrewAI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-john-sarihan-0cacb8b2e4",
+      "schemaVersion": 6,
+      "name": "John Sarihan",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-crosby-ai",
+          "companyName": "Crosby",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jon-noronha-cd25aa6c98",
+      "schemaVersion": 6,
+      "name": "Jon Noronha",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-gamma-app",
+          "companyName": "Gamma",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jon-wang-818eddc58c",
+      "schemaVersion": 6,
+      "name": "Jon Wang",
+      "aliases": [],
+      "currentRole": "Founder & co-CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-assorthealth-com",
+          "companyName": "Assort Health",
+          "role": "Founder & co-CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jonni-lundy-86972c7c2e",
+      "schemaVersion": 6,
+      "name": "Jonni Lundy",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-resend-com",
+          "companyName": "Resend",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-jori-lallo-b97fe6f083",
+      "schemaVersion": 6,
+      "name": "Jori Lallo",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-linear-app",
+          "companyName": "Linear",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-justine-li-7b91997cf1",
+      "schemaVersion": 6,
+      "name": "Justine Li",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-turbopuffer-com",
+          "companyName": "turbopuffer",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-karri-saarinen-a9ae4bb704",
+      "schemaVersion": 6,
+      "name": "Karri Saarinen",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-linear-app",
+          "companyName": "Linear",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-linden-li-0085d84849",
+      "schemaVersion": 6,
+      "name": "Linden Li",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-appliedcompute-com",
+          "companyName": "Applied Compute",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-mati-staniszewski-bfaef4496f",
+      "schemaVersion": 6,
+      "name": "Mati Staniszewski",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-elevenlabs-io",
+          "companyName": "ElevenLabs",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-matthew-harpe-dd9055a08f",
+      "schemaVersion": 6,
+      "name": "Matthew Harpe",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-getbasis-ai",
+          "companyName": "Basis",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-melanie-perkins-95b0fc09fb",
+      "schemaVersion": 6,
+      "name": "Melanie Perkins",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-canva-com",
+          "companyName": "Canva",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-mitchell-troyanovsky-d15d09ca4a",
+      "schemaVersion": 6,
+      "name": "Mitchell Troyanovsky",
+      "aliases": [],
+      "currentRole": "Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-getbasis-ai",
+          "companyName": "Basis",
+          "role": "Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-nicolas-kopp-37b21febe8",
+      "schemaVersion": 6,
+      "name": "Nicolas Kopp",
+      "aliases": [],
+      "currentRole": "CEO & Founder",
+      "companyTenures": [
+        {
+          "companyId": "co-rillet-com",
+          "companyName": "Rillet",
+          "role": "CEO & Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-oege-de-moor-ea7ca9d75c",
+      "schemaVersion": 6,
+      "name": "Oege de Moor",
+      "aliases": [],
+      "currentRole": "Founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-xbow-com",
+          "companyName": "XBOW",
+          "role": "Founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-pankaj-gupta-a3cd9a78db",
+      "schemaVersion": 6,
+      "name": "Pankaj Gupta",
+      "aliases": [],
+      "currentRole": "Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-baseten-co",
+          "companyName": "Baseten",
+          "role": "Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-parag-agrawal-6adb8f1d35",
+      "schemaVersion": 6,
+      "name": "Parag Agrawal",
+      "aliases": [],
+      "currentRole": "Founder",
+      "companyTenures": [
+        {
+          "companyId": "co-parallel-ai",
+          "companyName": "Parallel Web Systems",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-paul-klein-iv-0d963a37c0",
+      "schemaVersion": 6,
+      "name": "Paul Klein IV",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-browserbase-com",
+          "companyName": "Browserbase",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-phil-howes-cac00ba4d4",
+      "schemaVersion": 6,
+      "name": "Phil Howes",
+      "aliases": [],
+      "currentRole": "Co-founder & Chief Scientist",
+      "companyTenures": [
+        {
+          "companyId": "co-baseten-co",
+          "companyName": "Baseten",
+          "role": "Co-founder & Chief Scientist",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-piotr-dabkowski-f177356a5a",
+      "schemaVersion": 6,
+      "name": "Piotr Dabkowski",
+      "aliases": [],
+      "currentRole": "Co-founder & CTO",
+      "companyTenures": [
+        {
+          "companyId": "co-elevenlabs-io",
+          "companyName": "ElevenLabs",
+          "role": "Co-founder & CTO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-piyush-prahladka-2fbfb9f332",
+      "schemaVersion": 6,
+      "name": "Piyush Prahladka",
+      "aliases": [],
+      "currentRole": "Co-founder, Engineering",
+      "companyTenures": [
+        {
+          "companyId": "co-glean-com",
+          "companyName": "Glean",
+          "role": "Co-founder, Engineering",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-rhythm-garg-58207aef48",
+      "schemaVersion": 6,
+      "name": "Rhythm Garg",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-appliedcompute-com",
+          "companyName": "Applied Compute",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-rob-bailey-8e4577a22a",
+      "schemaVersion": 6,
+      "name": "Rob Bailey",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-crewai-com",
+          "companyName": "CrewAI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-ryan-daniels-d50e146050",
+      "schemaVersion": 6,
+      "name": "Ryan Daniels",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-crosby-ai",
+          "companyName": "Crosby",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-sahaj-garg-59821dadc2",
+      "schemaVersion": 6,
+      "name": "Sahaj Garg",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-wisprflow-ai",
+          "companyName": "Wispr Flow",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-sam-partee-686b3dcd9c",
+      "schemaVersion": 6,
+      "name": "Sam Partee",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-arcade-dev",
+          "companyName": "Arcade.dev",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-sam-stephenson-f228a755e0",
+      "schemaVersion": 6,
+      "name": "Sam Stephenson",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-granola-ai",
+          "companyName": "Granola",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-simon-horup-eskildsen-9988b5986b",
+      "schemaVersion": 6,
+      "name": "Simon Horup Eskildsen",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-turbopuffer-com",
+          "companyName": "turbopuffer",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-simon-suo-bef2442218",
+      "schemaVersion": 6,
+      "name": "Simon Suo",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-llamaindex-ai",
+          "companyName": "LlamaIndex",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-stanislas-polu-1e1aaf6d62",
+      "schemaVersion": 6,
+      "name": "Stanislas Polu",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-dust-tt",
+          "companyName": "Dust",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-stelios-modes-24f30eeae2",
+      "schemaVersion": 6,
+      "name": "Stelios Modes",
+      "aliases": [],
+      "currentRole": "CTO & Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-rillet-com",
+          "companyName": "Rillet",
+          "role": "CTO & Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-t-r-vishwanath-47f81492c4",
+      "schemaVersion": 6,
+      "name": "T.R. Vishwanath",
+      "aliases": [],
+      "currentRole": "Co-founder & CTO",
+      "companyTenures": [
+        {
+          "companyId": "co-glean-com",
+          "companyName": "Glean",
+          "role": "Co-founder & CTO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tanay-kothari-fc2d5c817b",
+      "schemaVersion": 6,
+      "name": "Tanay Kothari",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-wisprflow-ai",
+          "companyName": "Wispr Flow",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-todd-li-338428deb0",
+      "schemaVersion": 6,
+      "name": "Todd Li",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-retellai-com",
+          "companyName": "Retell AI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tomas-valenta-60d3a9b779",
+      "schemaVersion": 6,
+      "name": "Tomas Valenta",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-e2b-dev",
+          "companyName": "E2B",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tomer-cohen-fc87a4a4f1",
+      "schemaVersion": 6,
+      "name": "Tomer Cohen",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-withdavid-ai",
+          "companyName": "David AI",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tony-gentilcore-5d902a1f15",
+      "schemaVersion": 6,
+      "name": "Tony Gentilcore",
+      "aliases": [],
+      "currentRole": "Co-founder & Product Engineering Lead",
+      "companyTenures": [
+        {
+          "companyId": "co-glean-com",
+          "companyName": "Glean",
+          "role": "Co-founder & Product Engineering Lead",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tuhin-srivastava-b1d3da8cf7",
+      "schemaVersion": 6,
+      "name": "Tuhin Srivastava",
+      "aliases": [],
+      "currentRole": "CEO & Co-founder",
+      "companyTenures": [
+        {
+          "companyId": "co-baseten-co",
+          "companyName": "Baseten",
+          "role": "CEO & Co-founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tuomas-artman-43a16bc258",
+      "schemaVersion": 6,
+      "name": "Tuomas Artman",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-linear-app",
+          "companyName": "Linear",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-tyson-chen-b2d0f3b722",
+      "schemaVersion": 6,
+      "name": "Tyson Chen",
+      "aliases": [],
+      "currentRole": "Co-founder & President",
+      "companyTenures": [
+        {
+          "companyId": "co-avoca-ai",
+          "companyName": "Avoca",
+          "role": "Co-founder & President",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-vasek-mlejnsky-70fe12e355",
+      "schemaVersion": 6,
+      "name": "Vasek Mlejnsky",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-e2b-dev",
+          "companyName": "E2B",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-weijia-yu-8354e5d39b",
+      "schemaVersion": 6,
+      "name": "Weijia Yu",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-retellai-com",
+          "companyName": "Retell AI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-will-bryk-a58bac2957",
+      "schemaVersion": 6,
+      "name": "Will Bryk",
+      "aliases": [],
+      "currentRole": "Co-founder & CEO",
+      "companyTenures": [
+        {
+          "companyId": "co-exa-ai",
+          "companyName": "Exa",
+          "role": "Co-founder & CEO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-yash-patil-3623e080ea",
+      "schemaVersion": 6,
+      "name": "Yash Patil",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-appliedcompute-com",
+          "companyName": "Applied Compute",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-zachary-ziegler-6c0eb8371c",
+      "schemaVersion": 6,
+      "name": "Zachary Ziegler",
+      "aliases": [],
+      "currentRole": "Co-founder & CTO",
+      "companyTenures": [
+        {
+          "companyId": "co-openevidence-com",
+          "companyName": "OpenEvidence",
+          "role": "Co-founder & CTO",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-zeno-rocha-9d91b5c457",
+      "schemaVersion": 6,
+      "name": "Zeno Rocha",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-resend-com",
+          "companyName": "Resend",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    },
+    {
+      "id": "per-zexia-zhang-cfc51ce9ee",
+      "schemaVersion": 6,
+      "name": "Zexia Zhang",
+      "aliases": [],
+      "currentRole": null,
+      "companyTenures": [
+        {
+          "companyId": "co-retellai-com",
+          "companyName": "Retell AI",
+          "role": "Founder",
+          "startDate": null,
+          "endDate": null,
+          "isFounder": true,
+          "sourceIds": []
+        }
+      ],
+      "priorCompanies": [],
+      "education": [],
+      "publicHandles": {
+        "github": null,
+        "x": null,
+        "linkedin": null,
+        "website": null
+      },
+      "signalEventIds": [],
+      "sourceIds": []
+    }
+  ]
+}

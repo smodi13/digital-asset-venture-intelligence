@@ -1,0 +1,247 @@
+schemaVersion: 7
+candidateId: TRA-04
+entityId: co-anemoy
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:27ea889e353c8d63ff8639eb462d99bff4be750f4ef2bdba34d2e80a9f306a0a"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No company-level financing for Anemoy itself was established, so no
+      capital-consumed denominator exists. The $50 million Grove anchor
+      investment is fund-level AUM committed to ACRDX by an investor, not
+      capital raised by Anemoy the company, and is kept structurally
+      distinct here rather than treated as a scale-vs-capital ratio input.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No company-level financing exists for Anemoy (gap-anemoy-financing-history);
+      fund AUM is not company capital and does not establish a
+      scale-vs-capital ratio.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses labor, compute, or infrastructure cost for
+      operating Anemoy's asset-management function across JTRSY and
+      ACRDX.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the
+      frozen packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-anemoy-ltf-launch, clm-anemoy-acrdx-grove]
+    rationale: >-
+      Anemoy launched a second distinct fund (ACRDX, 2025) after its
+      first (JTRSY, 2024), and secured a concrete $50 million anchor
+      investment from a named institutional counterparty (Grove) into
+      ACRDX -- real, dated capital committed by an actual customer of the
+      product, not a projection. This is genuine but limited evidence: it
+      reflects two sequential product launches and one flagship anchor
+      commitment, not a multi-period usage series across a broad
+      customer base.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No dated AUM series or broader investor-count data exists beyond
+      the single Grove anchor commitment and the two product-launch dates.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party
+      integration growth specific to Anemoy (as distinct from the
+      Centrifuge protocol it relies on).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 1
+    citedEvidenceClaimIds: [clm-anemoy-ltf-launch, clm-anemoy-acrdx-grove]
+    rationale: >-
+      Martin Quensel and Anil Sood are named co-founders, independently
+      corroborated via Janus Henderson's own investor-relations
+      announcement. Quensel's co-founding role at Centrifuge is directly
+      relevant execution background (he helped build the tokenization
+      protocol Anemoy itself relies on), not an unrelated prestige
+      credential. The team shipped two real, named institutional
+      partnerships -- JTRSY with Janus Henderson and ACRDX with Apollo's
+      strategy via Grove's anchor investment -- each independently
+      corroborated rather than only self-reported.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Anemoy's confirmed legal entity and jurisdiction are not
+      independently established (gap-anemoy-legal-entity-confirmation).
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 32
+    coverage: 1
+    citedEvidenceClaimIds: [clm-anemoy-governance-value-capture-question]
+    rationale: >-
+      A dated, public Centrifuge governance-forum thread explicitly and,
+      as of the last visible reply, unsuccessfully asked whether the
+      Centrifuge Network Foundation holds equity in Anemoy and whether
+      CFG token holders have any economic claim on Anemoy's revenue,
+      framed directly against a Centrifuge governance proposal asserting
+      CFG as the protocol's "single value accrual mechanism." This is a
+      real, unresolved accountability/alignment gap between the entity
+      that captures revenue from Centrifuge-enabled tokenized funds and
+      the token holders of the protocol that enables them. This is a
+      single community-member question, not a confirmed governance
+      finding, which keeps this from being scored lower still, but the
+      question itself remains genuinely open.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: null
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 1
+    citedEvidenceClaimIds: [clm-anemoy-ltf-launch, clm-anemoy-acrdx-grove]
+    rationale: >-
+      Janus Henderson, a large, established traditional asset manager,
+      chose to partner with Anemoy for its first tokenized fund, and
+      Grove separately committed $50 million as an anchor investment into
+      ACRDX. Both are independently corroborated, real institutional
+      counterparties with real capital or brand commitment at stake,
+      which is concrete evidence of funded institutional demand for
+      tokenized RWA access. This rests on two flagship relationships
+      rather than a broad, diversified customer base.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No evidence beyond the two flagship institutional partnerships
+      establishes broader market depth.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-anemoy-legal-entity-unconfirmed, clm-anemoy-acrdx-grove]
+    rationale: >-
+      Anemoy's legal entity itself is not confirmed by independent
+      sources: only a single, low-confidence aggregator profile names
+      "Anemoy Capital SPC Limited" in Dublin, Ireland. Separately, the
+      ACRDX/Grove arrangement is explicitly described as "subject to
+      regulatory approval" with no later confirmation of that approval
+      found. Together these represent genuine, unresolved structural and
+      regulatory uncertainty rather than an established favorable or
+      hostile fit.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Anemoy's legal entity is not independently confirmed
+      (gap-anemoy-legal-entity-confirmation); the regulatory-approval
+      status referenced for Anemoy's ACRDX asset-manager role was not
+      later confirmed (gap-anemoy-acrdx-regulatory-approval-status).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents Anemoy's own fee or take-rate mechanism on
+      JTRSY or ACRDX. The unresolved CFG/Anemoy governance question
+      concerns whether Centrifuge's token holders have an economic claim
+      on Anemoy's revenue, which is a token-alignment question judged
+      under governance_and_incentive_alignment above, not evidence of
+      Anemoy's own monetization mechanism, which remains undocumented.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No claim documents Anemoy's own management-fee or take-rate
+      structure on JTRSY or ACRDX.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses Anemoy's cost structure, burn, or reliance on
+      external capital versus fee income to sustain operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No cost-structure or capital-reliance evidence exists in the frozen
+      packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-anemoy-acrdx-grove]
+    rationale: >-
+      ACRDX launched with a genuinely multi-protocol integration stack --
+      Centrifuge for tokenization, Plume as settlement chain distributing
+      the strategy via its Nest Credit vaults, Chronicle as oracle, and
+      Wormhole for cross-chain connectivity -- which is real evidence of
+      composability-driven integration pull for this flagship product.
+      This is a single instance rather than a demonstrated, repeatable
+      pattern of integrations compounding over multiple deals.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No evidence of a repeatable integration-acquisition pattern beyond
+      the single ACRDX launch stack exists.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 42
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-anemoy-acrdx-grove]
+    rationale: >-
+      Anemoy's role as ACRDX's asset manager is explicitly disclosed as
+      "subject to regulatory approval," a concrete, real gating condition
+      standing between announcement and full operation, with no later
+      source confirming that approval was obtained. This is genuine
+      friction evidence, distinct from ordinary investor-onboarding
+      detail, which is not otherwise documented.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Confirmation of the regulatory approval referenced for Anemoy's
+      ACRDX asset-manager role was not found
+      (gap-anemoy-acrdx-regulatory-approval-status).
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim independently assesses any technical architecture specific
+      to Anemoy as distinct from the underlying Centrifuge tokenization
+      protocol it relies on; Anemoy's own contribution is asset-management
+      and institutional relationship structuring, not a documented
+      technical differentiator.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment of any Anemoy-specific
+      architecture exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-anemoy-governance-value-capture-question]
+    rationale: >-
+      Anemoy's tokenization infrastructure depends entirely on the
+      Centrifuge protocol, and the unresolved public question over
+      whether Centrifuge Network Foundation holds equity in Anemoy or
+      whether CFG holders have any claim on its revenue leaves the
+      economic terms of that platform dependency genuinely undocumented.
+      An unresolved dependency on a single external protocol/brand
+      relationship, with no established economic or governance terms
+      between the two, is a real counterparty/platform-concentration
+      exposure for Anemoy's own defensibility, tempered by the fact that
+      both flagship products have shipped and operate today regardless of
+      how that question is eventually resolved.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      The economic and governance terms of Anemoy's dependency on the
+      Centrifuge protocol/brand remain unresolved
+      (gap-anemoy-cfg-value-capture); no switching-cost or fork-resistance
+      evidence exists distinct from this dependency.

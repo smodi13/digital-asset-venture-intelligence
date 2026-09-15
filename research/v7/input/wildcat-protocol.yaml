@@ -1,0 +1,351 @@
+schemaVersion: 7
+candidateId: DCM-02
+canonicalId: co-wildcat-protocol
+canonicalName: Wildcat Protocol
+slug: wildcat-protocol
+description: >-
+  Wildcat is a permissionless, on-chain undercollateralized lending protocol
+  where borrowers create their own credit markets, setting parameters
+  including reserve ratios, withdrawal cycles, and lender whitelisting,
+  without traditional loan underwriting by the protocol itself.
+domain: wildcat.finance
+firstObservedAt: "2023-05-01"
+category: defi_and_capital_markets
+entityType: protocol
+assetType: unknown
+institutionalOrientation: null
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Wildcat Labs is the developing company; the "Wildcat Foundation" is
+        referenced in security-program materials as the entity operating a
+        bug-bounty program. Public sources did not fully resolve the
+        distinction between Wildcat Labs and the Wildcat Foundation.
+      relatedEntityId: null
+      relationType: developer_of_protocol
+  protocolNetworkRelationship: >-
+    Wildcat Labs develops and raises capital for the Wildcat protocol; no
+    protocol token had launched as of the research cutoff, consistent with
+    the frozen assetType assignment of unknown.
+  unresolvedBoundaryNotes:
+    - >-
+      The relationship between "Wildcat Labs" (funding-round entity) and the
+      "Wildcat Foundation" (security-program entity) was not fully resolved
+      in public sources within the research budget for this batch.
+people:
+  - id: per-laurence-day
+    schemaVersion: 7
+    name: Laurence Day
+    aliases: []
+    currentRole: Co-Founder and CEO
+    companyTenures:
+      - companyId: co-wildcat-protocol
+        companyName: Wildcat Labs
+        role: Co-Founder and CEO
+        startDate: "2023-05-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-wildcat-theblock-seedext]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-wildcat-theblock-seedext]
+  - id: per-dillon-kellar
+    schemaVersion: 7
+    name: Dillon Kellar
+    aliases: []
+    currentRole: Co-Founder
+    companyTenures:
+      - companyId: co-wildcat-protocol
+        companyName: Wildcat Labs
+        role: Co-Founder
+        startDate: "2023-05-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-wildcat-theblock-seedext]
+    priorCompanies: ["Indexed Finance"]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-wildcat-theblock-seedext]
+sources:
+  - id: src-wildcat-theblock-seedext
+    schemaVersion: 7
+    publisher: The Block
+    title: "Wildcat Labs raises $3.5 million in seed extension round to grow its undercollateralized lending protocol"
+    url: "https://www.theblock.co/post/369453/wildcat-labs-3-5-million-usd-round-robot-ventures"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-09-05"
+    availabilityDate: "2025-09-05"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-wildcat-theblock-kinto
+    schemaVersion: 7
+    publisher: The Block
+    title: "Crypto lending protocol Wildcat says Kinto default poses 'no risk of contagion' for outstanding loans"
+    url: "https://www.theblock.co/post/369879/crypto-lending-protocol-wildcat-says-kinto-default-poses-no-risk-of-contagion-for-outstanding-loans"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.8
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2025-09-08"
+    availabilityDate: "2025-09-08"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-wildcat-code4rena-audit
+    schemaVersion: 7
+    publisher: Code4rena
+    title: "The Wildcat Protocol (audit report)"
+    url: "https://code4rena.com/reports/2024-08-wildcat"
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-09-18"
+    availabilityDate: "2024-09-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: audit_finding
+  - id: src-wildcat-docs
+    schemaVersion: 7
+    publisher: Wildcat Protocol (official docs)
+    title: "The Wildcat Protocol"
+    url: "https://docs.wildcat.finance/"
+    sourceType: official_protocol_source
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: null
+    availabilityDate: "2024-01-01"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - id: clm-wildcat-seed-extension
+    schemaVersion: 7
+    companyId: co-wildcat-protocol
+    claim: >-
+      Wildcat Labs raised $3.5 million in a seed-extension round (structured
+      as a SAFE, opened April 2025 and closed August 2025, announced
+      September 5, 2025) led by Robot Ventures at a $35 million post-money
+      valuation, with participation from Triton Capital, Polygon Ventures,
+      Safe Foundation, Hyperithm, Hermeneutic Investments, and Kronos
+      Research, plus angel investors including Fei Protocol founder Joey
+      Santoro, Vyper core contributor Charles Cooper, and Ink founder Andrew
+      Koller. Total disclosed fundraising to date, including a $750,000
+      pre-seed (May 2023, Wintermute Ventures) and a $1.1 million seed round
+      (July-August 2024, primarily via Echo), is $5.3 million.
+    statedValue: "$3.5 million (seed extension); $5.3 million total"
+    numericValue: 3500000
+    unit: usd
+    sourceId: src-wildcat-theblock-seedext
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/369453/wildcat-labs-3-5-million-usd-round-robot-ventures"
+    publicationDate: "2025-09-05"
+    metricAsOfDate: "2025-09-05"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Independently reported by The Block, a specialist crypto-industry
+      outlet, citing named investors and valuation; not a wire reproduction
+      of a company press release.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-wildcat-kinto-default
+    schemaVersion: 7
+    companyId: co-wildcat-protocol
+    claim: >-
+      Kinto, a borrower on the Wildcat protocol operating the "Phoenix
+      Facility" credit market, announced it would shut down after a summer
+      2025 exploit drained $1.55 million from its lending pools and a
+      subsequent $1 million recovery loan proved insufficient. Wildcat
+      confirmed this was the protocol's first official borrower default
+      since its 2023 launch, stated losses were isolated to the Phoenix
+      Facility market, and that Phoenix lenders expected to recover
+      approximately 76% of loan principal via pro-rata distribution of
+      remaining foundation assets; Wildcat stated there was "no risk of
+      contagion or haircut" to any other lender or borrower on the protocol.
+      At the time of the report, Wildcat had $150+ million in outstanding
+      credit across $368 million originated since launch.
+    statedValue: "$1.55 million exploit loss; 76% expected principal recovery"
+    numericValue: 1550000
+    unit: usd
+    sourceId: src-wildcat-theblock-kinto
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/post/369879/crypto-lending-protocol-wildcat-says-kinto-default-poses-no-risk-of-contagion-for-outstanding-loans"
+    publicationDate: "2025-09-08"
+    metricAsOfDate: "2025-09-08"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: risk
+    notes: >-
+      Material negative/risk evidence: this is the protocol's first
+      confirmed borrower default. Independently reported by The Block,
+      including a direct Wildcat statement rather than only third-party
+      characterization. The underlying Kinto exploit itself (loss of the
+      capital that led to default) is a separate, upstream event at Kinto,
+      not at Wildcat; Wildcat's own risk-isolation design (per-market
+      whitelisting, no cross-market pooling) is what the "no contagion"
+      claim rests on and was not independently stress-tested by this
+      research.
+    evidenceStatus: supported
+    analystInterpretation: >-
+      This is the kind of event that directly tests Wildcat's core design
+      claim (borrower-level risk isolation via permissionless,
+      undercollateralized markets): a real default occurred, and by the
+      reporting available, losses appear to have stayed contained to the
+      one affected market rather than spreading protocol-wide.
+    diligenceQuestion: "Did losses in fact remain fully isolated to the Phoenix Facility market, and what is the final realized recovery rate for Phoenix lenders?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-wildcat-audit-code4rena
+    schemaVersion: 7
+    companyId: co-wildcat-protocol
+    claim: >-
+      A Code4rena competitive audit of the Wildcat protocol smart-contract
+      system ran August 31-September 18, 2024, yielding 9 unique
+      vulnerability findings, one rated HIGH severity and eight rated lower
+      severity.
+    statedValue: "9 findings (1 High)"
+    numericValue: 9
+    unit: findings
+    sourceId: src-wildcat-code4rena-audit
+    supportingSourceIds: []
+    sourceUrl: "https://code4rena.com/reports/2024-08-wildcat"
+    publicationDate: "2024-09-18"
+    metricAsOfDate: "2024-09-18"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: technical_security
+    notes: >-
+      Independent third-party competitive audit; whether the single HIGH
+      finding was remediated prior to mainnet deployment was not confirmed
+      within the research budget for this batch.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Was the HIGH-severity finding from the Code4rena audit remediated before mainnet launch, and is there a post-remediation audit confirming the fix?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-wildcat-kinto-default-2025
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: co-wildcat-protocol
+    subjectNameRaw: Wildcat Protocol
+    signalType: exploit
+    signalCategory: risk
+    signalDirection: negative
+    sourceId: src-wildcat-theblock-kinto
+    rawStrength: 0.4
+    evidenceSummary: >-
+      A borrower (Kinto) on the Wildcat protocol defaulted following an
+      upstream exploit that drained its own lending pools; this was
+      Wildcat's first confirmed default since its 2023 launch. Wildcat
+      stated the loss was isolated to the Phoenix Facility market with no
+      contagion to other lenders/borrowers, and Phoenix lenders expected
+      ~76% principal recovery.
+    evidenceIds: [clm-wildcat-kinto-default]
+    publicationDate: "2025-09-08"
+    availabilityDate: "2025-09-08"
+    eventDate: "2025-09-08"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: >-
+      Direct test of Wildcat's borrower-level risk-isolation design; the
+      default is itself a negative event (partial capital loss for Phoenix
+      lenders), while the reported containment to a single market is
+      partial evidence in favor of the protocol's structural risk-isolation
+      claim.
+    interpretationBasis: evidence
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-wildcat-legal-entity
+    whatWasSearched: "Wildcat Labs / Wildcat Foundation legal entity structure, jurisdiction, HQ"
+    whatCouldNotBeEstablished: >-
+      No source resolved the relationship between "Wildcat Labs" (the
+      funding-round entity) and the "Wildcat Foundation" (referenced in
+      bug-bounty materials), nor established jurisdiction or HQ for either.
+    expectedToMatter: true
+  - id: gap-wildcat-token
+    whatWasSearched: "Whether Wildcat has launched or announced a protocol token"
+    whatCouldNotBeEstablished: "No confirmed token launch or plan was found; assetType recorded as unknown."
+    expectedToMatter: true
+  - id: gap-wildcat-final-kinto-recovery
+    whatWasSearched: "Final realized recovery rate for Kinto/Phoenix Facility lenders after the September 2025 default"
+    whatCouldNotBeEstablished: >-
+      Only an initial expected recovery estimate (~76%) as of the September
+      8, 2025 report was found; no later confirmation of the final realized
+      recovery was found within the research budget for this batch, and any
+      such later reporting would in any case fall after the research
+      cutoff for a THIN-density candidate's allotted search budget.
+    expectedToMatter: true
+  - id: gap-wildcat-team-size
+    whatWasSearched: "Wildcat Labs team size / headcount"
+    whatCouldNotBeEstablished: "No source established team size beyond the two named co-founders and a silent partner."
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    "Wildcat Labs" (raises capital) and "Wildcat Foundation" (runs the
+    bug-bounty program per docs) are both referenced in public materials
+    without a clear public explanation of their legal relationship; this
+    packet treats them as the same operating entity for research purposes,
+    consistent with the frozen universe assignment (entityType protocol).
+  sourceOriginUncertainty: >-
+    Funding and default facts are independently reported by The Block, a
+    specialist crypto-industry outlet, not company press releases; the
+    audit finding is from an independent third-party competitive-audit
+    platform (Code4rena). No source-origin collapsing was required across
+    these three distinct, non-overlapping origins.
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen THIN evidence-density label: capital history,
+    founder identity, one material negative/risk event (the Kinto default),
+    and one independent security audit are established. Legal-entity
+    structure, token plans, and final realized recovery from the Kinto
+    default remain open gaps.
+researchCutoff: "2026-09-10"

@@ -1,0 +1,15 @@
+{
+  "schemaVersion": 7,
+  "generatedAt": "2026-09-11T00:00:00.000Z",
+  "batch": "CALIBRATION",
+  "entries": [
+    {
+      "path": "data/v7-analytical-inputs/entities.v7.json",
+      "schemaVersion": 7,
+      "generatedAt": "2026-09-11T00:00:00.000Z",
+      "generator": "scripts/judgments-v7/build.ts",
+      "recordCount": 15,
+      "sha256": "f771e2a5ffe3f3e11cba28e9aa447f3ee2999999d5d5c8f52661cbbf9966fc89"
+    }
+  ]
+}

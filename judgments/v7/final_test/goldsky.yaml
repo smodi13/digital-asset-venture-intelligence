@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: DOI-01
+entityId: co-goldsky
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:a4ee1d2f8721e7cef2ef18617f40d128a32b3383a01f1a4a8ca8ed8fee7ea274
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-total-funding, clm-goldsky-customers-2022, clm-goldsky-polymarket-service, clm-goldsky-koi-service]
+    rationale: Independent reporting establishes $22 million of disclosed primary-company financing and identifies several customers, while company-controlled case studies report production workloads. Actual capital consumed and current company-wide scale are unknown, so the capital comparison is relevant but directionally inconclusive.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Capital spent, current paying-customer count, company-wide workload, revenue, burn, and runway were not established.
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-product, clm-goldsky-polymarket-service, clm-goldsky-koi-service]
+    rationale: Company-controlled materials describe managed indexing and streaming and report substantial customer workloads, making recurring infrastructure burden relevant. They do not quantify labor, compute, storage, cost, margin, or subsidies, so no direction is established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Recurring labor, compute, storage, infrastructure cost, margin, and subsidy requirements were not established.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-customers-2022, clm-goldsky-koi-service, clm-goldsky-polymarket-service]
+    rationale: Independent 2022 reporting identifies customers and later company-controlled case studies report production delivery for Koi and Polymarket. The evidence spans time but is not a comparable customer or usage series, so it does not establish favorable or adverse momentum.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Comparable multi-period usage, current paying-customer count, retention, expansion, and concentration were not established.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the packet's developer-facing open-source release alone does not establish external developer, contributor, integration, or ecosystem growth.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: External developer growth, contributor activity, third-party adoption, and expanding integrations were not established; only a developer-facing release was documented.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-customers-2022, clm-goldsky-polymarket-service, clm-goldsky-koi-service]
+    rationale: Independent reporting identifies multiple customers, and company-controlled case studies report a sub-48-hour migration, sustained daily requests, and high-throughput delivery. This is favorable evidence of shipped customer work, limited by first-party performance reporting and absent broader operating history.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent verification of case-study performance, broader team depth, and current customer delivery outcomes were not established.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies to company control and stakeholder alignment, but the frozen packet does not establish ownership, decision rights, governance, or incentive structure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Ownership, control rights, stakeholder incentives, and the legal allocation of Goldsky-branded assets were not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-customers-2022, clm-goldsky-polymarket-service, clm-goldsky-koi-service]
+    rationale: Independent reporting identifies real customers, and company-controlled case studies report uptime, throughput, migration, and daily-request workloads for customer production use. This is limited favorable utilization and workflow evidence, but payment, budgets, retention, and venture-scale market depth are not verified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Paying-customer status, budgets, retention, current utilization, and reachable market depth were not established.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish favorable or adverse regulatory treatment, jurisdictional exposure, or market-structure conditions.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Regulatory treatment, jurisdictional exposure, and material structural tailwinds or constraints were not established.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-pricing, clm-goldsky-product]
+    rationale: Company-controlled materials publish usage-based prices for indexing, pipelines, entities, and RPC requests alongside enterprise plans, aligned with the managed data products described. This is favorable evidence of a recurring monetization path, while realized revenue and contract economics remain undisclosed.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Realized revenue, discounts, contract terms, customer concentration, and gross margin were not established.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: The criterion applies, but the frozen packet does not establish revenue, costs, margins, burn, profitability, subsidies, or unit economics.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Revenue, gross margin, profitability, burn, runway, subsidies, and unit economics were not established.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-customers-2022, clm-goldsky-koi-service, clm-goldsky-polymarket-service]
+    rationale: Independent reporting identifies multiple customer relationships, and company-controlled case studies describe two functioning production deployments, including a rapid migration. This is favorable distribution evidence, but current repeatability, organic pull, retention, and customer expansion are not independently verified.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Current customer acquisition, repeat sales, retention, expansion, and organic versus paid integration pull were not established.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-koi-service]
+    rationale: Goldsky's company-controlled Koi case study reports a migration completed in under 48 hours with ongoing request handling, providing limited favorable evidence of low implementation friction. The timing and production result were not independently verified or shown representative.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent integration-time evidence, onboarding burden across customers, and compliance requirements were not established.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-product, clm-goldsky-streamling, clm-goldsky-polymarket-service]
+    rationale: Company-controlled materials describe real-time pipelines into customer-controlled sinks, an open-sourced Rust runtime, and high-throughput customer delivery. These provide limited favorable capability evidence, but comparative superiority and independent technical validation are not established.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: Independent comparative assessment, benchmark validation, and evidence of non-replicability were not established.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-goldsky-soc2, clm-goldsky-streamling]
+    rationale: Goldsky states that it completed a SOC 2 Type II attestation, offering limited favorable security-posture evidence, while its core streaming runtime is open sourced. The underlying attestation was unavailable and neither fact establishes broad safety, switching costs, or network effects.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: The attestation report and exceptions, current control coverage, switching costs, retention, and network effects were not established.
+analystNote: null

@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: DPC-02
+entityId: co-fluence-network
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:874fbe7f26e351e7e9018562577f9035e9067c0a06eb2496e574c646bbfcfedc
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-series-a, clm-fluence-total-funding, clm-fluence-network-revenue-2025]
+    rationale: "Independent reporting establishes a $9 million Series A and Cloudless reports $14 million total funding; Fluence also reports $1 million of cumulative network revenue. The revenue is first-party, combines FLT and USD, is not company revenue, and capital consumed is unknown, so direction remains neutral."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Capital spent and independently verified company-level operating output are unavailable."
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 1
+    citedEvidenceClaimIds: [clm-fluence-mainnet, clm-fluence-development-subsidy]
+    rationale: "The live marketplace depends on compute providers, cross-chain components, a dedicated IPC chain, bridge, and capacity commitments, while a DAO proposal funded Cloudless Labs with $400,000 monthly operations, up to $250,000 monthly marketing, and a $1 million setup reimbursement. The disclosed operating support provides adverse resource-intensity direction, without assuming the network footprint alone is negative."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Provider costs, utilization, post-2024 payments, and the share of spending dependent on DAO support remain incomplete."
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-network-revenue-2025, clm-fluence-gpu-launch]
+    rationale: "Fluence reports $1 million of cumulative network revenue by December 2025 and a live GPU marketplace with one signed deal. These first-party snapshots establish activity but not comparable temporal growth, persistence, repeat use, or retention."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Active buyers, workloads, compute hours, utilization, repeat use, and retention series are unavailable."
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-mainnet, clm-fluence-open-source]
+    rationale: "Fluence reports a mainnet integrating Ethereum, Filecoin, Axelar, and IPC components and publishes its network and developer-tool repositories. These first-party facts are relevant but do not establish external contributor growth, third-party integration expansion, or sustained external usage."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "External contributors, active developers, integration growth, and retained ecosystem usage are unavailable."
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-mainnet, clm-fluence-network-revenue-2025, clm-fluence-gpu-launch]
+    rationale: "The team delivered the Kras mainnet and later reported network revenue and a live GPU marketplace with a signed deal. This supports limited favorable execution direction, while all delivery and operating evidence here is first-party and the operating measures are not independently verified."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent operating validation and role-specific delivery attribution remain limited."
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-payment-staking, clm-fluence-development-subsidy, clm-fluence-dao-treasury, clm-fluence-token-supply]
+    rationale: "First-party and governance records disclose FLT staking and governance, DAO funding to Cloudless Labs, treasury assets, and token supply. These facts establish an incentive and control structure but not holder concentration, emissions, voting accountability, or favorable company-DAO alignment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Token allocation, voting concentration, emissions, and company-DAO contractual alignment are unresolved."
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-provider-economics-2025, clm-fluence-network-revenue-2025, clm-fluence-gpu-launch]
+    rationale: "Fluence reports provider annualized revenue, user savings above $4 million, $1 million of cumulative network revenue, and a signed GPU deal, providing limited favorable evidence of paid demand and customer value. These figures are first-party, not independently verified, and lack buyer, utilization, and revenue-allocation detail."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Paying-customer counts, workloads, utilization, repeat demand, and independently verified market depth are unavailable."
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet does not provide criterion-relevant evidence sufficient to assess jurisdictional exposure, regulatory trajectory, or a structural opening or hostile environment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Legal-entity boundaries, provider obligations, and jurisdiction-specific regulatory analysis are unavailable."
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-payment-staking, clm-fluence-network-revenue-2025]
+    rationale: "Fluence documents stablecoin compute payments and reports $1 million of cumulative FLT- and USD-denominated network revenue, supporting a recurring usage-payment path and limited favorable protocol-level capture. Both are first-party, and company take rate or recognized revenue is not established."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Provider share, protocol fees, currency conversion, and Cloudless Labs monetization are unavailable."
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-development-subsidy, clm-fluence-network-revenue-2025]
+    rationale: "Governance records document substantial monthly operating and marketing support to Cloudless Labs, while Fluence later reports only $1 million of cumulative network revenue that is distinct from company revenue. The disclosed reliance on ecosystem funding during the proposal period supports adverse sustainability direction, though periods and entities cannot be directly netted."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Company revenue, costs, margins, post-period DAO dependence, and provider economics are incomplete."
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-mainnet, clm-fluence-gpu-launch]
+    rationale: "Fluence reports a production network using several ecosystem components and one signed GPU deal. These first-party facts are relevant to access and initial distribution but do not establish repeatable acquisition, repeat customers, customer expansion, or integration-driven pull."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Customer identities, repeat contracts, channel performance, and integration expansion are unavailable."
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-mainnet, clm-fluence-payment-staking]
+    rationale: "The network uses stablecoin compute payments alongside FLT provider staking and multiple chain and bridge components. These requirements are relevant to ecosystem access, but dependencies alone do not establish adverse friction and no onboarding or integration burden is measured."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Onboarding time, wallet and bridge friction, provider setup, and developer integration effort are unavailable."
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-mainnet, clm-fluence-payment-staking]
+    rationale: "First-party evidence describes a decentralized compute marketplace combining an IPC chain anchored to Filecoin, capacity commitments, USDC compute payments, and FLT staking. This supports limited favorable architectural differentiation without independent comparative validation or performance benchmarks."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent architecture comparison, performance, cost, and reliability validation are unavailable."
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-fluence-audit-findings]
+    rationale: "An independent Decurity engagement reported one high-severity, two low-severity, and six informational findings in the audited DAO scope. The high-severity finding supports limited adverse security direction, while the packet does not establish remediation or characterize later marketplace and network code."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Remediation, deployed-commit coverage, complete incident history, switching costs, and network effects are unavailable."
+analystNote: "Judged only from the frozen Fluence Network FINAL_TEST packet; no external research or aggregate scoring was used."

@@ -1,0 +1,103 @@
+schemaVersion: 7
+candidateId: CCI-04
+canonicalId: quadrata
+canonicalName: Quadrata
+slug: quadrata
+description: Protocol for a privacy-preserving Web3 identity passport and associated compliance attestations.
+domain: https://quadrata.com
+firstObservedAt: "2022-07-12"
+category: custody_compliance_and_institutional_infrastructure
+entityType: protocol
+assetType: token
+institutionalOrientation: true
+digitalAssetLifecycle: mainnet_early
+financingStage: seed
+cohort: VALIDATION
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Public materials describe a Passport protocol and a company website, but do not establish token issuer, governance control, or the legal recipient of the seed financing.
+  unresolvedBoundaryNotes:
+    - Token, issuer, foundation, company, protocol governance, and fee-flow relationships are not established by dated independent evidence reviewed.
+people: []
+sources:
+  - id: src-quadrata-coindesk-2022
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: Dragonfly Capital Leads $7.5M Round for Quadrata's Identity Passport
+    url: https://www.coindesk.com/business/2022/07/12/dragonfly-capital-leads-75m-round-for-quadratas-identity-passport
+    sourceType: independent_journalism
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2022-07-12"
+    availabilityDate: "2022-07-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: corroborating
+evidenceClaims:
+  - id: ev-quadrata-seed-and-product
+    schemaVersion: 7
+    companyId: quadrata
+    claim: CoinDesk reported on July 12, 2022 that Dragonfly Capital led a $7.5 million round for Quadrata's verifiable, private identity-passport product for Web3 users.
+    statedValue: $7.5 million round
+    numericValue: 7.5
+    unit: usd_millions
+    sourceId: src-quadrata-coindesk-2022
+    supportingSourceIds: []
+    sourceUrl: https://www.coindesk.com/business/2022/07/12/dragonfly-capital-leads-75m-round-for-quadratas-identity-passport
+    publicationDate: "2022-07-12"
+    metricAsOfDate: "2022-07-12"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: financing_and_product
+    notes: The report establishes contemporaneous financing and product framing, not current adoption, token economics, or the financing recipient's entity structure.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: Confirm legal recipient, round composition, current operating status, integrations, governance, token relationship, and fee flows.
+    researchAssessmentId: quadrata-financing-product-1
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-quadrata-seed-2022
+    schemaVersion: 7
+    subjectType: protocol
+    subjectId: quadrata
+    subjectNameRaw: Quadrata
+    signalType: ecosystem_funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-quadrata-coindesk-2022
+    rawStrength: 0.45
+    evidenceSummary: CoinDesk reported a $7.5 million Dragonfly-led round for Quadrata.
+    evidenceIds: [ev-quadrata-seed-and-product]
+    publicationDate: "2022-07-12"
+    availabilityDate: "2022-07-12"
+    eventDate: "2022-07-12"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-quadrata-current-status
+    whatWasSearched: Dated independent coverage and dated official materials after the 2022 financing for current product operation, adoption, customers, and integrations.
+    whatCouldNotBeEstablished: Independently corroborated current operating activity or adoption available on or before 2026-09-10.
+    expectedToMatter: true
+  - id: gap-quadrata-token-governance-security
+    whatWasSearched: Dated evidence for token issuance, governance, fee flows, audit scope, incidents, and responsible legal entities.
+    whatCouldNotBeEstablished: Token and governance semantics, value capture, audit scope for current deployed code, and complete security-incident history.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: A company site and protocol terminology exist, but the legal and governance boundaries are unresolved.
+  sourceOriginUncertainty: The packet retains one independent contemporaneous report and does not inflate it with later derivative coverage.
+  likelyContradictions: null
+  completenessNotes: The dated record establishes a 2022 funding/product event. It does not justify a claim of current adoption, current security posture, or token value capture.
+researchCutoff: "2026-09-10"

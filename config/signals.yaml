@@ -1,0 +1,246 @@
+# Signal definitions.
+#
+# Each entry defines one observable event type: what it is, which way it points,
+# how much it is worth before any adjustment, and whether it decays.
+#
+# FACTS ENDURE. EVENTS DECAY.
+#
+# Every entry in this file is an EVENT: something that happened at a point in
+# time. Every event therefore decays, and every definition below is required by
+# schema to declare a half life.
+#
+# Enduring facts are not signals and do not appear here. A founder's
+# background, a granted regulatory approval, a company's product category, and
+# the identity of a sitting executive are as true now as when first recorded.
+# They live on the objects they describe and feed Thesis Fit directly:
+#
+#   founder background          -> Person.companyTenures, priorCompanies, education
+#   regulatory approval status  -> EvidenceClaim with topic 'regulatory'
+#   product category            -> Company.sector, Company.subsector
+#   executive identity          -> Person.currentRole, Person.companyTenures
+#
+# Each of those has a corresponding EVENT here: founder_activity,
+# regulatory_milestone, product_launch, and executive_hire. The event is the
+# moment of change and belongs in momentum. The fact is the resulting state and
+# belongs on the record.
+#
+# An earlier version of this file marked founder_activity and
+# regulatory_milestone as enduring, which conflated the two. A founder's
+# history does not decay, but the observation "this founder shipped something
+# last week" certainly does, and it is the second one that a momentum score is
+# asking about. Both are now time sensitive.
+#
+# HALF LIVES ARE CALIBRATION HYPOTHESES
+#
+# The half lives below are reasoned starting values, not findings. None has
+# been validated against outcomes, because validating them is what the Backtest
+# Lab is for. They are recorded here so they are visible and adjustable, and
+# they should be reviewed once a real corpus exists.
+#
+# minimumEvidence is the number of independent supporting claims required
+# before the signal may contribute at all. Independence is determined by
+# SourceRecord.originatesFrom, so three copies of one press release count once.
+
+schemaVersion: 1
+version: "1.0.0"
+
+signals:
+  - id: customer_momentum
+    name: "Customer momentum"
+    category: demand
+    direction: positive
+    baseStrength: 0.75
+    isTimeSensitive: true
+    halfLifeDays: 270
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory, official_company, independent_journalism, specialist_industry, identified_social]
+    description: "A named customer, a disclosed contract, or independently reported adoption."
+
+  - id: enterprise_expansion
+    name: "Enterprise expansion"
+    category: demand
+    direction: positive
+    baseStrength: 0.85
+    isTimeSensitive: true
+    halfLifeDays: 365
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory, official_company, independent_journalism, specialist_industry]
+    description: "An existing customer expanding scope, seats, or contract value. Harder to purchase than a new logo."
+
+  - id: executive_hire
+    name: "Executive hire"
+    category: team
+    direction: positive
+    baseStrength: 0.55
+    isTimeSensitive: true
+    halfLifeDays: 540
+    minimumEvidence: 1
+    eligibleSourceTypes: [official_company, founder_or_executive, independent_journalism, identified_social]
+    description: "A functional leader joining, particularly into revenue or operations."
+
+  - id: product_launch
+    name: "Product launch"
+    category: product
+    direction: positive
+    baseStrength: 0.50
+    isTimeSensitive: true
+    halfLifeDays: 270
+    minimumEvidence: 1
+    eligibleSourceTypes: [official_company, founder_or_executive, independent_journalism, specialist_industry, community]
+    description: "A new product or a materially new capability shipped and publicly available."
+
+  - id: pricing_change
+    name: "Pricing change"
+    category: product
+    direction: positive
+    baseStrength: 0.60
+    isTimeSensitive: true
+    halfLifeDays: 540
+    minimumEvidence: 1
+    eligibleSourceTypes: [official_company, structured_secondary]
+    description: "A move to enterprise or usage-based pricing, or a material increase, usually following evidence of willingness to pay."
+
+  - id: geographic_expansion
+    name: "Geographic expansion"
+    category: market
+    direction: positive
+    baseStrength: 0.55
+    isTimeSensitive: true
+    halfLifeDays: 540
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory, official_company, independent_journalism]
+    description: "Opening a second market, an office, or a local entity."
+
+  - id: partnership
+    name: "Partnership"
+    category: demand
+    direction: positive
+    baseStrength: 0.50
+    isTimeSensitive: true
+    halfLifeDays: 365
+    minimumEvidence: 1
+    eligibleSourceTypes: [official_company, independent_journalism, specialist_industry]
+    description: "A distribution, technology, or channel partnership with a larger platform."
+
+  - id: funding
+    name: "Financing event"
+    category: capital
+    direction: ambiguous
+    baseStrength: 0.45
+    isTimeSensitive: true
+    halfLifeDays: 730
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory, official_company, independent_journalism, structured_secondary]
+    description: >
+      A disclosed financing. Deliberately ambiguous rather than positive: a large round
+      on structured terms can indicate the company could not raise cleanly. Direction is
+      determined per event from the terms, never assumed from the headline figure.
+
+  - id: technical_adoption
+    name: "Technical adoption"
+    category: demand
+    direction: positive
+    baseStrength: 0.60
+    isTimeSensitive: true
+    halfLifeDays: 365
+    minimumEvidence: 2
+    eligibleSourceTypes: [community, identified_social, specialist_industry]
+    description: >
+      Independent developers or engineers adopting the product. Requires two independent
+      claims because a single enthusiastic post is not adoption.
+
+  - id: hiring_acceleration
+    name: "Hiring acceleration"
+    category: team
+    direction: positive
+    baseStrength: 0.40
+    isTimeSensitive: true
+    halfLifeDays: 180
+    minimumEvidence: 2
+    eligibleSourceTypes: [official_company, structured_secondary]
+    description: "A sustained increase in open roles, weighted toward revenue-generating functions."
+
+  - id: founder_activity
+    name: "Founder activity"
+    category: team
+    direction: positive
+    baseStrength: 0.40
+    isTimeSensitive: true
+    halfLifeDays: 120
+    minimumEvidence: 1
+    eligibleSourceTypes: [official_company, founder_or_executive, independent_journalism, identified_social]
+    description: >
+      Recent public activity by a founder: shipping, publishing, speaking, or hiring in
+      the open. An EVENT, not a biography. Founder background is an enduring fact and
+      lives on the Person record, where it feeds Thesis Fit without decaying.
+      Half life 120 days: this is the shortest in the file because it is the signal most
+      about right now, and it is used for contact timing as much as for momentum.
+
+  - id: leadership_departure
+    name: "Leadership departure"
+    category: risk
+    direction: negative
+    baseStrength: 0.65
+    isTimeSensitive: true
+    halfLifeDays: 540
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory, official_company, independent_journalism, identified_social]
+    description: "A founder or functional leader departing, particularly during a growth phase."
+
+  - id: regulatory_milestone
+    name: "Regulatory milestone"
+    category: market
+    direction: positive
+    baseStrength: 0.70
+    isTimeSensitive: true
+    halfLifeDays: 730
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory]
+    description: >
+      The granting of a clearance, certification, licence, or approval. An EVENT: the
+      moment a barrier was cleared. The resulting approval STATUS is an enduring fact and
+      lives as an EvidenceClaim with topic 'regulatory', where it feeds Thesis Fit
+      without decaying. Revocation is a separate negative event.
+      Half life 730 days: the longest in the file, because clearing a regulatory barrier
+      stays informative about a company's trajectory far longer than a product launch.
+
+  - id: site_change
+    name: "Company page change"
+    category: product
+    direction: neutral
+    baseStrength: 0.30
+    isTimeSensitive: true
+    halfLifeDays: 120
+    minimumEvidence: 1
+    eligibleSourceTypes: [official_company]
+    description: "A material change to a company page region such as pricing, customers, or careers."
+
+  - id: media_coverage
+    name: "Media coverage"
+    category: market
+    direction: neutral
+    baseStrength: 0.20
+    isTimeSensitive: true
+    halfLifeDays: 180
+    minimumEvidence: 2
+    eligibleSourceTypes: [independent_journalism, specialist_industry]
+    description: >
+      Coverage by an outlet. Weak and neutral by design. Volume of coverage is not
+      evidence of quality, and duplicated syndications collapse to a single source.
+
+  - id: security_incident
+    name: "Security incident"
+    category: risk
+    direction: negative
+    baseStrength: 0.55
+    isTimeSensitive: true
+    halfLifeDays: 365
+    minimumEvidence: 1
+    eligibleSourceTypes: [regulatory, official_company, independent_journalism, specialist_industry]
+    description: >
+      A confirmed breach, unauthorized access, or disclosed vulnerability with customer
+      exposure. An EVENT: the moment the incident became public. Added in Phase 4B for the
+      Batch 2 corpus, which carries three. Negative, and the resulting enterprise-trust
+      question is a diligence item rather than a score. Half life 365 days: an incident's
+      bearing on a company's trajectory outlasts a product launch but is not permanent.
+      A positive growth or funding event does not cancel it.

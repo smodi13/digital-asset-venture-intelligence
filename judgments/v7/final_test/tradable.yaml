@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: TRA-03
+entityId: co-tradable
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:0b02db349875c2c1994ac32fa12577b25ea31e01208f33d237cb632fc3fefc4b
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-seed, clm-tradable-active-loans-2025]
+    rationale: "A partner source establishes an undisclosed seed financing, and a third-party estimate reports $2.08 billion of active loans. Because financing amount, capital consumed, and the relationship between loan notional and operating output are unresolved, scale-versus-capital direction cannot be established."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Financing amount, capital spent, revenue, and reconciled operating-scale measures are unavailable."
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-product-2023, clm-tradable-compliance-controls]
+    rationale: "Partner and company materials describe ongoing deal operations, investor management, AML/KYC, accreditation, transfer controls, capital calls, distributions, and reporting. These are relevant operating requirements but do not quantify labor, infrastructure, or compliance burden direction."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Staffing, service-provider, infrastructure, and per-position operating costs are unavailable."
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-tokenized-1-7b, clm-tradable-active-loans-2025]
+    rationale: "Tradable announced $1.7 billion across 27 tokenizations in January 2025, and a third-party estimate reported $2.08 billion of active loans by June. These differently defined snapshots are relevant usage evidence but are not a comparable temporal series and do not establish retention."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Comparable multi-period activity, unique customers, repeat issuance, and retention are unavailable."
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-tokenized-1-7b]
+    rationale: "Tradable's company-originated announcement reports 27 private-credit positions tokenized on ZKsync, providing relevant external ecosystem-use context. It does not establish external developer growth, expanding integrations, retained use, or independently verified ecosystem momentum."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "External developer, contributor, integration-growth, and retained ecosystem-usage evidence is unavailable."
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-product-2023, clm-tradable-tokenized-1-7b, clm-tradable-active-loans-2025]
+    rationale: "The team delivered an integrated private-credit workflow and reported 27 tokenized positions; a separate third-party estimate identifies substantial active loans. This supports limited favorable delivery evidence, while the tokenization claim originates from the company announcement and underlying position reconciliation is absent."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Position-level verification and role-specific execution attribution remain incomplete."
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet does not establish company ownership, board or control rights, incentive arrangements, or governance over tokenized positions sufficiently to assess alignment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Ownership, control, investor rights, and founder post-transition governance are unavailable."
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-supply-contracted, clm-tradable-tokenized-1-7b, clm-tradable-active-loans-2025]
+    rationale: "Tradable reported $500 million of contracted supply and later $1.7 billion across 27 tokenizations, while a third-party estimate identifies $2.08 billion of active loans. This supports favorable market-demand direction, limited by company origin of the first two figures and incomplete reconciliation of notional, funded, and active balances."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Paid budgets, unique customers, conversion, repeat use, and reconciled position-level balances are incomplete."
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-compliance-controls, clm-tradable-market-limit]
+    rationale: "Tradable reports AML/KYC, accreditation, and transfer-control features, while S&P reports that tokenized private credit remained nascent without an established secondary market for examined tokens. These facts show relevant compliance design and structural constraints but do not establish entity-specific regulatory fit direction."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Offering-specific legal opinions, regulated-party roles, and jurisdictional analysis are unavailable."
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet describes platform functions and asset notional but does not provide criterion-relevant pricing, fees, subscriptions, take rate, revenue ownership, or company monetization."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Fee schedule, recurring monetization, and recognized company revenue are unavailable."
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet does not provide criterion-relevant revenue, costs, margins, burn, losses, servicing economics, or subsidy evidence sufficient to assess sustainability."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Company financials and complete position economics are unavailable."
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-supply-contracted, clm-tradable-tokenized-1-7b]
+    rationale: "A platform partner reported $500 million of contracted supply, and Tradable later announced 27 tokenized positions, supporting limited favorable evidence of a functioning partner-led channel. Conversion, repeat customers, and the later announcement's underlying deployments are not independently verified."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Contract conversion, repeat issuers, retained investors, and channel expansion are unavailable."
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-compliance-controls]
+    rationale: "Company materials explicitly describe AML/KYC, accreditation, transfer restrictions, and controlled data-room access, establishing concrete eligibility and transfer friction even though the integrated workflow may help administer it. The net implementation burden is not measured."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Onboarding time, rejection rates, legal-service burden, and integration effort are unavailable."
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-product-2023, clm-tradable-compliance-controls]
+    rationale: "Partner and first-party materials describe an integrated workflow spanning diligence, signing, investor controls, capital calls, distributions, reporting, and onchain representations. This supports limited favorable product differentiation, without independent comparison or validated performance superiority."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent product comparison, technical validation, and workflow performance measures are unavailable."
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-tradable-tokenized-1-7b, clm-tradable-market-limit]
+    rationale: "Tradable's company-originated announcement identifies 27 positions, while independent category research reports no established secondary market for examined private-credit tokens. These facts are relevant to workflow embedment and liquidity-based network effects but are inconclusive for Tradable-specific durability, security, or moat."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Security reviews, switching costs, repeat workflows, actual secondary transfers, and durable network effects are unavailable."
+analystNote: "Judged only from the frozen Tradable FINAL_TEST packet; no external research or aggregate scoring was used."

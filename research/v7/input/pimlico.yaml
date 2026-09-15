@@ -1,0 +1,404 @@
+schemaVersion: 7
+candidateId: DIM-02
+canonicalId: co-pimlico
+canonicalName: Pimlico
+slug: pimlico
+description: Account-abstraction infrastructure company providing hosted ERC-4337 bundlers, paymasters, and developer software.
+domain: https://www.pimlico.io
+firstObservedAt: "2026-09-10"
+category: developer_infrastructure_and_middleware
+entityType: company
+assetType: equity
+institutionalOrientation: false
+digitalAssetLifecycle: null
+financingStage: seed
+cohort: FINAL_TEST
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: Pimlico is an operating company and software provider, not the ERC-4337 protocol or an underlying blockchain network.
+  unresolvedBoundaryNotes:
+    - The public record reviewed did not fully establish the legal and intellectual-property relationship between the Pimlico brand and Austerlitz Labs.
+people:
+  - id: per-kristof-gazso
+    schemaVersion: 7
+    name: Kristof Gazso
+    aliases: []
+    currentRole: Founder
+    companyTenures:
+      - companyId: co-pimlico
+        companyName: Pimlico
+        role: Founder
+        startDate: "2023-01-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-pimlico-techcrunch]
+    priorCompanies: [Nethermind]
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-pimlico-seed]
+    sourceIds: [src-pimlico-techcrunch, src-pimlico-interview]
+sources:
+  - &source_base
+    id: src-pimlico-preseed
+    schemaVersion: 7
+    publisher: Pimlico
+    title: Announcing our $1.6m pre-seed
+    url: https://blog.pimlico.io/posts/pre-seed
+    sourceType: official_company
+    tier: b
+    reliability: 0.68
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-13T12:00:00.000Z"
+    publishedAt: "2023-09-25"
+    availabilityDate: "2023-09-25"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - <<: *source_base
+    id: src-pimlico-seed
+    title: Announcing our $4.2m seed
+    url: https://blog.pimlico.io/posts/seed
+    publishedAt: "2023-11-07"
+    availabilityDate: "2023-11-07"
+  - <<: *source_base
+    id: src-pimlico-techcrunch
+    publisher: TechCrunch
+    title: a16z backs crypto startup Pimlico with its first check from London office
+    url: https://techcrunch.com/2023/11/07/a16z-backs-crypto-startup-pimlico-its-first-check-from-london-office/
+    sourceType: independent_journalism
+    reliability: 0.82
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2023-11-07"
+    availabilityDate: "2023-11-07"
+    supportRole: transaction_detail
+  - <<: *source_base
+    id: src-pimlico-safe
+    publisher: Safe Foundation
+    title: Pimlico and Safe advance account abstraction with launch of ERC-4337 module
+    url: https://safefoundation.org/blog/pimlico-and-safe-advancing-account-abstraction-with-launch-of-erc-4337
+    sourceType: customer_vendor
+    reliability: 0.74
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2023-11-27"
+    availabilityDate: "2023-11-27"
+    supportRole: customer_vendor
+  - <<: *source_base
+    id: src-pimlico-interview
+    publisher: Web3 Galaxy Brain
+    title: Kristof Gazso, Founder of Pimlico
+    url: https://web3galaxybrain.com/episode/Kristof-Gazso-Founder-of-Pimlico
+    sourceType: founder_or_executive
+    reliability: 0.65
+    isIndependent: false
+    canCorroborate: false
+    publishedAt: "2024-02-06"
+    availabilityDate: "2024-02-06"
+    supportRole: contextual
+  - <<: *source_base
+    id: src-pimlico-nethermind
+    publisher: Nethermind
+    title: Securing Pimlico's Account Abstraction Infrastructure
+    url: https://www.nethermind.io/blog/securing-pimlicos-account-abstraction-infrastructure
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    publishedAt: "2025-06-05"
+    availabilityDate: "2025-06-05"
+    supportRole: audit_finding
+  - <<: *source_base
+    id: src-pimlico-tos
+    publisher: Pimlico
+    title: Terms of Service
+    url: https://www.pimlico.io/tos
+    sourceType: official_company
+    reliability: 0.68
+    publishedAt: "2023-12-12"
+    availabilityDate: "2023-12-12"
+    supportRole: legal_entity_disclosure
+  - <<: *source_base
+    id: src-pimlico-alto
+    publisher: Pimlico Labs
+    title: Alto ERC-4337 bundler repository
+    url: https://github.com/pimlicolabs/alto
+    sourceType: code_repository
+    reliability: 0.75
+    publishedAt: null
+    availabilityDate: "2026-08-31"
+    supportRole: primary_fact
+  - <<: *source_base
+    id: src-pimlico-docs
+    publisher: Pimlico
+    title: Pimlico documentation
+    url: https://docs.pimlico.io/
+    sourceType: official_company
+    reliability: 0.68
+    publishedAt: null
+    availabilityDate: "2026-09-10"
+    supportRole: direct_company_disclosure
+evidenceClaims:
+  - &claim_base
+    id: clm-pimlico-preseed
+    schemaVersion: 7
+    companyId: co-pimlico
+    claim: Pimlico announced a $1.6 million pre-seed financing led by 1confirmation in September 2023.
+    statedValue: $1.6 million pre-seed
+    numericValue: 1.6
+    unit: usd_millions
+    sourceId: src-pimlico-preseed
+    supportingSourceIds: []
+    sourceUrl: https://blog.pimlico.io/posts/pre-seed
+    publicationDate: "2023-09-25"
+    metricAsOfDate: "2023-09-25"
+    lastVerified: "2026-09-13T12:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: financing
+    notes: Equity-company financing is not protocol liquidity, fees, revenue, or capital spent.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - <<: *claim_base
+    id: clm-pimlico-seed
+    claim: Pimlico announced a $4.2 million seed financing led by Andreessen Horowitz in November 2023.
+    statedValue: $4.2 million seed
+    numericValue: 4.2
+    sourceId: src-pimlico-seed
+    supportingSourceIds: [src-pimlico-techcrunch]
+    sourceUrl: https://blog.pimlico.io/posts/seed
+    publicationDate: "2023-11-07"
+    metricAsOfDate: "2023-11-07"
+  - <<: *claim_base
+    id: clm-pimlico-founder
+    claim: TechCrunch identified Kristof Gazso as Pimlico's founder and reported that he co-authored ERC-4337.
+    statedValue: Founder and ERC-4337 co-author
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-techcrunch
+    supportingSourceIds: []
+    sourceUrl: https://techcrunch.com/2023/11/07/a16z-backs-crypto-startup-pimlico-its-first-check-from-london-office/
+    publicationDate: "2023-11-07"
+    metricAsOfDate: null
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: people
+    notes: null
+  - <<: *claim_base
+    id: clm-pimlico-product
+    claim: Pimlico's hosted products include ERC-4337 bundlers and paymasters, including ERC-20-denominated paymaster support.
+    statedValue: Bundlers and paymasters
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-preseed
+    supportingSourceIds: [src-pimlico-docs]
+    sourceUrl: https://blog.pimlico.io/posts/pre-seed
+    publicationDate: "2023-09-25"
+    metricAsOfDate: null
+    topic: product
+  - <<: *claim_base
+    id: clm-pimlico-userops-2023
+    claim: Pimlico reported having processed nearly three million user operations by November 2023.
+    statedValue: nearly 3 million user operations
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-seed
+    supportingSourceIds: []
+    sourceUrl: https://blog.pimlico.io/posts/seed
+    publicationDate: "2023-11-07"
+    metricAsOfDate: "2023-11-07"
+    topic: adoption
+    notes: This company-reported protocol activity is not company revenue or a user count.
+  - <<: *claim_base
+    id: clm-pimlico-safe-integration
+    claim: Safe Foundation reported that Pimlico integrated with Safe's canonical ERC-4337 module.
+    statedValue: Safe ERC-4337 module integration
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-safe
+    supportingSourceIds: []
+    sourceUrl: https://safefoundation.org/blog/pimlico-and-safe-advancing-account-abstraction-with-launch-of-erc-4337
+    publicationDate: "2023-11-27"
+    metricAsOfDate: "2023-11-27"
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: integration
+  - <<: *claim_base
+    id: clm-pimlico-bundler-risk
+    claim: Gazso said an ERC-4337 bundler could theoretically front-run or sell order flow, while stating that Pimlico did not do so.
+    statedValue: theoretical bundler order-flow risk; company denial of practice
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-interview
+    supportingSourceIds: []
+    sourceUrl: https://web3galaxybrain.com/episode/Kristof-Gazso-Founder-of-Pimlico
+    publicationDate: "2024-02-06"
+    metricAsOfDate: null
+    confidence: medium
+    modelEligibility: caveat
+    topic: security_and_market_structure
+    notes: The risk statement and the company's denial are both attributed to the founder interview, not independently verified behavior.
+  - <<: *claim_base
+    id: clm-pimlico-inclusion-limit
+    claim: Gazso described private-mempool limitations on some chains and said about 40% of user operations then experienced inclusion delays.
+    statedValue: about 40% experienced inclusion delays
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-interview
+    supportingSourceIds: []
+    sourceUrl: https://web3galaxybrain.com/episode/Kristof-Gazso-Founder-of-Pimlico
+    publicationDate: "2024-02-06"
+    metricAsOfDate: "2024-02-06"
+    confidence: medium
+    modelEligibility: caveat
+    topic: operational_limitations
+  - <<: *claim_base
+    id: clm-pimlico-audit
+    claim: Nethermind completed a security assessment of Pimlico's account-abstraction infrastructure in 2025.
+    statedValue: Security assessment completed
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-nethermind
+    supportingSourceIds: []
+    sourceUrl: https://www.nethermind.io/blog/securing-pimlicos-account-abstraction-infrastructure
+    publicationDate: "2025-06-05"
+    metricAsOfDate: null
+    sourceSubtype: reported_fact
+    confidence: high
+    topic: security
+    notes: The audit supports only its stated scope and does not establish that later code is safe.
+  - <<: *claim_base
+    id: clm-pimlico-audit-usage
+    claim: Nethermind reported that Pimlico was processing more than one million transactions monthly across six chains at the time of its assessment.
+    statedValue: more than 1 million transactions monthly across 6 chains
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-nethermind
+    supportingSourceIds: []
+    sourceUrl: https://www.nethermind.io/blog/securing-pimlicos-account-abstraction-infrastructure
+    publicationDate: "2025-06-05"
+    metricAsOfDate: "2025-06-05"
+    sourceSubtype: third_party_estimate
+    confidence: medium
+    topic: adoption
+    notes: Transaction activity is not company revenue, customer count, or profitability.
+  - <<: *claim_base
+    id: clm-pimlico-pricing-semantics
+    claim: Pimlico's terms describe hosted bundler, paymaster, and pro services for which customers owe order-based fees.
+    statedValue: fees per Order
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-tos
+    supportingSourceIds: []
+    sourceUrl: https://www.pimlico.io/tos
+    publicationDate: "2023-12-12"
+    metricAsOfDate: null
+    topic: business_model
+  - <<: *claim_base
+    id: clm-pimlico-open-source
+    claim: Pimlico publishes Alto as a GPL-3.0-licensed TypeScript implementation of an ERC-4337 bundler.
+    statedValue: Alto; GPL-3.0; TypeScript
+    numericValue: null
+    unit: null
+    sourceId: src-pimlico-alto
+    supportingSourceIds: []
+    sourceUrl: https://github.com/pimlicolabs/alto
+    publicationDate: null
+    metricAsOfDate: null
+    topic: developer_ecosystem
+signalEvents:
+  - &event_base
+    id: sig-pimlico-preseed
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-pimlico
+    subjectNameRaw: Pimlico
+    signalType: funding
+    signalCategory: capital
+    signalDirection: neutral
+    sourceId: src-pimlico-preseed
+    rawStrength: 0.6
+    evidenceSummary: Pimlico announced a $1.6 million pre-seed.
+    evidenceIds: [clm-pimlico-preseed]
+    publicationDate: "2023-09-25"
+    availabilityDate: "2023-09-25"
+    eventDate: "2023-09-25"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - <<: *event_base
+    id: sig-pimlico-seed
+    sourceId: src-pimlico-seed
+    rawStrength: 0.7
+    evidenceSummary: Pimlico announced a $4.2 million seed.
+    evidenceIds: [clm-pimlico-seed]
+    publicationDate: "2023-11-07"
+    availabilityDate: "2023-11-07"
+    eventDate: "2023-11-07"
+  - <<: *event_base
+    id: sig-pimlico-safe
+    signalType: major_integration_partnership
+    signalCategory: ecosystem
+    signalDirection: neutral
+    sourceId: src-pimlico-safe
+    rawStrength: 0.6
+    evidenceSummary: Safe Foundation reported the Pimlico integration with its ERC-4337 module.
+    evidenceIds: [clm-pimlico-safe-integration]
+    publicationDate: "2023-11-27"
+    availabilityDate: "2023-11-27"
+    eventDate: "2023-11-27"
+  - <<: *event_base
+    id: sig-pimlico-audit
+    signalType: product_launch
+    signalCategory: product
+    signalDirection: neutral
+    sourceId: src-pimlico-nethermind
+    rawStrength: 0.5
+    evidenceSummary: Nethermind published a scoped security assessment.
+    evidenceIds: [clm-pimlico-audit]
+    publicationDate: "2025-06-05"
+    availabilityDate: "2025-06-05"
+    eventDate: "2025-06-05"
+digitalAssetMetrics: null
+unknowns:
+  - id: gap-pimlico-revenue
+    whatWasSearched: Terms, product documentation, financing coverage, and audit materials.
+    whatCouldNotBeEstablished: Pimlico company revenue, gross margin, profitability, or customer-level economics.
+    expectedToMatter: true
+  - id: gap-pimlico-capital-use
+    whatWasSearched: Pre-seed and seed announcements and independent financing coverage.
+    whatCouldNotBeEstablished: Capital actually spent, cash balance, burn rate, or runway.
+    expectedToMatter: true
+  - id: gap-pimlico-customers
+    whatWasSearched: Official product materials, Safe integration evidence, interviews, and security review.
+    whatCouldNotBeEstablished: Independently verified current paying-customer count, retention, or concentration.
+    expectedToMatter: true
+  - id: gap-pimlico-security-delta
+    whatWasSearched: Nethermind's assessment and current public repositories.
+    whatCouldNotBeEstablished: Whether all production deployments at the cutoff matched the reviewed versions and scope.
+    expectedToMatter: true
+  - id: gap-pimlico-later-financing
+    whatWasSearched: Public company and independent financing sources through the cutoff.
+    whatCouldNotBeEstablished: Any completed equity financing after the November 2023 seed.
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: The reviewed sources establish Pimlico as a company providing ERC-4337 infrastructure, but do not fully resolve its legal boundary with Austerlitz Labs.
+  sourceOriginUncertainty: Company-reported usage and founder interview statements remain non-independent even when carried by a podcast host.
+  likelyContradictions: null
+  completenessNotes: User-operation and transaction counts are protocol-service activity, not user counts or company revenue. No token or network lifecycle is inferred for the equity company.
+researchCutoff: "2026-09-10"

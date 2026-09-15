@@ -1,0 +1,231 @@
+schemaVersion: 7
+candidateId: CSG-01
+entityId: co-echelon-prime-parallel
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:861b0efad2d633434e46ed3b6bae29e43a1117cd76d023f40da3b6c757d45fcb"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-echelon-seriesb-35m]
+    rationale: >-
+      Primary capital consumed is well-corroborated: a $50M Series A (2021)
+      and a $35M Series B (2024), roughly $85M cumulative equity funding,
+      plus a separate PRIME TGE. No admissible adoption/usage metric exists
+      (gap-echelon-adoption-metrics): the only historical scale figure, 2021
+      NFT primary-sale volume, is stale and pre-dates the game's actual
+      playable release, so it was not encoded as a current-scale metric. With
+      no current scale evidence, no ratio to capital consumed can be
+      responsibly judged.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No current player/retention/marketplace-volume metric exists
+      (gap-echelon-adoption-metrics).
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 40
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-echelon-esports-3m]
+    rationale: >-
+      The Foundation committed $3M in esports prize funding for 2025
+      (Seasons 2-3), a 6x increase over the Season 1 pool, a concrete,
+      recurring foundation-funded subsidy to drive engagement. This is one
+      real data point suggesting the ecosystem's engagement model currently
+      leans on continued foundation-funded incentive spend rather than
+      organic, self-sustaining participation; no claim quantifies compute,
+      hosting, or other operating costs beyond this single subsidy category.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No compute/infrastructure cost evidence exists; only one incentive-
+      subsidy category (esports prizes) is documented.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The only 2025 product-status source explicitly documents development
+      progress (a matchmaking-system overhaul, mobile-device stability
+      testing, a scheduled card-set expansion), not adoption; it carries no
+      player-count, retention, or transaction data. No claim establishes
+      real, persisting usage growth (gap-echelon-adoption-metrics).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No player-count, retention, or usage-growth evidence exists
+      (gap-echelon-adoption-metrics).
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-echelon-beezie-partnership]
+    rationale: >-
+      A March 2026 partnership with Beezie (on-chain graded trading-card
+      raffles) is a real disclosed third-party integration, but it is
+      sourced only to Echelon's own official social account, with no
+      independent journalism, analytics, or on-chain corroboration of scope
+      or actual usage. One first-party-only instance does not establish a
+      pattern of growing, staying-live third-party integrations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent corroboration of the Beezie partnership's scope or
+      usage exists; no second integration example exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 55
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-echelon-founders-roles, clm-echelon-2025-product-progress]
+    rationale: >-
+      Founder identity and titles (Mojtahedi as CEO, Haldenby as CTO) rest
+      on a single third-party analytical source with no independent
+      corroboration and no prior-company/background data (priorCompanies is
+      empty for both), so no track-record-based judgment is possible from
+      biography alone. What is observable is continued, multi-year shipped
+      output under the same leadership since 2021: two institutional
+      funding rounds, a live open-beta game client, an operating esports
+      league, and incremental 2025 engineering progress (matchmaking
+      overhaul, mobile stability work), which is evidence of sustained
+      execution even absent detailed personal-background sourcing.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Founder identity rests on a single source with no independent
+      corroboration and no prior-company/background detail.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-echelon-governance-structure, clm-echelon-prime-tge]
+    rationale: >-
+      An elected governing body (Emissaries Prime, first 11 members elected
+      February 2022) is described as functioning like a corporate board, a
+      real accountability mechanism on paper, but its current membership and
+      demonstrated activity as of the cutoff is unverified (single source,
+      2025 publication describing a 2022 structure). Separately, PRIME's
+      initial allocation gave roughly 16.24% to investors and a comparable
+      share to the founding team, a disclosed but not clearly excessive
+      concentration absent total-supply/vesting-schedule context. Neither
+      fact alone supports a clearly favorable or unfavorable lean.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Emissaries Prime's current membership and activity level as of the
+      cutoff is unverified; full vesting-schedule/total-supply context for
+      the initial PRIME allocation is not established.
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying demand, workflow criticality, or
+      addressable market depth for the Parallel TCG beyond the company's own
+      capital raises, which are supply-side financing facts, not demand-side
+      evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand-side or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No source establishes incorporation jurisdiction for either Parallel
+      Studios or the Echelon Prime Foundation, nor the precise legal
+      relationship between the equity-funded studio and the token-issuing
+      foundation (gap-echelon-legal-entity), foreclosing a regulatory-fit
+      judgment.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Incorporation jurisdiction and studio/foundation legal relationship
+      are unresolved (gap-echelon-legal-entity).
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a company- or protocol-side fee/take-rate mechanism
+      from Parallel TCG marketplace activity, staking ("cacher") economics,
+      or the esports league. The $3M esports prize commitment is
+      foundation-funded outflow, not value capture.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No fee-capture or take-rate mechanism evidence exists in the frozen
+      packet.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, contribution economics, or reliance on
+      continued token sales versus equity fundraising to fund operations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No recurring burn or contribution-economics evidence exists in the
+      frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-echelon-beezie-partnership]
+    rationale: >-
+      The Beezie partnership is a real announced integration bringing
+      on-chain graded trading cards into the ecosystem, a candidate
+      distribution channel, but it is sourced only to Echelon's own official
+      account with no independent confirmation of actual usage, volume, or
+      whether it drove further integrations.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent corroboration of Beezie-partnership usage or downstream
+      integration effects exists.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents wallet UX, onboarding time, compliance requirements,
+      or liquidity-access friction for a new player entering Parallel TCG or
+      acquiring PRIME.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction evidence exists in the frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      The available 2025 product-status source documents internal
+      engineering progress (matchmaking overhaul, mobile stability testing)
+      from a single outlet, not an independent comparative assessment of the
+      game's mechanics, on-chain design, or architecture against other
+      blockchain trading-card games or traditional TCGs.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical or competitive-differentiation assessment
+      exists in the frozen packet.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Full smart-contract audit scope and findings are unverified
+      (gap-echelon-audit-scope): only a passing, unconfirmed reference to a
+      Quantstamp audit of one caching contract was found, and no primary
+      audit report was located or opened. No claim documents player
+      switching costs, retained liquidity, or observed resistance to
+      competitive displacement despite roughly five years of operating
+      history.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Security-audit scope and findings are unverified
+      (gap-echelon-audit-scope); no network-effect or switching-cost
+      evidence exists.

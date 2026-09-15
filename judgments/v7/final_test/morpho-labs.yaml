@@ -1,0 +1,122 @@
+schemaVersion: 7
+candidateId: DCM-01
+entityId: co-morpho-labs
+cohort: FINAL_TEST
+researchBaselineCommit: 0c10a376c3ccc5df3429d397673b59ab97812b5f
+researchPacketSha256: sha256:ccaab098a167fbaf3eb9f10d6c20978328d198c1279848bd4534ee51a6d23386
+methodologyConfigFingerprint: sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17
+mandateStatus: NOT_ASSESSED
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-token-financing-50m, clm-morpho-prior-financing-18m, clm-morpho-2025-users, clm-morpho-2025-deposits]
+    rationale: "Independent reporting establishes $50 million of private-token financing and $18 million of earlier unspecified financing; Morpho reports 1.4 million-plus users and $13 billion of deposits by year-end 2025. The scale figures are first-party, deposits are protocol liquidity, and capital consumed is unknown, leaving direction inconclusive."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Capital spent and independently verified, comparable operating-scale measures are unavailable."
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-protocol-architecture, clm-morpho-2025-deposits]
+    rationale: "First-party evidence describes immutable isolated lending markets and substantial externally supplied deposits. This establishes relevant infrastructure and liquidity resources but not Morpho's recurring labor, compute, subsidy, or operating burden."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Recurring company and protocol resource costs are not quantified."
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 70
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-2025-users, clm-morpho-2025-deposits]
+    rationale: "Morpho reports users increasing from 67,000 to more than 1.4 million and deposits from $5 billion to $13 billion during 2025, providing favorable temporal direction. Both series are first-party, not independently verified, and lack user-definition and retention methodology."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent measurement, deduplication, retained cohorts, and repeat-borrowing data are unavailable."
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-coinbase-integration]
+    rationale: "Independent reporting establishes a live Coinbase integration using Morpho markets on Base. It is relevant external ecosystem evidence, but one launch without a time series, retained usage, or broader integration growth is directionally inconclusive for momentum."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "External-developer growth, contributor growth, and sustained integration expansion are unavailable."
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-protocol-architecture, clm-morpho-coinbase-integration]
+    rationale: "The team delivered an immutable isolated-market architecture and a live Coinbase-powered lending integration independently reported in production. This supports favorable execution credibility without relying on founder identity or investor prestige."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Role-specific attribution and broader independently verified operating delivery remain limited."
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-governance-scope, clm-morpho-token-supply]
+    rationale: "Association-controlled documentation identifies governance rights over treasury assets, fee activation, whitelisted parameters, and a fixed token maximum. These facts establish control structure but not holder concentration, multisig accountability, or favorable economic alignment."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Token distribution, voting concentration, multisig composition, and company-association alignment are unresolved."
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-coinbase-integration, clm-morpho-2025-users, clm-morpho-2025-deposits]
+    rationale: "A live Coinbase lending channel independently establishes integrator commitment, while Morpho reports strong 2025 user and deposit growth. Together they support favorable demand and market-depth direction, with limited coverage because the scale metrics are first-party and retention is absent."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Paid-use, retention, borrower-repeat, and protocol-fee evidence is incomplete."
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-protocol-architecture, clm-morpho-association]
+    rationale: "First-party materials establish immutable permissionless lending contracts and a French nonprofit supporting protocol adoption and interfaces. These structural facts are relevant but do not establish the regulatory trajectory or jurisdictional advantage or hostility."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Applicable legal analysis, enforcement exposure, and company-association contractual boundaries are unavailable."
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-governance-scope]
+    rationale: "Protocol documentation discloses a designed fee switch capped at 25% of borrower interest. It does not establish that fees were active, their realized amount, beneficiary, or any Morpho Labs revenue, so value-capture direction remains neutral."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Active fee schedules, realized fees, recipients, and company monetization are unavailable."
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: "The frozen packet does not provide criterion-relevant evidence sufficient to compare realized revenue, costs, margins, burn, incentives, or subsidy dependence."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Company economics and complete protocol fee economics are unavailable."
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 65
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-coinbase-integration]
+    rationale: "Independent reporting establishes that Coinbase launched Bitcoin-backed USDC loans using Morpho on Base, a functioning major distribution integration. Favorable direction is limited by the absence of retained borrowers, expansion, or repeatable channel evidence."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Integration retention, acquired borrowers, customer expansion, and channel repeatability are unavailable."
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-protocol-architecture, clm-morpho-coinbase-integration]
+    rationale: "Permissionless isolated-market creation and a live Coinbase interface provide concrete ecosystem-access paths, supporting limited favorable direction. The frozen evidence does not quantify onboarding, integration, wallet, oracle, or collateral friction."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Implementation time, rejection or failure rates, and end-user onboarding friction are unavailable."
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 60
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-morpho-protocol-architecture]
+    rationale: "First-party protocol documentation describes immutable isolated markets with market-specific collateral, loan asset, oracle, rate model, and liquidation parameters, supporting limited favorable architectural differentiation. No independent comparative evaluation establishes superiority."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Independent comparative validation and performance evidence are unavailable."
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 45
+    coverage: 1
+    citedEvidenceClaimIds: [clm-morpho-vulnerability-2023, clm-morpho-chainsecurity-scope]
+    rationale: "Morpho's first-party postmortem documents a vulnerability serious enough to pause supply, although it was responsibly disclosed and patched without a documented theft. An independent ChainSecurity audit also identified a scoped data-structure insufficiency and cautioned that audits cannot find every vulnerability, supporting modest adverse security direction rather than broad safety or defensibility claims."
+    acknowledgedContradictionIds: []
+    evidenceGapNote: "Later-deployment audit coverage, complete incident history, switching costs, and durable network effects remain incomplete."
+analystNote: "Judged only from the frozen Morpho Labs FINAL_TEST packet; no external research or aggregate scoring was used."

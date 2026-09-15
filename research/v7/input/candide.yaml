@@ -1,0 +1,320 @@
+schemaVersion: 7
+candidateId: DIM-04
+canonicalId: co-candide
+canonicalName: Candide
+slug: candide
+description: >-
+  Candide is an open-source account-abstraction (ERC-4337 / EIP-7702)
+  infrastructure provider. Its main components are Voltaire, a Python/Rust
+  ERC-4337 bundler, and AbstractionKit, a TypeScript SDK for building and
+  sending UserOperations with first-class support for Safe smart accounts,
+  alongside a Safe-based smart contract wallet and a social-recovery module.
+domain: candide.dev
+firstObservedAt: "2022-06-11"
+category: developer_infrastructure_and_middleware
+entityType: company
+assetType: equity
+institutionalOrientation: false
+digitalAssetLifecycle: null
+financingStage: null
+cohort: VALIDATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships: []
+  protocolNetworkRelationship: >-
+    Candide builds open-source infrastructure (Voltaire bundler,
+    AbstractionKit SDK, a Safe-integrated smart-contract wallet, and a social
+    recovery module) used across multiple EVM chains; it does not operate its
+    own protocol or network.
+  unresolvedBoundaryNotes:
+    - >-
+      No public source established a registered legal-entity name,
+      incorporation jurisdiction, or headquarters for the team operating
+      Candide (GitHub org "candidelabs"); "Candide Labs" is used informally in
+      some grant/audit documentation but was not confirmed as a formal legal
+      name.
+people: []
+sources:
+  - id: src-candide-abstractionkit-v2-blog
+    schemaVersion: 7
+    publisher: Candide (official)
+    title: "Account Abstraction Unified Mempool Stages / AbstractionKit V2 Safe support"
+    url: "https://docs.candide.dev/blog/safe-erc4337/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-02-12"
+    availabilityDate: "2024-02-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-candide-voltaire-bundler-blog
+    schemaVersion: 7
+    publisher: Candide (official)
+    title: "Introducing Voltaire - ERC-4337 Python Bundler"
+    url: "https://docs.candide.dev/blog/erc4337-bundler/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-05-11"
+    availabilityDate: "2023-05-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-candide-optimism-grant-2022
+    schemaVersion: 7
+    publisher: "Optimism Collective Governance Forum"
+    title: "[READY] [GF: Phase 1 Proposal] Candide Wallet - Governance Fund: Phase 1"
+    url: "https://gov.optimism.io/t/ready-gf-phase-1-proposal-candide-wallet/2656"
+    sourceType: governance_forum
+    tier: b
+    reliability: 0.55
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2022-06-11"
+    availabilityDate: "2022-06-11"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: governance_record
+  - id: src-candide-ackee-audit-2024
+    schemaVersion: 7
+    publisher: "Ackee Blockchain"
+    title: "Safe Social Recovery Module security review"
+    url: "https://ackee.xyz/blog/safe-social-recovery-module/"
+    sourceType: security_audit
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-08-19"
+    availabilityDate: "2024-08-19"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: audit_finding
+evidenceClaims:
+  - id: clm-candide-product-abstractionkit-v2
+    schemaVersion: 7
+    companyId: co-candide
+    claim: >-
+      Candide released AbstractionKit v0.1.x on February 12, 2024, adding
+      first-class support for the audited ERC-4337 "Safe canonical module,"
+      letting developers build smart-contract wallets on Safe with gas-fee
+      abstraction, positioned by Candide as "the Reference SDK for ERC-4337
+      Safe" and backed by the Safe Grants Program.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-candide-abstractionkit-v2-blog
+    supportingSourceIds: []
+    sourceUrl: "https://docs.candide.dev/blog/safe-erc4337/"
+    publicationDate: "2024-02-12"
+    metricAsOfDate: "2024-02-12"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: >-
+      Company-controlled disclosure; consistent with the frozen recent
+      relevance fact ("Published V2 Canonical 4337 Safe Account support in
+      AbstractionKit; grant-supported by Ethereum Foundation/Safe/Optimism").
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-candide-voltaire-bundler-launch
+    schemaVersion: 7
+    companyId: co-candide
+    claim: >-
+      Candide launched Voltaire, an open-source Python/Rust ERC-4337 bundler,
+      announced May 11, 2023, passing the ERC-4337 team's compatibility test
+      suites and initially supporting Sepolia, Goerli, and Optimism-Goerli
+      testnets, with hosted-endpoint partnerships (BlockPi, Chainbase,
+      LlamaNodes).
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-candide-voltaire-bundler-blog
+    supportingSourceIds: []
+    sourceUrl: "https://docs.candide.dev/blog/erc4337-bundler/"
+    publicationDate: "2023-05-11"
+    metricAsOfDate: "2023-05-11"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: product
+    notes: "Company-controlled disclosure; no independent confirmation of bundler adoption/usage found."
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "What is Voltaire's actual bundler market share or transaction volume versus competitors (Pimlico, Alchemy, Stackup)?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-candide-optimism-grant
+    schemaVersion: 7
+    companyId: co-candide
+    claim: >-
+      Candide's proposal for an Optimism Governance Fund Phase 1 grant of
+      190,000 OP tokens (stated as approximately $89,000 at time of proposal),
+      to be distributed over 8 months, was posted to the Optimism governance
+      forum on June 11, 2022, to build a self-custodial wallet simplifying
+      cross-rollup (e.g. Optimism/Arbitrum) transactions.
+    statedValue: "190,000 OP (~$89,000 at proposal time)"
+    numericValue: 89000
+    unit: usd
+    sourceId: src-candide-optimism-grant-2022
+    supportingSourceIds: []
+    sourceUrl: "https://gov.optimism.io/t/ready-gf-phase-1-proposal-candide-wallet/2656"
+    publicationDate: "2022-06-11"
+    metricAsOfDate: "2022-06-11"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      This is a governance-forum grant proposal, not third-party venture
+      financing; whether the grant was fully approved/paid out as proposed
+      and its final tranche schedule were not independently reconfirmed.
+    evidenceStatus: mixed
+    analystInterpretation: null
+    diligenceQuestion: "Was the full 190,000 OP grant approved and disbursed, and over what actual schedule?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-candide-ackee-audit-social-recovery
+    schemaVersion: 7
+    companyId: co-candide
+    claim: >-
+      Ackee Blockchain, engaged by Safe (Safe Foundation), performed a
+      two-engineering-day security review (June 6-14, 2024) of the Safe
+      Social Recovery Module originally implemented by Candide; the audit
+      report was published August 19, 2024, with two findings ranging from
+      Warning to Medium severity and no Critical or High severity issues.
+    statedValue: "2 findings (Warning-Medium severity); 0 Critical/High"
+    numericValue: 2
+    unit: findings
+    sourceId: src-candide-ackee-audit-2024
+    supportingSourceIds: []
+    sourceUrl: "https://ackee.xyz/blog/safe-social-recovery-module/"
+    publicationDate: "2024-08-19"
+    metricAsOfDate: "2024-08-19"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: third_party_estimate
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: security
+    notes: >-
+      This is an independent third-party audit of a module Candide
+      implemented, commissioned by Safe rather than by Candide directly; it
+      does not cover Candide's wallet or bundler code more broadly (Voltaire,
+      AbstractionKit) beyond this module.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Have Voltaire or AbstractionKit (beyond the Safe Social Recovery Module) received an independent third-party security audit?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-candide-ackee-audit-2024
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-candide
+    subjectNameRaw: Candide
+    signalType: developer_activity
+    signalCategory: ecosystem
+    signalDirection: positive
+    sourceId: src-candide-ackee-audit-2024
+    rawStrength: 0.3
+    evidenceSummary: >-
+      Independent Ackee Blockchain audit (published 2024-08-19) of the Safe
+      Social Recovery Module implemented by Candide found no Critical or High
+      severity issues, out of 2 total findings.
+    evidenceIds: [clm-candide-ackee-audit-social-recovery]
+    publicationDate: "2024-08-19"
+    availabilityDate: "2024-08-19"
+    eventDate: "2024-08-19"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-candide-legal-entity
+    whatWasSearched: "Candide's registered legal-entity name, incorporation jurisdiction, and headquarters"
+    whatCouldNotBeEstablished: "No public source established a formal legal entity name, jurisdiction, or HQ; 'Candide Labs' appears informally in some documents."
+    expectedToMatter: true
+  - id: gap-candide-founders
+    whatWasSearched: "Named founders or team roster for Candide"
+    whatCouldNotBeEstablished: >-
+      No source publicly confirmed full names or founder status; only
+      first-name/handle-level attributions ('Marc' on the Optimism grant
+      proposal, 'Sherif' as blog post author) were found, insufficient to
+      responsibly create Person records.
+    expectedToMatter: true
+  - id: gap-candide-financing
+    whatWasSearched: "Any private/venture funding round (seed, pre-seed) for Candide beyond ecosystem grants"
+    whatCouldNotBeEstablished: >-
+      No independent report of a priced venture round was found; only
+      ecosystem grants (Optimism Governance Fund, Ethereum Foundation ESP,
+      Safe Grants, Gitcoin) are documented.
+    expectedToMatter: true
+  - id: gap-candide-adoption-metrics
+    whatWasSearched: "Bundler transaction volume, UserOperations processed, or number of integrating wallets/apps for Voltaire/AbstractionKit"
+    whatCouldNotBeEstablished: "No independently sourced, dated adoption or usage figures were established within the research budget for this batch."
+    expectedToMatter: true
+  - id: gap-candide-broader-security-audit
+    whatWasSearched: "Security audit coverage of Voltaire (bundler) or AbstractionKit (SDK) beyond the Safe Social Recovery Module"
+    whatCouldNotBeEstablished: "Only the Ackee Blockchain audit of the Social Recovery Module (commissioned by Safe) was found; no audit of the bundler or SDK core was located."
+    expectedToMatter: true
+researchNotes:
+  entityBoundaryUncertainty: >-
+    "Candide" / "Candide Labs" / GitHub org "candidelabs" are used
+    interchangeably in public sources with no confirmed formal legal-entity
+    name, consistent with the frozen THIN evidence-density label.
+  sourceOriginUncertainty: >-
+    All company-authored sources (AbstractionKit V2 blog, Voltaire blog) are
+    a single company voice; the Optimism grant proposal and the Ackee audit
+    are each independent of Candide and of each other.
+  likelyContradictions: null
+  completenessNotes: >-
+    Consistent with the frozen THIN evidence-density label: product identity
+    (Voltaire bundler, AbstractionKit SDK, Safe integration), one ecosystem
+    grant (Optimism, 2022), and one independent security audit finding
+    (Ackee Blockchain, 2024, of a module Candide implemented) are
+    established. Founder identity, legal entity/jurisdiction, private
+    financing, and adoption/usage metrics could not responsibly be
+    established within the research budget for this batch and are recorded
+    as gaps. GitHub repository star/fork/commit counts were reviewed but
+    deliberately excluded as an EvidenceClaim per the forbidden-automatic-
+    positive rule (repo_popularity, github_stars) and because they reflect a
+    live, continuously updating state rather than a dated, citable fact.
+researchCutoff: "2026-09-10"

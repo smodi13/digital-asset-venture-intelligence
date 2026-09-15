@@ -1,0 +1,742 @@
+schemaVersion: 7
+candidateId: CCI-03
+canonicalId: co-zodia-custody
+canonicalName: Zodia Custody
+slug: zodia-custody
+description: >-
+  Zodia Custody is an FCA-registered institutional digital-asset custody,
+  off-venue settlement (Interchange), and staking infrastructure provider,
+  founded in 2020/2021 by SC Ventures (Standard Chartered's innovation arm)
+  and Northern Trust, with Standard Chartered as majority shareholder. As of
+  the research cutoff, Standard Chartered's non-binding offer to acquire the
+  remainder of Zodia Custody's regulated custody business had been accepted
+  by other shareholders/noteholders but had not been confirmed closed.
+domain: zodia-custody.com
+firstObservedAt: "2020-12-01"
+category: custody_compliance_and_institutional_infrastructure
+entityType: company
+assetType: equity
+institutionalOrientation: true
+digitalAssetLifecycle: null
+financingStage: later
+cohort: CALIBRATION
+nameAliasNote: null
+entityTypeCorrectionNote: null
+assetTypeCorrectionNote: null
+entityStructure:
+  relationships:
+    - description: >-
+        Zodia Custody was founded in December 2020 as a joint venture between
+        SC Ventures (Standard Chartered's innovation arm, majority
+        shareholder) and Northern Trust (minority shareholder); SBI Holdings
+        (Japan), National Australia Bank, and Emirates NBD later joined as
+        additional minority shareholders (SBI's investment reported by
+        CoinDesk April 2023; Emirates NBD's by Ledger Insights December
+        2024).
+      relatedEntityId: null
+      relationType: joint_venture_shareholder
+    - description: >-
+        On May 18, 2026, Standard Chartered announced a non-binding offer,
+        accepted by Zodia Custody's other shareholders and noteholders, to
+        acquire the remainder of Zodia Custody's regulated custody business.
+        Per the announcement, Zodia Custody's custody activities would
+        integrate into Standard Chartered's own digital-asset custody
+        business, while Zodia Custody's separate institutional
+        infrastructure/technology platform ("Solutions") would be spun out
+        into a new, independent entity, Zodia Solutions, operating under SC
+        Ventures with Standard Chartered as an anchor client/shareholder.
+        Julian Sawyer (then Zodia Custody CEO) was named as the intended CEO
+        of Zodia Solutions upon transaction completion. As of the 2026-09-10
+        cutoff, no source establishes that the acquisition or the Zodia
+        Solutions spin-out had actually closed.
+      relatedEntityId: null
+      relationType: pending_acquisition_and_planned_spinout
+  protocolNetworkRelationship: null
+  unresolvedBoundaryNotes:
+    - >-
+      The exact current post-transaction ownership/entity boundary between
+      "Zodia Custody" (the packet subject; the brand The Block reports will
+      continue operating as a standalone SaaS platform after the transaction
+      closes), the custody business being absorbed into Standard Chartered
+      directly, and the newly announced "Zodia Solutions" entity is not
+      fully resolved by any source found within the research budget for this
+      batch: whether "Zodia Custody" as a company/brand persists distinctly
+      from "Zodia Solutions," or the two names describe the same successor
+      entity under different framing, is not conclusively established.
+    - >-
+      Deal consideration/financial terms of the Standard Chartered
+      acquisition were not disclosed by any source found (CoinDesk and The
+      Block both explicitly note terms were not disclosed).
+    - >-
+      A September 11, 2026 CryptoBriefing report (one day after the
+      2026-09-10 research cutoff) describes a leadership restructuring --
+      Julian Sawyer stepping back from day-to-day CEO duties, Richard Clark
+      overseeing the custody-to-Standard-Chartered transition, and Craig
+      Perrin/Anoosh Arevshatian leading Zodia Solutions -- that would bear
+      directly on this entity-boundary question. Per the frozen research
+      cutoff (availabilityDate, not publicationDate, is decisive; this
+      article's publication/availability is 2026-09-11), this report is
+      deliberately excluded from evidenceClaims and signalEvents in this
+      packet and is recorded only as an unknowns/gap item.
+people:
+  - id: per-maxime-de-guillebon
+    schemaVersion: 7
+    name: Maxime De Guillebon
+    aliases: []
+    currentRole: null
+    companyTenures:
+      - companyId: co-zodia-custody
+        companyName: Zodia Custody
+        role: Chief Executive Officer (founding)
+        startDate: "2020-12-01"
+        endDate: null
+        isFounder: true
+        sourceIds: [src-zodia-sc-fca-registration-2021]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: []
+    sourceIds: [src-zodia-sc-fca-registration-2021]
+  - id: per-julian-sawyer
+    schemaVersion: 7
+    name: Julian Sawyer
+    aliases: []
+    currentRole: Chief Executive Officer, Zodia Custody
+    companyTenures:
+      - companyId: co-zodia-custody
+        companyName: Zodia Custody
+        role: Chief Executive Officer
+        startDate: null
+        endDate: null
+        isFounder: false
+        sourceIds: [src-zodia-coindesk-seriesa-2023]
+    priorCompanies: []
+    education: []
+    publicHandles: { github: null, x: null, linkedin: null, website: null }
+    signalEventIds: [sig-zodia-sc-acquisition-offer, sig-zodia-solutions-spinout-announced]
+    sourceIds: [src-zodia-coindesk-seriesa-2023, src-zodia-scventures-solutions-2026]
+sources:
+  - id: src-zodia-sc-fca-registration-2021
+    schemaVersion: 7
+    publisher: Standard Chartered (press release)
+    title: "Standard Chartered and Northern Trust Announce Zodia Custody Receives FCA Registration"
+    url: "https://www.sc.com/en/press-release/standard-chartered-and-northern-trust-announce-zodia-custody-receives-fca-registration/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2021-07-29"
+    availabilityDate: "2021-07-29"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-zodia-coindesk-seriesa-2023
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Crypto Storage Provider Zodia Custody Raises $36M From SBI Holdings, Standard Chartered"
+    url: "https://www.coindesk.com/business/2023/04/27/crypto-storage-provider-zodia-custody-raises-36m-from-sbi-holdings-standard-chartered"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-04-27"
+    availabilityDate: "2023-04-27"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-zodia-ledgerinsights-nbd-2024
+    schemaVersion: 7
+    publisher: Ledger Insights
+    title: "Emirates NBD becomes strategic investor in Zodia Custody"
+    url: "https://www.ledgerinsights.com/emirates-nbd-becomes-strategic-investor-in-zodia-custody/"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.7
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2024-12-12"
+    availabilityDate: "2024-12-12"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-zodia-theblock-sc-acquire-2026
+    schemaVersion: 7
+    publisher: The Block
+    title: "Standard Chartered to absorb Zodia Custody's crypto business, Bloomberg reports"
+    url: "https://www.theblock.co/news/deals/2026-05-18-standard-chartered-absorb-zodia-custody-crypto-business-bloomberg-401663"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-05-18"
+    availabilityDate: "2026-05-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+    notes: >-
+      Originates from Bloomberg reporting per The Block's own attribution;
+      treated as one origin voice together with the CoinDesk item below for
+      independence-counting purposes, though the two outlets independently
+      confirm the core facts (see src-zodia-coindesk-sc-acquire-2026 notes).
+  - id: src-zodia-coindesk-sc-acquire-2026
+    schemaVersion: 7
+    publisher: CoinDesk
+    title: "Standard Chartered (STAN) to acquire remainder of subsidiary Zodia Custody"
+    url: "https://www.coindesk.com/business/2026/05/18/standard-chartered-to-acquire-remainder-of-subsidiary-zodia-custody"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-05-18"
+    availabilityDate: "2026-05-18"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+    notes: >-
+      Same-day (2026-05-18) independent CoinDesk reporting of the acquisition
+      announcement, sourced independently of Bloomberg/The Block (no shared
+      byline or explicit wire attribution found); treated as a genuinely
+      separate corroborating voice from src-zodia-theblock-sc-acquire-2026,
+      not merely a reproduction.
+  - id: src-zodia-scventures-solutions-2026
+    schemaVersion: 7
+    publisher: SC Ventures (Standard Chartered, official)
+    title: "Julian Sawyer To Be Appointed As CEO of Institutional Digital Asset Infrastructure Platform, Zodia Solutions"
+    url: "https://scventures.io/julian-sawyer-to-be-appointed-as-ceo-of-institutional-digital-asset-infrastructure-platform-zodia-solutions/"
+    sourceType: official_company
+    tier: b
+    reliability: 0.6
+    isIndependent: false
+    canCorroborate: false
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: direct_company_disclosure
+  - id: src-zodia-theblock-luxembourg-2026
+    schemaVersion: 7
+    publisher: The Block
+    title: "Zodia Custody secures Luxembourg payment institution license to expand EU stablecoin services"
+    url: "https://www.theblock.co/news/regulation/2026-06-09-zodia-custody-secures-luxembourg-payment-institution-license-to-expand-eu-stablecoin-services-404086"
+    sourceType: independent_journalism
+    tier: a
+    reliability: 0.85
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-06-09"
+    availabilityDate: "2026-06-09"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-zodia-marketsmedia-staking-2023
+    schemaVersion: 7
+    publisher: Markets Media
+    title: "Zodia Custody Launches Institutional Staking"
+    url: "https://www.marketsmedia.com/zodia-custody-launches-institutional-staking/"
+    sourceType: specialist_industry
+    tier: b
+    reliability: 0.65
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2023-06-08"
+    availabilityDate: "2023-06-08"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: primary_fact
+  - id: src-zodia-disruptionbanking-2026
+    schemaVersion: 7
+    publisher: Disruption Banking
+    title: "Can Zodia Custody Bridge TradFi and Digital Assets Seamlessly?"
+    url: "https://www.disruptionbanking.com/2026/07/20/can-zodia-custody-bridge-tradfi-and-digital-assets-seamlessly/"
+    sourceType: specialist_industry
+    tier: c
+    reliability: 0.5
+    isIndependent: true
+    canCorroborate: true
+    accessedAt: "2026-09-11T00:00:00.000Z"
+    publishedAt: "2026-07-20"
+    availabilityDate: "2026-07-20"
+    isPressReleaseReproduction: false
+    originatesFrom: null
+    supportRole: contextual
+    notes: >-
+      Published two months after the May 2026 acquisition announcement, this
+      article describes Zodia Custody's shareholder structure, jurisdictions,
+      and Solutions arm as ongoing standalone operations without mentioning
+      the pending Standard Chartered acquisition at all; treated as
+      lower-tier context (no byline/methodology disclosed) rather than as
+      evidence that the deal had lapsed, since silence is not itself
+      evidence of deal status either way.
+evidenceClaims:
+  - id: clm-zodia-founding-jv
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      Zodia Custody was founded in December 2020 as a joint venture between
+      SC Ventures (Standard Chartered's innovation arm) and Northern Trust,
+      and received FCA registration in the UK as a cryptoasset business
+      (announced July 29, 2021), with Maxime De Guillebon named as founding
+      CEO.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-sc-fca-registration-2021
+    supportingSourceIds: []
+    sourceUrl: "https://www.sc.com/en/press-release/standard-chartered-and-northern-trust-announce-zodia-custody-receives-fca-registration/"
+    publicationDate: "2021-07-29"
+    metricAsOfDate: "2021-07-29"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: identity
+    notes: >-
+      First-party press release; no independent journalism source for the
+      founding/FCA-registration facts was found within the research budget
+      for this batch, so this remains a single-voice, non-independent
+      source for the founding date and initial leadership.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-seriesa-36m
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      Zodia Custody raised $36 million in a Series A round announced April
+      27, 2023, with SBI Holdings (Japan) and SC Ventures (Standard
+      Chartered) among the investors; Standard Chartered was reported as
+      retaining majority ownership after the round.
+    statedValue: "$36 million"
+    numericValue: 36000000
+    unit: usd
+    sourceId: src-zodia-coindesk-seriesa-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.coindesk.com/business/2023/04/27/crypto-storage-provider-zodia-custody-raises-36m-from-sbi-holdings-standard-chartered"
+    publicationDate: "2023-04-27"
+    metricAsOfDate: "2023-04-27"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-nbd-strategic-investor
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      Emirates NBD became a strategic investor in Zodia Custody (through its
+      Innovation Fund) per Ledger Insights reporting dated December 12,
+      2024, becoming the fifth traditional financial institution shareholder
+      alongside Standard Chartered, Northern Trust, SBI Holdings, and
+      National Australia Bank; the investment amount was not disclosed.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-ledgerinsights-nbd-2024
+    supportingSourceIds: []
+    sourceUrl: "https://www.ledgerinsights.com/emirates-nbd-becomes-strategic-investor-in-zodia-custody/"
+    publicationDate: "2024-12-12"
+    metricAsOfDate: "2024-12-12"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: capital
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-sc-acquisition-offer
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      On May 18, 2026, Standard Chartered announced a non-binding offer,
+      accepted by Zodia Custody's other shareholders and noteholders, to
+      acquire the remainder of Zodia Custody's regulated custody business
+      (moving from majority to 100% ownership); financial terms were not
+      disclosed. Independently reported the same day by both The Block
+      (citing Bloomberg) and CoinDesk.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-theblock-sc-acquire-2026
+    supportingSourceIds: [src-zodia-coindesk-sc-acquire-2026]
+    sourceUrl: "https://www.theblock.co/news/deals/2026-05-18-standard-chartered-absorb-zodia-custody-crypto-business-bloomberg-401663"
+    publicationDate: "2026-05-18"
+    metricAsOfDate: "2026-05-18"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: capital
+    notes: >-
+      Deal was non-binding and not confirmed closed as of the 2026-09-10
+      research cutoff; no later source establishing closing was found within
+      the cutoff (a 2026-09-11 report describing a further leadership
+      restructuring falls after the cutoff and is deliberately excluded --
+      see unknowns/gap-zodia-post-cutoff-restructuring).
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Has the Standard Chartered acquisition of Zodia Custody's regulated custody business actually closed, and on what terms?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-solutions-spinout-planned
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      Standard Chartered / SC Ventures announced (May 20, 2026) that upon
+      completion of the custody-business acquisition, Zodia Custody's
+      separate institutional infrastructure/technology platform would be
+      spun out into an independent entity, Zodia Solutions, operating under
+      SC Ventures with Standard Chartered as an anchor client and
+      shareholder, and that Julian Sawyer (then Zodia Custody CEO) was
+      intended to become Zodia Solutions' CEO upon completion.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-scventures-solutions-2026
+    supportingSourceIds: []
+    sourceUrl: "https://scventures.io/julian-sawyer-to-be-appointed-as-ceo-of-institutional-digital-asset-infrastructure-platform-zodia-solutions/"
+    publicationDate: "2026-05-20"
+    metricAsOfDate: "2026-05-20"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: company_reported
+    confidence: medium
+    modelEligibility: context_only
+    topic: governance
+    notes: >-
+      Single-voice, first-party source: no independent journalism
+      corroboration of the specific Zodia Solutions entity name, its
+      leadership assignment, or its anchor-client structure was found within
+      the research budget for this batch, distinct from the (independently
+      corroborated) acquisition-offer fact itself.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: "Has Zodia Solutions been formed as an independent legal entity, and has Julian Sawyer actually assumed its CEO role?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-luxembourg-license
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      Zodia Custody secured a payment institution license from Luxembourg's
+      CSSF, reported June 9, 2026, enabling regulated custody and transfer
+      services for electronic money tokens (stablecoins) across the EU,
+      combined with its existing MiCA CASP license.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-theblock-luxembourg-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.theblock.co/news/regulation/2026-06-09-zodia-custody-secures-luxembourg-payment-institution-license-to-expand-eu-stablecoin-services-404086"
+    publicationDate: "2026-06-09"
+    metricAsOfDate: "2026-06-09"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: high
+    modelEligibility: context_only
+    topic: regulatory
+    notes: >-
+      Reported approximately three weeks after the Standard Chartered
+      acquisition-offer announcement; this article does not itself mention
+      the acquisition's status, so it is recorded as an independent
+      regulatory fact rather than evidence about deal progress.
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-staking-launch
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      Zodia Custody launched an institutional staking service ("Staking
+      2.0") in partnership with Blockdaemon, reported June 8, 2023, offering
+      automated reward operations and an integrated ETH validator exit
+      process, with Blockdaemon providing validator infrastructure, a stated
+      100% slashing-insurance guarantee, and ISO 27001 certification.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-marketsmedia-staking-2023
+    supportingSourceIds: []
+    sourceUrl: "https://www.marketsmedia.com/zodia-custody-launches-institutional-staking/"
+    publicationDate: "2023-06-08"
+    metricAsOfDate: "2023-06-08"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: sourced
+    sourceSubtype: reported_fact
+    confidence: medium_high
+    modelEligibility: context_only
+    topic: product
+    notes: null
+    evidenceStatus: supported
+    analystInterpretation: null
+    diligenceQuestion: null
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+  - id: clm-zodia-no-known-exploit
+    schemaVersion: 7
+    companyId: co-zodia-custody
+    claim: >-
+      No security breach, hack, or exploit specifically attributed to Zodia
+      Custody was found in a targeted search of security-incident coverage
+      (including 2026 data-breach trackers and crypto-hack-specific
+      reporting) conducted for this research batch.
+    statedValue: null
+    numericValue: null
+    unit: null
+    sourceId: src-zodia-disruptionbanking-2026
+    supportingSourceIds: []
+    sourceUrl: "https://www.disruptionbanking.com/2026/07/20/can-zodia-custody-bridge-tradfi-and-digital-assets-seamlessly/"
+    publicationDate: "2026-07-20"
+    metricAsOfDate: "2026-09-10"
+    lastVerified: "2026-09-11T00:00:00.000Z"
+    provenance: derived
+    sourceSubtype: null
+    confidence: low
+    modelEligibility: context_only
+    topic: security
+    notes: >-
+      This is a negative/absence-of-evidence claim, not a positive security
+      attestation: it records that a targeted search found no reported
+      incident as of the cutoff, not that none occurred or that Zodia's
+      security posture was independently audited and verified clean.
+      sourceId is nominal (attached to the closest on-topic source reviewed);
+      the underlying basis is the absence found across the broader search
+      described in researchNotes.
+    evidenceStatus: insufficient
+    analystInterpretation: null
+    diligenceQuestion: "Has Zodia Custody undergone, and would it disclose, an independent third-party security audit of its custody infrastructure?"
+    researchAssessmentId: null
+    hardeningRef: null
+    verbatimExcerpt: null
+    contradicts: []
+    contradictedBy: []
+    contradictionNote: null
+signalEvents:
+  - id: sig-zodia-sc-acquisition-offer
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-zodia-custody
+    subjectNameRaw: Zodia Custody
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-zodia-theblock-sc-acquire-2026
+    rawStrength: 0.7
+    evidenceSummary: >-
+      Standard Chartered officially announced, and it is confirmed as a
+      fact of record independently reported by both The Block (citing
+      Bloomberg) and CoinDesk on May 18, 2026, that it made a non-binding
+      offer, accepted by other shareholders/noteholders, to acquire the
+      remainder of Zodia Custody's regulated custody business, moving
+      Standard Chartered from majority to 100% ownership of that business.
+      The announcement and shareholder acceptance are confirmed; the
+      acquisition's closing remains a pending, conditional future step,
+      subject to regulatory approvals and customary closing conditions, and
+      is not established as complete as of the research cutoff.
+    evidenceIds: [clm-zodia-sc-acquisition-offer]
+    publicationDate: "2026-05-18"
+    availabilityDate: "2026-05-18"
+    eventDate: "2026-05-18"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-zodia-solutions-spinout-announced
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-zodia-custody
+    subjectNameRaw: Zodia Custody
+    signalType: funding
+    signalCategory: capital
+    signalDirection: ambiguous
+    sourceId: src-zodia-scventures-solutions-2026
+    rawStrength: 0.5
+    evidenceSummary: >-
+      SC Ventures officially and confirmedly announced plans (May 20, 2026)
+      to spin out Zodia Custody's institutional infrastructure/technology
+      platform into a new independent entity, Zodia Solutions, once the
+      Standard Chartered acquisition completes, with Julian Sawyer named as
+      its intended CEO. The announcement of this planned, conditional
+      formation is confirmed; the entity's actual formation and Julian
+      Sawyer's assumption of the CEO role remain pending on the acquisition's
+      still-unestablished closing and are not asserted as complete as of the
+      research cutoff.
+    evidenceIds: [clm-zodia-solutions-spinout-planned]
+    publicationDate: "2026-05-20"
+    availabilityDate: "2026-05-20"
+    eventDate: "2026-05-20"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+  - id: sig-zodia-luxembourg-license
+    schemaVersion: 7
+    subjectType: company
+    subjectId: co-zodia-custody
+    subjectNameRaw: Zodia Custody
+    signalType: regulatory_action
+    signalCategory: risk
+    signalDirection: ambiguous
+    sourceId: src-zodia-theblock-luxembourg-2026
+    rawStrength: 0.4
+    evidenceSummary: >-
+      Zodia Custody secured a Luxembourg CSSF payment institution license
+      (reported June 9, 2026), extending its regulated EU footprint for
+      stablecoin custody/transfer services alongside its existing MiCA
+      license.
+    evidenceIds: [clm-zodia-luxembourg-license]
+    publicationDate: "2026-06-09"
+    availabilityDate: "2026-06-09"
+    eventDate: "2026-06-09"
+    eventStatus: completed
+    unconfirmedNote: null
+    analystInterpretation: null
+    interpretationBasis: unknown
+unknowns:
+  - id: gap-zodia-post-cutoff-restructuring
+    whatWasSearched: >-
+      Most recent status of the Standard Chartered acquisition and Zodia
+      Solutions spin-out as close to the 2026-09-10 cutoff as could be found
+    whatCouldNotBeEstablished: >-
+      A CryptoBriefing report describing a leadership restructuring (Julian
+      Sawyer stepping back from day-to-day CEO duties; Richard Clark
+      overseeing the custody transition; Craig Perrin and Anoosh Arevshatian
+      leading Zodia Solutions) was found, but its publication/availability
+      date is 2026-09-11 -- one day after the research cutoff -- so per the
+      cutoff rule (availabilityDate decisive, not the internal memo's stated
+      2026-09-10 date) it is deliberately excluded from this packet's
+      evidenceClaims and signalEvents.
+    expectedToMatter: true
+  - id: gap-zodia-deal-terms
+    whatWasSearched: "Financial terms/valuation of the Standard Chartered acquisition of Zodia Custody"
+    whatCouldNotBeEstablished: >-
+      Both The Block and CoinDesk explicitly state financial terms were not
+      disclosed by either party; no other source found within the research
+      budget discloses deal value.
+    expectedToMatter: true
+  - id: gap-zodia-entity-boundary-post-deal
+    whatWasSearched: >-
+      The precise post-transaction legal/brand relationship between "Zodia
+      Custody," the custody business being absorbed into Standard Chartered,
+      and the newly announced "Zodia Solutions" entity
+    whatCouldNotBeEstablished: >-
+      No source found resolves whether the "Zodia Custody" brand persists
+      as a distinct entity from Zodia Solutions post-close, or describes the
+      same successor under different framing (see
+      entityStructure.unresolvedBoundaryNotes).
+    expectedToMatter: true
+  - id: gap-zodia-aum-revenue
+    whatWasSearched: "Assets under custody, revenue, or client-count figures for Zodia Custody"
+    whatCouldNotBeEstablished: >-
+      No source found within the research budget disclosed AUM, revenue, or
+      a quantified client count; the July 2026 Disruption Banking article
+      states "75+ crypto assets" supported but gives no AUM or revenue
+      figure.
+    expectedToMatter: true
+  - id: gap-zodia-full-founding-team
+    whatWasSearched: "Full founding team / executive roster beyond the CEO"
+    whatCouldNotBeEstablished: >-
+      Only the founding CEO (Maxime De Guillebon) and the later CEO (Julian
+      Sawyer) are named across sources found; no broader founding-team
+      roster was established.
+    expectedToMatter: false
+researchNotes:
+  entityBoundaryUncertainty: >-
+    As of the 2026-09-10 cutoff, Zodia Custody is an active, majority
+    Standard-Chartered-owned entity with a pending (non-binding, accepted,
+    not-yet-confirmed-closed) acquisition by Standard Chartered and a planned
+    spin-out of its infrastructure platform into a new entity, Zodia
+    Solutions. Treated in this packet as one entity (Zodia Custody, the
+    Phase 3A universe subject) with the pending transaction and planned
+    spin-out recorded as governance signal events rather than as separate
+    entities, per the frozen category/entityType/assetType assignment. See
+    entityStructure.unresolvedBoundaryNotes for what remains unresolved.
+  sourceOriginUncertainty: >-
+    The Block's May 18, 2026 report explicitly attributes its reporting to
+    Bloomberg; CoinDesk's same-day report appears independently sourced
+    (no shared byline or wire attribution found), so the two are treated as
+    corroborating rather than duplicate voices for the acquisition-offer
+    claim. The May 20, 2026 Zodia Solutions announcement is first-party
+    (SC Ventures) only -- no independent-journalism corroboration of that
+    specific entity/leadership detail was found within the research budget.
+  likelyContradictions: >-
+    The July 20, 2026 Disruption Banking article describes Zodia Custody's
+    shareholder structure and Solutions arm as ongoing standalone operations
+    without any mention of the May 2026 Standard Chartered acquisition
+    announcement. This is recorded as a gap in that article's currency, not
+    as evidence that the deal had lapsed; both are retained since the article
+    is dated two months after the announcement and its silence is
+    inconclusive either way.
+  completenessNotes: >-
+    Evidence density MODERATE per the frozen cohort assignment. Research
+    established founding/ownership history (2020 JV, FCA registration 2021,
+    2023 Series A, 2024 Emirates NBD investment), the May 2026 pending
+    acquisition and planned Zodia Solutions spin-out (independently
+    corroborated for the acquisition offer, single-voice for the Solutions
+    entity/leadership detail), a June 2026 Luxembourg regulatory license, and
+    product history (2023 institutional staking launch, Interchange
+    off-venue settlement). A targeted search for security incidents found
+    none attributed to Zodia Custody. Deal financial terms, AUM/revenue,
+    full founding team, and the precise post-close entity boundary all
+    remain open gaps. A September 11, 2026 report on further leadership
+    restructuring was found but excluded as post-cutoff per the
+    availabilityDate rule (see gap-zodia-post-cutoff-restructuring).
+researchCutoff: "2026-09-10"

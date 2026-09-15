@@ -1,0 +1,207 @@
+schemaVersion: 7
+candidateId: CPS-04
+entityId: co-nubit
+cohort: CALIBRATION
+researchBaselineCommit: "0c10a376c3ccc5df3429d397673b59ab97812b5f"
+researchPacketSha256: "sha256:2f74f8188ea32b15b79caa6870a26710d9cbd46ffaffa02ad71f06b582c44246"
+methodologyConfigFingerprint: "sha256:c9255ec1c9d9541266401f3dbc778c1355e82dfc7e6c6386aca0492634628f17"
+mandateStatus: NOT_ASSESSED
+analystNote: null
+criterionJudgments:
+  - criterionId: observable_scale_vs_capital
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: [clm-nubit-preseed, clm-nubit-seed]
+    rationale: >-
+      Primary capital consumed is documented ($3M pre-seed plus $8M seed,
+      both company-sourced only, no independent corroboration per
+      gap-nubit-independent-corroboration), but no scale evidence exists:
+      the packet cannot establish whether Nubit reached mainnet (see
+      gap-nubit-mainnet-status) and records no TVL, transaction, or user
+      figures. The scale side of the ratio is entirely absent.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No product/network scale evidence exists; mainnet launch status is
+      itself unconfirmed (gap-nubit-mainnet-status).
+  - criterionId: operating_resource_intensity
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses recurring labor, compute, infrastructure cost, or
+      subsidy needs for Nubit's infrastructure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No operating-cost or resource-intensity evidence exists in the frozen
+      packet.
+  - criterionId: adoption_and_usage_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No usage, transaction, or retained-workload evidence exists. The
+      packet's own researcher notes explicitly excluded a sponsored,
+      company-adjacent claim of "4 million transactions / 267,000 users"
+      because it is not independent reporting and cannot be attributed
+      specifically to Nubit rather than the broader Thunderbolt initiative;
+      it is not cited here as adoption evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Public sources describe only a pre-alpha/alpha testnet as of the
+      research cutoff (gap-nubit-mainnet-status); no independent usage
+      metric exists.
+  - criterionId: developer_and_ecosystem_momentum
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses developer, contributor, or third-party integration
+      growth for Nubit.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No developer or ecosystem-integration evidence exists in the frozen
+      packet.
+  - criterionId: team_execution_credibility
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      Founders Yu Feng and Hanzhi Liu are named and sourced with academic
+      computer-science backgrounds (UCSB faculty; UCSB Ph.D. studies, on
+      leave) recorded in the packet's people records, but no EvidenceClaim
+      in the frozen packet documents a shipped product, prior company, or
+      other directly relevant execution track record; mainnet status
+      remains unconfirmed.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No EvidenceClaim documents shipped work or prior-company execution
+      history for either founder.
+  - criterionId: governance_and_incentive_alignment
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses governance model, admin/control keys, or
+      incentive/ownership structure for Nubit (gap-nubit-governance-control
+      confirms this was searched and not established).
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No governance or control-structure evidence exists in the frozen
+      packet (gap-nubit-governance-control).
+  - criterionId: problem_urgency_and_market_depth
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents fee-paying demand, workflow criticality, or
+      costly third-party integration. The Bitcoin Thunderbolt
+      repositioning (clm-nubit-thunderbolt-pivot) is a self-disclosed
+      strategic narrative about market opportunity, not evidence of funded
+      urgency or addressable market depth, and is not cited here.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No demand or market-depth evidence exists in the frozen packet.
+  - criterionId: structural_and_regulatory_fit
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses regulatory trajectory. Press materials name a
+      Cayman Islands entity, but this was not independently corroborated
+      (gap-nubit-legal-entity), so no jurisdiction-quality judgment can be
+      responsibly made.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Legal entity and jurisdiction are not independently corroborated
+      (gap-nubit-legal-entity); no regulatory-trajectory evidence exists.
+  - criterionId: value_capture_model
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents a monetization path. No token has been confirmed
+      to have launched (gap-nubit-token; assetType recorded as unknown),
+      and the protocol has not been established as reaching mainnet, so no
+      company-side or protocol-side value-capture mechanism can be
+      evidenced.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      Token existence and structure are unconfirmed (gap-nubit-token); no
+      monetization evidence exists.
+  - criterionId: economic_sustainability
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim addresses burn, subsidy reliance, or contribution economics.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No economic-sustainability evidence exists in the frozen packet.
+  - criterionId: distribution_and_integration_pull
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents an actual acquisition channel or realized
+      integration. The Thunderbolt announcement describes an aspirational
+      "unified asset protocol" spanning BRC-20, Runes, and Ordinals, but
+      this is a stated ambition, not evidence of integrations begetting
+      integrations, and is not cited here as pull evidence.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No realized distribution or integration evidence exists in the
+      frozen packet.
+  - criterionId: adoption_friction_and_ecosystem_access
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents onboarding friction, compliance requirements, or
+      ecosystem reachability for Nubit's still-testnet infrastructure.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No adoption-friction or ecosystem-access evidence exists in the
+      frozen packet.
+  - criterionId: technical_and_product_differentiation
+    applicability: applicable
+    rawAnchor: 35
+    coverage: 0.5
+    citedEvidenceClaimIds: [clm-nubit-thunderbolt-pivot]
+    rationale: >-
+      The sole technical-differentiation evidence is Nubit's own
+      announcement of "Bitcoin Thunderbolt," a claimed Bitcoin base-layer
+      soft-fork it says it co-developed. This is entirely company-sourced
+      (tier c, reliability 0.4, non-independent) and, per the packet's own
+      notes, was not independently verified against any Bitcoin Core / BIP
+      proposal channel; a base-layer soft-fork is a change that requires
+      Bitcoin Core consensus and cannot be unilaterally shipped by one
+      company, which further weakens the claim's credibility as evidence
+      of differentiation rather than aspiration.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No independent technical assessment or confirmation within a
+      recognized Bitcoin Core process exists for the Thunderbolt claims.
+  - criterionId: defensibility_security_and_network_effects
+    applicability: applicable
+    rawAnchor: 50
+    coverage: 0
+    citedEvidenceClaimIds: []
+    rationale: >-
+      No claim documents switching costs, a validator/operator base,
+      liquidity depth, audit history, or observed fork resistance.
+    acknowledgedContradictionIds: []
+    evidenceGapNote: >-
+      No security-posture or network-effects evidence exists in the frozen
+      packet.

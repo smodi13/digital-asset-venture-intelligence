@@ -1,0 +1,2177 @@
+# Batch 1 source register. Every cited URL.
+#
+# Generated from the Batch 1 research handoff by
+# scripts/research/translate-batch1.ts on 2026-09-06. The handoff packet is a
+# transport format; this file is the authoritative research record and is what
+# a human reviews and edits from here on.
+#
+# No value here was authored by the translator. Everything is copied from the
+# packet or produced by a stated mapping table in that script.
+
+schemaVersion: 6
+
+sources:
+  - url: "https://www.mintlify.com/blog/2025-year-in-review"
+    publisher: "Mintlify"
+    title: "2025: A Year in Review"
+    sourceType: official_company
+    publishedAt: "2025-12-31"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source mintlify_2025_review. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.mintlify.com/blog/mintlify-for-enterprise"
+    publisher: "Mintlify"
+    title: "Mintlify for Enterprise"
+    sourceType: official_company
+    publishedAt: "2026-02-11"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source mintlify_enterprise_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.mintlify.com/blog/series-b"
+    publisher: "Mintlify"
+    title: "Mintlify raises $45M Series B led by Andreessen Horowitz and Salesforce Ventures"
+    sourceType: official_company
+    publishedAt: "2026-04-14"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source mintlify_series_b_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.globenewswire.com/news-release/2026/05/18/3296726/0/en/Dust-raises-40M-to-make-AI-multiplayer-inside-the-enterprise.html"
+    publisher: "Dust via GlobeNewswire"
+    title: "Dust raises $40M to make AI multiplayer inside the enterprise"
+    sourceType: official_company
+    publishedAt: "2026-05-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source dust_series_b_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.axios.com/pro/enterprise-software-deals/2026/05/18/agentic-ai-dust-snowflake-sequoia"
+    publisher: "Axios"
+    title: "Exclusive: Agentic AI startup Dust raises $40M"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source dust_axios_2026. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://llamaindex-marketing-website-clone.pr.staging.llamaindex.ai/blog/announcing-our-series-a-and-llamacloud-general-availability"
+    publisher: "LlamaIndex"
+    title: "Announcing our Series A and LlamaParse General Availability"
+    sourceType: official_company
+    publishedAt: "2025-03-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source llama_series_a_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://techcrunch.com/2025/03/04/llamaindex-launches-a-cloud-service-for-building-unstructed-data-agents/"
+    publisher: "TechCrunch"
+    title: "LlamaIndex launches a cloud service for building unstructured data agents"
+    sourceType: independent_journalism
+    publishedAt: "2025-03-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source llama_tc_2025. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://www.llamaindex.ai/blog/announcing-new-llamacloud-sdks-and-parse-api-v2"
+    publisher: "LlamaIndex"
+    title: "Announcing New LlamaParse SDKs and Parse API v2"
+    sourceType: official_company
+    publishedAt: "2026-01-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source llama_api_v2_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.llamaindex.ai/blog/announcing-retrieval-harness"
+    publisher: "LlamaIndex"
+    title: "Announcing Retrieval Harness"
+    sourceType: official_company
+    publishedAt: "2026-06-29"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source llama_retrieval_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.llamaindex.ai/blog/introducing-turbo-our-fastest-extraction-tier"
+    publisher: "LlamaIndex"
+    title: "Introducing Turbo, our fastest extraction tier"
+    sourceType: official_company
+    publishedAt: "2026-09-03"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source llama_turbo_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://crewai.com/blog/crewai---building-the-agentic-future-together"
+    publisher: "CrewAI"
+    title: "CrewAI - Building the Agentic Future Together"
+    sourceType: official_company
+    publishedAt: "2024-10-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crewai_funding_2024. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.insightpartners.com/ideas/behind-the-investment-crewai/"
+    publisher: "Insight Partners"
+    title: "Behind the Investment: CrewAI"
+    sourceType: investor_industry
+    publishedAt: "2024-10-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crewai_insight_2024. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://blog.crewai.com/pwc-choses-crewai/"
+    publisher: "CrewAI"
+    title: "PwC Choses CrewAI to Help Power Their Global Agent OS"
+    sourceType: official_company
+    publishedAt: "2025-07-30"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crewai_pwc_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://crewai.com/blog/lessons-from-2-billion-agentic-workflows"
+    publisher: "CrewAI"
+    title: "Lessons From 2 Billion Agentic Workflows"
+    sourceType: official_company
+    publishedAt: "2026-01-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crewai_2b_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://crewai.com/blog/crew-studio-automated-agent-builder"
+    publisher: "CrewAI"
+    title: "CrewAI Studio: The Automated Agent Builder"
+    sourceType: official_company
+    publishedAt: "2026-07-28"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crewai_studio_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://changelog.e2b.dev/blog/series-a"
+    publisher: "E2B"
+    title: "We Raised $21M to Give Fortune 100 Cloud for AI Agents"
+    sourceType: official_company
+    publishedAt: "2025-07-28"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source e2b_series_a_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://e2b.dev/blog/e2b-is-now-in-agents-sdk"
+    publisher: "E2B"
+    title: "E2B is now supported in the OpenAI Agents SDK"
+    sourceType: official_company
+    publishedAt: "2026-04-15"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source e2b_openai_sdk_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://changelog.e2b.dev/blog/anything"
+    publisher: "E2B"
+    title: "How Anything Is Building a Vibe-Coding Empire with 1M+ Users"
+    sourceType: official_company
+    publishedAt: "2026-07-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source e2b_anything_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://e2b.dev/blog/replicas"
+    publisher: "E2B"
+    title: "How Replicas Cut Customer Latency 60% with E2B"
+    sourceType: official_company
+    publishedAt: "2026-08-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source e2b_replicas_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://crosby.ai/blog/introducing-crosby-the-worlds-first-hybrid-law-firm"
+    publisher: "Crosby"
+    title: "Introducing Crosby, the world's first hybrid law firm"
+    sourceType: official_company
+    publishedAt: "2025-06-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crosby_launch_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://techcrunch.com/2025/06/17/sequoia-backed-crosby-launches-a-new-kind-of-ai-powered-law-firm/"
+    publisher: "TechCrunch"
+    title: "Sequoia-backed Crosby launches a new kind of AI-powered law firm"
+    sourceType: independent_journalism
+    publishedAt: "2025-06-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crosby_tc_2025. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://crosby.ai/blog/series-a-and-faster-agreements"
+    publisher: "Crosby"
+    title: "Series A and Smarter Agreements, Faster"
+    sourceType: official_company
+    publishedAt: "2025-10-08"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crosby_series_a_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://crosby.ai/blog/series-b-planting-our-flag"
+    publisher: "Crosby"
+    title: "Series B and Planting our Flag"
+    sourceType: official_company
+    publishedAt: "2026-03-31"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source crosby_series_b_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.arcade.dev/blog/arcade-series-a/"
+    publisher: "Arcade.dev"
+    title: "Arcade.dev Raises $60M Series A"
+    sourceType: official_company
+    publishedAt: "2026-06-12"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source arcade_series_a_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.wsj.com/cio-journal/arcade-dev-raises-60-million-to-secure-ai-agents-5d07eff4"
+    publisher: "Wall Street Journal CIO Journal"
+    title: "Arcade.dev Raises $60 Million to Secure AI Agents"
+    sourceType: independent_journalism
+    publishedAt: "2026-06-12"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source arcade_wsj_2026. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://www.arcade.dev/blog/arcade-supports-ema/"
+    publisher: "Arcade.dev"
+    title: "Arcade.dev Supports EMA"
+    sourceType: official_company
+    publishedAt: "2026-06-23"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source arcade_ema_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://withpace.com/news/a-new-era"
+    publisher: "Pace"
+    title: "A New Era for Insurance Operations"
+    sourceType: official_company
+    publishedAt: "2026-01-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source pace_seed_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://withpace.com/news/next-century"
+    publisher: "Pace"
+    title: "Building for the next century of insurance"
+    sourceType: official_company
+    publishedAt: "2026-05-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source pace_series_b_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://withpace.com/news/product-launch"
+    publisher: "Pace"
+    title: "One agent for the complexity of insurance operations"
+    sourceType: official_company
+    publishedAt: "2026-06-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source pace_product_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://withpace.com/news/tempo"
+    publisher: "Pace"
+    title: "Introducing Tempo"
+    sourceType: official_company
+    publishedAt: "2026-07-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source pace_tempo_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://resend.com/blog/what-is-next-after-100-000-users"
+    publisher: "Resend"
+    title: "What's next after 100,000 users"
+    sourceType: official_company
+    publishedAt: "2024-04-11"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source resend_100k_2024. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://resend.com/blog/series-a"
+    publisher: "Resend"
+    title: "Resend raises $18M Series A"
+    sourceType: official_company
+    publishedAt: "2024-12-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source resend_series_a_2024. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://resend.com/blog/introducing-automations"
+    publisher: "Resend"
+    title: "Introducing Automations"
+    sourceType: official_company
+    publishedAt: "2026-04-13"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source resend_automations_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://resend.com/blog/3-million-users"
+    publisher: "Resend"
+    title: "3,000,000 users"
+    sourceType: official_company
+    publishedAt: "2026-06-03"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source resend_3m_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.retellai.com/blog/seed-announcement"
+    publisher: "Retell AI"
+    title: "Retell AI Secures Seed Funding"
+    sourceType: official_company
+    publishedAt: "2024-05-01"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source retell_seed_2024. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.retellai.com/about-us"
+    publisher: "Retell AI"
+    title: "About Retell AI"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source retell_about_current. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.retellai.com/newsroom"
+    publisher: "Retell AI Newsroom"
+    title: "Retell Hits 40M Monthly Calls, Fueled by 300% Growth"
+    sourceType: official_company
+    publishedAt: "2026-04-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source retell_news_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.retellai.com/changelog/retell-workflows-brex-top-25-and-more"
+    publisher: "Retell AI"
+    title: "Retell Workflows, Brex top 25, and more"
+    sourceType: official_company
+    publishedAt: "2026-08-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source retell_workflows_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.retellai.com/blog/bill-partners-with-retell"
+    publisher: "Retell AI"
+    title: "BILL Brings Payments to Voice With Retell"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source retell_bill_current. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.serval.com/serval-news/series-a"
+    publisher: "Serval"
+    title: "Announcing $52M Total Raised to Deploy AI Agents for IT"
+    sourceType: official_company
+    publishedAt: "2025-10-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source serval_series_a_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.serval.com/serval-news/general-catalyst-serval-article"
+    publisher: "Serval / General Catalyst"
+    title: "General Catalyst Serval article"
+    sourceType: investor_industry
+    publishedAt: "2025-10-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source serval_gc_2025. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://www.serval.com/serval-news/serval%E2%80%99s-next-chapter-raising-75m-to-build-the-new-era-of-enterprise-automation-and-service-management"
+    publisher: "Serval"
+    title: "Serval's Next Chapter: Raising $75M"
+    sourceType: official_company
+    publishedAt: "2025-12-11"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source serval_series_b_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.serval.com/serval-news/partnering-with-serval-empowering-it-for-ai-enterprise-automation"
+    publisher: "Serval / Sequoia Capital"
+    title: "Partnering with Serval: Empowering IT for AI Enterprise Automation"
+    sourceType: investor_industry
+    publishedAt: "2025-12-11"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source serval_sequoia_2025. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://www.serval.com/serval-news/catalyst-general-availability"
+    publisher: "Serval"
+    title: "Announcing general availability of Catalyst"
+    sourceType: official_company
+    publishedAt: "2026-08-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source serval_catalyst_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.granola.ai/blog/series-a"
+    publisher: "Granola"
+    title: "Granola raises $20M to build the AI notepad that makes you smarter"
+    sourceType: official_company
+    publishedAt: "2024-10-23"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source granola_series_a_2024. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.granola.ai/blog/two-dot-zero"
+    publisher: "Granola"
+    title: "Granola 2.0: A second brain for your team"
+    sourceType: official_company
+    publishedAt: "2025-05-14"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source granola_2_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.granola.ai/blog/series-c"
+    publisher: "Granola"
+    title: "Granola raises $125M to put your company's context to work"
+    sourceType: official_company
+    publishedAt: "2026-03-25"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source granola_series_c_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://techcrunch.com/2026/03/25/granola-raises-125m-hits-1-5b-valuation-as-it-expands-from-meeting-notetaker-to-enterprise-ai-app/"
+    publisher: "TechCrunch"
+    title: "Granola raises $125M, hits $1.5B valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-03-25"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source granola_tc_2026. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://www.granola.ai/customers"
+    publisher: "Granola"
+    title: "Customers"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source granola_customers_current. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://gamma.app/insights/how-we-built-a-usd100m-business-differently"
+    publisher: "Gamma"
+    title: "How we built a $100M business differently"
+    sourceType: official_company
+    publishedAt: "2025-11-10"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source gamma_100m_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.appliedcompute.com/company/fundraise"
+    publisher: "Applied Compute"
+    title: "The Advantage You Own"
+    sourceType: official_company
+    publishedAt: "2026-04-08"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source applied_fundraise_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.appliedcompute.com/case-studies/nvidia"
+    publisher: "Applied Compute"
+    title: "Post-Training Collaboration with NVIDIA"
+    sourceType: official_company
+    publishedAt: "2026-08-05"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source applied_nvidia_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.appliedcompute.com/platform/introducing-ac2"
+    publisher: "Applied Compute"
+    title: "Applied Compute Agent Cloud"
+    sourceType: official_company
+    publishedAt: "2026-08-25"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source applied_ac2_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.forbes.com/sites/richardnieva/2026/09/01/applied-compute-openai-the-ex-openai-guys-building-cheaper-open-source-alternative/"
+    publisher: "Forbes"
+    title: "Meet The Ex-OpenAI Guys Building A Cheaper Open Source Alternative"
+    sourceType: independent_journalism
+    publishedAt: "2026-09-02"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Packet source applied_forbes_2026. Independence as researched: independent. Phase 3D re-listed as p3d_applied_forbes_20260902: confirms the possible $350M financing is still in talks with terms subject to change, and details the embedded enterprise model-training and cloud model. Accessed 2026-09-06."
+
+  - url: "https://modal.com/blog/announcing-our-series-b"
+    publisher: "Modal"
+    title: "Announcing our $87M Series B"
+    sourceType: official_company
+    publishedAt: "2025-09-29"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source modal_series_b_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://modal.com/blog/modal-series-c"
+    publisher: "Modal"
+    title: "Modal's Series C: Raising $355M at a $4.65B valuation"
+    sourceType: official_company
+    publishedAt: "2026-05-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source modal_series_c_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://linear.app/now/building-our-way"
+    publisher: "Linear"
+    title: "Building our way: Announcing our Series C"
+    sourceType: official_company
+    publishedAt: "2025-06-10"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source linear_series_c_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://linear.app/now/sharing-growth-with-the-people-building-linear"
+    publisher: "Linear"
+    title: "Sharing Linear's growth with the people building it"
+    sourceType: official_company
+    publishedAt: "2026-08-26"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source linear_tender_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://wisprflow.ai/blog"
+    publisher: "Wispr Flow"
+    title: "Wispr raises a $30M Series A to build the voice interface for AI era"
+    sourceType: official_company
+    publishedAt: "2025-06-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source wispr_series_a_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://wisprflow.ai/post/wispr-raises-another-round-series-a-extension"
+    publisher: "Wispr Flow"
+    title: "Wispr raises new funding, to build the voice OS"
+    sourceType: official_company
+    publishedAt: "2025-11-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source wispr_extension_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://wisprflow.ai/post/series-b"
+    publisher: "Wispr Flow"
+    title: "Our Series B, and what it means for you"
+    sourceType: official_company
+    publishedAt: "2026-08-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source wispr_series_b_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://techcrunch.com/2026/08/17/wispr-raises-280m-at-2b-valuation-as-it-looks-beyond-dictation/"
+    publisher: "TechCrunch"
+    title: "Wispr raises $280M at $2B valuation as it looks beyond dictation"
+    sourceType: independent_journalism
+    publishedAt: "2026-08-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Packet source wispr_tc_2026. Independence as researched: independent. Phase 3D re-listed as p3d_wispr_tc_20260817: independent reporting states the Series B brought total funding to approximately $361M. Accessed 2026-09-06."
+
+  - url: "https://wisprflow.ai/enterprise-pricing"
+    publisher: "Wispr Flow"
+    title: "Enterprise Pricing"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source wispr_pricing_current. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://turbopuffer.com/about"
+    publisher: "turbopuffer"
+    title: "about turbopuffer"
+    sourceType: official_company
+    publishedAt: "2023-10-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source tpuf_about_2023. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://turbopuffer.com/blog/turbopuffer?__from__=talkingdev"
+    publisher: "turbopuffer"
+    title: "turbopuffer: fast search on object storage"
+    sourceType: official_company
+    publishedAt: "2024-07-08"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source tpuf_core_2024. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://turbopuffer.com/blog"
+    publisher: "turbopuffer"
+    title: "ANN v3: 200ms p99 query latency over 100 billion vectors"
+    sourceType: official_company
+    publishedAt: "2026-01-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source tpuf_ann_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://marketplace.turbopuffer.com/customers/cursor"
+    publisher: "turbopuffer"
+    title: "Cursor scales code retrieval to 100B+ vectors with turbopuffer"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source tpuf_cursor_current. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://turbopuffer.com/docs/pricing-log"
+    publisher: "turbopuffer"
+    title: "Pricing Changelog"
+    sourceType: official_company
+    publishedAt: "2026-08-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source tpuf_pricing_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.browserbase.com/blog/series-b-and-beyond"
+    publisher: "Browserbase"
+    title: "Building the future of web automation"
+    sourceType: official_company
+    publishedAt: "2025-06-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source browserbase_series_b_2025. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.forbes.com/sites/amyfeldman/2025/08/12/next-billion-dollar-startups-2025/"
+    publisher: "Forbes"
+    title: "Forbes Next Billion-Dollar Startups 2025: Browserbase"
+    sourceType: independent_journalism
+    publishedAt: "2025-08-12"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source browserbase_forbes_2025. Independence as researched: independent. Accessed 2026-09-06."
+
+  - url: "https://www.browserbase.com/blog/introducing-browserbase-agents"
+    publisher: "Browserbase"
+    title: "Introducing Browserbase Agents"
+    sourceType: official_company
+    publishedAt: "2026-06-30"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source browserbase_agents_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.browserbase.com/blog/case-study-hyperagent"
+    publisher: "Browserbase"
+    title: "How Airtable built its agent platform Hyperagent on Browserbase"
+    sourceType: official_company
+    publishedAt: "2026-07-02"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source browserbase_airtable_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.browserbase.com/blog/stagehand-v4"
+    publisher: "Browserbase"
+    title: "Introducing Stagehand v4: The SDK for browser agents"
+    sourceType: official_company
+    publishedAt: "2026-08-10"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source browserbase_stagehand_v4_2026. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  - url: "https://www.browserbase.com/"
+    publisher: "Browserbase"
+    title: "Browserbase"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    termsNote: "Packet source browserbase_home_current. Independence as researched: primary_or_direct. Accessed 2026-09-06."
+
+  # ------------------------------------------------------------------------
+  # Phase 3D evidence-hardening sources.
+  #
+  # Added from research/imports/phase3d_evidence_hardening_patch.json
+  # (new_sources), the approved Batch 1 evidence-hardening delta. supportRole
+  # records what each source does for its company, which is not the same
+  # question as its source class. Publisher independence is not claim
+  # independence: a corroborating role adds weight to a fact, it does not
+  # turn a repeated company metric into several independent origins.
+  # ------------------------------------------------------------------------
+
+  - url: "https://www.forbes.com/sites/the-prompt/2026/04/14/anthropic-uses-this-startups-ai-to-answer-peoples-questions-about-claude-code/"
+    publisher: "Forbes"
+    title: "Anthropic Uses This Startup's AI To Answer People's Questions About Claude Code"
+    sourceType: independent_journalism
+    publishedAt: "2026-04-14"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_mintlify_forbes_20260414. Independent reporting on 20,000 companies, eight-figure revenue in early 2026, and the $45M Series B at a $500M valuation. Accessed 2026-09-07."
+
+  - url: "https://venturebeat.com/ai/crewai-launches-its-first-multi-agent-builder-speeding-the-way-to-agentic-ai"
+    publisher: "VentureBeat"
+    title: "CrewAI now lets you build fleets of enterprise AI agents"
+    sourceType: independent_journalism
+    publishedAt: "2024-10-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_crewai_venturebeat_20241022. Confirms the $18M financing and enterprise product launch; does not independently validate later workflow-volume claims. Accessed 2026-09-07."
+
+  - url: "https://venturebeat.com/ai/how-e2b-became-essential-to-88-of-fortune-100-companies-and-raised-21-million"
+    publisher: "VentureBeat"
+    title: "How E2B became essential to 88% of Fortune 100 companies and raised $21 million"
+    sourceType: independent_journalism
+    publishedAt: "2025-07-28"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_e2b_venturebeat_20250728. Reporter interview corroborates the Series A and a seven-figure new-business month; enterprise-adoption claims attributed to the company. Accessed 2026-09-07."
+
+  - url: "https://jobs.ashbyhq.com/e2b/29cca1db-1bfe-45d6-bda1-b1ca691f7fb6"
+    publisher: "E2B via Ashby"
+    title: "E2B current job postings"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Phase 3D source p3d_e2b_ashby_current. Current E2B hiring copy states over $37M in funding and eight-figure revenue, resolving the earlier $32M figure as a prior snapshot. Exact current funding undisclosed. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/sites/rashishrivastava/2026/03/31/why-this-ai-law-firm-is-ditching-the-billable-hour/"
+    publisher: "Forbes"
+    title: "Why This AI Law Firm Is Ditching The Billable Hour"
+    sourceType: independent_journalism
+    publishedAt: "2026-03-31"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_crosby_forbes_20260331. Establishes Crosby as a registered law firm with per-contract pricing, about 100 clients, 30 lawyers, 13,000 contracts reviewed, and about 400% revenue growth since October. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/sites/annatong/2026/05/27/thrive-and-sequoia-back-pace-with-46-million-to-automate-insurances-back-office/"
+    publisher: "Forbes"
+    title: "Thrive And Sequoia Back Pace With $46 Million To Automate Insurance's Back Office"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_pace_forbes_20260527. Supports the Series B, $375M valuation, 28-person team, named customers, and the elastic-AI-labor operating thesis. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/sites/victordey/2026/08/20/serval-wants-to-replace-servicenow-with-ai-that-builds-enterprise-automation/"
+    publisher: "Forbes"
+    title: "Serval Wants To Replace ServiceNow With AI That Builds Enterprise Automation"
+    sourceType: independent_journalism
+    publishedAt: "2026-08-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_serval_forbes_20260820. Confirms $127M total funding, $1B valuation, and ServiceNow-displacement positioning. Revenue-growth claims remain company-sourced. Accessed 2026-09-07."
+
+  - url: "https://techcrunch.com/2025/11/10/ai-powerpoint-killer-gamma-hits-2-1b-valuation-100m-arr-founder-says/"
+    publisher: "TechCrunch"
+    title: "AI PowerPoint-killer Gamma hits $2.1B valuation, $100M ARR, founder says"
+    sourceType: independent_journalism
+    publishedAt: "2025-11-10"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Phase 3D source p3d_gamma_techcrunch_20251110. Reports about $90M total fundraising and states the $68M Series B contained a $20M secondary offering, supporting a derived approximately $48M Series B primary component. Accessed 2026-09-07."
+
+  - url: "https://www.axios.com/pro/enterprise-software-deals/2025/11/20/gamma-acquisitions-ipo-unicorn"
+    publisher: "Axios"
+    title: "Gamma looking at deals after hitting unicorn status"
+    sourceType: independent_journalism
+    publishedAt: "2025-11-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Phase 3D source p3d_gamma_axios_20251120. CEO interview confirms the $68M round and the $100M ARR milestone as the company evaluates acquisitions. Accessed 2026-09-07."
+
+  # p3d_applied_forbes_20260902 and p3d_wispr_tc_20260817 from the packet are
+  # already in the Phase 3C register at their exact URLs; supportRole was added
+  # to those existing entries rather than duplicating the record.
+
+  - url: "https://www.theinformation.com/articles/applied-compute-talks-double-valuation-3-billion-open-source-demand"
+    publisher: "The Information"
+    title: "Applied Compute in Talks to Double Valuation to $3 Billion on Open-Source Demand"
+    sourceType: independent_journalism
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Phase 3D source p3d_applied_information_current. Reports around $50M in annualized revenue and says the financing is still under discussion. Revenue is third-party reported, not company-audited. Accessed 2026-09-07."
+
+  - url: "https://dealroom.co/news/144691-applied-compute-in-talks-to-double-valuation-to-3b-on-open-source-demand/"
+    publisher: "Dealroom News"
+    title: "Applied Compute in talks to double valuation to $3B on open-source demand"
+    sourceType: structured_secondary
+    publishedAt: "2026-08-12"
+    isPressReleaseReproduction: false
+    originatesFromUrl: "https://www.theinformation.com/articles/applied-compute-talks-double-valuation-3-billion-open-source-demand"
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_applied_dealroom_20260812. States the financing has not closed and reports around $50M annualized revenue. originatesFrom The Information: treat as secondary corroboration, not an independent second origin. Accessed 2026-09-07."
+
+  - url: "https://www.investing.com/news/economy-news/exclusivemodal-labs-valued-at-465-billion-as-ai-coding-takes-off-4704718"
+    publisher: "Reuters"
+    title: "Modal Labs valued at $4.65 billion as AI coding takes off"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_modal_reuters_20260521. Confirms the $355M financing at a $4.65B valuation and interviews the CEO about the business. Accessed 2026-09-07."
+
+  - url: "https://siliconangle.com/2026/05/21/serverless-ai-infrastructure-startup-modal-labs-seals-355m-funding-round/"
+    publisher: "SiliconANGLE"
+    title: "Serverless AI infrastructure startup Modal Labs seals $355M funding round"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_modal_siliconangle_20260521. Reports roughly $300M annualized revenue up from about $60M in September, and discusses Modal's third-party compute-provider model and rising infrastructure costs. Accessed 2026-09-07."
+
+  - url: "https://www.businessinsider.com/saas-is-dead-startup-linear-just-doubled-its-valuation-2026-8"
+    publisher: "Business Insider"
+    title: "Everyone says software is dead. SaaS startup Linear just doubled its valuation to $2.5 billion."
+    sourceType: independent_journalism
+    publishedAt: "2026-08-26"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_linear_bi_20260826. Reports the $99M transaction is entirely secondary, and confirms more than $100M ARR, 40,000 paying customers, profitability since year two, and current cash-flow positivity. Accessed 2026-09-07."
+
+  - url: "https://techcrunch.com/2025/06/10/atlassian-rival-linear-raises-82m-at-1-25b-valuation/"
+    publisher: "TechCrunch"
+    title: "Atlassian rival Linear raises $82M at $1.25B valuation"
+    sourceType: independent_journalism
+    publishedAt: "2025-06-10"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Phase 3D source p3d_linear_tc_20250610. Reports $134.2M total raised per Crunchbase, while Linear's own announcement says the $82M Series C included both primary and secondary. $134.2M is not primary capital. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/sites/rashishrivastava/2026/07/20/ai-startups-are-pivoting-from-flashy-demos-to-tech-that-pays-the-bills/"
+    publisher: "Forbes"
+    title: "AI Startups Are Pivoting From Flashy Demos To Tech That Pays The Bills"
+    sourceType: independent_journalism
+    publishedAt: "2026-07-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: historical_context
+    termsNote: "Phase 3D source p3d_wispr_forbes_20260720. Reports the founders started Wispr AI's hardware effort before pivoting to Flow in 2024, supporting a 2021 operating-origin concept distinct from the current legal-entity founding date. Accessed 2026-09-07."
+
+  - url: "https://docs.wisprflow.ai/articles/3467817258-security-and-compliance-faq"
+    publisher: "Wispr Flow"
+    title: "Security and compliance FAQ"
+    sourceType: official_company
+    publishedAt: "2026-09-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: legal_entity_disclosure
+    termsNote: "Phase 3D source p3d_wispr_security_20260904. States Wispr AI, Inc. is a Delaware C-corporation founded in 2023. 2021 is operating/project origin; 2023 is current legal-entity founding. Accessed 2026-09-07."
+
+  - url: "https://sacra.com/research/retell-ai-60m-yr-up-650-yoy/"
+    publisher: "Sacra"
+    title: "Retell AI at $60M/year up 650% YoY"
+    sourceType: structured_secondary
+    publishedAt: "2026-05-12"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Phase 3D source p3d_retell_sacra_20260512. Sacra estimates $60M annualized revenue in April 2026: supports the direction of rapid growth, not audited revenue. Accessed 2026-09-07."
+
+  - url: "https://sacra.com/c/retell-ai/"
+    publisher: "Sacra"
+    title: "Retell AI revenue, funding and news"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Phase 3D source p3d_retell_sacra_current. Sacra estimates $80M annualized revenue in August 2026 and lists $4.6M funding. An estimate, not an audited figure. Accessed 2026-09-07."
+
+  - url: "https://www.cbinsights.com/company/retell-ai/financials"
+    publisher: "CB Insights"
+    title: "Retell AI funding and financial profile"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Phase 3D source p3d_retell_cbinsights_current. CB Insights reports $5.1M total funding across two rounds, versus the company's disclosed $4.6M seed. Both definitions preserved. Accessed 2026-09-07."
+
+  - url: "https://stripe.com/customers/retell-ai"
+    publisher: "Stripe"
+    title: "Retell AI Automates Usage-Based Pricing to Scale its AI Voice Agent Platform"
+    sourceType: customer_vendor
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: customer_vendor
+    termsNote: "Phase 3D source p3d_retell_stripe_current. Stripe says Retell scaled from $1M to $10M+ annualized revenue within a year of usage-based billing and now processes more than 30M calls per month. External operating evidence, not independent journalism. Accessed 2026-09-07."
+
+  - url: "https://www.cbinsights.com/company/resend/financials"
+    publisher: "CB Insights"
+    title: "Resend funding and financial profile"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Phase 3D source p3d_resend_cbinsights_current. Reports $21.5M total raised over five financings and an $18M Series A. Total is a third-party estimate until primary round history is reconstructed. Accessed 2026-09-07."
+
+  - url: "https://betakit.com/ex-shopify-engineers-raise-fresh-financing-to-scale-turbopuffers-ai-search/"
+    publisher: "BetaKit"
+    title: "Ex-Shopify engineers raise fresh financing to scale Turbopuffer's AI search"
+    sourceType: independent_journalism
+    publishedAt: "2025-12-19"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_turbopuffer_betakit_20251219. Confirms fresh funding from Lachy Groom and Thrive, says 2025 sales grew tenfold, and states the financing amount was undisclosed. Accessed 2026-09-07."
+
+  - url: "https://sacra.com/research/100m-yr-posthog-of-vector-databases/"
+    publisher: "Sacra"
+    title: "$100M/year PostHog of vector databases"
+    sourceType: structured_secondary
+    publishedAt: "2026-05-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Phase 3D source p3d_turbopuffer_sacra_20260521. Sacra estimates $100M annualized revenue in March 2026, aligning with the founder's own $100M run-rate claim. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/posts/sirupsen_turbopuffer-crossed-100m-run-rate-in-march-activity-7463237416338915328-QQ8A"
+    publisher: "Simon Horup Eskildsen"
+    title: "Founder disclosure on revenue, profitability and capital raised"
+    sourceType: founder_or_executive
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Phase 3D source p3d_turbopuffer_founder_current. Founder states turbopuffer crossed $100M run-rate in March, was profitable, and had raised less than $1M. Direct company disclosure, not audited financial evidence. Accessed 2026-09-07."
+
+  - url: "https://stripe.com/en-ca/customers/browserbase"
+    publisher: "Stripe"
+    title: "Browserbase Powers Web Browsing for AI Agents and Apps with Stripe's Usage-Based Billing"
+    sourceType: customer_vendor
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: customer_vendor
+    termsNote: "Phase 3D source p3d_browserbase_stripe_current. Stripe states Browserbase generated millions in revenue in its first year and bills hundreds of millions of browser-session minutes. Does not establish current 2026 revenue. Accessed 2026-09-07."
+
+  - url: "https://www.thetimes.com/business/companies-markets/article/note-taking-app-granola-latest-uk-unicorn-7bc2bfgqm"
+    publisher: "The Times"
+    title: "Note-taking app Granola becomes latest UK unicorn after fundraising"
+    sourceType: independent_journalism
+    publishedAt: "2026-03-25"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_granola_times_20260325. Reports revenue by mid-March 2026 reached 2.5x the prior-year level and headcount was about 55. Absolute revenue and profitability remain undisclosed. Accessed 2026-09-07."
+
+  - url: "https://www.bloomberg.com/news/articles/2026-03-25/ai-notetaker-granola-hits-1-5-billion-value-in-125-million-funding"
+    publisher: "Bloomberg"
+    title: "AI Notetaker Granola Hits $1.5 Billion Value in $125 Million Funding"
+    sourceType: independent_journalism
+    publishedAt: "2026-03-25"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Phase 3D source p3d_granola_bloomberg_20260325. Independent reporting corroborates the Series C and valuation. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/sites/davidprosser/2026/05/18/why-dust-believes-agentic-ai-has-to-be-a-team-sport/"
+    publisher: "Forbes"
+    title: "Why Dust Believes Agentic AI Has To Be A Team Sport"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Phase 3D source p3d_dust_forbes_20260518. Product and founder context around the Series B. Does not independently validate the 240% NRR or zero-churn claims. Accessed 2026-09-07."
+
+  - url: "https://www.vanta.com/customers/dust"
+    publisher: "Vanta"
+    title: "With Vanta, Dust achieved SOC 2 Type II audit readiness in three weeks"
+    sourceType: customer_vendor
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: customer_vendor
+    termsNote: "Phase 3D source p3d_dust_vanta_current. External vendor case study supports Dust's enterprise expansion and reports a roughly 70-person company. Does not validate NRR or churn. Accessed 2026-09-07."
+
+# --- BATCH 2 (Phase 4B ingestion) ---
+  - url: "https://www.withdavid.ai/news/announcing-our-50m-series-b"
+    publisher: "David AI"
+    title: "Announcing our $50M Series B"
+    sourceType: official_company
+    publishedAt: "2025-10-08"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_david_seriesb_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.bloomberg.com/news/articles/2025-10-08/david-ai-raises-50-million-to-bring-audio-data-to-ai-models"
+    publisher: "Bloomberg"
+    title: "David AI Raises $50 Million to Bring Audio Data to AI Models"
+    sourceType: independent_journalism
+    publishedAt: "2025-10-08"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_david_bloomberg_20251008. Origin scope as researched: independent_transaction_reporting. Support role as researched: transaction_detail."
+
+  - url: "https://exa.ai/blog/announcing-series-c"
+    publisher: "Exa"
+    title: "Exa raises $250M Series C"
+    sourceType: official_company
+    publishedAt: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_exa_seriesc_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2026/05/20/ai-search-startups-are-blowing-up/"
+    publisher: "TechCrunch"
+    title: "AI search startups are blowing up"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_exa_tc_20260520. Origin scope as researched: independent_market_reporting. Support role as researched: contextual."
+
+  - url: "https://www.prnewswire.com/news-releases/listen-labs-raises-69-million-series-b-to-bring-customer-voices-into-every-decision-302661000.html"
+    publisher: "Listen Labs via PRNewswire"
+    title: "Listen Labs raises $69 million Series B"
+    sourceType: official_company
+    publishedAt: "2026-01-14"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_listen_pr_20260114. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://venturebeat.com/technology/listen-labs-raises-usd69m-after-viral-billboard-hiring-stunt-to-scale-ai"
+    publisher: "VentureBeat"
+    title: "Listen Labs raises $69M to scale AI customer interviews"
+    sourceType: independent_journalism
+    publishedAt: "2026-01-14"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_listen_vb_20260114. Origin scope as researched: management_interview_and_transaction_reporting. Support role as researched: contextual."
+
+  - url: "https://www.rillet.com/blog/rillet-raises-100m-series-c-at-1b-valuation-to-build-accounting-superintelligence"
+    publisher: "Rillet"
+    title: "Rillet raises $100M Series C at $1B valuation"
+    sourceType: official_company
+    publishedAt: "2026-08-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_rillet_seriesc_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2026/08/19/rillet-raises-100m-series-c-at-1b-valuation-2-years-after-emerging-from-stealth/"
+    publisher: "TechCrunch"
+    title: "Rillet raises $100M Series C at $1B valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-08-19"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Batch 2 source b2_rillet_tc_20260819. Origin scope as researched: transaction_reporting_with_company_metrics. Support role as researched: corroborating."
+
+  - url: "https://techcrunch.com/2026/08/21/how-ai-accounting-startup-rillet-raised-100m-and-became-a-unicorn-in-48-hours/"
+    publisher: "TechCrunch"
+    title: "How AI accounting startup Rillet raised $100M and became a unicorn in 48 hours"
+    sourceType: independent_journalism
+    publishedAt: "2026-08-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_rillet_tc_20260821. Origin scope as researched: management_interview. Support role as researched: contextual."
+
+  - url: "https://parallel.ai/blog/series-b"
+    publisher: "Parallel"
+    title: "Parallel Raises Series B at a $2B Valuation"
+    sourceType: official_company
+    publishedAt: "2026-04-29"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_parallel_seriesb_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2026/04/29/parallel-web-systems-hits-2b-valuation-five-months-after-its-last-big-raise/"
+    publisher: "TechCrunch"
+    title: "Parallel Web Systems hits $2B valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-04-29"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Batch 2 source b2_parallel_tc_20260429. Origin scope as researched: transaction_reporting_with_company_metrics. Support role as researched: corroborating."
+
+  - url: "https://www.wsj.com/cio-journal/ex-twitter-ceos-ai-startup-raises-funds-at-2-billion-valuation-63c927fc"
+    publisher: "Wall Street Journal"
+    title: "Ex-Twitter CEO's AI Startup Raises Funds at $2 Billion Valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-04-29"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Batch 2 source b2_parallel_wsj_202604. Origin scope as researched: independent_transaction_reporting. Support role as researched: corroborating."
+
+  - url: "https://www.braintrust.dev/blog/announcing-series-b"
+    publisher: "Braintrust"
+    title: "Braintrust's Series B"
+    sourceType: official_company
+    publishedAt: "2026-02-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_braintrust_seriesb_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.axios.com/pro/enterprise-software-deals/2026/02/17/ai-observability-braintrust-80-million-800-million"
+    publisher: "Axios"
+    title: "AI observability startup raises $80M at an $800M valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-02-17"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_braintrust_axios_20260217. Origin scope as researched: independent_transaction_reporting. Support role as researched: transaction_detail."
+
+  - url: "https://techcrunch.com/2026/05/06/ai-evaluation-startup-braintrust-confirms-breach-tells-every-customer-to-rotate-sensitive-keys/"
+    publisher: "TechCrunch"
+    title: "Braintrust confirms security incident"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-06"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_braintrust_tc_20260506. Origin scope as researched: independent_security_reporting. Support role as researched: negative_event."
+
+  - url: "https://xbow.com/blog/series-b"
+    publisher: "XBOW"
+    title: "XBOW Raises $75M Series B"
+    sourceType: official_company
+    publishedAt: "2025-06-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_xbow_seriesb_company. Origin scope as researched: company_origin. Support role as researched: primary_fact. Page metadata is inconsistent in some crawls; financing history sources place the Series B in June 2025."
+
+  - url: "https://xbow.com/news/xbow-raises-120m-to-scale"
+    publisher: "XBOW"
+    title: "XBOW Raises $120M Series C"
+    sourceType: official_company
+    publishedAt: "2026-03-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_xbow_seriesc_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://xbow.com/news/xbow-secures-additional-35m-from-strategic-investors"
+    publisher: "XBOW"
+    title: "XBOW Secures Additional $35M"
+    sourceType: official_company
+    publishedAt: "2026-05-06"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_xbow_extension_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.nasdaqprivatemarket.com/company/xbow/"
+    publisher: "Nasdaq Private Market"
+    title: "XBOW funding history"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 source b2_xbow_npm_current. Origin scope as researched: round_history_estimate. Support role as researched: structured_secondary."
+
+  - url: "https://www.getbasis.ai/blogs/basis-raises-100m-series-b-led-by-accel-and-google-ventures"
+    publisher: "Basis"
+    title: "Basis raises $100M Series B"
+    sourceType: official_company
+    publishedAt: "2026-02-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_basis_seriesb_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.marketscreener.com/news/ai-accounting-startup-basis-raises-100-million-at-1-15-billion-valuation-ce7e5cdade88f425"
+    publisher: "Reuters"
+    title: "Basis raises $100 million at $1.15 billion valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-02-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_basis_reuters_20260224. Origin scope as researched: independent_transaction_reporting_with_company_adoption_metric. Support role as researched: transaction_detail."
+
+  - url: "https://www.cpapracticeadvisor.com/2026/02/24/basis-raises-100-million-to-deploy-ai-agents-for-accounting-firms/178759/"
+    publisher: "CPA Practice Advisor"
+    title: "Basis Raises $100 Million to Deploy AI Agents"
+    sourceType: independent_journalism
+    publishedAt: "2026-02-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_basis_cpa_20260224. Origin scope as researched: company_metric_republication. Support role as researched: contextual."
+
+  - url: "https://getavoca.ai/blog/avoca-raises-125m-series-b-1b-valuation"
+    publisher: "Avoca"
+    title: "Why We Are Building"
+    sourceType: official_company
+    publishedAt: "2026-04-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_avoca_seriesb_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://fortune.com/2026/04/27/avoca-ai-agents-missed-calls-hvac-plumbing-roofing-kleiner-perkins-chen-shrivastava-braswell/"
+    publisher: "Fortune"
+    title: "How a chance encounter in Texas sparked a $1 billion AI startup"
+    sourceType: independent_journalism
+    publishedAt: "2026-04-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_avoca_fortune_20260427. Origin scope as researched: management_interview_and_customer_count. Support role as researched: contextual."
+
+  - url: "https://www.cbinsights.com/company/avoca/financials"
+    publisher: "CB Insights"
+    title: "Avoca funding profile"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 source b2_avoca_cbinsights_current. Origin scope as researched: estimated_round_history. Support role as researched: structured_secondary."
+
+  - url: "https://www.assorthealth.com/blog/assort-health-raises-120-million-series-c-to-scale-largest-deployment-of-ai-agents-for-the-patient-journey"
+    publisher: "Assort Health"
+    title: "Assort Health Raises $120M Series C"
+    sourceType: official_company
+    publishedAt: "2026-06-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_assort_seriesc_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.forbes.com/sites/amyfeldman/2026/06/24/these-29-year-olds-ai-chatbot-for-scheduling-doctor-visits-is-now-worth-12-billion/"
+    publisher: "Forbes"
+    title: "These 29-Year-Olds' AI Agent Is Now Worth $1.2 Billion"
+    sourceType: independent_journalism
+    publishedAt: "2026-06-24"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_assort_forbes_20260624. Origin scope as researched: independent_transaction_reporting. Support role as researched: transaction_detail."
+
+  - url: "https://elevenlabs.io/blog/series-d"
+    publisher: "ElevenLabs"
+    title: "ElevenLabs raises $500M Series D at $11B"
+    sourceType: official_company
+    publishedAt: "2026-02-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_eleven_seriesd_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://elevenlabs.io/blog/500m-arr-and-new-investors"
+    publisher: "ElevenLabs"
+    title: "ElevenLabs crosses $500M ARR"
+    sourceType: official_company
+    publishedAt: "2026-05-05"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_eleven_arr_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2026/05/05/elevenlabs-lists-blackrock-jamie-foxx-and-eva-longoria-as-new-investors/"
+    publisher: "TechCrunch"
+    title: "ElevenLabs lists new investors"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-05"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: corroborating
+    termsNote: "Batch 2 source b2_eleven_tc_20260505. Origin scope as researched: management_metric_republication_and_tender_reporting. Support role as researched: corroborating."
+
+  - url: "https://vercel.com/blog/series-f"
+    publisher: "Vercel"
+    title: "Towards the AI Cloud: Our Series F"
+    sourceType: official_company
+    publishedAt: "2025-09-30"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_vercel_seriesf_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.investing.com/news/stock-market-news/ai-coding-startup-vercel-raises-300-million-valued-at-93-billion-4264199"
+    publisher: "Reuters"
+    title: "Vercel raises $300M, valued at $9.3B"
+    sourceType: independent_journalism
+    publishedAt: "2025-09-30"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_vercel_reuters_20250930. Origin scope as researched: independent_transaction_reporting_with_company_growth_metrics. Support role as researched: transaction_detail."
+
+  - url: "https://techcrunch.com/2026/04/13/vercel-ceo-guillermo-rauch-signals-ipo-readiness-as-ai-agents-fuel-revenue-surge/"
+    publisher: "TechCrunch"
+    title: "Vercel CEO signals IPO readiness"
+    sourceType: independent_journalism
+    publishedAt: "2026-04-13"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 source b2_vercel_tc_20260413. Origin scope as researched: third_party_revenue_reporting. Support role as researched: third_party_reported."
+
+  - url: "https://techcrunch.com/2026/04/20/app-host-vercel-confirms-security-incident-says-customer-data-was-stolen-via-breach-at-context-ai/"
+    publisher: "TechCrunch"
+    title: "Vercel confirms security incident"
+    sourceType: independent_journalism
+    publishedAt: "2026-04-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_vercel_tc_breach_20260420. Origin scope as researched: independent_security_reporting. Support role as researched: negative_event."
+
+  - url: "https://techcrunch.com/2026/01/21/openevidence-hits-12b-valuation-with-new-round-led-by-thrive-dst/"
+    publisher: "TechCrunch"
+    title: "OpenEvidence hits $12B valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-01-21"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_openevidence_tc_20260121. Origin scope as researched: independent_transaction_reporting_with_company_metrics. Support role as researched: transaction_detail."
+
+  - url: "https://www.statnews.com/2026/05/20/openevidence-pitches-hospitals-we-are-not-monsters/"
+    publisher: "STAT"
+    title: "OpenEvidence pitches hospitals"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_openevidence_stat_20260520. Origin scope as researched: independent_business_model_reporting_with_company_usage_metric. Support role as researched: contextual."
+
+  - url: "https://decagon.ai/blog/series-d-announcement"
+    publisher: "Decagon"
+    title: "Decagon's $250M commitment"
+    sourceType: official_company
+    publishedAt: "2026-01-27"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_decagon_seriesd_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://decagon.ai/blog/decagon-closes-employee-tender-at-4-5-billion-valuation"
+    publisher: "Decagon"
+    title: "Decagon closes employee tender"
+    sourceType: official_company
+    publishedAt: "2026-03-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_decagon_tender_company. Origin scope as researched: company_origin. Support role as researched: secondary_liquidity."
+
+  - url: "https://sacra.com/c/decagon/"
+    publisher: "Sacra"
+    title: "Decagon revenue, valuation and funding"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 source b2_decagon_sacra_current. Origin scope as researched: third_party_revenue_estimate. Support role as researched: third_party_estimate."
+
+  - url: "https://www.glean.com/press/glean-surpasses-300m-arr-unrivaled-enterprise-context-fuels-ai-adoption"
+    publisher: "Glean"
+    title: "Glean Surpasses $300M ARR"
+    sourceType: official_company
+    publishedAt: "2026-05-28"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_glean_300m_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2026/05/28/gleans-top-line-crosses-300m-as-ai-budget-cutting-becomes-its-major-selling-point/"
+    publisher: "TechCrunch"
+    title: "Glean's top line crosses $300M"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-28"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_glean_tc_20260528. Origin scope as researched: independent_pricing_model_reporting. Support role as researched: definition_caveat."
+
+  - url: "https://sierra.ai/blog/better-customer-experiences-built-on-sierra"
+    publisher: "Sierra"
+    title: "Better customer experiences built on Sierra"
+    sourceType: official_company
+    publishedAt: "2026-05-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_sierra_funding_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2026/05/04/sierra-raises-950m-as-the-race-to-own-enterprise-ai-gets-serious/"
+    publisher: "TechCrunch"
+    title: "Sierra raises $950M"
+    sourceType: independent_journalism
+    publishedAt: "2026-05-04"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_sierra_tc_20260504. Origin scope as researched: independent_transaction_reporting_with_company_adoption_metrics. Support role as researched: transaction_detail."
+
+  - url: "https://sierra.ai/jp/blog/julia-brau-donnelly-joins-sierra"
+    publisher: "Sierra"
+    title: "Julia Brau Donnelly joins Sierra as CFO"
+    sourceType: official_company
+    publishedAt: "2026-08-31"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_sierra_cfo_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://www.cbinsights.com/company/sierra-2001/financials"
+    publisher: "CB Insights"
+    title: "Sierra funding profile"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 source b2_sierra_cbinsights_current. Origin scope as researched: estimated_round_history. Support role as researched: structured_secondary."
+
+  - url: "https://techcrunch.com/2026/02/18/canva-gets-to-4b-in-revenue-as-llm-referral-traffic-rises/"
+    publisher: "TechCrunch"
+    title: "Canva gets to $4B in revenue"
+    sourceType: independent_journalism
+    publishedAt: "2026-02-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 source b2_canva_tc_20260218. Origin scope as researched: company_metric_via_management_interview. Support role as researched: management_interview."
+
+  - url: "https://www.tradingview.com/news/reuters.com%2C2025%3Anewsml_L8N3UC03F%3A0-canva-launched-employee-tender-offer-at-valuation-of-42-billion-statement/"
+    publisher: "Reuters via TradingView"
+    title: "Canva launched employee tender at $42B valuation"
+    sourceType: independent_journalism
+    publishedAt: "2025-08-20"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_canva_tender_reuters_2025. Origin scope as researched: transaction_reporting_from_company_statement. Support role as researched: secondary_liquidity."
+
+  - url: "https://robinhood.com/us/en/newsroom/rvi-canva/"
+    publisher: "Robinhood Ventures Fund I"
+    title: "RVI Invests $25M in Canva"
+    sourceType: investor_industry
+    publishedAt: "2026-06-25"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_canva_rvi_20260625. Origin scope as researched: direct_investor_disclosure. Support role as researched: transaction_detail."
+
+  - url: "https://www.sec.gov/Archives/edgar/data/2085091/000089418926022643/rvi.htm"
+    publisher: "SEC"
+    title: "RVI Schedule of Investments"
+    sourceType: regulatory
+    publishedAt: "2026-06-30"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_canva_sec_20260630. Origin scope as researched: regulatory_record. Support role as researched: transaction_detail."
+
+  - url: "https://techcrunch.com/2026/06/09/lovable-says-it-has-hit-500m-in-annualized-revenue-with-1-million-new-projects-a-week/"
+    publisher: "TechCrunch"
+    title: "Lovable says it has hit $500M annualized revenue"
+    sourceType: independent_journalism
+    publishedAt: "2026-06-09"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 source b2_lovable_tc_20260609. Origin scope as researched: company_metric_via_interview. Support role as researched: management_metric."
+
+  - url: "https://lovable.dev/blog/our-response-to-the-april-2026-incident"
+    publisher: "Lovable"
+    title: "Our response to the April 2026 incident"
+    sourceType: official_company
+    publishedAt: "2026-04-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 source b2_lovable_incident_company. Origin scope as researched: direct_company_disclosure. Support role as researched: negative_event."
+
+  - url: "https://lovable.dev/blog/series-c"
+    publisher: "Lovable"
+    title: "We raised $400M Series C"
+    sourceType: official_company
+    publishedAt: "2026-08-12"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_lovable_seriesc_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://blog.fal.ai/our-series-d-scaling-fal/"
+    publisher: "fal"
+    title: "Our Series D: Scaling fal"
+    sourceType: official_company
+    publishedAt: "2025-12-09"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_fal_seriesd_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://techcrunch.com/2025/12/09/fal-nabs-140m-in-fresh-funding-led-by-sequoia-tripling-valuation-to-4-5b/"
+    publisher: "TechCrunch"
+    title: "Fal nabs $140M in fresh funding"
+    sourceType: independent_journalism
+    publishedAt: "2025-12-09"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_fal_tc_20251209. Origin scope as researched: independent_primary_secondary_transaction_reporting. Support role as researched: transaction_detail."
+
+  - url: "https://www.theinformation.com/articles/video-hosting-startup-fal-funding-talks-8-billion-valuation"
+    publisher: "The Information"
+    title: "Fal in Funding Talks at $8 Billion Valuation"
+    sourceType: independent_journalism
+    publishedAt: "2026-03-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 source b2_fal_information_20260318. Origin scope as researched: independent_reporting_from_people_with_direct_knowledge. Support role as researched: reported_unconfirmed."
+
+  - url: "https://www.baseten.co/blog/announcing-our-series-f/"
+    publisher: "Baseten"
+    title: "Announcing our Series F"
+    sourceType: official_company
+    publishedAt: "2026-06-22"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: primary_fact
+    termsNote: "Batch 2 source b2_baseten_seriesf_company. Origin scope as researched: company_origin. Support role as researched: primary_fact."
+
+  - url: "https://finance.yahoo.com/technology/ai/articles/baseten-raises-1-5-billion-130000555.html"
+    publisher: "Business Wire via Yahoo Finance"
+    title: "Baseten Raises $1.5B"
+    sourceType: official_company
+    publishedAt: "2026-06-22"
+    isPressReleaseReproduction: true
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_baseten_bw_20260622. Origin scope as researched: company_origin. Support role as researched: transaction_detail."
+
+  - url: "https://techcrunch.com/2026/06/18/ai-inference-startup-baseten-reportedly-raising-1-5b-months-after-its-last-mega-round/"
+    publisher: "TechCrunch"
+    title: "Baseten reportedly raising $1.5B"
+    sourceType: independent_journalism
+    publishedAt: "2026-06-18"
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: transaction_detail
+    termsNote: "Batch 2 source b2_baseten_tc_20260618. Origin scope as researched: independent_split_price_reporting. Support role as researched: transaction_detail."
+
+  - url: "https://www.cbinsights.com/company/baseten/financials"
+    publisher: "CB Insights"
+    title: "Baseten funding profile"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 source b2_baseten_cbinsights_current. Origin scope as researched: estimated_round_history. Support role as researched: structured_secondary."
+
+# --- BATCH 2 IDENTITY ENRICHMENT (Phase 4C-B) ---
+  - url: "https://www.ycombinator.com/companies/david-ai"
+    publisher: "Y Combinator"
+    title: "David AI identity reference (founders roles founding hq)"
+    sourceType: investor_industry
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles_founding_hq. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/david-ai"
+    publisher: "LinkedIn"
+    title: "David AI identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.ycombinator.com/companies/exa"
+    publisher: "Y Combinator"
+    title: "Exa identity reference (founders roles founding hq)"
+    sourceType: investor_industry
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles_founding_hq. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://exa.ai/about"
+    publisher: "Exa"
+    title: "Exa identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://listenlabs.ai/founders-program"
+    publisher: "Listen Labs"
+    title: "Listen Labs identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/listenlabss"
+    publisher: "LinkedIn"
+    title: "Listen Labs identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://app.listenlabs.com/msa"
+    publisher: "Listen Labs"
+    title: "Listen Labs identity reference (hq legal entity)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: legal_entity_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_legal_entity. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.rillet.com/about"
+    publisher: "Rillet"
+    title: "Rillet identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/team-rillet"
+    publisher: "LinkedIn"
+    title: "Rillet identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/parallel-web"
+    publisher: "LinkedIn"
+    title: "Parallel Web Systems identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/in/paragagr"
+    publisher: "LinkedIn"
+    title: "Parallel Web Systems identity reference (founder role)"
+    sourceType: founder_or_executive
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founder_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://parallel.ai/terms-of-service"
+    publisher: "Parallel Web Systems"
+    title: "Parallel Web Systems identity reference (legal address)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: legal_entity_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: legal_address. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.braintrust.dev/blog/reliable-ai"
+    publisher: "Braintrust"
+    title: "Braintrust identity reference (operating origin)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: operating_origin. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/braintrust-data"
+    publisher: "LinkedIn"
+    title: "Braintrust identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.getbasis.ai/blogs/behavior-specs-an-open-standard-for-supervising-long-horizon-agents"
+    publisher: "Braintrust"
+    title: "Braintrust identity reference (current ceo title support)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: current_ceo_title_support. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://xbow.com/leadership"
+    publisher: "XBOW"
+    title: "XBOW identity reference (founder role)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founder_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/xbow"
+    publisher: "LinkedIn"
+    title: "XBOW identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.getbasis.ai/blogs/basis-raises-3-6m-with-an-ai-platform-for-accounting-firms"
+    publisher: "Basis"
+    title: "Basis identity reference (founders origin)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_origin. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/get-basis-ai"
+    publisher: "LinkedIn"
+    title: "Basis identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.nasdaqprivatemarket.com/company/basis/"
+    publisher: "Nasdaq Private Market"
+    title: "Basis identity reference (founder roles support)"
+    sourceType: structured_secondary
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: third_party_estimate
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founder_roles_support. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.avoca.ai/careers"
+    publisher: "Avoca"
+    title: "Avoca identity reference (founders)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/avoca-ai"
+    publisher: "LinkedIn"
+    title: "Avoca identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.avoca.ai/blog/home-services-operators-pe-ai-staying-ahead"
+    publisher: "Avoca"
+    title: "Avoca identity reference (tyson current role)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: tyson_current_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.avoca.ai/blog/the-new-standard-for-csrs-how-ai-is-reshaping-call-centers-in-hvac"
+    publisher: "Avoca"
+    title: "Avoca identity reference (apurva current role)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: apurva_current_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.avoca.ai/blog/avoca-raises-125m-series-b-1b-valuation"
+    publisher: "Avoca"
+    title: "Avoca identity reference (stage)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: stage. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.assorthealth.com/about-us"
+    publisher: "Assort Health"
+    title: "Assort Health identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/assorthealth"
+    publisher: "LinkedIn"
+    title: "Assort Health identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://elevenlabs.io/press"
+    publisher: "ElevenLabs"
+    title: "ElevenLabs identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://elevenlabs.io/blog/elevenlabs-launches-new-generative-voice-ai-products-and-announces-19m-series-a-round-led-by-nat-friedman-daniel-gross-and-andreessen-horowitz"
+    publisher: "ElevenLabs"
+    title: "ElevenLabs identity reference (inception)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: inception. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/elevenlabs"
+    publisher: "LinkedIn"
+    title: "ElevenLabs identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/vercel"
+    publisher: "LinkedIn"
+    title: "Vercel identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/openevidence"
+    publisher: "LinkedIn"
+    title: "OpenEvidence identity reference (hq and 2021 founding claim)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_and_2021_founding_claim. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://research.contrary.com/company/openevidence"
+    publisher: "Contrary Research"
+    title: "OpenEvidence identity reference (2021 origin and roles)"
+    sourceType: investor_industry
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: 2021_origin_and_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/companies/openevidence/"
+    publisher: "Forbes"
+    title: "OpenEvidence identity reference (2022 founding claim and ceo)"
+    sourceType: independent_journalism
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: 2022_founding_claim_and_ceo. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/sites/amyfeldman/2025/07/15/this-ai-founder-became-a-billionaire-by-building-chatgpt-for-doctors/"
+    publisher: "Forbes"
+    title: "OpenEvidence identity reference (cto role)"
+    sourceType: independent_journalism
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: cto_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://decagon.ai/about"
+    publisher: "Decagon"
+    title: "Decagon identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/decagon-ai"
+    publisher: "LinkedIn"
+    title: "Decagon identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.glean.com/about"
+    publisher: "Glean"
+    title: "Glean identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.glean.com/press"
+    publisher: "Glean"
+    title: "Glean identity reference (founder set hq)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founder_set_hq. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/gleanwork"
+    publisher: "LinkedIn"
+    title: "Glean identity reference (hq founding)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.glean.com/blog/glean-series-f-announcement"
+    publisher: "Glean"
+    title: "Glean identity reference (stage)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: stage. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.glean.com/authors/piyush-prahladka"
+    publisher: "Glean"
+    title: "Glean identity reference (piyush current function)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: piyush_current_function. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://sierra.ai/about"
+    publisher: "Sierra"
+    title: "Sierra identity reference (founders)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://sierra.ai/resources/podcasts/interview-bret-taylor-of-sierra-and-openai"
+    publisher: "Sierra"
+    title: "Sierra identity reference (bret current role)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: bret_current_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://sequoiacap.com/companies/sierra"
+    publisher: "Sequoia Capital"
+    title: "Sierra identity reference (founding year)"
+    sourceType: investor_industry
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founding_year. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.forbes.com/companies/sierra/"
+    publisher: "Forbes"
+    title: "Sierra identity reference (hq founding ceo)"
+    sourceType: independent_journalism
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: contextual
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq_founding_ceo. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://public.canva.site/canva-press-hub-leadership"
+    publisher: "Canva"
+    title: "Canva identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.canva.com/about/"
+    publisher: "Canva"
+    title: "Canva identity reference (public launch year)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: public_launch_year. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/canva"
+    publisher: "LinkedIn"
+    title: "Canva identity reference (2012 founding claim hq)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: 2012_founding_claim_hq. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.canva.com/newsroom/news/aussie-startup-canva-announces-3-million-seed-round-world-class-investors/"
+    publisher: "Canva"
+    title: "Canva identity reference (2013 hq and early company)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: 2013_hq_and_early_company. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://lovable.dev/gpt-engineer"
+    publisher: "Lovable"
+    title: "Lovable identity reference (origin founding)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: origin_founding. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://lovable.dev/video/anton-osika-co-founder-and-ceo-lovable-hitting-85-day-30-retention-better-than-chatgpt"
+    publisher: "Lovable"
+    title: "Lovable identity reference (anton role)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: anton_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://lovable.dev/ja/blog/lovable-welcomes-molnett?preview=false"
+    publisher: "Lovable"
+    title: "Lovable identity reference (fabian role)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: fabian_role. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/lovable-dev"
+    publisher: "LinkedIn"
+    title: "Lovable identity reference (hq)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://fal.ai/about"
+    publisher: "fal"
+    title: "fal identity reference (founders founding hq)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_founding_hq. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://fal.ai/gen-media-report-volume-1"
+    publisher: "fal"
+    title: "fal identity reference (founder roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founder_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.baseten.co/about-us/"
+    publisher: "Baseten"
+    title: "Baseten identity reference (founders roles)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founders_roles. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.baseten.co/blog/announcing-our-series-a/"
+    publisher: "Baseten"
+    title: "Baseten identity reference (founding year)"
+    sourceType: official_company
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: founding_year. Identity fact only; not an investment input. Accessed 2026-09-07."
+
+  - url: "https://www.linkedin.com/company/baseten"
+    publisher: "LinkedIn"
+    title: "Baseten identity reference (hq)"
+    sourceType: identified_social
+    publishedAt: null
+    isPressReleaseReproduction: false
+    originatesFromUrl: null
+    supportRole: direct_company_disclosure
+    termsNote: "Batch 2 identity source (Phase 4C-B). Packet role as researched: hq. Identity fact only; not an investment input. Accessed 2026-09-07."
