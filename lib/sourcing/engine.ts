@@ -50,6 +50,7 @@ import type {
   ExistingCompanyMatch,
   FeedHealth,
   FilteredBuckets,
+  ReviewSignal,
 } from "./types";
 
 /** A discovery engine descriptor. */
@@ -155,13 +156,19 @@ export function runDiscoveryEngine(
     editorialEventPromotional: 0,
     outsideRecencyWindow: 0,
     lowDiscoveryUtility: 0,
+    mediumDiscoveryUtility: 0,
     unresolvedEntity: 0,
   };
   let itemsInspected = 0;
-  let relevantItems = 0;
+  let withinRecency = 0;
+  let digitalAssetRelevant = 0;
+  let candidateWorthinessPassed = 0;
+  let entitiesResolved = 0;
 
   // candidateId -> assembled candidate (provenance accumulates)
   const byId = new Map<string, Candidate>();
+  // Review-signal dedup key (normalized headline) -> assembled signal.
+  const reviewByKey = new Map<string, ReviewSignal>();
 
   for (const outcome of outcomes) {
     const { channel } = outcome;
@@ -173,6 +180,7 @@ export function runDiscoveryEngine(
         ok: false,
         itemsInspected: 0,
         itemsAccepted: 0,
+        itemsNeedingReview: 0,
         error: outcome.error,
       });
       continue;
@@ -186,31 +194,30 @@ export function runDiscoveryEngine(
         ok: true,
         itemsInspected: 0,
         itemsAccepted: 0,
+        itemsNeedingReview: 0,
         error: null,
       });
       continue;
     }
 
     const acceptedIds = new Set<string>();
+    let itemsNeedingReview = 0;
     for (const item of outcome.items) {
       itemsInspected += 1;
 
-      const extraction = extractCandidate(item);
-      if (!extraction) {
-        if (isNoiseHeadline(item.title)) filteredBuckets.editorialEventPromotional += 1;
-        else filteredBuckets.unresolvedEntity += 1;
-        continue;
-      }
-      // A "needs_review" extraction fell back to the raw headline as its name:
-      // no company-shaped subject was found, so it is market/policy/opinion
-      // commentary rather than a candidate (section 6).
-      if (extraction.identityConfidence === "needs_review") {
-        filteredBuckets.unresolvedEntity += 1;
-        continue;
-      }
-
+      // Funnel order: recency, then editorial/noise, then digital-asset
+      // relevance, then discovery utility, then entity extraction, then
+      // canonical matching. This keeps every bucket truthful - an item is
+      // never counted as "non-relevant" or "noise" merely because the
+      // deterministic extractor could not name the company (section 3).
       if (!withinLookback(item.publishedAt, runAt, lookbackDays)) {
         filteredBuckets.outsideRecencyWindow += 1;
+        continue;
+      }
+      withinRecency += 1;
+
+      if (isNoiseHeadline(item.title)) {
+        filteredBuckets.editorialEventPromotional += 1;
         continue;
       }
 
@@ -222,11 +229,46 @@ export function runDiscoveryEngine(
         filteredBuckets.nonDigitalAsset += 1;
         continue;
       }
-      if (relevance.strength === "moderate" && utility === "low") {
+      digitalAssetRelevant += 1;
+
+      // A resolved entity only becomes a New Candidate on a genuinely
+      // early-stage discovery signal (HIGH utility) - a routine product
+      // launch, partnership, integration, or expansion by an
+      // already-operating entity is real digital-asset news, but not a
+      // sourcing lead, regardless of whether relevance is strong or
+      // moderate. This is a signal-based utility gate, never a
+      // company-name blocklist, so it applies uniformly to every entity.
+      if (utility === "low") {
         filteredBuckets.lowDiscoveryUtility += 1;
         continue;
       }
-      relevantItems += 1;
+      if (utility === "medium") {
+        filteredBuckets.mediumDiscoveryUtility += 1;
+        continue;
+      }
+      candidateWorthinessPassed += 1;
+
+      // isNoiseHeadline already ran above, so extractCandidate's own noise
+      // guard cannot fire here; the only remaining failure mode is a
+      // headline with no company-shaped subject (needs_review).
+      const extraction = extractCandidate(item)!;
+      if (extraction.identityConfidence === "needs_review") {
+        // Every item reaching here already cleared the HIGH-utility gate
+        // above, so a genuine funding/launch/stealth signal exists; it is
+        // preserved for analyst review rather than silently dropped
+        // (section 7), never filtered outright.
+        itemsNeedingReview += 1;
+        addReviewSignal(reviewByKey, {
+          item,
+          channel,
+          runAt,
+          relevance,
+          utility,
+          identityIssue: "no company-shaped subject found in the headline",
+        });
+        continue;
+      }
+      entitiesResolved += 1;
 
       const normalizedDomain = extraction.domain ? normalizeDomain(extraction.domain) : null;
       const id = candidateId(extraction.name, normalizedDomain);
@@ -307,6 +349,7 @@ export function runDiscoveryEngine(
       ok: true,
       itemsInspected: outcome.items.length,
       itemsAccepted: acceptedIds.size,
+      itemsNeedingReview,
       error: null,
     });
   }
@@ -352,7 +395,12 @@ export function runDiscoveryEngine(
     filteredBuckets.editorialEventPromotional +
     filteredBuckets.outsideRecencyWindow +
     filteredBuckets.lowDiscoveryUtility +
+    filteredBuckets.mediumDiscoveryUtility +
     filteredBuckets.unresolvedEntity;
+
+  const reviewSignals = [...reviewByKey.values()].sort(
+    (a, b) => (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "") || a.headline.localeCompare(b.headline),
+  );
 
   return {
     engineId: engine.id,
@@ -361,18 +409,54 @@ export function runDiscoveryEngine(
     status,
     feeds,
     candidates,
+    reviewSignals,
     warnings,
     summary: {
       sourcesFetched: feeds.filter((f) => f.ok).length,
       itemsInspected,
-      relevantItems,
+      withinRecency,
+      digitalAssetRelevant,
+      candidateWorthinessPassed,
+      entitiesResolved,
       newCandidates,
       alreadyTracked,
+      needsIdentityReview: reviewSignals.length,
       filteredCount,
       filteredBuckets,
       lookbackDays,
     },
   };
+}
+
+/** Builds (or merges into an existing) Needs Identity Review signal, deduped by normalized headline. */
+function addReviewSignal(
+  reviewByKey: Map<string, ReviewSignal>,
+  args: {
+    item: FeedItem;
+    channel: DiscoveryChannel;
+    runAt: string;
+    relevance: { strength: RelevanceStrength; matchedTerms: string[] };
+    utility: DiscoveryUtility;
+    identityIssue: string;
+  },
+): void {
+  const { item, channel, runAt, relevance, identityIssue } = args;
+  const key = item.title.trim().toLowerCase();
+  const existing = reviewByKey.get(key);
+  if (existing) return; // Same story from another source: keep the first, no duplicate row.
+
+  reviewByKey.set(key, {
+    id: `review-${sha256Hex(key).slice(0, 12)}`,
+    headline: item.title,
+    source: channel.name,
+    sourceUrl: item.link ?? channel.url,
+    publishedAt: item.publishedAt,
+    discoveredAt: runAt,
+    whyRelevant: `${relevance.strength === "strong" ? "Strong" : "Moderate"} digital-asset relevance (${relevance.matchedTerms.slice(0, 3).join(", ") || "digital-asset context"})`,
+    whyUseful: "High discovery utility signal (funding, launch, or stealth language)",
+    identityIssue,
+    transport: channel.transport,
+  });
 }
 
 function buildWhySurfaced(

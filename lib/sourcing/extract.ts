@@ -26,16 +26,26 @@ export interface Extraction {
 
 /** Verb phrases that reliably put a company name at the start of a headline. */
 const REASON_PHRASES: ReadonlyArray<{ re: RegExp; reason: string }> = [
-  { re: /\b(raises?|raised|closes?|closed|lands?|landed|secures?|secured|nabs?|snags?|bags?|picks up|scores?|hauls in|pulls in|grabs?|extends?|expands?|tops up|adds to)\b/i, reason: "funding announcement" },
+  { re: /\b(raises?|raised|closes?|closed|lands?|landed|secures?|secured|nabs?|snags?|bags?|picks up|scores?|hauls in|pulls in|grabs?|extends?|tops up|adds to|gets? (?:backing|funding))\b/i, reason: "funding announcement" },
   { re: /\bseries [a-e]\b/i, reason: "private-market financing round" },
   { re: /\bseed (round|funding)\b/i, reason: "seed financing" },
-  { re: /\b(launches?|launched|unveils?|unveiled|debuts?|emerges? from stealth|comes out of stealth)\b/i, reason: "product or company launch" },
+  { re: /\b(launches?|launched|unveils?|unveiled|debuts?|emerges? from stealth|comes out of stealth|introduces?|goes live|go live|rolls? out|rolled out|brings?|builds?|expands?)\b/i, reason: "product or company launch" },
+  { re: /\bpartners? with\b/i, reason: "partnership announcement" },
   { re: /\b(valued at|valuation)\b/i, reason: "private-market valuation context" },
   { re: /\b(acquires?|acquired|to acquire|buys?)\b/i, reason: "acquisition activity" },
 ];
 
-const LEADING_DESCRIPTORS =
-  /^(?:the\s+)?(?:ai|fintech|biotech|healthtech|nuclear|climate|defense|defence|robotics|crypto|quantum|cybersecurity|security|enterprise|dev\s?tools?|data|space|energy|hardware|software|edtech|proptech|insurtech|legal\s?tech|logistics)\s+(?:startup|company|firm|maker|platform|lab)\s+/i;
+/** Sector/technology words used as a headline prefix before a noun ("Stablecoin startup Acme..."). */
+const DESCRIPTOR_WORD =
+  "(?:ai|fintech|biotech|healthtech|nuclear|climate|defense|defence|robotics|crypto|cryptocurrency|blockchain|web3|defi|depin|zk|stablecoin|tokeniz(?:ation|ed)|onchain|on-chain|custody|wallet|oracle|validator|layer\\s?2|l2|rollup|quantum|cybersecurity|security|enterprise|dev\\s?tools?|developer|data|space|energy|hardware|software|edtech|proptech|insurtech|legal\\s?tech|logistics)";
+
+const LEADING_DESCRIPTORS = new RegExp(
+  `^(?:the\\s+)?(?:${DESCRIPTOR_WORD}\\s+){1,2}(?:startup|company|firm|maker|platform|lab|network|protocol|foundation)\\s+`,
+  "i",
+);
+
+/** A single label word standing directly in front of the entity name ("Protocol Nova launches..."). */
+const LEADING_LABEL = /^(?:protocol|network|platform|exchange|wallet|foundation)\s+(?=[A-Z])/i;
 
 const SENTENCE_LEADERS = new Set([
   "a", "an", "at", "the", "this", "that", "these", "those", "how", "why", "what",
@@ -57,7 +67,7 @@ function looksLikeNameToken(tok: string): boolean {
 }
 
 function extractSubject(title: string): { name: string; verbMatched: boolean } | null {
-  let head = title.replace(LEADING_DESCRIPTORS, "").trim();
+  let head = title.replace(LEADING_DESCRIPTORS, "").replace(LEADING_LABEL, "").trim();
 
   let cut = head.length;
   let verbMatched = false;
@@ -68,8 +78,16 @@ function extractSubject(title: string): { name: string; verbMatched: boolean } |
       verbMatched = true;
     }
   }
-  // Also stop at "reportedly", "said to", a comma, or a colon.
-  for (const stop of [/\breportedly\b/i, /\bis said to\b/i, /,/, /:/]) {
+  // No known financing/launch/partnership verb: many crypto-native
+  // publications write headlines in Title Case, where every word (including
+  // ordinary verbs like "Bans", "Leaks", "Says", "Want") is capitalized. A
+  // capitalized-token-shape match alone cannot then tell a company name from
+  // an ordinary Title Case sentence, so an unresolved identity is the honest
+  // answer here rather than a guess (needs_review, never "probable").
+  if (!verbMatched) return null;
+
+  // Also stop at "reportedly", "said to", a comma, a colon, a parenthetical, or a spaced dash.
+  for (const stop of [/\breportedly\b/i, /\bis said to\b/i, /,/, /:/, /\s[-\u2013\u2014]\s/, /\(/]) {
     const m = head.match(stop);
     if (m && m.index !== undefined && m.index < cut) cut = m.index;
   }

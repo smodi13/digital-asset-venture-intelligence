@@ -25,6 +25,24 @@ describe("feed configuration", () => {
     expect(ALLOWED_FEED_URLS.has("https://www.coindesk.com/arc/outboundfeeds/rss")).toBe(true);
   });
 
+  it("includes the expanded crypto-native source set (Cointelegraph, Decrypt, Blockworks, CryptoSlate)", () => {
+    for (const [id, host] of [
+      ["cointelegraph-news", "cointelegraph.com"],
+      ["decrypt-news", "decrypt.co"],
+      ["blockworks-news", "blockworks.com"],
+      ["cryptoslate-news", "cryptoslate.com"],
+    ] as const) {
+      const feed = FEEDS.find((f) => f.id === id);
+      expect(feed).toBeDefined();
+      expect(new URL(feed!.url).hostname).toBe(host);
+      expect(ALLOWED_FEED_URLS.has(feed!.url)).toBe(true);
+    }
+  });
+
+  it("does not re-add the broad TechCrunch Venture feed", () => {
+    expect(FEEDS.some((f) => f.id === "techcrunch-venture")).toBe(false);
+  });
+
   it("does not read any environment credential", () => {
     // The sourcing modules import nothing from process.env. This asserts the
     // engine feed set is static config, not derived from a secret.

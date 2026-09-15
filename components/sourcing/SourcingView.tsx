@@ -101,6 +101,19 @@ function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): Eng
   const candidates = [...byId.values()].sort(
     (x, y) => y.discoveredAt.localeCompare(x.discoveredAt) || x.name.localeCompare(y.name),
   );
+
+  const reviewByKey = new Map<string, EngineRunResult["reviewSignals"][number]>();
+  for (const part of parts) {
+    for (const r of part.reviewSignals) {
+      const key = r.headline.trim().toLowerCase();
+      if (!reviewByKey.has(key)) reviewByKey.set(key, r);
+    }
+  }
+  const reviewSignals = [...reviewByKey.values()].sort(
+    (a, b) => (b.publishedAt ?? "").localeCompare(a.publishedAt ?? "") || a.headline.localeCompare(b.headline),
+  );
+
+  const sum = (pick: (p: EngineRunResult) => number) => parts.reduce((n, p) => n + pick(p), 0);
   return {
     engineId: "combined",
     engineName: "Discovery",
@@ -112,20 +125,26 @@ function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): Eng
         : "completed",
     feeds: parts.flatMap((p) => p.feeds),
     candidates,
+    reviewSignals,
     warnings: parts.flatMap((p) => p.warnings),
     summary: {
-      sourcesFetched: parts.reduce((n, p) => n + p.summary.sourcesFetched, 0),
-      itemsInspected: parts.reduce((n, p) => n + p.summary.itemsInspected, 0),
-      relevantItems: parts.reduce((n, p) => n + p.summary.relevantItems, 0),
+      sourcesFetched: sum((p) => p.summary.sourcesFetched),
+      itemsInspected: sum((p) => p.summary.itemsInspected),
+      withinRecency: sum((p) => p.summary.withinRecency),
+      digitalAssetRelevant: sum((p) => p.summary.digitalAssetRelevant),
+      candidateWorthinessPassed: sum((p) => p.summary.candidateWorthinessPassed),
+      entitiesResolved: sum((p) => p.summary.entitiesResolved),
       newCandidates: candidates.filter((c) => !c.existing.companyId).length,
       alreadyTracked: candidates.filter((c) => c.existing.companyId).length,
-      filteredCount: parts.reduce((n, p) => n + p.summary.filteredCount, 0),
+      needsIdentityReview: reviewSignals.length,
+      filteredCount: sum((p) => p.summary.filteredCount),
       filteredBuckets: {
-        nonDigitalAsset: parts.reduce((n, p) => n + p.summary.filteredBuckets.nonDigitalAsset, 0),
-        editorialEventPromotional: parts.reduce((n, p) => n + p.summary.filteredBuckets.editorialEventPromotional, 0),
-        outsideRecencyWindow: parts.reduce((n, p) => n + p.summary.filteredBuckets.outsideRecencyWindow, 0),
-        lowDiscoveryUtility: parts.reduce((n, p) => n + p.summary.filteredBuckets.lowDiscoveryUtility, 0),
-        unresolvedEntity: parts.reduce((n, p) => n + p.summary.filteredBuckets.unresolvedEntity, 0),
+        nonDigitalAsset: sum((p) => p.summary.filteredBuckets.nonDigitalAsset),
+        editorialEventPromotional: sum((p) => p.summary.filteredBuckets.editorialEventPromotional),
+        outsideRecencyWindow: sum((p) => p.summary.filteredBuckets.outsideRecencyWindow),
+        lowDiscoveryUtility: sum((p) => p.summary.filteredBuckets.lowDiscoveryUtility),
+        mediumDiscoveryUtility: sum((p) => p.summary.filteredBuckets.mediumDiscoveryUtility),
+        unresolvedEntity: sum((p) => p.summary.filteredBuckets.unresolvedEntity),
       },
       lookbackDays: parts[0]!.summary.lookbackDays,
     },
@@ -154,6 +173,7 @@ export function SourcingView() {
   // Filters. Default excludes already-tracked companies from the primary list (section 5/7).
   const [fMatch, setFMatch] = useState<"all" | "new" | "researched">("new");
   const [trackedOpen, setTrackedOpen] = useState(false);
+  const [reviewOpen, setReviewOpen] = useState(false);
   const [fIdentity, setFIdentity] = useState<"all" | Candidate["identityConfidence"]>("all");
   const [fChannel, setFChannel] = useState<"all" | DiscoveryTransport>("all");
   const [fQueue, setFQueue] = useState<"all" | QueueState>("all");
@@ -422,16 +442,21 @@ export function SourcingView() {
             </p>
             <p className="measure mt-2 t-meta text-[var(--fg-muted)]">
               {result.summary.sourcesFetched} sources fetched · {result.summary.itemsInspected} items
-              inspected · {result.summary.relevantItems} digital-asset relevant items ·{" "}
-              {result.summary.newCandidates} new candidates surfaced · {result.summary.alreadyTracked}{" "}
-              already tracked · {result.summary.filteredCount} filtered as noise or irrelevant ·
-              lookback {result.summary.lookbackDays} days.
+              inspected · {result.summary.withinRecency} within recency ·{" "}
+              {result.summary.digitalAssetRelevant} digital-asset relevant ·{" "}
+              {result.summary.candidateWorthinessPassed} discovery-worthy ·{" "}
+              {result.summary.entitiesResolved} entities resolved ·{" "}
+              {result.summary.newCandidates} new candidates · {result.summary.alreadyTracked} already
+              tracked · {result.summary.needsIdentityReview} needing identity review ·{" "}
+              {result.summary.filteredCount} filtered · lookback {result.summary.lookbackDays} days.
             </p>
             <p className="mt-2 t-label text-[var(--fg-faint)]">
               Filtered out: {result.summary.filteredBuckets.nonDigitalAsset} non-digital-asset,{" "}
               {result.summary.filteredBuckets.editorialEventPromotional} editorial/event/promotional,{" "}
               {result.summary.filteredBuckets.outsideRecencyWindow} outside recency window,{" "}
               {result.summary.filteredBuckets.lowDiscoveryUtility} low discovery utility,{" "}
+              {result.summary.filteredBuckets.mediumDiscoveryUtility} medium discovery utility (real
+              digital-asset news, but a routine update rather than an early-stage sourcing lead),{" "}
               {result.summary.filteredBuckets.unresolvedEntity} unresolved entity.
             </p>
           </div>
@@ -450,7 +475,8 @@ export function SourcingView() {
                   <th scope="col">Channel</th>
                   <th scope="col">Status</th>
                   <th scope="col">Items inspected</th>
-                  <th scope="col">Candidates</th>
+                  <th scope="col">Resolved candidates</th>
+                  <th scope="col">Review signals</th>
                   <th scope="col">Note</th>
                 </tr>
               </thead>
@@ -466,6 +492,7 @@ export function SourcingView() {
                     </td>
                     <td className="tnum t-meta text-[var(--fg-muted)]">{f.itemsInspected}</td>
                     <td className="tnum t-meta text-[var(--fg-muted)]">{f.itemsAccepted}</td>
+                    <td className="tnum t-meta text-[var(--fg-muted)]">{f.itemsNeedingReview}</td>
                     <td className="t-meta text-[var(--fg-muted)]">{f.ok ? "" : channelErrorText(f.error ?? "fetch_failed")}</td>
                   </tr>
                 ))}
@@ -488,6 +515,9 @@ export function SourcingView() {
         >
           New candidates
         </SectionHeading>
+        <p className="measure mb-3 t-meta text-[var(--fg-faint)]">
+          Resolved companies or protocols that passed the live discovery gates.
+        </p>
 
         {!result ? (
           <div className="card p-6 t-body text-[var(--fg-muted)]">
@@ -591,7 +621,9 @@ export function SourcingView() {
               <Icon name="chevron" className={trackedOpen ? "rotate-90 transition-transform" : "transition-transform"} />
               Already tracked ({result.summary.alreadyTracked})
             </span>
-            <span className="t-meta text-[var(--fg-faint)]">Matches the 44-company researched universe</span>
+            <span className="t-meta text-[var(--fg-faint)]">
+              Discovery signals involving companies already in the researched universe.
+            </span>
           </button>
           {trackedOpen ? (
             <ul className="flex flex-col border-b border-[var(--line)]">
@@ -600,6 +632,46 @@ export function SourcingView() {
                 .map((c) => (
                   <CandidateCard key={c.id} candidate={c} queued={queued.has(c.id)} onQueue={() => {}} />
                 ))}
+            </ul>
+          ) : null}
+        </section>
+      ) : null}
+
+      {/* Needs Identity Review: high-quality signals with unresolved identity, quieter and collapsed by default */}
+      {result && result.reviewSignals.length > 0 ? (
+        <section aria-labelledby="review-h">
+          <button
+            type="button"
+            onClick={() => setReviewOpen((v) => !v)}
+            aria-expanded={reviewOpen}
+            className="flex w-full items-center justify-between gap-2 border-y border-[var(--line)] py-3 text-left"
+          >
+            <span id="review-h" className="t-title text-[var(--fg-muted)]">
+              <Icon name="chevron" className={reviewOpen ? "rotate-90 transition-transform" : "transition-transform"} />
+              Needs identity review ({result.reviewSignals.length})
+            </span>
+            <span className="t-meta text-[var(--fg-faint)]">
+              High-quality discovery signals where the company or protocol identity could not be
+              resolved confidently. No Screening or score.
+            </span>
+          </button>
+          {reviewOpen ? (
+            <ul className="flex flex-col border-b border-[var(--line)]">
+              {result.reviewSignals.map((r) => (
+                <li key={r.id} className="border-b border-[var(--line)] py-3">
+                  <p className="t-title">
+                    <a href={r.sourceUrl} target="_blank" rel="noopener noreferrer">
+                      {r.headline}
+                    </a>
+                  </p>
+                  <p className="mt-1 t-label text-[var(--fg-faint)]">
+                    {r.source}
+                    {r.publishedAt ? ` · published ${dateOnly(r.publishedAt)}` : ""}
+                  </p>
+                  <p className="mt-1 t-meta text-[var(--fg-muted)]">{r.whyRelevant}. {r.whyUseful}.</p>
+                  <p className="mt-1 t-meta text-[var(--warn)]">Identity issue: {r.identityIssue}.</p>
+                </li>
+              ))}
             </ul>
           ) : null}
         </section>

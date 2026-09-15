@@ -100,21 +100,63 @@ export interface Candidate {
   whySurfaced: string;
 }
 
+/**
+ * A digital-asset-relevant, discovery-worthy item whose entity extraction
+ * could not confidently resolve a company/protocol name. Never a Candidate:
+ * no Screening, no Thesis Fit, no investment score. Shown as a quieter
+ * secondary "Needs Identity Review" section so a promising signal is not
+ * silently dropped, but never mistaken for a resolved sourcing lead.
+ */
+export interface ReviewSignal {
+  /** Stable id derived from the source item, for dedup across a run. */
+  id: string;
+  headline: string;
+  source: string;
+  sourceUrl: string;
+  publishedAt: string | null;
+  discoveredAt: string;
+  /** Vocabulary terms that established digital-asset relevance. */
+  whyRelevant: string;
+  /** The positive discovery-utility signal that made this worth a human look. */
+  whyUseful: string;
+  /** Why the deterministic extractor could not resolve a name. */
+  identityIssue: string;
+  transport: DiscoveryTransport;
+}
+
 /** Aggregate counts proving a run fetched and filtered live data. Never a score. */
 export interface FilteredBuckets {
   nonDigitalAsset: number;
   editorialEventPromotional: number;
   outsideRecencyWindow: number;
+  /** Relevant, but a negative discovery-utility signal (e.g. Series D+, IPO, mega valuation) was present. */
   lowDiscoveryUtility: number;
+  /**
+   * Relevant, resolved-or-resolvable, but no genuinely early-stage discovery
+   * signal (seed/Series A-B/stealth/new-protocol/mainnet/testnet) was
+   * present - a routine product launch, partnership, integration, or
+   * expansion by an already-operating entity. Not "irrelevant": this is
+   * real digital-asset news, just not a sourcing lead (section 1-3).
+   */
+  mediumDiscoveryUtility: number;
   unresolvedEntity: number;
 }
 
 export interface RunSummary {
   sourcesFetched: number;
   itemsInspected: number;
-  relevantItems: number;
+  /** Items inside the recency window (before any relevance/noise decision). */
+  withinRecency: number;
+  /** Items whose relevance was strong, or moderate with sufficient utility. */
+  digitalAssetRelevant: number;
+  /** digitalAssetRelevant items that also cleared the discovery-utility bar. */
+  candidateWorthinessPassed: number;
+  /** candidateWorthinessPassed items whose entity extraction confidently resolved a name. */
+  entitiesResolved: number;
   newCandidates: number;
   alreadyTracked: number;
+  /** candidateWorthinessPassed items that could not resolve an identity but were high-utility enough to keep for analyst review. */
+  needsIdentityReview: number;
   filteredCount: number;
   filteredBuckets: FilteredBuckets;
   lookbackDays: number;
@@ -130,6 +172,8 @@ export interface FeedHealth {
   itemsInspected: number;
   /** Items that produced a candidate (after in-feed dedup). */
   itemsAccepted: number;
+  /** Items that produced a Needs Identity Review signal. */
+  itemsNeedingReview: number;
   /** A short error class when ok is false, never raw error text. */
   error: string | null;
 }
@@ -150,6 +194,12 @@ export interface EngineRunResult {
    * lib/sourcing/relevance.ts). Not an investment ranking.
    */
   candidates: Candidate[];
+  /**
+   * High-quality discovery signals whose entity identity could not be
+   * resolved (section 7). Never a Candidate, never scored, ordered
+   * newest-published-first.
+   */
+  reviewSignals: ReviewSignal[];
   /** Non-fatal warnings surfaced to the analyst. */
   warnings: string[];
   /** Live-run proof: fetch, inspection, and filtering counts for this run. */

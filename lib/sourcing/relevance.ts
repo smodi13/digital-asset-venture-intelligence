@@ -128,17 +128,33 @@ export function classifyRelevance(input: RelevanceInput): {
   return { strength: "not_relevant", matchedTerms: [] };
 }
 
+/**
+ * Standalone signals of a genuinely early-stage discovery event: sufficient
+ * for HIGH utility on their own. Deliberately excludes a bare "launch" -
+ * "launches a new feature/product/service" is routine news from an
+ * already-operating company, not a sourcing lead (correction section 2).
+ */
 const POSITIVE_UTILITY: ReadonlyArray<RegExp> = [
   /\bpre-seed\b/i,
   /\bseed (round|funding)\b/i,
   /\bseries [ab]\b/i,
-  /\bstealth\b|\bemerges? from stealth\b/i,
-  /\bnew (company|protocol|network|infrastructure product)\b/i,
-  /\blaunch(es|ed)?\b/i,
-  /\bmainnet launch\b|\btestnet launch\b/i,
+  /\bfirst institutional financing\b/i,
+  /\bstealth\b|\bemerges? from stealth\b|\bout of stealth\b/i,
+  /\bnew (startup|company|protocol|network|infrastructure (?:project|platform|product))\b/i,
   /\bdeveloper preview\b/i,
   /\bfunding announcement\b/i,
   /\bnew stablecoin\b|\bnew payment rail\b|\bnew tokenization platform\b|\bnew security infrastructure\b/i,
+];
+
+/** A launch of a mainnet or testnet is early-stage regardless of word order ("launches mainnet" or "mainnet launch"). */
+const UTILITY_COMBO_TERMS: ReadonlyArray<{ re: RegExp; label: string }> = [
+  { re: /\blaunch(es|ed)?\b/i, label: "launch" },
+  { re: /\bmainnet\b/i, label: "mainnet" },
+  { re: /\btestnet\b/i, label: "testnet" },
+];
+const HIGH_UTILITY_COMBOS: ReadonlyArray<readonly [string, string]> = [
+  ["launch", "mainnet"],
+  ["launch", "testnet"],
 ];
 
 const NEGATIVE_UTILITY: ReadonlyArray<RegExp> = [
@@ -156,10 +172,18 @@ const NEGATIVE_UTILITY: ReadonlyArray<RegExp> = [
   /\blayoffs?\b/i,
 ];
 
-/** NOT an investment score: whether the item is useful to a sourcing analyst. */
+/**
+ * NOT an investment score: whether the item is a genuinely early-stage
+ * discovery event (HIGH), routine news from an already-operating entity
+ * (MEDIUM - partnership, integration, expansion, a routine product/feature
+ * launch), or actively de-prioritized (LOW - a later-stage or editorial
+ * signal). Never inferred from a company name; only from wording.
+ */
 export function classifyDiscoveryUtility(input: RelevanceInput): DiscoveryUtility {
   const hay = text(input);
-  const positive = POSITIVE_UTILITY.some((re) => re.test(hay));
+  const comboHits = new Set(UTILITY_COMBO_TERMS.filter((t) => t.re.test(hay)).map((t) => t.label));
+  const comboPositive = HIGH_UTILITY_COMBOS.some(([a, b]) => comboHits.has(a) && comboHits.has(b));
+  const positive = POSITIVE_UTILITY.some((re) => re.test(hay)) || comboPositive;
   const negative = NEGATIVE_UTILITY.some((re) => re.test(hay));
   if (negative && !positive) return "low";
   if (positive && !negative) return "high";
@@ -182,6 +206,12 @@ const NOISE_PATTERNS: ReadonlyArray<RegExp> = [
   /\b(vc|investor) (interview|profile|q&a)\b/i,
   /\bhow to (pitch|raise)\b/i,
   /\bthe .*'s \d+\b/i,
+  // Crime/enforcement/security-incident stories: never a sourcing lead, even
+  // when the victim is a real, named company (section 8).
+  /\b(hacked|hackers?|breach(ed)?|exploit(ed|er)s?|leaks?|leaked|attackers?|scam(med)?|phishing|stolen funds|data leak)\b/i,
+  /\bbans?\b.*\b(atms?|kiosks?)\b/i,
+  // Recurring newsletter/column mastheads, never a company name.
+  /\b(morning minute|daily briefing|crypto week ahead|week ahead|live updates?|your day-ahead look)\b/i,
 ];
 
 export function isNoiseHeadline(title: string): boolean {

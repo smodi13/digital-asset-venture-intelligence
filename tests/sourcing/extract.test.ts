@@ -60,4 +60,75 @@ describe("extractCandidate", () => {
     const e = extractCandidate(item({ title: "Northwind raises $20M" }))!;
     expect(e.description).toBeNull();
   });
+
+  describe("crypto-native headline structures (recall correction)", () => {
+    it("strips a sector-plus-startup prefix before a financing verb", () => {
+      const e = extractCandidate(item({ title: "Stablecoin startup AcmePay raises $8M seed round" }))!;
+      expect(e.name).toBe("AcmePay");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+
+    it("extracts the subject when the sector word trails the verb instead of leading it", () => {
+      const e = extractCandidate(
+        item({ title: "AcmePay raises $8M to build stablecoin infrastructure" }),
+      )!;
+      expect(e.name).toBe("AcmePay");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+
+    it("strips a bare label word directly in front of the entity name", () => {
+      const e = extractCandidate(item({ title: "Protocol Nova launches mainnet after $6M seed" }))!;
+      expect(e.name).toBe("Nova");
+      expect(e.identityConfidence).toBe("confirmed");
+      expect(e.discoveryReason).toBe("product or company launch");
+    });
+
+    it("strips a two-word technical descriptor before a platform/startup noun", () => {
+      const e = extractCandidate(
+        item({ title: "ZK developer platform ProofWorks emerges from stealth" }),
+      )!;
+      expect(e.name).toBe("ProofWorks");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+
+    it("strips an onchain-data sector prefix before a startup noun", () => {
+      const e = extractCandidate(item({ title: "Onchain data startup ChainScope secures Series A" }))!;
+      expect(e.name).toBe("ChainScope");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+
+    it("strips a DePIN network prefix", () => {
+      const e = extractCandidate(
+        item({ title: "DePIN network MeshGrid closes $12M funding round" }),
+      )!;
+      expect(e.name).toBe("MeshGrid");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+
+    it("strips a custody startup prefix before an unveil verb", () => {
+      const e = extractCandidate(
+        item({ title: "Custody startup KeyVault unveils institutional wallet platform" }),
+      )!;
+      expect(e.name).toBe("KeyVault");
+      expect(e.identityConfidence).toBe("confirmed");
+    });
+  });
+
+  describe("false candidates: no company/protocol named", () => {
+    const falseHeadlines = [
+      "Bitcoin rises 8% as traders eye Fed",
+      "SEC proposes new crypto custody rule",
+      "Here is what happened in crypto today",
+      "10 tokens to watch this week",
+      "Ethereum ETF flows hit record",
+      "CoinDesk Consensus tickets on sale",
+    ];
+
+    for (const title of falseHeadlines) {
+      it(`marks "${title}" as needs_review rather than a resolved company`, () => {
+        const e = extractCandidate(item({ title }))!;
+        expect(e.identityConfidence).toBe("needs_review");
+      });
+    }
+  });
 });

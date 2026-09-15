@@ -138,6 +138,29 @@ describe("classifyDiscoveryUtility", () => {
   it("rates a story with no signal as medium utility", () => {
     expect(classifyDiscoveryUtility(of("A blockchain protocol updated its documentation"))).toBe("medium");
   });
+
+  it("rates a mainnet launch as high utility regardless of verb/noun word order", () => {
+    expect(classifyDiscoveryUtility(of("Nova launches its mainnet today"))).toBe("high");
+    expect(classifyDiscoveryUtility(of("Nova completes its mainnet launch"))).toBe("high");
+  });
+
+  it("rates a routine product/feature launch by an operating entity as medium, not high", () => {
+    expect(classifyDiscoveryUtility(of("Acme launches a new DeFi yield product for institutions"))).toBe(
+      "medium",
+    );
+  });
+
+  it("rates a partnership announcement as medium, not high", () => {
+    expect(classifyDiscoveryUtility(of("Acme partners with Beta Bank on stablecoin settlement"))).toBe(
+      "medium",
+    );
+  });
+
+  it("rates a market expansion as medium, not high", () => {
+    expect(classifyDiscoveryUtility(of("Acme expands its custody service into new markets"))).toBe(
+      "medium",
+    );
+  });
 });
 
 describe("isNoiseHeadline", () => {

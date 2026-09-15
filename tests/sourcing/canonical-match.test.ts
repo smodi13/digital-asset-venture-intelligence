@@ -39,7 +39,7 @@ describe("canonical corpus matching", () => {
     const companies = loadCanonicalCompanies();
     const known = companies.find((c) => c.domain)!;
     const xml = `<rss><channel><item>
-      <title>${known.name} raises a new round for its blockchain protocol</title>
+      <title>${known.name} raises a new seed round for its blockchain protocol</title>
       <link>https://t.example.com/story/</link>
       <pubDate>Wed, 03 Sep 2026 10:00:00 +0000</pubDate>
       <guid>t-1</guid>

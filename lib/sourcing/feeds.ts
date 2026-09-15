@@ -33,6 +33,36 @@ export const FEEDS: readonly FeedConfig[] = [
     engineId: "public-feed-discovery",
   },
   {
+    id: "cointelegraph-news",
+    name: "Cointelegraph",
+    publisher: "Cointelegraph",
+    url: "https://cointelegraph.com/rss",
+    engineId: "public-feed-discovery",
+  },
+  {
+    id: "decrypt-news",
+    name: "Decrypt",
+    publisher: "Decrypt",
+    url: "https://decrypt.co/feed",
+    engineId: "public-feed-discovery",
+  },
+  {
+    id: "blockworks-news",
+    name: "Blockworks",
+    publisher: "Blockworks",
+    // The .co host 308-redirects here; the resolved host is configured
+    // directly so the allowlist never has to trust a cross-domain redirect.
+    url: "https://blockworks.com/feed",
+    engineId: "public-feed-discovery",
+  },
+  {
+    id: "cryptoslate-news",
+    name: "CryptoSlate",
+    publisher: "CryptoSlate",
+    url: "https://cryptoslate.com/feed/",
+    engineId: "public-feed-discovery",
+  },
+  {
     id: "techcrunch-funding",
     name: "TechCrunch, Funding",
     publisher: "TechCrunch",

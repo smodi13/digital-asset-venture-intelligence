@@ -40,7 +40,7 @@ const RSS_A = `<rss><channel>
     <category>Venture</category>
   </item>
   <item>
-    <title>Acme raises $100M Series C for its custody protocol</title>
+    <title>Acme raises $100M Series A for its custody protocol</title>
     <link>https://a.example.com/acme/</link>
     <pubDate>Tue, 02 Sep 2026 10:00:00 +0000</pubDate>
     <guid>a-acme-1</guid>
@@ -71,11 +71,28 @@ const RSS_A = `<rss><channel>
 
 const RSS_B = `<rss><channel>
   <item>
-    <title>Northwind lands $20M in fresh capital for its stablecoin rail</title>
+    <title>Northwind lands $20M seed round for its stablecoin rail</title>
     <link>https://b.example.com/northwind/</link>
     <pubDate>Wed, 03 Sep 2026 14:00:00 +0000</pubDate>
     <guid>b-northwind-1</guid>
-    <description>Coverage of the Northwind stablecoin infrastructure round.</description>
+    <description>Coverage of the Northwind stablecoin infrastructure seed round.</description>
+  </item>
+  <item>
+    <title>A new stablecoin protocol quietly emerges from stealth with $10M seed</title>
+    <link>https://b.example.com/review-item/</link>
+    <pubDate>Thu, 04 Sep 2026 09:00:00 +0000</pubDate>
+    <guid>b-review-1</guid>
+    <description>No company name given, but the round and stealth exit are described in detail.</description>
+  </item>
+</channel></rss>`;
+
+const RSS_C = `<rss><channel>
+  <item>
+    <title>A new stablecoin protocol quietly emerges from stealth with $10M seed</title>
+    <link>https://c.example.com/review-item/</link>
+    <pubDate>Thu, 04 Sep 2026 10:00:00 +0000</pubDate>
+    <guid>c-review-1</guid>
+    <description>A second publication covering the same stealth exit.</description>
   </item>
 </channel></rss>`;
 
@@ -150,11 +167,13 @@ describe("runHeadlineEngine", () => {
     expect(northwind.description ?? "").toContain("Northwind closed a Series A");
   });
 
-  it("filters a headline with no named company as unresolved entity, never as a candidate", () => {
+  it("filters a headline with no named company and no early-stage signal, never as a candidate", () => {
     const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
     expect(result.candidates.some((c) => c.identityConfidence === "needs_review")).toBe(false);
     expect(result.candidates.some((c) => c.name.startsWith("The market shifts"))).toBe(false);
-    expect(result.summary.filteredBuckets.unresolvedEntity).toBeGreaterThan(0);
+    // Medium-utility items are filtered before entity extraction is even
+    // attempted, so this lands in mediumDiscoveryUtility, not unresolvedEntity.
+    expect(result.summary.filteredBuckets.mediumDiscoveryUtility).toBeGreaterThan(0);
   });
 
   it("rejects a funding roundup as noise rather than as a candidate", () => {
@@ -173,8 +192,19 @@ describe("runHeadlineEngine", () => {
     const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
     expect(result.summary.sourcesFetched).toBe(1);
     expect(result.summary.itemsInspected).toBe(5);
-    expect(result.summary.relevantItems).toBeGreaterThan(0);
+    expect(result.summary.withinRecency).toBe(5);
+    expect(result.summary.digitalAssetRelevant).toBeGreaterThan(0);
+    expect(result.summary.candidateWorthinessPassed).toBeGreaterThan(0);
+    expect(result.summary.entitiesResolved).toBeGreaterThan(0);
     expect(result.summary.lookbackDays).toBe(30);
+  });
+
+  it("does not count a headline as non-digital-asset merely because entity extraction failed (funnel order)", () => {
+    // "The market shifts as stablecoin regulation tightens..." is digital-asset
+    // relevant (matches "stablecoin") but names no company - it must land in
+    // unresolvedEntity, never in nonDigitalAsset.
+    const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
+    expect(result.summary.digitalAssetRelevant).toBeGreaterThanOrEqual(2);
   });
 
   it("isolates a failed feed without losing results from the others", () => {
@@ -201,5 +231,124 @@ describe("runHeadlineEngine", () => {
     expect(result.status).toBe("completed");
     expect(result.feeds[0]!.itemsInspected).toBe(0);
     expect(result.candidates).toEqual([]);
+  });
+
+  it("preserves a high-utility, digital-asset-relevant unresolved headline as a Needs Identity Review signal, not a candidate", () => {
+    const result = run([{ feed: feedB, ok: true, xml: RSS_B }]);
+    expect(result.candidates.some((c) => c.name.startsWith("A new stablecoin protocol"))).toBe(false);
+    expect(result.summary.needsIdentityReview).toBe(1);
+    const signal = result.reviewSignals[0]!;
+    expect(signal.headline).toContain("stablecoin protocol");
+    expect(signal.identityIssue).toBeTruthy();
+    // Never a Screening or score field on a review signal.
+    const json = JSON.stringify(signal).toLowerCase();
+    for (const term of ["score", "priority", "rank", "fit", "recommendation", "conviction"]) {
+      expect(json).not.toContain(term);
+    }
+  });
+
+  it("deduplicates the same review signal seen from two different sources into one row", () => {
+    const result = run([
+      { feed: feedB, ok: true, xml: RSS_B },
+      { feed: feedC, ok: true, xml: RSS_C },
+    ]);
+    const matches = result.reviewSignals.filter((r) => r.headline.startsWith("A new stablecoin protocol"));
+    expect(matches).toHaveLength(1);
+  });
+
+  it("does not put a routine policy/market headline with no launch or funding signal into review", () => {
+    const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
+    expect(result.reviewSignals.some((r) => r.headline.startsWith("The market shifts"))).toBe(false);
+  });
+});
+
+/**
+ * New Candidate admission requires HIGH discovery utility (v1.0.1 correction):
+ * a resolved, digital-asset-relevant entity with only MEDIUM utility (a
+ * routine product launch, partnership, integration, or expansion by an
+ * already-operating company) is filtered rather than surfaced, regardless of
+ * relevance strength. Synthetic entities only - never a real company name -
+ * so the rule is proven generic, not a blocklist for one company.
+ */
+const feedSingle: FeedConfig = {
+  id: "single",
+  name: "Single",
+  publisher: "Single",
+  url: "https://single.example.com/rss",
+  engineId: "public-feed-discovery",
+};
+
+function runOne(title: string, summary: string) {
+  const xml = `<rss><channel><item>
+    <title>${title}</title>
+    <link>https://single.example.com/story/</link>
+    <pubDate>Wed, 03 Sep 2026 10:00:00 +0000</pubDate>
+    <guid>single-1</guid>
+    <description>${summary}</description>
+  </item></channel></rss>`;
+  return runHeadlineEngine([{ feed: feedSingle, ok: true, xml }], {
+    canonicalCompanies: CANONICAL,
+    now: "2026-09-08T00:00:00.000Z",
+  });
+}
+
+describe("New Candidate admission requires HIGH discovery utility", () => {
+  it("admits an early-stage stablecoin startup raising a seed round", () => {
+    const result = runOne(
+      "Meridian raises $8M seed round for stablecoin infrastructure",
+      "The seed round backs a new stablecoin payments rail.",
+    );
+    expect(result.candidates.some((c) => c.name === "Meridian")).toBe(true);
+  });
+
+  it("admits a crypto custody company raising a Series A", () => {
+    const result = runOne(
+      "Vaultis raises $25M Series A for institutional crypto custody",
+      "The Series A funds expansion of its crypto custody platform.",
+    );
+    expect(result.candidates.some((c) => c.name === "Vaultis")).toBe(true);
+  });
+
+  it("admits a new protocol launching mainnet", () => {
+    const result = runOne(
+      "Ferrite Protocol launches mainnet for its DeFi lending market",
+      "The new protocol went live on mainnet this week.",
+    );
+    expect(result.candidates.some((c) => c.name === "Ferrite Protocol")).toBe(true);
+  });
+
+  it("admits an emerging ZK project emerging from stealth", () => {
+    const result = runOne(
+      "Proofline emerges from stealth with zero knowledge developer tooling",
+      "The project spent a year building in stealth before today's reveal.",
+    );
+    expect(result.candidates.some((c) => c.name === "Proofline")).toBe(true);
+  });
+
+  it("does not admit an established exchange launching a routine tokenized-equities product", () => {
+    const result = runOne(
+      "Emberlight Exchange launches a tokenized equities trading product",
+      "The exchange, which has operated for years, added tokenized stock trading to its existing platform.",
+    );
+    expect(result.candidates.some((c) => c.name === "Emberlight Exchange")).toBe(false);
+    expect(result.summary.filteredBuckets.mediumDiscoveryUtility).toBeGreaterThan(0);
+  });
+
+  it("does not admit a digital-asset company announcing a partnership", () => {
+    const result = runOne(
+      "Emberlight Exchange partners with Beta Bank on stablecoin settlement",
+      "The partnership integrates Beta Bank's rails with Emberlight's stablecoin desk.",
+    );
+    expect(result.candidates.some((c) => c.name === "Emberlight Exchange")).toBe(false);
+    expect(result.summary.filteredBuckets.mediumDiscoveryUtility).toBeGreaterThan(0);
+  });
+
+  it("does not admit a digital-asset company expanding into another market", () => {
+    const result = runOne(
+      "Emberlight Exchange expands its crypto custody service into new markets",
+      "The already-operating exchange is extending its existing custody service to more regions.",
+    );
+    expect(result.candidates.some((c) => c.name === "Emberlight Exchange")).toBe(false);
+    expect(result.summary.filteredBuckets.mediumDiscoveryUtility).toBeGreaterThan(0);
   });
 });
