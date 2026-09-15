@@ -47,6 +47,7 @@ function candidate(id: string, existingId: string | null = null): Candidate {
     discoveryUtility: "high",
     category: null,
     whySurfaced: "Strong digital-asset relevance (crypto); high discovery utility; funding announcement.",
+    funding: null,
   };
 }
 

@@ -67,13 +67,15 @@ const CONFIDENCE_LABEL: Record<Candidate["identityConfidence"], string> = {
 };
 
 const TRANSPORT_LABEL: Record<DiscoveryTransport, string> = {
-  public_feed: "Public Feed Discovery",
+  public_feed: "News Discovery",
   x_api_search: "X Discovery",
+  structured_funding: "Funding Discovery",
+  cryptorank_api: "CryptoRank Funding",
 };
 
-/** Merge two engine runs for display: candidates dedupe by id, provenance concatenates. */
-function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): EngineRunResult | null {
-  const parts = [a, b].filter((r): r is EngineRunResult => r !== null);
+/** Merge engine runs for display: candidates dedupe by id, provenance concatenates. */
+function mergeResults(...results: (EngineRunResult | null)[]): EngineRunResult | null {
+  const parts = results.filter((r): r is EngineRunResult => r !== null);
   if (parts.length === 0) return null;
   if (parts.length === 1) return parts[0]!;
 
@@ -96,6 +98,7 @@ function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): Eng
       }
       if (!existing.domain && c.domain) existing.domain = c.domain;
       if (!existing.description && c.description) existing.description = c.description;
+      if (!existing.funding && c.funding) existing.funding = c.funding;
     }
   }
   const candidates = [...byId.values()].sort(
@@ -153,11 +156,17 @@ function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): Eng
 
 export function SourcingView() {
   const [feedResult, setFeedResult] = useState<EngineRunResult | null>(null);
+  const [structResult, setStructResult] = useState<EngineRunResult | null>(null);
   const [xResult, setXResult] = useState<EngineRunResult | null>(null);
+  const [cryptorankResult, setCryptorankResult] = useState<EngineRunResult | null>(null);
   const [feedPhase, setFeedPhase] = useState<RunPhase>("idle");
+  const [structPhase, setStructPhase] = useState<RunPhase>("idle");
   const [xPhase, setXPhase] = useState<RunPhase>("idle");
+  const [cryptorankPhase, setCryptorankPhase] = useState<RunPhase>("idle");
   const [feedError, setFeedError] = useState<string | null>(null);
+  const [structError, setStructError] = useState<string | null>(null);
   const [xError, setXError] = useState<string | null>(null);
+  const [cryptorankError, setCryptorankError] = useState<string | null>(null);
 
   // X credential: in React memory ONLY. Never persisted anywhere. Cleared on
   // unmount, reload, navigation away, tab close, and the Clear button.
@@ -165,6 +174,12 @@ export function SourcingView() {
   const [xToken, setXToken] = useState("");
   const [xTokenVisible, setXTokenVisible] = useState(false);
   const [xPreset, setXPreset] = useState<(typeof X_PRESETS)[number]["id"]>("crypto-funding-announcements");
+
+  // CryptoRank credential: in React memory ONLY, identical discipline to X above.
+  const [cryptorankEnabled, setCryptorankEnabled] = useState(false);
+  const [cryptorankKey, setCryptorankKey] = useState("");
+  const [cryptorankKeyVisible, setCryptorankKeyVisible] = useState(false);
+
   const [lookbackDays, setLookbackDays] = useState<(typeof LOOKBACK_OPTIONS)[number]>(30);
 
   const [queue, setQueue] = useState<QueueSnapshot>(emptyQueue());
@@ -176,6 +191,7 @@ export function SourcingView() {
   const [reviewOpen, setReviewOpen] = useState(false);
   const [fIdentity, setFIdentity] = useState<"all" | Candidate["identityConfidence"]>("all");
   const [fChannel, setFChannel] = useState<"all" | DiscoveryTransport>("all");
+  const [fRound, setFRound] = useState<"all" | "pre-seed" | "seed" | "series-a" | "series-b" | "other">("all");
   const [fQueue, setFQueue] = useState<"all" | QueueState>("all");
   const [q, setQ] = useState("");
 
@@ -225,6 +241,35 @@ export function SourcingView() {
     }
   }, [lookbackDays]);
 
+  const runStructuredFunding = useCallback(async () => {
+    setStructPhase("running");
+    setStructError(null);
+    try {
+      const res = await fetch("/api/sourcing/structured-funding", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ lookbackDays }),
+      });
+      const data = (await res.json()) as EngineRunResult | { error: string };
+      if (!("candidates" in data)) {
+        setStructPhase("failed");
+        setStructError(feedErrorText(data.error));
+        return;
+      }
+      setStructResult(data);
+      setStructPhase(data.status === "completed" ? "completed" : data.status === "partial_failure" ? "partial_failure" : "failed");
+    } catch {
+      setStructPhase("failed");
+      setStructError("The structured funding request could not be completed. Check the connection and try again.");
+    }
+  }, [lookbackDays]);
+
+  /** "Run public discovery": news + free structured funding sources, one workflow. */
+  const runPublicDiscovery = useCallback(() => {
+    void runFeed();
+    void runStructuredFunding();
+  }, [runFeed, runStructuredFunding]);
+
   const runX = useCallback(async () => {
     const token = xToken.trim();
     if (token.length === 0) {
@@ -263,8 +308,50 @@ export function SourcingView() {
     setXError(null);
   }, []);
 
-  const result = useMemo(() => mergeResults(feedResult, xResult), [feedResult, xResult]);
-  const anyRunning = feedPhase === "running" || xPhase === "running";
+  const runCryptorank = useCallback(async () => {
+    const key = cryptorankKey.trim();
+    if (key.length === 0) {
+      setCryptorankError("A CryptoRank API key is required to run CryptoRank Funding.");
+      return;
+    }
+    if (key.length < 10 || /\s/.test(key)) {
+      setCryptorankError("Enter a valid CryptoRank API key (no spaces) before running.");
+      return;
+    }
+    setCryptorankPhase("running");
+    setCryptorankError(null);
+    try {
+      const res = await fetch("/api/sourcing/cryptorank", {
+        method: "POST",
+        headers: { "content-type": "application/json" },
+        body: JSON.stringify({ key, lookbackDays }),
+      });
+      const data = (await res.json()) as EngineRunResult | { error: string };
+      if (!("candidates" in data)) {
+        setCryptorankPhase("failed");
+        setCryptorankError(cryptorankErrorText(data.error));
+        return;
+      }
+      setCryptorankResult(data);
+      setCryptorankPhase(data.status === "completed" ? "completed" : data.status === "partial_failure" ? "partial_failure" : "failed");
+    } catch {
+      setCryptorankPhase("failed");
+      setCryptorankError("The CryptoRank request could not be completed. Check the connection and try again.");
+    }
+  }, [cryptorankKey, lookbackDays]);
+
+  const clearCryptorankKey = useCallback(() => {
+    setCryptorankKey("");
+    setCryptorankKeyVisible(false);
+    setCryptorankError(null);
+  }, []);
+
+  const result = useMemo(
+    () => mergeResults(feedResult, structResult, xResult, cryptorankResult),
+    [feedResult, structResult, xResult, cryptorankResult],
+  );
+  const anyRunning = feedPhase === "running" || structPhase === "running" || xPhase === "running" || cryptorankPhase === "running";
+  const anyRunningPublic = feedPhase === "running" || structPhase === "running";
 
   useEffect(() => {
     if (liveRef.current) {
@@ -285,6 +372,7 @@ export function SourcingView() {
       if (fMatch === "researched" && !c.existing.companyId) return false;
       if (fIdentity !== "all" && c.identityConfidence !== fIdentity) return false;
       if (fChannel !== "all" && !c.provenance.some((p) => p.transport === fChannel)) return false;
+      if (fRound !== "all" && (!c.funding || roundBucket(c.funding.round) !== fRound)) return false;
       if (fQueue !== "all") {
         const entry = queue.entries.find((e) => e.candidateId === c.id);
         if (!entry || entry.state !== fQueue) return false;
@@ -297,9 +385,10 @@ export function SourcingView() {
       }
       return true;
     });
-  }, [candidates, fMatch, fIdentity, fChannel, fQueue, q, queue]);
+  }, [candidates, fMatch, fIdentity, fChannel, fRound, fQueue, q, queue]);
 
-  const filtersActive = fMatch !== "all" || fIdentity !== "all" || fChannel !== "all" || fQueue !== "all" || q.trim() !== "";
+  const filtersActive =
+    fMatch !== "all" || fIdentity !== "all" || fChannel !== "all" || fRound !== "all" || fQueue !== "all" || q.trim() !== "";
 
   return (
     <div className="flex flex-col gap-12">
@@ -309,21 +398,21 @@ export function SourcingView() {
       <section aria-labelledby="channels-h">
         <SectionHeading id="channels-h">Discovery channels</SectionHeading>
         <div className="grid items-start gap-8 lg:grid-cols-2 lg:gap-0 lg:divide-x lg:divide-[var(--line)]">
-          {/* Public Feed Discovery */}
+          {/* Public Discovery: news + free structured funding sources, one workflow */}
           <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-6 lg:border-t-0 lg:pt-0 lg:pr-8">
             <div>
               <p className="flex items-center gap-2 t-title">
                 <Icon name="feed" className="text-[var(--accent)]" />
-                Public Feed Discovery
+                Public Discovery
               </p>
               <p className="mt-1 chip chip--muted text-[10px]">No credential, no cost</p>
             </div>
             <p className="measure t-meta text-[var(--fg-muted)]">
-              Scans a fixed server-side allowlist of crypto-native and private-market public
-              feeds, then filters each item for recency, digital-asset relevance, and early-stage
-              discovery utility, and surfaces only the candidates that clear those gates.
-              Deterministic extraction, never a quality judgement. See Source Health below for the
-              exact source list.
+              Runs live crypto-native/private-market news feeds and configured structured funding
+              sources without an API credential. Each item is filtered for recency, digital-asset
+              relevance, and early-stage discovery utility before surfacing. Deterministic
+              extraction, never a quality judgement. See Source Health below for the exact source
+              list.
             </p>
             <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
               Lookback window
@@ -339,95 +428,169 @@ export function SourcingView() {
               </select>
             </label>
             <div className="mt-auto flex flex-col gap-2">
-              <button type="button" onClick={runFeed} disabled={feedPhase === "running"} className="btn-fill self-start">
-                {feedPhase === "running" ? "Running discovery..." : "Run public feed discovery"}
+              <button type="button" onClick={runPublicDiscovery} disabled={anyRunningPublic} className="btn-fill self-start">
+                {anyRunningPublic ? "Running discovery..." : "Run public discovery"}
               </button>
-              {feedPhase === "running" ? <span className="run-progress" aria-hidden /> : null}
-              <ChannelStatus phase={feedPhase} result={feedResult} />
+              {anyRunningPublic ? <span className="run-progress" aria-hidden /> : null}
+              <ChannelStatus phase={feedPhase} result={feedResult} label="News" />
+              <ChannelStatus phase={structPhase} result={structResult} label="Structured funding" />
               {feedError ? <p className="t-meta text-[var(--neg)]">{feedError}</p> : null}
+              {structError ? <p className="t-meta text-[var(--neg)]">{structError}</p> : null}
             </div>
           </div>
 
-          {/* X Discovery */}
-          <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-6 lg:border-t-0 lg:pl-8 lg:pt-0">
-            <div className="flex items-start justify-between gap-2">
-              <div>
-                <p className="flex items-center gap-2 t-title">
-                  <Icon name="x" className="text-[var(--accent)]" />
-                  X Discovery
-                </p>
-                <p className="mt-1 chip chip--warn text-[10px]">Optional, uses your X API credits</p>
-              </div>
-              <label className="flex items-center gap-1.5 t-meta text-[var(--fg-muted)]">
-                <input type="checkbox" checked={xEnabled} onChange={(e) => setXEnabled(e.target.checked)} />
-                Use X Discovery
-              </label>
-            </div>
-            <p className="measure t-meta text-[var(--fg-muted)]">
-              Searches X (recent posts, roughly the last 7 days) for private-market company and
-              founder mentions, using an X API bearer token you supply. Lower precision than the
-              structured feeds: most candidates need an analyst to confirm the company identity.
-            </p>
+          {/* Optional connectors: user-supplied credential, never stored */}
+          <div className="flex flex-col gap-6 border-t border-[var(--line)] pt-6 lg:border-t-0 lg:pl-8 lg:pt-0">
+            <p className="t-title text-[var(--fg-muted)]">Optional connectors</p>
 
-            {xEnabled ? (
-              <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-3">
-                <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
-                  X API bearer token
-                  <span className="flex flex-wrap items-center gap-1.5">
-                    <input
-                      type={xTokenVisible ? "text" : "password"}
-                      value={xToken}
-                      onChange={(e) => setXToken(e.target.value)}
-                      autoComplete="off"
-                      spellCheck={false}
-                      placeholder="Bearer token with search access"
-                      aria-describedby="x-token-help"
-                      className="w-full min-w-[180px] max-w-none flex-1"
-                    />
-                    <button type="button" className="btn-quiet" onClick={() => setXTokenVisible((v) => !v)}>
-                      {xTokenVisible ? "Hide" : "Show"}
-                    </button>
-                    <button type="button" className="btn-quiet" onClick={clearToken} disabled={!xToken}>
-                      Clear token
-                    </button>
-                  </span>
-                </label>
-                <p id="x-token-help" className="t-meta text-[var(--fg-faint)]">
-                  Used only for this browser session and never stored. It is sent once per run to X
-                  over HTTPS by way of this app&rsquo;s server, held in memory for that one request,
-                  and never written to storage, cookies, logs, provenance, or the research handoff.
-                  It disappears on reload or when you leave this page. X applies its own API terms to
-                  the token.
-                </p>
-
-                <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
-                  Query preset
-                  <select value={xPreset} onChange={(e) => setXPreset(e.target.value as typeof xPreset)}>
-                    {X_PRESETS.map((p) => (
-                      <option key={p.id} value={p.id}>
-                        {p.label}
-                      </option>
-                    ))}
-                  </select>
-                </label>
-                <p className="t-meta text-[var(--fg-faint)]">
-                  {X_PRESETS.find((p) => p.id === xPreset)?.description} The query is fixed; you cannot
-                  enter a custom search.
-                </p>
-
-                <div className="flex flex-col gap-2">
-                  <button type="button" onClick={runX} disabled={xPhase === "running"} className="btn-run self-start">
-                    {xPhase === "running" ? "Running X discovery..." : "Run X discovery (uses your X API credits)"}
-                  </button>
-                  <p className="t-meta text-[var(--fg-faint)]">
-                    One request to X per click. No pagination, no automatic retries, no background runs.
+            {/* X Discovery */}
+            <div className="flex flex-col gap-3">
+              <div className="flex items-start justify-between gap-2">
+                <div>
+                  <p className="flex items-center gap-2 t-title">
+                    <Icon name="x" className="text-[var(--accent)]" />
+                    X Discovery
                   </p>
-                  {xPhase === "running" ? <span className="run-progress" aria-hidden /> : null}
-                  <ChannelStatus phase={xPhase} result={xResult} />
-                  {xError ? <p className="t-meta text-[var(--neg)]" role="alert">{xError}</p> : null}
+                  <p className="mt-1 chip chip--warn text-[10px]">Optional, uses your X API credits</p>
                 </div>
+                <label className="flex items-center gap-1.5 t-meta text-[var(--fg-muted)]">
+                  <input type="checkbox" checked={xEnabled} onChange={(e) => setXEnabled(e.target.checked)} />
+                  Enable
+                </label>
               </div>
-            ) : null}
+              <p className="measure t-meta text-[var(--fg-muted)]">
+                Searches X (recent posts, roughly the last 7 days) for private-market company and
+                founder mentions, using an X API bearer token you supply. Lower precision than the
+                structured feeds: most candidates need an analyst to confirm the company identity.
+              </p>
+
+              {xEnabled ? (
+                <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-3">
+                  <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
+                    X API bearer token
+                    <span className="flex flex-wrap items-center gap-1.5">
+                      <input
+                        type={xTokenVisible ? "text" : "password"}
+                        value={xToken}
+                        onChange={(e) => setXToken(e.target.value)}
+                        autoComplete="off"
+                        spellCheck={false}
+                        placeholder="Bearer token with search access"
+                        aria-describedby="x-token-help"
+                        className="w-full min-w-[180px] max-w-none flex-1"
+                      />
+                      <button type="button" className="btn-quiet" onClick={() => setXTokenVisible((v) => !v)}>
+                        {xTokenVisible ? "Hide" : "Show"}
+                      </button>
+                      <button type="button" className="btn-quiet" onClick={clearToken} disabled={!xToken}>
+                        Clear token
+                      </button>
+                    </span>
+                  </label>
+                  <p id="x-token-help" className="t-meta text-[var(--fg-faint)]">
+                    Your X API credential is used only for this request and is not stored. It is
+                    sent once per run to X over HTTPS by way of this app&rsquo;s server, held in
+                    memory for that one request, and never written to storage, cookies, logs,
+                    provenance, or the research handoff. It disappears on reload or when you leave
+                    this page. X applies its own API terms to the token.
+                  </p>
+
+                  <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
+                    Query preset
+                    <select value={xPreset} onChange={(e) => setXPreset(e.target.value as typeof xPreset)}>
+                      {X_PRESETS.map((p) => (
+                        <option key={p.id} value={p.id}>
+                          {p.label}
+                        </option>
+                      ))}
+                    </select>
+                  </label>
+                  <p className="t-meta text-[var(--fg-faint)]">
+                    {X_PRESETS.find((p) => p.id === xPreset)?.description} The query is fixed; you cannot
+                    enter a custom search.
+                  </p>
+
+                  <div className="flex flex-col gap-2">
+                    <button type="button" onClick={runX} disabled={xPhase === "running"} className="btn-run self-start">
+                      {xPhase === "running" ? "Running X discovery..." : "Run X discovery (uses your X API credits)"}
+                    </button>
+                    <p className="t-meta text-[var(--fg-faint)]">
+                      One request to X per click. No pagination, no automatic retries, no background runs.
+                    </p>
+                    {xPhase === "running" ? <span className="run-progress" aria-hidden /> : null}
+                    <ChannelStatus phase={xPhase} result={xResult} />
+                    {xError ? <p className="t-meta text-[var(--neg)]" role="alert">{xError}</p> : null}
+                  </div>
+                </div>
+              ) : null}
+            </div>
+
+            {/* CryptoRank Funding */}
+            <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-6">
+              <div className="flex items-start justify-between gap-2">
+                <div>
+                  <p className="flex items-center gap-2 t-title">
+                    <Icon name="feed" className="text-[var(--accent)]" />
+                    CryptoRank Funding
+                  </p>
+                  <p className="mt-1 chip chip--warn text-[10px]">Optional, uses your CryptoRank API plan</p>
+                </div>
+                <label className="flex items-center gap-1.5 t-meta text-[var(--fg-muted)]">
+                  <input type="checkbox" checked={cryptorankEnabled} onChange={(e) => setCryptorankEnabled(e.target.checked)} />
+                  Enable
+                </label>
+              </div>
+              <p className="measure t-meta text-[var(--fg-muted)]">
+                Queries the CryptoRank Public API v3 funding-rounds endpoint for the selected
+                lookback window, using an API key you supply. Requires a CryptoRank plan with
+                funding-rounds access. Source-reported round data, never underwritten or screened.
+              </p>
+
+              {cryptorankEnabled ? (
+                <div className="flex flex-col gap-3 border-t border-[var(--line)] pt-3">
+                  <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
+                    CryptoRank API key
+                    <span className="flex flex-wrap items-center gap-1.5">
+                      <input
+                        type={cryptorankKeyVisible ? "text" : "password"}
+                        value={cryptorankKey}
+                        onChange={(e) => setCryptorankKey(e.target.value)}
+                        autoComplete="off"
+                        spellCheck={false}
+                        placeholder="CryptoRank API key"
+                        aria-describedby="cryptorank-key-help"
+                        className="w-full min-w-[180px] max-w-none flex-1"
+                      />
+                      <button type="button" className="btn-quiet" onClick={() => setCryptorankKeyVisible((v) => !v)}>
+                        {cryptorankKeyVisible ? "Hide" : "Show"}
+                      </button>
+                      <button type="button" className="btn-quiet" onClick={clearCryptorankKey} disabled={!cryptorankKey}>
+                        Clear key
+                      </button>
+                    </span>
+                  </label>
+                  <p id="cryptorank-key-help" className="t-meta text-[var(--fg-faint)]">
+                    Your CryptoRank API key is used only for this request and is not stored. It is
+                    held in memory for that one request and never written to storage, cookies, logs,
+                    provenance, or the research handoff. It disappears on reload or when you leave
+                    this page. CryptoRank applies its own API terms to the key.
+                  </p>
+
+                  <div className="flex flex-col gap-2">
+                    <button type="button" onClick={runCryptorank} disabled={cryptorankPhase === "running"} className="btn-run self-start">
+                      {cryptorankPhase === "running" ? "Running CryptoRank..." : "Run CryptoRank Funding (uses your API plan)"}
+                    </button>
+                    <p className="t-meta text-[var(--fg-faint)]">
+                      Two requests to CryptoRank per click (funding rounds, then the currency name
+                      lookup). No pagination, no automatic retries, no background runs.
+                    </p>
+                    {cryptorankPhase === "running" ? <span className="run-progress" aria-hidden /> : null}
+                    <ChannelStatus phase={cryptorankPhase} result={cryptorankResult} />
+                    {cryptorankError ? <p className="t-meta text-[var(--neg)]" role="alert">{cryptorankError}</p> : null}
+                  </div>
+                </div>
+              ) : null}
+            </div>
           </div>
         </div>
       </section>
@@ -461,6 +624,23 @@ export function SourcingView() {
               digital-asset news, but a routine update rather than an early-stage sourcing lead),{" "}
               {plural(result.summary.filteredBuckets.unresolvedEntity, "unresolved entity", "unresolved entities")}.
             </p>
+            {feedResult || structResult ? (
+              <p className="mt-2 t-label text-[var(--fg-faint)]">
+                {feedResult ? (
+                  <>
+                    News sources fetched: {feedResult.summary.sourcesFetched} · News items inspected:{" "}
+                    {feedResult.summary.itemsInspected} · News discovery-worthy items: {feedResult.summary.candidateWorthinessPassed}.{" "}
+                  </>
+                ) : null}
+                {structResult ? (
+                  <>
+                    Funding sources fetched: {structResult.summary.sourcesFetched} · Funding records inspected:{" "}
+                    {structResult.summary.itemsInspected} · Eligible early-stage funding records:{" "}
+                    {structResult.summary.candidateWorthinessPassed}.
+                  </>
+                ) : null}
+              </p>
+            ) : null}
           </div>
         </section>
       ) : null}
@@ -475,9 +655,10 @@ export function SourcingView() {
               <thead>
                 <tr>
                   <th scope="col">Channel</th>
+                  <th scope="col">Type</th>
                   <th scope="col">Status</th>
-                  <th scope="col">Items inspected</th>
-                  <th scope="col">Resolved candidates</th>
+                  <th scope="col">Items / records inspected</th>
+                  <th scope="col">Resolved source items</th>
                   <th scope="col">Review signals</th>
                   <th scope="col">Note</th>
                 </tr>
@@ -486,6 +667,7 @@ export function SourcingView() {
                 {result.feeds.map((f) => (
                   <tr key={f.feedId}>
                     <td className="font-medium">{f.feedName}</td>
+                    <td className="t-meta text-[var(--fg-muted)]">{channelType(f.feedId)}</td>
                     <td>
                       <span className={`chip ${f.ok ? "chip--pos" : "chip--neg"}`}>
                         <Icon name={f.ok ? "check" : "alert"} />
@@ -523,9 +705,11 @@ export function SourcingView() {
 
         {!result ? (
           <div className="card p-6 t-body text-[var(--fg-muted)]">
-            No discovery run yet. Run <span className="font-medium text-[var(--fg)]">Public Feed Discovery</span>{" "}
-            for the no-cost path, or enable <span className="font-medium text-[var(--fg)]">X Discovery</span> if you
-            have an X API token. Nothing here is a researched company or an investment view.
+            No discovery run yet. Run <span className="font-medium text-[var(--fg)]">Public Discovery</span>{" "}
+            for the no-cost path (news and free structured funding sources together), or enable{" "}
+            <span className="font-medium text-[var(--fg)]">X Discovery</span> or{" "}
+            <span className="font-medium text-[var(--fg)]">CryptoRank Funding</span> if you have a credential.
+            Nothing here is a researched company or an investment view.
           </div>
         ) : candidates.length === 0 ? (
           <div className="card p-6 t-body text-[var(--fg-muted)]">
@@ -543,11 +727,23 @@ export function SourcingView() {
                     <option value="researched">Already researched</option>
                   </select>
                 </Field>
-                <Field label="Channel">
+                <Field label="Discovery channel">
                   <select value={fChannel} onChange={(e) => setFChannel(e.target.value as typeof fChannel)}>
                     <option value="all">All channels</option>
-                    <option value="public_feed">Public Feed Discovery</option>
+                    <option value="public_feed">News Discovery</option>
+                    <option value="structured_funding">Funding Discovery</option>
                     <option value="x_api_search">X Discovery</option>
+                    <option value="cryptorank_api">CryptoRank Funding</option>
+                  </select>
+                </Field>
+                <Field label="Round">
+                  <select value={fRound} onChange={(e) => setFRound(e.target.value as typeof fRound)}>
+                    <option value="all">All</option>
+                    <option value="pre-seed">Pre-seed</option>
+                    <option value="seed">Seed</option>
+                    <option value="series-a">Series A</option>
+                    <option value="series-b">Series B</option>
+                    <option value="other">Other early-stage</option>
                   </select>
                 </Field>
                 <Field label="Identity">
@@ -583,6 +779,7 @@ export function SourcingView() {
                       setFMatch("all");
                       setFIdentity("all");
                       setFChannel("all");
+                      setFRound("all");
                       setFQueue("all");
                       setQ("");
                     }}
@@ -723,7 +920,7 @@ export function SourcingView() {
 
 /* -------------------------------------------------------------------------- */
 
-function ChannelStatus({ phase, result }: { phase: RunPhase; result: EngineRunResult | null }) {
+function ChannelStatus({ phase, result, label }: { phase: RunPhase; result: EngineRunResult | null; label?: string }) {
   const map: Record<RunPhase, { cls: string; text: string }> = {
     idle: { cls: "chip--muted", text: "Not run yet" },
     running: { cls: "chip--neutral", text: "Running" },
@@ -734,6 +931,7 @@ function ChannelStatus({ phase, result }: { phase: RunPhase; result: EngineRunRe
   const s = map[phase];
   return (
     <span className="flex flex-wrap items-center gap-2">
+      {label ? <span className="t-label text-[var(--fg-faint)]">{label}</span> : null}
       <span className={`chip ${s.cls}`}>{s.text}</span>
       {result ? (
         <span className="tnum t-meta text-[var(--fg-faint)]">
@@ -749,11 +947,40 @@ function ChannelBadges({ candidate }: { candidate: Candidate }) {
   return (
     <>
       {transports.map((t) => (
-        <span key={t} className={`chip text-[10px] ${t === "x_api_search" ? "chip--warn" : "chip--neutral"}`}>
+        <span
+          key={t}
+          className={`chip text-[10px] ${t === "x_api_search" || t === "cryptorank_api" ? "chip--warn" : "chip--neutral"}`}
+        >
           {TRANSPORT_LABEL[t]}
         </span>
       ))}
     </>
+  );
+}
+
+/** Round/Amount/Date/Investors, when available. Never a screened figure. */
+function FundingMeta({ funding }: { funding: NonNullable<Candidate["funding"]> }) {
+  const f = funding;
+  return (
+    <div className="mt-1.5 flex flex-col gap-1 rounded border border-[var(--line)] bg-[var(--surface-2)] p-2">
+      <p className="t-meta text-[var(--fg-muted)]">
+        {f.round ? <span className="font-medium">{f.round}</span> : "Round undisclosed"}
+        {f.amountDisplay ? ` · ${f.amountDisplay}` : ""}
+        {f.valuationDisplay ? ` · valuation ${f.valuationDisplay}` : ""}
+        {f.announcementDate ? ` · announced ${dateOnly(f.announcementDate)}` : ""}
+        {` · via ${f.sourceName}`}
+      </p>
+      {f.leadInvestors.length || f.otherInvestors.length ? (
+        <p className="t-label text-[var(--fg-faint)]">
+          {f.leadInvestors.length ? `Lead: ${f.leadInvestors.join(", ")}` : null}
+          {f.leadInvestors.length && f.otherInvestors.length ? " · " : null}
+          {f.otherInvestors.length ? `Other: ${f.otherInvestors.join(", ")}` : null}
+        </p>
+      ) : null}
+      <p className="t-label text-[var(--fg-faint)]">
+        Source-reported funding data. Confirm through primary evidence before screening.
+      </p>
+    </div>
   );
 }
 
@@ -792,6 +1019,7 @@ function CandidateCard({
           {c.description ? (
             <p className="measure mt-1.5 line-clamp-2 t-meta text-[var(--fg-muted)]">{c.description}</p>
           ) : null}
+          {c.funding ? <FundingMeta funding={c.funding} /> : null}
           <p className="mt-1.5 t-label text-[var(--fg-faint)]">Why surfaced: {c.whySurfaced}</p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-1.5 sm:items-end">
@@ -964,6 +1192,47 @@ function xErrorText(code: string): string {
   return map[code] ?? "The X discovery run could not be completed.";
 }
 
+function cryptorankErrorText(code: string): string {
+  const map: Record<string, string> = {
+    invalid_request: "The request was rejected. Check the API key and try again.",
+    cryptorank_auth_failed: "CryptoRank rejected the key (401). Check the key is current.",
+    cryptorank_forbidden: "CryptoRank refused the request (403). Your plan may not include the funding-rounds endpoint.",
+    cryptorank_rate_limited: "CryptoRank rate limit reached. Wait and check your usage before running again.",
+    cryptorank_upstream_error: "CryptoRank returned an unexpected response. Try again shortly.",
+    timeout: "CryptoRank did not respond in time. Try again shortly.",
+  };
+  return map[code] ?? "The CryptoRank run could not be completed.";
+}
+
+const NEWS_FEED_IDS = new Set([
+  "coindesk-news",
+  "cointelegraph-news",
+  "decrypt-news",
+  "blockworks-news",
+  "cryptoslate-news",
+  "techcrunch-funding",
+  "crunchbase-news",
+]);
+
+/** Source Health "Type" column: News / Structured Funding / Optional Connector. */
+function channelType(feedId: string): string {
+  if (NEWS_FEED_IDS.has(feedId)) return "News";
+  if (feedId === "datapile-crypto-funding") return "Structured Funding";
+  if (feedId.startsWith("x:") || feedId === "cryptorank-funding-rounds") return "Optional Connector";
+  return "Structured Funding";
+}
+
+/** Best-effort bucketing of a source-reported round label, for the Round filter. Never inferred from amount. */
+function roundBucket(round: string | null): "all" | "pre-seed" | "seed" | "series-a" | "series-b" | "other" {
+  if (!round) return "other";
+  const r = round.toLowerCase();
+  if (r.includes("pre-seed") || r.includes("preseed") || r.includes("angel")) return "pre-seed";
+  if (r.includes("seed")) return "seed";
+  if (r.includes("series a")) return "series-a";
+  if (r.includes("series b")) return "series-b";
+  return "other";
+}
+
 function channelErrorText(code: string): string {
   const map: Record<string, string> = {
     timeout: "The channel did not respond in time.",
@@ -973,6 +1242,7 @@ function channelErrorText(code: string): string {
     network_unreachable: "The channel host could not be reached.",
     feed_not_allowlisted: "This feed is not in the configured allowlist.",
     malformed_feed: "The feed could not be parsed.",
+    unexpected_page_structure: "The source page structure changed and could not be parsed. No records were guessed.",
     fetch_failed: "The channel could not be fetched.",
     unknown_engine: "Unknown engine requested.",
     engine_run_failed: "The engine run could not be completed.",

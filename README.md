@@ -15,17 +15,20 @@ Digital Asset Venture Intelligence takes a researched universe of
 early-stage digital asset companies and turns it into a continuous
 screening and monitoring workspace:
 
-- **Sourcing** is interactive: a visitor can run Public Sourcing (the
-  configured public-feed discovery engine) directly from the deployed
-  product with no API credential, or switch to X Sourcing and supply their
-  own X API credential to search X. Public Sourcing performs a live run
-  against configured public sources every time it is run. Results are
-  filtered for digital-asset relevance, freshness, and early-stage discovery
-  utility, and for novelty against the researched universe, so sourcing
-  results are discovery leads, not screened investments. Discovered
-  candidates hand off to a research pipeline that produces hand-authored,
-  source-traced research packets, but they remain separate from the
-  screened/researched universe until that research happens.
+- **Sourcing** is interactive: a visitor can run Public Discovery (crypto-native
+  news feeds plus free structured private-market funding sources) directly
+  from the deployed product with no API credential, or enable optional
+  connectors, X Discovery or CryptoRank Funding, and supply their own
+  credential. Public Discovery performs a live run against configured public
+  sources every time it is run. Results are filtered for digital-asset
+  relevance, freshness, and early-stage discovery utility, and for novelty
+  against the researched universe, so sourcing results are discovery leads,
+  not screened investments. Structured funding records are source-reported
+  round data and should be confirmed through primary evidence before
+  analytical screening. Discovered candidates hand off to a research
+  pipeline that produces hand-authored, source-traced research packets, but
+  they remain separate from the screened/researched universe until that
+  research happens.
 - **Screening** maps research to a fixed seven-dimension, fourteen-criterion
   rubric and computes a deterministic **Thesis Fit** score, together with
   separate **Evidence Coverage** and **Evidence Confidence** readings.
@@ -45,17 +48,31 @@ on screen traces back to a specific evidence claim and source.
 
 - **Partner Home** - editorial overview of the researched universe: recent
   signals, evidence-bar status, and entry points into every other module.
-- **Sourcing Engine** - run discovery now. Public Sourcing (no credential)
-  scans a fixed server-side allowlist of public feeds (CoinDesk, TechCrunch
-  Funding, Crunchbase News); X Sourcing (optional, bring your own X API
-  credential) searches X with digital-asset-specific presets. Every run
-  filters live items for digital-asset relevance, freshness (a configurable
-  lookback window, 30 days by default), and early-stage discovery utility,
-  and separates candidates that are new from ones that already match the
-  researched universe. A run summary shows exactly what was fetched,
-  inspected, and filtered, so a reviewer can see the run was live, not
-  stored. Results are discovery leads, not investment recommendations or
-  screened companies.
+- **Sourcing Engine** - run discovery now. Public Discovery (no credential)
+  combines a fixed server-side allowlist of news feeds (CoinDesk,
+  Cointelegraph, Decrypt, Blockworks, CryptoSlate, TechCrunch Funding,
+  Crunchbase News) with a free structured funding source (Datapile Crypto
+  Funding, the crypto-sector page of Datapile's public funding-news
+  tracker, which already carries company, round, amount, country, and
+  investor fields for every disclosed crypto-sector round, deterministically
+  filtered to digital-asset, early-stage rounds). Two optional connectors
+  add bring-your-own-credential
+  coverage: X Discovery searches X with digital-asset-specific presets, and
+  CryptoRank Funding queries the CryptoRank Public API v3 funding-rounds
+  endpoint. Every run filters live items for digital-asset relevance,
+  freshness (a configurable lookback window, 30 days by default), and
+  early-stage discovery utility, and separates candidates that are new from
+  ones that already match the researched universe; a candidate seen in more
+  than one source (for example, a news article and a structured funding
+  record) merges into one candidate with combined provenance. A run summary
+  shows exactly what was fetched, inspected, and filtered, so a reviewer can
+  see the run was live, not stored. Structured funding records preserve the
+  source's own round, amount, and investor fields, and are labeled as
+  source-reported data, not underwritten or screened. Results are discovery
+  leads, not investment recommendations or screened companies. A CryptoRank
+  API key, when supplied, is used only for that one request and is never
+  stored, logged, or persisted, matching the X Discovery credential
+  discipline.
 - **Sourcing Worklist** - the full researched universe as a dense,
   filterable table (cards on mobile), in a deterministic neutral order with
   no default ranking.

@@ -114,12 +114,14 @@ export interface RunOptions {
   lookbackDays?: number;
 }
 
-function candidateId(name: string, domain: string | null): string {
+/** Exported so other source-specific engines (structured funding, CryptoRank) build the same dedup key. */
+export function candidateId(name: string, domain: string | null): string {
   const key = domain ? `d:${domainKey(domain) ?? domain}` : `n:${normalizeCompanyName(name)}`;
   return `cand-${sha256Hex(key).slice(0, 12)}`;
 }
 
-function matchExisting(
+/** Exported so other source-specific engines build the same canonical match. */
+export function matchExisting(
   resolver: EntityResolver,
   name: string,
   domain: string | null,
@@ -338,6 +340,7 @@ export function runDiscoveryEngine(
         discoveryUtility: utilityLabel,
         category,
         whySurfaced,
+        funding: null,
       });
       acceptedIds.add(id);
     }

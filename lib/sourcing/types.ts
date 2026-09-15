@@ -13,11 +13,39 @@
 /**
  * How a discovery engine reached its input. Recorded so a run is reproducible.
  *
- * - public_feed:   a configured public RSS/Atom feed, no credential
- * - x_api_search:  the X API v2 recent-search endpoint, run with a
- *                  user-supplied bearer token (never stored; see docs/sourcing-v1.md)
+ * - public_feed:        a configured public RSS/Atom feed, no credential
+ * - x_api_search:        the X API v2 recent-search endpoint, run with a
+ *                        user-supplied bearer token (never stored; see docs/sourcing-v1.md)
+ * - structured_funding:  a configured structured private-market funding-record
+ *                        source (e.g. Datapile), no credential
+ * - cryptorank_api:      the CryptoRank funding-rounds API, run with a
+ *                        user-supplied API key (never stored)
  */
-export type DiscoveryTransport = "public_feed" | "x_api_search";
+export type DiscoveryTransport = "public_feed" | "x_api_search" | "structured_funding" | "cryptorank_api";
+
+/**
+ * A structured private-market funding record, as reported by a structured
+ * funding source (never a news headline). Preserves the source's own fields;
+ * a field the source did not state stays null, never invented or estimated.
+ * Discovery only: never underwritten, never screened, never a score.
+ */
+export interface StructuredFundingSummary {
+  /** Round / stage label as the source stated it (e.g. "Seed", "Series A"). */
+  round: string | null;
+  /** Amount raised as the source displayed it (e.g. "$1.3M"). */
+  amountDisplay: string | null;
+  /** Amount raised in USD, when the source gave a parseable figure. */
+  amountUsd: number | null;
+  currency: string | null;
+  /** Valuation as the source displayed it, when available. */
+  valuationDisplay: string | null;
+  leadInvestors: string[];
+  otherInvestors: string[];
+  /** Funding announcement date (not discoveredAt), ISO, or null if unknown. */
+  announcementDate: string | null;
+  /** Name of the structured funding source (e.g. "Datapile", "CryptoRank"). */
+  sourceName: string;
+}
 
 /**
  * One discovery provenance record: the full chain from engine to source item.
@@ -98,6 +126,13 @@ export interface Candidate {
   category: string | null;
   /** Short factual explanation of why this candidate was surfaced. */
   whySurfaced: string;
+  /**
+   * Source-reported funding data, when this candidate came from (or was also
+   * seen in) a structured funding source. Null for a candidate seen only in
+   * news/X discovery. A discovery lead, not underwritten evidence: confirm
+   * through primary evidence before analytical screening.
+   */
+  funding: StructuredFundingSummary | null;
 }
 
 /**

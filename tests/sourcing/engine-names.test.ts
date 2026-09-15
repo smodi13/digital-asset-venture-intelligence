@@ -44,6 +44,7 @@ describe("engine name backward compatibility", () => {
       discoveryUtility: "high",
       category: null,
       whySurfaced: "Strong digital-asset relevance (crypto); high discovery utility; funding announcement.",
+      funding: null,
     };
     const intake = buildResearchIntake(legacy, "2026-09-09T00:00:00.000Z");
     // The human-readable summary uses the current name...

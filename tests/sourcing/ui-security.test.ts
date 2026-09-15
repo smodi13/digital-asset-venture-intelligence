@@ -54,9 +54,45 @@ describe("X Sourcing credential handling", () => {
   });
 });
 
+describe("CryptoRank Funding credential handling", () => {
+  const view = read("components/sourcing/SourcingView.tsx");
+
+  it("posts to /api/sourcing/cryptorank, never in a query string", () => {
+    expect(view).toMatch(/fetch\(\s*["']\/api\/sourcing\/cryptorank["']/);
+    expect(view).not.toMatch(/\/api\/sourcing\/cryptorank\?/);
+  });
+
+  it("uses a password-style input for the key", () => {
+    expect(view).toMatch(/type=\{cryptorankKeyVisible \? "text" : "password"\}/);
+  });
+
+  it("never writes the key to localStorage or sessionStorage", () => {
+    expect(view).not.toMatch(/(localStorage|sessionStorage)\.setItem\([^)]*cryptorankKey/);
+  });
+
+  it("shows a clear inline notice when no credential is entered", () => {
+    expect(view).toMatch(/A CryptoRank API key is required to run CryptoRank Funding\./);
+  });
+
+  it("clears the key on demand and never persists it", () => {
+    expect(view).toMatch(/const clearCryptorankKey = useCallback/);
+  });
+});
+
+describe("Structured Funding Discovery invokes its own endpoint with no credential field", () => {
+  const view = read("components/sourcing/SourcingView.tsx");
+
+  it("posts to /api/sourcing/structured-funding with only lookbackDays", () => {
+    expect(view).toMatch(/fetch\(\s*["']\/api\/sourcing\/structured-funding["']/);
+    expect(view).not.toMatch(/\/api\/sourcing\/structured-funding\?/);
+  });
+});
+
 describe("Sourcing results stay client-side", () => {
   const view = read("components/sourcing/SourcingView.tsx");
   const engine = read("lib/sourcing/engine.ts");
+  const structuredEngine = read("lib/sourcing/structured-funding/engine.ts");
+  const cryptorankFetch = read("lib/sourcing/cryptorank-fetch.ts");
 
   it("the queue is the only sourcing state persisted, and only to localStorage (browser-local, not a server mutation)", () => {
     expect(view).toMatch(/QUEUE_STORAGE_KEY/);
@@ -64,6 +100,14 @@ describe("Sourcing results stay client-side", () => {
 
   it("the discovery engine does not touch the frozen research/judgments/scoring corpus", () => {
     expect(engine).not.toMatch(/research\/v7|judgments\/v7|data\/v7-product|v7-score-results/);
+  });
+
+  it("the structured funding engine does not touch the frozen research/judgments/scoring corpus", () => {
+    expect(structuredEngine).not.toMatch(/research\/v7|judgments\/v7|data\/v7-product|v7-score-results/);
+  });
+
+  it("the CryptoRank key is never logged", () => {
+    expect(cryptorankFetch).not.toMatch(/console\.(log|error|warn)\([^)]*key/i);
   });
 });
 

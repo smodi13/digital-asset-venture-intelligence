@@ -50,6 +50,7 @@ const candidate: Candidate = {
   discoveryUtility: "high",
   category: null,
   whySurfaced: "Strong digital-asset relevance (crypto); high discovery utility; funding announcement.",
+  funding: null,
 };
 
 describe("buildResearchIntake", () => {
