@@ -15,9 +15,13 @@ Digital Asset Venture Intelligence takes a researched universe of
 early-stage digital asset companies and turns it into a continuous
 screening and monitoring workspace:
 
-- **Sourcing** surfaces new candidates from public news and hands them to
-  a research pipeline that produces hand-authored, source-traced research
-  packets.
+- **Sourcing** is interactive: a visitor can run Public Sourcing (the
+  configured public-feed discovery engine) directly from the deployed
+  product with no API credential, or switch to X Sourcing and supply their
+  own X API credential to search X. Discovered candidates hand off to a
+  research pipeline that produces hand-authored, source-traced research
+  packets, but they remain separate from the screened/researched universe
+  until that research happens.
 - **Screening** maps research to a fixed seven-dimension, fourteen-criterion
   rubric and computes a deterministic **Thesis Fit** score, together with
   separate **Evidence Coverage** and **Evidence Confidence** readings.
@@ -37,6 +41,10 @@ on screen traces back to a specific evidence claim and source.
 
 - **Partner Home** - editorial overview of the researched universe: recent
   signals, evidence-bar status, and entry points into every other module.
+- **Sourcing Engine** - run discovery now. Public Sourcing (no credential)
+  scans a fixed server-side allowlist of public feeds; X Sourcing (optional,
+  bring your own X API credential) searches X. Results are discovery
+  candidates, not investment recommendations or screened companies.
 - **Sourcing Worklist** - the full researched universe as a dense,
   filterable table (cards on mobile), in a deterministic neutral order with
   no default ranking.

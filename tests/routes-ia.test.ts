@@ -64,12 +64,12 @@ describe("Methodology reflects v7, not v6", () => {
   });
 });
 
-describe("legacy /sourcing route", () => {
+describe("/sourcing renders the Sourcing Engine", () => {
   const page = read("app/sourcing/page.tsx");
 
-  it("permanently redirects to / (308, not a temporary 307)", () => {
-    expect(page).toMatch(/permanentRedirect\(\s*["']\/["']\s*\)/);
-    expect(page).not.toMatch(/[^t]redirect\(\s*["']\/["']\s*\)/);
+  it("renders SourcingView, not a redirect", () => {
+    expect(page).toMatch(/<SourcingView\b/);
+    expect(page).not.toMatch(/permanentRedirect/);
   });
 });
 
@@ -96,10 +96,11 @@ describe("Phase 4C routes exist", () => {
 describe("primary navigation", () => {
   const nav = read("components/NavLinks.tsx");
 
-  it("orders items Partner Home, Sourcing Worklist, Signal Engine, Source Intelligence, Market Map, Follow-On Radar, Relationship Intelligence, Companies, Methodology", () => {
+  it("orders items Partner Home, Sourcing Engine, Sourcing Worklist, Signal Engine, Source Intelligence, Market Map, Follow-On Radar, Relationship Intelligence, Companies, Methodology", () => {
     const labels = [...nav.matchAll(/label:\s*"([^"]+)"/g)].map((m) => m[1]);
     expect(labels).toEqual([
       "Partner Home",
+      "Sourcing Engine",
       "Sourcing Worklist",
       "Signal Engine",
       "Source Intelligence",
@@ -111,8 +112,9 @@ describe("primary navigation", () => {
     ]);
   });
 
-  it("points Partner Home at / and Sourcing Worklist at /worklist", () => {
+  it("points Partner Home at /, Sourcing Engine at /sourcing, and Sourcing Worklist at /worklist", () => {
     expect(nav).toMatch(/href:\s*"\/"\s*,\s*label:\s*"Partner Home"/);
+    expect(nav).toMatch(/href:\s*"\/sourcing"\s*,\s*label:\s*"Sourcing Engine"/);
     expect(nav).toMatch(/href:\s*"\/worklist"\s*,\s*label:\s*"Sourcing Worklist"/);
   });
 

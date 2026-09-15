@@ -31,6 +31,9 @@ export default function WorklistPage() {
               Mandate eligibility and rank eligibility are not assessed for any company.{" "}
               <Link href="/methodology">How it works</Link>
             </li>
+            <li>
+              Looking for new candidates? Run the <Link href="/sourcing">Sourcing Engine</Link>.
+            </li>
           </ul>
         }
       />

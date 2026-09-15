@@ -50,6 +50,7 @@ export default function PartnerHomePage() {
       <section className="mb-10">
         <SectionHeading>Explore</SectionHeading>
         <ul className="flex flex-wrap gap-x-6 gap-y-1 t-meta">
+          <li><Link href="/sourcing">Sourcing Engine</Link> - discover new candidates now</li>
           <li><Link href="/market-map">Market Map</Link> - the universe by category</li>
           <li><Link href="/radar">Follow-On Radar</Link> - your monitoring list</li>
           <li><Link href="/relationships">Relationship Intelligence</Link> - people and companies</li>

@@ -160,6 +160,10 @@ export function SourcingView() {
 
   const runX = useCallback(async () => {
     const token = xToken.trim();
+    if (token.length === 0) {
+      setXError("An X API credential is required to run X Sourcing.");
+      return;
+    }
     if (token.length < 20 || /\s/.test(token)) {
       setXError("Enter a valid X API bearer token (no spaces) before running.");
       return;
