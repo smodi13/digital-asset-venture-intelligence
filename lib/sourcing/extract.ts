@@ -1,5 +1,6 @@
 import type { FeedItem } from "./parse";
 import { normalizeDomain } from "@/lib/research/entity/normalize";
+import { isNoiseHeadline } from "./relevance";
 
 /**
  * Deterministic, conservative company identity extraction from a feed item.
@@ -25,7 +26,7 @@ export interface Extraction {
 
 /** Verb phrases that reliably put a company name at the start of a headline. */
 const REASON_PHRASES: ReadonlyArray<{ re: RegExp; reason: string }> = [
-  { re: /\b(raises?|raised|closes?|closed|lands?|landed|secures?|secured|nabs?|snags?|bags?|picks up|scores?|hauls in|pulls in|grabs?)\b/i, reason: "funding announcement" },
+  { re: /\b(raises?|raised|closes?|closed|lands?|landed|secures?|secured|nabs?|snags?|bags?|picks up|scores?|hauls in|pulls in|grabs?|extends?|expands?|tops up|adds to)\b/i, reason: "funding announcement" },
   { re: /\bseries [a-e]\b/i, reason: "private-market financing round" },
   { re: /\bseed (round|funding)\b/i, reason: "seed financing" },
   { re: /\b(launches?|launched|unveils?|unveiled|debuts?|emerges? from stealth|comes out of stealth)\b/i, reason: "product or company launch" },
@@ -45,6 +46,9 @@ const SENTENCE_LEADERS = new Set([
 const GENERIC_NAMES = new Set([
   "ai", "vc", "the", "startup", "startups", "founders", "investors", "tech",
   "venture", "capital", "funding", "report", "week", "market",
+  // Regulators, legislatures, and conference brands: never a sourcing candidate.
+  "fed", "sec", "irs", "ftc", "doj", "ecb", "imf", "cftc", "fca",
+  "treasury", "senate", "congress", "white house", "consensus",
 ]);
 
 /** A token that plausibly belongs to a company name. */
@@ -90,6 +94,10 @@ function extractSubject(title: string): { name: string; verbMatched: boolean } |
 }
 
 export function extractCandidate(item: FeedItem): Extraction | null {
+  // Event promo, roundups, listicles, and interviews never name a credible
+  // candidate, even when a token in the headline happens to look like a name.
+  if (isNoiseHeadline(item.title)) return null;
+
   const subject = extractSubject(item.title);
 
   let reason = "private-market news mention";

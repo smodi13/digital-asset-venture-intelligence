@@ -31,6 +31,16 @@ import {
   canonicalEngineId,
   displayEngineName,
 } from "./engine-names";
+import {
+  DEFAULT_LOOKBACK_DAYS,
+  categorize,
+  classifyDiscoveryUtility,
+  classifyRelevance,
+  isNoiseHeadline,
+  withinLookback,
+  type DiscoveryUtility,
+  type RelevanceStrength,
+} from "./relevance";
 import type {
   Candidate,
   DiscoveryProvenance,
@@ -39,6 +49,7 @@ import type {
   EngineRunStatus,
   ExistingCompanyMatch,
   FeedHealth,
+  FilteredBuckets,
 } from "./types";
 
 /** A discovery engine descriptor. */
@@ -98,6 +109,8 @@ export interface RunOptions {
   canonicalCompanies: readonly ResolvableCompany[];
   /** Run timestamp. Injected so a run is reproducible in tests. */
   now?: string;
+  /** Items published before this many days ago are filtered from results. Default 30. */
+  lookbackDays?: number;
 }
 
 function candidateId(name: string, domain: string | null): string {
@@ -132,9 +145,20 @@ export function runDiscoveryEngine(
   options: RunOptions,
 ): EngineRunResult {
   const runAt = options.now ?? new Date().toISOString();
+  const lookbackDays = options.lookbackDays ?? DEFAULT_LOOKBACK_DAYS;
   const resolver = buildResolver(options.canonicalCompanies);
   const feeds: FeedHealth[] = [];
   const warnings: string[] = [];
+
+  const filteredBuckets: FilteredBuckets = {
+    nonDigitalAsset: 0,
+    editorialEventPromotional: 0,
+    outsideRecencyWindow: 0,
+    lowDiscoveryUtility: 0,
+    unresolvedEntity: 0,
+  };
+  let itemsInspected = 0;
+  let relevantItems = 0;
 
   // candidateId -> assembled candidate (provenance accumulates)
   const byId = new Map<string, Candidate>();
@@ -169,8 +193,40 @@ export function runDiscoveryEngine(
 
     const acceptedIds = new Set<string>();
     for (const item of outcome.items) {
+      itemsInspected += 1;
+
       const extraction = extractCandidate(item);
-      if (!extraction) continue;
+      if (!extraction) {
+        if (isNoiseHeadline(item.title)) filteredBuckets.editorialEventPromotional += 1;
+        else filteredBuckets.unresolvedEntity += 1;
+        continue;
+      }
+      // A "needs_review" extraction fell back to the raw headline as its name:
+      // no company-shaped subject was found, so it is market/policy/opinion
+      // commentary rather than a candidate (section 6).
+      if (extraction.identityConfidence === "needs_review") {
+        filteredBuckets.unresolvedEntity += 1;
+        continue;
+      }
+
+      if (!withinLookback(item.publishedAt, runAt, lookbackDays)) {
+        filteredBuckets.outsideRecencyWindow += 1;
+        continue;
+      }
+
+      const relevanceInput = { title: item.title, summary: item.summary, categories: item.categories };
+      const relevance = classifyRelevance(relevanceInput);
+      const utility = classifyDiscoveryUtility(relevanceInput);
+
+      if (relevance.strength === "not_relevant" || relevance.strength === "weak") {
+        filteredBuckets.nonDigitalAsset += 1;
+        continue;
+      }
+      if (relevance.strength === "moderate" && utility === "low") {
+        filteredBuckets.lowDiscoveryUtility += 1;
+        continue;
+      }
+      relevantItems += 1;
 
       const normalizedDomain = extraction.domain ? normalizeDomain(extraction.domain) : null;
       const id = candidateId(extraction.name, normalizedDomain);
@@ -192,15 +248,16 @@ export function runDiscoveryEngine(
         matchedTerms: item.categories.slice(0, 8),
       };
 
+      const category = categorize(relevanceInput);
+      const utilityLabel = utility === "high" ? "high" : "medium";
+      const whySurfaced = buildWhySurfaced(relevance, utility, extraction.discoveryReason);
+
       const existing = byId.get(id);
       if (existing) {
         if (!existing.provenance.some((p) => p.sourceItemId === provenance.sourceItemId)) {
           existing.provenance.push(provenance);
         }
-        if (
-          existing.identityConfidence === "needs_review" &&
-          extraction.identityConfidence !== "needs_review"
-        ) {
+        if (existing.identityConfidence === "probable" && extraction.identityConfidence === "confirmed") {
           existing.name = extraction.name;
           existing.identityConfidence = extraction.identityConfidence;
         }
@@ -212,6 +269,14 @@ export function runDiscoveryEngine(
         if (!existing.description && extraction.description) {
           existing.description = extraction.description;
         }
+        if (existing.relevance === "moderate" && relevance.strength === "strong") {
+          existing.relevance = "strong";
+          existing.relevanceTerms = relevance.matchedTerms;
+        }
+        if (existing.discoveryUtility === "medium" && utilityLabel === "high") {
+          existing.discoveryUtility = "high";
+        }
+        if (!existing.category && category) existing.category = category;
         acceptedIds.add(id);
         continue;
       }
@@ -226,6 +291,11 @@ export function runDiscoveryEngine(
         discoveredAt: runAt,
         provenance: [provenance],
         existing: matchExisting(resolver, extraction.name, extraction.domain),
+        relevance: relevance.strength === "strong" ? "strong" : "moderate",
+        relevanceTerms: relevance.matchedTerms,
+        discoveryUtility: utilityLabel,
+        category,
+        whySurfaced,
       });
       acceptedIds.add(id);
     }
@@ -241,10 +311,28 @@ export function runDiscoveryEngine(
     });
   }
 
+  // Default ordering (section 10): relevance strength, then discovery
+  // utility, then recency, then identity confidence, then name.
+  const RELEVANCE_RANK: Record<Candidate["relevance"], number> = { strong: 2, moderate: 1 };
+  const UTILITY_RANK: Record<Candidate["discoveryUtility"], number> = { high: 2, medium: 1 };
+  const IDENTITY_RANK: Record<Candidate["identityConfidence"], number> = {
+    confirmed: 2,
+    probable: 1,
+    needs_review: 0,
+  };
   const candidates = [...byId.values()].sort((a, b) => {
+    if (RELEVANCE_RANK[a.relevance] !== RELEVANCE_RANK[b.relevance]) {
+      return RELEVANCE_RANK[b.relevance] - RELEVANCE_RANK[a.relevance];
+    }
+    if (UTILITY_RANK[a.discoveryUtility] !== UTILITY_RANK[b.discoveryUtility]) {
+      return UTILITY_RANK[b.discoveryUtility] - UTILITY_RANK[a.discoveryUtility];
+    }
     const ap = latestSourceDate(a);
     const bp = latestSourceDate(b);
     if (ap !== bp) return bp.localeCompare(ap); // newest source story first
+    if (IDENTITY_RANK[a.identityConfidence] !== IDENTITY_RANK[b.identityConfidence]) {
+      return IDENTITY_RANK[b.identityConfidence] - IDENTITY_RANK[a.identityConfidence];
+    }
     return a.name.localeCompare(b.name);
   });
 
@@ -257,6 +345,15 @@ export function runDiscoveryEngine(
     );
   }
 
+  const newCandidates = candidates.filter((c) => !c.existing.companyId).length;
+  const alreadyTracked = candidates.length - newCandidates;
+  const filteredCount =
+    filteredBuckets.nonDigitalAsset +
+    filteredBuckets.editorialEventPromotional +
+    filteredBuckets.outsideRecencyWindow +
+    filteredBuckets.lowDiscoveryUtility +
+    filteredBuckets.unresolvedEntity;
+
   return {
     engineId: engine.id,
     engineName: engine.name,
@@ -265,7 +362,28 @@ export function runDiscoveryEngine(
     feeds,
     candidates,
     warnings,
+    summary: {
+      sourcesFetched: feeds.filter((f) => f.ok).length,
+      itemsInspected,
+      relevantItems,
+      newCandidates,
+      alreadyTracked,
+      filteredCount,
+      filteredBuckets,
+      lookbackDays,
+    },
   };
+}
+
+function buildWhySurfaced(
+  relevance: { strength: RelevanceStrength; matchedTerms: string[] },
+  utility: DiscoveryUtility,
+  discoveryReason: string,
+): string {
+  const strengthLabel = relevance.strength === "strong" ? "Strong" : "Moderate";
+  const utilityLabel = utility === "high" ? "high" : utility === "low" ? "low" : "medium";
+  const terms = relevance.matchedTerms.slice(0, 4).join(", ") || "digital-asset context";
+  return `${strengthLabel} digital-asset relevance (${terms}); ${utilityLabel} discovery utility; ${discoveryReason}.`;
 }
 
 /**

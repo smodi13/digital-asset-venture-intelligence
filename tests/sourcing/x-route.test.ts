@@ -17,7 +17,7 @@ const X_OK = {
   data: [
     {
       id: "9001",
-      text: "Meridian raises $12M seed round to build developer tooling",
+      text: "Meridian raises $12M seed round to build stablecoin infrastructure",
       created_at: "2026-09-05T12:00:00.000Z",
       author_id: "u9",
     },
@@ -41,7 +41,7 @@ describe("POST /api/sourcing/x", () => {
   it("rejects a missing or malformed token without making any request", async () => {
     const fetchSpy = vi.fn();
     vi.stubGlobal("fetch", fetchSpy);
-    const res = await POST(req({ presetId: "funding-announcements", token: "short" }));
+    const res = await POST(req({ presetId: "crypto-funding-announcements", token: "short" }));
     expect(res.status).toBe(400);
     expect(fetchSpy).not.toHaveBeenCalled();
   });
@@ -60,7 +60,7 @@ describe("POST /api/sourcing/x", () => {
         });
       }),
     );
-    const res = await POST(req({ presetId: "funding-announcements", token: TOKEN }));
+    const res = await POST(req({ presetId: "crypto-funding-announcements", token: TOKEN }));
     expect(res.status).toBe(200);
     expect(seenUrl.startsWith("https://api.x.com/2/tweets/search/recent")).toBe(true);
     expect(seenUrl).not.toContain(TOKEN);
@@ -78,7 +78,7 @@ describe("POST /api/sourcing/x", () => {
       "fetch",
       vi.fn(async () => new Response("secret upstream detail", { status: 401 })),
     );
-    const res = await POST(req({ presetId: "funding-announcements", token: TOKEN }));
+    const res = await POST(req({ presetId: "crypto-funding-announcements", token: TOKEN }));
     expect(res.status).toBe(401);
     const json = JSON.stringify(await res.json());
     expect(json).toBe(JSON.stringify({ error: "x_auth_failed" }));
@@ -87,7 +87,7 @@ describe("POST /api/sourcing/x", () => {
 
   it("maps a rate limit to x_rate_limited", async () => {
     vi.stubGlobal("fetch", vi.fn(async () => new Response("", { status: 429 })));
-    const res = await POST(req({ presetId: "stealth-launches", token: TOKEN }));
+    const res = await POST(req({ presetId: "crypto-stealth-launches", token: TOKEN }));
     expect(res.status).toBe(429);
     expect(await res.json()).toEqual({ error: "x_rate_limited" });
   });

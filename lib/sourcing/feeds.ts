@@ -26,10 +26,10 @@ export interface FeedConfig {
 
 export const FEEDS: readonly FeedConfig[] = [
   {
-    id: "techcrunch-venture",
-    name: "TechCrunch, Venture",
-    publisher: "TechCrunch",
-    url: "https://techcrunch.com/category/venture/feed/",
+    id: "coindesk-news",
+    name: "CoinDesk",
+    publisher: "CoinDesk",
+    url: "https://www.coindesk.com/arc/outboundfeeds/rss",
     engineId: "public-feed-discovery",
   },
   {

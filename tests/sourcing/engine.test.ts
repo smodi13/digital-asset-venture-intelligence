@@ -32,36 +32,50 @@ const feedC: FeedConfig = {
 
 const RSS_A = `<rss><channel>
   <item>
-    <title>Northwind raises $20M to automate logistics</title>
+    <title>Northwind raises $20M to build stablecoin infrastructure</title>
     <link>https://a.example.com/northwind/</link>
     <pubDate>Wed, 03 Sep 2026 10:00:00 +0000</pubDate>
     <guid>a-northwind-1</guid>
-    <description><![CDATA[<script>alert(1)</script>Northwind closed a Series A.]]></description>
+    <description><![CDATA[<script>alert(1)</script>Northwind closed a Series A for its crypto payments rail.]]></description>
     <category>Venture</category>
   </item>
   <item>
-    <title>Acme raises $100M Series C</title>
+    <title>Acme raises $100M Series C for its custody protocol</title>
     <link>https://a.example.com/acme/</link>
     <pubDate>Tue, 02 Sep 2026 10:00:00 +0000</pubDate>
     <guid>a-acme-1</guid>
-    <description>Acme, at acme.com, announced new funding.</description>
+    <description>Acme, at acme.com, announced new funding for its crypto custody platform.</description>
   </item>
   <item>
     <title>The 10 biggest funding rounds this week</title>
     <link>https://a.example.com/roundup/</link>
     <pubDate>Mon, 01 Sep 2026 10:00:00 +0000</pubDate>
     <guid>a-roundup-1</guid>
-    <description>A weekly summary.</description>
+    <description>A weekly summary of crypto funding rounds.</description>
+  </item>
+  <item>
+    <title>Mistral AI raises $500M at a $6B valuation</title>
+    <link>https://a.example.com/mistral/</link>
+    <pubDate>Sun, 31 Aug 2026 10:00:00 +0000</pubDate>
+    <guid>a-mistral-1</guid>
+    <description>A large general AI lab raised new funding.</description>
+  </item>
+  <item>
+    <title>The market shifts as stablecoin regulation tightens across the industry</title>
+    <link>https://a.example.com/analysis/</link>
+    <pubDate>Sat, 30 Aug 2026 10:00:00 +0000</pubDate>
+    <guid>a-analysis-1</guid>
+    <description>Broad commentary on stablecoin policy, no company named.</description>
   </item>
 </channel></rss>`;
 
 const RSS_B = `<rss><channel>
   <item>
-    <title>Northwind lands $20M in fresh capital</title>
+    <title>Northwind lands $20M in fresh capital for its stablecoin rail</title>
     <link>https://b.example.com/northwind/</link>
     <pubDate>Wed, 03 Sep 2026 14:00:00 +0000</pubDate>
     <guid>b-northwind-1</guid>
-    <description>Coverage of the Northwind round.</description>
+    <description>Coverage of the Northwind stablecoin infrastructure round.</description>
   </item>
 </channel></rss>`;
 
@@ -77,7 +91,7 @@ describe("runHeadlineEngine", () => {
     const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
     expect(result.status).toBe("completed");
     expect(result.engineId).toBe("public-feed-discovery");
-    expect(result.feeds[0]!.itemsInspected).toBe(3);
+    expect(result.feeds[0]!.itemsInspected).toBe(5);
   });
 
   it("preserves discovery provenance for every candidate", () => {
@@ -136,10 +150,31 @@ describe("runHeadlineEngine", () => {
     expect(northwind.description ?? "").toContain("Northwind closed a Series A");
   });
 
-  it("marks an unresolvable headline as needs_review rather than guessing", () => {
+  it("filters a headline with no named company as unresolved entity, never as a candidate", () => {
     const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
-    const roundup = result.candidates.find((c) => c.identityConfidence === "needs_review");
-    expect(roundup).toBeDefined();
+    expect(result.candidates.some((c) => c.identityConfidence === "needs_review")).toBe(false);
+    expect(result.candidates.some((c) => c.name.startsWith("The market shifts"))).toBe(false);
+    expect(result.summary.filteredBuckets.unresolvedEntity).toBeGreaterThan(0);
+  });
+
+  it("rejects a funding roundup as noise rather than as a candidate", () => {
+    const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
+    expect(result.candidates.some((c) => c.name.includes("biggest funding rounds"))).toBe(false);
+    expect(result.summary.filteredBuckets.editorialEventPromotional).toBeGreaterThan(0);
+  });
+
+  it("rejects a generic AI company with no digital-asset relevance", () => {
+    const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
+    expect(result.candidates.some((c) => c.name === "Mistral AI")).toBe(false);
+    expect(result.summary.filteredBuckets.nonDigitalAsset).toBeGreaterThan(0);
+  });
+
+  it("exposes live-run summary counts", () => {
+    const result = run([{ feed: feedA, ok: true, xml: RSS_A }]);
+    expect(result.summary.sourcesFetched).toBe(1);
+    expect(result.summary.itemsInspected).toBe(5);
+    expect(result.summary.relevantItems).toBeGreaterThan(0);
+    expect(result.summary.lookbackDays).toBe(30);
   });
 
   it("isolates a failed feed without losing results from the others", () => {

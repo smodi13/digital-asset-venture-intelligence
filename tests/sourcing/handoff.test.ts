@@ -45,6 +45,11 @@ const candidate: Candidate = {
     },
   ],
   existing: { companyId: null, method: "none", detail: "no canonical match" },
+  relevance: "strong",
+  relevanceTerms: ["crypto"],
+  discoveryUtility: "high",
+  category: null,
+  whySurfaced: "Strong digital-asset relevance (crypto); high discovery utility; funding announcement.",
 };
 
 describe("buildResearchIntake", () => {

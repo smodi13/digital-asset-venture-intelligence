@@ -16,6 +16,7 @@ import { NextResponse } from "next/server";
 import { PUBLIC_FEED_ENGINE, canonicalEngineId, runPublicFeedEngine } from "@/lib/sourcing/engine";
 import { fetchEngineFeeds } from "@/lib/sourcing/fetch-feeds";
 import { loadCanonicalCompanies } from "@/lib/sourcing/canonical";
+import { LOOKBACK_OPTIONS } from "@/lib/sourcing/relevance";
 
 export const dynamic = "force-dynamic";
 export const runtime = "nodejs";
@@ -25,12 +26,19 @@ const ENGINES = new Set<string>([PUBLIC_FEED_ENGINE.id, "headline-radar"]);
 
 export async function POST(request: Request) {
   let engineId: string = PUBLIC_FEED_ENGINE.id;
+  let lookbackDays: number | undefined;
   try {
-    const body = (await request.json().catch(() => ({}))) as { engineId?: unknown };
+    const body = (await request.json().catch(() => ({}))) as {
+      engineId?: unknown;
+      lookbackDays?: unknown;
+    };
     if (typeof body.engineId === "string" && ENGINES.has(body.engineId)) {
       engineId = canonicalEngineId(body.engineId);
     } else if (body.engineId !== undefined && !ENGINES.has(String(body.engineId))) {
       return NextResponse.json({ error: "unknown_engine" }, { status: 400 });
+    }
+    if (typeof body.lookbackDays === "number" && (LOOKBACK_OPTIONS as readonly number[]).includes(body.lookbackDays)) {
+      lookbackDays = body.lookbackDays;
     }
   } catch {
     // No body: run the default engine.
@@ -40,6 +48,7 @@ export async function POST(request: Request) {
     const outcomes = await fetchEngineFeeds(engineId);
     const result = runPublicFeedEngine(outcomes, {
       canonicalCompanies: loadCanonicalCompanies(),
+      lookbackDays,
     });
     return NextResponse.json(result, {
       status: result.status === "failed" ? 502 : 200,

@@ -42,6 +42,11 @@ function candidate(id: string, existingId: string | null = null): Candidate {
     existing: existingId
       ? { companyId: existingId, method: "domain", detail: "match" }
       : { companyId: null, method: "none", detail: "no canonical match" },
+    relevance: "strong",
+    relevanceTerms: ["crypto"],
+    discoveryUtility: "high",
+    category: null,
+    whySurfaced: "Strong digital-asset relevance (crypto); high discovery utility; funding announcement.",
   };
 }
 

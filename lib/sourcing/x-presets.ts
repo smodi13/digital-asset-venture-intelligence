@@ -22,20 +22,38 @@ export interface XPreset {
 
 export const X_PRESETS: readonly XPreset[] = [
   {
-    id: "funding-announcements",
-    label: "Funding announcements",
-    description: "Posts announcing a seed or Series A to C round at a named startup.",
+    id: "crypto-funding-announcements",
+    label: "Crypto funding announcements",
+    description:
+      "Posts announcing a seed or Series A/B round at a stablecoin, custody, DeFi, tokenization, " +
+      "or other crypto infrastructure startup.",
     query:
-      '("raises" OR "raised" OR "series a" OR "series b" OR "series c" OR "seed round") ' +
-      "(startup OR founder OR founders OR launches) -is:retweet -is:reply lang:en",
+      '("raises" OR "raised" OR "series a" OR "series b" OR "seed round") ' +
+      '(crypto OR blockchain OR stablecoin OR tokenization OR defi OR wallet OR custody OR ' +
+      'onchain OR "smart contract" OR depin OR "crypto payments" OR "crypto compliance") ' +
+      "-is:retweet -is:reply lang:en",
   },
   {
-    id: "stealth-launches",
-    label: "Stealth launches",
-    description: "Posts about a company coming out of stealth or a founder announcing a launch.",
+    id: "crypto-stealth-launches",
+    label: "Crypto protocol and stealth launches",
+    description:
+      "Posts about a new protocol mainnet/testnet launch, or a crypto infrastructure company " +
+      "coming out of stealth.",
     query:
-      '("out of stealth" OR "emerging from stealth" OR "coming out of stealth" OR ' +
-      '"excited to announce" OR "today we launch") -is:retweet -is:reply lang:en',
+      '("out of stealth" OR "emerging from stealth" OR "mainnet launch" OR "testnet launch" OR ' +
+      '"new protocol" OR "today we launch") ' +
+      '(crypto OR blockchain OR protocol OR onchain OR "zero knowledge" OR zk OR depin OR wallet) ' +
+      "-is:retweet -is:reply lang:en",
+  },
+  {
+    id: "crypto-developer-infrastructure",
+    label: "Crypto developer and data infrastructure",
+    description:
+      "Posts about new developer tooling, oracles, indexing, or ZK infrastructure for crypto teams.",
+    query:
+      '("new sdk" OR "developer preview" OR "new infrastructure" OR "now live") ' +
+      '(crypto OR blockchain OR oracle OR "zero knowledge" OR zk OR onchain OR indexing OR validator) ' +
+      "-is:retweet -is:reply lang:en",
   },
 ] as const;
 

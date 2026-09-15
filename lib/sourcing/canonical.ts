@@ -1,33 +1,31 @@
 /**
  * The canonical researched companies, as the sourcing matcher needs them.
  *
- * Server-only. Reads the committed generated corpus with node:fs, exactly as
- * lib/screening-read does, and never writes it. Sourcing only reads canonical
- * data to answer "is this candidate already a researched company".
+ * Server-only. Sourced from lib/digital-asset-product, the one sanctioned
+ * read layer over the authoritative, shipped 44-company v7 product corpus
+ * (data/v7-product/companies.v7.json) - the same data the Companies,
+ * Worklist, and Market Map pages read. Sourcing never reads a second,
+ * separately-maintained company list: doing so let it drift to the older
+ * 39-company research/v6 corpus that lib/screening-read still serves to the
+ * frozen Brief pages. This module only reads; it never writes the corpus.
+ *
+ * The id exposed here is the product slug (e.g. "aethir"), not the internal
+ * entityId ("co-aethir"), because it is what a sourcing candidate's
+ * "Already researched" link needs to resolve on /companies/[id].
  */
 
-import { readFileSync } from "node:fs";
-import { join } from "node:path";
+import { listCompanies } from "@/lib/digital-asset-product";
 import type { ResolvableCompany } from "@/lib/research/entity/resolve";
-
-interface CompanyRecord {
-  id: string;
-  name: string;
-  domain: string | null;
-  aliases?: string[];
-}
 
 let cached: ResolvableCompany[] | null = null;
 
 export function loadCanonicalCompanies(): ResolvableCompany[] {
   if (cached) return cached;
-  const path = join(process.cwd(), "data", "generated", "companies.json");
-  const parsed = JSON.parse(readFileSync(path, "utf8")) as { records: CompanyRecord[] };
-  cached = parsed.records.map((c) => ({
-    id: c.id,
+  cached = listCompanies().map((c) => ({
+    id: c.slug,
     name: c.name,
-    domain: c.domain ?? null,
-    aliases: c.aliases ?? [],
+    domain: c.domain,
+    aliases: [],
   }));
   return cached;
 }

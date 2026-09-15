@@ -18,10 +18,14 @@ screening and monitoring workspace:
 - **Sourcing** is interactive: a visitor can run Public Sourcing (the
   configured public-feed discovery engine) directly from the deployed
   product with no API credential, or switch to X Sourcing and supply their
-  own X API credential to search X. Discovered candidates hand off to a
-  research pipeline that produces hand-authored, source-traced research
-  packets, but they remain separate from the screened/researched universe
-  until that research happens.
+  own X API credential to search X. Public Sourcing performs a live run
+  against configured public sources every time it is run. Results are
+  filtered for digital-asset relevance, freshness, and early-stage discovery
+  utility, and for novelty against the researched universe, so sourcing
+  results are discovery leads, not screened investments. Discovered
+  candidates hand off to a research pipeline that produces hand-authored,
+  source-traced research packets, but they remain separate from the
+  screened/researched universe until that research happens.
 - **Screening** maps research to a fixed seven-dimension, fourteen-criterion
   rubric and computes a deterministic **Thesis Fit** score, together with
   separate **Evidence Coverage** and **Evidence Confidence** readings.
@@ -42,9 +46,16 @@ on screen traces back to a specific evidence claim and source.
 - **Partner Home** - editorial overview of the researched universe: recent
   signals, evidence-bar status, and entry points into every other module.
 - **Sourcing Engine** - run discovery now. Public Sourcing (no credential)
-  scans a fixed server-side allowlist of public feeds; X Sourcing (optional,
-  bring your own X API credential) searches X. Results are discovery
-  candidates, not investment recommendations or screened companies.
+  scans a fixed server-side allowlist of public feeds (CoinDesk, TechCrunch
+  Funding, Crunchbase News); X Sourcing (optional, bring your own X API
+  credential) searches X with digital-asset-specific presets. Every run
+  filters live items for digital-asset relevance, freshness (a configurable
+  lookback window, 30 days by default), and early-stage discovery utility,
+  and separates candidates that are new from ones that already match the
+  researched universe. A run summary shows exactly what was fetched,
+  inspected, and filtered, so a reviewer can see the run was live, not
+  stored. Results are discovery leads, not investment recommendations or
+  screened companies.
 - **Sourcing Worklist** - the full researched universe as a dense,
   filterable table (cards on mobile), in a deterministic neutral order with
   no default ranking.

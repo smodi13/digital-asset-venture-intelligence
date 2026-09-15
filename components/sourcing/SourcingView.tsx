@@ -21,9 +21,35 @@ import {
 type RunPhase = "idle" | "running" | "completed" | "partial_failure" | "failed";
 
 const X_PRESETS = [
-  { id: "funding-announcements", label: "Funding announcements", description: "Posts announcing a seed or Series A to C round at a named startup." },
-  { id: "stealth-launches", label: "Stealth launches", description: "Posts about a company coming out of stealth or a founder announcing a launch." },
+  {
+    id: "crypto-funding-announcements",
+    label: "Crypto funding announcements",
+    description:
+      "Posts announcing a seed or Series A/B round at a stablecoin, custody, DeFi, tokenization, or other crypto infrastructure startup.",
+  },
+  {
+    id: "crypto-stealth-launches",
+    label: "Crypto protocol and stealth launches",
+    description: "Posts about a new protocol mainnet/testnet launch, or a crypto infrastructure company coming out of stealth.",
+  },
+  {
+    id: "crypto-developer-infrastructure",
+    label: "Crypto developer and data infrastructure",
+    description: "Posts about new developer tooling, oracles, indexing, or ZK infrastructure for crypto teams.",
+  },
 ] as const;
+
+const LOOKBACK_OPTIONS = [30, 60, 90] as const;
+
+const RELEVANCE_LABEL: Record<Candidate["relevance"], string> = {
+  strong: "Strong digital-asset relevance",
+  moderate: "Moderate digital-asset relevance",
+};
+
+const UTILITY_LABEL: Record<Candidate["discoveryUtility"], string> = {
+  high: "High discovery utility",
+  medium: "Medium discovery utility",
+};
 
 const STATE_LABEL: Record<QueueState, string> = {
   DISCOVERED: "Discovered",
@@ -72,6 +98,9 @@ function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): Eng
       if (!existing.description && c.description) existing.description = c.description;
     }
   }
+  const candidates = [...byId.values()].sort(
+    (x, y) => y.discoveredAt.localeCompare(x.discoveredAt) || x.name.localeCompare(y.name),
+  );
   return {
     engineId: "combined",
     engineName: "Discovery",
@@ -82,8 +111,24 @@ function mergeResults(a: EngineRunResult | null, b: EngineRunResult | null): Eng
         ? "partial_failure"
         : "completed",
     feeds: parts.flatMap((p) => p.feeds),
-    candidates: [...byId.values()].sort((x, y) => y.discoveredAt.localeCompare(x.discoveredAt) || x.name.localeCompare(y.name)),
+    candidates,
     warnings: parts.flatMap((p) => p.warnings),
+    summary: {
+      sourcesFetched: parts.reduce((n, p) => n + p.summary.sourcesFetched, 0),
+      itemsInspected: parts.reduce((n, p) => n + p.summary.itemsInspected, 0),
+      relevantItems: parts.reduce((n, p) => n + p.summary.relevantItems, 0),
+      newCandidates: candidates.filter((c) => !c.existing.companyId).length,
+      alreadyTracked: candidates.filter((c) => c.existing.companyId).length,
+      filteredCount: parts.reduce((n, p) => n + p.summary.filteredCount, 0),
+      filteredBuckets: {
+        nonDigitalAsset: parts.reduce((n, p) => n + p.summary.filteredBuckets.nonDigitalAsset, 0),
+        editorialEventPromotional: parts.reduce((n, p) => n + p.summary.filteredBuckets.editorialEventPromotional, 0),
+        outsideRecencyWindow: parts.reduce((n, p) => n + p.summary.filteredBuckets.outsideRecencyWindow, 0),
+        lowDiscoveryUtility: parts.reduce((n, p) => n + p.summary.filteredBuckets.lowDiscoveryUtility, 0),
+        unresolvedEntity: parts.reduce((n, p) => n + p.summary.filteredBuckets.unresolvedEntity, 0),
+      },
+      lookbackDays: parts[0]!.summary.lookbackDays,
+    },
   };
 }
 
@@ -100,13 +145,15 @@ export function SourcingView() {
   const [xEnabled, setXEnabled] = useState(false);
   const [xToken, setXToken] = useState("");
   const [xTokenVisible, setXTokenVisible] = useState(false);
-  const [xPreset, setXPreset] = useState<(typeof X_PRESETS)[number]["id"]>("funding-announcements");
+  const [xPreset, setXPreset] = useState<(typeof X_PRESETS)[number]["id"]>("crypto-funding-announcements");
+  const [lookbackDays, setLookbackDays] = useState<(typeof LOOKBACK_OPTIONS)[number]>(30);
 
   const [queue, setQueue] = useState<QueueSnapshot>(emptyQueue());
   const [queueReady, setQueueReady] = useState(false);
 
-  // Filters
-  const [fMatch, setFMatch] = useState<"all" | "new" | "researched">("all");
+  // Filters. Default excludes already-tracked companies from the primary list (section 5/7).
+  const [fMatch, setFMatch] = useState<"all" | "new" | "researched">("new");
+  const [trackedOpen, setTrackedOpen] = useState(false);
   const [fIdentity, setFIdentity] = useState<"all" | Candidate["identityConfidence"]>("all");
   const [fChannel, setFChannel] = useState<"all" | DiscoveryTransport>("all");
   const [fQueue, setFQueue] = useState<"all" | QueueState>("all");
@@ -142,7 +189,7 @@ export function SourcingView() {
       const res = await fetch("/api/sourcing/run", {
         method: "POST",
         headers: { "content-type": "application/json" },
-        body: JSON.stringify({ engineId: "public-feed-discovery" }),
+        body: JSON.stringify({ engineId: "public-feed-discovery", lookbackDays }),
       });
       const data = (await res.json()) as EngineRunResult | { error: string };
       if (!("candidates" in data)) {
@@ -156,7 +203,7 @@ export function SourcingView() {
       setFeedPhase("failed");
       setFeedError("The discovery request could not be completed. Check the connection and try again.");
     }
-  }, []);
+  }, [lookbackDays]);
 
   const runX = useCallback(async () => {
     const token = xToken.trim();
@@ -252,10 +299,24 @@ export function SourcingView() {
               <p className="mt-1 chip chip--muted text-[10px]">No credential, no cost</p>
             </div>
             <p className="measure t-meta text-[var(--fg-muted)]">
-              Scans a fixed server-side allowlist of public venture and funding news feeds
-              (TechCrunch, Crunchbase News) and surfaces the companies named in them. Deterministic
-              extraction, never a quality judgement.
+              Scans a fixed server-side allowlist of public feeds (CoinDesk, TechCrunch Funding,
+              Crunchbase News), filters every item for digital-asset relevance, freshness, and
+              early-stage discovery utility, and surfaces only the candidates that clear those
+              gates. Deterministic extraction, never a quality judgement.
             </p>
+            <label className="flex flex-col gap-1 t-label text-[var(--fg-muted)]">
+              Lookback window
+              <select
+                value={lookbackDays}
+                onChange={(e) => setLookbackDays(Number(e.target.value) as (typeof LOOKBACK_OPTIONS)[number])}
+              >
+                {LOOKBACK_OPTIONS.map((d) => (
+                  <option key={d} value={d}>
+                    {d} days
+                  </option>
+                ))}
+              </select>
+            </label>
             <div className="mt-auto flex flex-col gap-2">
               <button type="button" onClick={runFeed} disabled={feedPhase === "running"} className="btn-fill self-start">
                 {feedPhase === "running" ? "Running discovery..." : "Run public feed discovery"}
@@ -350,6 +411,33 @@ export function SourcingView() {
         </div>
       </section>
 
+      {/* Live run proof */}
+      {result ? (
+        <section aria-labelledby="live-run-h">
+          <SectionHeading id="live-run-h">Live run</SectionHeading>
+          <div className="card p-4">
+            <p className="t-title">
+              <span className="chip chip--pos mr-2 text-[10px]">LIVE RUN</span>
+              Completed {result.runAt.slice(0, 16).replace("T", " ")} UTC
+            </p>
+            <p className="measure mt-2 t-meta text-[var(--fg-muted)]">
+              {result.summary.sourcesFetched} sources fetched · {result.summary.itemsInspected} items
+              inspected · {result.summary.relevantItems} digital-asset relevant items ·{" "}
+              {result.summary.newCandidates} new candidates surfaced · {result.summary.alreadyTracked}{" "}
+              already tracked · {result.summary.filteredCount} filtered as noise or irrelevant ·
+              lookback {result.summary.lookbackDays} days.
+            </p>
+            <p className="mt-2 t-label text-[var(--fg-faint)]">
+              Filtered out: {result.summary.filteredBuckets.nonDigitalAsset} non-digital-asset,{" "}
+              {result.summary.filteredBuckets.editorialEventPromotional} editorial/event/promotional,{" "}
+              {result.summary.filteredBuckets.outsideRecencyWindow} outside recency window,{" "}
+              {result.summary.filteredBuckets.lowDiscoveryUtility} low discovery utility,{" "}
+              {result.summary.filteredBuckets.unresolvedEntity} unresolved entity.
+            </p>
+          </div>
+        </section>
+      ) : null}
+
       {/* Source health */}
       {result ? (
         <section aria-labelledby="health-h">
@@ -398,7 +486,7 @@ export function SourcingView() {
           id="cand-h"
           aside={result ? <span>{filtered.length} of {candidates.length} candidates</span> : null}
         >
-          Discovered candidates
+          New candidates
         </SectionHeading>
 
         {!result ? (
@@ -453,7 +541,8 @@ export function SourcingView() {
                 </Field>
               </div>
               <p className="mt-3 t-meta text-[var(--fg-faint)]">
-                Order: newest source story first. Not a ranking.
+                Order: digital-asset relevance, then discovery utility, then recency, then identity
+                confidence. Workflow prioritization, not an investment ranking.
                 {filtersActive ? (
                   <button
                     type="button"
@@ -488,6 +577,33 @@ export function SourcingView() {
           </>
         )}
       </section>
+
+      {/* Already tracked: existing-universe matches, quieter and collapsed by default */}
+      {result && result.summary.alreadyTracked > 0 ? (
+        <section aria-labelledby="tracked-h">
+          <button
+            type="button"
+            onClick={() => setTrackedOpen((v) => !v)}
+            aria-expanded={trackedOpen}
+            className="flex w-full items-center justify-between gap-2 border-y border-[var(--line)] py-3 text-left"
+          >
+            <span id="tracked-h" className="t-title text-[var(--fg-muted)]">
+              <Icon name="chevron" className={trackedOpen ? "rotate-90 transition-transform" : "transition-transform"} />
+              Already tracked ({result.summary.alreadyTracked})
+            </span>
+            <span className="t-meta text-[var(--fg-faint)]">Matches the 44-company researched universe</span>
+          </button>
+          {trackedOpen ? (
+            <ul className="flex flex-col border-b border-[var(--line)]">
+              {candidates
+                .filter((c) => c.existing.companyId)
+                .map((c) => (
+                  <CandidateCard key={c.id} candidate={c} queued={queued.has(c.id)} onQueue={() => {}} />
+                ))}
+            </ul>
+          ) : null}
+        </section>
+      ) : null}
 
       {/* Research queue */}
       <section aria-labelledby="queue-h">
@@ -590,6 +706,11 @@ function CandidateCard({
               <span className="t-label text-[var(--fg-faint)]">domain unknown</span>
             )}
             <ChannelBadges candidate={c} />
+            <span className={`chip text-[10px] ${c.relevance === "strong" ? "chip--pos" : "chip--neutral"}`}>
+              {RELEVANCE_LABEL[c.relevance]}
+            </span>
+            <span className="chip chip--muted text-[10px]">{UTILITY_LABEL[c.discoveryUtility]}</span>
+            {c.category ? <span className="chip chip--muted text-[10px]">{c.category}</span> : null}
             <span className={`chip text-[10px] ${c.identityConfidence === "needs_review" ? "chip--warn" : "chip--muted"}`}>
               {CONFIDENCE_LABEL[c.identityConfidence]}
             </span>
@@ -597,9 +718,7 @@ function CandidateCard({
           {c.description ? (
             <p className="measure mt-1.5 line-clamp-2 t-meta text-[var(--fg-muted)]">{c.description}</p>
           ) : null}
-          <p className="mt-1.5 t-label text-[var(--fg-faint)]">
-            Discovery reason: {[...new Set(c.provenance.map((p) => p.discoveryReason))].join("; ")}
-          </p>
+          <p className="mt-1.5 t-label text-[var(--fg-faint)]">Why surfaced: {c.whySurfaced}</p>
         </div>
         <div className="flex shrink-0 flex-col items-start gap-1.5 sm:items-end">
           {c.existing.companyId ? (

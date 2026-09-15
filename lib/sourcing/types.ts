@@ -88,6 +88,36 @@ export interface Candidate {
   provenance: DiscoveryProvenance[];
   /** Match against the 39 canonical researched companies. */
   existing: ExistingCompanyMatch;
+  /** Deterministic digital-asset relevance strength. Never "not_relevant" here: weaker items are filtered before a Candidate is built. */
+  relevance: "strong" | "moderate";
+  /** Vocabulary terms that established relevance, for display. */
+  relevanceTerms: string[];
+  /** Workflow usefulness to a sourcing analyst. NOT an investment score. */
+  discoveryUtility: "high" | "medium";
+  /** Best-effort tag into one of the 11 canonical categories, or null. Never authoritative. */
+  category: string | null;
+  /** Short factual explanation of why this candidate was surfaced. */
+  whySurfaced: string;
+}
+
+/** Aggregate counts proving a run fetched and filtered live data. Never a score. */
+export interface FilteredBuckets {
+  nonDigitalAsset: number;
+  editorialEventPromotional: number;
+  outsideRecencyWindow: number;
+  lowDiscoveryUtility: number;
+  unresolvedEntity: number;
+}
+
+export interface RunSummary {
+  sourcesFetched: number;
+  itemsInspected: number;
+  relevantItems: number;
+  newCandidates: number;
+  alreadyTracked: number;
+  filteredCount: number;
+  filteredBuckets: FilteredBuckets;
+  lookbackDays: number;
 }
 
 /** Per-feed health for one engine run. No secrets, no stack traces. */
@@ -114,10 +144,16 @@ export interface EngineRunResult {
   runAt: string;
   status: EngineRunStatus;
   feeds: FeedHealth[];
-  /** Deduplicated candidates, newest discovery first. */
+  /**
+   * Deduplicated candidates, ordered by relevance strength, then discovery
+   * utility, then recency, then identity confidence (see RunSummary /
+   * lib/sourcing/relevance.ts). Not an investment ranking.
+   */
   candidates: Candidate[];
   /** Non-fatal warnings surfaced to the analyst. */
   warnings: string[];
+  /** Live-run proof: fetch, inspection, and filtering counts for this run. */
+  summary: RunSummary;
 }
 
 /* -------------------------------------------------------------------------- */

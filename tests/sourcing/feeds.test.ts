@@ -20,6 +20,11 @@ describe("feed configuration", () => {
     expect(feedsForEngine("headline-radar").length).toBeGreaterThan(0);
   });
 
+  it("includes a crypto-native source (CoinDesk) in the allowlist", () => {
+    expect(FEEDS.some((f) => f.id === "coindesk-news" && /coindesk\.com/i.test(f.url))).toBe(true);
+    expect(ALLOWED_FEED_URLS.has("https://www.coindesk.com/arc/outboundfeeds/rss")).toBe(true);
+  });
+
   it("does not read any environment credential", () => {
     // The sourcing modules import nothing from process.env. This asserts the
     // engine feed set is static config, not derived from a secret.
